@@ -1,0 +1,1757 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D1724DB2C00B331009A12A8 /* DonationItemDetailDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1724DA2C00B331009A12A8 /* DonationItemDetailDescriptionCell.swift */; };
+		5D1724DD2C00B4A4009A12A8 /* DonationItemDetailDescriptionCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1724DC2C00B4A4009A12A8 /* DonationItemDetailDescriptionCellController.swift */; };
+		5D1724DF2C00C8C0009A12A8 /* DonationItemCompletedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1724DE2C00C8C0009A12A8 /* DonationItemCompletedView.swift */; };
+		5D634BC32BFC6A540006B3B6 /* DonationItemCheckoutUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D634BC22BFC6A540006B3B6 /* DonationItemCheckoutUIComposer.swift */; };
+		5D6EC3B12C0589A800EA3800 /* DonationItemPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6EC3B02C0589A800EA3800 /* DonationItemPaymentViewController.swift */; };
+		5D6EC3B32C058EAB00EA3800 /* DonationItemPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6EC3B22C058EAB00EA3800 /* DonationItemPayment.swift */; };
+		5D6EC3B52C0593E600EA3800 /* DonationItemPaymentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6EC3B42C0593E600EA3800 /* DonationItemPaymentViewModel.swift */; };
+		5D6EC3B82C0597D400EA3800 /* DonationItemPaymentUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6EC3B72C0597D400EA3800 /* DonationItemPaymentUIComposer.swift */; };
+		5D6EC3BB2C05A55000EA3800 /* DonationItemPaymentViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6EC3BA2C05A55000EA3800 /* DonationItemPaymentViewAdapter.swift */; };
+		5D6EC3BD2C05A63F00EA3800 /* DonationItemPaymentPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6EC3BC2C05A63F00EA3800 /* DonationItemPaymentPresentationAdapter.swift */; };
+		5D6EC3BF2C05A90900EA3800 /* DonationItemPaymentInitiatorCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6EC3BE2C05A90900EA3800 /* DonationItemPaymentInitiatorCellController.swift */; };
+		5D6EC3C32C05A98500EA3800 /* DonationItemPaymentInitiatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6EC3C22C05A98500EA3800 /* DonationItemPaymentInitiatorCell.swift */; };
+		5D6EC3C62C05AB3C00EA3800 /* DonationItemPaymentSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6EC3C52C05AB3C00EA3800 /* DonationItemPaymentSection.swift */; };
+		5D6EC3CA2C05C4ED00EA3800 /* DonationItemPaymentProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6EC3C92C05C4ED00EA3800 /* DonationItemPaymentProductCell.swift */; };
+		5D6EC3CC2C05C57E00EA3800 /* DonationItemPaymentProductCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6EC3CB2C05C57E00EA3800 /* DonationItemPaymentProductCellController.swift */; };
+		5D6EC3CF2C05DAB900EA3800 /* CollectionHeaderFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6EC3CE2C05DAB900EA3800 /* CollectionHeaderFooterCell.swift */; };
+		5D6EC3D12C061D9700EA3800 /* DonationItemPaymentSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6EC3D02C061D9700EA3800 /* DonationItemPaymentSummaryCell.swift */; };
+		5D6EC3D32C061E9100EA3800 /* DonationItemPaymentSummaryCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6EC3D22C061E9100EA3800 /* DonationItemPaymentSummaryCellController.swift */; };
+		5D980E582C02528800B9663C /* Skeletons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D980E572C02528800B9663C /* Skeletons.swift */; };
+		5D980E622C03133C00B9663C /* DonationItemCheckoutViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D980E612C03133C00B9663C /* DonationItemCheckoutViewAdapter.swift */; };
+		5D980E652C03151400B9663C /* DonationItemCheckoutProductCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D980E642C03151400B9663C /* DonationItemCheckoutProductCellController.swift */; };
+		5D980E682C03160500B9663C /* DonationItemCheckoutProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D980E672C03160500B9663C /* DonationItemCheckoutProductCell.swift */; };
+		5D980E6B2C0316E800B9663C /* DonationItemCheckoutSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D980E6A2C0316E800B9663C /* DonationItemCheckoutSection.swift */; };
+		5D980E6E2C03411100B9663C /* DonationItemCheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D980E6D2C03411100B9663C /* DonationItemCheckoutViewController.swift */; };
+		5D980E722C03839400B9663C /* DonationItemCheckoutAddressCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D980E712C03839400B9663C /* DonationItemCheckoutAddressCellController.swift */; };
+		5D980E742C0383DB00B9663C /* DonationItemCheckoutAddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D980E732C0383DB00B9663C /* DonationItemCheckoutAddressCell.swift */; };
+		5D980E762C03884400B9663C /* DonationItemCheckoutSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D980E752C03884400B9663C /* DonationItemCheckoutSummaryCell.swift */; };
+		5D980E782C038A9D00B9663C /* DonationItemCheckoutSummaryCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D980E772C038A9D00B9663C /* DonationItemCheckoutSummaryCellController.swift */; };
+		5D98188D2BFC8821009A2CFA /* DonationItemListUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D98188C2BFC8821009A2CFA /* DonationItemListUIComposer.swift */; };
+		5D9818902BFC8907009A2CFA /* DonationItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D98188F2BFC8907009A2CFA /* DonationItemListViewController.swift */; };
+		5D9818922BFC8A21009A2CFA /* DonationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9818912BFC8A21009A2CFA /* DonationItem.swift */; };
+		5D9818942BFC8A7E009A2CFA /* DonationItemListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9818932BFC8A7E009A2CFA /* DonationItemListViewModel.swift */; };
+		5D9818962BFC8B44009A2CFA /* DonationItemCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9818952BFC8B44009A2CFA /* DonationItemCellController.swift */; };
+		5D9818982BFC8BC8009A2CFA /* DonationItemListPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9818972BFC8BC8009A2CFA /* DonationItemListPresentationAdapter.swift */; };
+		5D98189A2BFC9931009A2CFA /* DonationItemListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9818992BFC9931009A2CFA /* DonationItemListCell.swift */; };
+		5DB6C78C2C073F6C00A29E14 /* DonationItemCheckoutRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB6C78B2C073F6C00A29E14 /* DonationItemCheckoutRequest.swift */; };
+		5DB6C78E2C073FCB00A29E14 /* DonationItemCheckoutPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB6C78D2C073FCB00A29E14 /* DonationItemCheckoutPresentationAdapter.swift */; };
+		5DB6C7902C07402900A29E14 /* DonationItemCheckout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB6C78F2C07402900A29E14 /* DonationItemCheckout.swift */; };
+		5DB8FF852C01739600B05972 /* DonationItemStakeholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8FF842C01739600B05972 /* DonationItemStakeholderView.swift */; };
+		5DB8FF872C01764900B05972 /* DonationItemDetailStakeholderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8FF862C01764900B05972 /* DonationItemDetailStakeholderCell.swift */; };
+		5DB8FF892C01783700B05972 /* DonationItemDetailStakeholderCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8FF882C01783700B05972 /* DonationItemDetailStakeholderCellController.swift */; };
+		5DB8FF8D2C01E2DF00B05972 /* DonationItemDetailButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8FF8C2C01E2DF00B05972 /* DonationItemDetailButtonView.swift */; };
+		5DBC1CA02BFDD7960032AE04 /* DonationItemListViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBC1C9F2BFDD7960032AE04 /* DonationItemListViewAdapter.swift */; };
+		5DBC1CA22BFDF63E0032AE04 /* KipasKipasImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DBC1CA12BFDF63E0032AE04 /* KipasKipasImage.framework */; };
+		5DBC1CA32BFDF63E0032AE04 /* KipasKipasImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DBC1CA12BFDF63E0032AE04 /* KipasKipasImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5DBD74EE2C06CBAC0047B646 /* DonationItemPaymentHeaderCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBD74ED2C06CBAC0047B646 /* DonationItemPaymentHeaderCellController.swift */; };
+		5DFDBC7B2BFF479100AF84A1 /* DonationItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFDBC7A2BFF479100AF84A1 /* DonationItemDetailViewController.swift */; };
+		5DFDBC7D2BFF4A8D00AF84A1 /* DonationItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFDBC7C2BFF4A8D00AF84A1 /* DonationItemDetail.swift */; };
+		5DFDBC802BFF4B2F00AF84A1 /* DonationItemDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFDBC7F2BFF4B2F00AF84A1 /* DonationItemDetailViewModel.swift */; };
+		5DFDBC822BFF4D1700AF84A1 /* DonationItemDetailUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFDBC812BFF4D1700AF84A1 /* DonationItemDetailUIComposer.swift */; };
+		5DFDBC842BFF4D9C00AF84A1 /* DonationItemDetailPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFDBC832BFF4D9C00AF84A1 /* DonationItemDetailPresentationAdapter.swift */; };
+		5DFDBC862BFF508300AF84A1 /* DonationItemDetailViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFDBC852BFF508300AF84A1 /* DonationItemDetailViewAdapter.swift */; };
+		5DFDBC892BFF524500AF84A1 /* DonationItemDetailImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFDBC882BFF524500AF84A1 /* DonationItemDetailImageCell.swift */; };
+		5DFDBC8C2BFF536400AF84A1 /* DonationItemDetailImageCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFDBC8B2BFF536400AF84A1 /* DonationItemDetailImageCellController.swift */; };
+		5DFDBC8F2BFF840500AF84A1 /* NSCollectionLayoutSection+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFDBC8E2BFF840500AF84A1 /* NSCollectionLayoutSection+ext.swift */; };
+		5DFDBC952C006FA100AF84A1 /* DonationItemDetailInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFDBC942C006FA100AF84A1 /* DonationItemDetailInfoCell.swift */; };
+		5DFDBC972C0071B700AF84A1 /* DonationItemDetailInfoCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFDBC962C0071B700AF84A1 /* DonationItemDetailInfoCellController.swift */; };
+		5DFDBC992C0093A400AF84A1 /* DonationItemDetailSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFDBC982C0093A400AF84A1 /* DonationItemDetailSection.swift */; };
+		6E398E552B87252300FAD1A3 /* KipasKipasDonateStuff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7ADC5B2B85B92C008AE8E8 /* KipasKipasDonateStuff.framework */; platformFilter = ios; };
+		6E398E5A2B87259000FAD1A3 /* KipasKipasShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E398E592B87259000FAD1A3 /* KipasKipasShared.framework */; };
+		6E4625A22B8870AB004EDE17 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6E4625A12B8870AB004EDE17 /* Kingfisher */; };
+		6E7ADC2F2B85B599008AE8E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7ADC2E2B85B599008AE8E8 /* AppDelegate.swift */; };
+		6E7ADC312B85B599008AE8E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7ADC302B85B599008AE8E8 /* SceneDelegate.swift */; };
+		6E7ADC382B85B59A008AE8E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E7ADC372B85B59A008AE8E8 /* Assets.xcassets */; };
+		6E7ADC3B2B85B59A008AE8E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E7ADC392B85B59A008AE8E8 /* LaunchScreen.storyboard */; };
+		6E7ADC482B85B5B9008AE8E8 /* KipasKipasDonateStuffiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E7ADC472B85B5B9008AE8E8 /* KipasKipasDonateStuffiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E7ADC4B2B85B5B9008AE8E8 /* KipasKipasDonateStuffiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7ADC452B85B5B9008AE8E8 /* KipasKipasDonateStuffiOS.framework */; };
+		6E7ADC4C2B85B5B9008AE8E8 /* KipasKipasDonateStuffiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7ADC452B85B5B9008AE8E8 /* KipasKipasDonateStuffiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E7ADC5E2B85B92C008AE8E8 /* KipasKipasDonateStuff.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E7ADC5D2B85B92C008AE8E8 /* KipasKipasDonateStuff.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E7ADC612B85B92C008AE8E8 /* KipasKipasDonateStuff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7ADC5B2B85B92C008AE8E8 /* KipasKipasDonateStuff.framework */; };
+		6E7ADC622B85B92C008AE8E8 /* KipasKipasDonateStuff.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7ADC5B2B85B92C008AE8E8 /* KipasKipasDonateStuff.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AFBB22CE2B8743650064FEF3 /* KipasKipasNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFBB22CD2B8743650064FEF3 /* KipasKipasNetworking.framework */; };
+		AFBB22D12B87436D0064FEF3 /* KipasKipasShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA54ABD2B85D24100CA0815 /* KipasKipasShared.framework */; };
+		AFBB22D32B8743C50064FEF3 /* KipasKipasNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFBB22CD2B8743650064FEF3 /* KipasKipasNetworking.framework */; };
+		AFBB22D42B8743C50064FEF3 /* KipasKipasNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFBB22CD2B8743650064FEF3 /* KipasKipasNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AFBB22D52B8743CB0064FEF3 /* KipasKipasShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA54ABD2B85D24100CA0815 /* KipasKipasShared.framework */; };
+		AFBB22D62B8743CB0064FEF3 /* KipasKipasShared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA54ABD2B85D24100CA0815 /* KipasKipasShared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E398E572B87252300FAD1A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E7ADC152B85B411008AE8E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E7ADC5A2B85B92C008AE8E8;
+			remoteInfo = KipasKipasDonateStuff;
+		};
+		6E7ADC492B85B5B9008AE8E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E7ADC152B85B411008AE8E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E7ADC442B85B5B9008AE8E8;
+			remoteInfo = KipasKipasDonateStuffiOS;
+		};
+		6E7ADC5F2B85B92C008AE8E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E7ADC152B85B411008AE8E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E7ADC5A2B85B92C008AE8E8;
+			remoteInfo = KipasKipasDonateStuff;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6E7ADC502B85B5B9008AE8E8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6E7ADC622B85B92C008AE8E8 /* KipasKipasDonateStuff.framework in Embed Frameworks */,
+				AFBB22D62B8743CB0064FEF3 /* KipasKipasShared.framework in Embed Frameworks */,
+				5DBC1CA32BFDF63E0032AE04 /* KipasKipasImage.framework in Embed Frameworks */,
+				6E7ADC4C2B85B5B9008AE8E8 /* KipasKipasDonateStuffiOS.framework in Embed Frameworks */,
+				AFBB22D42B8743C50064FEF3 /* KipasKipasNetworking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5D1724DA2C00B331009A12A8 /* DonationItemDetailDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemDetailDescriptionCell.swift; sourceTree = "<group>"; };
+		5D1724DC2C00B4A4009A12A8 /* DonationItemDetailDescriptionCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemDetailDescriptionCellController.swift; sourceTree = "<group>"; };
+		5D1724DE2C00C8C0009A12A8 /* DonationItemCompletedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemCompletedView.swift; sourceTree = "<group>"; };
+		5D634BC22BFC6A540006B3B6 /* DonationItemCheckoutUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemCheckoutUIComposer.swift; sourceTree = "<group>"; };
+		5D6EC3B02C0589A800EA3800 /* DonationItemPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemPaymentViewController.swift; sourceTree = "<group>"; };
+		5D6EC3B22C058EAB00EA3800 /* DonationItemPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemPayment.swift; sourceTree = "<group>"; };
+		5D6EC3B42C0593E600EA3800 /* DonationItemPaymentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemPaymentViewModel.swift; sourceTree = "<group>"; };
+		5D6EC3B72C0597D400EA3800 /* DonationItemPaymentUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemPaymentUIComposer.swift; sourceTree = "<group>"; };
+		5D6EC3BA2C05A55000EA3800 /* DonationItemPaymentViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemPaymentViewAdapter.swift; sourceTree = "<group>"; };
+		5D6EC3BC2C05A63F00EA3800 /* DonationItemPaymentPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemPaymentPresentationAdapter.swift; sourceTree = "<group>"; };
+		5D6EC3BE2C05A90900EA3800 /* DonationItemPaymentInitiatorCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemPaymentInitiatorCellController.swift; sourceTree = "<group>"; };
+		5D6EC3C22C05A98500EA3800 /* DonationItemPaymentInitiatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemPaymentInitiatorCell.swift; sourceTree = "<group>"; };
+		5D6EC3C52C05AB3C00EA3800 /* DonationItemPaymentSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemPaymentSection.swift; sourceTree = "<group>"; };
+		5D6EC3C92C05C4ED00EA3800 /* DonationItemPaymentProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemPaymentProductCell.swift; sourceTree = "<group>"; };
+		5D6EC3CB2C05C57E00EA3800 /* DonationItemPaymentProductCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemPaymentProductCellController.swift; sourceTree = "<group>"; };
+		5D6EC3CE2C05DAB900EA3800 /* CollectionHeaderFooterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderFooterCell.swift; sourceTree = "<group>"; };
+		5D6EC3D02C061D9700EA3800 /* DonationItemPaymentSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemPaymentSummaryCell.swift; sourceTree = "<group>"; };
+		5D6EC3D22C061E9100EA3800 /* DonationItemPaymentSummaryCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemPaymentSummaryCellController.swift; sourceTree = "<group>"; };
+		5D980E572C02528800B9663C /* Skeletons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skeletons.swift; sourceTree = "<group>"; };
+		5D980E612C03133C00B9663C /* DonationItemCheckoutViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemCheckoutViewAdapter.swift; sourceTree = "<group>"; };
+		5D980E642C03151400B9663C /* DonationItemCheckoutProductCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemCheckoutProductCellController.swift; sourceTree = "<group>"; };
+		5D980E672C03160500B9663C /* DonationItemCheckoutProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemCheckoutProductCell.swift; sourceTree = "<group>"; };
+		5D980E6A2C0316E800B9663C /* DonationItemCheckoutSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemCheckoutSection.swift; sourceTree = "<group>"; };
+		5D980E6D2C03411100B9663C /* DonationItemCheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemCheckoutViewController.swift; sourceTree = "<group>"; };
+		5D980E712C03839400B9663C /* DonationItemCheckoutAddressCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemCheckoutAddressCellController.swift; sourceTree = "<group>"; };
+		5D980E732C0383DB00B9663C /* DonationItemCheckoutAddressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemCheckoutAddressCell.swift; sourceTree = "<group>"; };
+		5D980E752C03884400B9663C /* DonationItemCheckoutSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemCheckoutSummaryCell.swift; sourceTree = "<group>"; };
+		5D980E772C038A9D00B9663C /* DonationItemCheckoutSummaryCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemCheckoutSummaryCellController.swift; sourceTree = "<group>"; };
+		5D98188C2BFC8821009A2CFA /* DonationItemListUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemListUIComposer.swift; sourceTree = "<group>"; };
+		5D98188F2BFC8907009A2CFA /* DonationItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemListViewController.swift; sourceTree = "<group>"; };
+		5D9818912BFC8A21009A2CFA /* DonationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItem.swift; sourceTree = "<group>"; };
+		5D9818932BFC8A7E009A2CFA /* DonationItemListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemListViewModel.swift; sourceTree = "<group>"; };
+		5D9818952BFC8B44009A2CFA /* DonationItemCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemCellController.swift; sourceTree = "<group>"; };
+		5D9818972BFC8BC8009A2CFA /* DonationItemListPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemListPresentationAdapter.swift; sourceTree = "<group>"; };
+		5D9818992BFC9931009A2CFA /* DonationItemListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemListCell.swift; sourceTree = "<group>"; };
+		5DB6C78B2C073F6C00A29E14 /* DonationItemCheckoutRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemCheckoutRequest.swift; sourceTree = "<group>"; };
+		5DB6C78D2C073FCB00A29E14 /* DonationItemCheckoutPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemCheckoutPresentationAdapter.swift; sourceTree = "<group>"; };
+		5DB6C78F2C07402900A29E14 /* DonationItemCheckout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemCheckout.swift; sourceTree = "<group>"; };
+		5DB8FF842C01739600B05972 /* DonationItemStakeholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemStakeholderView.swift; sourceTree = "<group>"; };
+		5DB8FF862C01764900B05972 /* DonationItemDetailStakeholderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemDetailStakeholderCell.swift; sourceTree = "<group>"; };
+		5DB8FF882C01783700B05972 /* DonationItemDetailStakeholderCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemDetailStakeholderCellController.swift; sourceTree = "<group>"; };
+		5DB8FF8C2C01E2DF00B05972 /* DonationItemDetailButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemDetailButtonView.swift; sourceTree = "<group>"; };
+		5DBC1C9F2BFDD7960032AE04 /* DonationItemListViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemListViewAdapter.swift; sourceTree = "<group>"; };
+		5DBC1CA12BFDF63E0032AE04 /* KipasKipasImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DBD74ED2C06CBAC0047B646 /* DonationItemPaymentHeaderCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemPaymentHeaderCellController.swift; sourceTree = "<group>"; };
+		5DFDBC7A2BFF479100AF84A1 /* DonationItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemDetailViewController.swift; sourceTree = "<group>"; };
+		5DFDBC7C2BFF4A8D00AF84A1 /* DonationItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemDetail.swift; sourceTree = "<group>"; };
+		5DFDBC7F2BFF4B2F00AF84A1 /* DonationItemDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemDetailViewModel.swift; sourceTree = "<group>"; };
+		5DFDBC812BFF4D1700AF84A1 /* DonationItemDetailUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemDetailUIComposer.swift; sourceTree = "<group>"; };
+		5DFDBC832BFF4D9C00AF84A1 /* DonationItemDetailPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemDetailPresentationAdapter.swift; sourceTree = "<group>"; };
+		5DFDBC852BFF508300AF84A1 /* DonationItemDetailViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemDetailViewAdapter.swift; sourceTree = "<group>"; };
+		5DFDBC882BFF524500AF84A1 /* DonationItemDetailImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemDetailImageCell.swift; sourceTree = "<group>"; };
+		5DFDBC8B2BFF536400AF84A1 /* DonationItemDetailImageCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemDetailImageCellController.swift; sourceTree = "<group>"; };
+		5DFDBC8E2BFF840500AF84A1 /* NSCollectionLayoutSection+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSCollectionLayoutSection+ext.swift"; sourceTree = "<group>"; };
+		5DFDBC942C006FA100AF84A1 /* DonationItemDetailInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemDetailInfoCell.swift; sourceTree = "<group>"; };
+		5DFDBC962C0071B700AF84A1 /* DonationItemDetailInfoCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemDetailInfoCellController.swift; sourceTree = "<group>"; };
+		5DFDBC982C0093A400AF84A1 /* DonationItemDetailSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemDetailSection.swift; sourceTree = "<group>"; };
+		6E398E4F2B87226400FAD1A3 /* KipasKipasShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E398E592B87259000FAD1A3 /* KipasKipasShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E7ADC2C2B85B599008AE8E8 /* KipasKipasDonateStuffMicroApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KipasKipasDonateStuffMicroApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E7ADC2E2B85B599008AE8E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6E7ADC302B85B599008AE8E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6E7ADC372B85B59A008AE8E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E7ADC3A2B85B59A008AE8E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6E7ADC3C2B85B59A008AE8E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E7ADC452B85B5B9008AE8E8 /* KipasKipasDonateStuffiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KipasKipasDonateStuffiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E7ADC472B85B5B9008AE8E8 /* KipasKipasDonateStuffiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KipasKipasDonateStuffiOS.h; sourceTree = "<group>"; };
+		6E7ADC5B2B85B92C008AE8E8 /* KipasKipasDonateStuff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KipasKipasDonateStuff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E7ADC5D2B85B92C008AE8E8 /* KipasKipasDonateStuff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KipasKipasDonateStuff.h; sourceTree = "<group>"; };
+		6EA54ABD2B85D24100CA0815 /* KipasKipasShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EA54AC12B85D5E700CA0815 /* KipasKipasShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFBB22CD2B8743650064FEF3 /* KipasKipasNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E7ADC292B85B599008AE8E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E7ADC4B2B85B5B9008AE8E8 /* KipasKipasDonateStuffiOS.framework in Frameworks */,
+				AFBB22D52B8743CB0064FEF3 /* KipasKipasShared.framework in Frameworks */,
+				5DBC1CA22BFDF63E0032AE04 /* KipasKipasImage.framework in Frameworks */,
+				AFBB22D32B8743C50064FEF3 /* KipasKipasNetworking.framework in Frameworks */,
+				6E7ADC612B85B92C008AE8E8 /* KipasKipasDonateStuff.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E7ADC422B85B5B9008AE8E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E4625A22B8870AB004EDE17 /* Kingfisher in Frameworks */,
+				6E398E5A2B87259000FAD1A3 /* KipasKipasShared.framework in Frameworks */,
+				6E398E552B87252300FAD1A3 /* KipasKipasDonateStuff.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E7ADC582B85B92C008AE8E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFBB22CE2B8743650064FEF3 /* KipasKipasNetworking.framework in Frameworks */,
+				AFBB22D12B87436D0064FEF3 /* KipasKipasShared.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D1724E02C00C8E4009A12A8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5D1724DE2C00C8C0009A12A8 /* DonationItemCompletedView.swift */,
+				5DB8FF842C01739600B05972 /* DonationItemStakeholderView.swift */,
+				5DB8FF8C2C01E2DF00B05972 /* DonationItemDetailButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5D1724E12C00C8EB009A12A8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5DFDBC882BFF524500AF84A1 /* DonationItemDetailImageCell.swift */,
+				5DFDBC942C006FA100AF84A1 /* DonationItemDetailInfoCell.swift */,
+				5D1724DA2C00B331009A12A8 /* DonationItemDetailDescriptionCell.swift */,
+				5DB8FF862C01764900B05972 /* DonationItemDetailStakeholderCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5D634BBA2BFC5F6D0006B3B6 /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				5D980E692C0316D800B9663C /* Layout */,
+				5D980E662C0315F600B9663C /* UI */,
+				5D980E632C0314EB00B9663C /* Controllers */,
+				5D980E602C03131E00B9663C /* Adapters */,
+				5D634BC12BFC6A410006B3B6 /* Composer */,
+			);
+			path = Checkout;
+			sourceTree = "<group>";
+		};
+		5D634BC12BFC6A410006B3B6 /* Composer */ = {
+			isa = PBXGroup;
+			children = (
+				5D634BC22BFC6A540006B3B6 /* DonationItemCheckoutUIComposer.swift */,
+			);
+			path = Composer;
+			sourceTree = "<group>";
+		};
+		5D6EC3AF2C05898D00EA3800 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				5D6EC3C02C05A97000EA3800 /* UI */,
+				5D6EC3B92C05A54600EA3800 /* Adapters */,
+				5D6EC3B62C0597BA00EA3800 /* Controllers */,
+				5D6EC3B72C0597D400EA3800 /* DonationItemPaymentUIComposer.swift */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		5D6EC3B62C0597BA00EA3800 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5D6EC3B02C0589A800EA3800 /* DonationItemPaymentViewController.swift */,
+				5DBD74ED2C06CBAC0047B646 /* DonationItemPaymentHeaderCellController.swift */,
+				5D6EC3BE2C05A90900EA3800 /* DonationItemPaymentInitiatorCellController.swift */,
+				5D6EC3CB2C05C57E00EA3800 /* DonationItemPaymentProductCellController.swift */,
+				5D6EC3D22C061E9100EA3800 /* DonationItemPaymentSummaryCellController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5D6EC3B92C05A54600EA3800 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				5D6EC3BA2C05A55000EA3800 /* DonationItemPaymentViewAdapter.swift */,
+				5D6EC3BC2C05A63F00EA3800 /* DonationItemPaymentPresentationAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		5D6EC3C02C05A97000EA3800 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5D6EC3CD2C05DAA900EA3800 /* View */,
+				5D6EC3C42C05AB3200EA3800 /* Layout */,
+				5D6EC3C12C05A97600EA3800 /* Cells */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5D6EC3C12C05A97600EA3800 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5D6EC3C22C05A98500EA3800 /* DonationItemPaymentInitiatorCell.swift */,
+				5D6EC3C92C05C4ED00EA3800 /* DonationItemPaymentProductCell.swift */,
+				5D6EC3D02C061D9700EA3800 /* DonationItemPaymentSummaryCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5D6EC3C42C05AB3200EA3800 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				5D6EC3C52C05AB3C00EA3800 /* DonationItemPaymentSection.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		5D6EC3CD2C05DAA900EA3800 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5D6EC3CE2C05DAB900EA3800 /* CollectionHeaderFooterCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5D980E592C0253A500B9663C /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				5DFDBC852BFF508300AF84A1 /* DonationItemDetailViewAdapter.swift */,
+				5DFDBC832BFF4D9C00AF84A1 /* DonationItemDetailPresentationAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		5D980E602C03131E00B9663C /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				5D980E612C03133C00B9663C /* DonationItemCheckoutViewAdapter.swift */,
+				5DB6C78D2C073FCB00A29E14 /* DonationItemCheckoutPresentationAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		5D980E632C0314EB00B9663C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5D980E642C03151400B9663C /* DonationItemCheckoutProductCellController.swift */,
+				5D980E6D2C03411100B9663C /* DonationItemCheckoutViewController.swift */,
+				5D980E712C03839400B9663C /* DonationItemCheckoutAddressCellController.swift */,
+				5D980E772C038A9D00B9663C /* DonationItemCheckoutSummaryCellController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5D980E662C0315F600B9663C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5D980E6C2C031A7F00B9663C /* Cells */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5D980E692C0316D800B9663C /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				5D980E6A2C0316E800B9663C /* DonationItemCheckoutSection.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		5D980E6C2C031A7F00B9663C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5D980E672C03160500B9663C /* DonationItemCheckoutProductCell.swift */,
+				5D980E732C0383DB00B9663C /* DonationItemCheckoutAddressCell.swift */,
+				5D980E752C03884400B9663C /* DonationItemCheckoutSummaryCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5D98188E2BFC88BB009A2CFA /* List */ = {
+			isa = PBXGroup;
+			children = (
+				5D98188C2BFC8821009A2CFA /* DonationItemListUIComposer.swift */,
+				5D98188F2BFC8907009A2CFA /* DonationItemListViewController.swift */,
+				5D9818952BFC8B44009A2CFA /* DonationItemCellController.swift */,
+				5D9818972BFC8BC8009A2CFA /* DonationItemListPresentationAdapter.swift */,
+				5D9818992BFC9931009A2CFA /* DonationItemListCell.swift */,
+				5DBC1C9F2BFDD7960032AE04 /* DonationItemListViewAdapter.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		5DFDBC792BFF46C000AF84A1 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				5DFDBC812BFF4D1700AF84A1 /* DonationItemDetailUIComposer.swift */,
+				5D980E592C0253A500B9663C /* Adapters */,
+				5DFDBC8D2BFF83F200AF84A1 /* Layout */,
+				5DFDBC8A2BFF534400AF84A1 /* Controllers */,
+				5DFDBC872BFF523300AF84A1 /* UI */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		5DFDBC7E2BFF4B2200AF84A1 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				5D9818932BFC8A7E009A2CFA /* DonationItemListViewModel.swift */,
+				5DFDBC7F2BFF4B2F00AF84A1 /* DonationItemDetailViewModel.swift */,
+				5D6EC3B42C0593E600EA3800 /* DonationItemPaymentViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		5DFDBC872BFF523300AF84A1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5D1724E12C00C8EB009A12A8 /* Cells */,
+				5D1724E02C00C8E4009A12A8 /* Views */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5DFDBC8A2BFF534400AF84A1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5DFDBC7A2BFF479100AF84A1 /* DonationItemDetailViewController.swift */,
+				5DFDBC8B2BFF536400AF84A1 /* DonationItemDetailImageCellController.swift */,
+				5DFDBC962C0071B700AF84A1 /* DonationItemDetailInfoCellController.swift */,
+				5D1724DC2C00B4A4009A12A8 /* DonationItemDetailDescriptionCellController.swift */,
+				5DB8FF882C01783700B05972 /* DonationItemDetailStakeholderCellController.swift */,
+				5D980E572C02528800B9663C /* Skeletons.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5DFDBC8D2BFF83F200AF84A1 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				5DFDBC982C0093A400AF84A1 /* DonationItemDetailSection.swift */,
+				5DFDBC8E2BFF840500AF84A1 /* NSCollectionLayoutSection+ext.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		6E7ADC142B85B411008AE8E8 = {
+			isa = PBXGroup;
+			children = (
+				6E7ADC2D2B85B599008AE8E8 /* KipasKipasDonateStuffMicroApp */,
+				6E7ADC462B85B5B9008AE8E8 /* KipasKipasDonateStuffiOS */,
+				6E7ADC5C2B85B92C008AE8E8 /* KipasKipasDonateStuff */,
+				6E7ADC1F2B85B411008AE8E8 /* Products */,
+				6EA54ABC2B85D24100CA0815 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6E7ADC1F2B85B411008AE8E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E7ADC2C2B85B599008AE8E8 /* KipasKipasDonateStuffMicroApp.app */,
+				6E7ADC452B85B5B9008AE8E8 /* KipasKipasDonateStuffiOS.framework */,
+				6E7ADC5B2B85B92C008AE8E8 /* KipasKipasDonateStuff.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E7ADC2D2B85B599008AE8E8 /* KipasKipasDonateStuffMicroApp */ = {
+			isa = PBXGroup;
+			children = (
+				6E7ADC2E2B85B599008AE8E8 /* AppDelegate.swift */,
+				6E7ADC302B85B599008AE8E8 /* SceneDelegate.swift */,
+				6E7ADC372B85B59A008AE8E8 /* Assets.xcassets */,
+				6E7ADC392B85B59A008AE8E8 /* LaunchScreen.storyboard */,
+				6E7ADC3C2B85B59A008AE8E8 /* Info.plist */,
+			);
+			path = KipasKipasDonateStuffMicroApp;
+			sourceTree = "<group>";
+		};
+		6E7ADC462B85B5B9008AE8E8 /* KipasKipasDonateStuffiOS */ = {
+			isa = PBXGroup;
+			children = (
+				6E7ADC472B85B5B9008AE8E8 /* KipasKipasDonateStuffiOS.h */,
+				5D6EC3AF2C05898D00EA3800 /* Payment */,
+				5D634BBA2BFC5F6D0006B3B6 /* Checkout */,
+				5D98188E2BFC88BB009A2CFA /* List */,
+				5DFDBC792BFF46C000AF84A1 /* Detail */,
+			);
+			path = KipasKipasDonateStuffiOS;
+			sourceTree = "<group>";
+		};
+		6E7ADC5C2B85B92C008AE8E8 /* KipasKipasDonateStuff */ = {
+			isa = PBXGroup;
+			children = (
+				AF980F112B873F3C00A6CC02 /* Sources */,
+				6E7ADC5D2B85B92C008AE8E8 /* KipasKipasDonateStuff.h */,
+			);
+			path = KipasKipasDonateStuff;
+			sourceTree = "<group>";
+		};
+		6EA54ABC2B85D24100CA0815 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DBC1CA12BFDF63E0032AE04 /* KipasKipasImage.framework */,
+				AFBB22CD2B8743650064FEF3 /* KipasKipasNetworking.framework */,
+				6E398E592B87259000FAD1A3 /* KipasKipasShared.framework */,
+				6E398E4F2B87226400FAD1A3 /* KipasKipasShared.framework */,
+				6EA54AC12B85D5E700CA0815 /* KipasKipasShared.framework */,
+				6EA54ABD2B85D24100CA0815 /* KipasKipasShared.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF980F112B873F3C00A6CC02 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AF980F122B873F4400A6CC02 /* API */,
+				AF980F132B873F4D00A6CC02 /* Feature */,
+				5DFDBC7E2BFF4B2200AF84A1 /* Presentation */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		AF980F122B873F4400A6CC02 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5DB6C78B2C073F6C00A29E14 /* DonationItemCheckoutRequest.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		AF980F132B873F4D00A6CC02 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				5D9818912BFC8A21009A2CFA /* DonationItem.swift */,
+				5DFDBC7C2BFF4A8D00AF84A1 /* DonationItemDetail.swift */,
+				5D6EC3B22C058EAB00EA3800 /* DonationItemPayment.swift */,
+				5DB6C78F2C07402900A29E14 /* DonationItemCheckout.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6E7ADC402B85B5B9008AE8E8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E7ADC482B85B5B9008AE8E8 /* KipasKipasDonateStuffiOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E7ADC562B85B92C008AE8E8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E7ADC5E2B85B92C008AE8E8 /* KipasKipasDonateStuff.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6E7ADC2B2B85B599008AE8E8 /* KipasKipasDonateStuffMicroApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E7ADC3F2B85B59A008AE8E8 /* Build configuration list for PBXNativeTarget "KipasKipasDonateStuffMicroApp" */;
+			buildPhases = (
+				6E7ADC282B85B599008AE8E8 /* Sources */,
+				6E7ADC292B85B599008AE8E8 /* Frameworks */,
+				6E7ADC2A2B85B599008AE8E8 /* Resources */,
+				6E7ADC502B85B5B9008AE8E8 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E7ADC4A2B85B5B9008AE8E8 /* PBXTargetDependency */,
+				6E7ADC602B85B92C008AE8E8 /* PBXTargetDependency */,
+			);
+			name = KipasKipasDonateStuffMicroApp;
+			packageProductDependencies = (
+			);
+			productName = KipasKipasDonateStuffMicroApp;
+			productReference = 6E7ADC2C2B85B599008AE8E8 /* KipasKipasDonateStuffMicroApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E7ADC442B85B5B9008AE8E8 /* KipasKipasDonateStuffiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E7ADC4D2B85B5B9008AE8E8 /* Build configuration list for PBXNativeTarget "KipasKipasDonateStuffiOS" */;
+			buildPhases = (
+				6E7ADC402B85B5B9008AE8E8 /* Headers */,
+				6E7ADC412B85B5B9008AE8E8 /* Sources */,
+				6E7ADC422B85B5B9008AE8E8 /* Frameworks */,
+				6E7ADC432B85B5B9008AE8E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E398E582B87252300FAD1A3 /* PBXTargetDependency */,
+			);
+			name = KipasKipasDonateStuffiOS;
+			packageProductDependencies = (
+				6E4625A12B8870AB004EDE17 /* Kingfisher */,
+			);
+			productName = KipasKipasDonateStuffiOS;
+			productReference = 6E7ADC452B85B5B9008AE8E8 /* KipasKipasDonateStuffiOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6E7ADC5A2B85B92C008AE8E8 /* KipasKipasDonateStuff */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E7ADC632B85B92C008AE8E8 /* Build configuration list for PBXNativeTarget "KipasKipasDonateStuff" */;
+			buildPhases = (
+				6E7ADC562B85B92C008AE8E8 /* Headers */,
+				6E7ADC572B85B92C008AE8E8 /* Sources */,
+				6E7ADC582B85B92C008AE8E8 /* Frameworks */,
+				6E7ADC592B85B92C008AE8E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KipasKipasDonateStuff;
+			productName = KipasKipasDonateStuff;
+			productReference = 6E7ADC5B2B85B92C008AE8E8 /* KipasKipasDonateStuff.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E7ADC152B85B411008AE8E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					6E7ADC2B2B85B599008AE8E8 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					6E7ADC442B85B5B9008AE8E8 = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
+					};
+					6E7ADC5A2B85B92C008AE8E8 = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
+					};
+				};
+			};
+			buildConfigurationList = 6E7ADC182B85B411008AE8E8 /* Build configuration list for PBXProject "KipasKipasDonateStuff" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E7ADC142B85B411008AE8E8;
+			packageReferences = (
+				6E4625A02B8870AB004EDE17 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = 6E7ADC1F2B85B411008AE8E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E7ADC2B2B85B599008AE8E8 /* KipasKipasDonateStuffMicroApp */,
+				6E7ADC442B85B5B9008AE8E8 /* KipasKipasDonateStuffiOS */,
+				6E7ADC5A2B85B92C008AE8E8 /* KipasKipasDonateStuff */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E7ADC2A2B85B599008AE8E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E7ADC3B2B85B59A008AE8E8 /* LaunchScreen.storyboard in Resources */,
+				6E7ADC382B85B59A008AE8E8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E7ADC432B85B5B9008AE8E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E7ADC592B85B92C008AE8E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E7ADC282B85B599008AE8E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E7ADC2F2B85B599008AE8E8 /* AppDelegate.swift in Sources */,
+				6E7ADC312B85B599008AE8E8 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E7ADC412B85B5B9008AE8E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DFDBC952C006FA100AF84A1 /* DonationItemDetailInfoCell.swift in Sources */,
+				5D6EC3D32C061E9100EA3800 /* DonationItemPaymentSummaryCellController.swift in Sources */,
+				5D1724DF2C00C8C0009A12A8 /* DonationItemCompletedView.swift in Sources */,
+				5D6EC3CF2C05DAB900EA3800 /* CollectionHeaderFooterCell.swift in Sources */,
+				5DFDBC842BFF4D9C00AF84A1 /* DonationItemDetailPresentationAdapter.swift in Sources */,
+				5D6EC3BD2C05A63F00EA3800 /* DonationItemPaymentPresentationAdapter.swift in Sources */,
+				5D980E582C02528800B9663C /* Skeletons.swift in Sources */,
+				5D6EC3C62C05AB3C00EA3800 /* DonationItemPaymentSection.swift in Sources */,
+				5DB8FF8D2C01E2DF00B05972 /* DonationItemDetailButtonView.swift in Sources */,
+				5D98188D2BFC8821009A2CFA /* DonationItemListUIComposer.swift in Sources */,
+				5D980E682C03160500B9663C /* DonationItemCheckoutProductCell.swift in Sources */,
+				5D980E722C03839400B9663C /* DonationItemCheckoutAddressCellController.swift in Sources */,
+				5D9818902BFC8907009A2CFA /* DonationItemListViewController.swift in Sources */,
+				5DFDBC892BFF524500AF84A1 /* DonationItemDetailImageCell.swift in Sources */,
+				5D1724DD2C00B4A4009A12A8 /* DonationItemDetailDescriptionCellController.swift in Sources */,
+				5DFDBC8C2BFF536400AF84A1 /* DonationItemDetailImageCellController.swift in Sources */,
+				5D980E6B2C0316E800B9663C /* DonationItemCheckoutSection.swift in Sources */,
+				5DB8FF852C01739600B05972 /* DonationItemStakeholderView.swift in Sources */,
+				5DBD74EE2C06CBAC0047B646 /* DonationItemPaymentHeaderCellController.swift in Sources */,
+				5DB8FF892C01783700B05972 /* DonationItemDetailStakeholderCellController.swift in Sources */,
+				5D6EC3CA2C05C4ED00EA3800 /* DonationItemPaymentProductCell.swift in Sources */,
+				5DBC1CA02BFDD7960032AE04 /* DonationItemListViewAdapter.swift in Sources */,
+				5D6EC3CC2C05C57E00EA3800 /* DonationItemPaymentProductCellController.swift in Sources */,
+				5D6EC3C32C05A98500EA3800 /* DonationItemPaymentInitiatorCell.swift in Sources */,
+				5D980E6E2C03411100B9663C /* DonationItemCheckoutViewController.swift in Sources */,
+				5D1724DB2C00B331009A12A8 /* DonationItemDetailDescriptionCell.swift in Sources */,
+				5D980E762C03884400B9663C /* DonationItemCheckoutSummaryCell.swift in Sources */,
+				5D9818982BFC8BC8009A2CFA /* DonationItemListPresentationAdapter.swift in Sources */,
+				5D980E782C038A9D00B9663C /* DonationItemCheckoutSummaryCellController.swift in Sources */,
+				5D6EC3B12C0589A800EA3800 /* DonationItemPaymentViewController.swift in Sources */,
+				5DFDBC862BFF508300AF84A1 /* DonationItemDetailViewAdapter.swift in Sources */,
+				5DFDBC972C0071B700AF84A1 /* DonationItemDetailInfoCellController.swift in Sources */,
+				5D634BC32BFC6A540006B3B6 /* DonationItemCheckoutUIComposer.swift in Sources */,
+				5D6EC3D12C061D9700EA3800 /* DonationItemPaymentSummaryCell.swift in Sources */,
+				5D980E742C0383DB00B9663C /* DonationItemCheckoutAddressCell.swift in Sources */,
+				5D6EC3BF2C05A90900EA3800 /* DonationItemPaymentInitiatorCellController.swift in Sources */,
+				5DFDBC992C0093A400AF84A1 /* DonationItemDetailSection.swift in Sources */,
+				5D6EC3BB2C05A55000EA3800 /* DonationItemPaymentViewAdapter.swift in Sources */,
+				5DB6C78E2C073FCB00A29E14 /* DonationItemCheckoutPresentationAdapter.swift in Sources */,
+				5DB8FF872C01764900B05972 /* DonationItemDetailStakeholderCell.swift in Sources */,
+				5D6EC3B82C0597D400EA3800 /* DonationItemPaymentUIComposer.swift in Sources */,
+				5D98189A2BFC9931009A2CFA /* DonationItemListCell.swift in Sources */,
+				5DFDBC822BFF4D1700AF84A1 /* DonationItemDetailUIComposer.swift in Sources */,
+				5DFDBC8F2BFF840500AF84A1 /* NSCollectionLayoutSection+ext.swift in Sources */,
+				5D980E652C03151400B9663C /* DonationItemCheckoutProductCellController.swift in Sources */,
+				5D9818962BFC8B44009A2CFA /* DonationItemCellController.swift in Sources */,
+				5D980E622C03133C00B9663C /* DonationItemCheckoutViewAdapter.swift in Sources */,
+				5DFDBC7B2BFF479100AF84A1 /* DonationItemDetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E7ADC572B85B92C008AE8E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D9818942BFC8A7E009A2CFA /* DonationItemListViewModel.swift in Sources */,
+				5D6EC3B32C058EAB00EA3800 /* DonationItemPayment.swift in Sources */,
+				5DFDBC802BFF4B2F00AF84A1 /* DonationItemDetailViewModel.swift in Sources */,
+				5DB6C78C2C073F6C00A29E14 /* DonationItemCheckoutRequest.swift in Sources */,
+				5DB6C7902C07402900A29E14 /* DonationItemCheckout.swift in Sources */,
+				5D9818922BFC8A21009A2CFA /* DonationItem.swift in Sources */,
+				5D6EC3B52C0593E600EA3800 /* DonationItemPaymentViewModel.swift in Sources */,
+				5DFDBC7D2BFF4A8D00AF84A1 /* DonationItemDetail.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E398E582B87252300FAD1A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 6E7ADC5A2B85B92C008AE8E8 /* KipasKipasDonateStuff */;
+			targetProxy = 6E398E572B87252300FAD1A3 /* PBXContainerItemProxy */;
+		};
+		6E7ADC4A2B85B5B9008AE8E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E7ADC442B85B5B9008AE8E8 /* KipasKipasDonateStuffiOS */;
+			targetProxy = 6E7ADC492B85B5B9008AE8E8 /* PBXContainerItemProxy */;
+		};
+		6E7ADC602B85B92C008AE8E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E7ADC5A2B85B92C008AE8E8 /* KipasKipasDonateStuff */;
+			targetProxy = 6E7ADC5F2B85B92C008AE8E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6E7ADC392B85B59A008AE8E8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E7ADC3A2B85B59A008AE8E8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D77B1E02B9175BA008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = LiveDebug;
+		};
+		5D77B1E12B9175BA008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_TOOLS_BASE_URL = "https://tools.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasDonateStuffMicroApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonateStuffMicroApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = LiveDebug;
+		};
+		5D77B1E22B9175BA008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonateStuffiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = LiveDebug;
+		};
+		5D77B1E32B9175BA008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonateStuff;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = LiveDebug;
+		};
+		6E7ADC232B85B411008AE8E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6E7ADC242B85B411008AE8E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6E7ADC3D2B85B59A008AE8E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_TOOLS_BASE_URL = "https://test-tools.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasDonateStuffMicroApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonateStuffMicroApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6E7ADC3E2B85B59A008AE8E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_TOOLS_BASE_URL = "https://tools.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasDonateStuffMicroApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonateStuffMicroApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6E7ADC4E2B85B5B9008AE8E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonateStuffiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6E7ADC4F2B85B5B9008AE8E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonateStuffiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6E7ADC642B85B92C008AE8E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonateStuff;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6E7ADC652B85B92C008AE8E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonateStuff;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AF5EAA952B87419B005185BB /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Staging;
+		};
+		AF5EAA962B87419B005185BB /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_TOOLS_BASE_URL = "https://tools.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasDonateStuffMicroApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonateStuffMicroApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		AF5EAA972B87419B005185BB /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonateStuffiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		AF5EAA982B87419B005185BB /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonateStuff;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		AF5EAA992B8741A2005185BB /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = ProdDebug;
+		};
+		AF5EAA9A2B8741A2005185BB /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_TOOLS_BASE_URL = "https://tools.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasDonateStuffMicroApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonateStuffMicroApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = ProdDebug;
+		};
+		AF5EAA9B2B8741A2005185BB /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonateStuffiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = ProdDebug;
+		};
+		AF5EAA9C2B8741A2005185BB /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonateStuff;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = ProdDebug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E7ADC182B85B411008AE8E8 /* Build configuration list for PBXProject "KipasKipasDonateStuff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E7ADC232B85B411008AE8E8 /* Debug */,
+				5D77B1E02B9175BA008CC295 /* LiveDebug */,
+				AF5EAA952B87419B005185BB /* Staging */,
+				6E7ADC242B85B411008AE8E8 /* Release */,
+				AF5EAA992B8741A2005185BB /* ProdDebug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E7ADC3F2B85B59A008AE8E8 /* Build configuration list for PBXNativeTarget "KipasKipasDonateStuffMicroApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E7ADC3D2B85B59A008AE8E8 /* Debug */,
+				5D77B1E12B9175BA008CC295 /* LiveDebug */,
+				AF5EAA962B87419B005185BB /* Staging */,
+				6E7ADC3E2B85B59A008AE8E8 /* Release */,
+				AF5EAA9A2B8741A2005185BB /* ProdDebug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E7ADC4D2B85B5B9008AE8E8 /* Build configuration list for PBXNativeTarget "KipasKipasDonateStuffiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E7ADC4E2B85B5B9008AE8E8 /* Debug */,
+				5D77B1E22B9175BA008CC295 /* LiveDebug */,
+				AF5EAA972B87419B005185BB /* Staging */,
+				6E7ADC4F2B85B5B9008AE8E8 /* Release */,
+				AF5EAA9B2B8741A2005185BB /* ProdDebug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E7ADC632B85B92C008AE8E8 /* Build configuration list for PBXNativeTarget "KipasKipasDonateStuff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E7ADC642B85B92C008AE8E8 /* Debug */,
+				5D77B1E32B9175BA008CC295 /* LiveDebug */,
+				AF5EAA982B87419B005185BB /* Staging */,
+				6E7ADC652B85B92C008AE8E8 /* Release */,
+				AF5EAA9C2B8741A2005185BB /* ProdDebug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6E4625A02B8870AB004EDE17 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6E4625A12B8870AB004EDE17 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E4625A02B8870AB004EDE17 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6E7ADC152B85B411008AE8E8 /* Project object */;
+}

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoBold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="RobotoMedium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductSheetViewCell" customModule="KipasKipas" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" translatesAutoresizingMaskIntoConstraints="NO" id="cst-7j-x3r" customClass="ProductSheetViewCell" customModule="KipasKipas" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bhm-tU-Ft9">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Iev-Kc-UWh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                        <color key="backgroundColor" name="shimmer"/>
+                        <accessibility key="accessibilityConfiguration" identifier="image-productSheetCell-photo"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Iev-Kc-UWh" secondAttribute="height" multiplier="1:1" id="z9Q-ea-B10"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="K1V-do-wfg">
+                        <rect key="frame" x="16" y="391" width="343" height="87.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFu-sN-KWp">
+                                <rect key="frame" x="0.0" y="0.0" width="343" height="19"/>
+                                <accessibility key="accessibilityConfiguration" identifier="label-productSheetCell-price"/>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
+                                <color key="textColor" name="Primary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ProductName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ghj-OQ-gJ0">
+                                <rect key="frame" x="0.0" y="27" width="343" height="16.5"/>
+                                <accessibility key="accessibilityConfiguration" identifier="label-productSheetCell-name"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="4Uc-Io-cE8">
+                                <rect key="frame" x="0.0" y="51.5" width="343" height="36"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tZ0-9u-Ibd">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="36"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconProductShop" translatesAutoresizingMaskIntoConstraints="NO" id="XrP-yR-hgg">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="36"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="image-productSheetCell-shop"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="eqd-94-rFs"/>
+                                                    <constraint firstAttribute="width" constant="50" id="s2C-zV-45K"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconProductChat" translatesAutoresizingMaskIntoConstraints="NO" id="wnM-d4-NE1">
+                                                <rect key="frame" x="50" y="0.0" width="50" height="36"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="image-productSheetCell-message"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="CWO-kS-AhI"/>
+                                                    <constraint firstAttribute="height" constant="36" id="Cir-LN-thf"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconProductShare" translatesAutoresizingMaskIntoConstraints="NO" id="qOF-eO-HZk">
+                                                <rect key="frame" x="100" y="0.0" width="50" height="36"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="image-productSheetCell-share"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="6kQ-RP-Ldn"/>
+                                                    <constraint firstAttribute="width" constant="50" id="ffg-Yz-knv"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8j-NP-44z">
+                                        <rect key="frame" x="183" y="0.0" width="160" height="36"/>
+                                        <color key="backgroundColor" name="Primary"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="button-productSheetCell-buy"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Beli Sekarang">
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="setCornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onBuyTapped:" destination="-1" eventType="touchUpInside" id="ClE-Fu-eyj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="K1V-do-wfg" secondAttribute="trailing" constant="16" id="728-yo-0WW"/>
+                    <constraint firstItem="K1V-do-wfg" firstAttribute="leading" secondItem="bhm-tU-Ft9" secondAttribute="leading" constant="16" id="7N9-Xu-40i"/>
+                    <constraint firstItem="Iev-Kc-UWh" firstAttribute="leading" secondItem="bhm-tU-Ft9" secondAttribute="leading" id="B57-G8-LDP"/>
+                    <constraint firstItem="Iev-Kc-UWh" firstAttribute="top" secondItem="bhm-tU-Ft9" secondAttribute="top" id="VxW-Cx-lcZ"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="K1V-do-wfg" secondAttribute="bottom" constant="16" id="WEE-SL-ob7"/>
+                    <constraint firstItem="K1V-do-wfg" firstAttribute="top" secondItem="Iev-Kc-UWh" secondAttribute="bottom" constant="16" id="XYp-oJ-t6P"/>
+                    <constraint firstAttribute="trailing" secondItem="Iev-Kc-UWh" secondAttribute="trailing" id="sa4-bO-9At"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="setCornerRadius">
+                        <real key="value" value="8"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <size key="customSize" width="159" height="196"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="setShadowRadius">
+                    <real key="value" value="0.0"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="setCornerRadius">
+                    <real key="value" value="0.0"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="btBuy" destination="m8j-NP-44z" id="UKr-f5-tCl"/>
+                <outlet property="ivMessage" destination="wnM-d4-NE1" id="ACP-xc-Gl4"/>
+                <outlet property="ivProduct" destination="Iev-Kc-UWh" id="WVK-sv-V4p"/>
+                <outlet property="ivShare" destination="qOF-eO-HZk" id="ksi-PU-mwX"/>
+                <outlet property="ivShop" destination="XrP-yR-hgg" id="Hdk-YA-rfU"/>
+                <outlet property="lName" destination="Ghj-OQ-gJ0" id="dc0-Pk-Svx"/>
+                <outlet property="lPrice" destination="OFu-sN-KWp" id="3BL-SW-fBb"/>
+            </connections>
+            <point key="canvasLocation" x="210.86956521739131" y="73.660714285714278"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="iconProductChat" width="30" height="30"/>
+        <image name="iconProductShare" width="30" height="30"/>
+        <image name="iconProductShop" width="30" height="30"/>
+        <namedColor name="Primary">
+            <color red="1" green="0.25882352941176473" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="shimmer">
+            <color red="0.8901960784313725" green="0.8901960784313725" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

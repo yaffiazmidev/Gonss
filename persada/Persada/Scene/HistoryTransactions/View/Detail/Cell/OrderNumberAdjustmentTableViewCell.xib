@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoBold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="RobotoRegular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OrderNoAdjustment" rowHeight="73" id="FLq-dp-1MA" customClass="OrderNumberAdjustmentTableViewCell" customModule="KipasKipas" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FLq-dp-1MA" id="V4y-BP-KsO">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X9f-Sx-QIL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hkI-A5-T0p">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="53"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order No." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPs-3B-M2s" userLabel="Title">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="j6m-e0-hyt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="12"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXZ-3C-oSw" userLabel="desc">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="31"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
+                                        <color key="textColor" red="0.094117647058823528" green="0.56470588235294117" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hkI-A5-T0p" firstAttribute="top" secondItem="X9f-Sx-QIL" secondAttribute="top" id="2zo-O0-Mx9"/>
+                            <constraint firstAttribute="bottom" secondItem="hkI-A5-T0p" secondAttribute="bottom" constant="20" id="LLw-tE-USj"/>
+                            <constraint firstAttribute="trailing" secondItem="hkI-A5-T0p" secondAttribute="trailing" id="d8F-nL-SjA"/>
+                            <constraint firstItem="hkI-A5-T0p" firstAttribute="leading" secondItem="X9f-Sx-QIL" secondAttribute="leading" id="pF9-S5-cGd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="X9f-Sx-QIL" firstAttribute="top" secondItem="V4y-BP-KsO" secondAttribute="top" id="BYg-Es-MdA"/>
+                    <constraint firstAttribute="bottom" secondItem="X9f-Sx-QIL" secondAttribute="bottom" id="T3g-IT-6ZV"/>
+                    <constraint firstItem="X9f-Sx-QIL" firstAttribute="leading" secondItem="V4y-BP-KsO" secondAttribute="leading" id="Xkm-OE-bCc"/>
+                    <constraint firstAttribute="trailing" secondItem="X9f-Sx-QIL" secondAttribute="trailing" id="YMY-hs-KTt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="Aln-Iy-MMk"/>
+            <connections>
+                <outlet property="orderNumber" destination="LXZ-3C-oSw" id="0Vj-3g-BzE"/>
+            </connections>
+            <point key="canvasLocation" x="-10.144927536231885" y="129.57589285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

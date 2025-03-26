@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoRegular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyBankAccountDetailViewController" customModule="KipasKipas" customModuleProvider="target">
+            <connections>
+                <outlet property="accountNameLabel" destination="rat-UC-2O5" id="sex-ue-W6t"/>
+                <outlet property="accountNumberLabel" destination="NNF-u8-NcA" id="fJj-bO-bda"/>
+                <outlet property="bankNameLabel" destination="Ozo-LN-lXn" id="s5Q-pq-JBN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="xwM-HH-VD0">
+                    <rect key="frame" x="20" y="76" width="335" height="257"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vaL-RJ-rDh">
+                            <rect key="frame" x="0.0" y="0.0" width="335" height="70.333333333333329"/>
+                            <subviews>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nama Bank" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BsF-3G-EAJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="335" height="14.333333333333334"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                    <color key="textColor" name="grey"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kMw-Vv-xRY">
+                                    <rect key="frame" x="0.0" y="22.333333333333329" width="335" height="48"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ozo-LN-lXn">
+                                            <rect key="frame" x="16" y="8" width="303" height="32"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                            <color key="textColor" name="grey"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" name="whiteSnow"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Ozo-LN-lXn" secondAttribute="trailing" constant="16" id="22T-2J-rNV"/>
+                                        <constraint firstItem="Ozo-LN-lXn" firstAttribute="top" secondItem="kMw-Vv-xRY" secondAttribute="top" constant="8" id="Ogz-N9-GUD"/>
+                                        <constraint firstAttribute="bottom" secondItem="Ozo-LN-lXn" secondAttribute="bottom" constant="8" id="VxQ-Z8-ACf"/>
+                                        <constraint firstAttribute="height" constant="48" id="rKt-JC-b3h"/>
+                                        <constraint firstItem="Ozo-LN-lXn" firstAttribute="leading" secondItem="kMw-Vv-xRY" secondAttribute="leading" constant="16" id="tky-ZJ-VZm"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="setCornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xAh-Td-Nmd">
+                            <rect key="frame" x="0.0" y="93.333333333333343" width="335" height="70.333333333333343"/>
+                            <subviews>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nomor Rekening" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5I-D8-YwP">
+                                    <rect key="frame" x="0.0" y="0.0" width="335" height="14.333333333333334"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                    <color key="textColor" name="grey"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2SX-XV-QbM">
+                                    <rect key="frame" x="0.0" y="22.333333333333314" width="335" height="48"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNF-u8-NcA">
+                                            <rect key="frame" x="16" y="8" width="303" height="32"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                            <color key="textColor" name="grey"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" name="whiteSnow"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="NNF-u8-NcA" secondAttribute="trailing" constant="16" id="DjD-ru-J38"/>
+                                        <constraint firstAttribute="height" constant="48" id="LDS-y8-cIY"/>
+                                        <constraint firstItem="NNF-u8-NcA" firstAttribute="top" secondItem="2SX-XV-QbM" secondAttribute="top" constant="8" id="ge4-9a-4oQ"/>
+                                        <constraint firstItem="NNF-u8-NcA" firstAttribute="leading" secondItem="2SX-XV-QbM" secondAttribute="leading" constant="16" id="hzS-v8-1Nb"/>
+                                        <constraint firstAttribute="bottom" secondItem="NNF-u8-NcA" secondAttribute="bottom" constant="8" id="k29-nd-qEn"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="setCornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="a1O-Ml-BuW">
+                            <rect key="frame" x="0.0" y="186.66666666666669" width="335" height="70.333333333333314"/>
+                            <subviews>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Atas Nama" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ga-Dw-Eay">
+                                    <rect key="frame" x="0.0" y="0.0" width="335" height="14.333333333333334"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                    <color key="textColor" name="grey"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dU4-Fy-ebG">
+                                    <rect key="frame" x="0.0" y="22.333333333333314" width="335" height="48"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rat-UC-2O5">
+                                            <rect key="frame" x="16" y="8" width="303" height="32"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                            <color key="textColor" name="grey"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" name="whiteSnow"/>
+                                    <constraints>
+                                        <constraint firstItem="rat-UC-2O5" firstAttribute="leading" secondItem="dU4-Fy-ebG" secondAttribute="leading" constant="16" id="7jm-Hp-PcX"/>
+                                        <constraint firstAttribute="height" constant="48" id="rYx-kI-QbY"/>
+                                        <constraint firstAttribute="trailing" secondItem="rat-UC-2O5" secondAttribute="trailing" constant="16" id="wJk-QP-h4Z"/>
+                                        <constraint firstAttribute="bottom" secondItem="rat-UC-2O5" secondAttribute="bottom" constant="8" id="xPd-el-gwO"/>
+                                        <constraint firstItem="rat-UC-2O5" firstAttribute="top" secondItem="dU4-Fy-ebG" secondAttribute="top" constant="8" id="yfc-je-jse"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="setCornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="na0-32-7Fy">
+                    <rect key="frame" x="20" y="710" width="335" height="48"/>
+                    <color key="backgroundColor" name="whiteSnow"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="QVy-kT-IUZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                    <state key="normal" title="Hapus Rekening">
+                        <color key="titleColor" red="1" green="0.25882352941176467" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="setCornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didClickDeleteAccountButton:" destination="-1" eventType="touchUpInside" id="M5c-50-dLg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xwM-HH-VD0" secondAttribute="trailing" constant="20" id="7qu-K7-90p"/>
+                <constraint firstItem="xwM-HH-VD0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="K4Q-Fz-WhG"/>
+                <constraint firstItem="na0-32-7Fy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="VLz-8R-bXo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="na0-32-7Fy" secondAttribute="bottom" constant="20" id="WtZ-nR-qdn"/>
+                <constraint firstItem="xwM-HH-VD0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="jF5-RA-7hg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="na0-32-7Fy" secondAttribute="trailing" constant="20" id="raM-rt-387"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="grey">
+            <color red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="whiteSnow">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

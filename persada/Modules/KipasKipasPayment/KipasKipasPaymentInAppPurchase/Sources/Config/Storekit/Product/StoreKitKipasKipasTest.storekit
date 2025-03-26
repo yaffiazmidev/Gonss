@@ -1,0 +1,248 @@
+{
+  "identifier" : "942EC48C",
+  "nonRenewingSubscriptions" : [
+    {
+      "displayPrice" : "599000",
+      "familyShareable" : false,
+      "internalID" : "6466972558",
+      "localizations" : [
+        {
+          "description" : "Tes Non Renew",
+          "displayName" : "Tes Non Renew",
+          "locale" : "id"
+        }
+      ],
+      "productID" : "com.koanba.kipaskipas.mobile.dev.test_non_renew",
+      "referenceName" : "Tes Non Renew",
+      "type" : "NonRenewingSubscription"
+    }
+  ],
+  "products" : [
+    {
+      "displayPrice" : "3500000",
+      "familyShareable" : false,
+      "internalID" : "6466375352",
+      "localizations" : [
+        {
+          "description" : "110 Koin",
+          "displayName" : "110 Koin",
+          "locale" : "id"
+        }
+      ],
+      "productID" : "com.koanba.kipaskipas.mobile.dev.koin_110",
+      "referenceName" : "110 Koin",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "400000",
+      "familyShareable" : false,
+      "internalID" : "6466374907",
+      "localizations" : [
+        {
+          "description" : "12 Koin",
+          "displayName" : "12 Koin",
+          "locale" : "id"
+        }
+      ],
+      "productID" : "com.koanba.kipaskipas.mobile.dev.koin_12",
+      "referenceName" : "12 Koin",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "5399000",
+      "familyShareable" : false,
+      "internalID" : "6466375640",
+      "localizations" : [
+        {
+          "description" : "135 Koin",
+          "displayName" : "135 Koin",
+          "locale" : "id"
+        }
+      ],
+      "productID" : "com.koanba.kipaskipas.mobile.dev.koin_135",
+      "referenceName" : "135 Koin",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "800000",
+      "familyShareable" : false,
+      "internalID" : "6466374832",
+      "localizations" : [
+        {
+          "description" : "24 Koin",
+          "displayName" : "24 Koin",
+          "locale" : "id"
+        }
+      ],
+      "productID" : "com.koanba.kipaskipas.mobile.dev.koin_24",
+      "referenceName" : "24 Koin",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "1899000",
+      "familyShareable" : false,
+      "internalID" : "6466375037",
+      "localizations" : [
+        {
+          "description" : "56 Koin",
+          "displayName" : "56 Koin",
+          "locale" : "id"
+        }
+      ],
+      "productID" : "com.koanba.kipaskipas.mobile.dev.koin_56",
+      "referenceName" : "56 Koin",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "29000",
+      "familyShareable" : false,
+      "internalID" : "6450253700",
+      "localizations" : [
+        {
+          "description" : "Big Coin KipasKipas Isi 30 Coin",
+          "displayName" : "big_coin",
+          "locale" : "id"
+        }
+      ],
+      "productID" : "big_coin",
+      "referenceName" : "Big Coin (30)",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "40000",
+      "familyShareable" : false,
+      "internalID" : "6450199991",
+      "localizations" : [
+        {
+          "description" : "Coin ini untuk DM & sedang Research",
+          "displayName" : "RNDCoin",
+          "locale" : "id"
+        }
+      ],
+      "productID" : "rnd_coin",
+      "referenceName" : "RNDCoin",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "1563336360",
+    "_billingIssuesEnabled" : false,
+    "_developerTeamID" : "AM6A64NDM6",
+    "_failTransactionsEnabled" : false,
+    "_lastSynchronizedDate" : 719179562.99568605,
+    "_locale" : "id",
+    "_storefront" : "IDN",
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Purchase"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Verification"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Store Sync"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Subscription Status"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Transaction"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Manage Subscriptions Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Refund Request Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Offer Code Redeem Sheet"
+      }
+    ]
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "21388934",
+      "localizations" : [
+
+      ],
+      "name" : "Testing",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "169000",
+          "familyShareable" : false,
+          "groupNumber" : 2,
+          "internalID" : "6466779783",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Tes Subs",
+              "displayName" : "1 Week Subscription",
+              "locale" : "id"
+            }
+          ],
+          "productID" : "com.koanba.kipaskipas.mobile.dev.subs_1_week",
+          "recurringSubscriptionPeriod" : "P1W",
+          "referenceName" : "1 Week Subscription",
+          "subscriptionGroupID" : "21388934",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "999000",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "6466717864",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Testing Subscribe",
+              "displayName" : "1 Year Subscriptions",
+              "locale" : "id"
+            }
+          ],
+          "productID" : "com.koanba.kipaskipas.mobile.dev.subs_1_year",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "1 Year Subscription",
+          "subscriptionGroupID" : "21388934",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}

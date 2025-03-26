@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContentSettingContainerView" customModule="KipasKipas" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="3es-0e-l05" id="U28-Bs-bgY"/>
+                <outlet property="collectionViewHeightConstraint" destination="d76-VO-iO4" id="12B-ZZ-L1O"/>
+                <outlet property="containerView" destination="iN0-l3-epB" id="8vz-wk-VS5"/>
+                <outlet property="copyLinkImageView" destination="4Sq-Uj-vLO" id="mYw-Yu-U7w"/>
+                <outlet property="emptyFollowingContainerStackView" destination="kng-Dn-H5U" id="bqr-wB-m0V"/>
+                <outlet property="shareToIGImageView" destination="dSO-lz-gy1" id="cqO-Jg-7lU"/>
+                <outlet property="shareToMessagerImageView" destination="1bd-LB-13R" id="J4M-Bn-arZ"/>
+                <outlet property="shareToWhatsappImageView" destination="v4P-oS-xaP" id="mGi-Oc-L7I"/>
+                <outlet property="tableView" destination="P1B-WE-KF3" id="jwH-f4-FlD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qa6-Nf-kWv">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="3es-0e-l05">
+                            <rect key="frame" x="8" y="8" width="359" height="77"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="77" id="d76-VO-iO4"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="DiO-Eu-EMq">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                        <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" distribution="equalSpacing" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="E91-2N-9Nc">
+                            <rect key="frame" x="8" y="93" width="359" height="60"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFI-d6-b1e">
+                                    <rect key="frame" x="12" y="21.5" width="72" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wD8-KG-Vuq">
+                                    <rect key="frame" x="311" y="12" width="36" height="36"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_link" translatesAutoresizingMaskIntoConstraints="NO" id="4Sq-Uj-vLO">
+                                            <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="36" id="X4N-Vc-e4N"/>
+                                                <constraint firstAttribute="height" constant="36" id="wU6-sP-abj"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconWhatsapp" translatesAutoresizingMaskIntoConstraints="NO" id="v4P-oS-xaP">
+                                            <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="36" id="iye-aR-Z4T"/>
+                                                <constraint firstAttribute="width" constant="36" id="qTr-DS-YEq"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_messager" translatesAutoresizingMaskIntoConstraints="NO" id="1bd-LB-13R">
+                                            <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="36" id="9ap-1T-kL2"/>
+                                                <constraint firstAttribute="height" constant="36" id="XNh-2U-rIW"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_ig" translatesAutoresizingMaskIntoConstraints="NO" id="dSO-lz-gy1">
+                                            <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="36" id="fUn-Xp-WB6"/>
+                                                <constraint firstAttribute="height" constant="36" id="r3X-D2-Cc5"/>
+                                            </constraints>
+                                        </imageView>
+                                        <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cEB-BL-DvD">
+                                            <rect key="frame" x="0.0" y="8" width="20" height="20"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_chevron_down_outline_black" translatesAutoresizingMaskIntoConstraints="NO" id="9sh-VF-lh2">
+                                                    <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="jIR-gG-BNR"/>
+                                                        <constraint firstAttribute="width" constant="20" id="vJ2-pU-B3v"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="nTx-oB-Hk4"/>
+                            </constraints>
+                            <edgeInsets key="layoutMargins" top="12" left="12" bottom="12" right="12"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="setCornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="setShadowRadius">
+                                    <real key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="setShadowOpacity">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                    <color key="value" white="0.0" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                    <size key="value" width="0.0" height="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </stackView>
+                        <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kng-Dn-H5U">
+                            <rect key="frame" x="8" y="161" width="359" height="38.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Belum ada akun yang kamu follow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prx-jc-ZOa">
+                                    <rect key="frame" x="12" y="12" width="335" height="14.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                    <color key="textColor" name="placeholder"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <edgeInsets key="layoutMargins" top="12" left="12" bottom="12" right="12"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="setCornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fqG-PA-DNd">
+                            <rect key="frame" x="8" y="207.5" width="359" height="451.5"/>
+                            <subviews>
+                                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="P1B-WE-KF3">
+                                    <rect key="frame" x="0.0" y="0.0" width="359" height="0.0"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </tableView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                    </subviews>
+                    <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qa6-Nf-kWv" secondAttribute="trailing" id="H5b-PH-wkB"/>
+                <constraint firstAttribute="bottom" secondItem="qa6-Nf-kWv" secondAttribute="bottom" id="Isr-oY-MaI"/>
+                <constraint firstItem="qa6-Nf-kWv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aEY-fW-8Os"/>
+                <constraint firstItem="qa6-Nf-kWv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ml1-Vg-XsF"/>
+            </constraints>
+            <point key="canvasLocation" x="-68" y="19.340329835082461"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_chevron_down_outline_black" width="20" height="20.5"/>
+        <image name="ic_ig" width="35" height="35"/>
+        <image name="ic_link" width="35" height="35"/>
+        <image name="ic_messager" width="35" height="35"/>
+        <image name="iconWhatsapp" width="38" height="38"/>
+        <namedColor name="placeholder">
+            <color red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

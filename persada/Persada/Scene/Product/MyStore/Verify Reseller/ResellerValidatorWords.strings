@@ -1,0 +1,9 @@
+/* 
+  ResellerValidatorWords.strings
+  KipasKipas
+
+  Created by Muhammad Noor on 26/02/23.
+  Copyright © 2023 Koanba. All rights reserved.
+*/
+
+"RESELLER_VALIDATOR_GET_ERROR" = "Something wrong with reseller";

@@ -1,0 +1,1869 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07CB32CABA07D5D163F5F14F /* Pods_KipasKipasCall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D350C6A67DB8A38C6222AE32 /* Pods_KipasKipasCall.framework */; };
+		1991CC092AB6F32099325AEB /* Pods_KipasKipasCall_KipasKipasCallApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37961013C9905B093FC14CF /* Pods_KipasKipasCall_KipasKipasCallApp.framework */; };
+		306938862B6F7A4F00683BA0 /* TUICallStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306938852B6F7A4F00683BA0 /* TUICallStateViewModel.swift */; };
+		AF2F78652B35CDB00057719F /* KipasKipasCall.docc in Sources */ = {isa = PBXBuildFile; fileRef = AF2F78642B35CDB00057719F /* KipasKipasCall.docc */; };
+		AF2F78712B35CDB00057719F /* KipasKipasCall.h in Headers */ = {isa = PBXBuildFile; fileRef = AF2F78632B35CDB00057719F /* KipasKipasCall.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF4575032B37473400D81307 /* CallSearchUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4575022B37473400D81307 /* CallSearchUserCell.swift */; };
+		AF45753B2B381DF800D81307 /* TencentUserSig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF45753A2B381DF800D81307 /* TencentUserSig.swift */; };
+		AF45753D2B38274F00D81307 /* SceneDelegate+TUICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF45753C2B38274F00D81307 /* SceneDelegate+TUICall.swift */; };
+		AF4CA7DA2B58EC1B007782F7 /* CallLoginAuthenticatorRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4CA7D92B58EC1B007782F7 /* CallLoginAuthenticatorRequest.swift */; };
+		AF4CA7DC2B58EC9A007782F7 /* CallAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4CA7DB2B58EC9A007782F7 /* CallAuthenticator.swift */; };
+		AF4CA7E02B58EEBB007782F7 /* TUICallLoginAuthenticatorRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4CA7DF2B58EEBB007782F7 /* TUICallLoginAuthenticatorRequest.swift */; };
+		AF4CA7EA2B58F241007782F7 /* TUICallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4CA7E92B58F241007782F7 /* TUICallManager.swift */; };
+		AF4CA7EC2B58F2E9007782F7 /* TUICallAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4CA7EB2B58F2E9007782F7 /* TUICallAuthenticator.swift */; };
+		AF4CA7EE2B58F723007782F7 /* CallLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4CA7ED2B58F723007782F7 /* CallLoader.swift */; };
+		AF4CA7F02B58F944007782F7 /* TUICallLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4CA7EF2B58F944007782F7 /* TUICallLoader.swift */; };
+		AF4CA7F12B58FAC3007782F7 /* KipasKipasShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA706592B36215300C36BF9 /* KipasKipasShared.framework */; };
+		AF4CA7FF2B592C83007782F7 /* CallLoaderAuthDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4CA7FE2B592C83007782F7 /* CallLoaderAuthDecorator.swift */; };
+		AF9541B62B5EF45400E09D6D /* FeedCleeps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF9541B52B5EF45400E09D6D /* FeedCleeps.framework */; };
+		AF9541B72B5EF45400E09D6D /* FeedCleeps.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF9541B52B5EF45400E09D6D /* FeedCleeps.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AFA706372B361B0900C36BF9 /* CallPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA706362B361B0900C36BF9 /* CallPermission.swift */; };
+		AFA7063F2B361D0A00C36BF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA7063E2B361D0A00C36BF9 /* AppDelegate.swift */; };
+		AFA706412B361D0A00C36BF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA706402B361D0A00C36BF9 /* SceneDelegate.swift */; };
+		AFA706482B361D0B00C36BF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFA706472B361D0B00C36BF9 /* Assets.xcassets */; };
+		AFA7064B2B361D0B00C36BF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA706492B361D0B00C36BF9 /* LaunchScreen.storyboard */; };
+		AFA706522B361E9600C36BF9 /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA706512B361E9600C36BF9 /* CallViewController.swift */; };
+		AFA7065E2B36217A00C36BF9 /* CallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA7065D2B36217A00C36BF9 /* CallView.swift */; };
+		AFA7065F2B3622F300C36BF9 /* KipasKipasCall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF2F78602B35CDB00057719F /* KipasKipasCall.framework */; };
+		AFA706602B3622F300C36BF9 /* KipasKipasCall.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF2F78602B35CDB00057719F /* KipasKipasCall.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AFA706642B3622F700C36BF9 /* KipasKipasShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA706592B36215300C36BF9 /* KipasKipasShared.framework */; };
+		AFA706652B3622F700C36BF9 /* KipasKipasShared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFA706592B36215300C36BF9 /* KipasKipasShared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AFA706682B36388D00C36BF9 /* KipasKipasLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA706662B36388D00C36BF9 /* KipasKipasLogin.framework */; };
+		AFA706692B36388D00C36BF9 /* KipasKipasLogin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFA706662B36388D00C36BF9 /* KipasKipasLogin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AFA7066A2B36388D00C36BF9 /* KipasKipasLoginiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA706672B36388D00C36BF9 /* KipasKipasLoginiOS.framework */; };
+		AFA7066B2B36388D00C36BF9 /* KipasKipasLoginiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFA706672B36388D00C36BF9 /* KipasKipasLoginiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AFA7066E2B36389D00C36BF9 /* KipasKipasNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA7066C2B36389D00C36BF9 /* KipasKipasNetworking.framework */; };
+		AFA7066F2B36389D00C36BF9 /* KipasKipasNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFA7066C2B36389D00C36BF9 /* KipasKipasNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AFA706702B36389D00C36BF9 /* KipasKipasNetworkingUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA7066D2B36389D00C36BF9 /* KipasKipasNetworkingUtils.framework */; };
+		AFA706712B36389D00C36BF9 /* KipasKipasNetworkingUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFA7066D2B36389D00C36BF9 /* KipasKipasNetworkingUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AFA706732B36397100C36BF9 /* SceneDelegate+Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA706722B36397100C36BF9 /* SceneDelegate+Login.swift */; };
+		AFA706752B36399100C36BF9 /* UserLoggedInStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA706742B36399100C36BF9 /* UserLoggedInStore.swift */; };
+		AFA9BB412B5EFA1D00580F6A /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = AFA9BB402B5EFA1D00580F6A /* Sentry */; };
+		AFA9BB442B5EFAFF00580F6A /* Disk in Frameworks */ = {isa = PBXBuildFile; productRef = AFA9BB432B5EFAFF00580F6A /* Disk */; };
+		AFAE60DD2B37047000CCF5EA /* CallProfileEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAE60DC2B37047000CCF5EA /* CallProfileEndpoint.swift */; };
+		AFAE60E12B3706DB00CCF5EA /* CallProfileSocialMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAE60E02B3706DB00CCF5EA /* CallProfileSocialMedia.swift */; };
+		AFAE60E32B3707DB00CCF5EA /* CallProfileDonationBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAE60E22B3707DB00CCF5EA /* CallProfileDonationBadge.swift */; };
+		AFAE60E52B37089000CCF5EA /* CallProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAE60E42B37089000CCF5EA /* CallProfile.swift */; };
+		AFAE60E72B370A9D00CCF5EA /* CallProfileSearchLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAE60E62B370A9D00CCF5EA /* CallProfileSearchLoader.swift */; };
+		AFAE60E92B370B0300CCF5EA /* CallProfileDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAE60E82B370B0300CCF5EA /* CallProfileDataLoader.swift */; };
+		AFAE60EE2B370BC800CCF5EA /* RemoteCallProfileSocialMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAE60ED2B370BC800CCF5EA /* RemoteCallProfileSocialMedia.swift */; };
+		AFAE60F02B370BF900CCF5EA /* RemoteCallProfileDonationBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAE60EF2B370BF900CCF5EA /* RemoteCallProfileDonationBadge.swift */; };
+		AFAE60F22B370C1C00CCF5EA /* RemoteCallProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAE60F12B370C1C00CCF5EA /* RemoteCallProfileData.swift */; };
+		AFAE60F52B370D8F00CCF5EA /* CallProfileSearchMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAE60F42B370D8F00CCF5EA /* CallProfileSearchMapper.swift */; };
+		AFAE60F72B370DC200CCF5EA /* HTTPURLResponse+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAE60F62B370DC200CCF5EA /* HTTPURLResponse+Ext.swift */; };
+		AFAE60F92B370F1200CCF5EA /* RemoteCallProfileDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAE60F82B370F1200CCF5EA /* RemoteCallProfileDataResponse.swift */; };
+		AFAE60FB2B370F3000CCF5EA /* RemoteCallProfileSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAE60FA2B370F3000CCF5EA /* RemoteCallProfileSearchResponse.swift */; };
+		AFAE60FC2B37111B00CCF5EA /* KipasKipasNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA7066C2B36389D00C36BF9 /* KipasKipasNetworking.framework */; };
+		AFAE61002B371CA300CCF5EA /* CallProfileDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAE60FF2B371CA300CCF5EA /* CallProfileDataMapper.swift */; };
+		AFAE61042B37260700CCF5EA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AFAE61032B37260700CCF5EA /* Kingfisher */; };
+		AFAE61062B37280E00CCF5EA /* RemoteCallProfileSearchLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAE61052B37280E00CCF5EA /* RemoteCallProfileSearchLoader.swift */; };
+		AFAE61082B3728EA00CCF5EA /* RemoteCallProfileDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAE61072B3728EA00CCF5EA /* RemoteCallProfileDataLoader.swift */; };
+		AFAE610C2B372C3500CCF5EA /* SceneDelegate+Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAE610B2B372C3500CCF5EA /* SceneDelegate+Profile.swift */; };
+		AFAE610E2B3735D700CCF5EA /* CallSearchUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAE610D2B3735D700CCF5EA /* CallSearchUserController.swift */; };
+		AFAE61102B3735E000CCF5EA /* CallSearchUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAE610F2B3735E000CCF5EA /* CallSearchUserView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFA706612B3622F300C36BF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF2F78572B35CDB00057719F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF2F785F2B35CDB00057719F;
+			remoteInfo = KipasKipasCall;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AFA706632B3622F300C36BF9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AFA706712B36389D00C36BF9 /* KipasKipasNetworkingUtils.framework in Embed Frameworks */,
+				AFA7066B2B36388D00C36BF9 /* KipasKipasLoginiOS.framework in Embed Frameworks */,
+				AFA7066F2B36389D00C36BF9 /* KipasKipasNetworking.framework in Embed Frameworks */,
+				AF9541B72B5EF45400E09D6D /* FeedCleeps.framework in Embed Frameworks */,
+				AFA706602B3622F300C36BF9 /* KipasKipasCall.framework in Embed Frameworks */,
+				AFA706652B3622F700C36BF9 /* KipasKipasShared.framework in Embed Frameworks */,
+				AFA706692B36388D00C36BF9 /* KipasKipasLogin.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0B0F894E6C28276AB8E561E6 /* Pods-KipasKipasCall-KipasKipasCallApp.livedebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasCall-KipasKipasCallApp.livedebug.xcconfig"; path = "Target Support Files/Pods-KipasKipasCall-KipasKipasCallApp/Pods-KipasKipasCall-KipasKipasCallApp.livedebug.xcconfig"; sourceTree = "<group>"; };
+		17681C1C386033C44B461474 /* Pods-KipasKipasCall-KipasKipasCallApp.debugpk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasCall-KipasKipasCallApp.debugpk.xcconfig"; path = "Target Support Files/Pods-KipasKipasCall-KipasKipasCallApp/Pods-KipasKipasCall-KipasKipasCallApp.debugpk.xcconfig"; sourceTree = "<group>"; };
+		1DCFD542372093760C83AF15 /* Pods-KipasKipasCall-KipasKipasTUICall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasCall-KipasKipasTUICall.debug.xcconfig"; path = "Target Support Files/Pods-KipasKipasCall-KipasKipasTUICall/Pods-KipasKipasCall-KipasKipasTUICall.debug.xcconfig"; sourceTree = "<group>"; };
+		277DF9E4178762BC505D1821 /* Pods-KipasKipasCall.testpk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasCall.testpk.xcconfig"; path = "Target Support Files/Pods-KipasKipasCall/Pods-KipasKipasCall.testpk.xcconfig"; sourceTree = "<group>"; };
+		2FAF726E539613977DF74F59 /* Pods-KipasKipasCall-KipasKipasTUICall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasCall-KipasKipasTUICall.release.xcconfig"; path = "Target Support Files/Pods-KipasKipasCall-KipasKipasTUICall/Pods-KipasKipasCall-KipasKipasTUICall.release.xcconfig"; sourceTree = "<group>"; };
+		306938852B6F7A4F00683BA0 /* TUICallStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TUICallStateViewModel.swift; sourceTree = "<group>"; };
+		3FE6206D089554220BDE1CF3 /* Pods-KipasKipasCall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasCall.release.xcconfig"; path = "Target Support Files/Pods-KipasKipasCall/Pods-KipasKipasCall.release.xcconfig"; sourceTree = "<group>"; };
+		4F81EF5D147B8EC0A1F5B337 /* Pods-KipasKipasCall.proddebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasCall.proddebug.xcconfig"; path = "Target Support Files/Pods-KipasKipasCall/Pods-KipasKipasCall.proddebug.xcconfig"; sourceTree = "<group>"; };
+		53290C0F58D8488AC889D3D4 /* Pods-KipasKipasCall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasCall.debug.xcconfig"; path = "Target Support Files/Pods-KipasKipasCall/Pods-KipasKipasCall.debug.xcconfig"; sourceTree = "<group>"; };
+		5ADE7D9DC968149D06136B9E /* Pods-KipasKipasCall-KipasKipasCallApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasCall-KipasKipasCallApp.debug.xcconfig"; path = "Target Support Files/Pods-KipasKipasCall-KipasKipasCallApp/Pods-KipasKipasCall-KipasKipasCallApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5D0476F395F1C46851541709 /* Pods-KipasKipasCall.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasCall.staging.xcconfig"; path = "Target Support Files/Pods-KipasKipasCall/Pods-KipasKipasCall.staging.xcconfig"; sourceTree = "<group>"; };
+		671E2C5C865346D2DF64BE27 /* Pods-KipasKipasCall.debugpk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasCall.debugpk.xcconfig"; path = "Target Support Files/Pods-KipasKipasCall/Pods-KipasKipasCall.debugpk.xcconfig"; sourceTree = "<group>"; };
+		77307A660CB175E6F5675EDF /* Pods-KipasKipasCall-KipasKipasCallApp.proddebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasCall-KipasKipasCallApp.proddebug.xcconfig"; path = "Target Support Files/Pods-KipasKipasCall-KipasKipasCallApp/Pods-KipasKipasCall-KipasKipasCallApp.proddebug.xcconfig"; sourceTree = "<group>"; };
+		7D573C297AF3C3260517D7DE /* Pods-KipasKipasCall-KipasKipasCallApp.testpk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasCall-KipasKipasCallApp.testpk.xcconfig"; path = "Target Support Files/Pods-KipasKipasCall-KipasKipasCallApp/Pods-KipasKipasCall-KipasKipasCallApp.testpk.xcconfig"; sourceTree = "<group>"; };
+		AF13845A2B384B3F00C52F32 /* CallWaitingHintViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallWaitingHintViewModel.swift; sourceTree = "<group>"; };
+		AF13845C2B384B3F00C52F32 /* SelectGroupMemberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGroupMemberViewModel.swift; sourceTree = "<group>"; };
+		AF13845F2B384B3F00C52F32 /* GroupCallerUserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCallerUserInfoViewModel.swift; sourceTree = "<group>"; };
+		AF1384602B384B3F00C52F32 /* InviteeAvatarListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteeAvatarListViewModel.swift; sourceTree = "<group>"; };
+		AF1384622B384B3F00C52F32 /* UserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewModel.swift; sourceTree = "<group>"; };
+		AF1384642B384B3F00C52F32 /* AudioAndVideoCalleeWaitingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioAndVideoCalleeWaitingViewModel.swift; sourceTree = "<group>"; };
+		AF1384652B384B3F00C52F32 /* VideoCallerWaitingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCallerWaitingViewModel.swift; sourceTree = "<group>"; };
+		AF1384662B384B3F00C52F32 /* VideoCallerAndCalleeAcceptedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCallerAndCalleeAcceptedViewModel.swift; sourceTree = "<group>"; };
+		AF1384672B384B3F00C52F32 /* AudioCallerWaitingAndAcceptedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioCallerWaitingAndAcceptedViewModel.swift; sourceTree = "<group>"; };
+		AF1384682B384B3F00C52F32 /* SwitchAudioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchAudioViewModel.swift; sourceTree = "<group>"; };
+		AF1384692B384B3F00C52F32 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		AF13846B2B384B3F00C52F32 /* FloatingWindowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingWindowViewModel.swift; sourceTree = "<group>"; };
+		AF13846C2B384B3F00C52F32 /* FloatingWindowButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingWindowButtonViewModel.swift; sourceTree = "<group>"; };
+		AF13846E2B384B3F00C52F32 /* TUICallRecordCallsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TUICallRecordCallsCellViewModel.swift; sourceTree = "<group>"; };
+		AF13846F2B384B3F00C52F32 /* TUICallRecordCallsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TUICallRecordCallsViewModel.swift; sourceTree = "<group>"; };
+		AF1384702B384B3F00C52F32 /* InviteUserButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteUserButtonViewModel.swift; sourceTree = "<group>"; };
+		AF1384722B384B3F00C52F32 /* SingleCallVideoLayoutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCallVideoLayoutModel.swift; sourceTree = "<group>"; };
+		AF1384732B384B3F00C52F32 /* GroupCallVideoLayoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCallVideoLayoutViewModel.swift; sourceTree = "<group>"; };
+		AF1384742B384B3F00C52F32 /* GroupCallVideoCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCallVideoCellViewModel.swift; sourceTree = "<group>"; };
+		AF1384762B384B3F00C52F32 /* GroupCallViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCallViewModel.swift; sourceTree = "<group>"; };
+		AF1384772B384B3F00C52F32 /* SingleCallViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCallViewModel.swift; sourceTree = "<group>"; };
+		AF1384782B384B3F00C52F32 /* TUICallKitImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TUICallKitImpl.swift; sourceTree = "<group>"; };
+		AF13847A2B384B3F00C52F32 /* Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
+		AF13847B2B384B3F00C52F32 /* TUICallKitCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TUICallKitCommon.swift; sourceTree = "<group>"; };
+		AF13847C2B384B3F00C52F32 /* GCDTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDTimer.swift; sourceTree = "<group>"; };
+		AF13847D2B384B3F00C52F32 /* Observers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observers.swift; sourceTree = "<group>"; };
+		AF13847E2B384B3F00C52F32 /* TUICoreDefineConvert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TUICoreDefineConvert.swift; sourceTree = "<group>"; };
+		AF13847F2B384B3F00C52F32 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		AF1384812B384B3F00C52F32 /* TUICallEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TUICallEvent.swift; sourceTree = "<group>"; };
+		AF1384822B384B3F00C52F32 /* TUICallState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TUICallState.swift; sourceTree = "<group>"; };
+		AF1384842B384B3F00C52F32 /* CallEngineManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallEngineManager.swift; sourceTree = "<group>"; };
+		AF1384852B384B3F00C52F32 /* TUICallKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TUICallKit.swift; sourceTree = "<group>"; };
+		AF1384872B384B3F00C52F32 /* WindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowManager.swift; sourceTree = "<group>"; };
+		AF1384882B384B3F00C52F32 /* CallKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallKitViewController.swift; sourceTree = "<group>"; };
+		AF13848A2B384B3F00C52F32 /* CallWaitingHintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallWaitingHintView.swift; sourceTree = "<group>"; };
+		AF13848C2B384B3F00C52F32 /* SelectGroupMemberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGroupMemberCell.swift; sourceTree = "<group>"; };
+		AF13848D2B384B3F00C52F32 /* SelectGroupMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGroupMemberViewController.swift; sourceTree = "<group>"; };
+		AF13848E2B384B3F00C52F32 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		AF13848F2B384B3F00C52F32 /* InviteUserButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteUserButton.swift; sourceTree = "<group>"; };
+		AF1384922B384B3F00C52F32 /* InviteeAvatarListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteeAvatarListView.swift; sourceTree = "<group>"; };
+		AF1384932B384B3F00C52F32 /* InviteeAvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteeAvatarCell.swift; sourceTree = "<group>"; };
+		AF1384942B384B3F00C52F32 /* GroupCallerUserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCallerUserInfoView.swift; sourceTree = "<group>"; };
+		AF1384962B384B3F00C52F32 /* AudioCallUserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioCallUserInfoView.swift; sourceTree = "<group>"; };
+		AF1384972B384B3F00C52F32 /* VideoCallUserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCallUserInfoView.swift; sourceTree = "<group>"; };
+		AF1384992B384B3F00C52F32 /* VideoCallerAndCalleeAcceptedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCallerAndCalleeAcceptedView.swift; sourceTree = "<group>"; };
+		AF13849A2B384B3F00C52F32 /* AudioCallerWaitingAndAcceptedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioCallerWaitingAndAcceptedView.swift; sourceTree = "<group>"; };
+		AF13849B2B384B3F00C52F32 /* AudioAndVideoCalleeWaitingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioAndVideoCalleeWaitingView.swift; sourceTree = "<group>"; };
+		AF13849C2B384B3F00C52F32 /* VideoCallerWaitingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCallerWaitingView.swift; sourceTree = "<group>"; };
+		AF13849E2B384B3F00C52F32 /* UIViewControllerCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerCommon.swift; sourceTree = "<group>"; };
+		AF13849F2B384B3F00C52F32 /* BaseControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseControlButton.swift; sourceTree = "<group>"; };
+		AF1384A02B384B3F00C52F32 /* UIButtonCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonCommon.swift; sourceTree = "<group>"; };
+		AF1384A12B384B3F00C52F32 /* UIColorCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorCommon.swift; sourceTree = "<group>"; };
+		AF1384A22B384B3F00C52F32 /* UIWindowCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowCommon.swift; sourceTree = "<group>"; };
+		AF1384A42B384B3F00C52F32 /* FloatingWindowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingWindowButton.swift; sourceTree = "<group>"; };
+		AF1384A52B384B3F00C52F32 /* FloatWindowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatWindowViewController.swift; sourceTree = "<group>"; };
+		AF1384A62B384B3F00C52F32 /* FloatingWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingWindowView.swift; sourceTree = "<group>"; };
+		AF1384A82B384B3F00C52F32 /* TUICallRecordCallsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TUICallRecordCallsCell.swift; sourceTree = "<group>"; };
+		AF1384A92B384B3F00C52F32 /* TUICallRecordCallsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TUICallRecordCallsViewController.swift; sourceTree = "<group>"; };
+		AF1384AA2B384B3F00C52F32 /* SwitchAudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchAudioView.swift; sourceTree = "<group>"; };
+		AF1384AC2B384B3F00C52F32 /* SingleCallVideoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCallVideoLayout.swift; sourceTree = "<group>"; };
+		AF1384AD2B384B3F00C52F32 /* GroupCallVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCallVideoCell.swift; sourceTree = "<group>"; };
+		AF1384AE2B384B3F00C52F32 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		AF1384AF2B384B3F00C52F32 /* VideoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFactory.swift; sourceTree = "<group>"; };
+		AF1384B02B384B3F00C52F32 /* GroupCallVideoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCallVideoLayout.swift; sourceTree = "<group>"; };
+		AF1384B22B384B3F00C52F32 /* SingleCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCallView.swift; sourceTree = "<group>"; };
+		AF1384B32B384B3F00C52F32 /* GroupCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCallView.swift; sourceTree = "<group>"; };
+		AF1384B52B384B3F00C52F32 /* CallingBellFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallingBellFeature.swift; sourceTree = "<group>"; };
+		AF1384B72B384B3F00C52F32 /* TUICallKitExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TUICallKitExtension.swift; sourceTree = "<group>"; };
+		AF1384B82B384B3F00C52F32 /* NSObject+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
+		AF1384B92B384B3F00C52F32 /* TUIAudioMessageRecordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TUIAudioMessageRecordService.swift; sourceTree = "<group>"; };
+		AF1384BA2B384B3F00C52F32 /* NSObject+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extension.m"; sourceTree = "<group>"; };
+		AF1384BB2B384B3F00C52F32 /* TUICallKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TUICallKitService.swift; sourceTree = "<group>"; };
+		AF1384BC2B384B3F00C52F32 /* SwiftLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLoad.swift; sourceTree = "<group>"; };
+		AF1384BD2B384B3F00C52F32 /* TUICallKitObjectFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TUICallKitObjectFactory.swift; sourceTree = "<group>"; };
+		AF1384BF2B384B3F00C52F32 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AF1384C02B384B3F00C52F32 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AF1384C12B384B3F00C52F32 /* OfflinePushInfoConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflinePushInfoConfig.swift; sourceTree = "<group>"; };
+		AF2F78602B35CDB00057719F /* KipasKipasCall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KipasKipasCall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF2F78632B35CDB00057719F /* KipasKipasCall.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KipasKipasCall.h; sourceTree = "<group>"; };
+		AF2F78642B35CDB00057719F /* KipasKipasCall.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = KipasKipasCall.docc; sourceTree = "<group>"; };
+		AF4575022B37473400D81307 /* CallSearchUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallSearchUserCell.swift; sourceTree = "<group>"; };
+		AF45753A2B381DF800D81307 /* TencentUserSig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TencentUserSig.swift; sourceTree = "<group>"; };
+		AF45753C2B38274F00D81307 /* SceneDelegate+TUICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SceneDelegate+TUICall.swift"; sourceTree = "<group>"; };
+		AF4CA7D92B58EC1B007782F7 /* CallLoginAuthenticatorRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallLoginAuthenticatorRequest.swift; sourceTree = "<group>"; };
+		AF4CA7DB2B58EC9A007782F7 /* CallAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallAuthenticator.swift; sourceTree = "<group>"; };
+		AF4CA7DF2B58EEBB007782F7 /* TUICallLoginAuthenticatorRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TUICallLoginAuthenticatorRequest.swift; sourceTree = "<group>"; };
+		AF4CA7E92B58F241007782F7 /* TUICallManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TUICallManager.swift; sourceTree = "<group>"; };
+		AF4CA7EB2B58F2E9007782F7 /* TUICallAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TUICallAuthenticator.swift; sourceTree = "<group>"; };
+		AF4CA7ED2B58F723007782F7 /* CallLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallLoader.swift; sourceTree = "<group>"; };
+		AF4CA7EF2B58F944007782F7 /* TUICallLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TUICallLoader.swift; sourceTree = "<group>"; };
+		AF4CA7FE2B592C83007782F7 /* CallLoaderAuthDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallLoaderAuthDecorator.swift; sourceTree = "<group>"; };
+		AF638E692B3D5E5D000043A8 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/CallingLocalized.strings; sourceTree = "<group>"; };
+		AF638E6A2B3D5E5D000043A8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/CallingLocalized.strings"; sourceTree = "<group>"; };
+		AF638E6B2B3D5E5D000043A8 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/CallingLocalized.strings; sourceTree = "<group>"; };
+		AF638E6C2B3D5E5D000043A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CallingLocalized.strings; sourceTree = "<group>"; };
+		AF638E6D2B3D5E5D000043A8 /* Calling.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Calling.xcassets; sourceTree = "<group>"; };
+		AF638E6E2B3D5E5D000043A8 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
+		AF638E6F2B3D5E5D000043A8 /* TUICallKitTheme.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TUICallKitTheme.bundle; sourceTree = "<group>"; };
+		AF638E712B3D5E5D000043A8 /* phone_ringing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = phone_ringing.mp3; sourceTree = "<group>"; };
+		AF638E722B3D5E5D000043A8 /* phone_dialing.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = phone_dialing.m4a; sourceTree = "<group>"; };
+		AF638E732B3D5E5D000043A8 /* phone_hangup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = phone_hangup.mp3; sourceTree = "<group>"; };
+		AF9541B52B5EF45400E09D6D /* FeedCleeps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FeedCleeps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFA706362B361B0900C36BF9 /* CallPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallPermission.swift; sourceTree = "<group>"; };
+		AFA7063C2B361D0A00C36BF9 /* KipasKipasCallApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KipasKipasCallApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFA7063E2B361D0A00C36BF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AFA706402B361D0A00C36BF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AFA706472B361D0B00C36BF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFA7064A2B361D0B00C36BF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AFA7064C2B361D0B00C36BF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFA706512B361E9600C36BF9 /* CallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
+		AFA706592B36215300C36BF9 /* KipasKipasShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFA7065D2B36217A00C36BF9 /* CallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallView.swift; sourceTree = "<group>"; };
+		AFA706662B36388D00C36BF9 /* KipasKipasLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFA706672B36388D00C36BF9 /* KipasKipasLoginiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasLoginiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFA7066C2B36389D00C36BF9 /* KipasKipasNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFA7066D2B36389D00C36BF9 /* KipasKipasNetworkingUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasNetworkingUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFA706722B36397100C36BF9 /* SceneDelegate+Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SceneDelegate+Login.swift"; sourceTree = "<group>"; };
+		AFA706742B36399100C36BF9 /* UserLoggedInStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoggedInStore.swift; sourceTree = "<group>"; };
+		AFAE60DC2B37047000CCF5EA /* CallProfileEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallProfileEndpoint.swift; sourceTree = "<group>"; };
+		AFAE60E02B3706DB00CCF5EA /* CallProfileSocialMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallProfileSocialMedia.swift; sourceTree = "<group>"; };
+		AFAE60E22B3707DB00CCF5EA /* CallProfileDonationBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallProfileDonationBadge.swift; sourceTree = "<group>"; };
+		AFAE60E42B37089000CCF5EA /* CallProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallProfile.swift; sourceTree = "<group>"; };
+		AFAE60E62B370A9D00CCF5EA /* CallProfileSearchLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallProfileSearchLoader.swift; sourceTree = "<group>"; };
+		AFAE60E82B370B0300CCF5EA /* CallProfileDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallProfileDataLoader.swift; sourceTree = "<group>"; };
+		AFAE60ED2B370BC800CCF5EA /* RemoteCallProfileSocialMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCallProfileSocialMedia.swift; sourceTree = "<group>"; };
+		AFAE60EF2B370BF900CCF5EA /* RemoteCallProfileDonationBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCallProfileDonationBadge.swift; sourceTree = "<group>"; };
+		AFAE60F12B370C1C00CCF5EA /* RemoteCallProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCallProfileData.swift; sourceTree = "<group>"; };
+		AFAE60F42B370D8F00CCF5EA /* CallProfileSearchMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallProfileSearchMapper.swift; sourceTree = "<group>"; };
+		AFAE60F62B370DC200CCF5EA /* HTTPURLResponse+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+Ext.swift"; sourceTree = "<group>"; };
+		AFAE60F82B370F1200CCF5EA /* RemoteCallProfileDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCallProfileDataResponse.swift; sourceTree = "<group>"; };
+		AFAE60FA2B370F3000CCF5EA /* RemoteCallProfileSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCallProfileSearchResponse.swift; sourceTree = "<group>"; };
+		AFAE60FF2B371CA300CCF5EA /* CallProfileDataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallProfileDataMapper.swift; sourceTree = "<group>"; };
+		AFAE61052B37280E00CCF5EA /* RemoteCallProfileSearchLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCallProfileSearchLoader.swift; sourceTree = "<group>"; };
+		AFAE61072B3728EA00CCF5EA /* RemoteCallProfileDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCallProfileDataLoader.swift; sourceTree = "<group>"; };
+		AFAE610B2B372C3500CCF5EA /* SceneDelegate+Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SceneDelegate+Profile.swift"; sourceTree = "<group>"; };
+		AFAE610D2B3735D700CCF5EA /* CallSearchUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallSearchUserController.swift; sourceTree = "<group>"; };
+		AFAE610F2B3735E000CCF5EA /* CallSearchUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallSearchUserView.swift; sourceTree = "<group>"; };
+		C072A95F16CCAC5F6E65E0DD /* Pods_KipasKipasCall_KipasKipasTUICall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KipasKipasCall_KipasKipasTUICall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C37961013C9905B093FC14CF /* Pods_KipasKipasCall_KipasKipasCallApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KipasKipasCall_KipasKipasCallApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6DAB81CB32012708E846841 /* Pods-KipasKipasCall.livedebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasCall.livedebug.xcconfig"; path = "Target Support Files/Pods-KipasKipasCall/Pods-KipasKipasCall.livedebug.xcconfig"; sourceTree = "<group>"; };
+		C93DD64B99CA7D61B69E92B3 /* Pods-KipasKipasCall-KipasKipasCallApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasCall-KipasKipasCallApp.release.xcconfig"; path = "Target Support Files/Pods-KipasKipasCall-KipasKipasCallApp/Pods-KipasKipasCall-KipasKipasCallApp.release.xcconfig"; sourceTree = "<group>"; };
+		D350C6A67DB8A38C6222AE32 /* Pods_KipasKipasCall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KipasKipasCall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D50FD4500DDACED55FA81205 /* Pods-KipasKipasCall-KipasKipasCallApp.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasCall-KipasKipasCallApp.staging.xcconfig"; path = "Target Support Files/Pods-KipasKipasCall-KipasKipasCallApp/Pods-KipasKipasCall-KipasKipasCallApp.staging.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF2F785D2B35CDB00057719F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF4CA7F12B58FAC3007782F7 /* KipasKipasShared.framework in Frameworks */,
+				AFAE60FC2B37111B00CCF5EA /* KipasKipasNetworking.framework in Frameworks */,
+				07CB32CABA07D5D163F5F14F /* Pods_KipasKipasCall.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFA706392B361D0A00C36BF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA706702B36389D00C36BF9 /* KipasKipasNetworkingUtils.framework in Frameworks */,
+				AFA7066A2B36388D00C36BF9 /* KipasKipasLoginiOS.framework in Frameworks */,
+				AFA7066E2B36389D00C36BF9 /* KipasKipasNetworking.framework in Frameworks */,
+				AFA9BB442B5EFAFF00580F6A /* Disk in Frameworks */,
+				AF9541B62B5EF45400E09D6D /* FeedCleeps.framework in Frameworks */,
+				AFA7065F2B3622F300C36BF9 /* KipasKipasCall.framework in Frameworks */,
+				AFA9BB412B5EFA1D00580F6A /* Sentry in Frameworks */,
+				AFAE61042B37260700CCF5EA /* Kingfisher in Frameworks */,
+				AFA706642B3622F700C36BF9 /* KipasKipasShared.framework in Frameworks */,
+				AFA706682B36388D00C36BF9 /* KipasKipasLogin.framework in Frameworks */,
+				1991CC092AB6F32099325AEB /* Pods_KipasKipasCall_KipasKipasCallApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16325F545315B4CF01018EA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53290C0F58D8488AC889D3D4 /* Pods-KipasKipasCall.debug.xcconfig */,
+				3FE6206D089554220BDE1CF3 /* Pods-KipasKipasCall.release.xcconfig */,
+				5ADE7D9DC968149D06136B9E /* Pods-KipasKipasCall-KipasKipasCallApp.debug.xcconfig */,
+				C93DD64B99CA7D61B69E92B3 /* Pods-KipasKipasCall-KipasKipasCallApp.release.xcconfig */,
+				1DCFD542372093760C83AF15 /* Pods-KipasKipasCall-KipasKipasTUICall.debug.xcconfig */,
+				2FAF726E539613977DF74F59 /* Pods-KipasKipasCall-KipasKipasTUICall.release.xcconfig */,
+				4F81EF5D147B8EC0A1F5B337 /* Pods-KipasKipasCall.proddebug.xcconfig */,
+				5D0476F395F1C46851541709 /* Pods-KipasKipasCall.staging.xcconfig */,
+				77307A660CB175E6F5675EDF /* Pods-KipasKipasCall-KipasKipasCallApp.proddebug.xcconfig */,
+				D50FD4500DDACED55FA81205 /* Pods-KipasKipasCall-KipasKipasCallApp.staging.xcconfig */,
+				C6DAB81CB32012708E846841 /* Pods-KipasKipasCall.livedebug.xcconfig */,
+				0B0F894E6C28276AB8E561E6 /* Pods-KipasKipasCall-KipasKipasCallApp.livedebug.xcconfig */,
+				277DF9E4178762BC505D1821 /* Pods-KipasKipasCall.testpk.xcconfig */,
+				7D573C297AF3C3260517D7DE /* Pods-KipasKipasCall-KipasKipasCallApp.testpk.xcconfig */,
+				671E2C5C865346D2DF64BE27 /* Pods-KipasKipasCall.debugpk.xcconfig */,
+				17681C1C386033C44B461474 /* Pods-KipasKipasCall-KipasKipasCallApp.debugpk.xcconfig */,
+			);
+			name = Pods;
+			path = ../../Pods;
+			sourceTree = "<group>";
+		};
+		AF1384572B384B3F00C52F32 /* TUICallKit-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				AF638E662B3D5E5D000043A8 /* Resources */,
+				AF1384582B384B3F00C52F32 /* ViewModel */,
+				AF1384782B384B3F00C52F32 /* TUICallKitImpl.swift */,
+				AF1384792B384B3F00C52F32 /* Utils */,
+				AF1384802B384B3F00C52F32 /* State */,
+				AF1384832B384B3F00C52F32 /* Manager */,
+				AF1384852B384B3F00C52F32 /* TUICallKit.swift */,
+				AF1384862B384B3F00C52F32 /* View */,
+				AF1384B42B384B3F00C52F32 /* Feature */,
+				AF1384B62B384B3F00C52F32 /* Service */,
+				AF1384BE2B384B3F00C52F32 /* Data */,
+			);
+			name = "TUICallKit-Swift";
+			path = "../../SDK/TUICallKit/TUICallKit-Swift";
+			sourceTree = "<group>";
+		};
+		AF1384582B384B3F00C52F32 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AF1384592B384B3F00C52F32 /* Component */,
+				AF1384752B384B3F00C52F32 /* Root */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AF1384592B384B3F00C52F32 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				AF13845A2B384B3F00C52F32 /* CallWaitingHintViewModel.swift */,
+				AF13845B2B384B3F00C52F32 /* InviteUser */,
+				AF13845D2B384B3F00C52F32 /* UserInfoView */,
+				AF1384632B384B3F00C52F32 /* Function */,
+				AF1384682B384B3F00C52F32 /* SwitchAudioViewModel.swift */,
+				AF1384692B384B3F00C52F32 /* TimerViewModel.swift */,
+				AF13846A2B384B3F00C52F32 /* FloatView */,
+				AF13846D2B384B3F00C52F32 /* Recents */,
+				AF1384702B384B3F00C52F32 /* InviteUserButtonViewModel.swift */,
+				AF1384712B384B3F00C52F32 /* VideoLayout */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		AF13845B2B384B3F00C52F32 /* InviteUser */ = {
+			isa = PBXGroup;
+			children = (
+				AF13845C2B384B3F00C52F32 /* SelectGroupMemberViewModel.swift */,
+			);
+			path = InviteUser;
+			sourceTree = "<group>";
+		};
+		AF13845D2B384B3F00C52F32 /* UserInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				AF13845E2B384B3F00C52F32 /* Group */,
+				AF1384612B384B3F00C52F32 /* Single */,
+			);
+			path = UserInfoView;
+			sourceTree = "<group>";
+		};
+		AF13845E2B384B3F00C52F32 /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				AF13845F2B384B3F00C52F32 /* GroupCallerUserInfoViewModel.swift */,
+				AF1384602B384B3F00C52F32 /* InviteeAvatarListViewModel.swift */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
+		AF1384612B384B3F00C52F32 /* Single */ = {
+			isa = PBXGroup;
+			children = (
+				AF1384622B384B3F00C52F32 /* UserInfoViewModel.swift */,
+			);
+			path = Single;
+			sourceTree = "<group>";
+		};
+		AF1384632B384B3F00C52F32 /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				AF1384642B384B3F00C52F32 /* AudioAndVideoCalleeWaitingViewModel.swift */,
+				AF1384652B384B3F00C52F32 /* VideoCallerWaitingViewModel.swift */,
+				AF1384662B384B3F00C52F32 /* VideoCallerAndCalleeAcceptedViewModel.swift */,
+				AF1384672B384B3F00C52F32 /* AudioCallerWaitingAndAcceptedViewModel.swift */,
+			);
+			path = Function;
+			sourceTree = "<group>";
+		};
+		AF13846A2B384B3F00C52F32 /* FloatView */ = {
+			isa = PBXGroup;
+			children = (
+				AF13846B2B384B3F00C52F32 /* FloatingWindowViewModel.swift */,
+				AF13846C2B384B3F00C52F32 /* FloatingWindowButtonViewModel.swift */,
+			);
+			path = FloatView;
+			sourceTree = "<group>";
+		};
+		AF13846D2B384B3F00C52F32 /* Recents */ = {
+			isa = PBXGroup;
+			children = (
+				AF13846E2B384B3F00C52F32 /* TUICallRecordCallsCellViewModel.swift */,
+				AF13846F2B384B3F00C52F32 /* TUICallRecordCallsViewModel.swift */,
+			);
+			path = Recents;
+			sourceTree = "<group>";
+		};
+		AF1384712B384B3F00C52F32 /* VideoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				AF1384722B384B3F00C52F32 /* SingleCallVideoLayoutModel.swift */,
+				AF1384732B384B3F00C52F32 /* GroupCallVideoLayoutViewModel.swift */,
+				AF1384742B384B3F00C52F32 /* GroupCallVideoCellViewModel.swift */,
+			);
+			path = VideoLayout;
+			sourceTree = "<group>";
+		};
+		AF1384752B384B3F00C52F32 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				AF1384762B384B3F00C52F32 /* GroupCallViewModel.swift */,
+				AF1384772B384B3F00C52F32 /* SingleCallViewModel.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		AF1384792B384B3F00C52F32 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AF13847A2B384B3F00C52F32 /* Localized.swift */,
+				AF13847B2B384B3F00C52F32 /* TUICallKitCommon.swift */,
+				AF13847C2B384B3F00C52F32 /* GCDTimer.swift */,
+				AF13847D2B384B3F00C52F32 /* Observers.swift */,
+				AF13847E2B384B3F00C52F32 /* TUICoreDefineConvert.swift */,
+				AF13847F2B384B3F00C52F32 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		AF1384802B384B3F00C52F32 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				AF1384812B384B3F00C52F32 /* TUICallEvent.swift */,
+				AF1384822B384B3F00C52F32 /* TUICallState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		AF1384832B384B3F00C52F32 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				AF1384842B384B3F00C52F32 /* CallEngineManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		AF1384862B384B3F00C52F32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF1384872B384B3F00C52F32 /* WindowManager.swift */,
+				AF1384882B384B3F00C52F32 /* CallKitViewController.swift */,
+				AF1384892B384B3F00C52F32 /* Component */,
+				AF1384B12B384B3F00C52F32 /* Root */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF1384892B384B3F00C52F32 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				AF13848A2B384B3F00C52F32 /* CallWaitingHintView.swift */,
+				AF13848B2B384B3F00C52F32 /* InviteUser */,
+				AF13848E2B384B3F00C52F32 /* TimerView.swift */,
+				AF13848F2B384B3F00C52F32 /* InviteUserButton.swift */,
+				AF1384902B384B3F00C52F32 /* UserInfoView */,
+				AF1384982B384B3F00C52F32 /* Function */,
+				AF13849D2B384B3F00C52F32 /* Common */,
+				AF1384A32B384B3F00C52F32 /* FloatView */,
+				AF1384A72B384B3F00C52F32 /* Recents */,
+				AF1384AA2B384B3F00C52F32 /* SwitchAudioView.swift */,
+				AF1384AB2B384B3F00C52F32 /* VideoLayout */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		AF13848B2B384B3F00C52F32 /* InviteUser */ = {
+			isa = PBXGroup;
+			children = (
+				AF13848C2B384B3F00C52F32 /* SelectGroupMemberCell.swift */,
+				AF13848D2B384B3F00C52F32 /* SelectGroupMemberViewController.swift */,
+			);
+			path = InviteUser;
+			sourceTree = "<group>";
+		};
+		AF1384902B384B3F00C52F32 /* UserInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				AF1384912B384B3F00C52F32 /* Group */,
+				AF1384952B384B3F00C52F32 /* Single */,
+			);
+			path = UserInfoView;
+			sourceTree = "<group>";
+		};
+		AF1384912B384B3F00C52F32 /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				AF1384922B384B3F00C52F32 /* InviteeAvatarListView.swift */,
+				AF1384932B384B3F00C52F32 /* InviteeAvatarCell.swift */,
+				AF1384942B384B3F00C52F32 /* GroupCallerUserInfoView.swift */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
+		AF1384952B384B3F00C52F32 /* Single */ = {
+			isa = PBXGroup;
+			children = (
+				AF1384962B384B3F00C52F32 /* AudioCallUserInfoView.swift */,
+				AF1384972B384B3F00C52F32 /* VideoCallUserInfoView.swift */,
+			);
+			path = Single;
+			sourceTree = "<group>";
+		};
+		AF1384982B384B3F00C52F32 /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				AF1384992B384B3F00C52F32 /* VideoCallerAndCalleeAcceptedView.swift */,
+				AF13849A2B384B3F00C52F32 /* AudioCallerWaitingAndAcceptedView.swift */,
+				AF13849B2B384B3F00C52F32 /* AudioAndVideoCalleeWaitingView.swift */,
+				AF13849C2B384B3F00C52F32 /* VideoCallerWaitingView.swift */,
+			);
+			path = Function;
+			sourceTree = "<group>";
+		};
+		AF13849D2B384B3F00C52F32 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AF13849E2B384B3F00C52F32 /* UIViewControllerCommon.swift */,
+				AF13849F2B384B3F00C52F32 /* BaseControlButton.swift */,
+				AF1384A02B384B3F00C52F32 /* UIButtonCommon.swift */,
+				AF1384A12B384B3F00C52F32 /* UIColorCommon.swift */,
+				AF1384A22B384B3F00C52F32 /* UIWindowCommon.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AF1384A32B384B3F00C52F32 /* FloatView */ = {
+			isa = PBXGroup;
+			children = (
+				AF1384A42B384B3F00C52F32 /* FloatingWindowButton.swift */,
+				AF1384A52B384B3F00C52F32 /* FloatWindowViewController.swift */,
+				AF1384A62B384B3F00C52F32 /* FloatingWindowView.swift */,
+			);
+			path = FloatView;
+			sourceTree = "<group>";
+		};
+		AF1384A72B384B3F00C52F32 /* Recents */ = {
+			isa = PBXGroup;
+			children = (
+				AF1384A82B384B3F00C52F32 /* TUICallRecordCallsCell.swift */,
+				AF1384A92B384B3F00C52F32 /* TUICallRecordCallsViewController.swift */,
+			);
+			path = Recents;
+			sourceTree = "<group>";
+		};
+		AF1384AB2B384B3F00C52F32 /* VideoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				AF1384AC2B384B3F00C52F32 /* SingleCallVideoLayout.swift */,
+				AF1384AD2B384B3F00C52F32 /* GroupCallVideoCell.swift */,
+				AF1384AE2B384B3F00C52F32 /* VideoView.swift */,
+				AF1384AF2B384B3F00C52F32 /* VideoFactory.swift */,
+				AF1384B02B384B3F00C52F32 /* GroupCallVideoLayout.swift */,
+			);
+			path = VideoLayout;
+			sourceTree = "<group>";
+		};
+		AF1384B12B384B3F00C52F32 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				AF1384B22B384B3F00C52F32 /* SingleCallView.swift */,
+				AF1384B32B384B3F00C52F32 /* GroupCallView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		AF1384B42B384B3F00C52F32 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				AF1384B52B384B3F00C52F32 /* CallingBellFeature.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		AF1384B62B384B3F00C52F32 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AF1384B72B384B3F00C52F32 /* TUICallKitExtension.swift */,
+				AF1384B82B384B3F00C52F32 /* NSObject+Extension.h */,
+				AF1384B92B384B3F00C52F32 /* TUIAudioMessageRecordService.swift */,
+				AF1384BA2B384B3F00C52F32 /* NSObject+Extension.m */,
+				AF1384BB2B384B3F00C52F32 /* TUICallKitService.swift */,
+				AF1384BC2B384B3F00C52F32 /* SwiftLoad.swift */,
+				AF1384BD2B384B3F00C52F32 /* TUICallKitObjectFactory.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		AF1384BE2B384B3F00C52F32 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AF1384BF2B384B3F00C52F32 /* Constants.swift */,
+				AF1384C02B384B3F00C52F32 /* User.swift */,
+				AF1384C12B384B3F00C52F32 /* OfflinePushInfoConfig.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AF2F78562B35CDB00057719F = {
+			isa = PBXGroup;
+			children = (
+				AF1384572B384B3F00C52F32 /* TUICallKit-Swift */,
+				AF2F78622B35CDB00057719F /* KipasKipasCall */,
+				AFA7063D2B361D0A00C36BF9 /* KipasKipasCallApp */,
+				AF2F78612B35CDB00057719F /* Products */,
+				AFA706532B36213A00C36BF9 /* Frameworks */,
+				16325F545315B4CF01018EA8 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		AF2F78612B35CDB00057719F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F78602B35CDB00057719F /* KipasKipasCall.framework */,
+				AFA7063C2B361D0A00C36BF9 /* KipasKipasCallApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF2F78622B35CDB00057719F /* KipasKipasCall */ = {
+			isa = PBXGroup;
+			children = (
+				AFA706342B361A7800C36BF9 /* Sources */,
+				AF2F78632B35CDB00057719F /* KipasKipasCall.h */,
+				AF2F78642B35CDB00057719F /* KipasKipasCall.docc */,
+			);
+			path = KipasKipasCall;
+			sourceTree = "<group>";
+		};
+		AF4575392B381DEC00D81307 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				AF45753A2B381DF800D81307 /* TencentUserSig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		AF638E662B3D5E5D000043A8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AF638E672B3D5E5D000043A8 /* Localized */,
+				AF638E6D2B3D5E5D000043A8 /* Calling.xcassets */,
+				AF638E6E2B3D5E5D000043A8 /* loading.gif */,
+				AF638E6F2B3D5E5D000043A8 /* TUICallKitTheme.bundle */,
+				AF638E702B3D5E5D000043A8 /* AudioFile */,
+			);
+			name = Resources;
+			path = ../Resources;
+			sourceTree = "<group>";
+		};
+		AF638E672B3D5E5D000043A8 /* Localized */ = {
+			isa = PBXGroup;
+			children = (
+				AF638E682B3D5E5D000043A8 /* CallingLocalized.strings */,
+			);
+			path = Localized;
+			sourceTree = "<group>";
+		};
+		AF638E702B3D5E5D000043A8 /* AudioFile */ = {
+			isa = PBXGroup;
+			children = (
+				AF638E712B3D5E5D000043A8 /* phone_ringing.mp3 */,
+				AF638E722B3D5E5D000043A8 /* phone_dialing.m4a */,
+				AF638E732B3D5E5D000043A8 /* phone_hangup.mp3 */,
+			);
+			path = AudioFile;
+			sourceTree = "<group>";
+		};
+		AFA706342B361A7800C36BF9 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AFAE60DB2B37041300CCF5EA /* API */,
+				AFAE60DE2B37069300CCF5EA /* Feature */,
+				AFA706352B361AE600C36BF9 /* Utils */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		AFA706352B361AE600C36BF9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AFA706362B361B0900C36BF9 /* CallPermission.swift */,
+				AFAE60F62B370DC200CCF5EA /* HTTPURLResponse+Ext.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		AFA7063D2B361D0A00C36BF9 /* KipasKipasCallApp */ = {
+			isa = PBXGroup;
+			children = (
+				AF4575392B381DEC00D81307 /* Config */,
+				AFA706502B361DEF00C36BF9 /* Application */,
+				AFA706472B361D0B00C36BF9 /* Assets.xcassets */,
+				AFA706492B361D0B00C36BF9 /* LaunchScreen.storyboard */,
+				AFA7064C2B361D0B00C36BF9 /* Info.plist */,
+			);
+			path = KipasKipasCallApp;
+			sourceTree = "<group>";
+		};
+		AFA706502B361DEF00C36BF9 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				AFA7063E2B361D0A00C36BF9 /* AppDelegate.swift */,
+				AFA706402B361D0A00C36BF9 /* SceneDelegate.swift */,
+				AFA706722B36397100C36BF9 /* SceneDelegate+Login.swift */,
+				AFAE610B2B372C3500CCF5EA /* SceneDelegate+Profile.swift */,
+				AF45753C2B38274F00D81307 /* SceneDelegate+TUICall.swift */,
+				AFA706742B36399100C36BF9 /* UserLoggedInStore.swift */,
+				AFA706512B361E9600C36BF9 /* CallViewController.swift */,
+				AFA7065D2B36217A00C36BF9 /* CallView.swift */,
+				AFAE610D2B3735D700CCF5EA /* CallSearchUserController.swift */,
+				AFAE610F2B3735E000CCF5EA /* CallSearchUserView.swift */,
+				AF4575022B37473400D81307 /* CallSearchUserCell.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		AFA706532B36213A00C36BF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF9541B52B5EF45400E09D6D /* FeedCleeps.framework */,
+				AFA7066C2B36389D00C36BF9 /* KipasKipasNetworking.framework */,
+				AFA7066D2B36389D00C36BF9 /* KipasKipasNetworkingUtils.framework */,
+				AFA706662B36388D00C36BF9 /* KipasKipasLogin.framework */,
+				AFA706672B36388D00C36BF9 /* KipasKipasLoginiOS.framework */,
+				AFA706592B36215300C36BF9 /* KipasKipasShared.framework */,
+				D350C6A67DB8A38C6222AE32 /* Pods_KipasKipasCall.framework */,
+				C37961013C9905B093FC14CF /* Pods_KipasKipasCall_KipasKipasCallApp.framework */,
+				C072A95F16CCAC5F6E65E0DD /* Pods_KipasKipasCall_KipasKipasTUICall.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFAE60DB2B37041300CCF5EA /* API */ = {
+			isa = PBXGroup;
+			children = (
+				AFAE60DC2B37047000CCF5EA /* CallProfileEndpoint.swift */,
+				AF4CA7E92B58F241007782F7 /* TUICallManager.swift */,
+				306938852B6F7A4F00683BA0 /* TUICallStateViewModel.swift */,
+				AFAE60EA2B370B6800CCF5EA /* Model */,
+				AFAE60F32B370D7C00CCF5EA /* Mapper */,
+				AFAE61052B37280E00CCF5EA /* RemoteCallProfileSearchLoader.swift */,
+				AFAE61072B3728EA00CCF5EA /* RemoteCallProfileDataLoader.swift */,
+				AF4CA7DF2B58EEBB007782F7 /* TUICallLoginAuthenticatorRequest.swift */,
+				AF4CA7EB2B58F2E9007782F7 /* TUICallAuthenticator.swift */,
+				AF4CA7EF2B58F944007782F7 /* TUICallLoader.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		AFAE60DE2B37069300CCF5EA /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				AFAE60DF2B37069F00CCF5EA /* Model */,
+				AFAE60E62B370A9D00CCF5EA /* CallProfileSearchLoader.swift */,
+				AFAE60E82B370B0300CCF5EA /* CallProfileDataLoader.swift */,
+				AF4CA7D92B58EC1B007782F7 /* CallLoginAuthenticatorRequest.swift */,
+				AF4CA7DB2B58EC9A007782F7 /* CallAuthenticator.swift */,
+				AF4CA7ED2B58F723007782F7 /* CallLoader.swift */,
+				AF4CA7FE2B592C83007782F7 /* CallLoaderAuthDecorator.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		AFAE60DF2B37069F00CCF5EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AFAE60E42B37089000CCF5EA /* CallProfile.swift */,
+				AFAE60E02B3706DB00CCF5EA /* CallProfileSocialMedia.swift */,
+				AFAE60E22B3707DB00CCF5EA /* CallProfileDonationBadge.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AFAE60EA2B370B6800CCF5EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AFAE60FA2B370F3000CCF5EA /* RemoteCallProfileSearchResponse.swift */,
+				AFAE60F82B370F1200CCF5EA /* RemoteCallProfileDataResponse.swift */,
+				AFAE60F12B370C1C00CCF5EA /* RemoteCallProfileData.swift */,
+				AFAE60ED2B370BC800CCF5EA /* RemoteCallProfileSocialMedia.swift */,
+				AFAE60EF2B370BF900CCF5EA /* RemoteCallProfileDonationBadge.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AFAE60F32B370D7C00CCF5EA /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				AFAE60F42B370D8F00CCF5EA /* CallProfileSearchMapper.swift */,
+				AFAE60FF2B371CA300CCF5EA /* CallProfileDataMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AF2F785B2B35CDB00057719F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF2F78712B35CDB00057719F /* KipasKipasCall.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AF2F785F2B35CDB00057719F /* KipasKipasCall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF2F78742B35CDB00057719F /* Build configuration list for PBXNativeTarget "KipasKipasCall" */;
+			buildPhases = (
+				5269B40BDEDC70E4300678E5 /* [CP] Check Pods Manifest.lock */,
+				AF2F785B2B35CDB00057719F /* Headers */,
+				AF2F785C2B35CDB00057719F /* Sources */,
+				AF2F785D2B35CDB00057719F /* Frameworks */,
+				AF2F785E2B35CDB00057719F /* Resources */,
+				6E1E979EA427A479CDDE6712 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KipasKipasCall;
+			productName = KipasKipasCall;
+			productReference = AF2F78602B35CDB00057719F /* KipasKipasCall.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AFA7063B2B361D0A00C36BF9 /* KipasKipasCallApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFA7064D2B361D0B00C36BF9 /* Build configuration list for PBXNativeTarget "KipasKipasCallApp" */;
+			buildPhases = (
+				CEB213E4F2905C7DBECD3589 /* [CP] Check Pods Manifest.lock */,
+				AFA706382B361D0A00C36BF9 /* Sources */,
+				AFA706392B361D0A00C36BF9 /* Frameworks */,
+				AFA7063A2B361D0A00C36BF9 /* Resources */,
+				AFA706632B3622F300C36BF9 /* Embed Frameworks */,
+				22E7073840DF85985B4BAFD2 /* [CP] Embed Pods Frameworks */,
+				C43343C64047E0B25F052CF8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFA706622B3622F300C36BF9 /* PBXTargetDependency */,
+			);
+			name = KipasKipasCallApp;
+			packageProductDependencies = (
+				AFAE61032B37260700CCF5EA /* Kingfisher */,
+				AFA9BB402B5EFA1D00580F6A /* Sentry */,
+				AFA9BB432B5EFAFF00580F6A /* Disk */,
+			);
+			productName = KipasKipasCallApp;
+			productReference = AFA7063C2B361D0A00C36BF9 /* KipasKipasCallApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF2F78572B35CDB00057719F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					AF2F785F2B35CDB00057719F = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					AFA7063B2B361D0A00C36BF9 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = AF2F785A2B35CDB00057719F /* Build configuration list for PBXProject "KipasKipasCall" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ar,
+				"zh-Hans",
+				ja,
+			);
+			mainGroup = AF2F78562B35CDB00057719F;
+			packageReferences = (
+				AFAE61022B37260700CCF5EA /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				AFA9BB3F2B5EFA1D00580F6A /* XCRemoteSwiftPackageReference "sentry-cocoa" */,
+				AFA9BB422B5EFAFF00580F6A /* XCRemoteSwiftPackageReference "Disk" */,
+			);
+			productRefGroup = AF2F78612B35CDB00057719F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF2F785F2B35CDB00057719F /* KipasKipasCall */,
+				AFA7063B2B361D0A00C36BF9 /* KipasKipasCallApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF2F785E2B35CDB00057719F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFA7063A2B361D0A00C36BF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA7064B2B361D0B00C36BF9 /* LaunchScreen.storyboard in Resources */,
+				AFA706482B361D0B00C36BF9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22E7073840DF85985B4BAFD2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KipasKipasCall-KipasKipasCallApp/Pods-KipasKipasCall-KipasKipasCallApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KipasKipasCall-KipasKipasCallApp/Pods-KipasKipasCall-KipasKipasCallApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KipasKipasCall-KipasKipasCallApp/Pods-KipasKipasCall-KipasKipasCallApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5269B40BDEDC70E4300678E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KipasKipasCall-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E1E979EA427A479CDDE6712 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KipasKipasCall/Pods-KipasKipasCall-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KipasKipasCall/Pods-KipasKipasCall-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KipasKipasCall/Pods-KipasKipasCall-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C43343C64047E0B25F052CF8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KipasKipasCall-KipasKipasCallApp/Pods-KipasKipasCall-KipasKipasCallApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KipasKipasCall-KipasKipasCallApp/Pods-KipasKipasCall-KipasKipasCallApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KipasKipasCall-KipasKipasCallApp/Pods-KipasKipasCall-KipasKipasCallApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEB213E4F2905C7DBECD3589 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KipasKipasCall-KipasKipasCallApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF2F785C2B35CDB00057719F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA706372B361B0900C36BF9 /* CallPermission.swift in Sources */,
+				AF4CA7DC2B58EC9A007782F7 /* CallAuthenticator.swift in Sources */,
+				AF4CA7FF2B592C83007782F7 /* CallLoaderAuthDecorator.swift in Sources */,
+				AFAE60F02B370BF900CCF5EA /* RemoteCallProfileDonationBadge.swift in Sources */,
+				AFAE61002B371CA300CCF5EA /* CallProfileDataMapper.swift in Sources */,
+				AF4CA7EA2B58F241007782F7 /* TUICallManager.swift in Sources */,
+				AFAE60F72B370DC200CCF5EA /* HTTPURLResponse+Ext.swift in Sources */,
+				AFAE60E32B3707DB00CCF5EA /* CallProfileDonationBadge.swift in Sources */,
+				AFAE60FB2B370F3000CCF5EA /* RemoteCallProfileSearchResponse.swift in Sources */,
+				AFAE61082B3728EA00CCF5EA /* RemoteCallProfileDataLoader.swift in Sources */,
+				AF4CA7F02B58F944007782F7 /* TUICallLoader.swift in Sources */,
+				AFAE60F22B370C1C00CCF5EA /* RemoteCallProfileData.swift in Sources */,
+				AFAE60EE2B370BC800CCF5EA /* RemoteCallProfileSocialMedia.swift in Sources */,
+				AF2F78652B35CDB00057719F /* KipasKipasCall.docc in Sources */,
+				AFAE60F52B370D8F00CCF5EA /* CallProfileSearchMapper.swift in Sources */,
+				AFAE60F92B370F1200CCF5EA /* RemoteCallProfileDataResponse.swift in Sources */,
+				AF4CA7EE2B58F723007782F7 /* CallLoader.swift in Sources */,
+				AFAE60E52B37089000CCF5EA /* CallProfile.swift in Sources */,
+				AF4CA7EC2B58F2E9007782F7 /* TUICallAuthenticator.swift in Sources */,
+				AF4CA7DA2B58EC1B007782F7 /* CallLoginAuthenticatorRequest.swift in Sources */,
+				306938862B6F7A4F00683BA0 /* TUICallStateViewModel.swift in Sources */,
+				AFAE60E92B370B0300CCF5EA /* CallProfileDataLoader.swift in Sources */,
+				AF4CA7E02B58EEBB007782F7 /* TUICallLoginAuthenticatorRequest.swift in Sources */,
+				AFAE60DD2B37047000CCF5EA /* CallProfileEndpoint.swift in Sources */,
+				AFAE60E72B370A9D00CCF5EA /* CallProfileSearchLoader.swift in Sources */,
+				AFAE61062B37280E00CCF5EA /* RemoteCallProfileSearchLoader.swift in Sources */,
+				AFAE60E12B3706DB00CCF5EA /* CallProfileSocialMedia.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFA706382B361D0A00C36BF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF4575032B37473400D81307 /* CallSearchUserCell.swift in Sources */,
+				AFA7065E2B36217A00C36BF9 /* CallView.swift in Sources */,
+				AFA706752B36399100C36BF9 /* UserLoggedInStore.swift in Sources */,
+				AFAE610C2B372C3500CCF5EA /* SceneDelegate+Profile.swift in Sources */,
+				AFA706732B36397100C36BF9 /* SceneDelegate+Login.swift in Sources */,
+				AFAE61102B3735E000CCF5EA /* CallSearchUserView.swift in Sources */,
+				AFA7063F2B361D0A00C36BF9 /* AppDelegate.swift in Sources */,
+				AF45753B2B381DF800D81307 /* TencentUserSig.swift in Sources */,
+				AF45753D2B38274F00D81307 /* SceneDelegate+TUICall.swift in Sources */,
+				AFA706522B361E9600C36BF9 /* CallViewController.swift in Sources */,
+				AFAE610E2B3735D700CCF5EA /* CallSearchUserController.swift in Sources */,
+				AFA706412B361D0A00C36BF9 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFA706622B3622F300C36BF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF2F785F2B35CDB00057719F /* KipasKipasCall */;
+			targetProxy = AFA706612B3622F300C36BF9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF638E682B3D5E5D000043A8 /* CallingLocalized.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF638E692B3D5E5D000043A8 /* ar */,
+				AF638E6A2B3D5E5D000043A8 /* zh-Hans */,
+				AF638E6B2B3D5E5D000043A8 /* ja */,
+				AF638E6C2B3D5E5D000043A8 /* en */,
+			);
+			name = CallingLocalized.strings;
+			sourceTree = "<group>";
+		};
+		AFA706492B361D0B00C36BF9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFA7064A2B361D0B00C36BF9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D77B1EB2B9175D8008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = LiveDebug;
+		};
+		5D77B1EC2B9175D8008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6DAB81CB32012708E846841 /* Pods-KipasKipasCall.livedebug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasCall;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = LiveDebug;
+		};
+		5D77B1ED2B9175D8008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B0F894E6C28276AB8E561E6 /* Pods-KipasKipasCall-KipasKipasCallApp.livedebug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_BASE_URL = "https://api-main.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasCallApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasCallApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = LiveDebug;
+		};
+		AF08845F2B712E8200895282 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Staging;
+		};
+		AF0884602B712E8200895282 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D0476F395F1C46851541709 /* Pods-KipasKipasCall.staging.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasCall;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		AF0884612B712E8200895282 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D50FD4500DDACED55FA81205 /* Pods-KipasKipasCall-KipasKipasCallApp.staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_BASE_URL = "https://api-main.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasCallApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasCallApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		AF0884622B712E9200895282 /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = ProdDebug;
+		};
+		AF0884632B712E9200895282 /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F81EF5D147B8EC0A1F5B337 /* Pods-KipasKipasCall.proddebug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasCall;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = ProdDebug;
+		};
+		AF0884642B712E9200895282 /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77307A660CB175E6F5675EDF /* Pods-KipasKipasCall-KipasKipasCallApp.proddebug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_BASE_URL = "https://api-main.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasCallApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasCallApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = ProdDebug;
+		};
+		AF2F78722B35CDB00057719F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AF2F78732B35CDB00057719F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AF2F78752B35CDB00057719F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53290C0F58D8488AC889D3D4 /* Pods-KipasKipasCall.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasCall;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF2F78762B35CDB00057719F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FE6206D089554220BDE1CF3 /* Pods-KipasKipasCall.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasCall;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AFA7064E2B361D0B00C36BF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ADE7D9DC968149D06136B9E /* Pods-KipasKipasCall-KipasKipasCallApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_BASE_URL = "https://api-main.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasCallApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasCallApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFA7064F2B361D0B00C36BF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C93DD64B99CA7D61B69E92B3 /* Pods-KipasKipasCall-KipasKipasCallApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_BASE_URL = "https://api-main.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasCallApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasCallApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF2F785A2B35CDB00057719F /* Build configuration list for PBXProject "KipasKipasCall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF2F78722B35CDB00057719F /* Debug */,
+				5D77B1EB2B9175D8008CC295 /* LiveDebug */,
+				AF2F78732B35CDB00057719F /* Release */,
+				AF0884622B712E9200895282 /* ProdDebug */,
+				AF08845F2B712E8200895282 /* Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF2F78742B35CDB00057719F /* Build configuration list for PBXNativeTarget "KipasKipasCall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF2F78752B35CDB00057719F /* Debug */,
+				5D77B1EC2B9175D8008CC295 /* LiveDebug */,
+				AF2F78762B35CDB00057719F /* Release */,
+				AF0884632B712E9200895282 /* ProdDebug */,
+				AF0884602B712E8200895282 /* Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFA7064D2B361D0B00C36BF9 /* Build configuration list for PBXNativeTarget "KipasKipasCallApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFA7064E2B361D0B00C36BF9 /* Debug */,
+				5D77B1ED2B9175D8008CC295 /* LiveDebug */,
+				AFA7064F2B361D0B00C36BF9 /* Release */,
+				AF0884642B712E9200895282 /* ProdDebug */,
+				AF0884612B712E8200895282 /* Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AFA9BB3F2B5EFA1D00580F6A /* XCRemoteSwiftPackageReference "sentry-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/getsentry/sentry-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		AFA9BB422B5EFAFF00580F6A /* XCRemoteSwiftPackageReference "Disk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/saoudrizwan/Disk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.4;
+			};
+		};
+		AFAE61022B37260700CCF5EA /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AFA9BB402B5EFA1D00580F6A /* Sentry */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFA9BB3F2B5EFA1D00580F6A /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
+			productName = Sentry;
+		};
+		AFA9BB432B5EFAFF00580F6A /* Disk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFA9BB422B5EFAFF00580F6A /* XCRemoteSwiftPackageReference "Disk" */;
+			productName = Disk;
+		};
+		AFAE61032B37260700CCF5EA /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFAE61022B37260700CCF5EA /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AF2F78572B35CDB00057719F /* Project object */;
+}

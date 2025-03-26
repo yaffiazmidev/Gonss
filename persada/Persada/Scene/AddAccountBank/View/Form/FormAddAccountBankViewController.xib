@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoMedium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="RobotoRegular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FormAddAccountBankViewController" customModule="KipasKipas" customModuleProvider="target">
+            <connections>
+                <outlet property="addRekButton" destination="5KG-rg-8wm" id="Agb-Tb-Vcl"/>
+                <outlet property="bottomNamaBankLabel" destination="5qu-qW-54o" id="n8P-GU-s9A"/>
+                <outlet property="bottomNamaPemilikLabel" destination="Ggb-d6-DwX" id="nzE-yW-XHt"/>
+                <outlet property="bottomNomorRekLabel" destination="IAd-TL-Ezq" id="frK-la-3Am"/>
+                <outlet property="infoLabel" destination="UZ1-v2-M4m" id="egN-ZA-ejf"/>
+                <outlet property="infoStackView" destination="uJ1-Zj-Oj4" id="38f-KR-4Ra"/>
+                <outlet property="namaBankLabel" destination="niU-m1-zjq" id="JyQ-ML-yNA"/>
+                <outlet property="namaBankView" destination="ka9-sF-5fP" id="gUm-nV-9X9"/>
+                <outlet property="nomorRekeningTextField" destination="jtZ-r4-1Cm" id="vFk-cy-vvC"/>
+                <outlet property="notFoundRekeningLabel" destination="Uo5-v7-C3Y" id="2A9-bN-ewF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5ih-PJ-D7d">
+                    <rect key="frame" x="20" y="76" width="374" height="180"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="D9A-eB-gHP">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="66"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nama Bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IrF-Cg-9yS">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="16"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="16" id="ISv-Uh-2Z9"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
+                                    <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ka9-sF-5fP">
+                                    <rect key="frame" x="0.0" y="24" width="374" height="42"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plih nama bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="niU-m1-zjq">
+                                            <rect key="frame" x="15" y="14" width="83" height="14.5"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
+                                            <color key="textColor" red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2gP-M6-HFG">
+                                            <rect key="frame" x="338" y="14" width="18" height="14.5"/>
+                                            <color key="tintColor" red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="18" id="B4a-Wg-FrR"/>
+                                                <constraint firstAttribute="width" constant="18" id="SiS-ME-Sl3"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="2gP-M6-HFG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="niU-m1-zjq" secondAttribute="trailing" constant="8" id="DOH-wL-ThR"/>
+                                        <constraint firstItem="2gP-M6-HFG" firstAttribute="centerY" secondItem="ka9-sF-5fP" secondAttribute="centerY" id="Euk-ge-wxW"/>
+                                        <constraint firstItem="niU-m1-zjq" firstAttribute="leading" secondItem="ka9-sF-5fP" secondAttribute="leading" constant="15" id="ff9-cL-vO0"/>
+                                        <constraint firstAttribute="trailing" secondItem="2gP-M6-HFG" secondAttribute="trailing" constant="18" id="jYS-NF-hB9"/>
+                                        <constraint firstItem="niU-m1-zjq" firstAttribute="centerY" secondItem="ka9-sF-5fP" secondAttribute="centerY" id="xIn-Bv-RzV"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="8"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="66" id="jPj-Px-J1D"/>
+                            </constraints>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="klh-gf-rtr">
+                            <rect key="frame" x="0.0" y="74" width="374" height="32"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CkZ-p7-dGy">
+                            <rect key="frame" x="0.0" y="114" width="374" height="66"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nomor Rekening" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beF-mJ-IEr">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="16"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="16" id="vc6-J2-4sK"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                    <color key="textColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Masukkan nomor rekening" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jtZ-r4-1Cm">
+                                    <rect key="frame" x="0.0" y="24" width="374" height="42"/>
+                                    <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="8"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="66" id="Cji-il-c9h"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="l1J-QI-65e"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5KG-rg-8wm">
+                    <rect key="frame" x="20" y="794" width="374" height="48"/>
+                    <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="quQ-Pm-x5Y"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                    <state key="normal" title="Tambah Rekening">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="7"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="addRekPressed:" destination="-1" eventType="touchUpInside" id="tQc-u6-EHQ"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UZ1-v2-M4m">
+                    <rect key="frame" x="20" y="284" width="374" height="181"/>
+                    <subviews>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rekening Tidak Ditemukan" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uo5-v7-C3Y">
+                            <rect key="frame" x="107" y="83.5" width="160" height="14.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="160" id="RdW-hz-m1i"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
+                            <color key="textColor" red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uJ1-Zj-Oj4">
+                            <rect key="frame" x="19" y="16" width="347" height="149"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="g8a-47-QFb">
+                                    <rect key="frame" x="0.0" y="0.0" width="347" height="33"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Nama Bank" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaU-3T-TRB">
+                                            <rect key="frame" x="0.0" y="0.0" width="347" height="14.5"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
+                                            <color key="textColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Nama Bank" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qu-qW-54o" userLabel="Nama Bank Label">
+                                            <rect key="frame" x="0.0" y="18.5" width="347" height="14.5"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="SJk-Ns-CVc">
+                                    <rect key="frame" x="0.0" y="53" width="347" height="38"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Atas Nama" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Th-AC-kPw">
+                                            <rect key="frame" x="0.0" y="0.0" width="347" height="19.5"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
+                                            <color key="textColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Atas Nama" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggb-d6-DwX" userLabel="Nama Bank Label">
+                                            <rect key="frame" x="0.0" y="23.5" width="347" height="14.5"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="38" id="BVB-UT-bxG"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Sdt-gR-lcb">
+                                    <rect key="frame" x="0.0" y="111" width="347" height="38"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Nomor Rekening" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aex-2X-Gab">
+                                            <rect key="frame" x="0.0" y="0.0" width="347" height="19.5"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
+                                            <color key="textColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="123456" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAd-TL-Ezq" userLabel="Nama Bank Label">
+                                            <rect key="frame" x="0.0" y="23.5" width="347" height="14.5"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="38" id="5dn-Fd-SrZ"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="uJ1-Zj-Oj4" secondAttribute="bottom" constant="16" id="8ll-cT-CDm"/>
+                        <constraint firstItem="Uo5-v7-C3Y" firstAttribute="centerY" secondItem="UZ1-v2-M4m" secondAttribute="centerY" id="B4T-1G-6Cc"/>
+                        <constraint firstItem="uJ1-Zj-Oj4" firstAttribute="leading" secondItem="UZ1-v2-M4m" secondAttribute="leading" constant="19" id="GOb-rP-NcF"/>
+                        <constraint firstItem="uJ1-Zj-Oj4" firstAttribute="top" secondItem="UZ1-v2-M4m" secondAttribute="top" constant="16" id="NoZ-EC-3uo"/>
+                        <constraint firstAttribute="trailing" secondItem="uJ1-Zj-Oj4" secondAttribute="trailing" constant="8" id="atr-cO-shf"/>
+                        <constraint firstItem="Uo5-v7-C3Y" firstAttribute="centerX" secondItem="UZ1-v2-M4m" secondAttribute="centerX" id="gAw-Pm-kCC"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="7"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UZ1-v2-M4m" secondAttribute="trailing" constant="20" id="9Q5-dU-edO"/>
+                <constraint firstItem="5ih-PJ-D7d" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Hd8-zu-TnH"/>
+                <constraint firstItem="5ih-PJ-D7d" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="LbH-hv-iOF"/>
+                <constraint firstItem="UZ1-v2-M4m" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Lhl-Ba-Xlt"/>
+                <constraint firstItem="UZ1-v2-M4m" firstAttribute="top" secondItem="5ih-PJ-D7d" secondAttribute="bottom" constant="28" id="M9a-e1-upu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5ih-PJ-D7d" secondAttribute="trailing" constant="20" id="WRJ-G9-Chu"/>
+                <constraint firstItem="5KG-rg-8wm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="oyg-tj-l6Q"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5KG-rg-8wm" secondAttribute="trailing" constant="20" id="vLA-aS-fGV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="5KG-rg-8wm" secondAttribute="bottom" constant="20" id="yHG-Dl-tTj"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="131"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

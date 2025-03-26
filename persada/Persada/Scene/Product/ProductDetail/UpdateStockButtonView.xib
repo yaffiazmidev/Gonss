@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoRegular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UpdateStockButtonView" customModule="KipasKipas" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="DxI-NT-d3Q" customClass="UpdateStockButtonView" customModule="KipasKipas" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rTN-ya-ew7">
+                    <rect key="frame" x="0.0" y="756" width="390" height="88"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="VrN-hW-Er2">
+                            <rect key="frame" x="20" y="12" width="350" height="44"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjy-Ek-zNZ" customClass="PrimaryButton" customModule="KipasKipas" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="350" height="44"/>
+                                    <color key="backgroundColor" name="primary"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                    <state key="normal" title="Update Stok Produk">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="updateAction:" destination="DxI-NT-d3Q" eventType="touchUpInside" id="Trl-iJ-kHI"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wLX-u4-ODF">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="0.66666666666666663"/>
+                            <color key="backgroundColor" name="black25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="lU4-Dw-C9A"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="wLX-u4-ODF" firstAttribute="top" secondItem="rTN-ya-ew7" secondAttribute="top" id="AH3-at-y1I"/>
+                        <constraint firstAttribute="bottom" secondItem="VrN-hW-Er2" secondAttribute="bottom" constant="32" id="bDJ-Xf-Bh0"/>
+                        <constraint firstAttribute="trailing" secondItem="wLX-u4-ODF" secondAttribute="trailing" id="cAp-Sw-CDz"/>
+                        <constraint firstAttribute="height" constant="88" id="gJa-No-HVg"/>
+                        <constraint firstItem="VrN-hW-Er2" firstAttribute="leading" secondItem="rTN-ya-ew7" secondAttribute="leading" constant="20" id="jce-u5-ofC"/>
+                        <constraint firstAttribute="trailing" secondItem="VrN-hW-Er2" secondAttribute="trailing" constant="20" id="kCO-Yf-skY"/>
+                        <constraint firstItem="VrN-hW-Er2" firstAttribute="top" secondItem="rTN-ya-ew7" secondAttribute="top" constant="12" id="kOn-vF-wda"/>
+                        <constraint firstItem="wLX-u4-ODF" firstAttribute="leading" secondItem="rTN-ya-ew7" secondAttribute="leading" id="sJo-tu-e54"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Vwk-Ta-t6Y"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="rTN-ya-ew7" secondAttribute="bottom" id="Gco-B6-fnr"/>
+                <constraint firstItem="rTN-ya-ew7" firstAttribute="leading" secondItem="Vwk-Ta-t6Y" secondAttribute="leading" id="S48-tQ-f0G"/>
+                <constraint firstItem="rTN-ya-ew7" firstAttribute="trailing" secondItem="Vwk-Ta-t6Y" secondAttribute="trailing" id="VGG-8B-rBr"/>
+                <constraint firstItem="rTN-ya-ew7" firstAttribute="leading" secondItem="Vwk-Ta-t6Y" secondAttribute="leading" id="yDS-HZ-sck"/>
+            </constraints>
+            <connections>
+                <outlet property="updateButton" destination="mjy-Ek-zNZ" id="SFS-CG-8WA"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="131.91964285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="black25">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="1" green="0.25882352941176473" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

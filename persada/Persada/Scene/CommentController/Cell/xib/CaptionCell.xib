@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoRegular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="m2E-86-b5z" customClass="CaptionCell" customModule="KipasKipas" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="467" height="191"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="eHC-aH-ZhT">
+                <rect key="frame" x="0.0" y="0.0" width="467" height="191"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFt-hM-kKQ" customClass="ActiveLabel" customModule="KipasKipas" customModuleProvider="target">
+                        <rect key="frame" x="10" y="0.0" width="447" height="14"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7bn-nW-QvO">
+                        <rect key="frame" x="20" y="41.5" width="427" height="1"/>
+                        <color key="backgroundColor" name="grey"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="nul-vr-sbr"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 minutes ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPO-kl-7kR">
+                        <rect key="frame" x="10" y="18" width="447" height="15.5"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7bn-nW-QvO" firstAttribute="top" secondItem="dPO-kl-7kR" secondAttribute="bottom" constant="8" id="Df3-II-p37"/>
+                    <constraint firstAttribute="trailing" secondItem="dPO-kl-7kR" secondAttribute="trailing" constant="10" id="I5d-qz-i3Y"/>
+                    <constraint firstAttribute="trailing" secondItem="WFt-hM-kKQ" secondAttribute="trailing" constant="10" id="Oge-CW-NOg"/>
+                    <constraint firstItem="WFt-hM-kKQ" firstAttribute="top" secondItem="eHC-aH-ZhT" secondAttribute="top" id="P36-xa-7PD"/>
+                    <constraint firstAttribute="trailing" secondItem="7bn-nW-QvO" secondAttribute="trailing" constant="20" id="VzS-Xa-kTr"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="7bn-nW-QvO" secondAttribute="bottom" id="WeZ-tT-CEI"/>
+                    <constraint firstItem="dPO-kl-7kR" firstAttribute="top" secondItem="WFt-hM-kKQ" secondAttribute="bottom" constant="4" id="mg6-L1-R2h"/>
+                    <constraint firstItem="dPO-kl-7kR" firstAttribute="leading" secondItem="eHC-aH-ZhT" secondAttribute="leading" constant="10" id="qEc-wj-42Q"/>
+                    <constraint firstItem="7bn-nW-QvO" firstAttribute="leading" secondItem="eHC-aH-ZhT" secondAttribute="leading" constant="20" id="rIf-tg-Cff"/>
+                    <constraint firstItem="WFt-hM-kKQ" firstAttribute="leading" secondItem="eHC-aH-ZhT" secondAttribute="leading" constant="10" id="wn5-Xy-qjV"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <size key="customSize" width="467" height="191"/>
+            <connections>
+                <outlet property="captionLabel" destination="WFt-hM-kKQ" id="Hah-JF-9je"/>
+                <outlet property="dateLabel" destination="dPO-kl-7kR" id="zae-c3-nH1"/>
+            </connections>
+            <point key="canvasLocation" x="45.652173913043484" y="3.683035714285714"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="WFt-hM-kKQ">
+            <size key="intrinsicContentSize" width="29.5" height="14"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="grey">
+            <color red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

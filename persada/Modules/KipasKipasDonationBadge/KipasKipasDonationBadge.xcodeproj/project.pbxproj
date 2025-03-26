@@ -1,0 +1,1488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D2236342AD3E094003AC40C /* UISwitch+BaseControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2236332AD3E094003AC40C /* UISwitch+BaseControl.swift */; };
+		5D22363C2AD3F26F003AC40C /* KKSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D22363B2AD3F26F003AC40C /* KKSwitch.swift */; };
+		5D22363F2AD40546003AC40C /* BadgeMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D22363E2AD40546003AC40C /* BadgeMessageView.swift */; };
+		5D2236412AD4057F003AC40C /* BadgeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2236402AD4057F003AC40C /* BadgeCardView.swift */; };
+		5D2236432AD406C7003AC40C /* ListBadgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2236422AD406C7003AC40C /* ListBadgeViewController.swift */; };
+		5D2269782ACA699F00A8F00A /* KipasKipasDonationBadge.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D2269772ACA699F00A8F00A /* KipasKipasDonationBadge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D2269862ACA6A1F00A8F00A /* KipasKipasNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2269852ACA6A1F00A8F00A /* KipasKipasNetworking.framework */; };
+		5D23FD942AD40F250014AD29 /* ScaleTransformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D23FD932AD40F250014AD29 /* ScaleTransformView.swift */; };
+		5D23FD972AD40F4E0014AD29 /* TransformableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D23FD962AD40F4E0014AD29 /* TransformableView.swift */; };
+		5D23FD992AD40F760014AD29 /* ScaleTransformViewOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D23FD982AD40F760014AD29 /* ScaleTransformViewOptions.swift */; };
+		5D23FD9B2AD40FA10014AD29 /* BlurEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D23FD9A2AD40FA10014AD29 /* BlurEffectView.swift */; };
+		5D23FD9D2AD4103F0014AD29 /* TransformCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D23FD9C2AD4103F0014AD29 /* TransformCurve.swift */; };
+		5D23FD9F2AD410A80014AD29 /* BadgeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D23FD9E2AD410A80014AD29 /* BadgeCell.swift */; };
+		5D23FDA12AD411860014AD29 /* CollectionViewPagingLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D23FDA02AD411860014AD29 /* CollectionViewPagingLayout.swift */; };
+		5D23FDA32AD4119A0014AD29 /* ViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D23FDA22AD4119A0014AD29 /* ViewAnimator.swift */; };
+		5D23FDA62AD4F7E20014AD29 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D23FDA52AD4F7E20014AD29 /* Badge.swift */; };
+		5D23FDA92AD4F8270014AD29 /* ListBadgeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D23FDA82AD4F8270014AD29 /* ListBadgeLoader.swift */; };
+		5D23FDAC2AD4F8830014AD29 /* RemoteListBadgeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D23FDAB2AD4F8830014AD29 /* RemoteListBadgeLoader.swift */; };
+		5D23FDAE2AD4F9030014AD29 /* ListBadgeEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D23FDAD2AD4F9030014AD29 /* ListBadgeEndpoint.swift */; };
+		5D23FDB32AD4FD300014AD29 /* KipasKipasLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D23FDB12AD4FD300014AD29 /* KipasKipasLogin.framework */; };
+		5D23FDB42AD4FD300014AD29 /* KipasKipasLogin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D23FDB12AD4FD300014AD29 /* KipasKipasLogin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D23FDB52AD4FD310014AD29 /* KipasKipasLoginiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D23FDB22AD4FD300014AD29 /* KipasKipasLoginiOS.framework */; };
+		5D23FDB62AD4FD310014AD29 /* KipasKipasLoginiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D23FDB22AD4FD300014AD29 /* KipasKipasLoginiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D23FDB92AD501B30014AD29 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5D23FDB82AD501B30014AD29 /* Kingfisher */; };
+		5D23FDBC2AD5057B0014AD29 /* ListBadgePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D23FDBB2AD5057B0014AD29 /* ListBadgePresenter.swift */; };
+		5D23FDBE2AD505970014AD29 /* ListBadgeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D23FDBD2AD505970014AD29 /* ListBadgeViewModel.swift */; };
+		5D23FDC02AD508020014AD29 /* BadgeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D23FDBF2AD508020014AD29 /* BadgeViewModel.swift */; };
+		5D23FDC22AD509040014AD29 /* ListBadgePresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D23FDC12AD509040014AD29 /* ListBadgePresentationAdapter.swift */; };
+		5D23FDC42AD50A020014AD29 /* ListBadgeUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D23FDC32AD50A020014AD29 /* ListBadgeUIComposer.swift */; };
+		5D538B922ACA7437000B4F81 /* KipasKipasDonationBadgeiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D538B912ACA7437000B4F81 /* KipasKipasDonationBadgeiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D538B992ACA745D000B4F81 /* KipasKipasDonationBadge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2269742ACA699F00A8F00A /* KipasKipasDonationBadge.framework */; };
+		5D538BA52ACA74D9000B4F81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D538BA42ACA74D9000B4F81 /* AppDelegate.swift */; };
+		5D538BA72ACA74D9000B4F81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D538BA62ACA74D9000B4F81 /* SceneDelegate.swift */; };
+		5D538BAE2ACA74DA000B4F81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D538BAD2ACA74DA000B4F81 /* Assets.xcassets */; };
+		5D538BB12ACA74DA000B4F81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D538BAF2ACA74DA000B4F81 /* LaunchScreen.storyboard */; };
+		5D538BB92ACA74F5000B4F81 /* KipasKipasDonationBadge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2269742ACA699F00A8F00A /* KipasKipasDonationBadge.framework */; };
+		5D538BBA2ACA74F5000B4F81 /* KipasKipasDonationBadge.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2269742ACA699F00A8F00A /* KipasKipasDonationBadge.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D538BBD2ACA74F5000B4F81 /* KipasKipasDonationBadgeiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D538B8F2ACA7437000B4F81 /* KipasKipasDonationBadgeiOS.framework */; };
+		5D538BBE2ACA74F5000B4F81 /* KipasKipasDonationBadgeiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D538B8F2ACA7437000B4F81 /* KipasKipasDonationBadgeiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D538BC32ACA7548000B4F81 /* KipasKipasShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D538BC22ACA7548000B4F81 /* KipasKipasShared.framework */; };
+		5D538BC72ACA75A5000B4F81 /* KipasKipasShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D538BC62ACA75A5000B4F81 /* KipasKipasShared.framework */; };
+		5D538BC82ACA75A5000B4F81 /* KipasKipasShared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D538BC62ACA75A5000B4F81 /* KipasKipasShared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D538BCA2ACA76A1000B4F81 /* KipasKipasNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D538BC92ACA76A1000B4F81 /* KipasKipasNetworking.framework */; };
+		5D538BCB2ACA76A1000B4F81 /* KipasKipasNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D538BC92ACA76A1000B4F81 /* KipasKipasNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D9E358F2AD552CD0066768A /* ListBadgeLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E358E2AD552CD0066768A /* ListBadgeLoadingViewModel.swift */; };
+		5D9E359E2AD55D590066768A /* KipasKipasDonationRank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D9E359C2AD55D590066768A /* KipasKipasDonationRank.framework */; };
+		5D9E359F2AD55D590066768A /* KipasKipasDonationRank.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D9E359C2AD55D590066768A /* KipasKipasDonationRank.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D9E35A02AD55D5A0066768A /* KipasKipasDonationRankiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D9E359D2AD55D590066768A /* KipasKipasDonationRankiOS.framework */; };
+		5D9E35A12AD55D5A0066768A /* KipasKipasDonationRankiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D9E359D2AD55D590066768A /* KipasKipasDonationRankiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D9E35A32AD55DE40066768A /* DonationStatisticsContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E35A22AD55DE40066768A /* DonationStatisticsContainerViewController.swift */; };
+		5D9E35A52AD55F530066768A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5D9E35A42AD55F530066768A /* Kingfisher */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D538B9B2ACA745D000B4F81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D22696B2ACA699F00A8F00A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D2269732ACA699F00A8F00A;
+			remoteInfo = KipasKipasDonationBadge;
+		};
+		5D538BBB2ACA74F5000B4F81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D22696B2ACA699F00A8F00A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D2269732ACA699F00A8F00A;
+			remoteInfo = KipasKipasDonationBadge;
+		};
+		5D538BBF2ACA74F5000B4F81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D22696B2ACA699F00A8F00A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D538B8E2ACA7437000B4F81;
+			remoteInfo = KipasKipasDonationBadgeiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5D538BC12ACA74F5000B4F81 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5D23FDB62AD4FD310014AD29 /* KipasKipasLoginiOS.framework in Embed Frameworks */,
+				5D538BC82ACA75A5000B4F81 /* KipasKipasShared.framework in Embed Frameworks */,
+				5D9E35A12AD55D5A0066768A /* KipasKipasDonationRankiOS.framework in Embed Frameworks */,
+				5D538BBE2ACA74F5000B4F81 /* KipasKipasDonationBadgeiOS.framework in Embed Frameworks */,
+				5D9E359F2AD55D590066768A /* KipasKipasDonationRank.framework in Embed Frameworks */,
+				5D23FDB42AD4FD300014AD29 /* KipasKipasLogin.framework in Embed Frameworks */,
+				5D538BCB2ACA76A1000B4F81 /* KipasKipasNetworking.framework in Embed Frameworks */,
+				5D538BBA2ACA74F5000B4F81 /* KipasKipasDonationBadge.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5D2236332AD3E094003AC40C /* UISwitch+BaseControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISwitch+BaseControl.swift"; sourceTree = "<group>"; };
+		5D22363B2AD3F26F003AC40C /* KKSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKSwitch.swift; sourceTree = "<group>"; };
+		5D22363E2AD40546003AC40C /* BadgeMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeMessageView.swift; sourceTree = "<group>"; };
+		5D2236402AD4057F003AC40C /* BadgeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeCardView.swift; sourceTree = "<group>"; };
+		5D2236422AD406C7003AC40C /* ListBadgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBadgeViewController.swift; sourceTree = "<group>"; };
+		5D2269742ACA699F00A8F00A /* KipasKipasDonationBadge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KipasKipasDonationBadge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D2269772ACA699F00A8F00A /* KipasKipasDonationBadge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KipasKipasDonationBadge.h; sourceTree = "<group>"; };
+		5D2269852ACA6A1F00A8F00A /* KipasKipasNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D23FD932AD40F250014AD29 /* ScaleTransformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleTransformView.swift; sourceTree = "<group>"; };
+		5D23FD962AD40F4E0014AD29 /* TransformableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformableView.swift; sourceTree = "<group>"; };
+		5D23FD982AD40F760014AD29 /* ScaleTransformViewOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleTransformViewOptions.swift; sourceTree = "<group>"; };
+		5D23FD9A2AD40FA10014AD29 /* BlurEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurEffectView.swift; sourceTree = "<group>"; };
+		5D23FD9C2AD4103F0014AD29 /* TransformCurve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformCurve.swift; sourceTree = "<group>"; };
+		5D23FD9E2AD410A80014AD29 /* BadgeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeCell.swift; sourceTree = "<group>"; };
+		5D23FDA02AD411860014AD29 /* CollectionViewPagingLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewPagingLayout.swift; sourceTree = "<group>"; };
+		5D23FDA22AD4119A0014AD29 /* ViewAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAnimator.swift; sourceTree = "<group>"; };
+		5D23FDA52AD4F7E20014AD29 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		5D23FDA82AD4F8270014AD29 /* ListBadgeLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBadgeLoader.swift; sourceTree = "<group>"; };
+		5D23FDAB2AD4F8830014AD29 /* RemoteListBadgeLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteListBadgeLoader.swift; sourceTree = "<group>"; };
+		5D23FDAD2AD4F9030014AD29 /* ListBadgeEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBadgeEndpoint.swift; sourceTree = "<group>"; };
+		5D23FDB12AD4FD300014AD29 /* KipasKipasLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D23FDB22AD4FD300014AD29 /* KipasKipasLoginiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasLoginiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D23FDBB2AD5057B0014AD29 /* ListBadgePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBadgePresenter.swift; sourceTree = "<group>"; };
+		5D23FDBD2AD505970014AD29 /* ListBadgeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBadgeViewModel.swift; sourceTree = "<group>"; };
+		5D23FDBF2AD508020014AD29 /* BadgeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeViewModel.swift; sourceTree = "<group>"; };
+		5D23FDC12AD509040014AD29 /* ListBadgePresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBadgePresentationAdapter.swift; sourceTree = "<group>"; };
+		5D23FDC32AD50A020014AD29 /* ListBadgeUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBadgeUIComposer.swift; sourceTree = "<group>"; };
+		5D538B8F2ACA7437000B4F81 /* KipasKipasDonationBadgeiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KipasKipasDonationBadgeiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D538B912ACA7437000B4F81 /* KipasKipasDonationBadgeiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KipasKipasDonationBadgeiOS.h; sourceTree = "<group>"; };
+		5D538BA22ACA74D9000B4F81 /* KKDonationBadgeMicroApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKDonationBadgeMicroApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D538BA42ACA74D9000B4F81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5D538BA62ACA74D9000B4F81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5D538BAD2ACA74DA000B4F81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5D538BB02ACA74DA000B4F81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5D538BB22ACA74DA000B4F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D538BC22ACA7548000B4F81 /* KipasKipasShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D538BC62ACA75A5000B4F81 /* KipasKipasShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D538BC92ACA76A1000B4F81 /* KipasKipasNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D9E358E2AD552CD0066768A /* ListBadgeLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBadgeLoadingViewModel.swift; sourceTree = "<group>"; };
+		5D9E359C2AD55D590066768A /* KipasKipasDonationRank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasDonationRank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D9E359D2AD55D590066768A /* KipasKipasDonationRankiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasDonationRankiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D9E35A22AD55DE40066768A /* DonationStatisticsContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationStatisticsContainerViewController.swift; sourceTree = "<group>"; };
+		5DD897072BA9A5AF0012E3BD /* KipasKipasImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DD8970B2BA9A6770012E3BD /* KipasKipasImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DF400C42AE78FF400A7584F /* KipasKipasNetworkingUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasNetworkingUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D2269712ACA699F00A8F00A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D2269862ACA6A1F00A8F00A /* KipasKipasNetworking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D538B8C2ACA7437000B4F81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D23FDB92AD501B30014AD29 /* Kingfisher in Frameworks */,
+				5D538B992ACA745D000B4F81 /* KipasKipasDonationBadge.framework in Frameworks */,
+				5D538BC32ACA7548000B4F81 /* KipasKipasShared.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D538B9F2ACA74D9000B4F81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D23FDB52AD4FD310014AD29 /* KipasKipasLoginiOS.framework in Frameworks */,
+				5D538BC72ACA75A5000B4F81 /* KipasKipasShared.framework in Frameworks */,
+				5D9E35A02AD55D5A0066768A /* KipasKipasDonationRankiOS.framework in Frameworks */,
+				5D9E35A52AD55F530066768A /* Kingfisher in Frameworks */,
+				5D538BBD2ACA74F5000B4F81 /* KipasKipasDonationBadgeiOS.framework in Frameworks */,
+				5D9E359E2AD55D590066768A /* KipasKipasDonationRank.framework in Frameworks */,
+				5D23FDB32AD4FD300014AD29 /* KipasKipasLogin.framework in Frameworks */,
+				5D538BCA2ACA76A1000B4F81 /* KipasKipasNetworking.framework in Frameworks */,
+				5D538BB92ACA74F5000B4F81 /* KipasKipasDonationBadge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D22363D2AD3FDBD003AC40C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5D2236332AD3E094003AC40C /* UISwitch+BaseControl.swift */,
+				5D22363B2AD3F26F003AC40C /* KKSwitch.swift */,
+				5D2236422AD406C7003AC40C /* ListBadgeViewController.swift */,
+				5D23FD952AD40F310014AD29 /* Animation */,
+				5D23FD9E2AD410A80014AD29 /* BadgeCell.swift */,
+				5D23FDC12AD509040014AD29 /* ListBadgePresentationAdapter.swift */,
+				5D23FDC32AD50A020014AD29 /* ListBadgeUIComposer.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5D22696A2ACA699F00A8F00A = {
+			isa = PBXGroup;
+			children = (
+				5D2269762ACA699F00A8F00A /* KipasKipasDonationBadge */,
+				5D538B902ACA7437000B4F81 /* KipasKipasDonationBadgeiOS */,
+				5D538BA32ACA74D9000B4F81 /* KKDonationBadgeMicroApps */,
+				5D2269752ACA699F00A8F00A /* Products */,
+				5D2269842ACA6A1F00A8F00A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5D2269752ACA699F00A8F00A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D2269742ACA699F00A8F00A /* KipasKipasDonationBadge.framework */,
+				5D538B8F2ACA7437000B4F81 /* KipasKipasDonationBadgeiOS.framework */,
+				5D538BA22ACA74D9000B4F81 /* KKDonationBadgeMicroApps.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D2269762ACA699F00A8F00A /* KipasKipasDonationBadge */ = {
+			isa = PBXGroup;
+			children = (
+				5D23FDA42AD4F7360014AD29 /* Sources */,
+				5D2269772ACA699F00A8F00A /* KipasKipasDonationBadge.h */,
+			);
+			path = KipasKipasDonationBadge;
+			sourceTree = "<group>";
+		};
+		5D2269842ACA6A1F00A8F00A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8970B2BA9A6770012E3BD /* KipasKipasImage.framework */,
+				5DD897072BA9A5AF0012E3BD /* KipasKipasImage.framework */,
+				5DF400C42AE78FF400A7584F /* KipasKipasNetworkingUtils.framework */,
+				5D9E359C2AD55D590066768A /* KipasKipasDonationRank.framework */,
+				5D9E359D2AD55D590066768A /* KipasKipasDonationRankiOS.framework */,
+				5D23FDB12AD4FD300014AD29 /* KipasKipasLogin.framework */,
+				5D23FDB22AD4FD300014AD29 /* KipasKipasLoginiOS.framework */,
+				5D538BC92ACA76A1000B4F81 /* KipasKipasNetworking.framework */,
+				5D538BC62ACA75A5000B4F81 /* KipasKipasShared.framework */,
+				5D538BC22ACA7548000B4F81 /* KipasKipasShared.framework */,
+				5D2269852ACA6A1F00A8F00A /* KipasKipasNetworking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D23FD952AD40F310014AD29 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				5D23FD932AD40F250014AD29 /* ScaleTransformView.swift */,
+				5D23FD962AD40F4E0014AD29 /* TransformableView.swift */,
+				5D23FD982AD40F760014AD29 /* ScaleTransformViewOptions.swift */,
+				5D23FD9A2AD40FA10014AD29 /* BlurEffectView.swift */,
+				5D23FD9C2AD4103F0014AD29 /* TransformCurve.swift */,
+				5D23FDA02AD411860014AD29 /* CollectionViewPagingLayout.swift */,
+				5D23FDA22AD4119A0014AD29 /* ViewAnimator.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		5D23FDA42AD4F7360014AD29 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5D23FDBA2AD505740014AD29 /* Presentation */,
+				5D23FDA72AD4F81D0014AD29 /* Feature */,
+				5D23FDAA2AD4F82E0014AD29 /* API */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5D23FDA72AD4F81D0014AD29 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				5D23FDA82AD4F8270014AD29 /* ListBadgeLoader.swift */,
+				5D23FDA52AD4F7E20014AD29 /* Badge.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		5D23FDAA2AD4F82E0014AD29 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5D23FDAB2AD4F8830014AD29 /* RemoteListBadgeLoader.swift */,
+				5D23FDAD2AD4F9030014AD29 /* ListBadgeEndpoint.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		5D23FDBA2AD505740014AD29 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				5D23FDBB2AD5057B0014AD29 /* ListBadgePresenter.swift */,
+				5D23FDBD2AD505970014AD29 /* ListBadgeViewModel.swift */,
+				5D23FDBF2AD508020014AD29 /* BadgeViewModel.swift */,
+				5D9E358E2AD552CD0066768A /* ListBadgeLoadingViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		5D538B902ACA7437000B4F81 /* KipasKipasDonationBadgeiOS */ = {
+			isa = PBXGroup;
+			children = (
+				5D538B912ACA7437000B4F81 /* KipasKipasDonationBadgeiOS.h */,
+				5D22363D2AD3FDBD003AC40C /* Sources */,
+				5D22363E2AD40546003AC40C /* BadgeMessageView.swift */,
+				5D2236402AD4057F003AC40C /* BadgeCardView.swift */,
+			);
+			path = KipasKipasDonationBadgeiOS;
+			sourceTree = "<group>";
+		};
+		5D538BA32ACA74D9000B4F81 /* KKDonationBadgeMicroApps */ = {
+			isa = PBXGroup;
+			children = (
+				5D538BA42ACA74D9000B4F81 /* AppDelegate.swift */,
+				5D538BA62ACA74D9000B4F81 /* SceneDelegate.swift */,
+				5D538BAD2ACA74DA000B4F81 /* Assets.xcassets */,
+				5D538BAF2ACA74DA000B4F81 /* LaunchScreen.storyboard */,
+				5D538BB22ACA74DA000B4F81 /* Info.plist */,
+				5D9E35A22AD55DE40066768A /* DonationStatisticsContainerViewController.swift */,
+			);
+			path = KKDonationBadgeMicroApps;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5D22696F2ACA699F00A8F00A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D2269782ACA699F00A8F00A /* KipasKipasDonationBadge.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D538B8A2ACA7437000B4F81 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D538B922ACA7437000B4F81 /* KipasKipasDonationBadgeiOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5D2269732ACA699F00A8F00A /* KipasKipasDonationBadge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D22697B2ACA699F00A8F00A /* Build configuration list for PBXNativeTarget "KipasKipasDonationBadge" */;
+			buildPhases = (
+				5D22696F2ACA699F00A8F00A /* Headers */,
+				5D2269702ACA699F00A8F00A /* Sources */,
+				5D2269712ACA699F00A8F00A /* Frameworks */,
+				5D2269722ACA699F00A8F00A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KipasKipasDonationBadge;
+			productName = KipasKipasDonationBadge;
+			productReference = 5D2269742ACA699F00A8F00A /* KipasKipasDonationBadge.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5D538B8E2ACA7437000B4F81 /* KipasKipasDonationBadgeiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D538B982ACA7437000B4F81 /* Build configuration list for PBXNativeTarget "KipasKipasDonationBadgeiOS" */;
+			buildPhases = (
+				5D538B8A2ACA7437000B4F81 /* Headers */,
+				5D538B8B2ACA7437000B4F81 /* Sources */,
+				5D538B8C2ACA7437000B4F81 /* Frameworks */,
+				5D538B8D2ACA7437000B4F81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D538B9C2ACA745D000B4F81 /* PBXTargetDependency */,
+			);
+			name = KipasKipasDonationBadgeiOS;
+			packageProductDependencies = (
+				5D23FDB82AD501B30014AD29 /* Kingfisher */,
+			);
+			productName = KipasKipasDonationBadgeiOS;
+			productReference = 5D538B8F2ACA7437000B4F81 /* KipasKipasDonationBadgeiOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5D538BA12ACA74D9000B4F81 /* KKDonationBadgeMicroApps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D538BB32ACA74DA000B4F81 /* Build configuration list for PBXNativeTarget "KKDonationBadgeMicroApps" */;
+			buildPhases = (
+				5D538B9E2ACA74D9000B4F81 /* Sources */,
+				5D538B9F2ACA74D9000B4F81 /* Frameworks */,
+				5D538BA02ACA74D9000B4F81 /* Resources */,
+				5D538BC12ACA74F5000B4F81 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D538BBC2ACA74F5000B4F81 /* PBXTargetDependency */,
+				5D538BC02ACA74F5000B4F81 /* PBXTargetDependency */,
+			);
+			name = KKDonationBadgeMicroApps;
+			packageProductDependencies = (
+				5D9E35A42AD55F530066768A /* Kingfisher */,
+			);
+			productName = KKDonationBadgeMicroApps;
+			productReference = 5D538BA22ACA74D9000B4F81 /* KKDonationBadgeMicroApps.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D22696B2ACA699F00A8F00A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5D2269732ACA699F00A8F00A = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1500;
+					};
+					5D538B8E2ACA7437000B4F81 = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1500;
+					};
+					5D538BA12ACA74D9000B4F81 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 5D22696E2ACA699F00A8F00A /* Build configuration list for PBXProject "KipasKipasDonationBadge" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5D22696A2ACA699F00A8F00A;
+			packageReferences = (
+				5D23FDB72AD501B30014AD29 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = 5D2269752ACA699F00A8F00A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D2269732ACA699F00A8F00A /* KipasKipasDonationBadge */,
+				5D538B8E2ACA7437000B4F81 /* KipasKipasDonationBadgeiOS */,
+				5D538BA12ACA74D9000B4F81 /* KKDonationBadgeMicroApps */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D2269722ACA699F00A8F00A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D538B8D2ACA7437000B4F81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D538BA02ACA74D9000B4F81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D538BB12ACA74DA000B4F81 /* LaunchScreen.storyboard in Resources */,
+				5D538BAE2ACA74DA000B4F81 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D2269702ACA699F00A8F00A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D23FDA92AD4F8270014AD29 /* ListBadgeLoader.swift in Sources */,
+				5D23FDBC2AD5057B0014AD29 /* ListBadgePresenter.swift in Sources */,
+				5D23FDC02AD508020014AD29 /* BadgeViewModel.swift in Sources */,
+				5D9E358F2AD552CD0066768A /* ListBadgeLoadingViewModel.swift in Sources */,
+				5D23FDA62AD4F7E20014AD29 /* Badge.swift in Sources */,
+				5D23FDAE2AD4F9030014AD29 /* ListBadgeEndpoint.swift in Sources */,
+				5D23FDBE2AD505970014AD29 /* ListBadgeViewModel.swift in Sources */,
+				5D23FDAC2AD4F8830014AD29 /* RemoteListBadgeLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D538B8B2ACA7437000B4F81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D23FDA12AD411860014AD29 /* CollectionViewPagingLayout.swift in Sources */,
+				5D22363C2AD3F26F003AC40C /* KKSwitch.swift in Sources */,
+				5D2236342AD3E094003AC40C /* UISwitch+BaseControl.swift in Sources */,
+				5D23FD972AD40F4E0014AD29 /* TransformableView.swift in Sources */,
+				5D2236412AD4057F003AC40C /* BadgeCardView.swift in Sources */,
+				5D23FD9F2AD410A80014AD29 /* BadgeCell.swift in Sources */,
+				5D22363F2AD40546003AC40C /* BadgeMessageView.swift in Sources */,
+				5D23FD9B2AD40FA10014AD29 /* BlurEffectView.swift in Sources */,
+				5D23FD992AD40F760014AD29 /* ScaleTransformViewOptions.swift in Sources */,
+				5D23FD942AD40F250014AD29 /* ScaleTransformView.swift in Sources */,
+				5D23FD9D2AD4103F0014AD29 /* TransformCurve.swift in Sources */,
+				5D23FDC22AD509040014AD29 /* ListBadgePresentationAdapter.swift in Sources */,
+				5D23FDC42AD50A020014AD29 /* ListBadgeUIComposer.swift in Sources */,
+				5D2236432AD406C7003AC40C /* ListBadgeViewController.swift in Sources */,
+				5D23FDA32AD4119A0014AD29 /* ViewAnimator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D538B9E2ACA74D9000B4F81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D538BA52ACA74D9000B4F81 /* AppDelegate.swift in Sources */,
+				5D9E35A32AD55DE40066768A /* DonationStatisticsContainerViewController.swift in Sources */,
+				5D538BA72ACA74D9000B4F81 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D538B9C2ACA745D000B4F81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D2269732ACA699F00A8F00A /* KipasKipasDonationBadge */;
+			targetProxy = 5D538B9B2ACA745D000B4F81 /* PBXContainerItemProxy */;
+		};
+		5D538BBC2ACA74F5000B4F81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D2269732ACA699F00A8F00A /* KipasKipasDonationBadge */;
+			targetProxy = 5D538BBB2ACA74F5000B4F81 /* PBXContainerItemProxy */;
+		};
+		5D538BC02ACA74F5000B4F81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D538B8E2ACA7437000B4F81 /* KipasKipasDonationBadgeiOS */;
+			targetProxy = 5D538BBF2ACA74F5000B4F81 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5D538BAF2ACA74DA000B4F81 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D538BB02ACA74DA000B4F81 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D2269792ACA699F00A8F00A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5D22697A2ACA699F00A8F00A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5D22697C2ACA699F00A8F00A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonationBadge;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5D22697D2ACA699F00A8F00A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonationBadge;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5D22697E2ACA69E700A8F00A /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Staging;
+		};
+		5D22697F2ACA69E700A8F00A /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonationBadge;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Staging;
+		};
+		5D2269822ACA69F400A8F00A /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = ProdDebug;
+		};
+		5D2269832ACA69F400A8F00A /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonationBadge;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = ProdDebug;
+		};
+		5D538B932ACA7437000B4F81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonationBadgeiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5D538B942ACA7437000B4F81 /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonationBadgeiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = ProdDebug;
+		};
+		5D538B962ACA7437000B4F81 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonationBadgeiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Staging;
+		};
+		5D538B972ACA7437000B4F81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonationBadgeiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D538BB42ACA74DA000B4F81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_BASE_URL = "https://test-api-main.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KKDonationBadgeMicroApps/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KKDonationBadgeMicroApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5D538BB52ACA74DA000B4F81 /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_BASE_URL = "https://test-api-main.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KKDonationBadgeMicroApps/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KKDonationBadgeMicroApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = ProdDebug;
+		};
+		5D538BB72ACA74DA000B4F81 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_BASE_URL = "https://test-api-main.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KKDonationBadgeMicroApps/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KKDonationBadgeMicroApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Staging;
+		};
+		5D538BB82ACA74DA000B4F81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_BASE_URL = "https://api-main.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KKDonationBadgeMicroApps/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KKDonationBadgeMicroApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D77B1FA2B917600008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = LiveDebug;
+		};
+		5D77B1FB2B917600008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonationBadge;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = LiveDebug;
+		};
+		5D77B1FC2B917600008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonationBadgeiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = LiveDebug;
+		};
+		5D77B1FD2B917600008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_BASE_URL = "https://test-api-main.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KKDonationBadgeMicroApps/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KKDonationBadgeMicroApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = LiveDebug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D22696E2ACA699F00A8F00A /* Build configuration list for PBXProject "KipasKipasDonationBadge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D2269792ACA699F00A8F00A /* Debug */,
+				5D77B1FA2B917600008CC295 /* LiveDebug */,
+				5D2269822ACA69F400A8F00A /* ProdDebug */,
+				5D22697E2ACA69E700A8F00A /* Staging */,
+				5D22697A2ACA699F00A8F00A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D22697B2ACA699F00A8F00A /* Build configuration list for PBXNativeTarget "KipasKipasDonationBadge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D22697C2ACA699F00A8F00A /* Debug */,
+				5D77B1FB2B917600008CC295 /* LiveDebug */,
+				5D2269832ACA69F400A8F00A /* ProdDebug */,
+				5D22697F2ACA69E700A8F00A /* Staging */,
+				5D22697D2ACA699F00A8F00A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D538B982ACA7437000B4F81 /* Build configuration list for PBXNativeTarget "KipasKipasDonationBadgeiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D538B932ACA7437000B4F81 /* Debug */,
+				5D77B1FC2B917600008CC295 /* LiveDebug */,
+				5D538B942ACA7437000B4F81 /* ProdDebug */,
+				5D538B962ACA7437000B4F81 /* Staging */,
+				5D538B972ACA7437000B4F81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D538BB32ACA74DA000B4F81 /* Build configuration list for PBXNativeTarget "KKDonationBadgeMicroApps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D538BB42ACA74DA000B4F81 /* Debug */,
+				5D77B1FD2B917600008CC295 /* LiveDebug */,
+				5D538BB52ACA74DA000B4F81 /* ProdDebug */,
+				5D538BB72ACA74DA000B4F81 /* Staging */,
+				5D538BB82ACA74DA000B4F81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5D23FDB72AD501B30014AD29 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5D23FDB82AD501B30014AD29 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D23FDB72AD501B30014AD29 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		5D9E35A42AD55F530066768A /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D23FDB72AD501B30014AD29 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5D22696B2ACA699F00A8F00A /* Project object */;
+}

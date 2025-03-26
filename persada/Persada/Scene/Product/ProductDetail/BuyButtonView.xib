@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoRegular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BuyButtonView" customModule="KipasKipas" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BuyButtonView" customModule="KipasKipas" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bIV-6h-8PG">
+                    <rect key="frame" x="0.0" y="808" width="414" height="88"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5tZ-Nd-Lux">
+                            <rect key="frame" x="20" y="12" width="374" height="44"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Og9-2V-HaO">
+                                    <rect key="frame" x="0.0" y="0.0" width="177" height="44"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFg-CU-fyU">
+                                            <rect key="frame" x="0.0" y="0.0" width="59" height="44"/>
+                                            <color key="backgroundColor" name="whiteSnow"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <state key="normal" title="-">
+                                                <color key="titleColor" name="primary"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="8"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="reduceAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="TkI-Kd-K5f"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaI-8v-2dd">
+                                            <rect key="frame" x="59" y="0.0" width="59" height="44"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOU-c5-2An">
+                                            <rect key="frame" x="118" y="0.0" width="59" height="44"/>
+                                            <color key="backgroundColor" name="whiteSnow"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <state key="normal" title="+">
+                                                <color key="titleColor" name="primary"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="8"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="increaseAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="gMG-m2-z36"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVl-4n-uRi" customClass="PrimaryButton" customModule="KipasKipas" customModuleProvider="target">
+                                    <rect key="frame" x="197" y="0.0" width="177" height="44"/>
+                                    <color key="backgroundColor" name="primary"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                    <state key="normal" title="Beli">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="buyAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="DtB-KU-FyH"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ywz-o2-hE0">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="0.5"/>
+                            <color key="backgroundColor" name="black25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="Xq3-cI-7IG"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ywz-o2-hE0" secondAttribute="trailing" id="8b3-z0-tqh"/>
+                        <constraint firstItem="5tZ-Nd-Lux" firstAttribute="leading" secondItem="bIV-6h-8PG" secondAttribute="leading" constant="20" id="9K6-ug-3gI"/>
+                        <constraint firstAttribute="bottom" secondItem="5tZ-Nd-Lux" secondAttribute="bottom" constant="32" id="LsH-qZ-HaP"/>
+                        <constraint firstAttribute="trailing" secondItem="5tZ-Nd-Lux" secondAttribute="trailing" constant="20" id="RE0-TB-r8C"/>
+                        <constraint firstItem="ywz-o2-hE0" firstAttribute="top" secondItem="bIV-6h-8PG" secondAttribute="top" id="SSU-aw-8ck"/>
+                        <constraint firstAttribute="height" constant="88" id="dLx-rm-40M"/>
+                        <constraint firstItem="5tZ-Nd-Lux" firstAttribute="top" secondItem="bIV-6h-8PG" secondAttribute="top" constant="12" id="vf0-xs-fe4"/>
+                        <constraint firstItem="ywz-o2-hE0" firstAttribute="leading" secondItem="bIV-6h-8PG" secondAttribute="leading" id="xfl-TX-Sbb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="bIV-6h-8PG" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="5Fu-5p-p2L"/>
+                <constraint firstItem="bIV-6h-8PG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Vup-YG-pFg"/>
+                <constraint firstAttribute="bottom" secondItem="bIV-6h-8PG" secondAttribute="bottom" id="ihU-Gn-j3S"/>
+                <constraint firstItem="bIV-6h-8PG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="oSD-BB-E9Q"/>
+            </constraints>
+            <connections>
+                <outlet property="buyButton" destination="aVl-4n-uRi" id="WW4-nm-JUt"/>
+                <outlet property="countLabel" destination="VaI-8v-2dd" id="9tH-WP-Dta"/>
+                <outlet property="increaseButton" destination="bOU-c5-2An" id="Z5d-9a-dqg"/>
+                <outlet property="reduceButton" destination="CFg-CU-fyU" id="SZO-Aj-upZ"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="131.91964285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="black25">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="1" green="0.52941176470588236" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="whiteSnow">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,160 @@
+{
+  "identifier" : "3ADFF3F1",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "199.99",
+      "familyShareable" : false,
+      "internalID" : "6467188895",
+      "localizations" : [
+        {
+          "description" : "110 Koin",
+          "displayName" : "110 Koin",
+          "locale" : "id"
+        }
+      ],
+      "productID" : "com.koanba.kipaskipas.mobile.koin_110",
+      "referenceName" : "110 Koin",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "22.99",
+      "familyShareable" : false,
+      "internalID" : "6467188672",
+      "localizations" : [
+        {
+          "description" : "12 Koin",
+          "displayName" : "12 Koin",
+          "locale" : "id"
+        }
+      ],
+      "productID" : "com.koanba.kipaskipas.mobile.koin_12",
+      "referenceName" : "12 Koin",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "299.99",
+      "familyShareable" : false,
+      "internalID" : "6467188958",
+      "localizations" : [
+        {
+          "description" : "135 Koin",
+          "displayName" : "135 Koin",
+          "locale" : "id"
+        }
+      ],
+      "productID" : "com.koanba.kipaskipas.mobile.koin_135",
+      "referenceName" : "135 Koin",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "49.99",
+      "familyShareable" : false,
+      "internalID" : "6467188723",
+      "localizations" : [
+        {
+          "description" : "24 Koin",
+          "displayName" : "24 Koin",
+          "locale" : "id"
+        }
+      ],
+      "productID" : "com.koanba.kipaskipas.mobile.koin_24",
+      "referenceName" : "24 Koin",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "11.99",
+      "familyShareable" : false,
+      "internalID" : "6467188630",
+      "localizations" : [
+        {
+          "description" : "5 Koin",
+          "displayName" : "5 Koin",
+          "locale" : "id"
+        }
+      ],
+      "productID" : "com.koanba.kipaskipas.mobile.koin_5",
+      "referenceName" : "5 Koin",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "99.99",
+      "familyShareable" : false,
+      "internalID" : "6467188784",
+      "localizations" : [
+        {
+          "description" : "56 Koin",
+          "displayName" : "56 Koin",
+          "locale" : "id"
+        }
+      ],
+      "productID" : "com.koanba.kipaskipas.mobile.koin_56",
+      "referenceName" : "56 Koin",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "1539365659",
+    "_developerTeamID" : "AM6A64NDM6",
+    "_failTransactionsEnabled" : false,
+    "_lastSynchronizedDate" : 719179556.01674402,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Purchase"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Verification"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Store Sync"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Subscription Status"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Transaction"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Manage Subscriptions Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Refund Request Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Offer Code Redeem Sheet"
+      }
+    ]
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}

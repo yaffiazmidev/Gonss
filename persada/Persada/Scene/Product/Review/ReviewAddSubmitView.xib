@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoRegular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReviewAddSubmitView" customModule="KipasKipas" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qaC-4e-xMO" customClass="ReviewAddSubmitView" customModule="KipasKipas" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebv-s3-Tor">
+                    <rect key="frame" x="0.0" y="756" width="390" height="88"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y1k-gH-N9i">
+                            <rect key="frame" x="24" y="12" width="342" height="44"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MgD-1H-IBu" customClass="CheckBox" customModule="KipasKipas" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="15" width="14" height="14"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="14" id="SXs-5Z-F9D"/>
+                                        <constraint firstAttribute="width" constant="14" id="VJ3-ba-vqw"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="checkedBorderColor">
+                                            <color key="value" name="secondary"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="uncheckedBorderColor">
+                                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isChecked" value="NO"/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="checkmarkColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="checkboxBackgroundColor">
+                                            <color key="value" name="secondary"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="fillWhenChecked" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9Y-WH-ybo" customClass="PrimaryButton" customModule="KipasKipas" customModuleProvider="target">
+                                    <rect key="frame" x="179" y="-1.3333333333333712" width="163" height="47"/>
+                                    <color key="backgroundColor" name="primary"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                    <inset key="contentEdgeInsets" minX="35" minY="15" maxX="35" maxY="15"/>
+                                    <state key="normal" title="Kirim Ulasan">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="onSubmit:" destination="qaC-4e-xMO" eventType="touchUpInside" id="R1T-vc-2fi"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sembunyikan username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNY-o7-Ams">
+                                    <rect key="frame" x="19" y="15" width="128" height="14"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="MgD-1H-IBu" firstAttribute="centerY" secondItem="Y1k-gH-N9i" secondAttribute="centerY" id="1Lw-Cb-04L"/>
+                                <constraint firstItem="X9Y-WH-ybo" firstAttribute="centerY" secondItem="Y1k-gH-N9i" secondAttribute="centerY" id="Ccl-LJ-hoL"/>
+                                <constraint firstItem="zNY-o7-Ams" firstAttribute="leading" secondItem="MgD-1H-IBu" secondAttribute="trailing" constant="5" id="OyW-Xc-eVj"/>
+                                <constraint firstItem="X9Y-WH-ybo" firstAttribute="leading" secondItem="zNY-o7-Ams" secondAttribute="trailing" constant="32" id="Rez-KQ-Imx"/>
+                                <constraint firstItem="zNY-o7-Ams" firstAttribute="centerY" secondItem="Y1k-gH-N9i" secondAttribute="centerY" id="TqB-sr-Ux0"/>
+                                <constraint firstAttribute="trailing" secondItem="X9Y-WH-ybo" secondAttribute="trailing" id="xr6-r8-crs"/>
+                                <constraint firstItem="MgD-1H-IBu" firstAttribute="leading" secondItem="Y1k-gH-N9i" secondAttribute="leading" id="y0c-Ju-G45"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S0K-QM-FGX">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="0.66666666666666663"/>
+                            <color key="backgroundColor" name="black25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="87F-Q4-oUF"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="S0K-QM-FGX" firstAttribute="top" secondItem="ebv-s3-Tor" secondAttribute="top" id="B94-Of-Jur"/>
+                        <constraint firstAttribute="trailing" secondItem="S0K-QM-FGX" secondAttribute="trailing" id="RUB-kz-my1"/>
+                        <constraint firstItem="Y1k-gH-N9i" firstAttribute="leading" secondItem="ebv-s3-Tor" secondAttribute="leading" constant="24" id="TiV-aV-sEO"/>
+                        <constraint firstAttribute="trailing" secondItem="Y1k-gH-N9i" secondAttribute="trailing" constant="24" id="UkY-Wq-Twg"/>
+                        <constraint firstItem="S0K-QM-FGX" firstAttribute="leading" secondItem="ebv-s3-Tor" secondAttribute="leading" id="VTI-zu-8nn"/>
+                        <constraint firstItem="Y1k-gH-N9i" firstAttribute="top" secondItem="ebv-s3-Tor" secondAttribute="top" constant="12" id="iwd-K6-ltA"/>
+                        <constraint firstAttribute="height" constant="88" id="roO-Uc-UnA"/>
+                        <constraint firstAttribute="bottom" secondItem="Y1k-gH-N9i" secondAttribute="bottom" constant="32" id="skH-nx-rvp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="6wp-Ty-uwt"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ebv-s3-Tor" firstAttribute="leading" secondItem="6wp-Ty-uwt" secondAttribute="leading" id="6u2-JY-TMb"/>
+                <constraint firstAttribute="bottom" secondItem="ebv-s3-Tor" secondAttribute="bottom" id="S71-Y5-AGV"/>
+                <constraint firstItem="ebv-s3-Tor" firstAttribute="trailing" secondItem="6wp-Ty-uwt" secondAttribute="trailing" id="W8V-PI-7NM"/>
+                <constraint firstItem="ebv-s3-Tor" firstAttribute="leading" secondItem="6wp-Ty-uwt" secondAttribute="leading" id="gQJ-G2-3wD"/>
+            </constraints>
+            <connections>
+                <outlet property="hideUsernameCheckBox" destination="MgD-1H-IBu" id="3ho-qM-PSG"/>
+                <outlet property="submitButton" destination="X9Y-WH-ybo" id="Ixt-iY-5mv"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="131.91964285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="black25">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="1" green="0.25882352941176473" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondary">
+            <color red="0.094117647058823528" green="0.56470588235294117" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

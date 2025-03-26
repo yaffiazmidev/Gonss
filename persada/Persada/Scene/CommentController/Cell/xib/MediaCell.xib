@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoMedium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="XfC-10-fv6" customClass="MediaCell" customModule="KipasKipas" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="389"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="mxQ-UA-73s">
+                <rect key="frame" x="0.0" y="0.0" width="395" height="389"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="M8V-cj-YkZ">
+                        <rect key="frame" x="0.0" y="0.0" width="395" height="389"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hpn-VJ-6UP">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FE2-J2-WE9">
+                        <rect key="frame" x="0.0" y="357" width="395" height="32"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="3nD-zb-1rw">
+                                <rect key="frame" x="8" y="2" width="379" height="28"/>
+                                <color key="pageIndicatorTintColor" name="gainsboro"/>
+                                <color key="currentPageIndicatorTintColor" name="secondary"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVR-Qi-Shj">
+                                <rect key="frame" x="317" y="9" width="66" height="14"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
+                                <state key="normal" title="See Product"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Re0-F8-CF5">
+                                <rect key="frame" x="8" y="9" width="34" height="14"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
+                                <color key="textColor" name="primary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="whiteSnow"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Re0-F8-CF5" secondAttribute="bottom" constant="9" id="1ld-di-JtQ"/>
+                            <constraint firstItem="3nD-zb-1rw" firstAttribute="leading" secondItem="FE2-J2-WE9" secondAttribute="leading" constant="8" id="4Ez-JN-rOQ"/>
+                            <constraint firstAttribute="bottom" secondItem="3nD-zb-1rw" secondAttribute="bottom" constant="2" id="66V-PG-rqz"/>
+                            <constraint firstItem="Re0-F8-CF5" firstAttribute="top" secondItem="FE2-J2-WE9" secondAttribute="top" constant="9" id="BWG-sN-fWO"/>
+                            <constraint firstAttribute="bottom" secondItem="aVR-Qi-Shj" secondAttribute="bottom" constant="9" id="N7G-22-N7B"/>
+                            <constraint firstAttribute="trailing" secondItem="aVR-Qi-Shj" secondAttribute="trailing" constant="12" id="QkX-Ec-fuH"/>
+                            <constraint firstAttribute="trailing" secondItem="3nD-zb-1rw" secondAttribute="trailing" constant="8" id="RM6-c3-s9i"/>
+                            <constraint firstItem="aVR-Qi-Shj" firstAttribute="top" secondItem="FE2-J2-WE9" secondAttribute="top" constant="9" id="Uhb-2b-tBP"/>
+                            <constraint firstItem="3nD-zb-1rw" firstAttribute="top" secondItem="FE2-J2-WE9" secondAttribute="top" constant="2" id="Xha-9h-Jgt"/>
+                            <constraint firstAttribute="height" constant="32" id="r7F-hl-W58"/>
+                            <constraint firstItem="Re0-F8-CF5" firstAttribute="leading" secondItem="FE2-J2-WE9" secondAttribute="leading" constant="12" id="xdD-e8-Jgw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="M8V-cj-YkZ" secondAttribute="bottom" id="2CS-y7-6pK"/>
+                    <constraint firstItem="M8V-cj-YkZ" firstAttribute="top" secondItem="mxQ-UA-73s" secondAttribute="top" id="4tw-EQ-5II"/>
+                    <constraint firstItem="FE2-J2-WE9" firstAttribute="leading" secondItem="mxQ-UA-73s" secondAttribute="leading" id="CsP-dX-1xg"/>
+                    <constraint firstAttribute="bottom" secondItem="FE2-J2-WE9" secondAttribute="bottom" id="NDG-1r-HPq"/>
+                    <constraint firstAttribute="trailing" secondItem="M8V-cj-YkZ" secondAttribute="trailing" id="Otm-oY-jcY"/>
+                    <constraint firstAttribute="trailing" secondItem="FE2-J2-WE9" secondAttribute="trailing" id="fjF-qt-8XS"/>
+                    <constraint firstItem="M8V-cj-YkZ" firstAttribute="leading" secondItem="mxQ-UA-73s" secondAttribute="leading" id="nWW-Gb-YNo"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="395" height="389"/>
+            <connections>
+                <outlet property="mediaCollectionView" destination="M8V-cj-YkZ" id="CEr-Lb-hPM"/>
+                <outlet property="mediaPageControl" destination="3nD-zb-1rw" id="gLt-hO-7cP"/>
+                <outlet property="priceLabel" destination="Re0-F8-CF5" id="ecY-Ee-4Wp"/>
+                <outlet property="productView" destination="FE2-J2-WE9" id="rqb-Rf-WWx"/>
+                <outlet property="seeProductButton" destination="aVR-Qi-Shj" id="v53-pR-wfu"/>
+            </connections>
+            <point key="canvasLocation" x="71.739130434782609" y="120.20089285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="gainsboro">
+            <color red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="1" green="0.52941176470588236" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondary">
+            <color red="0.094117647058823528" green="0.56470588235294117" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="whiteSnow">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

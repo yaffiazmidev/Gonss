@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoRegular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SubcommentViewController" customModule="KipasKipas" customModuleProvider="target">
+            <connections>
+                <outlet property="commentInputTextView" destination="J8W-30-qVC" id="OHZ-qm-cNM"/>
+                <outlet property="commentInputTextViewHeightConstraint" destination="S3a-VX-LZw" id="VaU-ut-bNC"/>
+                <outlet property="commentInputTextViewPlaceholderLabel" destination="S0L-qZ-6NU" id="feR-be-KAB"/>
+                <outlet property="mentionTableView" destination="w1j-Hj-rDA" id="J8S-84-0Cm"/>
+                <outlet property="mentionTableViewHeightConstraint" destination="KHb-gc-byP" id="jvF-h3-R0G"/>
+                <outlet property="sendCommentButton" destination="c4D-qh-GQa" id="bCj-Wh-dfR"/>
+                <outlet property="tableView" destination="aD0-Z1-Fea" id="hpV-Ao-uCH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aD0-Z1-Fea">
+                    <rect key="frame" x="0.0" y="44" width="414" height="615"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="c7C-Vr-HoN">
+                    <rect key="frame" x="0.0" y="659" width="414" height="222"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="w1j-Hj-rDA">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" id="KHb-gc-byP"/>
+                            </constraints>
+                        </tableView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CK3-l5-UoH">
+                            <rect key="frame" x="0.0" y="156" width="414" height="1"/>
+                            <color key="backgroundColor" name="whiteSmoke"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="YQY-wW-CPl"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CHb-jN-YDB">
+                            <rect key="frame" x="0.0" y="163" width="414" height="59"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tulis Komentar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0L-qZ-6NU">
+                                    <rect key="frame" x="24" y="15" width="333" height="33"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="33" id="M9x-v1-uoJ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="e6r-WO-eEh">
+                                    <rect key="frame" x="16" y="16" width="382" height="28"/>
+                                    <subviews>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="J8W-30-qVC">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="28"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="28" id="S3a-VX-LZw"/>
+                                            </constraints>
+                                            <color key="textColor" systemColor="labelColor"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="send" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                        </textView>
+                                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4D-qh-GQa">
+                                            <rect key="frame" x="349" y="0.0" width="33" height="28"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="33" id="qQU-WM-Vqv"/>
+                                            </constraints>
+                                            <state key="normal" image="iconFeatherSendGray"/>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="S0L-qZ-6NU" firstAttribute="top" secondItem="J8W-30-qVC" secondAttribute="top" constant="-1" id="BcC-1X-Lwq"/>
+                                <constraint firstAttribute="bottom" secondItem="e6r-WO-eEh" secondAttribute="bottom" constant="15" id="IYD-3N-Z30"/>
+                                <constraint firstAttribute="trailing" secondItem="e6r-WO-eEh" secondAttribute="trailing" constant="16" id="Jst-a7-vq5"/>
+                                <constraint firstItem="e6r-WO-eEh" firstAttribute="top" secondItem="CHb-jN-YDB" secondAttribute="top" constant="16" id="Qwu-Mn-Pp1"/>
+                                <constraint firstItem="S0L-qZ-6NU" firstAttribute="leading" secondItem="J8W-30-qVC" secondAttribute="leading" constant="8" id="Rd8-pK-Vvw"/>
+                                <constraint firstItem="S0L-qZ-6NU" firstAttribute="trailing" secondItem="J8W-30-qVC" secondAttribute="trailing" id="UnQ-P3-zSf"/>
+                                <constraint firstItem="e6r-WO-eEh" firstAttribute="leading" secondItem="CHb-jN-YDB" secondAttribute="leading" constant="16" id="Vs8-W4-SBh"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="aD0-Z1-Fea" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="4jL-M4-xXS"/>
+                <constraint firstItem="aD0-Z1-Fea" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="KzQ-We-Uwx"/>
+                <constraint firstItem="c7C-Vr-HoN" firstAttribute="top" secondItem="aD0-Z1-Fea" secondAttribute="bottom" id="dWk-uh-wVA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aD0-Z1-Fea" secondAttribute="trailing" id="jhN-t1-byh"/>
+                <constraint firstItem="c7C-Vr-HoN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="plg-fR-PaS"/>
+                <constraint firstItem="c7C-Vr-HoN" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="qgn-Oa-AJn"/>
+                <constraint firstItem="c7C-Vr-HoN" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" constant="-15" id="zeM-hI-SiG"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconFeatherSendGray" width="32" height="32"/>
+        <namedColor name="whiteSmoke">
+            <color red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

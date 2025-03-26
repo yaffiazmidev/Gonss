@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoMedium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfirmViewController" customModule="KipasKipas" customModuleProvider="target">
+            <connections>
+                <outlet property="textField" destination="pto-yM-A4P" id="vWH-zs-kc8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pto-yM-A4P">
+                    <rect key="frame" x="55" y="402" width="280" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="WII-U4-ysg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Masukkan password kipaskipas untuk konfirmasi" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxg-Dd-vVB">
+                    <rect key="frame" x="107.66666666666669" y="322.66666666666669" width="175" height="28.333333333333314"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="175" id="bLl-ys-h9U"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
+                    <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconPadlock" translatesAutoresizingMaskIntoConstraints="NO" id="zTz-mh-Ka7">
+                    <rect key="frame" x="175" y="215.33333333333334" width="40" height="50.000000000000028"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="XRk-Xr-FLR"/>
+                        <constraint firstAttribute="width" constant="40" id="mgX-jA-K1b"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clp-pd-tE8">
+                    <rect key="frame" x="20" y="742" width="350" height="48"/>
+                    <color key="backgroundColor" red="1" green="0.52941176469999995" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="PTY-GI-2VC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                    <state key="normal" title="Konfirmasi">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="7"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="confirmPressButton:" destination="-1" eventType="touchUpInside" id="6NV-TW-Jiv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="clp-pd-tE8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="6Ct-xu-Oc4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pto-yM-A4P" secondAttribute="trailing" constant="55" id="GLS-GQ-TMP"/>
+                <constraint firstItem="pto-yM-A4P" firstAttribute="top" secondItem="Gxg-Dd-vVB" secondAttribute="bottom" constant="51" id="Gh1-f2-AxR"/>
+                <constraint firstItem="Gxg-Dd-vVB" firstAttribute="top" secondItem="zTz-mh-Ka7" secondAttribute="bottom" constant="57.5" id="OW7-A1-ZOh"/>
+                <constraint firstItem="pto-yM-A4P" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="55" id="Qse-x3-VXg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="clp-pd-tE8" secondAttribute="bottom" constant="20" id="Vki-Ks-srW"/>
+                <constraint firstItem="zTz-mh-Ka7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="am7-oV-dQE"/>
+                <constraint firstItem="Gxg-Dd-vVB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ckZ-Fa-vFR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="clp-pd-tE8" secondAttribute="trailing" constant="20" id="eUH-vO-sh4"/>
+                <constraint firstItem="pto-yM-A4P" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fUf-kj-FYO"/>
+                <constraint firstItem="pto-yM-A4P" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="v2Q-k8-BvD"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="131"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconPadlock" width="40.333332061767578" height="50.333332061767578"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

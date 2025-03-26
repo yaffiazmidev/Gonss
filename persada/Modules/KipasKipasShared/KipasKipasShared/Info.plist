@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Rye-Regular.ttf</string>
+		<string>AirbnbCerealApp-Book.ttf</string>
+		<string>AirbnbCerealApp-Black.ttf</string>
+		<string>AirbnbCerealApp-Bold.ttf</string>
+		<string>AirbnbCerealApp-Light.ttf</string>
+		<string>AirbnbCerealApp-Medium.ttf</string>
+		<string>AirbnbCerealApp-ExtraBold.ttf</string>
+		<string>Roboto-Black.ttf</string>
+		<string>Roboto-Regular.ttf</string>
+		<string>Roboto-Medium.ttf</string>
+		<string>Roboto-Light.ttf</string>
+		<string>Roboto-Bold.ttf</string>
+		<string>Roboto-Black.ttf</string>
+	</array>
+</dict>
+</plist>

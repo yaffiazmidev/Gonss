@@ -1,0 +1,1497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D2801382AC52CD800017DBC /* DonationGlobalRankViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2801372AC52CD800017DBC /* DonationGlobalRankViewModel.swift */; };
+		5D28013A2AC52D1200017DBC /* DonationGlobalRankPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2801392AC52D1200017DBC /* DonationGlobalRankPresenter.swift */; };
+		5D28013C2AC52DA800017DBC /* DonationGlobalRankLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D28013B2AC52DA800017DBC /* DonationGlobalRankLoadingViewModel.swift */; };
+		5D28013F2AC52EC600017DBC /* DonationGlobalRankPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D28013E2AC52EC600017DBC /* DonationGlobalRankPresentationAdapter.swift */; };
+		5D2801422AC5302D00017DBC /* DonationGlobalRankLoadingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2801412AC5302D00017DBC /* DonationGlobalRankLoadingController.swift */; };
+		5D2801442AC533B900017DBC /* DonationGlobalRankViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2801432AC533B900017DBC /* DonationGlobalRankViewAdapter.swift */; };
+		5D2801492AC5364900017DBC /* DonationGlobalRankCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2801482AC5364900017DBC /* DonationGlobalRankCellController.swift */; };
+		5D28014D2AC55F6400017DBC /* DonationGlobalRankPagingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D28014C2AC55F6400017DBC /* DonationGlobalRankPagingViewModel.swift */; };
+		5D28014E2AC5661600017DBC /* KipasKipasDonationRank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF9F8542AC1882900066E36 /* KipasKipasDonationRank.framework */; };
+		5D2801552AC5A0C700017DBC /* DonationSelfRankHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2801542AC5A0C700017DBC /* DonationSelfRankHeaderView.swift */; };
+		5D2801592AC6ADCF00017DBC /* DonationGlobalRankImagePresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2801582AC6ADCF00017DBC /* DonationGlobalRankImagePresentationAdapter.swift */; };
+		5D28015C2AC6AE6900017DBC /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5D28015B2AC6AE6900017DBC /* Kingfisher */; };
+		5D28015E2AC6AE7100017DBC /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5D28015D2AC6AE7100017DBC /* Kingfisher */; };
+		5D2801622AC6CC2400017DBC /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5D2801612AC6CC2400017DBC /* Kingfisher */; };
+		5D2801642AC804E700017DBC /* DonationGlobalSelfRankLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2801632AC804E700017DBC /* DonationGlobalSelfRankLoader.swift */; };
+		5D2801662AC8097D00017DBC /* RemoteDonationGlobalSelfRankLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2801652AC8097D00017DBC /* RemoteDonationGlobalSelfRankLoader.swift */; };
+		5D28016A2AC8143800017DBC /* DonationGlobalRankHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2801692AC8143800017DBC /* DonationGlobalRankHeaderViewModel.swift */; };
+		5D4BA2A42AE766D6000C5F16 /* KipasKipasLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D4BA2A22AE766D6000C5F16 /* KipasKipasLogin.framework */; };
+		5D4BA2A52AE766D6000C5F16 /* KipasKipasLogin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D4BA2A22AE766D6000C5F16 /* KipasKipasLogin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D4BA2A62AE766D6000C5F16 /* KipasKipasLoginiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D4BA2A32AE766D6000C5F16 /* KipasKipasLoginiOS.framework */; };
+		5D4BA2A72AE766D6000C5F16 /* KipasKipasLoginiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D4BA2A32AE766D6000C5F16 /* KipasKipasLoginiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D5C6DBC2AC27BB500111510 /* DonationRankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5C6DBB2AC27BB500111510 /* DonationRankCell.swift */; };
+		5D5C6DC12AC28DC400111510 /* RemoteDonationGlobalRank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5C6DC02AC28DC400111510 /* RemoteDonationGlobalRank.swift */; };
+		5D5C6DC62AC2930D00111510 /* KipasKipasNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D5C6DC52AC2930D00111510 /* KipasKipasNetworking.framework */; };
+		5D5C6DCB2AC2950000111510 /* DonationGlobalRankLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5C6DCA2AC2950000111510 /* DonationGlobalRankLoader.swift */; };
+		5D5C6DCD2AC295C100111510 /* GlobalRankEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5C6DCC2AC295C100111510 /* GlobalRankEndpoint.swift */; };
+		5D5C6DCF2AC2A40B00111510 /* KipasKipasNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D5C6DCE2AC2A40B00111510 /* KipasKipasNetworking.framework */; };
+		5D5C6DD02AC2A40B00111510 /* KipasKipasNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D5C6DCE2AC2A40B00111510 /* KipasKipasNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D5C6DD22AC2AF9B00111510 /* RemoteDonationGlobalRankLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5C6DD12AC2AF9B00111510 /* RemoteDonationGlobalRankLoader.swift */; };
+		5D5C6DD42AC2B1A700111510 /* DonationGlobalRankItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5C6DD32AC2B1A700111510 /* DonationGlobalRankItem.swift */; };
+		5D5C6DD92AC2BE0600111510 /* DonationGlobalRankUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5C6DD82AC2BE0600111510 /* DonationGlobalRankUIComposer.swift */; };
+		5DF400CB2AE7900700A7584F /* KipasKipasNetworkingUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF400CA2AE7900700A7584F /* KipasKipasNetworkingUtils.framework */; };
+		5DF400CC2AE7900700A7584F /* KipasKipasNetworkingUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF400CA2AE7900700A7584F /* KipasKipasNetworkingUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5DF9F8582AC1882900066E36 /* KipasKipasDonationRank.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DF9F8572AC1882900066E36 /* KipasKipasDonationRank.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DF9F86E2AC1891400066E36 /* KipasKipasDonationRankiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DF9F86D2AC1891400066E36 /* KipasKipasDonationRankiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DF9F87C2AC1893600066E36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF9F87B2AC1893600066E36 /* AppDelegate.swift */; };
+		5DF9F87E2AC1893600066E36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF9F87D2AC1893600066E36 /* SceneDelegate.swift */; };
+		5DF9F8852AC1893700066E36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DF9F8842AC1893700066E36 /* Assets.xcassets */; };
+		5DF9F8882AC1893700066E36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF9F8862AC1893700066E36 /* LaunchScreen.storyboard */; };
+		5DF9F8912AC1899A00066E36 /* DonationGlobalRankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF9F8902AC1899A00066E36 /* DonationGlobalRankViewController.swift */; };
+		5DF9F8942AC18A5300066E36 /* KipasKipasShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF9F8932AC18A5300066E36 /* KipasKipasShared.framework */; };
+		5DF9F8982AC18B3000066E36 /* KipasKipasShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF9F8972AC18B3000066E36 /* KipasKipasShared.framework */; };
+		5DF9F8992AC18B3000066E36 /* KipasKipasShared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF9F8972AC18B3000066E36 /* KipasKipasShared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5DF9F89B2AC18B5500066E36 /* KipasKipasDonationRank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF9F8542AC1882900066E36 /* KipasKipasDonationRank.framework */; };
+		5DF9F89C2AC18B5500066E36 /* KipasKipasDonationRank.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF9F8542AC1882900066E36 /* KipasKipasDonationRank.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5DF9F89F2AC18B5500066E36 /* KipasKipasDonationRankiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF9F86B2AC1891400066E36 /* KipasKipasDonationRankiOS.framework */; };
+		5DF9F8A02AC18B5500066E36 /* KipasKipasDonationRankiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF9F86B2AC1891400066E36 /* KipasKipasDonationRankiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5DF9F8A52AC18DC600066E36 /* NSCollectionLayoutSection+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF9F8A42AC18DC600066E36 /* NSCollectionLayoutSection+ext.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D2801502AC5661600017DBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DF9F84B2AC1882900066E36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DF9F8532AC1882900066E36;
+			remoteInfo = KipasKipasDonationRank;
+		};
+		5DF9F89D2AC18B5500066E36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DF9F84B2AC1882900066E36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DF9F8532AC1882900066E36;
+			remoteInfo = KipasKipasDonationRank;
+		};
+		5DF9F8A12AC18B5500066E36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DF9F84B2AC1882900066E36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DF9F86A2AC1891400066E36;
+			remoteInfo = KipasKipasDonationRankiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5DF9F89A2AC18B3000066E36 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5DF9F89C2AC18B5500066E36 /* KipasKipasDonationRank.framework in Embed Frameworks */,
+				5DF400CC2AE7900700A7584F /* KipasKipasNetworkingUtils.framework in Embed Frameworks */,
+				5DF9F8992AC18B3000066E36 /* KipasKipasShared.framework in Embed Frameworks */,
+				5D4BA2A52AE766D6000C5F16 /* KipasKipasLogin.framework in Embed Frameworks */,
+				5D5C6DD02AC2A40B00111510 /* KipasKipasNetworking.framework in Embed Frameworks */,
+				5D4BA2A72AE766D6000C5F16 /* KipasKipasLoginiOS.framework in Embed Frameworks */,
+				5DF9F8A02AC18B5500066E36 /* KipasKipasDonationRankiOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5D2801372AC52CD800017DBC /* DonationGlobalRankViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationGlobalRankViewModel.swift; sourceTree = "<group>"; };
+		5D2801392AC52D1200017DBC /* DonationGlobalRankPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationGlobalRankPresenter.swift; sourceTree = "<group>"; };
+		5D28013B2AC52DA800017DBC /* DonationGlobalRankLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationGlobalRankLoadingViewModel.swift; sourceTree = "<group>"; };
+		5D28013E2AC52EC600017DBC /* DonationGlobalRankPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationGlobalRankPresentationAdapter.swift; sourceTree = "<group>"; };
+		5D2801412AC5302D00017DBC /* DonationGlobalRankLoadingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationGlobalRankLoadingController.swift; sourceTree = "<group>"; };
+		5D2801432AC533B900017DBC /* DonationGlobalRankViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationGlobalRankViewAdapter.swift; sourceTree = "<group>"; };
+		5D2801482AC5364900017DBC /* DonationGlobalRankCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationGlobalRankCellController.swift; sourceTree = "<group>"; };
+		5D28014C2AC55F6400017DBC /* DonationGlobalRankPagingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationGlobalRankPagingViewModel.swift; sourceTree = "<group>"; };
+		5D2801542AC5A0C700017DBC /* DonationSelfRankHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationSelfRankHeaderView.swift; sourceTree = "<group>"; };
+		5D2801582AC6ADCF00017DBC /* DonationGlobalRankImagePresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationGlobalRankImagePresentationAdapter.swift; sourceTree = "<group>"; };
+		5D2801632AC804E700017DBC /* DonationGlobalSelfRankLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationGlobalSelfRankLoader.swift; sourceTree = "<group>"; };
+		5D2801652AC8097D00017DBC /* RemoteDonationGlobalSelfRankLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDonationGlobalSelfRankLoader.swift; sourceTree = "<group>"; };
+		5D2801692AC8143800017DBC /* DonationGlobalRankHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationGlobalRankHeaderViewModel.swift; sourceTree = "<group>"; };
+		5D4BA2A22AE766D6000C5F16 /* KipasKipasLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D4BA2A32AE766D6000C5F16 /* KipasKipasLoginiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasLoginiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D5C6DBB2AC27BB500111510 /* DonationRankCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationRankCell.swift; sourceTree = "<group>"; };
+		5D5C6DC02AC28DC400111510 /* RemoteDonationGlobalRank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDonationGlobalRank.swift; sourceTree = "<group>"; };
+		5D5C6DC52AC2930D00111510 /* KipasKipasNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D5C6DCA2AC2950000111510 /* DonationGlobalRankLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationGlobalRankLoader.swift; sourceTree = "<group>"; };
+		5D5C6DCC2AC295C100111510 /* GlobalRankEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalRankEndpoint.swift; sourceTree = "<group>"; };
+		5D5C6DCE2AC2A40B00111510 /* KipasKipasNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D5C6DD12AC2AF9B00111510 /* RemoteDonationGlobalRankLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDonationGlobalRankLoader.swift; sourceTree = "<group>"; };
+		5D5C6DD32AC2B1A700111510 /* DonationGlobalRankItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationGlobalRankItem.swift; sourceTree = "<group>"; };
+		5D5C6DD52AC2BA0400111510 /* KipasKipasNetworkingUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasNetworkingUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D5C6DD82AC2BE0600111510 /* DonationGlobalRankUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationGlobalRankUIComposer.swift; sourceTree = "<group>"; };
+		5D9E35962AD55D210066768A /* KipasKipasDonationBadge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasDonationBadge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D9E35972AD55D210066768A /* KipasKipasDonationBadgeiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasDonationBadgeiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DF400C72AE78FFE00A7584F /* KipasKipasNetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = KipasKipasNetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DF400CA2AE7900700A7584F /* KipasKipasNetworkingUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasNetworkingUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DF9F8542AC1882900066E36 /* KipasKipasDonationRank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KipasKipasDonationRank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DF9F8572AC1882900066E36 /* KipasKipasDonationRank.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KipasKipasDonationRank.h; sourceTree = "<group>"; };
+		5DF9F86B2AC1891400066E36 /* KipasKipasDonationRankiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KipasKipasDonationRankiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DF9F86D2AC1891400066E36 /* KipasKipasDonationRankiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KipasKipasDonationRankiOS.h; sourceTree = "<group>"; };
+		5DF9F8792AC1893500066E36 /* KKDonationRankMicroApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKDonationRankMicroApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DF9F87B2AC1893600066E36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5DF9F87D2AC1893600066E36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5DF9F8842AC1893700066E36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DF9F8872AC1893700066E36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5DF9F8892AC1893700066E36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DF9F8902AC1899A00066E36 /* DonationGlobalRankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationGlobalRankViewController.swift; sourceTree = "<group>"; };
+		5DF9F8932AC18A5300066E36 /* KipasKipasShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DF9F8972AC18B3000066E36 /* KipasKipasShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DF9F8A42AC18DC600066E36 /* NSCollectionLayoutSection+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSCollectionLayoutSection+ext.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DF9F8512AC1882900066E36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D28015C2AC6AE6900017DBC /* Kingfisher in Frameworks */,
+				5D5C6DC62AC2930D00111510 /* KipasKipasNetworking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DF9F8682AC1891400066E36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D28015E2AC6AE7100017DBC /* Kingfisher in Frameworks */,
+				5D28014E2AC5661600017DBC /* KipasKipasDonationRank.framework in Frameworks */,
+				5DF9F8942AC18A5300066E36 /* KipasKipasShared.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DF9F8762AC1893500066E36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DF400CB2AE7900700A7584F /* KipasKipasNetworkingUtils.framework in Frameworks */,
+				5D4BA2A42AE766D6000C5F16 /* KipasKipasLogin.framework in Frameworks */,
+				5D2801622AC6CC2400017DBC /* Kingfisher in Frameworks */,
+				5DF9F89B2AC18B5500066E36 /* KipasKipasDonationRank.framework in Frameworks */,
+				5DF9F8982AC18B3000066E36 /* KipasKipasShared.framework in Frameworks */,
+				5D4BA2A62AE766D6000C5F16 /* KipasKipasLoginiOS.framework in Frameworks */,
+				5D5C6DCF2AC2A40B00111510 /* KipasKipasNetworking.framework in Frameworks */,
+				5DF9F89F2AC18B5500066E36 /* KipasKipasDonationRankiOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D2801362AC52CC200017DBC /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				5D2801372AC52CD800017DBC /* DonationGlobalRankViewModel.swift */,
+				5D2801392AC52D1200017DBC /* DonationGlobalRankPresenter.swift */,
+				5D28013B2AC52DA800017DBC /* DonationGlobalRankLoadingViewModel.swift */,
+				5D28014C2AC55F6400017DBC /* DonationGlobalRankPagingViewModel.swift */,
+				5D2801692AC8143800017DBC /* DonationGlobalRankHeaderViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		5D28013D2AC52EBA00017DBC /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				5D28013E2AC52EC600017DBC /* DonationGlobalRankPresentationAdapter.swift */,
+				5D2801432AC533B900017DBC /* DonationGlobalRankViewAdapter.swift */,
+				5D2801582AC6ADCF00017DBC /* DonationGlobalRankImagePresentationAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		5D2801402AC52FF100017DBC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5D2801412AC5302D00017DBC /* DonationGlobalRankLoadingController.swift */,
+				5D2801482AC5364900017DBC /* DonationGlobalRankCellController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5D2801532AC5A0A600017DBC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5D2801542AC5A0C700017DBC /* DonationSelfRankHeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5D5C6DBF2AC28DAE00111510 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5D2801362AC52CC200017DBC /* Presentation */,
+				5D5C6DC92AC294D800111510 /* Feature */,
+				5D5C6DC22AC28F5000111510 /* API */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5D5C6DC22AC28F5000111510 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5D5C6DCC2AC295C100111510 /* GlobalRankEndpoint.swift */,
+				5D5C6DD12AC2AF9B00111510 /* RemoteDonationGlobalRankLoader.swift */,
+				5D2801652AC8097D00017DBC /* RemoteDonationGlobalSelfRankLoader.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		5D5C6DC92AC294D800111510 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				5D5C6DC02AC28DC400111510 /* RemoteDonationGlobalRank.swift */,
+				5D5C6DCA2AC2950000111510 /* DonationGlobalRankLoader.swift */,
+				5D5C6DD32AC2B1A700111510 /* DonationGlobalRankItem.swift */,
+				5D2801632AC804E700017DBC /* DonationGlobalSelfRankLoader.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		5DF9F84A2AC1882900066E36 = {
+			isa = PBXGroup;
+			children = (
+				5DF9F8562AC1882900066E36 /* KipasKipasDonationRank */,
+				5DF9F86C2AC1891400066E36 /* KipasKipasDonationRankiOS */,
+				5DF9F87A2AC1893600066E36 /* KKDonationRankMicroApps */,
+				5DF9F8552AC1882900066E36 /* Products */,
+				5DF9F8922AC18A5300066E36 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5DF9F8552AC1882900066E36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DF9F8542AC1882900066E36 /* KipasKipasDonationRank.framework */,
+				5DF9F86B2AC1891400066E36 /* KipasKipasDonationRankiOS.framework */,
+				5DF9F8792AC1893500066E36 /* KKDonationRankMicroApps.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DF9F8562AC1882900066E36 /* KipasKipasDonationRank */ = {
+			isa = PBXGroup;
+			children = (
+				5D5C6DBF2AC28DAE00111510 /* Sources */,
+				5DF9F8572AC1882900066E36 /* KipasKipasDonationRank.h */,
+			);
+			path = KipasKipasDonationRank;
+			sourceTree = "<group>";
+		};
+		5DF9F86C2AC1891400066E36 /* KipasKipasDonationRankiOS */ = {
+			isa = PBXGroup;
+			children = (
+				5DF9F86D2AC1891400066E36 /* KipasKipasDonationRankiOS.h */,
+				5DF9F8A32AC18DAE00066E36 /* Sources */,
+			);
+			path = KipasKipasDonationRankiOS;
+			sourceTree = "<group>";
+		};
+		5DF9F87A2AC1893600066E36 /* KKDonationRankMicroApps */ = {
+			isa = PBXGroup;
+			children = (
+				5DF9F87B2AC1893600066E36 /* AppDelegate.swift */,
+				5DF9F87D2AC1893600066E36 /* SceneDelegate.swift */,
+				5DF9F8842AC1893700066E36 /* Assets.xcassets */,
+				5DF9F8862AC1893700066E36 /* LaunchScreen.storyboard */,
+				5DF9F8892AC1893700066E36 /* Info.plist */,
+			);
+			path = KKDonationRankMicroApps;
+			sourceTree = "<group>";
+		};
+		5DF9F8922AC18A5300066E36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DF400CA2AE7900700A7584F /* KipasKipasNetworkingUtils.framework */,
+				5DF400C72AE78FFE00A7584F /* KipasKipasNetworkingTests.xctest */,
+				5D4BA2A22AE766D6000C5F16 /* KipasKipasLogin.framework */,
+				5D4BA2A32AE766D6000C5F16 /* KipasKipasLoginiOS.framework */,
+				5D9E35962AD55D210066768A /* KipasKipasDonationBadge.framework */,
+				5D9E35972AD55D210066768A /* KipasKipasDonationBadgeiOS.framework */,
+				5D5C6DD52AC2BA0400111510 /* KipasKipasNetworkingUtils.framework */,
+				5D5C6DCE2AC2A40B00111510 /* KipasKipasNetworking.framework */,
+				5D5C6DC52AC2930D00111510 /* KipasKipasNetworking.framework */,
+				5DF9F8972AC18B3000066E36 /* KipasKipasShared.framework */,
+				5DF9F8932AC18A5300066E36 /* KipasKipasShared.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5DF9F8A32AC18DAE00066E36 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5D2801532AC5A0A600017DBC /* Views */,
+				5D2801402AC52FF100017DBC /* Controllers */,
+				5D28013D2AC52EBA00017DBC /* Adapters */,
+				5DF9F8902AC1899A00066E36 /* DonationGlobalRankViewController.swift */,
+				5DF9F8A42AC18DC600066E36 /* NSCollectionLayoutSection+ext.swift */,
+				5D5C6DBB2AC27BB500111510 /* DonationRankCell.swift */,
+				5D5C6DD82AC2BE0600111510 /* DonationGlobalRankUIComposer.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5DF9F84F2AC1882900066E36 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DF9F8582AC1882900066E36 /* KipasKipasDonationRank.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DF9F8662AC1891400066E36 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DF9F86E2AC1891400066E36 /* KipasKipasDonationRankiOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5DF9F8532AC1882900066E36 /* KipasKipasDonationRank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DF9F85B2AC1882900066E36 /* Build configuration list for PBXNativeTarget "KipasKipasDonationRank" */;
+			buildPhases = (
+				5DF9F84F2AC1882900066E36 /* Headers */,
+				5DF9F8502AC1882900066E36 /* Sources */,
+				5DF9F8512AC1882900066E36 /* Frameworks */,
+				5DF9F8522AC1882900066E36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KipasKipasDonationRank;
+			packageProductDependencies = (
+				5D28015B2AC6AE6900017DBC /* Kingfisher */,
+			);
+			productName = KipasKipasDonationRank;
+			productReference = 5DF9F8542AC1882900066E36 /* KipasKipasDonationRank.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5DF9F86A2AC1891400066E36 /* KipasKipasDonationRankiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DF9F86F2AC1891400066E36 /* Build configuration list for PBXNativeTarget "KipasKipasDonationRankiOS" */;
+			buildPhases = (
+				5DF9F8662AC1891400066E36 /* Headers */,
+				5DF9F8672AC1891400066E36 /* Sources */,
+				5DF9F8682AC1891400066E36 /* Frameworks */,
+				5DF9F8692AC1891400066E36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D2801512AC5661600017DBC /* PBXTargetDependency */,
+			);
+			name = KipasKipasDonationRankiOS;
+			packageProductDependencies = (
+				5D28015D2AC6AE7100017DBC /* Kingfisher */,
+			);
+			productName = KipasKipasDonationRankiOS;
+			productReference = 5DF9F86B2AC1891400066E36 /* KipasKipasDonationRankiOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5DF9F8782AC1893500066E36 /* KKDonationRankMicroApps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DF9F88A2AC1893700066E36 /* Build configuration list for PBXNativeTarget "KKDonationRankMicroApps" */;
+			buildPhases = (
+				5DF9F8752AC1893500066E36 /* Sources */,
+				5DF9F8762AC1893500066E36 /* Frameworks */,
+				5DF9F8772AC1893500066E36 /* Resources */,
+				5DF9F89A2AC18B3000066E36 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DF9F89E2AC18B5500066E36 /* PBXTargetDependency */,
+				5DF9F8A22AC18B5500066E36 /* PBXTargetDependency */,
+			);
+			name = KKDonationRankMicroApps;
+			packageProductDependencies = (
+				5D2801612AC6CC2400017DBC /* Kingfisher */,
+			);
+			productName = KKDonationRankMicroApps;
+			productReference = 5DF9F8792AC1893500066E36 /* KKDonationRankMicroApps.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DF9F84B2AC1882900066E36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5DF9F8532AC1882900066E36 = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
+					};
+					5DF9F86A2AC1891400066E36 = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
+					};
+					5DF9F8782AC1893500066E36 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 5DF9F84E2AC1882900066E36 /* Build configuration list for PBXProject "KipasKipasDonationRank" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DF9F84A2AC1882900066E36;
+			packageReferences = (
+				5D28015A2AC6AE6900017DBC /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = 5DF9F8552AC1882900066E36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DF9F8532AC1882900066E36 /* KipasKipasDonationRank */,
+				5DF9F86A2AC1891400066E36 /* KipasKipasDonationRankiOS */,
+				5DF9F8782AC1893500066E36 /* KKDonationRankMicroApps */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DF9F8522AC1882900066E36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DF9F8692AC1891400066E36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DF9F8772AC1893500066E36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DF9F8882AC1893700066E36 /* LaunchScreen.storyboard in Resources */,
+				5DF9F8852AC1893700066E36 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DF9F8502AC1882900066E36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D2801382AC52CD800017DBC /* DonationGlobalRankViewModel.swift in Sources */,
+				5D5C6DC12AC28DC400111510 /* RemoteDonationGlobalRank.swift in Sources */,
+				5D28016A2AC8143800017DBC /* DonationGlobalRankHeaderViewModel.swift in Sources */,
+				5D5C6DCD2AC295C100111510 /* GlobalRankEndpoint.swift in Sources */,
+				5D28014D2AC55F6400017DBC /* DonationGlobalRankPagingViewModel.swift in Sources */,
+				5D5C6DCB2AC2950000111510 /* DonationGlobalRankLoader.swift in Sources */,
+				5D2801662AC8097D00017DBC /* RemoteDonationGlobalSelfRankLoader.swift in Sources */,
+				5D2801642AC804E700017DBC /* DonationGlobalSelfRankLoader.swift in Sources */,
+				5D5C6DD22AC2AF9B00111510 /* RemoteDonationGlobalRankLoader.swift in Sources */,
+				5D5C6DD42AC2B1A700111510 /* DonationGlobalRankItem.swift in Sources */,
+				5D28013C2AC52DA800017DBC /* DonationGlobalRankLoadingViewModel.swift in Sources */,
+				5D28013A2AC52D1200017DBC /* DonationGlobalRankPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DF9F8672AC1891400066E36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D2801442AC533B900017DBC /* DonationGlobalRankViewAdapter.swift in Sources */,
+				5D5C6DD92AC2BE0600111510 /* DonationGlobalRankUIComposer.swift in Sources */,
+				5D28013F2AC52EC600017DBC /* DonationGlobalRankPresentationAdapter.swift in Sources */,
+				5D2801592AC6ADCF00017DBC /* DonationGlobalRankImagePresentationAdapter.swift in Sources */,
+				5D2801552AC5A0C700017DBC /* DonationSelfRankHeaderView.swift in Sources */,
+				5DF9F8A52AC18DC600066E36 /* NSCollectionLayoutSection+ext.swift in Sources */,
+				5D2801422AC5302D00017DBC /* DonationGlobalRankLoadingController.swift in Sources */,
+				5DF9F8912AC1899A00066E36 /* DonationGlobalRankViewController.swift in Sources */,
+				5D2801492AC5364900017DBC /* DonationGlobalRankCellController.swift in Sources */,
+				5D5C6DBC2AC27BB500111510 /* DonationRankCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DF9F8752AC1893500066E36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DF9F87C2AC1893600066E36 /* AppDelegate.swift in Sources */,
+				5DF9F87E2AC1893600066E36 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D2801512AC5661600017DBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DF9F8532AC1882900066E36 /* KipasKipasDonationRank */;
+			targetProxy = 5D2801502AC5661600017DBC /* PBXContainerItemProxy */;
+		};
+		5DF9F89E2AC18B5500066E36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DF9F8532AC1882900066E36 /* KipasKipasDonationRank */;
+			targetProxy = 5DF9F89D2AC18B5500066E36 /* PBXContainerItemProxy */;
+		};
+		5DF9F8A22AC18B5500066E36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DF9F86A2AC1891400066E36 /* KipasKipasDonationRankiOS */;
+			targetProxy = 5DF9F8A12AC18B5500066E36 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5DF9F8862AC1893700066E36 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DF9F8872AC1893700066E36 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D77B1FE2B917608008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = LiveDebug;
+		};
+		5D77B1FF2B917608008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonationRank;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = LiveDebug;
+		};
+		5D77B2002B917608008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonationRankiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = LiveDebug;
+		};
+		5D77B2012B917608008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_BASE_URL = "https://test-api-main.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KKDonationRankMicroApps/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KKDonationRankMicroApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = LiveDebug;
+		};
+		5DF9F8592AC1882900066E36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5DF9F85A2AC1882900066E36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5DF9F85C2AC1882900066E36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonationRank;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5DF9F85D2AC1882900066E36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonationRank;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5DF9F8602AC1888300066E36 /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = ProdDebug;
+		};
+		5DF9F8612AC1888300066E36 /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonationRank;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = ProdDebug;
+		};
+		5DF9F8622AC1888B00066E36 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Staging;
+		};
+		5DF9F8632AC1888B00066E36 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonationRank;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Staging;
+		};
+		5DF9F8702AC1891400066E36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonationRankiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5DF9F8722AC1891400066E36 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonationRankiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Staging;
+		};
+		5DF9F8732AC1891400066E36 /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonationRankiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = ProdDebug;
+		};
+		5DF9F8742AC1891400066E36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasDonationRankiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5DF9F88B2AC1893700066E36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_BASE_URL = "https://test-api-main.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KKDonationRankMicroApps/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KKDonationRankMicroApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5DF9F88D2AC1893700066E36 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_BASE_URL = "https://test-api-main.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KKDonationRankMicroApps/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KKDonationRankMicroApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Staging;
+		};
+		5DF9F88E2AC1893700066E36 /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_BASE_URL = "https://test-api-main.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KKDonationRankMicroApps/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KKDonationRankMicroApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = ProdDebug;
+		};
+		5DF9F88F2AC1893700066E36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_BASE_URL = "https://api-main.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KKDonationRankMicroApps/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KKDonationRankMicroApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DF9F84E2AC1882900066E36 /* Build configuration list for PBXProject "KipasKipasDonationRank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DF9F8592AC1882900066E36 /* Debug */,
+				5D77B1FE2B917608008CC295 /* LiveDebug */,
+				5DF9F8622AC1888B00066E36 /* Staging */,
+				5DF9F8602AC1888300066E36 /* ProdDebug */,
+				5DF9F85A2AC1882900066E36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DF9F85B2AC1882900066E36 /* Build configuration list for PBXNativeTarget "KipasKipasDonationRank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DF9F85C2AC1882900066E36 /* Debug */,
+				5D77B1FF2B917608008CC295 /* LiveDebug */,
+				5DF9F8632AC1888B00066E36 /* Staging */,
+				5DF9F8612AC1888300066E36 /* ProdDebug */,
+				5DF9F85D2AC1882900066E36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DF9F86F2AC1891400066E36 /* Build configuration list for PBXNativeTarget "KipasKipasDonationRankiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DF9F8702AC1891400066E36 /* Debug */,
+				5D77B2002B917608008CC295 /* LiveDebug */,
+				5DF9F8722AC1891400066E36 /* Staging */,
+				5DF9F8732AC1891400066E36 /* ProdDebug */,
+				5DF9F8742AC1891400066E36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DF9F88A2AC1893700066E36 /* Build configuration list for PBXNativeTarget "KKDonationRankMicroApps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DF9F88B2AC1893700066E36 /* Debug */,
+				5D77B2012B917608008CC295 /* LiveDebug */,
+				5DF9F88D2AC1893700066E36 /* Staging */,
+				5DF9F88E2AC1893700066E36 /* ProdDebug */,
+				5DF9F88F2AC1893700066E36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5D28015A2AC6AE6900017DBC /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5D28015B2AC6AE6900017DBC /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D28015A2AC6AE6900017DBC /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		5D28015D2AC6AE7100017DBC /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D28015A2AC6AE6900017DBC /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		5D2801612AC6CC2400017DBC /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D28015A2AC6AE6900017DBC /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5DF9F84B2AC1882900066E36 /* Project object */;
+}

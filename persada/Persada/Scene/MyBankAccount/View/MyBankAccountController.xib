@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoMedium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyBankAccountController" customModule="KipasKipas" customModuleProvider="target">
+            <connections>
+                <outlet property="addBankView" destination="zB7-EY-jFJ" id="OiY-KA-5VK"/>
+                <outlet property="tableView" destination="IGz-HL-Zsj" id="1bX-BI-n0j"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="cK7-eD-BeY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zB7-EY-jFJ" userLabel="Add Bank View">
+                    <rect key="frame" x="20" y="72" width="374" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Akun Bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYK-q1-7tM">
+                            <rect key="frame" x="16" y="25" width="58" height="14.5"/>
+                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
+                            <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y5N-6X-ifl">
+                            <rect key="frame" x="203" y="14" width="157" height="36"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tambah Rekening" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bY-tp-THI">
+                                    <rect key="frame" x="30.5" y="11" width="96" height="14.5"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
+                                    <color key="textColor" red="0.094117647058823528" green="0.56470588235294117" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.90588235289999997" green="0.95294117649999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="3bY-tp-THI" firstAttribute="centerY" secondItem="Y5N-6X-ifl" secondAttribute="centerY" id="0oH-d5-gsv"/>
+                                <constraint firstAttribute="height" constant="36" id="d3F-XM-xLh"/>
+                                <constraint firstItem="3bY-tp-THI" firstAttribute="centerX" secondItem="Y5N-6X-ifl" secondAttribute="centerX" id="lTg-Lm-wVe"/>
+                                <constraint firstAttribute="width" constant="157" id="yWY-E9-2Kg"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="6"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Y5N-6X-ifl" firstAttribute="centerY" secondItem="zB7-EY-jFJ" secondAttribute="centerY" id="Q9S-gg-at9"/>
+                        <constraint firstAttribute="trailing" secondItem="Y5N-6X-ifl" secondAttribute="trailing" constant="14" id="WXT-Me-srJ"/>
+                        <constraint firstAttribute="height" constant="64" id="mXx-AZ-Xcq"/>
+                        <constraint firstItem="JYK-q1-7tM" firstAttribute="centerY" secondItem="zB7-EY-jFJ" secondAttribute="centerY" id="qL4-08-3ey"/>
+                        <constraint firstItem="JYK-q1-7tM" firstAttribute="leading" secondItem="zB7-EY-jFJ" secondAttribute="leading" constant="16" id="rZ0-2W-w4D"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="4"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IGz-HL-Zsj">
+                    <rect key="frame" x="20" y="156" width="374" height="686"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="IGz-HL-Zsj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="1iD-QA-WZh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zB7-EY-jFJ" secondAttribute="trailing" constant="20" id="Cpn-Al-MBp"/>
+                <constraint firstItem="zB7-EY-jFJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="DKJ-6Q-BLw"/>
+                <constraint firstItem="IGz-HL-Zsj" firstAttribute="top" secondItem="zB7-EY-jFJ" secondAttribute="bottom" constant="20" id="Odk-zb-NVN"/>
+                <constraint firstItem="zB7-EY-jFJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="UG7-q6-Vxg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IGz-HL-Zsj" secondAttribute="trailing" constant="20" id="eT8-2o-6mj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="IGz-HL-Zsj" secondAttribute="bottom" constant="20" id="ec6-wb-9PM"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="131"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

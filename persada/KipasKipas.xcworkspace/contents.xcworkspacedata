@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Modules/KipasKipasLuckyDraw/KipasKipasLuckyDraw.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/KipasKipasStory/KipasKipasStory.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/KipasKipasVerificationIdentity/KipasKipasVerificationIdentity.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/KipasKipasNotification/KipasKipasNotification.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/KipasKipasResetPassword/KipasKipasResetPassword.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/KipasKipasImage/KipasKipasImage.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/KipasKipasDonateStuff/KipasKipasDonateStuff.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/KipasKipasRegister/KipasKipasRegister.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/KipasKipasCamera/KipasKipasCamera.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/KipasKipasCall/KipasKipasCall.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/KipasKipasLiveStream/KipasKipasLiveStream.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/KipasKipasDonation/KipasKipasDonation.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/KipasKipasDonationHistory/KipasKipasDonationHistory.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/KipasKipasDonationBadge/KipasKipasDonationBadge.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/KipasKipasDonationRank/KipasKipasDonationRank.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/KipasKipasLogin/KipasKipasLogin.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/KipasKipasPayment/KipasKipasPayment.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/KipasKipasReport/KipasKipasReport.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/KipasKipasDirectMessage/KipasKipasDirectMessage.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/KipasKipasShared/KipasKipasShared.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/KipasKipasFeed/KipasKipasFeed.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/KipasKipasNetworking/KipasKipasNetworking.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:KipasKipas.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

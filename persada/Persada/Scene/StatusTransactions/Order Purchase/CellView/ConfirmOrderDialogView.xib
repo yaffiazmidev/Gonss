@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoBold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="RobotoRegular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ConfirmOrderDialogView" customModule="KipasKipas" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q7u-pJ-5QF">
+                    <rect key="frame" x="78" y="341" width="258" height="214"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Konfirmasi Pesanan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVC-Mi-59W">
+                            <rect key="frame" x="24" y="24" width="210" height="16.5"/>
+                            <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="14"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9SZ-sd-lQ7">
+                            <rect key="frame" x="24" y="54.5" width="210" height="70.5"/>
+                            <string key="text">Lakukan konfirmasi ini hanya jika pesanan sudah benar-benar anda terima dengan baik dan lengkap, karena transaksi akan dianggap selesai dan dana akan diteruskan ke penjual.</string>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AwR-eF-wA2">
+                            <rect key="frame" x="195" y="140" width="39" height="54"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                            <state key="normal" title="Selesai">
+                                <color key="titleColor" red="1" green="0.52941176469999995" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="done:" destination="iN0-l3-epB" eventType="touchUpInside" id="JbK-uU-Q8o"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ANJ-8l-qcN">
+                            <rect key="frame" x="119" y="140" width="44" height="54"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                            <state key="normal" title="Kembali">
+                                <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="cancel:" destination="iN0-l3-epB" eventType="touchUpInside" id="XYp-Gl-a2R"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="AwR-eF-wA2" secondAttribute="trailing" constant="24" id="0lx-L7-am6"/>
+                        <constraint firstItem="AwR-eF-wA2" firstAttribute="leading" secondItem="ANJ-8l-qcN" secondAttribute="trailing" constant="32" id="75t-bR-DEE"/>
+                        <constraint firstAttribute="bottom" secondItem="AwR-eF-wA2" secondAttribute="bottom" constant="20" id="FSE-6f-5OC"/>
+                        <constraint firstAttribute="trailing" secondItem="9SZ-sd-lQ7" secondAttribute="trailing" constant="24" id="IZa-ew-egc"/>
+                        <constraint firstAttribute="bottom" secondItem="ANJ-8l-qcN" secondAttribute="bottom" constant="20" id="MGy-LO-6TC"/>
+                        <constraint firstItem="AwR-eF-wA2" firstAttribute="top" secondItem="9SZ-sd-lQ7" secondAttribute="bottom" constant="15" id="VUC-he-ge1"/>
+                        <constraint firstItem="ANJ-8l-qcN" firstAttribute="top" secondItem="9SZ-sd-lQ7" secondAttribute="bottom" constant="15" id="dwA-gy-vBp"/>
+                        <constraint firstItem="9SZ-sd-lQ7" firstAttribute="leading" secondItem="q7u-pJ-5QF" secondAttribute="leading" constant="24" id="fSt-Gw-q6d"/>
+                        <constraint firstItem="bVC-Mi-59W" firstAttribute="leading" secondItem="q7u-pJ-5QF" secondAttribute="leading" constant="24" id="fyY-dk-BGp"/>
+                        <constraint firstAttribute="trailing" secondItem="bVC-Mi-59W" secondAttribute="trailing" constant="24" id="lSb-1f-pNW"/>
+                        <constraint firstAttribute="width" constant="258" id="mfz-Dr-ntx"/>
+                        <constraint firstItem="9SZ-sd-lQ7" firstAttribute="top" secondItem="bVC-Mi-59W" secondAttribute="bottom" constant="14" id="qrH-zJ-wQs"/>
+                        <constraint firstAttribute="height" constant="214" id="sgJ-7q-JvY"/>
+                        <constraint firstItem="bVC-Mi-59W" firstAttribute="top" secondItem="q7u-pJ-5QF" secondAttribute="top" constant="24" id="xQl-Jz-hpJ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                            <size key="value" width="5" height="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                            <real key="value" value="0.10000000000000001"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                            <color key="value" systemColor="opaqueSeparatorColor"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <real key="value" value="0.10000000000000001"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="q7u-pJ-5QF" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="YkJ-yd-mOp"/>
+                <constraint firstItem="q7u-pJ-5QF" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="kZa-KR-LWQ"/>
+            </constraints>
+            <connections>
+                <outlet property="buttonCancel" destination="ANJ-8l-qcN" id="TTH-K5-Mwc"/>
+                <outlet property="buttonDone" destination="AwR-eF-wA2" id="j4C-1j-WbJ"/>
+            </connections>
+            <point key="canvasLocation" x="-57.971014492753625" y="109.82142857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

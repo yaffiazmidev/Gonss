@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoBold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="RobotoRegular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="96" id="KGk-i7-Jjw" customClass="RowTagProduct" customModule="KipasKipas" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w8U-Kv-idH">
+                        <rect key="frame" x="24" y="12" width="72" height="72"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="72" id="1Wx-dm-9cr"/>
+                            <constraint firstAttribute="height" constant="72" id="M6u-e7-CJm"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kemeja Bahan" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dj1-dx-efK">
+                        <rect key="frame" x="108" y="12" width="166" height="20"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rp 57.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HeV-UM-lJH">
+                        <rect key="frame" x="108" y="40" width="204" height="20"/>
+                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
+                        <color key="textColor" name="Primary"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ss8-F6-yqR">
+                        <rect key="frame" x="282" y="10" width="26" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="LzB-Ci-MZb"/>
+                            <constraint firstAttribute="width" constant="26" id="Wa8-WM-0f4"/>
+                        </constraints>
+                        <state key="normal" image="iconUploadClose"/>
+                        <connections>
+                            <action selector="onDeleteClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="qEW-Sf-MGF"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="HeV-UM-lJH" secondAttribute="bottom" constant="12" id="Cn6-SF-xmF"/>
+                    <constraint firstItem="HeV-UM-lJH" firstAttribute="top" secondItem="dj1-dx-efK" secondAttribute="bottom" constant="8" id="DNd-ba-Kva"/>
+                    <constraint firstItem="dj1-dx-efK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="FKe-x5-OCo"/>
+                    <constraint firstItem="ss8-F6-yqR" firstAttribute="leading" secondItem="dj1-dx-efK" secondAttribute="trailing" constant="8" id="OIt-Bl-uZS"/>
+                    <constraint firstItem="HeV-UM-lJH" firstAttribute="leading" secondItem="w8U-Kv-idH" secondAttribute="trailing" constant="12" id="Unw-be-5no"/>
+                    <constraint firstAttribute="trailing" secondItem="ss8-F6-yqR" secondAttribute="trailing" constant="12" id="Uyg-5B-cfd"/>
+                    <constraint firstItem="w8U-Kv-idH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="Y2L-6V-GV9"/>
+                    <constraint firstItem="ss8-F6-yqR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="c86-WF-K9j"/>
+                    <constraint firstItem="dj1-dx-efK" firstAttribute="leading" secondItem="w8U-Kv-idH" secondAttribute="trailing" constant="12" id="e9g-fn-Hhd"/>
+                    <constraint firstAttribute="trailing" secondItem="HeV-UM-lJH" secondAttribute="trailing" constant="8" id="gCl-h3-kp6"/>
+                    <constraint firstAttribute="bottom" secondItem="w8U-Kv-idH" secondAttribute="bottom" constant="12" id="piW-8j-tqJ"/>
+                    <constraint firstItem="w8U-Kv-idH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="z5a-Iv-ccA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnDelete" destination="ss8-F6-yqR" id="bML-gB-dlQ"/>
+                <outlet property="imgView" destination="w8U-Kv-idH" id="4mn-EA-hdY"/>
+                <outlet property="lblName" destination="dj1-dx-efK" id="Pgv-Ve-H2c"/>
+                <outlet property="lblNameMarginRight" destination="OIt-Bl-uZS" id="1E7-3O-XJ8"/>
+                <outlet property="lblPrice" destination="HeV-UM-lJH" id="o23-Vq-6Xa"/>
+                <outlet property="lblPriceMarginRight" destination="gCl-h3-kp6" id="b2y-gV-4tm"/>
+                <outlet property="photoMarginLeft" destination="z5a-Iv-ccA" id="SnH-wU-fYc"/>
+            </connections>
+            <point key="canvasLocation" x="-591.304347826087" y="84.375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iconUploadClose" width="12" height="12"/>
+        <namedColor name="Primary">
+            <color red="1" green="0.25882352941176473" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

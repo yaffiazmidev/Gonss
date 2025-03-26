@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoRegular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="lkE-2X-SyF" customClass="MediaItemCell" customModule="KipasKipas" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="464" height="284"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Jh7-M5-9mZ">
+                <rect key="frame" x="0.0" y="0.0" width="464" height="284"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Van-0T-i84">
+                        <rect key="frame" x="0.0" y="0.0" width="464" height="284"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconPause" translatesAutoresizingMaskIntoConstraints="NO" id="wjU-hg-GXA">
+                        <rect key="frame" x="375" y="9" width="24" height="24"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LwA-9U-gKw">
+                        <rect key="frame" x="407" y="10" width="49" height="24"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJc-uo-1Bx">
+                                <rect key="frame" x="0.0" y="0.0" width="49" height="24"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="greyAlpha4"/>
+                        <constraints>
+                            <constraint firstItem="nJc-uo-1Bx" firstAttribute="top" secondItem="LwA-9U-gKw" secondAttribute="top" id="94f-Wx-guf"/>
+                            <constraint firstAttribute="width" constant="49" id="Cqq-41-lJ1"/>
+                            <constraint firstAttribute="bottom" secondItem="nJc-uo-1Bx" secondAttribute="bottom" id="KPE-W5-jtm"/>
+                            <constraint firstItem="nJc-uo-1Bx" firstAttribute="leading" secondItem="LwA-9U-gKw" secondAttribute="leading" id="rxt-M2-BCY"/>
+                            <constraint firstAttribute="height" constant="24" id="tmp-dj-kv4"/>
+                            <constraint firstAttribute="trailing" secondItem="nJc-uo-1Bx" secondAttribute="trailing" id="vRm-N9-MIl"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Van-0T-i84" firstAttribute="leading" secondItem="Jh7-M5-9mZ" secondAttribute="leading" id="1nF-et-olB"/>
+                    <constraint firstItem="Van-0T-i84" firstAttribute="top" secondItem="Jh7-M5-9mZ" secondAttribute="top" id="J8R-jO-Mxz"/>
+                    <constraint firstItem="LwA-9U-gKw" firstAttribute="leading" secondItem="wjU-hg-GXA" secondAttribute="trailing" constant="8" id="KRM-YZ-uzN"/>
+                    <constraint firstAttribute="bottom" secondItem="Van-0T-i84" secondAttribute="bottom" id="OQc-rG-4kr"/>
+                    <constraint firstAttribute="trailing" secondItem="LwA-9U-gKw" secondAttribute="trailing" constant="8" id="RJj-GB-JZ2"/>
+                    <constraint firstAttribute="trailing" secondItem="Van-0T-i84" secondAttribute="trailing" id="bf3-i0-fwC"/>
+                    <constraint firstItem="wjU-hg-GXA" firstAttribute="top" secondItem="Jh7-M5-9mZ" secondAttribute="top" constant="9" id="gkZ-Fk-ojr"/>
+                    <constraint firstItem="LwA-9U-gKw" firstAttribute="top" secondItem="Jh7-M5-9mZ" secondAttribute="top" constant="10" id="qUc-nd-Ll2"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="464" height="284"/>
+            <connections>
+                <outlet property="iconPauseImage" destination="wjU-hg-GXA" id="Q2X-gP-iQz"/>
+                <outlet property="mediaContainerView" destination="Van-0T-i84" id="KRh-Fi-CYh"/>
+                <outlet property="timerBackgroundView" destination="LwA-9U-gKw" id="U0b-nh-ur7"/>
+                <outlet property="timerLabel" destination="nJc-uo-1Bx" id="ccu-Cp-gHC"/>
+            </connections>
+            <point key="canvasLocation" x="915.94202898550736" y="140.625"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="iconPause" width="24" height="24"/>
+        <namedColor name="greyAlpha4">
+            <color red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="0.40000000596046448" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

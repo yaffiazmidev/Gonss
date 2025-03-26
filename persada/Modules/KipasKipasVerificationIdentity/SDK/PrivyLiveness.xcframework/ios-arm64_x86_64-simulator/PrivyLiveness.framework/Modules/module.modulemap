@@ -1,0 +1,11 @@
+framework module PrivyLiveness {
+  umbrella header "PrivyLiveness-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module PrivyLiveness.Swift {
+  header "PrivyLiveness-Swift.h"
+  requires objc
+}

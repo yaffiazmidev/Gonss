@@ -1,0 +1,277 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+require 'date'
+default_platform(:ios)
+
+platform :ios do
+
+  ############################################## HELPER ##############################################
+  desc "Get app version"
+  lane :version do
+    build_number = get_build_number(xcodeproj: "KipasKipas.xcodeproj")
+    version_number = get_version_number(xcodeproj: "KipasKipas.xcodeproj", target: "KipasKipas")
+    "#{version_number}(#{build_number})"
+  end
+
+  desc "Get timestamp"
+  lane :stamp do
+    date = DateTime.now
+    date.strftime("%y%m%d%H%M")
+  end
+
+  ############################################## CORE ##############################################
+  desc "Build app"
+  lane :build do |options|
+    path = sh("PWD").delete!("\n")
+
+    method = options[:method]
+    scheme = options[:scheme]
+    name = options[:name]
+    icon = options[:icon]
+    manifest_name = options[:manifest_name]
+
+    puts "Building #{name} with scheme #{scheme} and method #{method}"
+
+    build_ios_app(
+      clean: true,
+      workspace: "KipasKipas.xcworkspace",
+      scheme: scheme,
+      archive_path: "build/archive/#{name}.xcarchive",
+      output_directory: "build/ipa",
+      output_name: "#{name}.ipa",
+      export_options: {
+        method: method,
+        manifest: {
+          appURL: "https://app-katalog.kipaskipas.com/download/ios/#{name}.ipa",
+          displayImageURL: icon,
+          fullSizeImageURL: icon
+        },
+        thinning: "<none>"
+      }
+    )
+
+    if !(manifest_name.nil? || manifest_name.empty?)
+      project_dir = File.expand_path('..', Dir.pwd)
+      sh("mv '#{project_dir}/build/ipa/manifest.plist' '#{project_dir}/build/ipa/#{manifest_name}.plist'")
+    end
+
+    puts "Success build #{name} with scheme #{scheme} and method #{method}"
+  end
+
+  desc "Publish App"
+  lane :publish do |options|
+    name = options[:name]
+    identifier = options[:identifier]
+
+    puts "Publishing #{name} to Testflight"
+
+    upload_to_testflight(
+      {
+        app_identifier: identifier,
+        ipa: "build/ipa/#{name}.ipa",
+        skip_waiting_for_build_processing: true
+      }
+    )
+
+    puts "Success publish #{name} to Testflight"
+  end
+
+  ############################################## BATCH ##############################################
+  desc "Push a new dev build to TestFlight"
+  lane :dev do |options|
+    suffix = "v#{version()}_#{stamp()}"
+    name = "KipasKipasDev-#{suffix}"
+    manifest_name = nil
+
+    method = options[:method]
+    if method == "adhoc"
+      method = "ad-hoc"
+      manifest_name = "manifest-dev-v#{version()}_#{stamp()}"
+    else
+      method = "app-store"
+    end
+
+    build(
+      scheme: "DevKipasKipas",
+      name: name,
+      icon: "https://app-katalog.kipaskipas.com/icons/appicon-dev.png",
+      manifest_name: manifest_name,
+      method: method
+    )
+
+    if method == "app-store"
+      publish(
+        name: name,
+        identifier: "com.koanba.kipaskipas.mobile.dev"
+      )
+    end
+  end
+
+  desc "Push a new staging build to TestFlight"
+  lane :staging do |options|
+    suffix = "v#{version()}_#{stamp()}"
+    name = "KipasKipasStaging-#{suffix}"
+    manifest_name = nil
+
+    method = options[:method]
+    if method == "adhoc"
+      method = "ad-hoc"
+      manifest_name = "manifest-staging-v#{version()}_#{stamp()}"
+    else
+      method = "app-store"
+    end
+
+    build(
+      scheme: "STAGINGKipasKipas",
+      name: name,
+      icon: "https://app-katalog.kipaskipas.com/icons/appicon-staging.png",
+      manifest_name: manifest_name,
+      method: method
+    )
+
+    if method == "app-store"
+      publish(
+        name: name,
+        identifier: "com.koanba.kipaskipas.mobile.staging"
+      )
+    end
+  end
+
+  desc "Push a new production build to TestFlight"
+  lane :production do |options|
+    suffix = "v#{version()}_#{stamp()}"
+    name = "KipasKipas-#{suffix}"
+    manifest_name = nil
+
+    method = options[:method]
+    if method == "adhoc"
+      method = "ad-hoc"
+      manifest_name = "manifest-v#{version()}_#{stamp()}"
+    else
+      method = "app-store"
+    end
+
+    build(
+      scheme: "KipasKipas",
+      name: name,
+      icon: "https://app-katalog.kipaskipas.com/icons/appicon.png",
+      manifest_name: manifest_name,
+      method: method
+    )
+
+    if method == "app-store"
+      publish(
+        name: name,
+        identifier: "com.koanba.kipaskipas.mobile"
+      )
+    end
+  end
+
+  ############################################## BUILD ONLY ##############################################
+  desc "Build new app with scheme Dev"
+  lane :buildDev do |options|
+    suffix = "v#{version()}_#{stamp()}"
+    name = "KipasKipasDev-#{suffix}"
+    manifest_name = nil
+
+    method = options[:method]
+    if method == "adhoc"
+      method = "ad-hoc"
+      manifest_name = "manifest-dev-v#{version()}_#{stamp()}"
+    else
+      method = "app-store"
+    end
+
+    build(
+      scheme: "DevKipasKipas",
+      name: name,
+      icon: "https://app-katalog.kipaskipas.com/icons/appicon-dev.png",
+      manifest_name: manifest_name,
+      method: method
+    )
+  end
+
+  desc "Build new app with scheme Staging"
+  lane :buildStaging do |options|
+    suffix = "v#{version()}_#{stamp()}"
+    name = "KipasKipasStaging-#{suffix}"
+    manifest_name = nil
+
+    method = options[:method]
+    if method == "adhoc"
+      method = "ad-hoc"
+      manifest_name = "manifest-staging-v#{version()}_#{stamp()}"
+    else
+      method = "app-store"
+    end
+
+    build(
+      scheme: "STAGINGKipasKipas",
+      name: name,
+      icon: "https://app-katalog.kipaskipas.com/icons/appicon-staging.png",
+      manifest_name: manifest_name,
+      method: method
+    )
+  end
+
+  desc "Build new app with scheme Production"
+  lane :buildProduction do |options|
+    suffix = "v#{version()}_#{stamp()}"
+    name = "KipasKipas-#{suffix}"
+    manifest_name = nil
+
+    method = options[:method]
+    if method == "adhoc"
+      method = "ad-hoc"
+      manifest_name = "manifest-v#{version()}_#{stamp()}"
+    else
+      method = "app-store"
+    end
+
+    build(
+      scheme: "KipasKipas",
+      name: name,
+      icon: "https://app-katalog.kipaskipas.com/icons/appicon.png",
+      manifest_name: manifest_name,
+      method: method
+    )
+  end
+
+  ############################################## PUBLISH ONLY ##############################################
+  desc "Publish Dev App to Testflight"
+  lane :publishDev do |options|
+    publish(
+      name: options[:name],
+      identifier: "com.koanba.kipaskipas.mobile.dev"
+    )
+  end
+
+  desc "Publish Staging App to Testflight"
+  lane :publishStaging do |options|
+    publish(
+      name: options[:name],
+      identifier: "com.koanba.kipaskipas.mobile.staging"
+    )
+  end
+
+  desc "Publish Production App to Testflight"
+  lane :publishProduction do |options|
+    publish(
+      name: options[:name],
+      identifier: "com.koanba.kipaskipas.mobile"
+    )
+  end
+end

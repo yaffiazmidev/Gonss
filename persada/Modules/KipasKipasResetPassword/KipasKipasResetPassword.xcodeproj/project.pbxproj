@@ -1,0 +1,1540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D0C7DF42BB3CEE800570849 /* ResetPasswordVerifyOTPPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0C7DF32BB3CEE800570849 /* ResetPasswordVerifyOTPPresentationAdapter.swift */; };
+		5D2194AD2BDE7D2B00013B51 /* ResetPasswordEmailError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2194AC2BDE7D2B00013B51 /* ResetPasswordEmailError.swift */; };
+		5D30B0D82BE1DF1500C52C42 /* ResetPasswordType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D30B0D72BE1DF1500C52C42 /* ResetPasswordType.swift */; };
+		5D36AC042BD89B8F00B6C65C /* libKipasKipasSharedFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D36AC032BD89B8F00B6C65C /* libKipasKipasSharedFoundation.a */; };
+		5D42B1EA2BB5E6AA00FD3C7F /* ResetPasswordRequestOTPParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D42B1E92BB5E6AA00FD3C7F /* ResetPasswordRequestOTPParam.swift */; };
+		5D42B1EC2BB5E6C800FD3C7F /* ResetPasswordVerifyOTPParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D42B1EB2BB5E6C800FD3C7F /* ResetPasswordVerifyOTPParam.swift */; };
+		5D5B36862BBEF7450007F351 /* ResetPasswordVerifyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B36852BBEF7450007F351 /* ResetPasswordVerifyError.swift */; };
+		5D685A152BD78D6D001D8157 /* ResetPasswordEmailUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D685A142BD78D6D001D8157 /* ResetPasswordEmailUIComposer.swift */; };
+		5D6FDB6D2BD643280098F21E /* ResetPasswordEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6FDB6C2BD643280098F21E /* ResetPasswordEmailView.swift */; };
+		5D6FDB6F2BD643B90098F21E /* ResetPasswordEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6FDB6E2BD643B90098F21E /* ResetPasswordEmailViewController.swift */; };
+		5D792FBE2BB329C300A298AE /* ResetPasswordLoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D792FBD2BB329C300A298AE /* ResetPasswordLoginResponse.swift */; };
+		5D792FC02BB3363700A298AE /* ResetPasswordLoginParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D792FBF2BB3363700A298AE /* ResetPasswordLoginParam.swift */; };
+		5D792FC72BB34A3D00A298AE /* ResetPasswordLoginPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D792FC62BB34A3D00A298AE /* ResetPasswordLoginPresentationAdapter.swift */; };
+		5D792FCC2BB34C1400A298AE /* ResetPasswordRequestOTPPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D792FCB2BB34C1400A298AE /* ResetPasswordRequestOTPPresentationAdapter.swift */; };
+		5DC72A5C2BB9636800CC162C /* RootData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC72A5B2BB9636800CC162C /* RootData.swift */; };
+		5DE2BBD02BB2480100330A19 /* KipasKipasResetPassword.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DE2BBCF2BB2480100330A19 /* KipasKipasResetPassword.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DE2BBDF2BB2484200330A19 /* KipasKipasResetPasswordiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DE2BBDE2BB2484200330A19 /* KipasKipasResetPasswordiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DE2BBF22BB2494000330A19 /* KipasKipasShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE2BBF12BB2494000330A19 /* KipasKipasShared.framework */; };
+		5DE2BBFC2BB2496F00330A19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2BBFB2BB2496F00330A19 /* AppDelegate.swift */; };
+		5DE2BBFE2BB2496F00330A19 /* SceneDelegate+ResetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2BBFD2BB2496F00330A19 /* SceneDelegate+ResetPassword.swift */; };
+		5DE2BC002BB2496F00330A19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2BBFF2BB2496F00330A19 /* ViewController.swift */; };
+		5DE2BC052BB2497000330A19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DE2BC042BB2497000330A19 /* Assets.xcassets */; };
+		5DE2BC082BB2497000330A19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DE2BC062BB2497000330A19 /* LaunchScreen.storyboard */; };
+		5DE2BC102BB249B500330A19 /* KipasKipasResetPassword.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE2BBCC2BB2480100330A19 /* KipasKipasResetPassword.framework */; };
+		5DE2BC112BB249B500330A19 /* KipasKipasResetPassword.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE2BBCC2BB2480100330A19 /* KipasKipasResetPassword.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5DE2BC142BB249B500330A19 /* KipasKipasResetPasswordiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE2BBDC2BB2484200330A19 /* KipasKipasResetPasswordiOS.framework */; };
+		5DE2BC152BB249B500330A19 /* KipasKipasResetPasswordiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE2BBDC2BB2484200330A19 /* KipasKipasResetPasswordiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5DE2BC1A2BB249B900330A19 /* KipasKipasNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE2BC192BB249B900330A19 /* KipasKipasNetworking.framework */; };
+		5DE2BC1B2BB249B900330A19 /* KipasKipasNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE2BC192BB249B900330A19 /* KipasKipasNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5DE2BC1D2BB249BD00330A19 /* KipasKipasShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE2BC1C2BB249BD00330A19 /* KipasKipasShared.framework */; };
+		5DE2BC1E2BB249BD00330A19 /* KipasKipasShared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE2BC1C2BB249BD00330A19 /* KipasKipasShared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5DE2BC232BB24C6C00330A19 /* ResetPasswordPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2BC222BB24C6C00330A19 /* ResetPasswordPhoneView.swift */; };
+		5DE2BC272BB24DBC00330A19 /* ResetPasswordPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2BC262BB24DBC00330A19 /* ResetPasswordPhoneViewController.swift */; };
+		5DE2BC2A2BB24E0C00330A19 /* Definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2BC292BB24E0C00330A19 /* Definition.swift */; };
+		5DE2BC2B2BB24E8100330A19 /* KipasKipasResetPassword.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE2BBCC2BB2480100330A19 /* KipasKipasResetPassword.framework */; };
+		5DE2BC322BB254CE00330A19 /* ResetPasswordOTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2BC312BB254CE00330A19 /* ResetPasswordOTPResponse.swift */; };
+		5DE2BC3B2BB2564600330A19 /* ResetPasswordPhoneUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2BC3A2BB2564600330A19 /* ResetPasswordPhoneUIComposer.swift */; };
+		5DE2BC3E2BB256C200330A19 /* ResetPasswordOTPRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2BC3D2BB256C200330A19 /* ResetPasswordOTPRequestViewModel.swift */; };
+		5DE2BC402BB25B3D00330A19 /* ResetPasswordPhoneError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2BC3F2BB25B3D00330A19 /* ResetPasswordPhoneError.swift */; };
+		5DE2BC432BB2692D00330A19 /* ResetPasswordVerifyOTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2BC422BB2692D00330A19 /* ResetPasswordVerifyOTPView.swift */; };
+		5DE2BC452BB269C100330A19 /* ResetPasswordVerifyOTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2BC442BB269C100330A19 /* ResetPasswordVerifyOTPViewController.swift */; };
+		5DE2BC492BB2715500330A19 /* ResetPasswordVerifyOTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2BC482BB2715500330A19 /* ResetPasswordVerifyOTPResponse.swift */; };
+		5DE2BC4D2BB2736200330A19 /* ResetPasswordVerifyOTPUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2BC4C2BB2736200330A19 /* ResetPasswordVerifyOTPUIComposer.swift */; };
+		5DE2BC542BB2A52F00330A19 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2BC532BB2A52F00330A19 /* ResetPasswordView.swift */; };
+		5DE2BC582BB2A64700330A19 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2BC572BB2A64700330A19 /* ResetPasswordViewController.swift */; };
+		5DE2BC5A2BB2ABED00330A19 /* ResetPasswordUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2BC592BB2ABED00330A19 /* ResetPasswordUIComposer.swift */; };
+		5DE2BC5C2BB2B36000330A19 /* ResetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2BC5B2BB2B36000330A19 /* ResetPasswordViewModel.swift */; };
+		5DE2BC602BB2B4D200330A19 /* ResetPasswordResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2BC5F2BB2B4D200330A19 /* ResetPasswordResponse.swift */; };
+		5DE2BC622BB2C22600330A19 /* ResetPasswordPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE2BC612BB2C22600330A19 /* ResetPasswordPresentationAdapter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5DE2BC122BB249B500330A19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DE2BBC32BB2480100330A19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DE2BBCB2BB2480100330A19;
+			remoteInfo = KipasKipasResetPassword;
+		};
+		5DE2BC162BB249B500330A19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DE2BBC32BB2480100330A19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DE2BBDB2BB2484200330A19;
+			remoteInfo = KipasKipasResetPasswordiOS;
+		};
+		5DE2BC2D2BB24E8100330A19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DE2BBC32BB2480100330A19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DE2BBCB2BB2480100330A19;
+			remoteInfo = KipasKipasResetPassword;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5DE2BC182BB249B500330A19 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5DE2BC112BB249B500330A19 /* KipasKipasResetPassword.framework in Embed Frameworks */,
+				5DE2BC1E2BB249BD00330A19 /* KipasKipasShared.framework in Embed Frameworks */,
+				5DE2BC152BB249B500330A19 /* KipasKipasResetPasswordiOS.framework in Embed Frameworks */,
+				5DE2BC1B2BB249B900330A19 /* KipasKipasNetworking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5D0C7DF32BB3CEE800570849 /* ResetPasswordVerifyOTPPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordVerifyOTPPresentationAdapter.swift; sourceTree = "<group>"; };
+		5D2194AC2BDE7D2B00013B51 /* ResetPasswordEmailError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordEmailError.swift; sourceTree = "<group>"; };
+		5D30B0D72BE1DF1500C52C42 /* ResetPasswordType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordType.swift; sourceTree = "<group>"; };
+		5D36AC032BD89B8F00B6C65C /* libKipasKipasSharedFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libKipasKipasSharedFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D42B1E92BB5E6AA00FD3C7F /* ResetPasswordRequestOTPParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordRequestOTPParam.swift; sourceTree = "<group>"; };
+		5D42B1EB2BB5E6C800FD3C7F /* ResetPasswordVerifyOTPParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordVerifyOTPParam.swift; sourceTree = "<group>"; };
+		5D5B36852BBEF7450007F351 /* ResetPasswordVerifyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordVerifyError.swift; sourceTree = "<group>"; };
+		5D685A142BD78D6D001D8157 /* ResetPasswordEmailUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordEmailUIComposer.swift; sourceTree = "<group>"; };
+		5D6FDB6C2BD643280098F21E /* ResetPasswordEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordEmailView.swift; sourceTree = "<group>"; };
+		5D6FDB6E2BD643B90098F21E /* ResetPasswordEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordEmailViewController.swift; sourceTree = "<group>"; };
+		5D792FBD2BB329C300A298AE /* ResetPasswordLoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordLoginResponse.swift; sourceTree = "<group>"; };
+		5D792FBF2BB3363700A298AE /* ResetPasswordLoginParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordLoginParam.swift; sourceTree = "<group>"; };
+		5D792FC62BB34A3D00A298AE /* ResetPasswordLoginPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordLoginPresentationAdapter.swift; sourceTree = "<group>"; };
+		5D792FCB2BB34C1400A298AE /* ResetPasswordRequestOTPPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordRequestOTPPresentationAdapter.swift; sourceTree = "<group>"; };
+		5DC72A5B2BB9636800CC162C /* RootData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootData.swift; sourceTree = "<group>"; };
+		5DE2BBCC2BB2480100330A19 /* KipasKipasResetPassword.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KipasKipasResetPassword.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DE2BBCF2BB2480100330A19 /* KipasKipasResetPassword.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KipasKipasResetPassword.h; sourceTree = "<group>"; };
+		5DE2BBDC2BB2484200330A19 /* KipasKipasResetPasswordiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KipasKipasResetPasswordiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DE2BBDE2BB2484200330A19 /* KipasKipasResetPasswordiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KipasKipasResetPasswordiOS.h; sourceTree = "<group>"; };
+		5DE2BBED2BB2493800330A19 /* KipasKipasNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DE2BBF12BB2494000330A19 /* KipasKipasShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DE2BBF92BB2496F00330A19 /* KKResetPasswordDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKResetPasswordDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DE2BBFB2BB2496F00330A19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5DE2BBFD2BB2496F00330A19 /* SceneDelegate+ResetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SceneDelegate+ResetPassword.swift"; sourceTree = "<group>"; };
+		5DE2BBFF2BB2496F00330A19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5DE2BC042BB2497000330A19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DE2BC072BB2497000330A19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5DE2BC092BB2497000330A19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DE2BC192BB249B900330A19 /* KipasKipasNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DE2BC1C2BB249BD00330A19 /* KipasKipasShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DE2BC222BB24C6C00330A19 /* ResetPasswordPhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordPhoneView.swift; sourceTree = "<group>"; };
+		5DE2BC262BB24DBC00330A19 /* ResetPasswordPhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordPhoneViewController.swift; sourceTree = "<group>"; };
+		5DE2BC292BB24E0C00330A19 /* Definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Definition.swift; sourceTree = "<group>"; };
+		5DE2BC312BB254CE00330A19 /* ResetPasswordOTPResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordOTPResponse.swift; sourceTree = "<group>"; };
+		5DE2BC3A2BB2564600330A19 /* ResetPasswordPhoneUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordPhoneUIComposer.swift; sourceTree = "<group>"; };
+		5DE2BC3D2BB256C200330A19 /* ResetPasswordOTPRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordOTPRequestViewModel.swift; sourceTree = "<group>"; };
+		5DE2BC3F2BB25B3D00330A19 /* ResetPasswordPhoneError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordPhoneError.swift; sourceTree = "<group>"; };
+		5DE2BC422BB2692D00330A19 /* ResetPasswordVerifyOTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordVerifyOTPView.swift; sourceTree = "<group>"; };
+		5DE2BC442BB269C100330A19 /* ResetPasswordVerifyOTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordVerifyOTPViewController.swift; sourceTree = "<group>"; };
+		5DE2BC482BB2715500330A19 /* ResetPasswordVerifyOTPResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordVerifyOTPResponse.swift; sourceTree = "<group>"; };
+		5DE2BC4C2BB2736200330A19 /* ResetPasswordVerifyOTPUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordVerifyOTPUIComposer.swift; sourceTree = "<group>"; };
+		5DE2BC532BB2A52F00330A19 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
+		5DE2BC572BB2A64700330A19 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		5DE2BC592BB2ABED00330A19 /* ResetPasswordUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordUIComposer.swift; sourceTree = "<group>"; };
+		5DE2BC5B2BB2B36000330A19 /* ResetPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewModel.swift; sourceTree = "<group>"; };
+		5DE2BC5F2BB2B4D200330A19 /* ResetPasswordResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordResponse.swift; sourceTree = "<group>"; };
+		5DE2BC612BB2C22600330A19 /* ResetPasswordPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordPresentationAdapter.swift; sourceTree = "<group>"; };
+		5DE2BC632BB2CEC800330A19 /* KipasKipasLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DE2BBC92BB2480100330A19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DE2BBD92BB2484200330A19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D36AC042BD89B8F00B6C65C /* libKipasKipasSharedFoundation.a in Frameworks */,
+				5DE2BBF22BB2494000330A19 /* KipasKipasShared.framework in Frameworks */,
+				5DE2BC2B2BB24E8100330A19 /* KipasKipasResetPassword.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DE2BBF62BB2496F00330A19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DE2BC102BB249B500330A19 /* KipasKipasResetPassword.framework in Frameworks */,
+				5DE2BC1D2BB249BD00330A19 /* KipasKipasShared.framework in Frameworks */,
+				5DE2BC142BB249B500330A19 /* KipasKipasResetPasswordiOS.framework in Frameworks */,
+				5DE2BC1A2BB249B900330A19 /* KipasKipasNetworking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D42B1E82BB5E69500FD3C7F /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				5D792FBF2BB3363700A298AE /* ResetPasswordLoginParam.swift */,
+				5D42B1E92BB5E6AA00FD3C7F /* ResetPasswordRequestOTPParam.swift */,
+				5D42B1EB2BB5E6C800FD3C7F /* ResetPasswordVerifyOTPParam.swift */,
+				5D30B0D72BE1DF1500C52C42 /* ResetPasswordType.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		5D6FDB6B2BD642F50098F21E /* Email */ = {
+			isa = PBXGroup;
+			children = (
+				5D6FDB6C2BD643280098F21E /* ResetPasswordEmailView.swift */,
+				5D6FDB6E2BD643B90098F21E /* ResetPasswordEmailViewController.swift */,
+			);
+			path = Email;
+			sourceTree = "<group>";
+		};
+		5D792FC12BB3367600A298AE /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				5DE2BC312BB254CE00330A19 /* ResetPasswordOTPResponse.swift */,
+				5DE2BC482BB2715500330A19 /* ResetPasswordVerifyOTPResponse.swift */,
+				5DE2BC5F2BB2B4D200330A19 /* ResetPasswordResponse.swift */,
+				5D792FBD2BB329C300A298AE /* ResetPasswordLoginResponse.swift */,
+				5DC72A5B2BB9636800CC162C /* RootData.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		5D792FC22BB3367D00A298AE /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				5DE2BC3F2BB25B3D00330A19 /* ResetPasswordPhoneError.swift */,
+				5D5B36852BBEF7450007F351 /* ResetPasswordVerifyError.swift */,
+				5D2194AC2BDE7D2B00013B51 /* ResetPasswordEmailError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		5DE2BBC22BB2480100330A19 = {
+			isa = PBXGroup;
+			children = (
+				5DE2BBCE2BB2480100330A19 /* KipasKipasResetPassword */,
+				5DE2BBDD2BB2484200330A19 /* KipasKipasResetPasswordiOS */,
+				5DE2BBFA2BB2496F00330A19 /* KKResetPasswordDemo */,
+				5DE2BBCD2BB2480100330A19 /* Products */,
+				5DE2BBEC2BB2493800330A19 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5DE2BBCD2BB2480100330A19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DE2BBCC2BB2480100330A19 /* KipasKipasResetPassword.framework */,
+				5DE2BBDC2BB2484200330A19 /* KipasKipasResetPasswordiOS.framework */,
+				5DE2BBF92BB2496F00330A19 /* KKResetPasswordDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DE2BBCE2BB2480100330A19 /* KipasKipasResetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				5DE2BBD62BB2482E00330A19 /* Sources */,
+				5DE2BBCF2BB2480100330A19 /* KipasKipasResetPassword.h */,
+			);
+			path = KipasKipasResetPassword;
+			sourceTree = "<group>";
+		};
+		5DE2BBD62BB2482E00330A19 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5DE2BC3C2BB256AC00330A19 /* Presentation */,
+				5DE2BC362BB2557A00330A19 /* API */,
+				5DE2BC302BB254C200330A19 /* Feature */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5DE2BBDD2BB2484200330A19 /* KipasKipasResetPasswordiOS */ = {
+			isa = PBXGroup;
+			children = (
+				5DE2BC1F2BB24C2000330A19 /* Sources */,
+				5DE2BBDE2BB2484200330A19 /* KipasKipasResetPasswordiOS.h */,
+			);
+			path = KipasKipasResetPasswordiOS;
+			sourceTree = "<group>";
+		};
+		5DE2BBEC2BB2493800330A19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D36AC032BD89B8F00B6C65C /* libKipasKipasSharedFoundation.a */,
+				5DE2BC632BB2CEC800330A19 /* KipasKipasLogin.framework */,
+				5DE2BC1C2BB249BD00330A19 /* KipasKipasShared.framework */,
+				5DE2BC192BB249B900330A19 /* KipasKipasNetworking.framework */,
+				5DE2BBF12BB2494000330A19 /* KipasKipasShared.framework */,
+				5DE2BBED2BB2493800330A19 /* KipasKipasNetworking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5DE2BBFA2BB2496F00330A19 /* KKResetPasswordDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5DE2BBFB2BB2496F00330A19 /* AppDelegate.swift */,
+				5DE2BBFD2BB2496F00330A19 /* SceneDelegate+ResetPassword.swift */,
+				5DE2BBFF2BB2496F00330A19 /* ViewController.swift */,
+				5DE2BC042BB2497000330A19 /* Assets.xcassets */,
+				5DE2BC062BB2497000330A19 /* LaunchScreen.storyboard */,
+				5DE2BC092BB2497000330A19 /* Info.plist */,
+			);
+			path = KKResetPasswordDemo;
+			sourceTree = "<group>";
+		};
+		5DE2BC1F2BB24C2000330A19 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5DE2BC392BB2563200330A19 /* Composers */,
+				5DE2BC332BB2550F00330A19 /* Adapters */,
+				5DE2BC282BB24DF800330A19 /* Helpers */,
+				5DE2BC202BB24C3200330A19 /* Controllers */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5DE2BC202BB24C3200330A19 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5DE2BC522BB2A52100330A19 /* Reset Password */,
+				5DE2BC412BB2690400330A19 /* Verify OTP */,
+				5DE2BC212BB24C4F00330A19 /* Phone */,
+				5D6FDB6B2BD642F50098F21E /* Email */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5DE2BC212BB24C4F00330A19 /* Phone */ = {
+			isa = PBXGroup;
+			children = (
+				5DE2BC222BB24C6C00330A19 /* ResetPasswordPhoneView.swift */,
+				5DE2BC262BB24DBC00330A19 /* ResetPasswordPhoneViewController.swift */,
+			);
+			path = Phone;
+			sourceTree = "<group>";
+		};
+		5DE2BC282BB24DF800330A19 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5DE2BC292BB24E0C00330A19 /* Definition.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5DE2BC302BB254C200330A19 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				5D792FC22BB3367D00A298AE /* Error */,
+				5D792FC12BB3367600A298AE /* Response */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		5DE2BC332BB2550F00330A19 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				5DE2BC612BB2C22600330A19 /* ResetPasswordPresentationAdapter.swift */,
+				5D792FC62BB34A3D00A298AE /* ResetPasswordLoginPresentationAdapter.swift */,
+				5D792FCB2BB34C1400A298AE /* ResetPasswordRequestOTPPresentationAdapter.swift */,
+				5D0C7DF32BB3CEE800570849 /* ResetPasswordVerifyOTPPresentationAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		5DE2BC362BB2557A00330A19 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5D42B1E82BB5E69500FD3C7F /* Parameters */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		5DE2BC392BB2563200330A19 /* Composers */ = {
+			isa = PBXGroup;
+			children = (
+				5DE2BC3A2BB2564600330A19 /* ResetPasswordPhoneUIComposer.swift */,
+				5DE2BC4C2BB2736200330A19 /* ResetPasswordVerifyOTPUIComposer.swift */,
+				5DE2BC592BB2ABED00330A19 /* ResetPasswordUIComposer.swift */,
+				5D685A142BD78D6D001D8157 /* ResetPasswordEmailUIComposer.swift */,
+			);
+			path = Composers;
+			sourceTree = "<group>";
+		};
+		5DE2BC3C2BB256AC00330A19 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				5DE2BC3D2BB256C200330A19 /* ResetPasswordOTPRequestViewModel.swift */,
+				5DE2BC5B2BB2B36000330A19 /* ResetPasswordViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		5DE2BC412BB2690400330A19 /* Verify OTP */ = {
+			isa = PBXGroup;
+			children = (
+				5DE2BC422BB2692D00330A19 /* ResetPasswordVerifyOTPView.swift */,
+				5DE2BC442BB269C100330A19 /* ResetPasswordVerifyOTPViewController.swift */,
+			);
+			path = "Verify OTP";
+			sourceTree = "<group>";
+		};
+		5DE2BC522BB2A52100330A19 /* Reset Password */ = {
+			isa = PBXGroup;
+			children = (
+				5DE2BC532BB2A52F00330A19 /* ResetPasswordView.swift */,
+				5DE2BC572BB2A64700330A19 /* ResetPasswordViewController.swift */,
+			);
+			path = "Reset Password";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5DE2BBC72BB2480100330A19 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DE2BBD02BB2480100330A19 /* KipasKipasResetPassword.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DE2BBD72BB2484200330A19 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DE2BBDF2BB2484200330A19 /* KipasKipasResetPasswordiOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5DE2BBCB2BB2480100330A19 /* KipasKipasResetPassword */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DE2BBD32BB2480100330A19 /* Build configuration list for PBXNativeTarget "KipasKipasResetPassword" */;
+			buildPhases = (
+				5DE2BBC72BB2480100330A19 /* Headers */,
+				5DE2BBC82BB2480100330A19 /* Sources */,
+				5DE2BBC92BB2480100330A19 /* Frameworks */,
+				5DE2BBCA2BB2480100330A19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KipasKipasResetPassword;
+			productName = KipasKipasResetPassword;
+			productReference = 5DE2BBCC2BB2480100330A19 /* KipasKipasResetPassword.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5DE2BBDB2BB2484200330A19 /* KipasKipasResetPasswordiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DE2BBE02BB2484200330A19 /* Build configuration list for PBXNativeTarget "KipasKipasResetPasswordiOS" */;
+			buildPhases = (
+				5DE2BBD72BB2484200330A19 /* Headers */,
+				5DE2BBD82BB2484200330A19 /* Sources */,
+				5DE2BBD92BB2484200330A19 /* Frameworks */,
+				5DE2BBDA2BB2484200330A19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DE2BC2E2BB24E8100330A19 /* PBXTargetDependency */,
+			);
+			name = KipasKipasResetPasswordiOS;
+			productName = KipasKipasResetPasswordiOS;
+			productReference = 5DE2BBDC2BB2484200330A19 /* KipasKipasResetPasswordiOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5DE2BBF82BB2496F00330A19 /* KKResetPasswordDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DE2BC0A2BB2497000330A19 /* Build configuration list for PBXNativeTarget "KKResetPasswordDemo" */;
+			buildPhases = (
+				5DE2BBF52BB2496F00330A19 /* Sources */,
+				5DE2BBF62BB2496F00330A19 /* Frameworks */,
+				5DE2BBF72BB2496F00330A19 /* Resources */,
+				5DE2BC182BB249B500330A19 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DE2BC132BB249B500330A19 /* PBXTargetDependency */,
+				5DE2BC172BB249B500330A19 /* PBXTargetDependency */,
+			);
+			name = KKResetPasswordDemo;
+			productName = KKResetPasswordDemo;
+			productReference = 5DE2BBF92BB2496F00330A19 /* KKResetPasswordDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DE2BBC32BB2480100330A19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					5DE2BBCB2BB2480100330A19 = {
+						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
+					};
+					5DE2BBDB2BB2484200330A19 = {
+						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
+					};
+					5DE2BBF82BB2496F00330A19 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 5DE2BBC62BB2480100330A19 /* Build configuration list for PBXProject "KipasKipasResetPassword" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DE2BBC22BB2480100330A19;
+			productRefGroup = 5DE2BBCD2BB2480100330A19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DE2BBCB2BB2480100330A19 /* KipasKipasResetPassword */,
+				5DE2BBDB2BB2484200330A19 /* KipasKipasResetPasswordiOS */,
+				5DE2BBF82BB2496F00330A19 /* KKResetPasswordDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DE2BBCA2BB2480100330A19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DE2BBDA2BB2484200330A19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DE2BBF72BB2496F00330A19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DE2BC082BB2497000330A19 /* LaunchScreen.storyboard in Resources */,
+				5DE2BC052BB2497000330A19 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DE2BBC82BB2480100330A19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D30B0D82BE1DF1500C52C42 /* ResetPasswordType.swift in Sources */,
+				5DE2BC3E2BB256C200330A19 /* ResetPasswordOTPRequestViewModel.swift in Sources */,
+				5DE2BC322BB254CE00330A19 /* ResetPasswordOTPResponse.swift in Sources */,
+				5D792FBE2BB329C300A298AE /* ResetPasswordLoginResponse.swift in Sources */,
+				5D792FC02BB3363700A298AE /* ResetPasswordLoginParam.swift in Sources */,
+				5D42B1EA2BB5E6AA00FD3C7F /* ResetPasswordRequestOTPParam.swift in Sources */,
+				5D2194AD2BDE7D2B00013B51 /* ResetPasswordEmailError.swift in Sources */,
+				5DE2BC402BB25B3D00330A19 /* ResetPasswordPhoneError.swift in Sources */,
+				5D5B36862BBEF7450007F351 /* ResetPasswordVerifyError.swift in Sources */,
+				5DE2BC602BB2B4D200330A19 /* ResetPasswordResponse.swift in Sources */,
+				5DC72A5C2BB9636800CC162C /* RootData.swift in Sources */,
+				5DE2BC492BB2715500330A19 /* ResetPasswordVerifyOTPResponse.swift in Sources */,
+				5D42B1EC2BB5E6C800FD3C7F /* ResetPasswordVerifyOTPParam.swift in Sources */,
+				5DE2BC5C2BB2B36000330A19 /* ResetPasswordViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DE2BBD82BB2484200330A19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DE2BC3B2BB2564600330A19 /* ResetPasswordPhoneUIComposer.swift in Sources */,
+				5DE2BC272BB24DBC00330A19 /* ResetPasswordPhoneViewController.swift in Sources */,
+				5DE2BC582BB2A64700330A19 /* ResetPasswordViewController.swift in Sources */,
+				5DE2BC2A2BB24E0C00330A19 /* Definition.swift in Sources */,
+				5DE2BC622BB2C22600330A19 /* ResetPasswordPresentationAdapter.swift in Sources */,
+				5DE2BC5A2BB2ABED00330A19 /* ResetPasswordUIComposer.swift in Sources */,
+				5D0C7DF42BB3CEE800570849 /* ResetPasswordVerifyOTPPresentationAdapter.swift in Sources */,
+				5D685A152BD78D6D001D8157 /* ResetPasswordEmailUIComposer.swift in Sources */,
+				5DE2BC452BB269C100330A19 /* ResetPasswordVerifyOTPViewController.swift in Sources */,
+				5DE2BC542BB2A52F00330A19 /* ResetPasswordView.swift in Sources */,
+				5DE2BC4D2BB2736200330A19 /* ResetPasswordVerifyOTPUIComposer.swift in Sources */,
+				5D6FDB6D2BD643280098F21E /* ResetPasswordEmailView.swift in Sources */,
+				5DE2BC432BB2692D00330A19 /* ResetPasswordVerifyOTPView.swift in Sources */,
+				5DE2BC232BB24C6C00330A19 /* ResetPasswordPhoneView.swift in Sources */,
+				5D792FCC2BB34C1400A298AE /* ResetPasswordRequestOTPPresentationAdapter.swift in Sources */,
+				5D6FDB6F2BD643B90098F21E /* ResetPasswordEmailViewController.swift in Sources */,
+				5D792FC72BB34A3D00A298AE /* ResetPasswordLoginPresentationAdapter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DE2BBF52BB2496F00330A19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DE2BC002BB2496F00330A19 /* ViewController.swift in Sources */,
+				5DE2BBFC2BB2496F00330A19 /* AppDelegate.swift in Sources */,
+				5DE2BBFE2BB2496F00330A19 /* SceneDelegate+ResetPassword.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5DE2BC132BB249B500330A19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DE2BBCB2BB2480100330A19 /* KipasKipasResetPassword */;
+			targetProxy = 5DE2BC122BB249B500330A19 /* PBXContainerItemProxy */;
+		};
+		5DE2BC172BB249B500330A19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DE2BBDB2BB2484200330A19 /* KipasKipasResetPasswordiOS */;
+			targetProxy = 5DE2BC162BB249B500330A19 /* PBXContainerItemProxy */;
+		};
+		5DE2BC2E2BB24E8100330A19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DE2BBCB2BB2480100330A19 /* KipasKipasResetPassword */;
+			targetProxy = 5DE2BC2D2BB24E8100330A19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5DE2BC062BB2497000330A19 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DE2BC072BB2497000330A19 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5DE2BBD12BB2480100330A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5DE2BBD22BB2480100330A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5DE2BBD42BB2480100330A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasResetPassword;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5DE2BBD52BB2480100330A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasResetPassword;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5DE2BBE12BB2484200330A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasResetPasswordiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5DE2BBE22BB2484200330A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasResetPasswordiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5DE2BBE32BB2485900330A19 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = LiveDebug;
+		};
+		5DE2BBE42BB2485900330A19 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasResetPassword;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = LiveDebug;
+		};
+		5DE2BBE52BB2485900330A19 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasResetPasswordiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = LiveDebug;
+		};
+		5DE2BBE62BB2485E00330A19 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Staging;
+		};
+		5DE2BBE72BB2485E00330A19 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasResetPassword;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Staging;
+		};
+		5DE2BBE82BB2485E00330A19 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasResetPasswordiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Staging;
+		};
+		5DE2BBE92BB2486300330A19 /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = ProdDebug;
+		};
+		5DE2BBEA2BB2486300330A19 /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasResetPassword;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = ProdDebug;
+		};
+		5DE2BBEB2BB2486300330A19 /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasResetPasswordiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = ProdDebug;
+		};
+		5DE2BC0B2BB2497000330A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_BASE_URL = "https://test-api-main.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KKResetPasswordDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KKResetPasswordDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5DE2BC0C2BB2497000330A19 /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_BASE_URL = "https://test-api-main.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KKResetPasswordDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KKResetPasswordDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = ProdDebug;
+		};
+		5DE2BC0D2BB2497000330A19 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_BASE_URL = "https://stg-api-main.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KKResetPasswordDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KKResetPasswordDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Staging;
+		};
+		5DE2BC0E2BB2497000330A19 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_BASE_URL = "https://test-api-main.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KKResetPasswordDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KKResetPasswordDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = LiveDebug;
+		};
+		5DE2BC0F2BB2497000330A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_BASE_URL = "https://api-main.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KKResetPasswordDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KKResetPasswordDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DE2BBC62BB2480100330A19 /* Build configuration list for PBXProject "KipasKipasResetPassword" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DE2BBD12BB2480100330A19 /* Debug */,
+				5DE2BBE92BB2486300330A19 /* ProdDebug */,
+				5DE2BBE62BB2485E00330A19 /* Staging */,
+				5DE2BBE32BB2485900330A19 /* LiveDebug */,
+				5DE2BBD22BB2480100330A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DE2BBD32BB2480100330A19 /* Build configuration list for PBXNativeTarget "KipasKipasResetPassword" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DE2BBD42BB2480100330A19 /* Debug */,
+				5DE2BBEA2BB2486300330A19 /* ProdDebug */,
+				5DE2BBE72BB2485E00330A19 /* Staging */,
+				5DE2BBE42BB2485900330A19 /* LiveDebug */,
+				5DE2BBD52BB2480100330A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DE2BBE02BB2484200330A19 /* Build configuration list for PBXNativeTarget "KipasKipasResetPasswordiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DE2BBE12BB2484200330A19 /* Debug */,
+				5DE2BBEB2BB2486300330A19 /* ProdDebug */,
+				5DE2BBE82BB2485E00330A19 /* Staging */,
+				5DE2BBE52BB2485900330A19 /* LiveDebug */,
+				5DE2BBE22BB2484200330A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DE2BC0A2BB2497000330A19 /* Build configuration list for PBXNativeTarget "KKResetPasswordDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DE2BC0B2BB2497000330A19 /* Debug */,
+				5DE2BC0C2BB2497000330A19 /* ProdDebug */,
+				5DE2BC0D2BB2497000330A19 /* Staging */,
+				5DE2BC0E2BB2497000330A19 /* LiveDebug */,
+				5DE2BC0F2BB2497000330A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5DE2BBC32BB2480100330A19 /* Project object */;
+}

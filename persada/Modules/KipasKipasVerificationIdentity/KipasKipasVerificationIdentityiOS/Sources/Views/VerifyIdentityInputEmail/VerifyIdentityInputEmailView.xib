@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VerifyIdentityInputEmailView" customModule="KipasKipasVerificationIdentityiOS" customModuleProvider="target">
+            <connections>
+                <outlet property="closeContainerStack" destination="3ZN-D9-3LO" id="GKl-XJ-lyy"/>
+                <outlet property="containerView" destination="Uxa-ao-z0E" id="dQW-jg-OYr"/>
+                <outlet property="emailTextField" destination="7LU-dO-lPD" id="qFr-ha-0Ht"/>
+                <outlet property="errorLabel" destination="IfT-Ba-ztE" id="tHN-Sm-2vD"/>
+                <outlet property="saveButton" destination="0Qu-SO-py5" id="bQW-E4-dai"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Uxa-ao-z0E">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="3tx-EA-vfG">
+                    <rect key="frame" x="32" y="159" width="329" height="201"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEG-vL-Dfq">
+                            <rect key="frame" x="0.0" y="0.0" width="329" height="43"/>
+                            <string key="text">Pastikan alamat email yang kamu kirimkan sudah benar, untuk menghindari kesalahan penggunaan email pada identitas yang kamu kirimkan.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NCE-fG-kbc">
+                            <rect key="frame" x="0.0" y="72" width="329" height="62"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="E7Z-qo-DvV">
+                                    <rect key="frame" x="0.0" y="0.0" width="329" height="24"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Alamat email" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7LU-dO-lPD">
+                                            <rect key="frame" x="0.0" y="0.0" width="329" height="24"/>
+                                            <color key="tintColor" name="gradientStoryOne"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="24" id="fDg-iA-8ZV"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="email"/>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KlA-Th-Lrv">
+                                    <rect key="frame" x="0.0" y="34" width="329" height="1"/>
+                                    <color key="backgroundColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="Ohc-t5-xvG"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IfT-Ba-ztE">
+                                    <rect key="frame" x="0.0" y="45" width="329" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" red="1" green="0.25882352939999997" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Qu-SO-py5">
+                            <rect key="frame" x="0.0" y="163" width="329" height="38"/>
+                            <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="38" id="UfL-8U-q8o"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Simpan Email">
+                                <color key="titleColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="didClickSaveButton:" destination="-1" eventType="touchUpInside" id="uMl-lt-grv"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3ZN-D9-3LO">
+                    <rect key="frame" x="16" y="75" width="28" height="28"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ul4-aH-p9Z">
+                            <rect key="frame" x="4" y="6.6666666666666634" width="20" height="15.000000000000007"/>
+                            <color key="tintColor" name="contentGrey"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="6gg-5A-ReE"/>
+                                <constraint firstAttribute="width" constant="20" id="wNV-r3-AOS"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <edgeInsets key="layoutMargins" top="4" left="4" bottom="4" right="4"/>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Nvu-eg-znu"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="3ZN-D9-3LO" firstAttribute="leading" secondItem="Nvu-eg-znu" secondAttribute="leading" constant="16" id="13h-JR-mWX"/>
+                <constraint firstItem="3tx-EA-vfG" firstAttribute="top" secondItem="Nvu-eg-znu" secondAttribute="top" constant="100" id="IOP-Fm-gfD"/>
+                <constraint firstItem="3tx-EA-vfG" firstAttribute="leading" secondItem="Nvu-eg-znu" secondAttribute="leading" constant="32" id="Td8-z4-Bx7"/>
+                <constraint firstItem="3ZN-D9-3LO" firstAttribute="top" secondItem="Nvu-eg-znu" secondAttribute="top" constant="16" id="i9N-6k-doc"/>
+                <constraint firstItem="Nvu-eg-znu" firstAttribute="trailing" secondItem="3tx-EA-vfG" secondAttribute="trailing" constant="32" id="z9T-cJ-mzX"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <namedColor name="contentGrey">
+            <color red="0.29019607843137257" green="0.29019607843137257" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gradientStoryOne">
+            <color red="1" green="0.25882352941176473" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

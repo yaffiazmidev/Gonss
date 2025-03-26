@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoMedium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KKErrorView" customModule="KipasKipasShared" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="eAV-z8-FQf" id="C0J-pn-CBy"/>
+                <outlet property="errorMessage" destination="N4d-f1-cQB" id="TUz-4w-4nL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="eAV-z8-FQf">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terjadi Kesalahan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4d-f1-cQB">
+                    <rect key="frame" x="24" y="17" width="334" height="14.5"/>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YF9-5q-cJO">
+                    <rect key="frame" x="366" y="8" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="BAK-GT-Ayz"/>
+                        <constraint firstAttribute="height" constant="32" id="fbt-aB-CeH"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="icon_refresh"/>
+                    <connections>
+                        <action selector="onRetryButtonPress:" destination="-1" eventType="touchUpInside" id="Uui-FF-aEY"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vpo-Nh-iio"/>
+            <color key="backgroundColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="height" constant="48" id="0BB-aD-vha"/>
+                <constraint firstItem="N4d-f1-cQB" firstAttribute="top" secondItem="eAV-z8-FQf" secondAttribute="top" constant="17" id="6HC-T5-YG4"/>
+                <constraint firstItem="YF9-5q-cJO" firstAttribute="leading" secondItem="N4d-f1-cQB" secondAttribute="trailing" constant="8" id="T8H-m4-gcZ"/>
+                <constraint firstItem="YF9-5q-cJO" firstAttribute="top" secondItem="eAV-z8-FQf" secondAttribute="top" constant="8" id="WB8-Qj-fox"/>
+                <constraint firstAttribute="bottom" secondItem="N4d-f1-cQB" secondAttribute="bottom" constant="17" id="gF5-IX-2xk"/>
+                <constraint firstAttribute="trailing" secondItem="YF9-5q-cJO" secondAttribute="trailing" constant="16" id="i72-cC-M9F"/>
+                <constraint firstItem="N4d-f1-cQB" firstAttribute="leading" secondItem="eAV-z8-FQf" secondAttribute="leading" constant="24" id="keJ-RQ-BQc"/>
+            </constraints>
+            <point key="canvasLocation" x="210" y="455"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_refresh" width="32" height="32"/>
+    </resources>
+</document>

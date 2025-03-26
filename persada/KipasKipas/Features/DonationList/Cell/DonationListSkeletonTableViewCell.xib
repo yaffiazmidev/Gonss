@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="280" id="KGk-i7-Jjw" customClass="DonationListSkeletonTableViewCell" customModule="KipasKipas" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="280"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="280"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="qrV-V5-IDJ">
+                        <rect key="frame" x="12" y="0.0" width="296" height="148"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="xU5-xi-EuL">
+                                <rect key="frame" x="4" y="4" width="288" height="64"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MAz-oA-oCk" customClass="ShimmerView" customModule="KipasKipas" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="42" height="64"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="VpX-aU-p15"/>
+                                            <constraint firstAttribute="width" constant="42" id="lXq-vM-d9k"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Y78-CS-tIe">
+                                        <rect key="frame" x="48" y="0.0" width="240" height="64"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jaf-XA-GrW">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="60"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sj8-hJ-ge0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="60"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zAM-vT-uEe" customClass="ShimmerView" customModule="KipasKipas" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="240" height="12"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="12" id="dDm-9R-V9v"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="bpG-tY-VR7">
+                                                                <rect key="frame" x="0.0" y="20" width="240" height="12"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Acf-bV-mpv" customClass="ShimmerView" customModule="KipasKipas" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="12"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="100" id="0TY-kn-O9A"/>
+                                                                            <constraint firstAttribute="height" constant="12" id="gEX-Kl-GLf"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nYL-iH-mZO" customClass="ShimmerView" customModule="KipasKipas" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="40" width="240" height="2"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="2" id="PLr-Lf-6mQ"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rzn-90-1B4" customClass="ShimmerView" customModule="KipasKipas" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="50" width="240" height="10"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="10" id="zA6-Xl-HXH"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="G5e-HP-RYz">
+                                <rect key="frame" x="4" y="74" width="288" height="40"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z1Z-ss-bb6" customClass="ShimmerView" customModule="KipasKipas" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="142" height="40"/>
+                                        <color key="backgroundColor" name="WhiteSnow"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="EtT-bk-218"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="setCornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yVc-th-fZc" customClass="ShimmerView" customModule="KipasKipas" customModuleProvider="target">
+                                        <rect key="frame" x="146" y="0.0" width="142" height="40"/>
+                                        <color key="backgroundColor" name="WhiteSnow"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="xdu-pj-E4j"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="setCornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="t3w-fQ-hzr">
+                                <rect key="frame" x="4" y="120" width="288" height="24"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hyL-vF-RbC" customClass="ShimmerView" customModule="KipasKipas" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="142" height="24"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="8hc-Md-vbM"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rhQ-Co-Xb1" customClass="ShimmerView" customModule="KipasKipas" customModuleProvider="target">
+                                        <rect key="frame" x="146" y="0.0" width="142" height="24"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="b9g-ZE-EwB"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <edgeInsets key="layoutMargins" top="4" left="4" bottom="4" right="4"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="setCornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="setShadowRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="setShadowOpacity">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="0.070000000000000007" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="setBorderWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="qrV-V5-IDJ" secondAttribute="bottom" constant="12" id="ZBx-CL-O3i"/>
+                    <constraint firstAttribute="trailing" secondItem="qrV-V5-IDJ" secondAttribute="trailing" constant="12" id="iF0-Th-U87"/>
+                    <constraint firstItem="qrV-V5-IDJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="ueg-A5-cUj"/>
+                    <constraint firstItem="qrV-V5-IDJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="x8V-iQ-kf8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="amountAvailableView" destination="z1Z-ss-bb6" id="VAf-rk-csk"/>
+                <outlet property="amountCollectedView" destination="Acf-bV-mpv" id="0RV-IM-KzS"/>
+                <outlet property="amountWithdrawView" destination="yVc-th-fZc" id="Kro-Uf-1rc"/>
+                <outlet property="coverImageView" destination="MAz-oA-oCk" id="f97-HO-lJ2"/>
+                <outlet property="detailButtonView" destination="rhQ-Co-Xb1" id="S7q-dN-S3F"/>
+                <outlet property="expDateView" destination="rzn-90-1B4" id="uo0-c0-7z7"/>
+                <outlet property="progressBarView" destination="nYL-iH-mZO" id="LiO-jD-d0f"/>
+                <outlet property="titleView" destination="zAM-vT-uEe" id="NWr-bb-ct4"/>
+                <outlet property="withdrawButtonView" destination="hyL-vF-RbC" id="JxL-ig-ycF"/>
+            </connections>
+            <point key="canvasLocation" x="129.7709923664122" y="71.83098591549296"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="WhiteSnow">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="RobotoRegular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ReviewCollectionViewCell" id="gTV-IL-0wX" customClass="ReviewCollectionViewCell" customModule="KipasKipas" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="140"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wko-5z-s4v">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="139"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IN2-IH-F39">
+                                <rect key="frame" x="0.0" y="0.0" width="26" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="26" id="SSI-5s-A1N"/>
+                                    <constraint firstAttribute="height" constant="26" id="bsH-aW-Ra1"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="bBD-bN-e6G">
+                                <rect key="frame" x="31" y="0.33333333333333393" width="367" height="25.666666666666664"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Ycx-vc-IUw">
+                                        <rect key="frame" x="0.0" y="0.0" width="367" height="13"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIB-w0-HLj">
+                                                <rect key="frame" x="0.0" y="0.0" width="55.333333333333336" height="13"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="13"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IZd-cV-44e" userLabel="Badge Image View">
+                                                <rect key="frame" x="59.333333333333321" y="0.0" width="12.666666666666664" height="13"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="12.5" id="Oll-0E-92W"/>
+                                                    <constraint firstAttribute="height" constant="13" id="osc-Ok-6PR"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qUw-Ga-1C8">
+                                                <rect key="frame" x="76" y="0.0" width="291" height="13"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 hari lalu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdE-3g-Zro">
+                                        <rect key="frame" x="0.0" y="15" width="367" height="10.666666666666664"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="9"/>
+                                        <color key="textColor" name="grey"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="cte-o8-lfK">
+                                <rect key="frame" x="0.0" y="40" width="390" height="99"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Zlj-Tx-9AP">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="31.333333333333332"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lpm-rt-o7T" customClass="CosmosView" customModule="Cosmos">
+                                                <rect key="frame" x="0.0" y="0.0" width="390" height="12"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="12" id="G0U-7z-L8j"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                                        <color key="value" name="AccentColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                                        <color key="value" red="0.96078431610000004" green="0.74901962280000001" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                                        <color key="value" red="0.96078431610000004" green="0.74901962280000001" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="updateOnTouch" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="filledImage" value="iconProductStarFill"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="iconProductStarEmpty"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zL-2e-0jH" customClass="ActiveLabel" customModule="KipasKipas" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="17" width="390" height="14.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="bTZ-81-b57" customClass="ReviewMediaCollectionView" customModule="KipasKipas" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="45.333333333333329" width="390" height="53.666666666666671"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8LN-LX-V3l">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cte-o8-lfK" secondAttribute="trailing" id="4pN-Qc-dcG"/>
+                            <constraint firstItem="cte-o8-lfK" firstAttribute="top" secondItem="IN2-IH-F39" secondAttribute="bottom" constant="14" id="JRo-eX-7rz"/>
+                            <constraint firstItem="IN2-IH-F39" firstAttribute="top" secondItem="wko-5z-s4v" secondAttribute="top" id="TNn-dM-QTk"/>
+                            <constraint firstItem="bBD-bN-e6G" firstAttribute="leading" secondItem="IN2-IH-F39" secondAttribute="trailing" constant="5" id="TXM-ar-1ly"/>
+                            <constraint firstItem="cte-o8-lfK" firstAttribute="leading" secondItem="wko-5z-s4v" secondAttribute="leading" id="dor-6M-vDR"/>
+                            <constraint firstItem="bBD-bN-e6G" firstAttribute="centerY" secondItem="IN2-IH-F39" secondAttribute="centerY" id="hbY-YI-FBH"/>
+                            <constraint firstItem="IN2-IH-F39" firstAttribute="leading" secondItem="wko-5z-s4v" secondAttribute="leading" id="i8g-Yt-ztk"/>
+                            <constraint firstAttribute="bottom" secondItem="cte-o8-lfK" secondAttribute="bottom" id="kTw-Gf-nek"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Imy-2o-5mT" userLabel="Divider">
+                        <rect key="frame" x="0.0" y="139" width="390" height="1"/>
+                        <color key="backgroundColor" name="whiteSmoke"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="jgy-Tz-nVy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="wko-5z-s4v" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MZ7-sV-qcW"/>
+                <constraint firstAttribute="trailing" secondItem="wko-5z-s4v" secondAttribute="trailing" id="RGB-bm-QCB"/>
+                <constraint firstAttribute="bottom" secondItem="Imy-2o-5mT" secondAttribute="bottom" id="RKO-DQ-SOp"/>
+                <constraint firstAttribute="trailing" secondItem="Imy-2o-5mT" secondAttribute="trailing" id="X8i-TJ-VHj"/>
+                <constraint firstItem="wko-5z-s4v" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Xdv-3F-JMC"/>
+                <constraint firstItem="Imy-2o-5mT" firstAttribute="top" secondItem="wko-5z-s4v" secondAttribute="bottom" id="f2l-oz-zKm"/>
+                <constraint firstItem="wko-5z-s4v" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="oiL-Ff-OwF"/>
+                <constraint firstItem="Imy-2o-5mT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="w7C-sF-BQD"/>
+            </constraints>
+            <size key="customSize" width="390" height="116"/>
+            <connections>
+                <outlet property="badgeImageView" destination="IZd-cV-44e" id="pKB-l1-N5m"/>
+                <outlet property="dividerView" destination="Imy-2o-5mT" id="p0H-FS-yIc"/>
+                <outlet property="mainView" destination="wko-5z-s4v" id="DTA-Gb-iUq"/>
+                <outlet property="mediaCollectionView" destination="bTZ-81-b57" id="rgz-fn-6Wd"/>
+                <outlet property="postDateLabel" destination="cdE-3g-Zro" id="mT4-0C-dGZ"/>
+                <outlet property="ratingView" destination="Lpm-rt-o7T" id="Vde-W7-WSt"/>
+                <outlet property="reviewLabel" destination="9zL-2e-0jH" id="4Fp-9d-MLF"/>
+                <outlet property="userImageView" destination="IN2-IH-F39" id="nVx-0V-wiy"/>
+                <outlet property="userNameLabel" destination="qIB-w0-HLj" id="oey-6P-IGd"/>
+            </connections>
+            <point key="canvasLocation" x="-3.0769230769230766" y="44.075829383886251"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="9zL-2e-0jH">
+            <size key="intrinsicContentSize" width="70.666666666666671" height="14.333333333333334"/>
+        </designable>
+        <designable name="Lpm-rt-o7T">
+            <size key="intrinsicContentSize" width="64" height="12"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="iconProductStarEmpty" width="32" height="32"/>
+        <image name="iconProductStarFill" width="32" height="32"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.79199999570846558" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grey">
+            <color red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="whiteSmoke">
+            <color red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoBold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="RobotoRegular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="124" id="KGk-i7-Jjw" customClass="NewsListViewCell" customModule="KipasKipas" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="124"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="355" height="124"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jalan di Simpang Pasteur- Cipaganti yang Keluarkan Asap Dibongkar Paksa Oleh..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNA-wI-XmG">
+                        <rect key="frame" x="20" y="14" width="207" height="63.5"/>
+                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="18"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a9N-x1-3uq">
+                        <rect key="frame" x="235" y="14" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="SbG-FV-XLP"/>
+                            <constraint firstAttribute="height" constant="100" id="hbh-bW-bZp"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="DMU-ir-rke">
+                        <rect key="frame" x="20" y="93.5" width="144" height="14.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kompas.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAI-6M-lX4">
+                                <rect key="frame" x="0.0" y="0.0" width="71" height="14.5"/>
+                                <color key="tintColor" name="placeholder"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                <color key="textColor" name="placeholder"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="EMq-e8-Bo2">
+                                <rect key="frame" x="87" y="0.0" width="27.5" height="14.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconCommentSmall" translatesAutoresizingMaskIntoConstraints="NO" id="d9y-uJ-kX3">
+                                        <rect key="frame" x="0.0" y="0.0" width="12" height="14.5"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSn-YY-gaw">
+                                        <rect key="frame" x="14" y="0.0" width="13.5" height="14.5"/>
+                                        <color key="tintColor" name="placeholder"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                        <color key="textColor" name="placeholder"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGt-QH-jFa">
+                                <rect key="frame" x="130.5" y="0.0" width="13.5" height="14.5"/>
+                                <color key="tintColor" name="placeholder"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                <color key="textColor" name="placeholder"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DMU-ir-rke" firstAttribute="top" secondItem="HNA-wI-XmG" secondAttribute="bottom" constant="16" id="9pR-1n-GE2"/>
+                    <constraint firstItem="HNA-wI-XmG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="BoG-mX-EpV"/>
+                    <constraint firstItem="a9N-x1-3uq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="EJj-gd-2MS"/>
+                    <constraint firstAttribute="bottom" secondItem="a9N-x1-3uq" secondAttribute="bottom" constant="15" id="Zpl-OD-odF"/>
+                    <constraint firstItem="HNA-wI-XmG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="bM6-xs-9Xh"/>
+                    <constraint firstItem="DMU-ir-rke" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="dS6-H7-JJc"/>
+                    <constraint firstAttribute="bottom" secondItem="DMU-ir-rke" secondAttribute="bottom" constant="9" id="lCE-ge-eWv"/>
+                    <constraint firstAttribute="trailing" secondItem="a9N-x1-3uq" secondAttribute="trailing" constant="20" id="ooc-IT-v8f"/>
+                    <constraint firstItem="a9N-x1-3uq" firstAttribute="leading" secondItem="HNA-wI-XmG" secondAttribute="trailing" constant="8" id="zaR-jt-emh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="imageNews" destination="a9N-x1-3uq" id="j7a-4v-RjK"/>
+                <outlet property="labelCommentCount" destination="FSn-YY-gaw" id="Bg7-K5-X6w"/>
+                <outlet property="labelNewsPostedDate" destination="AGt-QH-jFa" id="HlX-5N-kwS"/>
+                <outlet property="labelNewsSource" destination="HAI-6M-lX4" id="0kf-d3-ITB"/>
+                <outlet property="labelNewsTitle" destination="HNA-wI-XmG" id="Qs4-SG-x20"/>
+            </connections>
+            <point key="canvasLocation" x="163.04347826086959" y="96.428571428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iconCommentSmall" width="12" height="12"/>
+        <namedColor name="placeholder">
+            <color red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

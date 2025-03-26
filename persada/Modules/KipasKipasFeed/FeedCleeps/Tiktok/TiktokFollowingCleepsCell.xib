@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoMedium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="RobotoRegular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TiktokFollowingCleepsCell" customModule="FeedCleeps" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="369" height="684"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="369" height="684"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="dhp-cg-R9B">
+                        <rect key="frame" x="0.0" y="192.5" width="369" height="434.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="z37-m4-ybd">
+                                <rect key="frame" x="0.0" y="0.0" width="369" height="37.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Follow orang lain untuk berinteraksi dengan mereka 😃" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJa-UD-FAB">
+                                        <rect key="frame" x="55" y="0.0" width="259" height="37.5"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="0.0" left="55" bottom="0.0" right="55"/>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oGb-TM-Hfu">
+                                <rect key="frame" x="0.0" y="81.5" width="369" height="353"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NIQ-28-VaP" customClass="FSPagerView" customModule="KipasKipasShared">
+                                        <rect key="frame" x="0.0" y="0.0" width="369" height="353"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D6I-pa-DCA">
+                                        <rect key="frame" x="63" y="86.5" width="243" height="180"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="POp-U2-FEq">
+                                                <rect key="frame" x="16" y="16" width="211" height="145"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ltZ-HF-PsH">
+                                                        <rect key="frame" x="7" y="0.0" width="197" height="99"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GIO-at-OtS">
+                                                                <rect key="frame" x="76.5" y="0.0" width="44" height="44"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_users" translatesAutoresizingMaskIntoConstraints="NO" id="alB-MU-ZyP">
+                                                                        <rect key="frame" x="4" y="4" width="36" height="36"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="36" id="RH0-vI-wWj"/>
+                                                                            <constraint firstAttribute="height" constant="36" id="wB6-sx-Tzu"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <edgeInsets key="layoutMargins" top="4" left="4" bottom="4" right="4"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="setCornerRadius">
+                                                                        <real key="value" value="40"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </stackView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Klik tombol dibawah untuk mendapat rekomendasi lainnya atau menampilkan konten user yang sudah kamu ikuti." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-qV-bhC">
+                                                                <rect key="frame" x="0.0" y="60" width="197" height="39"/>
+                                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AxM-jC-ElP">
+                                                        <rect key="frame" x="62" y="115" width="87" height="30"/>
+                                                        <color key="backgroundColor" name="Primary"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="87" id="45u-UX-Hsx"/>
+                                                            <constraint firstAttribute="height" constant="30" id="eix-Ng-nXf"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Muat Ulang">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="setCornerRadius">
+                                                                <real key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="POp-U2-FEq" firstAttribute="leading" secondItem="D6I-pa-DCA" secondAttribute="leading" constant="16" id="2YH-SO-haY"/>
+                                            <constraint firstAttribute="trailing" secondItem="POp-U2-FEq" secondAttribute="trailing" constant="16" id="KOe-7t-xf0"/>
+                                            <constraint firstItem="POp-U2-FEq" firstAttribute="top" secondItem="D6I-pa-DCA" secondAttribute="top" constant="16" id="ZlE-YU-XbS"/>
+                                            <constraint firstAttribute="height" constant="180" id="m3n-SI-Auf"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="setCornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="NIQ-28-VaP" secondAttribute="bottom" id="2F0-cZ-Fnp"/>
+                                    <constraint firstItem="D6I-pa-DCA" firstAttribute="centerY" secondItem="oGb-TM-Hfu" secondAttribute="centerY" id="4n0-WZ-kPT"/>
+                                    <constraint firstAttribute="trailing" secondItem="NIQ-28-VaP" secondAttribute="trailing" id="6bU-Mo-Zea"/>
+                                    <constraint firstItem="NIQ-28-VaP" firstAttribute="leading" secondItem="oGb-TM-Hfu" secondAttribute="leading" id="725-CU-51S"/>
+                                    <constraint firstAttribute="trailing" secondItem="D6I-pa-DCA" secondAttribute="trailing" constant="63" id="DlZ-62-ihX"/>
+                                    <constraint firstItem="NIQ-28-VaP" firstAttribute="top" secondItem="oGb-TM-Hfu" secondAttribute="top" id="LLl-u7-ZO4"/>
+                                    <constraint firstItem="D6I-pa-DCA" firstAttribute="leading" secondItem="oGb-TM-Hfu" secondAttribute="leading" constant="63" id="MXc-0k-1ZB"/>
+                                    <constraint firstAttribute="height" constant="353" id="djo-Sh-b1z"/>
+                                    <constraint firstItem="D6I-pa-DCA" firstAttribute="centerX" secondItem="oGb-TM-Hfu" secondAttribute="centerX" id="lcm-lX-i0H"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="dhp-cg-R9B" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="6GD-Kf-HT9"/>
+                <constraint firstAttribute="bottom" secondItem="dhp-cg-R9B" secondAttribute="bottom" constant="57" id="PJL-Wf-hYp"/>
+                <constraint firstAttribute="trailing" secondItem="dhp-cg-R9B" secondAttribute="trailing" id="irD-UQ-z64"/>
+            </constraints>
+            <size key="customSize" width="369" height="684"/>
+            <connections>
+                <outlet property="closeAllSuggestView" destination="D6I-pa-DCA" id="psd-eW-UKz"/>
+                <outlet property="pagerView" destination="NIQ-28-VaP" id="goJ-1C-oFa"/>
+                <outlet property="showSuggestButton" destination="AxM-jC-ElP" id="3SJ-uX-N0D"/>
+            </connections>
+            <point key="canvasLocation" x="368.84057971014494" y="319.41964285714283"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_users" width="30" height="24"/>
+        <namedColor name="Primary">
+            <color red="1" green="0.25882352941176473" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

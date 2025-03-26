@@ -1,0 +1,12 @@
+/* 
+  InputUserWords.strings
+  KipasKipas
+
+  Created by Muhammad Noor on 22/12/22.
+  Copyright © 2022 Koanba. All rights reserved.
+*/
+
+"INPUT_USER_USERNAME_ALREADY_EXISTS" = "Username sudah digunakan oleh pengguna lain, silahkan gunakan kombinasi username lain untuk mendaftar.";
+"INPUT_USER_EMAIL_ALREADY_EXISTS" = "Email sudah digunakan oleh salahsatu akun di Kipaskipas, periksa terlebih dahulu apakah kamu sudah pernah mendaftar sebelumnya.";
+"EMAIL_VALIDATOR_GET_ERROR" = "Something wrong with email";
+"USERNAME_VALIDATOR_GET_ERROR" = "Something wrong with username";

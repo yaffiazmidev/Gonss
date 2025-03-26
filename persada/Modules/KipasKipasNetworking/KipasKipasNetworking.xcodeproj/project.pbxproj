@@ -1,0 +1,1986 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2060F6292AE5687600DEDB74 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2060F6242AE5687600DEDB74 /* NetworkConfig.swift */; };
+		2060F62A2AE5687600DEDB74 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2060F6252AE5687600DEDB74 /* Endpoint.swift */; };
+		2060F62B2AE5687600DEDB74 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2060F6262AE5687600DEDB74 /* DIContainer.swift */; };
+		2060F62C2AE5687600DEDB74 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2060F6272AE5687600DEDB74 /* NetworkService.swift */; };
+		2060F62D2AE5687600DEDB74 /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2060F6282AE5687600DEDB74 /* DataTransferService.swift */; };
+		5D23FDB02AD4FA9E0014AD29 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D23FDAF2AD4FA9E0014AD29 /* Mapper.swift */; };
+		5D42B1DC2BB5DE5D00FD3C7F /* URLRequest+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D42B1DB2BB5DE5D00FD3C7F /* URLRequest+Builder.swift */; };
+		5D6F112C2B0B2A090031A606 /* Combine+HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF400BF2AE78F7C00A7584F /* Combine+HTTPClient.swift */; };
+		5D868E842B1853910074ADA1 /* CachedHTTPClientDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D868E832B1853910074ADA1 /* CachedHTTPClientDecorator.swift */; };
+		5DAF60B42A95BF5700D8268F /* KipasKipasNetworkingUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DAF60B32A95BF5700D8268F /* KipasKipasNetworkingUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DAF60BC2A95BFDB00D8268F /* DummyLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAF60BB2A95BFDB00D8268F /* DummyLogin.swift */; };
+		5DAF60BE2A95C05F00D8268F /* KipasKipasNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF00E18627EC14900051F8F0 /* KipasKipasNetworking.framework */; };
+		5DAF60C72A95C7F900D8268F /* DummyLoginCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAF60C62A95C7F900D8268F /* DummyLoginCache.swift */; };
+		84C6F78B2BDE64EF0026F339 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C6F78A2BDE64EF0026F339 /* UIDevice+Extension.swift */; };
+		8A03ED35C441A1E07B09603A /* Pods_KipasKipasNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD20C58482D3E6A8A8566B42 /* Pods_KipasKipasNetworking.framework */; };
+		AF027A0529A9E15B0037C527 /* KKNetworkErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF027A0429A9E15B0037C527 /* KKNetworkErrorResponse.swift */; };
+		AF07F0C62AF4F8B40083FC41 /* RemoteSTSTokenLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF07F0C52AF4F8B40083FC41 /* RemoteSTSTokenLoader.swift */; };
+		AF07F0C82AF4F90D0083FC41 /* STSTokenEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF07F0C72AF4F90D0083FC41 /* STSTokenEndpoint.swift */; };
+		AF07F0CA2AF4F92D0083FC41 /* STSTokenLoaderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF07F0C92AF4F92D0083FC41 /* STSTokenLoaderRequest.swift */; };
+		AF07F0CC2AF4F94B0083FC41 /* STSTokenLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF07F0CB2AF4F94B0083FC41 /* STSTokenLoader.swift */; };
+		AF07F0CE2AF4F9610083FC41 /* STSTokenItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF07F0CD2AF4F9610083FC41 /* STSTokenItem.swift */; };
+		AF07F0D02AF4F97C0083FC41 /* STSTokenStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF07F0CF2AF4F97C0083FC41 /* STSTokenStore.swift */; };
+		AF07F0D22AF4F9910083FC41 /* STSTokenHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF07F0D12AF4F9910083FC41 /* STSTokenHelper.swift */; };
+		AF07F0D62AF4FAD20083FC41 /* KeychainSTSTokenStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF07F0D52AF4FAD20083FC41 /* KeychainSTSTokenStore.swift */; };
+		AF07F0D82AF4FDD20083FC41 /* KipasKipasShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF07F0D72AF4FDD20083FC41 /* KipasKipasShared.framework */; };
+		AF07F0DE2AF5018E0083FC41 /* MediaUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF07F0DD2AF5018E0083FC41 /* MediaUploader.swift */; };
+		AF07F0E12AF501C40083FC41 /* MediaUploaderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF07F0DF2AF501C40083FC41 /* MediaUploaderRequest.swift */; };
+		AF07F0E22AF501C40083FC41 /* MediaUploaderResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF07F0E02AF501C40083FC41 /* MediaUploaderResult.swift */; };
+		AF07F0E72AF505380083FC41 /* AuthenticatedMediaUploaderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF07F0E62AF505380083FC41 /* AuthenticatedMediaUploaderRequest.swift */; };
+		AF07F0EB2AF512720083FC41 /* MediaUploadMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF07F0EA2AF512720083FC41 /* MediaUploadMapper.swift */; };
+		AF07F0F52AF57CBD0083FC41 /* STSTokenLoaderCacheDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF07F0F42AF57CBD0083FC41 /* STSTokenLoaderCacheDecorator.swift */; };
+		AF07F1002AF581250083FC41 /* HTTPClientFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF07F0FF2AF581250083FC41 /* HTTPClientFactory.swift */; };
+		AF07F1022AF581F50083FC41 /* OSSClientFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF07F1012AF581F50083FC41 /* OSSClientFactory.swift */; };
+		AF07F1FF2AF6633B0083FC41 /* TencentCOSMediaUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF07F1CE2AF6633B0083FC41 /* TencentCOSMediaUploader.swift */; };
+		AF07F2002AF6633B0083FC41 /* QuicClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AF07F1D02AF6633B0083FC41 /* QuicClient.m */; };
+		AF07F2012AF6633B0083FC41 /* TXUGCPublishOptCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = AF07F1D12AF6633B0083FC41 /* TXUGCPublishOptCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF07F2022AF6633B0083FC41 /* TVCLog.m in Sources */ = {isa = PBXBuildFile; fileRef = AF07F1D22AF6633B0083FC41 /* TVCLog.m */; };
+		AF07F2032AF6633B0083FC41 /* TVCHttpMessageURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = AF07F1D32AF6633B0083FC41 /* TVCHttpMessageURLProtocol.h */; };
+		AF07F2042AF6633B0083FC41 /* TVCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = AF07F1D42AF6633B0083FC41 /* TVCUtils.m */; };
+		AF07F2052AF6633B0083FC41 /* TVCHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AF07F1D52AF6633B0083FC41 /* TVCHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF07F2062AF6633B0083FC41 /* TXUGCPublish.m in Sources */ = {isa = PBXBuildFile; fileRef = AF07F1D62AF6633B0083FC41 /* TXUGCPublish.m */; };
+		AF07F2072AF6633B0083FC41 /* UploadResumeDefaultController.h in Headers */ = {isa = PBXBuildFile; fileRef = AF07F1D82AF6633B0083FC41 /* UploadResumeDefaultController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF07F2082AF6633B0083FC41 /* IUploadResumeController.h in Headers */ = {isa = PBXBuildFile; fileRef = AF07F1D92AF6633B0083FC41 /* IUploadResumeController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF07F2092AF6633B0083FC41 /* TXUGCPublishListener.h in Headers */ = {isa = PBXBuildFile; fileRef = AF07F1DA2AF6633B0083FC41 /* TXUGCPublishListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF07F20A2AF6633B0083FC41 /* TXUGCPublishTypeDef.h in Headers */ = {isa = PBXBuildFile; fileRef = AF07F1DB2AF6633B0083FC41 /* TXUGCPublishTypeDef.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF07F20B2AF6633B0083FC41 /* TXUGCPublish.h in Headers */ = {isa = PBXBuildFile; fileRef = AF07F1DC2AF6633B0083FC41 /* TXUGCPublish.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF07F20C2AF6633B0083FC41 /* TVCConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = AF07F1DD2AF6633B0083FC41 /* TVCConfig.h */; };
+		AF07F20D2AF6633B0083FC41 /* TXUGCPublishUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = AF07F1DE2AF6633B0083FC41 /* TXUGCPublishUtil.m */; };
+		AF07F20E2AF6633B0083FC41 /* TVCReport.m in Sources */ = {isa = PBXBuildFile; fileRef = AF07F1DF2AF6633B0083FC41 /* TVCReport.m */; };
+		AF07F20F2AF6633B0083FC41 /* TVCClientInner.h in Headers */ = {isa = PBXBuildFile; fileRef = AF07F1E02AF6633B0083FC41 /* TVCClientInner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF07F2102AF6633B0083FC41 /* TVCCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = AF07F1E12AF6633B0083FC41 /* TVCCommon.m */; };
+		AF07F2112AF6633B0083FC41 /* AppLocalized.h in Headers */ = {isa = PBXBuildFile; fileRef = AF07F1E22AF6633B0083FC41 /* AppLocalized.h */; };
+		AF07F2122AF6633B0083FC41 /* TVCClient.h in Headers */ = {isa = PBXBuildFile; fileRef = AF07F1E32AF6633B0083FC41 /* TVCClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF07F2132AF6633B0083FC41 /* QuicClient.h in Headers */ = {isa = PBXBuildFile; fileRef = AF07F1E42AF6633B0083FC41 /* QuicClient.h */; };
+		AF07F2142AF6633B0083FC41 /* TVCHttpMessageURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = AF07F1E52AF6633B0083FC41 /* TVCHttpMessageURLProtocol.m */; };
+		AF07F2152AF6633B0083FC41 /* TVCLog.h in Headers */ = {isa = PBXBuildFile; fileRef = AF07F1E62AF6633B0083FC41 /* TVCLog.h */; };
+		AF07F2162AF6633B0083FC41 /* TXUGCPublishOptCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = AF07F1E72AF6633B0083FC41 /* TXUGCPublishOptCenter.m */; };
+		AF07F2172AF6633B0083FC41 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = AF07F1E92AF6633B0083FC41 /* AFSecurityPolicy.h */; };
+		AF07F2182AF6633B0083FC41 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AF07F1EA2AF6633B0083FC41 /* AFNetworkReachabilityManager.h */; };
+		AF07F2192AF6633B0083FC41 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AF07F1EB2AF6633B0083FC41 /* AFURLSessionManager.h */; };
+		AF07F21A2AF6633B0083FC41 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = AF07F1EC2AF6633B0083FC41 /* AFURLRequestSerialization.h */; };
+		AF07F21B2AF6633B0083FC41 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = AF07F1ED2AF6633B0083FC41 /* AFURLResponseSerialization.m */; };
+		AF07F21C2AF6633B0083FC41 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF07F1EE2AF6633B0083FC41 /* AFHTTPSessionManager.m */; };
+		AF07F21D2AF6633B0083FC41 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = AF07F1EF2AF6633B0083FC41 /* AFURLResponseSerialization.h */; };
+		AF07F21E2AF6633B0083FC41 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF07F1F02AF6633B0083FC41 /* AFURLSessionManager.m */; };
+		AF07F21F2AF6633B0083FC41 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = AF07F1F12AF6633B0083FC41 /* AFURLRequestSerialization.m */; };
+		AF07F2202AF6633B0083FC41 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = AF07F1F22AF6633B0083FC41 /* AFNetworking.h */; };
+		AF07F2212AF6633B0083FC41 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF07F1F32AF6633B0083FC41 /* AFNetworkReachabilityManager.m */; };
+		AF07F2222AF6633B0083FC41 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = AF07F1F42AF6633B0083FC41 /* AFSecurityPolicy.m */; };
+		AF07F2232AF6633B0083FC41 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AF07F1F52AF6633B0083FC41 /* AFHTTPSessionManager.h */; };
+		AF07F2242AF6633B0083FC41 /* UploadResumeDefaultController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF07F1F62AF6633B0083FC41 /* UploadResumeDefaultController.m */; };
+		AF07F2252AF6633B0083FC41 /* TVCReport.h in Headers */ = {isa = PBXBuildFile; fileRef = AF07F1F72AF6633B0083FC41 /* TVCReport.h */; };
+		AF07F2262AF6633B0083FC41 /* TXUGCPublishUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = AF07F1F82AF6633B0083FC41 /* TXUGCPublishUtil.h */; };
+		AF07F2272AF6633B0083FC41 /* TVCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = AF07F1F92AF6633B0083FC41 /* TVCConfig.m */; };
+		AF07F2282AF6633B0083FC41 /* TVCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = AF07F1FA2AF6633B0083FC41 /* TVCUtils.h */; };
+		AF07F2292AF6633B0083FC41 /* TVCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AF07F1FB2AF6633B0083FC41 /* TVCClient.m */; };
+		AF07F22A2AF6633B0083FC41 /* AppLocalized.m in Sources */ = {isa = PBXBuildFile; fileRef = AF07F1FC2AF6633B0083FC41 /* AppLocalized.m */; };
+		AF07F22B2AF6633B0083FC41 /* TVCCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = AF07F1FD2AF6633B0083FC41 /* TVCCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF07F22C2AF6633B0083FC41 /* TVCClientInner.m in Sources */ = {isa = PBXBuildFile; fileRef = AF07F1FE2AF6633B0083FC41 /* TVCClientInner.m */; };
+		AF0964682AA0543D00019FF5 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0964672AA0543D00019FF5 /* NetworkMonitor.swift */; };
+		AF28EFFF2AA06A38006F2138 /* NetworkSpeedMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF28EFFE2AA06A38006F2138 /* NetworkSpeedMonitor.swift */; };
+		AF2F1BD62AF7EC1B00ACA62D /* TencentVODMediaUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F1BD52AF7EC1B00ACA62D /* TencentVODMediaUploader.swift */; };
+		AF2F1BD82AF89ACE00ACA62D /* TencentVODMediaUploadSignatureMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F1BD72AF89ACE00ACA62D /* TencentVODMediaUploadSignatureMapper.swift */; };
+		AF6903792AF93821000E91D3 /* TencentVODEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6903782AF93821000E91D3 /* TencentVODEndpoint.swift */; };
+		AF69037C2AF93D2A000E91D3 /* TencentVODMediaUploadTranscodeMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF69037B2AF93D2A000E91D3 /* TencentVODMediaUploadTranscodeMapper.swift */; };
+		AF6903812AFA3D45000E91D3 /* TencentVODMediaUploadTranscodeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6903802AFA3D45000E91D3 /* TencentVODMediaUploadTranscodeRequest.swift */; };
+		AF819CF92BA0A30F00841B13 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF819CF82BA0A30F00841B13 /* NetworkLogger.swift */; };
+		AFED0F1E2AF4D84000249E64 /* UploadConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFED0F1D2AF4D83F00249E64 /* UploadConstants.swift */; };
+		AFED0F312AF4F3A000249E64 /* STSTokenItemMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFED0F2F2AF4F3A000249E64 /* STSTokenItemMapper.swift */; };
+		AFF51A122B86ED4200700949 /* KKLoggerUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF51A112B86ED4200700949 /* KKLoggerUpload.swift */; };
+		AFF532202B30409000F50700 /* KipasKipasShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF07F0D72AF4FDD20083FC41 /* KipasKipasShared.framework */; };
+		BF00E18F27EC14910051F8F0 /* KipasKipasNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF00E18627EC14900051F8F0 /* KipasKipasNetworking.framework */; };
+		BF1D7B5227EC7ED300AE5113 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1D7B5027EC7ED200AE5113 /* URLSessionHTTPClient.swift */; };
+		BF1D7B5327EC7ED300AE5113 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1D7B5127EC7ED300AE5113 /* HTTPClient.swift */; };
+		BF1D7B5627EC7F3A00AE5113 /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1D7B5527EC7F3A00AE5113 /* URLSessionHTTPClientTests.swift */; };
+		BF1D7B5C27EC7FB200AE5113 /* URLProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1D7B5B27EC7FB200AE5113 /* URLProtocolStub.swift */; };
+		BF1D7B6027EC7FED00AE5113 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1D7B5E27EC7FED00AE5113 /* XCTestCase+MemoryLeakTracking.swift */; };
+		BF1D7B6127EC7FED00AE5113 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1D7B5F27EC7FED00AE5113 /* SharedTestHelpers.swift */; };
+		BF1D7BA227ED9A5E00AE5113 /* RemoteTokenLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1D7BA127ED9A5D00AE5113 /* RemoteTokenLoader.swift */; };
+		BF2E3FD4280FED280085565F /* CoreDataImageDataStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2E3FD3280FED280085565F /* CoreDataImageDataStoreTests.swift */; };
+		BF31632A27F5A6EC00FD53A5 /* TokenLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF31632927F5A6EC00FD53A5 /* TokenLoaderWithFallbackComposite.swift */; };
+		BF31632C27F5AA7E00FD53A5 /* TokenLoaderCacheDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF31632B27F5AA7E00FD53A5 /* TokenLoaderCacheDecorator.swift */; };
+		BF31632E27F5AC1B00FD53A5 /* AuthenticatedHTTPClientDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF31632D27F5AC1B00FD53A5 /* AuthenticatedHTTPClientDecorator.swift */; };
+		BF52869527F588770083A91C /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52869427F588770083A91C /* KeychainStore.swift */; };
+		BF52869727F588920083A91C /* KeychainStoreQueryable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52869627F588920083A91C /* KeychainStoreQueryable.swift */; };
+		BF52869927F588BD0083A91C /* KeychainStoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52869827F588BD0083A91C /* KeychainStoreError.swift */; };
+		BF52869B27F58CAA0083A91C /* LocalTokenItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF52869A27F58CAA0083A91C /* LocalTokenItem.swift */; };
+		BF64880329501FA8002214EE /* TokenHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF64880229501FA8002214EE /* TokenHelper.swift */; };
+		BF8C174627F6AB22007A9F7E /* HTTPURLResponse+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8C174527F6AB22007A9F7E /* HTTPURLResponse+Extension.swift */; };
+		BF99221127F43F8E0030B3E7 /* TokenItemMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF99221027F43F8E0030B3E7 /* TokenItemMapper.swift */; };
+		BF99221327F444FB0030B3E7 /* RemoteTokenItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF99221227F444FB0030B3E7 /* RemoteTokenItem.swift */; };
+		BF99221527F44FC80030B3E7 /* TokenLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF99221427F44FC80030B3E7 /* TokenLoader.swift */; };
+		BF99221727F44FEB0030B3E7 /* TokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF99221627F44FEB0030B3E7 /* TokenRequest.swift */; };
+		BF99221A27F450420030B3E7 /* TokenCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF99221927F450420030B3E7 /* TokenCache.swift */; };
+		BF99221C27F450830030B3E7 /* LocalTokenLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF99221B27F450830030B3E7 /* LocalTokenLoader.swift */; };
+		BF99221E27F451290030B3E7 /* TokenStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF99221D27F451290030B3E7 /* TokenStore.swift */; };
+		BF99222027F451ED0030B3E7 /* KeychainTokenStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF99221F27F451ED0030B3E7 /* KeychainTokenStore.swift */; };
+		BFA3CCAF29122AD200E2F7E9 /* KKNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA3CCAE29122AD200E2F7E9 /* KKNetworkError.swift */; };
+		BFBBE46127EDC94900669EB5 /* TokenItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBBE46027EDC94900669EB5 /* TokenItem.swift */; };
+		BFC9E62627FAA2FE004F07EB /* LoadImageDataFromRemoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC9E62527FAA2FE004F07EB /* LoadImageDataFromRemoteUseCaseTests.swift */; };
+		BFC9E62827FAA3D8004F07EB /* HTTPClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC9E62727FAA3D8004F07EB /* HTTPClientSpy.swift */; };
+		BFC9E63227FAAD44004F07EB /* LoadImageDataFromCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC9E63127FAAD44004F07EB /* LoadImageDataFromCacheUseCaseTests.swift */; };
+		BFC9E63427FAAD9D004F07EB /* ImageDataStoreSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC9E63327FAAD9D004F07EB /* ImageDataStoreSpy.swift */; };
+		BFC9E63827FAD5B7004F07EB /* AuthenticatedHTTPClientDecoratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC9E63727FAD5B7004F07EB /* AuthenticatedHTTPClientDecoratorTests.swift */; };
+		BFC9E63E27FD3C1E004F07EB /* TokenCachePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC9E63D27FD3C1E004F07EB /* TokenCachePolicy.swift */; };
+		D03DCFFE9F9FC7D5519A27DC /* Pods_KipasKipasNetworking_KipasKipasNetworkingUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9D3D3F163A7FE3787C7782 /* Pods_KipasKipasNetworking_KipasKipasNetworkingUtils.framework */; };
+		E8A47614CE81812A0628EDC6 /* MediaUploadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A47B95434CBEE57CA3B5D4 /* MediaUploadManager.swift */; };
+		E8A47783DE0C374011160AD9 /* LocalSTSTokenLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A4779A29A803B5E2AFFA89 /* LocalSTSTokenLoader.swift */; };
+		E8A47806AB2080813AF06E35 /* UploadMainQueueDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A478F94AA582E38669F904 /* UploadMainQueueDecorator.swift */; };
+		E8A47B109FEE7ED0BA3841AF /* STSTokenLoaderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A47ADFBFF483E8F6027AF1 /* STSTokenLoaderFactory.swift */; };
+		E8A47B7F18D500C6226ACA18 /* STSTokenCachePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A47A7E5EA90C1E3C39F02A /* STSTokenCachePolicy.swift */; };
+		E8A47BAE131FC72419DAFCD3 /* AlibabaOSSMediaUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A47D31B3CA798B63C8B676 /* AlibabaOSSMediaUploader.swift */; };
+		E8A47C2EDFB994B73B13F1B0 /* AuthenticatedMediaUploadClientDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A4777768891D211A278161 /* AuthenticatedMediaUploadClientDecorator.swift */; };
+		E8A47EB9083D5E6BCD74119C /* STSTokenLoaderFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A47F47409C4251DD13024B /* STSTokenLoaderFallbackComposite.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5DAF60C02A95C05F00D8268F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF00E17D27EC14900051F8F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF00E18527EC14900051F8F0;
+			remoteInfo = KipasKipasNetworking;
+		};
+		BF00E19027EC14910051F8F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF00E17D27EC14900051F8F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF00E18527EC14900051F8F0;
+			remoteInfo = KipasKipasNetworking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B8619D7116BBA6548DC9BC6 /* Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.livedebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.livedebug.xcconfig"; path = "Target Support Files/Pods-KipasKipasNetworking-KipasKipasNetworkingUtils/Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.livedebug.xcconfig"; sourceTree = "<group>"; };
+		1B9D3D3F163A7FE3787C7782 /* Pods_KipasKipasNetworking_KipasKipasNetworkingUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KipasKipasNetworking_KipasKipasNetworkingUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2060F6242AE5687600DEDB74 /* NetworkConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
+		2060F6252AE5687600DEDB74 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		2060F6262AE5687600DEDB74 /* DIContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		2060F6272AE5687600DEDB74 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		2060F6282AE5687600DEDB74 /* DataTransferService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
+		22313D8C990C84DAE35257A9 /* Pods-KipasKipasNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasNetworking.release.xcconfig"; path = "Target Support Files/Pods-KipasKipasNetworking/Pods-KipasKipasNetworking.release.xcconfig"; sourceTree = "<group>"; };
+		40CA6B70640D043E873476B3 /* Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.staging.xcconfig"; path = "Target Support Files/Pods-KipasKipasNetworking-KipasKipasNetworkingUtils/Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.staging.xcconfig"; sourceTree = "<group>"; };
+		442553DE968803559A84A0FA /* Pods-KipasKipasNetworking.proddebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasNetworking.proddebug.xcconfig"; path = "Target Support Files/Pods-KipasKipasNetworking/Pods-KipasKipasNetworking.proddebug.xcconfig"; sourceTree = "<group>"; };
+		564BFD4FF7578FEB4BD42554 /* Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.debug.xcconfig"; path = "Target Support Files/Pods-KipasKipasNetworking-KipasKipasNetworkingUtils/Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.debug.xcconfig"; sourceTree = "<group>"; };
+		5D23FDAF2AD4FA9E0014AD29 /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		5D42B1DB2BB5DE5D00FD3C7F /* URLRequest+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Builder.swift"; sourceTree = "<group>"; };
+		5D868E832B1853910074ADA1 /* CachedHTTPClientDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedHTTPClientDecorator.swift; sourceTree = "<group>"; };
+		5DAF60B12A95BF5700D8268F /* KipasKipasNetworkingUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KipasKipasNetworkingUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DAF60B32A95BF5700D8268F /* KipasKipasNetworkingUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KipasKipasNetworkingUtils.h; sourceTree = "<group>"; };
+		5DAF60BB2A95BFDB00D8268F /* DummyLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyLogin.swift; sourceTree = "<group>"; };
+		5DAF60C62A95C7F900D8268F /* DummyLoginCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyLoginCache.swift; sourceTree = "<group>"; };
+		5DF400BF2AE78F7C00A7584F /* Combine+HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Combine+HTTPClient.swift"; sourceTree = "<group>"; };
+		67855984CE48523BBBF74404 /* Pods-KipasKipasNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasNetworking.debug.xcconfig"; path = "Target Support Files/Pods-KipasKipasNetworking/Pods-KipasKipasNetworking.debug.xcconfig"; sourceTree = "<group>"; };
+		7654DD66BADE499FC48EFBA3 /* Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.release.xcconfig"; path = "Target Support Files/Pods-KipasKipasNetworking-KipasKipasNetworkingUtils/Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.release.xcconfig"; sourceTree = "<group>"; };
+		84C6F78A2BDE64EF0026F339 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
+		8AE22D678B25860225029CA6 /* Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.testpk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.testpk.xcconfig"; path = "Target Support Files/Pods-KipasKipasNetworking-KipasKipasNetworkingUtils/Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.testpk.xcconfig"; sourceTree = "<group>"; };
+		AF027A0429A9E15B0037C527 /* KKNetworkErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKNetworkErrorResponse.swift; sourceTree = "<group>"; };
+		AF07F0C52AF4F8B40083FC41 /* RemoteSTSTokenLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteSTSTokenLoader.swift; sourceTree = "<group>"; };
+		AF07F0C72AF4F90D0083FC41 /* STSTokenEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STSTokenEndpoint.swift; sourceTree = "<group>"; };
+		AF07F0C92AF4F92D0083FC41 /* STSTokenLoaderRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STSTokenLoaderRequest.swift; sourceTree = "<group>"; };
+		AF07F0CB2AF4F94B0083FC41 /* STSTokenLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STSTokenLoader.swift; sourceTree = "<group>"; };
+		AF07F0CD2AF4F9610083FC41 /* STSTokenItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STSTokenItem.swift; sourceTree = "<group>"; };
+		AF07F0CF2AF4F97C0083FC41 /* STSTokenStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STSTokenStore.swift; sourceTree = "<group>"; };
+		AF07F0D12AF4F9910083FC41 /* STSTokenHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STSTokenHelper.swift; sourceTree = "<group>"; };
+		AF07F0D52AF4FAD20083FC41 /* KeychainSTSTokenStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainSTSTokenStore.swift; sourceTree = "<group>"; };
+		AF07F0D72AF4FDD20083FC41 /* KipasKipasShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF07F0DD2AF5018E0083FC41 /* MediaUploader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaUploader.swift; sourceTree = "<group>"; };
+		AF07F0DF2AF501C40083FC41 /* MediaUploaderRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaUploaderRequest.swift; sourceTree = "<group>"; };
+		AF07F0E02AF501C40083FC41 /* MediaUploaderResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaUploaderResult.swift; sourceTree = "<group>"; };
+		AF07F0E62AF505380083FC41 /* AuthenticatedMediaUploaderRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedMediaUploaderRequest.swift; sourceTree = "<group>"; };
+		AF07F0EA2AF512720083FC41 /* MediaUploadMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaUploadMapper.swift; sourceTree = "<group>"; };
+		AF07F0F42AF57CBD0083FC41 /* STSTokenLoaderCacheDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STSTokenLoaderCacheDecorator.swift; sourceTree = "<group>"; };
+		AF07F0FF2AF581250083FC41 /* HTTPClientFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClientFactory.swift; sourceTree = "<group>"; };
+		AF07F1012AF581F50083FC41 /* OSSClientFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSSClientFactory.swift; sourceTree = "<group>"; };
+		AF07F1CE2AF6633B0083FC41 /* TencentCOSMediaUploader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TencentCOSMediaUploader.swift; sourceTree = "<group>"; };
+		AF07F1D02AF6633B0083FC41 /* QuicClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuicClient.m; sourceTree = "<group>"; };
+		AF07F1D12AF6633B0083FC41 /* TXUGCPublishOptCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXUGCPublishOptCenter.h; sourceTree = "<group>"; };
+		AF07F1D22AF6633B0083FC41 /* TVCLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVCLog.m; sourceTree = "<group>"; };
+		AF07F1D32AF6633B0083FC41 /* TVCHttpMessageURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVCHttpMessageURLProtocol.h; sourceTree = "<group>"; };
+		AF07F1D42AF6633B0083FC41 /* TVCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVCUtils.m; sourceTree = "<group>"; };
+		AF07F1D52AF6633B0083FC41 /* TVCHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVCHeader.h; sourceTree = "<group>"; };
+		AF07F1D62AF6633B0083FC41 /* TXUGCPublish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXUGCPublish.m; sourceTree = "<group>"; };
+		AF07F1D82AF6633B0083FC41 /* UploadResumeDefaultController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadResumeDefaultController.h; sourceTree = "<group>"; };
+		AF07F1D92AF6633B0083FC41 /* IUploadResumeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IUploadResumeController.h; sourceTree = "<group>"; };
+		AF07F1DA2AF6633B0083FC41 /* TXUGCPublishListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXUGCPublishListener.h; sourceTree = "<group>"; };
+		AF07F1DB2AF6633B0083FC41 /* TXUGCPublishTypeDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXUGCPublishTypeDef.h; sourceTree = "<group>"; };
+		AF07F1DC2AF6633B0083FC41 /* TXUGCPublish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXUGCPublish.h; sourceTree = "<group>"; };
+		AF07F1DD2AF6633B0083FC41 /* TVCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVCConfig.h; sourceTree = "<group>"; };
+		AF07F1DE2AF6633B0083FC41 /* TXUGCPublishUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXUGCPublishUtil.m; sourceTree = "<group>"; };
+		AF07F1DF2AF6633B0083FC41 /* TVCReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVCReport.m; sourceTree = "<group>"; };
+		AF07F1E02AF6633B0083FC41 /* TVCClientInner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVCClientInner.h; sourceTree = "<group>"; };
+		AF07F1E12AF6633B0083FC41 /* TVCCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVCCommon.m; sourceTree = "<group>"; };
+		AF07F1E22AF6633B0083FC41 /* AppLocalized.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppLocalized.h; sourceTree = "<group>"; };
+		AF07F1E32AF6633B0083FC41 /* TVCClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVCClient.h; sourceTree = "<group>"; };
+		AF07F1E42AF6633B0083FC41 /* QuicClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuicClient.h; sourceTree = "<group>"; };
+		AF07F1E52AF6633B0083FC41 /* TVCHttpMessageURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVCHttpMessageURLProtocol.m; sourceTree = "<group>"; };
+		AF07F1E62AF6633B0083FC41 /* TVCLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVCLog.h; sourceTree = "<group>"; };
+		AF07F1E72AF6633B0083FC41 /* TXUGCPublishOptCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXUGCPublishOptCenter.m; sourceTree = "<group>"; };
+		AF07F1E92AF6633B0083FC41 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		AF07F1EA2AF6633B0083FC41 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		AF07F1EB2AF6633B0083FC41 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		AF07F1EC2AF6633B0083FC41 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		AF07F1ED2AF6633B0083FC41 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		AF07F1EE2AF6633B0083FC41 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		AF07F1EF2AF6633B0083FC41 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		AF07F1F02AF6633B0083FC41 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		AF07F1F12AF6633B0083FC41 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		AF07F1F22AF6633B0083FC41 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		AF07F1F32AF6633B0083FC41 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		AF07F1F42AF6633B0083FC41 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		AF07F1F52AF6633B0083FC41 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		AF07F1F62AF6633B0083FC41 /* UploadResumeDefaultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadResumeDefaultController.m; sourceTree = "<group>"; };
+		AF07F1F72AF6633B0083FC41 /* TVCReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVCReport.h; sourceTree = "<group>"; };
+		AF07F1F82AF6633B0083FC41 /* TXUGCPublishUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXUGCPublishUtil.h; sourceTree = "<group>"; };
+		AF07F1F92AF6633B0083FC41 /* TVCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVCConfig.m; sourceTree = "<group>"; };
+		AF07F1FA2AF6633B0083FC41 /* TVCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVCUtils.h; sourceTree = "<group>"; };
+		AF07F1FB2AF6633B0083FC41 /* TVCClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVCClient.m; sourceTree = "<group>"; };
+		AF07F1FC2AF6633B0083FC41 /* AppLocalized.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppLocalized.m; sourceTree = "<group>"; };
+		AF07F1FD2AF6633B0083FC41 /* TVCCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVCCommon.h; sourceTree = "<group>"; };
+		AF07F1FE2AF6633B0083FC41 /* TVCClientInner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVCClientInner.m; sourceTree = "<group>"; };
+		AF0964672AA0543D00019FF5 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		AF28EFFE2AA06A38006F2138 /* NetworkSpeedMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSpeedMonitor.swift; sourceTree = "<group>"; };
+		AF2F1BD52AF7EC1B00ACA62D /* TencentVODMediaUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TencentVODMediaUploader.swift; sourceTree = "<group>"; };
+		AF2F1BD72AF89ACE00ACA62D /* TencentVODMediaUploadSignatureMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TencentVODMediaUploadSignatureMapper.swift; sourceTree = "<group>"; };
+		AF6903782AF93821000E91D3 /* TencentVODEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TencentVODEndpoint.swift; sourceTree = "<group>"; };
+		AF69037B2AF93D2A000E91D3 /* TencentVODMediaUploadTranscodeMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TencentVODMediaUploadTranscodeMapper.swift; sourceTree = "<group>"; };
+		AF6903802AFA3D45000E91D3 /* TencentVODMediaUploadTranscodeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TencentVODMediaUploadTranscodeRequest.swift; sourceTree = "<group>"; };
+		AF819CF82BA0A30F00841B13 /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		AFED0F1D2AF4D83F00249E64 /* UploadConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadConstants.swift; sourceTree = "<group>"; };
+		AFED0F2F2AF4F3A000249E64 /* STSTokenItemMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STSTokenItemMapper.swift; sourceTree = "<group>"; };
+		AFF51A112B86ED4200700949 /* KKLoggerUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKLoggerUpload.swift; sourceTree = "<group>"; };
+		B396C037BAA0E43A8CB5A9D3 /* Pods-KipasKipasNetworking.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasNetworking.staging.xcconfig"; path = "Target Support Files/Pods-KipasKipasNetworking/Pods-KipasKipasNetworking.staging.xcconfig"; sourceTree = "<group>"; };
+		B49CFD793F9F3C3BBD02658F /* Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.debugpk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.debugpk.xcconfig"; path = "Target Support Files/Pods-KipasKipasNetworking-KipasKipasNetworkingUtils/Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.debugpk.xcconfig"; sourceTree = "<group>"; };
+		B5475BABAE60CCFF2B97E9BA /* Pods-KipasKipasNetworking.debugpk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasNetworking.debugpk.xcconfig"; path = "Target Support Files/Pods-KipasKipasNetworking/Pods-KipasKipasNetworking.debugpk.xcconfig"; sourceTree = "<group>"; };
+		BF00E18627EC14900051F8F0 /* KipasKipasNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KipasKipasNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF00E18E27EC14910051F8F0 /* KipasKipasNetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KipasKipasNetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF1D7B5027EC7ED200AE5113 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		BF1D7B5127EC7ED300AE5113 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		BF1D7B5527EC7F3A00AE5113 /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
+		BF1D7B5B27EC7FB200AE5113 /* URLProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolStub.swift; sourceTree = "<group>"; };
+		BF1D7B5E27EC7FED00AE5113 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
+		BF1D7B5F27EC7FED00AE5113 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
+		BF1D7BA127ED9A5D00AE5113 /* RemoteTokenLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteTokenLoader.swift; sourceTree = "<group>"; };
+		BF2E3FD3280FED280085565F /* CoreDataImageDataStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataImageDataStoreTests.swift; sourceTree = "<group>"; };
+		BF31632927F5A6EC00FD53A5 /* TokenLoaderWithFallbackComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenLoaderWithFallbackComposite.swift; sourceTree = "<group>"; };
+		BF31632B27F5AA7E00FD53A5 /* TokenLoaderCacheDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenLoaderCacheDecorator.swift; sourceTree = "<group>"; };
+		BF31632D27F5AC1B00FD53A5 /* AuthenticatedHTTPClientDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedHTTPClientDecorator.swift; sourceTree = "<group>"; };
+		BF52869427F588770083A91C /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
+		BF52869627F588920083A91C /* KeychainStoreQueryable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStoreQueryable.swift; sourceTree = "<group>"; };
+		BF52869827F588BD0083A91C /* KeychainStoreError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStoreError.swift; sourceTree = "<group>"; };
+		BF52869A27F58CAA0083A91C /* LocalTokenItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalTokenItem.swift; sourceTree = "<group>"; };
+		BF64880229501FA8002214EE /* TokenHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenHelper.swift; sourceTree = "<group>"; };
+		BF8C174527F6AB22007A9F7E /* HTTPURLResponse+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+Extension.swift"; sourceTree = "<group>"; };
+		BF99221027F43F8E0030B3E7 /* TokenItemMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenItemMapper.swift; sourceTree = "<group>"; };
+		BF99221227F444FB0030B3E7 /* RemoteTokenItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteTokenItem.swift; sourceTree = "<group>"; };
+		BF99221427F44FC80030B3E7 /* TokenLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenLoader.swift; sourceTree = "<group>"; };
+		BF99221627F44FEB0030B3E7 /* TokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRequest.swift; sourceTree = "<group>"; };
+		BF99221927F450420030B3E7 /* TokenCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenCache.swift; sourceTree = "<group>"; };
+		BF99221B27F450830030B3E7 /* LocalTokenLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalTokenLoader.swift; sourceTree = "<group>"; };
+		BF99221D27F451290030B3E7 /* TokenStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStore.swift; sourceTree = "<group>"; };
+		BF99221F27F451ED0030B3E7 /* KeychainTokenStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainTokenStore.swift; sourceTree = "<group>"; };
+		BFA3CCAE29122AD200E2F7E9 /* KKNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKNetworkError.swift; sourceTree = "<group>"; };
+		BFBBE46027EDC94900669EB5 /* TokenItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenItem.swift; sourceTree = "<group>"; };
+		BFC9E62527FAA2FE004F07EB /* LoadImageDataFromRemoteUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImageDataFromRemoteUseCaseTests.swift; sourceTree = "<group>"; };
+		BFC9E62727FAA3D8004F07EB /* HTTPClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientSpy.swift; sourceTree = "<group>"; };
+		BFC9E63127FAAD44004F07EB /* LoadImageDataFromCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImageDataFromCacheUseCaseTests.swift; sourceTree = "<group>"; };
+		BFC9E63327FAAD9D004F07EB /* ImageDataStoreSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataStoreSpy.swift; sourceTree = "<group>"; };
+		BFC9E63727FAD5B7004F07EB /* AuthenticatedHTTPClientDecoratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedHTTPClientDecoratorTests.swift; sourceTree = "<group>"; };
+		BFC9E63D27FD3C1E004F07EB /* TokenCachePolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenCachePolicy.swift; sourceTree = "<group>"; };
+		CD20C58482D3E6A8A8566B42 /* Pods_KipasKipasNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KipasKipasNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE041B1BAFC99BAC4A671228 /* Pods-KipasKipasNetworking.testpk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasNetworking.testpk.xcconfig"; path = "Target Support Files/Pods-KipasKipasNetworking/Pods-KipasKipasNetworking.testpk.xcconfig"; sourceTree = "<group>"; };
+		D40741C89E57B0267AB4185A /* Pods-KipasKipasNetworking.livedebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasNetworking.livedebug.xcconfig"; path = "Target Support Files/Pods-KipasKipasNetworking/Pods-KipasKipasNetworking.livedebug.xcconfig"; sourceTree = "<group>"; };
+		E8A4777768891D211A278161 /* AuthenticatedMediaUploadClientDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticatedMediaUploadClientDecorator.swift; sourceTree = "<group>"; };
+		E8A4779A29A803B5E2AFFA89 /* LocalSTSTokenLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalSTSTokenLoader.swift; sourceTree = "<group>"; };
+		E8A478F94AA582E38669F904 /* UploadMainQueueDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadMainQueueDecorator.swift; sourceTree = "<group>"; };
+		E8A47A7E5EA90C1E3C39F02A /* STSTokenCachePolicy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STSTokenCachePolicy.swift; sourceTree = "<group>"; };
+		E8A47ADFBFF483E8F6027AF1 /* STSTokenLoaderFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STSTokenLoaderFactory.swift; sourceTree = "<group>"; };
+		E8A47B95434CBEE57CA3B5D4 /* MediaUploadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaUploadManager.swift; sourceTree = "<group>"; };
+		E8A47D31B3CA798B63C8B676 /* AlibabaOSSMediaUploader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlibabaOSSMediaUploader.swift; sourceTree = "<group>"; };
+		E8A47F47409C4251DD13024B /* STSTokenLoaderFallbackComposite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STSTokenLoaderFallbackComposite.swift; sourceTree = "<group>"; };
+		EAC418A9BC9C3652C6F94DD3 /* Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.proddebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.proddebug.xcconfig"; path = "Target Support Files/Pods-KipasKipasNetworking-KipasKipasNetworkingUtils/Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.proddebug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DAF60AE2A95BF5700D8268F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF07F0D82AF4FDD20083FC41 /* KipasKipasShared.framework in Frameworks */,
+				5DAF60BE2A95C05F00D8268F /* KipasKipasNetworking.framework in Frameworks */,
+				D03DCFFE9F9FC7D5519A27DC /* Pods_KipasKipasNetworking_KipasKipasNetworkingUtils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF00E18327EC14900051F8F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A03ED35C441A1E07B09603A /* Pods_KipasKipasNetworking.framework in Frameworks */,
+				AFF532202B30409000F50700 /* KipasKipasShared.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF00E18B27EC14910051F8F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF00E18F27EC14910051F8F0 /* KipasKipasNetworking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2060F6232AE5683000DEDB74 /* SENetworking */ = {
+			isa = PBXGroup;
+			children = (
+				2060F6262AE5687600DEDB74 /* DIContainer.swift */,
+				2060F6252AE5687600DEDB74 /* Endpoint.swift */,
+				2060F6242AE5687600DEDB74 /* NetworkConfig.swift */,
+				2060F6272AE5687600DEDB74 /* NetworkService.swift */,
+				2060F6282AE5687600DEDB74 /* DataTransferService.swift */,
+			);
+			path = SENetworking;
+			sourceTree = "<group>";
+		};
+		5DAF60B22A95BF5700D8268F /* KipasKipasNetworkingUtils */ = {
+			isa = PBXGroup;
+			children = (
+				5DAF60BA2A95BF5F00D8268F /* Sources */,
+				5DAF60B32A95BF5700D8268F /* KipasKipasNetworkingUtils.h */,
+			);
+			path = KipasKipasNetworkingUtils;
+			sourceTree = "<group>";
+		};
+		5DAF60BA2A95BF5F00D8268F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AFED0F1B2AF4D83F00249E64 /* Upload */,
+				5DAF60BB2A95BFDB00D8268F /* DummyLogin.swift */,
+				5DAF60C62A95C7F900D8268F /* DummyLoginCache.swift */,
+				AF07F0FF2AF581250083FC41 /* HTTPClientFactory.swift */,
+				AF819CF82BA0A30F00841B13 /* NetworkLogger.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5DAF60BD2A95C05F00D8268F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF07F0D72AF4FDD20083FC41 /* KipasKipasShared.framework */,
+				CD20C58482D3E6A8A8566B42 /* Pods_KipasKipasNetworking.framework */,
+				1B9D3D3F163A7FE3787C7782 /* Pods_KipasKipasNetworking_KipasKipasNetworkingUtils.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF07F0D32AF4FA320083FC41 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				AF07F0DA2AF4FF5C0083FC41 /* STSTokenLoader */,
+				AF07F0D42AF4FA8D0083FC41 /* STSTokenStore */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		AF07F0D42AF4FA8D0083FC41 /* STSTokenStore */ = {
+			isa = PBXGroup;
+			children = (
+				AF07F0D52AF4FAD20083FC41 /* KeychainSTSTokenStore.swift */,
+			);
+			path = STSTokenStore;
+			sourceTree = "<group>";
+		};
+		AF07F0DA2AF4FF5C0083FC41 /* STSTokenLoader */ = {
+			isa = PBXGroup;
+			children = (
+				E8A47A7E5EA90C1E3C39F02A /* STSTokenCachePolicy.swift */,
+				E8A4779A29A803B5E2AFFA89 /* LocalSTSTokenLoader.swift */,
+			);
+			path = STSTokenLoader;
+			sourceTree = "<group>";
+		};
+		AF07F0E92AF5106A0083FC41 /* MediaUploader */ = {
+			isa = PBXGroup;
+			children = (
+				AF07F0EA2AF512720083FC41 /* MediaUploadMapper.swift */,
+				E8A47D31B3CA798B63C8B676 /* AlibabaOSSMediaUploader.swift */,
+				AF07F1CD2AF6633B0083FC41 /* Tencent */,
+			);
+			path = MediaUploader;
+			sourceTree = "<group>";
+		};
+		AF07F1CD2AF6633B0083FC41 /* Tencent */ = {
+			isa = PBXGroup;
+			children = (
+				AF07F1CE2AF6633B0083FC41 /* TencentCOSMediaUploader.swift */,
+				AF6903772AF93590000E91D3 /* VOD */,
+			);
+			path = Tencent;
+			sourceTree = "<group>";
+		};
+		AF07F1CF2AF6633B0083FC41 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				AF07F1E82AF6633B0083FC41 /* AFNetworking */,
+				AF07F1DD2AF6633B0083FC41 /* TVCConfig.h */,
+				AF07F1F92AF6633B0083FC41 /* TVCConfig.m */,
+				AF07F1F62AF6633B0083FC41 /* UploadResumeDefaultController.m */,
+				AF07F1D32AF6633B0083FC41 /* TVCHttpMessageURLProtocol.h */,
+				AF07F1E52AF6633B0083FC41 /* TVCHttpMessageURLProtocol.m */,
+				AF07F1D12AF6633B0083FC41 /* TXUGCPublishOptCenter.h */,
+				AF07F1E72AF6633B0083FC41 /* TXUGCPublishOptCenter.m */,
+				AF07F1F72AF6633B0083FC41 /* TVCReport.h */,
+				AF07F1DF2AF6633B0083FC41 /* TVCReport.m */,
+				AF07F1D72AF6633B0083FC41 /* include */,
+				AF07F1E32AF6633B0083FC41 /* TVCClient.h */,
+				AF07F1FB2AF6633B0083FC41 /* TVCClient.m */,
+				AF07F1E02AF6633B0083FC41 /* TVCClientInner.h */,
+				AF07F1FE2AF6633B0083FC41 /* TVCClientInner.m */,
+				AF07F1FD2AF6633B0083FC41 /* TVCCommon.h */,
+				AF07F1E12AF6633B0083FC41 /* TVCCommon.m */,
+				AF07F1D52AF6633B0083FC41 /* TVCHeader.h */,
+				AF07F1FA2AF6633B0083FC41 /* TVCUtils.h */,
+				AF07F1D42AF6633B0083FC41 /* TVCUtils.m */,
+				AF07F1D62AF6633B0083FC41 /* TXUGCPublish.m */,
+				AF07F1F82AF6633B0083FC41 /* TXUGCPublishUtil.h */,
+				AF07F1DE2AF6633B0083FC41 /* TXUGCPublishUtil.m */,
+				AF07F1E42AF6633B0083FC41 /* QuicClient.h */,
+				AF07F1D02AF6633B0083FC41 /* QuicClient.m */,
+				AF07F1E62AF6633B0083FC41 /* TVCLog.h */,
+				AF07F1D22AF6633B0083FC41 /* TVCLog.m */,
+				AF07F1E22AF6633B0083FC41 /* AppLocalized.h */,
+				AF07F1FC2AF6633B0083FC41 /* AppLocalized.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		AF07F1D72AF6633B0083FC41 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				AF07F1D92AF6633B0083FC41 /* IUploadResumeController.h */,
+				AF07F1D82AF6633B0083FC41 /* UploadResumeDefaultController.h */,
+				AF07F1DC2AF6633B0083FC41 /* TXUGCPublish.h */,
+				AF07F1DA2AF6633B0083FC41 /* TXUGCPublishListener.h */,
+				AF07F1DB2AF6633B0083FC41 /* TXUGCPublishTypeDef.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		AF07F1E82AF6633B0083FC41 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				AF07F1E92AF6633B0083FC41 /* AFSecurityPolicy.h */,
+				AF07F1EA2AF6633B0083FC41 /* AFNetworkReachabilityManager.h */,
+				AF07F1EB2AF6633B0083FC41 /* AFURLSessionManager.h */,
+				AF07F1EC2AF6633B0083FC41 /* AFURLRequestSerialization.h */,
+				AF07F1ED2AF6633B0083FC41 /* AFURLResponseSerialization.m */,
+				AF07F1EE2AF6633B0083FC41 /* AFHTTPSessionManager.m */,
+				AF07F1EF2AF6633B0083FC41 /* AFURLResponseSerialization.h */,
+				AF07F1F02AF6633B0083FC41 /* AFURLSessionManager.m */,
+				AF07F1F12AF6633B0083FC41 /* AFURLRequestSerialization.m */,
+				AF07F1F22AF6633B0083FC41 /* AFNetworking.h */,
+				AF07F1F32AF6633B0083FC41 /* AFNetworkReachabilityManager.m */,
+				AF07F1F42AF6633B0083FC41 /* AFSecurityPolicy.m */,
+				AF07F1F52AF6633B0083FC41 /* AFHTTPSessionManager.h */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		AF0964642AA0542500019FF5 /* Network Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				AF0964672AA0543D00019FF5 /* NetworkMonitor.swift */,
+				AF28EFFE2AA06A38006F2138 /* NetworkSpeedMonitor.swift */,
+			);
+			path = "Network Monitor";
+			sourceTree = "<group>";
+		};
+		AF6903772AF93590000E91D3 /* VOD */ = {
+			isa = PBXGroup;
+			children = (
+				AF07F1CF2AF6633B0083FC41 /* Helper */,
+				AF69037A2AF93CE3000E91D3 /* Mapper */,
+				AF6903782AF93821000E91D3 /* TencentVODEndpoint.swift */,
+				AF2F1BD52AF7EC1B00ACA62D /* TencentVODMediaUploader.swift */,
+				AF6903802AFA3D45000E91D3 /* TencentVODMediaUploadTranscodeRequest.swift */,
+			);
+			path = VOD;
+			sourceTree = "<group>";
+		};
+		AF69037A2AF93CE3000E91D3 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F1BD72AF89ACE00ACA62D /* TencentVODMediaUploadSignatureMapper.swift */,
+				AF69037B2AF93D2A000E91D3 /* TencentVODMediaUploadTranscodeMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		AFED0F1B2AF4D83F00249E64 /* Upload */ = {
+			isa = PBXGroup;
+			children = (
+				AFED0F1C2AF4D83F00249E64 /* Main */,
+				AF07F0D32AF4FA320083FC41 /* Cache */,
+				AFED0F2C2AF4F3A000249E64 /* API */,
+				AFED0F1F2AF4DC5C00249E64 /* Feature */,
+				AFF51A112B86ED4200700949 /* KKLoggerUpload.swift */,
+			);
+			path = Upload;
+			sourceTree = "<group>";
+		};
+		AFED0F1C2AF4D83F00249E64 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AFED0F1D2AF4D83F00249E64 /* UploadConstants.swift */,
+				E8A478F94AA582E38669F904 /* UploadMainQueueDecorator.swift */,
+				AF07F0F42AF57CBD0083FC41 /* STSTokenLoaderCacheDecorator.swift */,
+				E8A47F47409C4251DD13024B /* STSTokenLoaderFallbackComposite.swift */,
+				E8A47ADFBFF483E8F6027AF1 /* STSTokenLoaderFactory.swift */,
+				E8A4777768891D211A278161 /* AuthenticatedMediaUploadClientDecorator.swift */,
+				AF07F1012AF581F50083FC41 /* OSSClientFactory.swift */,
+				E8A47B95434CBEE57CA3B5D4 /* MediaUploadManager.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AFED0F1F2AF4DC5C00249E64 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				AFED0F212AF4E8C500249E64 /* STSToken */,
+				AFED0F222AF4E8D500249E64 /* MediaUploader */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		AFED0F212AF4E8C500249E64 /* STSToken */ = {
+			isa = PBXGroup;
+			children = (
+				AF07F0D12AF4F9910083FC41 /* STSTokenHelper.swift */,
+				AF07F0CD2AF4F9610083FC41 /* STSTokenItem.swift */,
+				AFED0F232AF4E99800249E64 /* Loader */,
+				AFED0F242AF4EA3100249E64 /* Store */,
+			);
+			path = STSToken;
+			sourceTree = "<group>";
+		};
+		AFED0F222AF4E8D500249E64 /* MediaUploader */ = {
+			isa = PBXGroup;
+			children = (
+				AF07F0DF2AF501C40083FC41 /* MediaUploaderRequest.swift */,
+				AF07F0E62AF505380083FC41 /* AuthenticatedMediaUploaderRequest.swift */,
+				AF07F0E02AF501C40083FC41 /* MediaUploaderResult.swift */,
+				AF07F0DD2AF5018E0083FC41 /* MediaUploader.swift */,
+			);
+			path = MediaUploader;
+			sourceTree = "<group>";
+		};
+		AFED0F232AF4E99800249E64 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				AF07F0CB2AF4F94B0083FC41 /* STSTokenLoader.swift */,
+				AF07F0C92AF4F92D0083FC41 /* STSTokenLoaderRequest.swift */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+		AFED0F242AF4EA3100249E64 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				AF07F0CF2AF4F97C0083FC41 /* STSTokenStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		AFED0F2C2AF4F3A000249E64 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				AFED0F2D2AF4F3A000249E64 /* STSTokenLoader */,
+				AF07F0E92AF5106A0083FC41 /* MediaUploader */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		AFED0F2D2AF4F3A000249E64 /* STSTokenLoader */ = {
+			isa = PBXGroup;
+			children = (
+				AF07F0C72AF4F90D0083FC41 /* STSTokenEndpoint.swift */,
+				AFED0F2F2AF4F3A000249E64 /* STSTokenItemMapper.swift */,
+				AF07F0C52AF4F8B40083FC41 /* RemoteSTSTokenLoader.swift */,
+			);
+			path = STSTokenLoader;
+			sourceTree = "<group>";
+		};
+		BF00E17C27EC14900051F8F0 = {
+			isa = PBXGroup;
+			children = (
+				BF00E18827EC14900051F8F0 /* KipasKipasNetworking */,
+				BF00E19227EC14910051F8F0 /* KipasKipasNetworkingTests */,
+				5DAF60B22A95BF5700D8268F /* KipasKipasNetworkingUtils */,
+				BF00E18727EC14900051F8F0 /* Products */,
+				5DAF60BD2A95C05F00D8268F /* Frameworks */,
+				FA52987C73498C36C1613F6D /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		BF00E18727EC14900051F8F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF00E18627EC14900051F8F0 /* KipasKipasNetworking.framework */,
+				BF00E18E27EC14910051F8F0 /* KipasKipasNetworkingTests.xctest */,
+				5DAF60B12A95BF5700D8268F /* KipasKipasNetworkingUtils.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF00E18827EC14900051F8F0 /* KipasKipasNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				2060F6232AE5683000DEDB74 /* SENetworking */,
+				AF0964642AA0542500019FF5 /* Network Monitor */,
+				BFA3CCAD29122AC100E2F7E9 /* Shared Error Response */,
+				BF31632727F5A69100FD53A5 /* Token Service */,
+				BF1D7B5127EC7ED300AE5113 /* HTTPClient.swift */,
+				5DF400BF2AE78F7C00A7584F /* Combine+HTTPClient.swift */,
+				BF1D7B5427EC7EEC00AE5113 /* URLSession */,
+				BF31632D27F5AC1B00FD53A5 /* AuthenticatedHTTPClientDecorator.swift */,
+				BF8C174527F6AB22007A9F7E /* HTTPURLResponse+Extension.swift */,
+				5D23FDAF2AD4FA9E0014AD29 /* Mapper.swift */,
+				5D868E832B1853910074ADA1 /* CachedHTTPClientDecorator.swift */,
+				5D42B1DB2BB5DE5D00FD3C7F /* URLRequest+Builder.swift */,
+				84C6F78A2BDE64EF0026F339 /* UIDevice+Extension.swift */,
+			);
+			path = KipasKipasNetworking;
+			sourceTree = "<group>";
+		};
+		BF00E19227EC14910051F8F0 /* KipasKipasNetworkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF1D7B5D27EC7FBA00AE5113 /* Helpers */,
+				BF1D7B5527EC7F3A00AE5113 /* URLSessionHTTPClientTests.swift */,
+				BFC9E62527FAA2FE004F07EB /* LoadImageDataFromRemoteUseCaseTests.swift */,
+				BFC9E63127FAAD44004F07EB /* LoadImageDataFromCacheUseCaseTests.swift */,
+				BFC9E63727FAD5B7004F07EB /* AuthenticatedHTTPClientDecoratorTests.swift */,
+				BF2E3FD3280FED280085565F /* CoreDataImageDataStoreTests.swift */,
+			);
+			path = KipasKipasNetworkingTests;
+			sourceTree = "<group>";
+		};
+		BF1D7B5427EC7EEC00AE5113 /* URLSession */ = {
+			isa = PBXGroup;
+			children = (
+				BF1D7B5027EC7ED200AE5113 /* URLSessionHTTPClient.swift */,
+			);
+			path = URLSession;
+			sourceTree = "<group>";
+		};
+		BF1D7B5D27EC7FBA00AE5113 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BF1D7B5E27EC7FED00AE5113 /* XCTestCase+MemoryLeakTracking.swift */,
+				BF1D7B5F27EC7FED00AE5113 /* SharedTestHelpers.swift */,
+				BF1D7B5B27EC7FB200AE5113 /* URLProtocolStub.swift */,
+				BFC9E62727FAA3D8004F07EB /* HTTPClientSpy.swift */,
+				BFC9E63327FAAD9D004F07EB /* ImageDataStoreSpy.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BF31632727F5A69100FD53A5 /* Token Service */ = {
+			isa = PBXGroup;
+			children = (
+				BF64880229501FA8002214EE /* TokenHelper.swift */,
+				BF31632827F5A6D800FD53A5 /* Token Main */,
+				BF99221827F450360030B3E7 /* Token Cache */,
+				BFBBE45F27EDC92B00669EB5 /* Token Feature */,
+				BFBBE45E27EDC5C300669EB5 /* Token API */,
+			);
+			path = "Token Service";
+			sourceTree = "<group>";
+		};
+		BF31632827F5A6D800FD53A5 /* Token Main */ = {
+			isa = PBXGroup;
+			children = (
+				BF31632927F5A6EC00FD53A5 /* TokenLoaderWithFallbackComposite.swift */,
+				BF31632B27F5AA7E00FD53A5 /* TokenLoaderCacheDecorator.swift */,
+			);
+			path = "Token Main";
+			sourceTree = "<group>";
+		};
+		BF52869327F588590083A91C /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				BF52869427F588770083A91C /* KeychainStore.swift */,
+				BF52869627F588920083A91C /* KeychainStoreQueryable.swift */,
+				BF52869827F588BD0083A91C /* KeychainStoreError.swift */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		BF99221827F450360030B3E7 /* Token Cache */ = {
+			isa = PBXGroup;
+			children = (
+				BF52869327F588590083A91C /* Keychain */,
+				BF99221B27F450830030B3E7 /* LocalTokenLoader.swift */,
+				BF99221D27F451290030B3E7 /* TokenStore.swift */,
+				BF99221F27F451ED0030B3E7 /* KeychainTokenStore.swift */,
+				BF52869A27F58CAA0083A91C /* LocalTokenItem.swift */,
+				BFC9E63D27FD3C1E004F07EB /* TokenCachePolicy.swift */,
+			);
+			path = "Token Cache";
+			sourceTree = "<group>";
+		};
+		BFA3CCAD29122AC100E2F7E9 /* Shared Error Response */ = {
+			isa = PBXGroup;
+			children = (
+				BFA3CCAE29122AD200E2F7E9 /* KKNetworkError.swift */,
+				AF027A0429A9E15B0037C527 /* KKNetworkErrorResponse.swift */,
+			);
+			path = "Shared Error Response";
+			sourceTree = "<group>";
+		};
+		BFBBE45E27EDC5C300669EB5 /* Token API */ = {
+			isa = PBXGroup;
+			children = (
+				BF1D7BA127ED9A5D00AE5113 /* RemoteTokenLoader.swift */,
+				BF99221027F43F8E0030B3E7 /* TokenItemMapper.swift */,
+				BF99221227F444FB0030B3E7 /* RemoteTokenItem.swift */,
+			);
+			path = "Token API";
+			sourceTree = "<group>";
+		};
+		BFBBE45F27EDC92B00669EB5 /* Token Feature */ = {
+			isa = PBXGroup;
+			children = (
+				BFBBE46027EDC94900669EB5 /* TokenItem.swift */,
+				BF99221927F450420030B3E7 /* TokenCache.swift */,
+				BF99221427F44FC80030B3E7 /* TokenLoader.swift */,
+				BF99221627F44FEB0030B3E7 /* TokenRequest.swift */,
+			);
+			path = "Token Feature";
+			sourceTree = "<group>";
+		};
+		FA52987C73498C36C1613F6D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67855984CE48523BBBF74404 /* Pods-KipasKipasNetworking.debug.xcconfig */,
+				B396C037BAA0E43A8CB5A9D3 /* Pods-KipasKipasNetworking.staging.xcconfig */,
+				22313D8C990C84DAE35257A9 /* Pods-KipasKipasNetworking.release.xcconfig */,
+				442553DE968803559A84A0FA /* Pods-KipasKipasNetworking.proddebug.xcconfig */,
+				564BFD4FF7578FEB4BD42554 /* Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.debug.xcconfig */,
+				40CA6B70640D043E873476B3 /* Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.staging.xcconfig */,
+				7654DD66BADE499FC48EFBA3 /* Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.release.xcconfig */,
+				EAC418A9BC9C3652C6F94DD3 /* Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.proddebug.xcconfig */,
+				D40741C89E57B0267AB4185A /* Pods-KipasKipasNetworking.livedebug.xcconfig */,
+				1B8619D7116BBA6548DC9BC6 /* Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.livedebug.xcconfig */,
+				CE041B1BAFC99BAC4A671228 /* Pods-KipasKipasNetworking.testpk.xcconfig */,
+				8AE22D678B25860225029CA6 /* Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.testpk.xcconfig */,
+				B5475BABAE60CCFF2B97E9BA /* Pods-KipasKipasNetworking.debugpk.xcconfig */,
+				B49CFD793F9F3C3BBD02658F /* Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.debugpk.xcconfig */,
+			);
+			name = Pods;
+			path = ../../Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5DAF60AC2A95BF5700D8268F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF07F2172AF6633B0083FC41 /* AFSecurityPolicy.h in Headers */,
+				AF07F2092AF6633B0083FC41 /* TXUGCPublishListener.h in Headers */,
+				AF07F2072AF6633B0083FC41 /* UploadResumeDefaultController.h in Headers */,
+				AF07F2122AF6633B0083FC41 /* TVCClient.h in Headers */,
+				AF07F20B2AF6633B0083FC41 /* TXUGCPublish.h in Headers */,
+				AF07F20A2AF6633B0083FC41 /* TXUGCPublishTypeDef.h in Headers */,
+				AF07F2082AF6633B0083FC41 /* IUploadResumeController.h in Headers */,
+				AF07F2012AF6633B0083FC41 /* TXUGCPublishOptCenter.h in Headers */,
+				AF07F20F2AF6633B0083FC41 /* TVCClientInner.h in Headers */,
+				AF07F2052AF6633B0083FC41 /* TVCHeader.h in Headers */,
+				AF07F22B2AF6633B0083FC41 /* TVCCommon.h in Headers */,
+				AF07F2252AF6633B0083FC41 /* TVCReport.h in Headers */,
+				AF07F21A2AF6633B0083FC41 /* AFURLRequestSerialization.h in Headers */,
+				AF07F2232AF6633B0083FC41 /* AFHTTPSessionManager.h in Headers */,
+				AF07F2202AF6633B0083FC41 /* AFNetworking.h in Headers */,
+				AF07F2192AF6633B0083FC41 /* AFURLSessionManager.h in Headers */,
+				AF07F20C2AF6633B0083FC41 /* TVCConfig.h in Headers */,
+				AF07F2282AF6633B0083FC41 /* TVCUtils.h in Headers */,
+				AF07F2032AF6633B0083FC41 /* TVCHttpMessageURLProtocol.h in Headers */,
+				AF07F2182AF6633B0083FC41 /* AFNetworkReachabilityManager.h in Headers */,
+				AF07F2262AF6633B0083FC41 /* TXUGCPublishUtil.h in Headers */,
+				AF07F2132AF6633B0083FC41 /* QuicClient.h in Headers */,
+				5DAF60B42A95BF5700D8268F /* KipasKipasNetworkingUtils.h in Headers */,
+				AF07F2152AF6633B0083FC41 /* TVCLog.h in Headers */,
+				AF07F21D2AF6633B0083FC41 /* AFURLResponseSerialization.h in Headers */,
+				AF07F2112AF6633B0083FC41 /* AppLocalized.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF00E18127EC14900051F8F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5DAF60B02A95BF5700D8268F /* KipasKipasNetworkingUtils */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DAF60B92A95BF5700D8268F /* Build configuration list for PBXNativeTarget "KipasKipasNetworkingUtils" */;
+			buildPhases = (
+				75899F7BC01FA9E57104D1AD /* [CP] Check Pods Manifest.lock */,
+				5DAF60AC2A95BF5700D8268F /* Headers */,
+				5DAF60AD2A95BF5700D8268F /* Sources */,
+				5DAF60AE2A95BF5700D8268F /* Frameworks */,
+				5DAF60AF2A95BF5700D8268F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DAF60C12A95C05F00D8268F /* PBXTargetDependency */,
+			);
+			name = KipasKipasNetworkingUtils;
+			productName = KipasKipasNetworkingUtils;
+			productReference = 5DAF60B12A95BF5700D8268F /* KipasKipasNetworkingUtils.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BF00E18527EC14900051F8F0 /* KipasKipasNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF00E19827EC14910051F8F0 /* Build configuration list for PBXNativeTarget "KipasKipasNetworking" */;
+			buildPhases = (
+				408114BD2407DCB8EB066C59 /* [CP] Check Pods Manifest.lock */,
+				BF00E18127EC14900051F8F0 /* Headers */,
+				BF00E18227EC14900051F8F0 /* Sources */,
+				BF00E18327EC14900051F8F0 /* Frameworks */,
+				BF00E18427EC14900051F8F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KipasKipasNetworking;
+			productName = KipasKipasNetworking;
+			productReference = BF00E18627EC14900051F8F0 /* KipasKipasNetworking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BF00E18D27EC14910051F8F0 /* KipasKipasNetworkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF00E19B27EC14910051F8F0 /* Build configuration list for PBXNativeTarget "KipasKipasNetworkingTests" */;
+			buildPhases = (
+				BF00E18A27EC14910051F8F0 /* Sources */,
+				BF00E18B27EC14910051F8F0 /* Frameworks */,
+				BF00E18C27EC14910051F8F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF00E19127EC14910051F8F0 /* PBXTargetDependency */,
+			);
+			name = KipasKipasNetworkingTests;
+			productName = KipasKipasNetworkingTests;
+			productReference = BF00E18E27EC14910051F8F0 /* KipasKipasNetworkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF00E17D27EC14900051F8F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					5DAF60B02A95BF5700D8268F = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
+					};
+					BF00E18527EC14900051F8F0 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					BF00E18D27EC14910051F8F0 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = BF00E18027EC14900051F8F0 /* Build configuration list for PBXProject "KipasKipasNetworking" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF00E17C27EC14900051F8F0;
+			productRefGroup = BF00E18727EC14900051F8F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF00E18527EC14900051F8F0 /* KipasKipasNetworking */,
+				BF00E18D27EC14910051F8F0 /* KipasKipasNetworkingTests */,
+				5DAF60B02A95BF5700D8268F /* KipasKipasNetworkingUtils */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DAF60AF2A95BF5700D8268F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF00E18427EC14900051F8F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF00E18C27EC14910051F8F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		408114BD2407DCB8EB066C59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KipasKipasNetworking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75899F7BC01FA9E57104D1AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KipasKipasNetworking-KipasKipasNetworkingUtils-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DAF60AD2A95BF5700D8268F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF819CF92BA0A30F00841B13 /* NetworkLogger.swift in Sources */,
+				AF07F0C82AF4F90D0083FC41 /* STSTokenEndpoint.swift in Sources */,
+				AF07F2222AF6633B0083FC41 /* AFSecurityPolicy.m in Sources */,
+				AF07F0CA2AF4F92D0083FC41 /* STSTokenLoaderRequest.swift in Sources */,
+				AF07F2162AF6633B0083FC41 /* TXUGCPublishOptCenter.m in Sources */,
+				AF07F21E2AF6633B0083FC41 /* AFURLSessionManager.m in Sources */,
+				AF07F2242AF6633B0083FC41 /* UploadResumeDefaultController.m in Sources */,
+				AF07F0CC2AF4F94B0083FC41 /* STSTokenLoader.swift in Sources */,
+				AF07F0CE2AF4F9610083FC41 /* STSTokenItem.swift in Sources */,
+				AF07F0D02AF4F97C0083FC41 /* STSTokenStore.swift in Sources */,
+				AF07F2102AF6633B0083FC41 /* TVCCommon.m in Sources */,
+				AF2F1BD62AF7EC1B00ACA62D /* TencentVODMediaUploader.swift in Sources */,
+				AF07F2062AF6633B0083FC41 /* TXUGCPublish.m in Sources */,
+				AF07F2042AF6633B0083FC41 /* TVCUtils.m in Sources */,
+				AF07F0EB2AF512720083FC41 /* MediaUploadMapper.swift in Sources */,
+				AF07F0D22AF4F9910083FC41 /* STSTokenHelper.swift in Sources */,
+				AF07F0C62AF4F8B40083FC41 /* RemoteSTSTokenLoader.swift in Sources */,
+				AF07F22A2AF6633B0083FC41 /* AppLocalized.m in Sources */,
+				AFED0F312AF4F3A000249E64 /* STSTokenItemMapper.swift in Sources */,
+				AF2F1BD82AF89ACE00ACA62D /* TencentVODMediaUploadSignatureMapper.swift in Sources */,
+				AF07F21B2AF6633B0083FC41 /* AFURLResponseSerialization.m in Sources */,
+				AF07F2292AF6633B0083FC41 /* TVCClient.m in Sources */,
+				AF07F20D2AF6633B0083FC41 /* TXUGCPublishUtil.m in Sources */,
+				5DAF60BC2A95BFDB00D8268F /* DummyLogin.swift in Sources */,
+				AFED0F1E2AF4D84000249E64 /* UploadConstants.swift in Sources */,
+				AF6903792AF93821000E91D3 /* TencentVODEndpoint.swift in Sources */,
+				AF07F0F52AF57CBD0083FC41 /* STSTokenLoaderCacheDecorator.swift in Sources */,
+				AF07F1022AF581F50083FC41 /* OSSClientFactory.swift in Sources */,
+				AF07F2272AF6633B0083FC41 /* TVCConfig.m in Sources */,
+				AF07F0D62AF4FAD20083FC41 /* KeychainSTSTokenStore.swift in Sources */,
+				AF07F0DE2AF5018E0083FC41 /* MediaUploader.swift in Sources */,
+				AF07F0E12AF501C40083FC41 /* MediaUploaderRequest.swift in Sources */,
+				AF07F21F2AF6633B0083FC41 /* AFURLRequestSerialization.m in Sources */,
+				AF07F2142AF6633B0083FC41 /* TVCHttpMessageURLProtocol.m in Sources */,
+				5DAF60C72A95C7F900D8268F /* DummyLoginCache.swift in Sources */,
+				AF07F2022AF6633B0083FC41 /* TVCLog.m in Sources */,
+				AF69037C2AF93D2A000E91D3 /* TencentVODMediaUploadTranscodeMapper.swift in Sources */,
+				E8A47B7F18D500C6226ACA18 /* STSTokenCachePolicy.swift in Sources */,
+				AF07F1002AF581250083FC41 /* HTTPClientFactory.swift in Sources */,
+				AFF51A122B86ED4200700949 /* KKLoggerUpload.swift in Sources */,
+				AF07F2002AF6633B0083FC41 /* QuicClient.m in Sources */,
+				AF07F1FF2AF6633B0083FC41 /* TencentCOSMediaUploader.swift in Sources */,
+				AF07F0E22AF501C40083FC41 /* MediaUploaderResult.swift in Sources */,
+				E8A47783DE0C374011160AD9 /* LocalSTSTokenLoader.swift in Sources */,
+				AF07F0E72AF505380083FC41 /* AuthenticatedMediaUploaderRequest.swift in Sources */,
+				E8A47BAE131FC72419DAFCD3 /* AlibabaOSSMediaUploader.swift in Sources */,
+				AF07F21C2AF6633B0083FC41 /* AFHTTPSessionManager.m in Sources */,
+				E8A47806AB2080813AF06E35 /* UploadMainQueueDecorator.swift in Sources */,
+				AF07F22C2AF6633B0083FC41 /* TVCClientInner.m in Sources */,
+				E8A47EB9083D5E6BCD74119C /* STSTokenLoaderFallbackComposite.swift in Sources */,
+				E8A47B109FEE7ED0BA3841AF /* STSTokenLoaderFactory.swift in Sources */,
+				AF6903812AFA3D45000E91D3 /* TencentVODMediaUploadTranscodeRequest.swift in Sources */,
+				E8A47C2EDFB994B73B13F1B0 /* AuthenticatedMediaUploadClientDecorator.swift in Sources */,
+				E8A47614CE81812A0628EDC6 /* MediaUploadManager.swift in Sources */,
+				AF07F2212AF6633B0083FC41 /* AFNetworkReachabilityManager.m in Sources */,
+				AF07F20E2AF6633B0083FC41 /* TVCReport.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF00E18227EC14900051F8F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF99221A27F450420030B3E7 /* TokenCache.swift in Sources */,
+				BF52869527F588770083A91C /* KeychainStore.swift in Sources */,
+				5D868E842B1853910074ADA1 /* CachedHTTPClientDecorator.swift in Sources */,
+				BF99221E27F451290030B3E7 /* TokenStore.swift in Sources */,
+				AF027A0529A9E15B0037C527 /* KKNetworkErrorResponse.swift in Sources */,
+				BFC9E63E27FD3C1E004F07EB /* TokenCachePolicy.swift in Sources */,
+				2060F62A2AE5687600DEDB74 /* Endpoint.swift in Sources */,
+				5D6F112C2B0B2A090031A606 /* Combine+HTTPClient.swift in Sources */,
+				BFBBE46127EDC94900669EB5 /* TokenItem.swift in Sources */,
+				BF1D7BA227ED9A5E00AE5113 /* RemoteTokenLoader.swift in Sources */,
+				BF8C174627F6AB22007A9F7E /* HTTPURLResponse+Extension.swift in Sources */,
+				2060F62B2AE5687600DEDB74 /* DIContainer.swift in Sources */,
+				BF31632E27F5AC1B00FD53A5 /* AuthenticatedHTTPClientDecorator.swift in Sources */,
+				BF99221127F43F8E0030B3E7 /* TokenItemMapper.swift in Sources */,
+				2060F6292AE5687600DEDB74 /* NetworkConfig.swift in Sources */,
+				BF99222027F451ED0030B3E7 /* KeychainTokenStore.swift in Sources */,
+				BF52869927F588BD0083A91C /* KeychainStoreError.swift in Sources */,
+				BF1D7B5327EC7ED300AE5113 /* HTTPClient.swift in Sources */,
+				BF52869727F588920083A91C /* KeychainStoreQueryable.swift in Sources */,
+				BFA3CCAF29122AD200E2F7E9 /* KKNetworkError.swift in Sources */,
+				5D23FDB02AD4FA9E0014AD29 /* Mapper.swift in Sources */,
+				BF64880329501FA8002214EE /* TokenHelper.swift in Sources */,
+				AF0964682AA0543D00019FF5 /* NetworkMonitor.swift in Sources */,
+				BF52869B27F58CAA0083A91C /* LocalTokenItem.swift in Sources */,
+				BF31632A27F5A6EC00FD53A5 /* TokenLoaderWithFallbackComposite.swift in Sources */,
+				BF99221327F444FB0030B3E7 /* RemoteTokenItem.swift in Sources */,
+				5D42B1DC2BB5DE5D00FD3C7F /* URLRequest+Builder.swift in Sources */,
+				BF31632C27F5AA7E00FD53A5 /* TokenLoaderCacheDecorator.swift in Sources */,
+				BF99221C27F450830030B3E7 /* LocalTokenLoader.swift in Sources */,
+				BF99221527F44FC80030B3E7 /* TokenLoader.swift in Sources */,
+				BF1D7B5227EC7ED300AE5113 /* URLSessionHTTPClient.swift in Sources */,
+				84C6F78B2BDE64EF0026F339 /* UIDevice+Extension.swift in Sources */,
+				2060F62C2AE5687600DEDB74 /* NetworkService.swift in Sources */,
+				2060F62D2AE5687600DEDB74 /* DataTransferService.swift in Sources */,
+				BF99221727F44FEB0030B3E7 /* TokenRequest.swift in Sources */,
+				AF28EFFF2AA06A38006F2138 /* NetworkSpeedMonitor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF00E18A27EC14910051F8F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC9E63427FAAD9D004F07EB /* ImageDataStoreSpy.swift in Sources */,
+				BFC9E63227FAAD44004F07EB /* LoadImageDataFromCacheUseCaseTests.swift in Sources */,
+				BF1D7B6127EC7FED00AE5113 /* SharedTestHelpers.swift in Sources */,
+				BFC9E62827FAA3D8004F07EB /* HTTPClientSpy.swift in Sources */,
+				BF2E3FD4280FED280085565F /* CoreDataImageDataStoreTests.swift in Sources */,
+				BF1D7B5627EC7F3A00AE5113 /* URLSessionHTTPClientTests.swift in Sources */,
+				BFC9E62627FAA2FE004F07EB /* LoadImageDataFromRemoteUseCaseTests.swift in Sources */,
+				BF1D7B5C27EC7FB200AE5113 /* URLProtocolStub.swift in Sources */,
+				BFC9E63827FAD5B7004F07EB /* AuthenticatedHTTPClientDecoratorTests.swift in Sources */,
+				BF1D7B6027EC7FED00AE5113 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5DAF60C12A95C05F00D8268F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF00E18527EC14900051F8F0 /* KipasKipasNetworking */;
+			targetProxy = 5DAF60C02A95C05F00D8268F /* PBXContainerItemProxy */;
+		};
+		BF00E19127EC14910051F8F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF00E18527EC14900051F8F0 /* KipasKipasNetworking */;
+			targetProxy = BF00E19027EC14910051F8F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5D77B2022B91766C008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = LiveDebug;
+		};
+		5D77B2032B91766C008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D40741C89E57B0267AB4185A /* Pods-KipasKipasNetworking.livedebug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasNetworking.KipasKipasNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = LiveDebug;
+		};
+		5D77B2042B91766C008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasNetworking.KipasKipasNetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = LiveDebug;
+		};
+		5D77B2052B91766C008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B8619D7116BBA6548DC9BC6 /* Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.livedebug.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasNetworkingUtils;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}";
+			};
+			name = LiveDebug;
+		};
+		5DAF60B52A95BF5700D8268F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 564BFD4FF7578FEB4BD42554 /* Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.debug.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasNetworkingUtils;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}";
+			};
+			name = Debug;
+		};
+		5DAF60B62A95BF5700D8268F /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40CA6B70640D043E873476B3 /* Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.staging.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasNetworkingUtils;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}";
+			};
+			name = Staging;
+		};
+		5DAF60B72A95BF5700D8268F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7654DD66BADE499FC48EFBA3 /* Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.release.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasNetworkingUtils;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}";
+			};
+			name = Release;
+		};
+		5DAF60B82A95BF5700D8268F /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAC418A9BC9C3652C6F94DD3 /* Pods-KipasKipasNetworking-KipasKipasNetworkingUtils.proddebug.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasNetworkingUtils;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}";
+			};
+			name = ProdDebug;
+		};
+		BF00E19627EC14910051F8F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BF00E19727EC14910051F8F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BF00E19927EC14910051F8F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67855984CE48523BBBF74404 /* Pods-KipasKipasNetworking.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasNetworking.KipasKipasNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF00E19A27EC14910051F8F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22313D8C990C84DAE35257A9 /* Pods-KipasKipasNetworking.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasNetworking.KipasKipasNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BF00E19C27EC14910051F8F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasNetworking.KipasKipasNetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF00E19D27EC14910051F8F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasNetworking.KipasKipasNetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BF60E99228D97B1C004ED4CF /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = ProdDebug;
+		};
+		BF60E99328D97B1C004ED4CF /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 442553DE968803559A84A0FA /* Pods-KipasKipasNetworking.proddebug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasNetworking.KipasKipasNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = ProdDebug;
+		};
+		BF60E99428D97B1C004ED4CF /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasNetworking.KipasKipasNetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = ProdDebug;
+		};
+		BFBBE45527EDA92500669EB5 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Staging;
+		};
+		BFBBE45627EDA92500669EB5 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B396C037BAA0E43A8CB5A9D3 /* Pods-KipasKipasNetworking.staging.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasNetworking.KipasKipasNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		BFBBE45727EDA92500669EB5 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasNetworking.KipasKipasNetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DAF60B92A95BF5700D8268F /* Build configuration list for PBXNativeTarget "KipasKipasNetworkingUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DAF60B52A95BF5700D8268F /* Debug */,
+				5D77B2052B91766C008CC295 /* LiveDebug */,
+				5DAF60B62A95BF5700D8268F /* Staging */,
+				5DAF60B72A95BF5700D8268F /* Release */,
+				5DAF60B82A95BF5700D8268F /* ProdDebug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF00E18027EC14900051F8F0 /* Build configuration list for PBXProject "KipasKipasNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF00E19627EC14910051F8F0 /* Debug */,
+				5D77B2022B91766C008CC295 /* LiveDebug */,
+				BFBBE45527EDA92500669EB5 /* Staging */,
+				BF00E19727EC14910051F8F0 /* Release */,
+				BF60E99228D97B1C004ED4CF /* ProdDebug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF00E19827EC14910051F8F0 /* Build configuration list for PBXNativeTarget "KipasKipasNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF00E19927EC14910051F8F0 /* Debug */,
+				5D77B2032B91766C008CC295 /* LiveDebug */,
+				BFBBE45627EDA92500669EB5 /* Staging */,
+				BF00E19A27EC14910051F8F0 /* Release */,
+				BF60E99328D97B1C004ED4CF /* ProdDebug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF00E19B27EC14910051F8F0 /* Build configuration list for PBXNativeTarget "KipasKipasNetworkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF00E19C27EC14910051F8F0 /* Debug */,
+				5D77B2042B91766C008CC295 /* LiveDebug */,
+				BFBBE45727EDA92500669EB5 /* Staging */,
+				BF00E19D27EC14910051F8F0 /* Release */,
+				BF60E99428D97B1C004ED4CF /* ProdDebug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF00E17D27EC14900051F8F0 /* Project object */;
+}

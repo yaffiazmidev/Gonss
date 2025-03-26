@@ -1,0 +1,13 @@
+/* 
+  NotificationPreferences.strings
+  KipasKipas
+
+  Created by PT.Koanba on 05/12/22.
+  Copyright © 2022 Koanba. All rights reserved.
+*/
+
+"NOTIFICATION_PREFERENCES_UPDATE_ERROR" = "Gagal merubah, coba lagi nanti.";
+"NOTIFICATION_PREFERENCES_GET_ERROR" = "Gagal mendapatkan konfigurasi terakhir.";
+
+
+

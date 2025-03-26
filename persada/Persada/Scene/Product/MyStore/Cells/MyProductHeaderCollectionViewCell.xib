@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AirbnbCerealBold.ttf">
+            <string>AirbnbCerealApp-Bold</string>
+        </array>
+        <array key="AirbnbCerealBook.ttf">
+            <string>AirbnbCerealApp-Book</string>
+        </array>
+        <array key="AirbnbCerealMedium.ttf">
+            <string>AirbnbCerealApp-Medium</string>
+        </array>
+        <array key="RobotoMedium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MyProductHeaderCollectionViewCell" customModule="KipasKipas" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="279" height="305"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="279" height="305"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1K9-i8-rM6">
+                        <rect key="frame" x="16" y="20" width="247" height="217"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Zm-RB-tBy">
+                                <rect key="frame" x="0.0" y="0.0" width="247" height="163"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0VF-aG-oBo">
+                                        <rect key="frame" x="12" y="17" width="223" height="123"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="c8J-cc-iP4">
+                                                <rect key="frame" x="0.0" y="0.0" width="223" height="55"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Sz5-KK-eFz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="223" height="16"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Saldo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88C-0a-54R">
+                                                                <rect key="frame" x="0.0" y="0.0" width="150" height="16"/>
+                                                                <fontDescription key="fontDescription" name="AirbnbCerealApp-Book" family="Airbnb Cereal App" pointSize="12"/>
+                                                                <color key="textColor" name="grey"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZv-SA-7yX">
+                                                                <rect key="frame" x="158" y="0.0" width="65" height="16"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="65" id="GKa-YP-7bB"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="AirbnbCerealApp-Medium" family="Airbnb Cereal App" pointSize="12"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Tarik Saldo">
+                                                                    <color key="titleColor" name="secondary"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rp 0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWY-aD-9xp">
+                                                        <rect key="frame" x="0.0" y="29" width="223" height="26"/>
+                                                        <fontDescription key="fontDescription" name="AirbnbCerealApp-Bold" family="Airbnb Cereal App" pointSize="20"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Hkr-It-fjK">
+                                                <rect key="frame" x="0.0" y="75" width="223" height="48"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Red-AH-FCY">
+                                                        <rect key="frame" x="0.0" y="0.0" width="109.5" height="48"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vwv-RA-TJ5">
+                                                                <rect key="frame" x="8" y="7" width="93.5" height="34"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saldo Penjualan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="maC-5L-amE">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="10"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                                                        <color key="textColor" name="grey"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rp 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SbS-ZJ-vnA">
+                                                                        <rect key="frame" x="0.0" y="18" width="93.5" height="16"/>
+                                                                        <fontDescription key="fontDescription" name="AirbnbCerealApp-Bold" family="Airbnb Cereal App" pointSize="12"/>
+                                                                        <color key="textColor" red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="vwv-RA-TJ5" firstAttribute="centerY" secondItem="Red-AH-FCY" secondAttribute="centerY" id="CBM-rD-eMe"/>
+                                                            <constraint firstAttribute="trailing" secondItem="vwv-RA-TJ5" secondAttribute="trailing" constant="8" id="EGu-QQ-brA"/>
+                                                            <constraint firstItem="vwv-RA-TJ5" firstAttribute="leading" secondItem="Red-AH-FCY" secondAttribute="leading" constant="8" id="ZRR-Kl-ArL"/>
+                                                            <constraint firstItem="vwv-RA-TJ5" firstAttribute="centerX" secondItem="Red-AH-FCY" secondAttribute="centerX" id="b9t-BQ-yUY"/>
+                                                            <constraint firstAttribute="height" constant="48" id="lHd-Nz-Y35"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="setCornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="setShadowRadius">
+                                                                <real key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="setShadowOpacity">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                                <size key="value" width="1" height="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                                <color key="value" white="0.0" alpha="0.14688534768211919" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JRe-Lf-Kbo">
+                                                        <rect key="frame" x="113.5" y="0.0" width="109.5" height="48"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="SDZ-rv-TIS">
+                                                                <rect key="frame" x="8" y="7" width="93.5" height="34"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saldo Refund" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDg-PN-Ryu">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="10"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                                                        <color key="textColor" name="grey"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rp 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxM-RS-qaW">
+                                                                        <rect key="frame" x="0.0" y="18" width="93.5" height="16"/>
+                                                                        <fontDescription key="fontDescription" name="AirbnbCerealApp-Bold" family="Airbnb Cereal App" pointSize="12"/>
+                                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="SDZ-rv-TIS" firstAttribute="centerX" secondItem="JRe-Lf-Kbo" secondAttribute="centerX" id="BUa-yD-Ene"/>
+                                                            <constraint firstAttribute="trailing" secondItem="SDZ-rv-TIS" secondAttribute="trailing" constant="8" id="FND-gp-jUj"/>
+                                                            <constraint firstItem="SDZ-rv-TIS" firstAttribute="centerY" secondItem="JRe-Lf-Kbo" secondAttribute="centerY" id="OaT-LR-IIg"/>
+                                                            <constraint firstAttribute="height" constant="48" id="hm6-uG-JYl"/>
+                                                            <constraint firstItem="SDZ-rv-TIS" firstAttribute="leading" secondItem="JRe-Lf-Kbo" secondAttribute="leading" constant="8" id="zaK-Ib-gs8"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="setCornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="setShadowRadius">
+                                                                <real key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="setShadowOpacity">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                                <size key="value" width="1" height="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                                <color key="value" white="0.0" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="whiteSnow"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="163" id="Clk-NR-gTZ"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="0VF-aG-oBo" secondAttribute="bottom" constant="23" id="Il7-Lv-h6t"/>
+                                    <constraint firstItem="0VF-aG-oBo" firstAttribute="leading" secondItem="2Zm-RB-tBy" secondAttribute="leading" constant="12" id="S0z-sq-m7I"/>
+                                    <constraint firstItem="0VF-aG-oBo" firstAttribute="top" secondItem="2Zm-RB-tBy" secondAttribute="top" constant="17" id="gPx-fm-UDc"/>
+                                    <constraint firstAttribute="trailing" secondItem="0VF-aG-oBo" secondAttribute="trailing" constant="12" id="nbk-tA-8hj"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="setCornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="j4d-X5-Fb5">
+                                <rect key="frame" x="0.0" y="173" width="247" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvt-ay-p2W">
+                                        <rect key="frame" x="0.0" y="0.0" width="247" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="zsq-Tw-Q0J"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
+                                        <state key="normal" title="Lihat Riwayat Transaksi">
+                                            <color key="titleColor" name="primary"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="setCornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="setBorderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="setBorderColor">
+                                                <color key="value" name="primary"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="1K9-i8-rM6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="5wL-xX-I75"/>
+                <constraint firstAttribute="trailing" secondItem="1K9-i8-rM6" secondAttribute="trailing" constant="16" id="RHj-eF-szC"/>
+                <constraint firstItem="1K9-i8-rM6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="eHd-lR-YuN"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="1K9-i8-rM6" secondAttribute="bottom" constant="18" id="hnS-E0-6xM"/>
+            </constraints>
+            <size key="customSize" width="279" height="305"/>
+            <connections>
+                <outlet property="balanceLabel" destination="oWY-aD-9xp" id="S0g-bs-7jH"/>
+                <outlet property="refaundBalanceContainerView" destination="JRe-Lf-Kbo" id="3CZ-XU-afh"/>
+                <outlet property="refundBalanceLabel" destination="nxM-RS-qaW" id="IYl-jq-J80"/>
+                <outlet property="salesBalanceContainerView" destination="Red-AH-FCY" id="djR-HJ-Xnp"/>
+                <outlet property="salesBalanceLabel" destination="SbS-ZJ-vnA" id="ePv-MR-p7m"/>
+                <outlet property="viewTransactionHistoryButton" destination="hvt-ay-p2W" id="yfv-my-O8w"/>
+                <outlet property="withdrawBalenceButton" destination="SZv-SA-7yX" id="ACv-8s-4wc"/>
+            </connections>
+            <point key="canvasLocation" x="303.62318840579712" y="224.66517857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="grey">
+            <color red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="1" green="0.25882352941176473" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondary">
+            <color red="0.094117647058823528" green="0.56470588235294117" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="whiteSnow">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

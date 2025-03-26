@@ -1,0 +1,1867 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D031F812BBA6EFA00DF85D0 /* RegisterViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D031F802BBA6EFA00DF85D0 /* RegisterViewAdapter.swift */; };
+		5D031F832BBA8F0100DF85D0 /* RegisterVerifyOTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D031F822BBA8F0100DF85D0 /* RegisterVerifyOTPError.swift */; };
+		5D26AF222B77EE1700832BCF /* RegisterVerifyOTPUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D26AF212B77EE1700832BCF /* RegisterVerifyOTPUIComposer.swift */; };
+		5D26AF272B786BA500832BCF /* RegisterVerifyOTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D26AF262B786BA500832BCF /* RegisterVerifyOTPResponse.swift */; };
+		5D26AF2D2B7870A300832BCF /* RegisterVerifyOTPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D26AF2C2B7870A300832BCF /* RegisterVerifyOTPViewModel.swift */; };
+		5D299A042B760C68006BE909 /* KipasKipasRegister.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D299A032B760C68006BE909 /* KipasKipasRegister.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D299A132B760CDD006BE909 /* KipasKipasRegisteriOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D299A122B760CDD006BE909 /* KipasKipasRegisteriOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D299A252B760D6E006BE909 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D299A242B760D6E006BE909 /* AppDelegate.swift */; };
+		5D299A272B760D6E006BE909 /* SceneDelegate+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D299A262B760D6E006BE909 /* SceneDelegate+Register.swift */; };
+		5D299A2E2B760D6F006BE909 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D299A2D2B760D6F006BE909 /* Assets.xcassets */; };
+		5D299A312B760D6F006BE909 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D299A2F2B760D6F006BE909 /* LaunchScreen.storyboard */; };
+		5D299A392B760D84006BE909 /* KipasKipasRegister.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D299A002B760C68006BE909 /* KipasKipasRegister.framework */; };
+		5D299A3A2B760D84006BE909 /* KipasKipasRegister.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D299A002B760C68006BE909 /* KipasKipasRegister.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D299A3D2B760D85006BE909 /* KipasKipasRegisteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D299A102B760CDD006BE909 /* KipasKipasRegisteriOS.framework */; };
+		5D299A3E2B760D85006BE909 /* KipasKipasRegisteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D299A102B760CDD006BE909 /* KipasKipasRegisteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D299A422B760D97006BE909 /* KipasKipasRegister.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D299A002B760C68006BE909 /* KipasKipasRegister.framework */; };
+		5D299A482B760DF9006BE909 /* RegisterPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D299A472B760DF9006BE909 /* RegisterPhoneViewController.swift */; };
+		5D36AC062BD89D7600B6C65C /* libKipasKipasSharedFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D36AC052BD89D7600B6C65C /* libKipasKipasSharedFoundation.a */; };
+		5D36AC092BD89DCD00B6C65C /* RegisterEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D36AC082BD89DCD00B6C65C /* RegisterEmailView.swift */; };
+		5D36AC0E2BD89F7900B6C65C /* RegisterEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D36AC0D2BD89F7900B6C65C /* RegisterEmailViewController.swift */; };
+		5D36AC1F2BD8D4A600B6C65C /* RegisterContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D36AC1E2BD8D4A600B6C65C /* RegisterContainerViewController.swift */; };
+		5D39AF382B78B175006B958D /* BirthdayPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D39AF372B78B175006B958D /* BirthdayPickerViewController.swift */; };
+		5D39AF3A2B78B235006B958D /* BirthdayPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D39AF392B78B235006B958D /* BirthdayPickerView.swift */; };
+		5D42B1DA2BB55E0A00FD3C7F /* RegisterVerifyOTPPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D42B1D92BB55E0A00FD3C7F /* RegisterVerifyOTPPresentationAdapter.swift */; };
+		5D42B1DF2BB5E20B00FD3C7F /* RegisterRequestOTPParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D42B1DE2BB5E20B00FD3C7F /* RegisterRequestOTPParam.swift */; };
+		5D42B1E12BB5E21F00FD3C7F /* RegisterVerifyOTPParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D42B1E02BB5E21F00FD3C7F /* RegisterVerifyOTPParam.swift */; };
+		5D42B1E32BB5E24200FD3C7F /* RegisterUploadPhotoParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D42B1E22BB5E24200FD3C7F /* RegisterUploadPhotoParam.swift */; };
+		5D42B1E52BB5E25B00FD3C7F /* RegisterUserParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D42B1E42BB5E25B00FD3C7F /* RegisterUserParam.swift */; };
+		5D42B1E72BB5E29C00FD3C7F /* RegisterOTPPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D42B1E62BB5E29C00FD3C7F /* RegisterOTPPlatform.swift */; };
+		5D4C90512B7A22E7003A55AA /* GenderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4C90502B7A22E7003A55AA /* GenderCell.swift */; };
+		5D4FD9062B79339D003EF8C1 /* RegisterAccountAvailabilityViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4FD9052B79339D003EF8C1 /* RegisterAccountAvailabilityViewAdapter.swift */; };
+		5D4FD90B2B7933FA003EF8C1 /* RegisterAccountAvailabilityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4FD90A2B7933FA003EF8C1 /* RegisterAccountAvailabilityViewModel.swift */; };
+		5D4FD90D2B79348F003EF8C1 /* RegisterUsernameUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4FD90C2B79348F003EF8C1 /* RegisterUsernameUIComposer.swift */; };
+		5D4FD9112B79BA13003EF8C1 /* KipasKipasCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D4FD9102B79BA13003EF8C1 /* KipasKipasCamera.framework */; };
+		5D4FD9152B79BA1F003EF8C1 /* KipasKipasCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D4FD9142B79BA1F003EF8C1 /* KipasKipasCamera.framework */; };
+		5D4FD9162B79BA1F003EF8C1 /* KipasKipasCamera.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D4FD9142B79BA1F003EF8C1 /* KipasKipasCamera.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D4FD9222B79FA7C003EF8C1 /* RegisterPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4FD9212B79FA7C003EF8C1 /* RegisterPhotoView.swift */; };
+		5D4FD9242B79FB8D003EF8C1 /* RegisterPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4FD9232B79FB8D003EF8C1 /* RegisterPhotoViewController.swift */; };
+		5D4FD9262B7A0CB6003EF8C1 /* GenderPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4FD9252B7A0CB6003EF8C1 /* GenderPickerView.swift */; };
+		5D50C8732BE0AA1A002FEEB8 /* RegisterVerifyEmailParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D50C8722BE0AA1A002FEEB8 /* RegisterVerifyEmailParam.swift */; };
+		5D66AD4B2B7766AA007D0AD6 /* RegisterVerifyOTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D66AD4A2B7766AA007D0AD6 /* RegisterVerifyOTPViewController.swift */; };
+		5D66AD562B7768E9007D0AD6 /* RegisterVerifyOTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D66AD552B7768E9007D0AD6 /* RegisterVerifyOTPView.swift */; };
+		5D9513222B76168800965F06 /* KipasKipasShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D9513212B76168800965F06 /* KipasKipasShared.framework */; };
+		5D9513262B76168F00965F06 /* KipasKipasShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D9513252B76168F00965F06 /* KipasKipasShared.framework */; };
+		5D9513272B76168F00965F06 /* KipasKipasShared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D9513252B76168F00965F06 /* KipasKipasShared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D95132F2B770D9D00965F06 /* RegisterPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D95132E2B770D9D00965F06 /* RegisterPhoneView.swift */; };
+		5D9513352B77247500965F06 /* KipasKipasNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D9513342B77247500965F06 /* KipasKipasNetworking.framework */; };
+		5D9513362B77247500965F06 /* KipasKipasNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D9513342B77247500965F06 /* KipasKipasNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D95133C2B772F1300965F06 /* SceneDelegate+Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D95133B2B772F1300965F06 /* SceneDelegate+Registration.swift */; };
+		5D95133F2B7730B500965F06 /* RegisterRequestOTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D95133E2B7730B500965F06 /* RegisterRequestOTPResponse.swift */; };
+		5D9513452B77341400965F06 /* RegisterPhoneUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9513442B77341400965F06 /* RegisterPhoneUIComposer.swift */; };
+		5D9513482B77360500965F06 /* RegisterRequestOTPPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9513472B77360500965F06 /* RegisterRequestOTPPresentationAdapter.swift */; };
+		5D9513502B77377A00965F06 /* RegisterRequestOTPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D95134F2B77377A00965F06 /* RegisterRequestOTPViewModel.swift */; };
+		5DA5CCE02B7A6DB100EA41D2 /* RegisterPhotoPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA5CCDF2B7A6DB100EA41D2 /* RegisterPhotoPresentationAdapter.swift */; };
+		5DA5CCE32B7A6E2D00EA41D2 /* RegisterPhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA5CCE22B7A6E2D00EA41D2 /* RegisterPhotoViewModel.swift */; };
+		5DA5CCE72B7A6EA100EA41D2 /* RegisterPhotoUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA5CCE62B7A6EA100EA41D2 /* RegisterPhotoUIComposer.swift */; };
+		5DA5CCE92B7A764100EA41D2 /* KipasKipasNetworkingUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA5CCE82B7A764100EA41D2 /* KipasKipasNetworkingUtils.framework */; };
+		5DA5CCEA2B7A764100EA41D2 /* KipasKipasNetworkingUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA5CCE82B7A764100EA41D2 /* KipasKipasNetworkingUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5DA5CCEC2B7A8A9100EA41D2 /* RegisterStepsContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA5CCEB2B7A8A9100EA41D2 /* RegisterStepsContainerViewController.swift */; };
+		5DA5CCF12B7A979200EA41D2 /* StepsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA5CCF02B7A979200EA41D2 /* StepsController.swift */; };
+		5DA5CCF32B7A9F3800EA41D2 /* RegisterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA5CCF22B7A9F3800EA41D2 /* RegisterData.swift */; };
+		5DB4DF352B792A3A0020E45F /* RegisterUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB4DF342B792A3A0020E45F /* RegisterUsernameView.swift */; };
+		5DB4DF3B2B792E100020E45F /* RegisterUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB4DF3A2B792E100020E45F /* RegisterUsernameViewController.swift */; };
+		5DB609962B7B00DA0080CA0C /* RegisterPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB609952B7B00DA0080CA0C /* RegisterPresentationAdapter.swift */; };
+		5DB609982B7B01500080CA0C /* RegisterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB609972B7B01500080CA0C /* RegisterResponse.swift */; };
+		5DB6099A2B7B104F0080CA0C /* ChangeOTPMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB609992B7B104F0080CA0C /* ChangeOTPMethodViewController.swift */; };
+		5DBD7E942BDBCB5B002F32BF /* RegisterRequestOTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBD7E932BDBCB5B002F32BF /* RegisterRequestOTPError.swift */; };
+		5DBD7E962BDC023A002F32BF /* RequestOTPViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBD7E952BDC023A002F32BF /* RequestOTPViewAdapter.swift */; };
+		5DC72A582BB95C7100CC162C /* RootData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC72A572BB95C7100CC162C /* RootData.swift */; };
+		5DC72A5A2BB95D1600CC162C /* RegisterAccountAvailabilityResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC72A592BB95D1600CC162C /* RegisterAccountAvailabilityResponse.swift */; };
+		5DD708212BDA479C00A2A2EE /* RegisterAccountAvailabilityParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD708202BDA479C00A2A2EE /* RegisterAccountAvailabilityParam.swift */; };
+		5DD708232BDA4B2200A2A2EE /* RegisterEmailUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD708222BDA4B2200A2A2EE /* RegisterEmailUIComposer.swift */; };
+		5DDABDF32B78ED1600118D00 /* RegisterPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDABDF22B78ED1600118D00 /* RegisterPasswordView.swift */; };
+		5DDABDF52B78EF5600118D00 /* RegisterPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDABDF42B78EF5600118D00 /* RegisterPasswordViewController.swift */; };
+		CDA121FD3D78497DC7D9FDE8 /* Pods_KipasKipasRegister.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E4BF2A43DDBF17E38E89897 /* Pods_KipasKipasRegister.framework */; };
+		F77CEB04E30F01268FF3CFD3 /* Pods_KipasKipasRegister_KipasKipasRegisterApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09FA7DA27C6C3BEFF6D18783 /* Pods_KipasKipasRegister_KipasKipasRegisterApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D299A3B2B760D85006BE909 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D2999F72B760C68006BE909 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D2999FF2B760C68006BE909;
+			remoteInfo = KipasKipasRegister;
+		};
+		5D299A3F2B760D85006BE909 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D2999F72B760C68006BE909 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D299A0F2B760CDD006BE909;
+			remoteInfo = KipasKipasRegisteriOS;
+		};
+		5D299A442B760D97006BE909 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D2999F72B760C68006BE909 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D2999FF2B760C68006BE909;
+			remoteInfo = KipasKipasRegister;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5D299A412B760D85006BE909 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5DA5CCEA2B7A764100EA41D2 /* KipasKipasNetworkingUtils.framework in Embed Frameworks */,
+				5D9513272B76168F00965F06 /* KipasKipasShared.framework in Embed Frameworks */,
+				5D299A3A2B760D84006BE909 /* KipasKipasRegister.framework in Embed Frameworks */,
+				5D9513362B77247500965F06 /* KipasKipasNetworking.framework in Embed Frameworks */,
+				5D4FD9162B79BA1F003EF8C1 /* KipasKipasCamera.framework in Embed Frameworks */,
+				5D299A3E2B760D85006BE909 /* KipasKipasRegisteriOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		09FA7DA27C6C3BEFF6D18783 /* Pods_KipasKipasRegister_KipasKipasRegisterApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KipasKipasRegister_KipasKipasRegisterApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12205769304398E9DBA62F30 /* Pods-KipasKipasRegister-KipasKipasRegisterApp.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasRegister-KipasKipasRegisterApp.staging.xcconfig"; path = "Target Support Files/Pods-KipasKipasRegister-KipasKipasRegisterApp/Pods-KipasKipasRegister-KipasKipasRegisterApp.staging.xcconfig"; sourceTree = "<group>"; };
+		269AF32B0475B063900BE9D6 /* Pods-KipasKipasRegister-KipasKipasRegisterApp.livedebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasRegister-KipasKipasRegisterApp.livedebug.xcconfig"; path = "Target Support Files/Pods-KipasKipasRegister-KipasKipasRegisterApp/Pods-KipasKipasRegister-KipasKipasRegisterApp.livedebug.xcconfig"; sourceTree = "<group>"; };
+		361B26A00EE350558E2E577B /* Pods-KipasKipasRegister.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasRegister.debug.xcconfig"; path = "Target Support Files/Pods-KipasKipasRegister/Pods-KipasKipasRegister.debug.xcconfig"; sourceTree = "<group>"; };
+		3A7602D19FF95C11DAA9AFC1 /* Pods-KipasKipasRegister.proddebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasRegister.proddebug.xcconfig"; path = "Target Support Files/Pods-KipasKipasRegister/Pods-KipasKipasRegister.proddebug.xcconfig"; sourceTree = "<group>"; };
+		4FA39883F182D2C5877ECAA9 /* Pods-KipasKipasRegister-KipasKipasRegisterApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasRegister-KipasKipasRegisterApp.release.xcconfig"; path = "Target Support Files/Pods-KipasKipasRegister-KipasKipasRegisterApp/Pods-KipasKipasRegister-KipasKipasRegisterApp.release.xcconfig"; sourceTree = "<group>"; };
+		5D031F802BBA6EFA00DF85D0 /* RegisterViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewAdapter.swift; sourceTree = "<group>"; };
+		5D031F822BBA8F0100DF85D0 /* RegisterVerifyOTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVerifyOTPError.swift; sourceTree = "<group>"; };
+		5D26AF212B77EE1700832BCF /* RegisterVerifyOTPUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVerifyOTPUIComposer.swift; sourceTree = "<group>"; };
+		5D26AF262B786BA500832BCF /* RegisterVerifyOTPResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVerifyOTPResponse.swift; sourceTree = "<group>"; };
+		5D26AF2C2B7870A300832BCF /* RegisterVerifyOTPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVerifyOTPViewModel.swift; sourceTree = "<group>"; };
+		5D299A002B760C68006BE909 /* KipasKipasRegister.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KipasKipasRegister.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D299A032B760C68006BE909 /* KipasKipasRegister.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KipasKipasRegister.h; sourceTree = "<group>"; };
+		5D299A102B760CDD006BE909 /* KipasKipasRegisteriOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KipasKipasRegisteriOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D299A122B760CDD006BE909 /* KipasKipasRegisteriOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KipasKipasRegisteriOS.h; sourceTree = "<group>"; };
+		5D299A222B760D6E006BE909 /* KipasKipasRegisterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KipasKipasRegisterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D299A242B760D6E006BE909 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5D299A262B760D6E006BE909 /* SceneDelegate+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SceneDelegate+Register.swift"; sourceTree = "<group>"; };
+		5D299A2D2B760D6F006BE909 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5D299A302B760D6F006BE909 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5D299A322B760D6F006BE909 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D299A472B760DF9006BE909 /* RegisterPhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPhoneViewController.swift; sourceTree = "<group>"; };
+		5D36AC052BD89D7600B6C65C /* libKipasKipasSharedFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libKipasKipasSharedFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D36AC082BD89DCD00B6C65C /* RegisterEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEmailView.swift; sourceTree = "<group>"; };
+		5D36AC0D2BD89F7900B6C65C /* RegisterEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEmailViewController.swift; sourceTree = "<group>"; };
+		5D36AC1E2BD8D4A600B6C65C /* RegisterContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterContainerViewController.swift; sourceTree = "<group>"; };
+		5D39AF372B78B175006B958D /* BirthdayPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayPickerViewController.swift; sourceTree = "<group>"; };
+		5D39AF392B78B235006B958D /* BirthdayPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayPickerView.swift; sourceTree = "<group>"; };
+		5D42B1D92BB55E0A00FD3C7F /* RegisterVerifyOTPPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVerifyOTPPresentationAdapter.swift; sourceTree = "<group>"; };
+		5D42B1DE2BB5E20B00FD3C7F /* RegisterRequestOTPParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequestOTPParam.swift; sourceTree = "<group>"; };
+		5D42B1E02BB5E21F00FD3C7F /* RegisterVerifyOTPParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVerifyOTPParam.swift; sourceTree = "<group>"; };
+		5D42B1E22BB5E24200FD3C7F /* RegisterUploadPhotoParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUploadPhotoParam.swift; sourceTree = "<group>"; };
+		5D42B1E42BB5E25B00FD3C7F /* RegisterUserParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserParam.swift; sourceTree = "<group>"; };
+		5D42B1E62BB5E29C00FD3C7F /* RegisterOTPPlatform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterOTPPlatform.swift; sourceTree = "<group>"; };
+		5D4C90502B7A22E7003A55AA /* GenderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderCell.swift; sourceTree = "<group>"; };
+		5D4FD9052B79339D003EF8C1 /* RegisterAccountAvailabilityViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAccountAvailabilityViewAdapter.swift; sourceTree = "<group>"; };
+		5D4FD90A2B7933FA003EF8C1 /* RegisterAccountAvailabilityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAccountAvailabilityViewModel.swift; sourceTree = "<group>"; };
+		5D4FD90C2B79348F003EF8C1 /* RegisterUsernameUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUsernameUIComposer.swift; sourceTree = "<group>"; };
+		5D4FD9102B79BA13003EF8C1 /* KipasKipasCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D4FD9142B79BA1F003EF8C1 /* KipasKipasCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D4FD9212B79FA7C003EF8C1 /* RegisterPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPhotoView.swift; sourceTree = "<group>"; };
+		5D4FD9232B79FB8D003EF8C1 /* RegisterPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPhotoViewController.swift; sourceTree = "<group>"; };
+		5D4FD9252B7A0CB6003EF8C1 /* GenderPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderPickerView.swift; sourceTree = "<group>"; };
+		5D50C8722BE0AA1A002FEEB8 /* RegisterVerifyEmailParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVerifyEmailParam.swift; sourceTree = "<group>"; };
+		5D66AD4A2B7766AA007D0AD6 /* RegisterVerifyOTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVerifyOTPViewController.swift; sourceTree = "<group>"; };
+		5D66AD552B7768E9007D0AD6 /* RegisterVerifyOTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVerifyOTPView.swift; sourceTree = "<group>"; };
+		5D9513212B76168800965F06 /* KipasKipasShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D9513252B76168F00965F06 /* KipasKipasShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D95132E2B770D9D00965F06 /* RegisterPhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPhoneView.swift; sourceTree = "<group>"; };
+		5D9513302B77246B00965F06 /* KipasKipasNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D9513342B77247500965F06 /* KipasKipasNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D95133B2B772F1300965F06 /* SceneDelegate+Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SceneDelegate+Registration.swift"; sourceTree = "<group>"; };
+		5D95133E2B7730B500965F06 /* RegisterRequestOTPResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequestOTPResponse.swift; sourceTree = "<group>"; };
+		5D9513442B77341400965F06 /* RegisterPhoneUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPhoneUIComposer.swift; sourceTree = "<group>"; };
+		5D9513472B77360500965F06 /* RegisterRequestOTPPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequestOTPPresentationAdapter.swift; sourceTree = "<group>"; };
+		5D95134F2B77377A00965F06 /* RegisterRequestOTPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequestOTPViewModel.swift; sourceTree = "<group>"; };
+		5DA5CCDF2B7A6DB100EA41D2 /* RegisterPhotoPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPhotoPresentationAdapter.swift; sourceTree = "<group>"; };
+		5DA5CCE22B7A6E2D00EA41D2 /* RegisterPhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPhotoViewModel.swift; sourceTree = "<group>"; };
+		5DA5CCE62B7A6EA100EA41D2 /* RegisterPhotoUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPhotoUIComposer.swift; sourceTree = "<group>"; };
+		5DA5CCE82B7A764100EA41D2 /* KipasKipasNetworkingUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasNetworkingUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DA5CCEB2B7A8A9100EA41D2 /* RegisterStepsContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterStepsContainerViewController.swift; sourceTree = "<group>"; };
+		5DA5CCF02B7A979200EA41D2 /* StepsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsController.swift; sourceTree = "<group>"; };
+		5DA5CCF22B7A9F3800EA41D2 /* RegisterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterData.swift; sourceTree = "<group>"; };
+		5DB4DF342B792A3A0020E45F /* RegisterUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUsernameView.swift; sourceTree = "<group>"; };
+		5DB4DF3A2B792E100020E45F /* RegisterUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUsernameViewController.swift; sourceTree = "<group>"; };
+		5DB609952B7B00DA0080CA0C /* RegisterPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresentationAdapter.swift; sourceTree = "<group>"; };
+		5DB609972B7B01500080CA0C /* RegisterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponse.swift; sourceTree = "<group>"; };
+		5DB609992B7B104F0080CA0C /* ChangeOTPMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeOTPMethodViewController.swift; sourceTree = "<group>"; };
+		5DBD7E932BDBCB5B002F32BF /* RegisterRequestOTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequestOTPError.swift; sourceTree = "<group>"; };
+		5DBD7E952BDC023A002F32BF /* RequestOTPViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestOTPViewAdapter.swift; sourceTree = "<group>"; };
+		5DC72A572BB95C7100CC162C /* RootData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootData.swift; sourceTree = "<group>"; };
+		5DC72A592BB95D1600CC162C /* RegisterAccountAvailabilityResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAccountAvailabilityResponse.swift; sourceTree = "<group>"; };
+		5DD708202BDA479C00A2A2EE /* RegisterAccountAvailabilityParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAccountAvailabilityParam.swift; sourceTree = "<group>"; };
+		5DD708222BDA4B2200A2A2EE /* RegisterEmailUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEmailUIComposer.swift; sourceTree = "<group>"; };
+		5DDABDF22B78ED1600118D00 /* RegisterPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPasswordView.swift; sourceTree = "<group>"; };
+		5DDABDF42B78EF5600118D00 /* RegisterPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPasswordViewController.swift; sourceTree = "<group>"; };
+		63227CD006E623981EE9A0B6 /* Pods-KipasKipasRegister.livedebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasRegister.livedebug.xcconfig"; path = "Target Support Files/Pods-KipasKipasRegister/Pods-KipasKipasRegister.livedebug.xcconfig"; sourceTree = "<group>"; };
+		652655524B6DEBD5203B0405 /* Pods-KipasKipasRegister-KipasKipasRegisterApp.proddebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasRegister-KipasKipasRegisterApp.proddebug.xcconfig"; path = "Target Support Files/Pods-KipasKipasRegister-KipasKipasRegisterApp/Pods-KipasKipasRegister-KipasKipasRegisterApp.proddebug.xcconfig"; sourceTree = "<group>"; };
+		818F84CF6B1D6A56AEA725DA /* Pods-KipasKipasRegister-KipasKipasRegisterApp.debugpk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasRegister-KipasKipasRegisterApp.debugpk.xcconfig"; path = "Target Support Files/Pods-KipasKipasRegister-KipasKipasRegisterApp/Pods-KipasKipasRegister-KipasKipasRegisterApp.debugpk.xcconfig"; sourceTree = "<group>"; };
+		8336CFF6C2F10BE2F175944F /* Pods-KipasKipasRegister.testpk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasRegister.testpk.xcconfig"; path = "Target Support Files/Pods-KipasKipasRegister/Pods-KipasKipasRegister.testpk.xcconfig"; sourceTree = "<group>"; };
+		8E4BF2A43DDBF17E38E89897 /* Pods_KipasKipasRegister.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KipasKipasRegister.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		914370A35D597F6AA136FF95 /* Pods-KipasKipasRegister.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasRegister.staging.xcconfig"; path = "Target Support Files/Pods-KipasKipasRegister/Pods-KipasKipasRegister.staging.xcconfig"; sourceTree = "<group>"; };
+		9D5D8FAFB788FC2C97BDFE36 /* Pods-KipasKipasRegister.debugpk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasRegister.debugpk.xcconfig"; path = "Target Support Files/Pods-KipasKipasRegister/Pods-KipasKipasRegister.debugpk.xcconfig"; sourceTree = "<group>"; };
+		DE4747CC68FC89327DECC1D6 /* Pods-KipasKipasRegister-KipasKipasRegisterApp.testpk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasRegister-KipasKipasRegisterApp.testpk.xcconfig"; path = "Target Support Files/Pods-KipasKipasRegister-KipasKipasRegisterApp/Pods-KipasKipasRegister-KipasKipasRegisterApp.testpk.xcconfig"; sourceTree = "<group>"; };
+		DED7F9258D91AA201C87BAC6 /* Pods-KipasKipasRegister.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasRegister.release.xcconfig"; path = "Target Support Files/Pods-KipasKipasRegister/Pods-KipasKipasRegister.release.xcconfig"; sourceTree = "<group>"; };
+		FFADC64A8F364B3011A414A6 /* Pods-KipasKipasRegister-KipasKipasRegisterApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasRegister-KipasKipasRegisterApp.debug.xcconfig"; path = "Target Support Files/Pods-KipasKipasRegister-KipasKipasRegisterApp/Pods-KipasKipasRegister-KipasKipasRegisterApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D2999FD2B760C68006BE909 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDA121FD3D78497DC7D9FDE8 /* Pods_KipasKipasRegister.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D299A0D2B760CDD006BE909 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D299A422B760D97006BE909 /* KipasKipasRegister.framework in Frameworks */,
+				5D9513222B76168800965F06 /* KipasKipasShared.framework in Frameworks */,
+				5D4FD9112B79BA13003EF8C1 /* KipasKipasCamera.framework in Frameworks */,
+				5D36AC062BD89D7600B6C65C /* libKipasKipasSharedFoundation.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D299A1F2B760D6E006BE909 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DA5CCE92B7A764100EA41D2 /* KipasKipasNetworkingUtils.framework in Frameworks */,
+				5D9513262B76168F00965F06 /* KipasKipasShared.framework in Frameworks */,
+				5D299A392B760D84006BE909 /* KipasKipasRegister.framework in Frameworks */,
+				5D9513352B77247500965F06 /* KipasKipasNetworking.framework in Frameworks */,
+				5D4FD9152B79BA1F003EF8C1 /* KipasKipasCamera.framework in Frameworks */,
+				5D299A3D2B760D85006BE909 /* KipasKipasRegisteriOS.framework in Frameworks */,
+				F77CEB04E30F01268FF3CFD3 /* Pods_KipasKipasRegister_KipasKipasRegisterApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BDCEA3BA19142A1AE27B1AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				361B26A00EE350558E2E577B /* Pods-KipasKipasRegister.debug.xcconfig */,
+				914370A35D597F6AA136FF95 /* Pods-KipasKipasRegister.staging.xcconfig */,
+				DED7F9258D91AA201C87BAC6 /* Pods-KipasKipasRegister.release.xcconfig */,
+				3A7602D19FF95C11DAA9AFC1 /* Pods-KipasKipasRegister.proddebug.xcconfig */,
+				FFADC64A8F364B3011A414A6 /* Pods-KipasKipasRegister-KipasKipasRegisterApp.debug.xcconfig */,
+				12205769304398E9DBA62F30 /* Pods-KipasKipasRegister-KipasKipasRegisterApp.staging.xcconfig */,
+				4FA39883F182D2C5877ECAA9 /* Pods-KipasKipasRegister-KipasKipasRegisterApp.release.xcconfig */,
+				652655524B6DEBD5203B0405 /* Pods-KipasKipasRegister-KipasKipasRegisterApp.proddebug.xcconfig */,
+				63227CD006E623981EE9A0B6 /* Pods-KipasKipasRegister.livedebug.xcconfig */,
+				269AF32B0475B063900BE9D6 /* Pods-KipasKipasRegister-KipasKipasRegisterApp.livedebug.xcconfig */,
+				8336CFF6C2F10BE2F175944F /* Pods-KipasKipasRegister.testpk.xcconfig */,
+				DE4747CC68FC89327DECC1D6 /* Pods-KipasKipasRegister-KipasKipasRegisterApp.testpk.xcconfig */,
+				9D5D8FAFB788FC2C97BDFE36 /* Pods-KipasKipasRegister.debugpk.xcconfig */,
+				818F84CF6B1D6A56AEA725DA /* Pods-KipasKipasRegister-KipasKipasRegisterApp.debugpk.xcconfig */,
+			);
+			name = Pods;
+			path = ../../Pods;
+			sourceTree = "<group>";
+		};
+		5D26AF232B786A2E00832BCF /* RequestOTP */ = {
+			isa = PBXGroup;
+			children = (
+				5D95134F2B77377A00965F06 /* RegisterRequestOTPViewModel.swift */,
+			);
+			path = RequestOTP;
+			sourceTree = "<group>";
+		};
+		5D26AF2B2B78707600832BCF /* VerifyOTP */ = {
+			isa = PBXGroup;
+			children = (
+				5D26AF2C2B7870A300832BCF /* RegisterVerifyOTPViewModel.swift */,
+			);
+			path = VerifyOTP;
+			sourceTree = "<group>";
+		};
+		5D2999F62B760C68006BE909 = {
+			isa = PBXGroup;
+			children = (
+				5D299A022B760C68006BE909 /* KipasKipasRegister */,
+				5D299A112B760CDD006BE909 /* KipasKipasRegisteriOS */,
+				5D299A232B760D6E006BE909 /* KipasKipasRegisterApp */,
+				5D299A012B760C68006BE909 /* Products */,
+				5D299A382B760D84006BE909 /* Frameworks */,
+				2BDCEA3BA19142A1AE27B1AD /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		5D299A012B760C68006BE909 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D299A002B760C68006BE909 /* KipasKipasRegister.framework */,
+				5D299A102B760CDD006BE909 /* KipasKipasRegisteriOS.framework */,
+				5D299A222B760D6E006BE909 /* KipasKipasRegisterApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D299A022B760C68006BE909 /* KipasKipasRegister */ = {
+			isa = PBXGroup;
+			children = (
+				5D299A0A2B760CC6006BE909 /* Sources */,
+				5D299A032B760C68006BE909 /* KipasKipasRegister.h */,
+			);
+			path = KipasKipasRegister;
+			sourceTree = "<group>";
+		};
+		5D299A0A2B760CC6006BE909 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5D95133D2B77309F00965F06 /* Feature */,
+				5D95133A2B772D6500965F06 /* Presentation */,
+				5D9513372B77270100965F06 /* API */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5D299A112B760CDD006BE909 /* KipasKipasRegisteriOS */ = {
+			isa = PBXGroup;
+			children = (
+				5D299A1D2B760D18006BE909 /* Sources */,
+				5D299A122B760CDD006BE909 /* KipasKipasRegisteriOS.h */,
+			);
+			path = KipasKipasRegisteriOS;
+			sourceTree = "<group>";
+		};
+		5D299A1D2B760D18006BE909 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5D30B0D92BE1E77E00C52C42 /* #UNUSED# */,
+				5DA5CCED2B7A95EC00EA41D2 /* Utils */,
+				5D9513462B7735E100965F06 /* Adapters */,
+				5D66AD492B776693007D0AD6 /* Controllers */,
+				5D66AD482B776677007D0AD6 /* Composers */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5D299A232B760D6E006BE909 /* KipasKipasRegisterApp */ = {
+			isa = PBXGroup;
+			children = (
+				5D9513282B7616C500965F06 /* Application */,
+				5D299A2D2B760D6F006BE909 /* Assets.xcassets */,
+				5D299A2F2B760D6F006BE909 /* LaunchScreen.storyboard */,
+				5D299A322B760D6F006BE909 /* Info.plist */,
+			);
+			path = KipasKipasRegisterApp;
+			sourceTree = "<group>";
+		};
+		5D299A382B760D84006BE909 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D36AC052BD89D7600B6C65C /* libKipasKipasSharedFoundation.a */,
+				5DA5CCE82B7A764100EA41D2 /* KipasKipasNetworkingUtils.framework */,
+				5D4FD9142B79BA1F003EF8C1 /* KipasKipasCamera.framework */,
+				5D4FD9102B79BA13003EF8C1 /* KipasKipasCamera.framework */,
+				5D9513342B77247500965F06 /* KipasKipasNetworking.framework */,
+				5D9513302B77246B00965F06 /* KipasKipasNetworking.framework */,
+				5D9513252B76168F00965F06 /* KipasKipasShared.framework */,
+				5D9513212B76168800965F06 /* KipasKipasShared.framework */,
+				8E4BF2A43DDBF17E38E89897 /* Pods_KipasKipasRegister.framework */,
+				09FA7DA27C6C3BEFF6D18783 /* Pods_KipasKipasRegister_KipasKipasRegisterApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D30B0D92BE1E77E00C52C42 /* #UNUSED# */ = {
+			isa = PBXGroup;
+			children = (
+				5D4C90502B7A22E7003A55AA /* GenderCell.swift */,
+				5DA5CCDF2B7A6DB100EA41D2 /* RegisterPhotoPresentationAdapter.swift */,
+				5DB609952B7B00DA0080CA0C /* RegisterPresentationAdapter.swift */,
+				5D4FD9252B7A0CB6003EF8C1 /* GenderPickerView.swift */,
+				5D031F802BBA6EFA00DF85D0 /* RegisterViewAdapter.swift */,
+				5D4FD9212B79FA7C003EF8C1 /* RegisterPhotoView.swift */,
+				5D4FD9232B79FB8D003EF8C1 /* RegisterPhotoViewController.swift */,
+				5DA5CCE62B7A6EA100EA41D2 /* RegisterPhotoUIComposer.swift */,
+			);
+			path = "#UNUSED#";
+			sourceTree = "<group>";
+		};
+		5D36AC072BD89DBF00B6C65C /* Email */ = {
+			isa = PBXGroup;
+			children = (
+				5D36AC082BD89DCD00B6C65C /* RegisterEmailView.swift */,
+				5D36AC0D2BD89F7900B6C65C /* RegisterEmailViewController.swift */,
+			);
+			path = Email;
+			sourceTree = "<group>";
+		};
+		5D42B1DD2BB5E1E500FD3C7F /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				5D42B1DE2BB5E20B00FD3C7F /* RegisterRequestOTPParam.swift */,
+				5D42B1E02BB5E21F00FD3C7F /* RegisterVerifyOTPParam.swift */,
+				5D42B1E22BB5E24200FD3C7F /* RegisterUploadPhotoParam.swift */,
+				5D42B1E42BB5E25B00FD3C7F /* RegisterUserParam.swift */,
+				5D42B1E62BB5E29C00FD3C7F /* RegisterOTPPlatform.swift */,
+				5DD708202BDA479C00A2A2EE /* RegisterAccountAvailabilityParam.swift */,
+				5D50C8722BE0AA1A002FEEB8 /* RegisterVerifyEmailParam.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		5D4FD9072B7933CE003EF8C1 /* Username */ = {
+			isa = PBXGroup;
+			children = (
+				5D4FD90A2B7933FA003EF8C1 /* RegisterAccountAvailabilityViewModel.swift */,
+			);
+			path = Username;
+			sourceTree = "<group>";
+		};
+		5D66AD482B776677007D0AD6 /* Composers */ = {
+			isa = PBXGroup;
+			children = (
+				5D9513442B77341400965F06 /* RegisterPhoneUIComposer.swift */,
+				5D26AF212B77EE1700832BCF /* RegisterVerifyOTPUIComposer.swift */,
+				5D4FD90C2B79348F003EF8C1 /* RegisterUsernameUIComposer.swift */,
+				5DD708222BDA4B2200A2A2EE /* RegisterEmailUIComposer.swift */,
+			);
+			path = Composers;
+			sourceTree = "<group>";
+		};
+		5D66AD492B776693007D0AD6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5D6FDB622BD60C420098F21E /* Common */,
+				5D6FDB5D2BD609290098F21E /* Phone */,
+				5D36AC072BD89DBF00B6C65C /* Email */,
+				5D6FDB5E2BD609B90098F21E /* Verify OTP */,
+				5D6FDB5F2BD60A350098F21E /* Birthday */,
+				5D6FDB602BD60A9A0098F21E /* Password */,
+				5D6FDB612BD60BC00098F21E /* Username */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5D6FDB5D2BD609290098F21E /* Phone */ = {
+			isa = PBXGroup;
+			children = (
+				5D95132E2B770D9D00965F06 /* RegisterPhoneView.swift */,
+				5D299A472B760DF9006BE909 /* RegisterPhoneViewController.swift */,
+			);
+			path = Phone;
+			sourceTree = "<group>";
+		};
+		5D6FDB5E2BD609B90098F21E /* Verify OTP */ = {
+			isa = PBXGroup;
+			children = (
+				5D66AD552B7768E9007D0AD6 /* RegisterVerifyOTPView.swift */,
+				5D66AD4A2B7766AA007D0AD6 /* RegisterVerifyOTPViewController.swift */,
+			);
+			path = "Verify OTP";
+			sourceTree = "<group>";
+		};
+		5D6FDB5F2BD60A350098F21E /* Birthday */ = {
+			isa = PBXGroup;
+			children = (
+				5D39AF392B78B235006B958D /* BirthdayPickerView.swift */,
+				5D39AF372B78B175006B958D /* BirthdayPickerViewController.swift */,
+			);
+			path = Birthday;
+			sourceTree = "<group>";
+		};
+		5D6FDB602BD60A9A0098F21E /* Password */ = {
+			isa = PBXGroup;
+			children = (
+				5DDABDF22B78ED1600118D00 /* RegisterPasswordView.swift */,
+				5DDABDF42B78EF5600118D00 /* RegisterPasswordViewController.swift */,
+			);
+			path = Password;
+			sourceTree = "<group>";
+		};
+		5D6FDB612BD60BC00098F21E /* Username */ = {
+			isa = PBXGroup;
+			children = (
+				5DB4DF342B792A3A0020E45F /* RegisterUsernameView.swift */,
+				5DB4DF3A2B792E100020E45F /* RegisterUsernameViewController.swift */,
+			);
+			path = Username;
+			sourceTree = "<group>";
+		};
+		5D6FDB622BD60C420098F21E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5DA5CCF02B7A979200EA41D2 /* StepsController.swift */,
+				5DB609992B7B104F0080CA0C /* ChangeOTPMethodViewController.swift */,
+				5D36AC1E2BD8D4A600B6C65C /* RegisterContainerViewController.swift */,
+				5DA5CCEB2B7A8A9100EA41D2 /* RegisterStepsContainerViewController.swift */,
+				5DBD7E952BDC023A002F32BF /* RequestOTPViewAdapter.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5D9513282B7616C500965F06 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5D299A242B760D6E006BE909 /* AppDelegate.swift */,
+				5D299A262B760D6E006BE909 /* SceneDelegate+Register.swift */,
+				5D95133B2B772F1300965F06 /* SceneDelegate+Registration.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		5D9513372B77270100965F06 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5D42B1DD2BB5E1E500FD3C7F /* Parameters */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		5D95133A2B772D6500965F06 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				5DA5CCE12B7A6E0E00EA41D2 /* Upload Photo */,
+				5D4FD9072B7933CE003EF8C1 /* Username */,
+				5D26AF232B786A2E00832BCF /* RequestOTP */,
+				5D26AF2B2B78707600832BCF /* VerifyOTP */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		5D95133D2B77309F00965F06 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				5D95133E2B7730B500965F06 /* RegisterRequestOTPResponse.swift */,
+				5D26AF262B786BA500832BCF /* RegisterVerifyOTPResponse.swift */,
+				5DB609972B7B01500080CA0C /* RegisterResponse.swift */,
+				5DC72A572BB95C7100CC162C /* RootData.swift */,
+				5DC72A592BB95D1600CC162C /* RegisterAccountAvailabilityResponse.swift */,
+				5D031F822BBA8F0100DF85D0 /* RegisterVerifyOTPError.swift */,
+				5DBD7E932BDBCB5B002F32BF /* RegisterRequestOTPError.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		5D9513462B7735E100965F06 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				5D9513472B77360500965F06 /* RegisterRequestOTPPresentationAdapter.swift */,
+				5D4FD9052B79339D003EF8C1 /* RegisterAccountAvailabilityViewAdapter.swift */,
+				5D42B1D92BB55E0A00FD3C7F /* RegisterVerifyOTPPresentationAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		5DA5CCE12B7A6E0E00EA41D2 /* Upload Photo */ = {
+			isa = PBXGroup;
+			children = (
+				5DA5CCE22B7A6E2D00EA41D2 /* RegisterPhotoViewModel.swift */,
+			);
+			path = "Upload Photo";
+			sourceTree = "<group>";
+		};
+		5DA5CCED2B7A95EC00EA41D2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5DA5CCF22B7A9F3800EA41D2 /* RegisterData.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5D2999FB2B760C68006BE909 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D299A042B760C68006BE909 /* KipasKipasRegister.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D299A0B2B760CDD006BE909 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D299A132B760CDD006BE909 /* KipasKipasRegisteriOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5D2999FF2B760C68006BE909 /* KipasKipasRegister */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D299A072B760C68006BE909 /* Build configuration list for PBXNativeTarget "KipasKipasRegister" */;
+			buildPhases = (
+				5B279F62670AA7626F540D3A /* [CP] Check Pods Manifest.lock */,
+				5D2999FB2B760C68006BE909 /* Headers */,
+				5D2999FC2B760C68006BE909 /* Sources */,
+				5D2999FD2B760C68006BE909 /* Frameworks */,
+				5D2999FE2B760C68006BE909 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KipasKipasRegister;
+			productName = KipasKipasRegister;
+			productReference = 5D299A002B760C68006BE909 /* KipasKipasRegister.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5D299A0F2B760CDD006BE909 /* KipasKipasRegisteriOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D299A142B760CDD006BE909 /* Build configuration list for PBXNativeTarget "KipasKipasRegisteriOS" */;
+			buildPhases = (
+				5D299A0B2B760CDD006BE909 /* Headers */,
+				5D299A0C2B760CDD006BE909 /* Sources */,
+				5D299A0D2B760CDD006BE909 /* Frameworks */,
+				5D299A0E2B760CDD006BE909 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D299A452B760D97006BE909 /* PBXTargetDependency */,
+			);
+			name = KipasKipasRegisteriOS;
+			productName = KipasKipasRegisteriOS;
+			productReference = 5D299A102B760CDD006BE909 /* KipasKipasRegisteriOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5D299A212B760D6E006BE909 /* KipasKipasRegisterApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D299A332B760D6F006BE909 /* Build configuration list for PBXNativeTarget "KipasKipasRegisterApp" */;
+			buildPhases = (
+				CBE74C04FC1DCAA369742166 /* [CP] Check Pods Manifest.lock */,
+				5D299A1E2B760D6E006BE909 /* Sources */,
+				5D299A1F2B760D6E006BE909 /* Frameworks */,
+				5D299A202B760D6E006BE909 /* Resources */,
+				5D299A412B760D85006BE909 /* Embed Frameworks */,
+				2280472B65B59E741CEEA296 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D299A3C2B760D85006BE909 /* PBXTargetDependency */,
+				5D299A402B760D85006BE909 /* PBXTargetDependency */,
+			);
+			name = KipasKipasRegisterApp;
+			productName = KipasKipasRegisterApp;
+			productReference = 5D299A222B760D6E006BE909 /* KipasKipasRegisterApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D2999F72B760C68006BE909 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					5D2999FF2B760C68006BE909 = {
+						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
+					};
+					5D299A0F2B760CDD006BE909 = {
+						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
+					};
+					5D299A212B760D6E006BE909 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 5D2999FA2B760C68006BE909 /* Build configuration list for PBXProject "KipasKipasRegister" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5D2999F62B760C68006BE909;
+			productRefGroup = 5D299A012B760C68006BE909 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D2999FF2B760C68006BE909 /* KipasKipasRegister */,
+				5D299A0F2B760CDD006BE909 /* KipasKipasRegisteriOS */,
+				5D299A212B760D6E006BE909 /* KipasKipasRegisterApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D2999FE2B760C68006BE909 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D299A0E2B760CDD006BE909 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D299A202B760D6E006BE909 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D299A312B760D6F006BE909 /* LaunchScreen.storyboard in Resources */,
+				5D299A2E2B760D6F006BE909 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2280472B65B59E741CEEA296 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KipasKipasRegister-KipasKipasRegisterApp/Pods-KipasKipasRegister-KipasKipasRegisterApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KipasKipasRegister-KipasKipasRegisterApp/Pods-KipasKipasRegister-KipasKipasRegisterApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KipasKipasRegister-KipasKipasRegisterApp/Pods-KipasKipasRegister-KipasKipasRegisterApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B279F62670AA7626F540D3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KipasKipasRegister-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBE74C04FC1DCAA369742166 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KipasKipasRegister-KipasKipasRegisterApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D2999FC2B760C68006BE909 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D26AF2D2B7870A300832BCF /* RegisterVerifyOTPViewModel.swift in Sources */,
+				5DBD7E942BDBCB5B002F32BF /* RegisterRequestOTPError.swift in Sources */,
+				5D42B1E52BB5E25B00FD3C7F /* RegisterUserParam.swift in Sources */,
+				5D42B1E32BB5E24200FD3C7F /* RegisterUploadPhotoParam.swift in Sources */,
+				5D42B1E12BB5E21F00FD3C7F /* RegisterVerifyOTPParam.swift in Sources */,
+				5DA5CCE32B7A6E2D00EA41D2 /* RegisterPhotoViewModel.swift in Sources */,
+				5D50C8732BE0AA1A002FEEB8 /* RegisterVerifyEmailParam.swift in Sources */,
+				5D4FD90B2B7933FA003EF8C1 /* RegisterAccountAvailabilityViewModel.swift in Sources */,
+				5D26AF272B786BA500832BCF /* RegisterVerifyOTPResponse.swift in Sources */,
+				5D95133F2B7730B500965F06 /* RegisterRequestOTPResponse.swift in Sources */,
+				5DB609982B7B01500080CA0C /* RegisterResponse.swift in Sources */,
+				5DC72A5A2BB95D1600CC162C /* RegisterAccountAvailabilityResponse.swift in Sources */,
+				5D42B1DF2BB5E20B00FD3C7F /* RegisterRequestOTPParam.swift in Sources */,
+				5DC72A582BB95C7100CC162C /* RootData.swift in Sources */,
+				5D9513502B77377A00965F06 /* RegisterRequestOTPViewModel.swift in Sources */,
+				5D42B1E72BB5E29C00FD3C7F /* RegisterOTPPlatform.swift in Sources */,
+				5D031F832BBA8F0100DF85D0 /* RegisterVerifyOTPError.swift in Sources */,
+				5DD708212BDA479C00A2A2EE /* RegisterAccountAvailabilityParam.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D299A0C2B760CDD006BE909 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DBD7E962BDC023A002F32BF /* RequestOTPViewAdapter.swift in Sources */,
+				5D39AF382B78B175006B958D /* BirthdayPickerViewController.swift in Sources */,
+				5D36AC092BD89DCD00B6C65C /* RegisterEmailView.swift in Sources */,
+				5D66AD4B2B7766AA007D0AD6 /* RegisterVerifyOTPViewController.swift in Sources */,
+				5D4FD9062B79339D003EF8C1 /* RegisterAccountAvailabilityViewAdapter.swift in Sources */,
+				5DA5CCF32B7A9F3800EA41D2 /* RegisterData.swift in Sources */,
+				5D9513452B77341400965F06 /* RegisterPhoneUIComposer.swift in Sources */,
+				5D299A482B760DF9006BE909 /* RegisterPhoneViewController.swift in Sources */,
+				5DA5CCEC2B7A8A9100EA41D2 /* RegisterStepsContainerViewController.swift in Sources */,
+				5DB6099A2B7B104F0080CA0C /* ChangeOTPMethodViewController.swift in Sources */,
+				5DDABDF32B78ED1600118D00 /* RegisterPasswordView.swift in Sources */,
+				5DB4DF3B2B792E100020E45F /* RegisterUsernameViewController.swift in Sources */,
+				5DD708232BDA4B2200A2A2EE /* RegisterEmailUIComposer.swift in Sources */,
+				5D9513482B77360500965F06 /* RegisterRequestOTPPresentationAdapter.swift in Sources */,
+				5D4FD90D2B79348F003EF8C1 /* RegisterUsernameUIComposer.swift in Sources */,
+				5DA5CCE72B7A6EA100EA41D2 /* RegisterPhotoUIComposer.swift in Sources */,
+				5DDABDF52B78EF5600118D00 /* RegisterPasswordViewController.swift in Sources */,
+				5D36AC1F2BD8D4A600B6C65C /* RegisterContainerViewController.swift in Sources */,
+				5D42B1DA2BB55E0A00FD3C7F /* RegisterVerifyOTPPresentationAdapter.swift in Sources */,
+				5D26AF222B77EE1700832BCF /* RegisterVerifyOTPUIComposer.swift in Sources */,
+				5D39AF3A2B78B235006B958D /* BirthdayPickerView.swift in Sources */,
+				5D66AD562B7768E9007D0AD6 /* RegisterVerifyOTPView.swift in Sources */,
+				5D4FD9242B79FB8D003EF8C1 /* RegisterPhotoViewController.swift in Sources */,
+				5DA5CCF12B7A979200EA41D2 /* StepsController.swift in Sources */,
+				5DB609962B7B00DA0080CA0C /* RegisterPresentationAdapter.swift in Sources */,
+				5D36AC0E2BD89F7900B6C65C /* RegisterEmailViewController.swift in Sources */,
+				5D031F812BBA6EFA00DF85D0 /* RegisterViewAdapter.swift in Sources */,
+				5D95132F2B770D9D00965F06 /* RegisterPhoneView.swift in Sources */,
+				5DB4DF352B792A3A0020E45F /* RegisterUsernameView.swift in Sources */,
+				5D4C90512B7A22E7003A55AA /* GenderCell.swift in Sources */,
+				5D4FD9222B79FA7C003EF8C1 /* RegisterPhotoView.swift in Sources */,
+				5D4FD9262B7A0CB6003EF8C1 /* GenderPickerView.swift in Sources */,
+				5DA5CCE02B7A6DB100EA41D2 /* RegisterPhotoPresentationAdapter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D299A1E2B760D6E006BE909 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D299A252B760D6E006BE909 /* AppDelegate.swift in Sources */,
+				5D299A272B760D6E006BE909 /* SceneDelegate+Register.swift in Sources */,
+				5D95133C2B772F1300965F06 /* SceneDelegate+Registration.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D299A3C2B760D85006BE909 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D2999FF2B760C68006BE909 /* KipasKipasRegister */;
+			targetProxy = 5D299A3B2B760D85006BE909 /* PBXContainerItemProxy */;
+		};
+		5D299A402B760D85006BE909 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D299A0F2B760CDD006BE909 /* KipasKipasRegisteriOS */;
+			targetProxy = 5D299A3F2B760D85006BE909 /* PBXContainerItemProxy */;
+		};
+		5D299A452B760D97006BE909 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D2999FF2B760C68006BE909 /* KipasKipasRegister */;
+			targetProxy = 5D299A442B760D97006BE909 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5D299A2F2B760D6F006BE909 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D299A302B760D6F006BE909 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D299A052B760C68006BE909 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5D299A062B760C68006BE909 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5D299A082B760C68006BE909 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 361B26A00EE350558E2E577B /* Pods-KipasKipasRegister.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasRegister;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5D299A092B760C68006BE909 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DED7F9258D91AA201C87BAC6 /* Pods-KipasKipasRegister.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasRegister;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5D299A152B760CDD006BE909 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasRegisteriOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5D299A162B760CDD006BE909 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasRegisteriOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D299A172B760D03006BE909 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Staging;
+		};
+		5D299A182B760D03006BE909 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 914370A35D597F6AA136FF95 /* Pods-KipasKipasRegister.staging.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasRegister;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Staging;
+		};
+		5D299A192B760D03006BE909 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasRegisteriOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		5D299A1A2B760D09006BE909 /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = ProdDebug;
+		};
+		5D299A1B2B760D09006BE909 /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A7602D19FF95C11DAA9AFC1 /* Pods-KipasKipasRegister.proddebug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasRegister;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = ProdDebug;
+		};
+		5D299A1C2B760D09006BE909 /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasRegisteriOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = ProdDebug;
+		};
+		5D299A342B760D6F006BE909 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFADC64A8F364B3011A414A6 /* Pods-KipasKipasRegister-KipasKipasRegisterApp.debug.xcconfig */;
+			buildSettings = {
+				ALIBABA_BUCKET_NAME = "koanba-storage-test";
+				ALIBABA_ENDPOINT_INTERNAL = "fhWWpuEYFm/ZgyNMJ9VfEtIJ5M+G4i4Wf/ak/M2pmjW9oTSCtr+Uk6BOcDNcoGogaMD++EAISrmM65PBBM3P3xqnAyVTiZCZ9bb2zsLjybKiriF0aOtr47Nbzpb9Iw71DK+UF0Et7+i/EYkyZtCYuQ==";
+				ALIBABA_ENDPOINT_PUBLIC = "kqAGHzuMXNBZaesFFCjBO/oJDTxjlpo+5AOEvMRdtTYkv/SQxG8R8tAohx97gxasHGO4H0i82vuRvTxaCSU2iLn6fyW7ukEetvY4vRGTSVPkT6FcsehBPJr/48RTCVt8";
+				ALIBABA_STS_ENDPOINT = "https://test-sts.kipaskipas.com/";
+				ALIBABA_STS_PASS = "xXULc+LL5jktX9MhVxqcTjlaiBpph/wnRxg5CkwoA5msD5pVk/1Q2ucmCnRK+Z6VhXR6kHGkA20A4NotAufhUQ==";
+				ALIBABA_STS_USER = "jd4+QHVIawqp0jfJ9cnaMp2ZfAbQuNHBIC6bJ+G/bmD2s/fciq7MBz5sTIoyC0pVtrNYrGc5eflLzSpu7/2xvg==";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_BASE_URL = "https://test-api-main.kipaskipas.com/api/v1";
+				API_UPLOAD_URL = "https://test-api-upload.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasRegisterApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "KipasKipasRegisterApp needs to access your camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "KipasKipasRegisterApp needs to access your microphone";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "KipasKipasRegisterApp need access to your gallery for use photos, videos, and auto-scan product QR codes";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasRegisterApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5D299A352B760D6F006BE909 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12205769304398E9DBA62F30 /* Pods-KipasKipasRegister-KipasKipasRegisterApp.staging.xcconfig */;
+			buildSettings = {
+				ALIBABA_BUCKET_NAME = "koanba-storage-stg";
+				ALIBABA_ENDPOINT_INTERNAL = "fhWWpuEYFm/ZgyNMJ9VfEtIJ5M+G4i4Wf/ak/M2pmjW9oTSCtr+Uk6BOcDNcoGogaMD++EAISrmM65PBBM3P3xqnAyVTiZCZ9bb2zsLjybKiriF0aOtr47Nbzpb9Iw71DK+UF0Et7+i/EYkyZtCYuQ==";
+				ALIBABA_ENDPOINT_PUBLIC = "Rf064hwzPqC1a0OsOLnJ80wLalmc25l4HHxksUEwm++W8xb5xK0oyq5NxsmA/gdJOCiiXCGTIc4vWKfSZKxVbfA+2Y4x455O2/niYoXsdfDH7vQmJFJ6cZiiFAYusTJn";
+				ALIBABA_STS_ENDPOINT = "https://stg-sts.kipaskipas.com/";
+				ALIBABA_STS_PASS = "xXULc+LL5jktX9MhVxqcTjlaiBpph/wnRxg5CkwoA5msD5pVk/1Q2ucmCnRK+Z6VhXR6kHGkA20A4NotAufhUQ==";
+				ALIBABA_STS_USER = "jd4+QHVIawqp0jfJ9cnaMp2ZfAbQuNHBIC6bJ+G/bmD2s/fciq7MBz5sTIoyC0pVtrNYrGc5eflLzSpu7/2xvg==";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_BASE_URL = "https://stg-api-main.kipaskipas.com/api/v1";
+				API_UPLOAD_URL = "https://stg-api-upload.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasRegisterApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "KipasKipasRegisterApp needs to access your camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "KipasKipasRegisterApp needs to access your microphone";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "KipasKipasRegisterApp need access to your gallery for use photos, videos, and auto-scan product QR codes";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasRegisterApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Staging;
+		};
+		5D299A362B760D6F006BE909 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FA39883F182D2C5877ECAA9 /* Pods-KipasKipasRegister-KipasKipasRegisterApp.release.xcconfig */;
+			buildSettings = {
+				ALIBABA_BUCKET_NAME = "koanba-storage-prod";
+				ALIBABA_ENDPOINT_INTERNAL = "fhWWpuEYFm/ZgyNMJ9VfEtIJ5M+G4i4Wf/ak/M2pmjW9oTSCtr+Uk6BOcDNcoGogaMD++EAISrmM65PBBM3P3xqnAyVTiZCZ9bb2zsLjybKiriF0aOtr47Nbzpb9Iw71DK+UF0Et7+i/EYkyZtCYuQ==";
+				ALIBABA_ENDPOINT_PUBLIC = "Rf064hwzPqC1a0OsOLnJ80wLalmc25l4HHxksUEwm++W8xb5xK0oyq5NxsmA/gdJOCiiXCGTIc4vWKfSZKxVbfA+2Y4x455O2/niYoXsdfDH7vQmJFJ6cZiiFAYusTJn";
+				ALIBABA_STS_ENDPOINT = "https://sts.kipaskipas.com/";
+				ALIBABA_STS_PASS = "xXULc+LL5jktX9MhVxqcTjlaiBpph/wnRxg5CkwoA5msD5pVk/1Q2ucmCnRK+Z6VhXR6kHGkA20A4NotAufhUQ==";
+				ALIBABA_STS_USER = "jd4+QHVIawqp0jfJ9cnaMp2ZfAbQuNHBIC6bJ+G/bmD2s/fciq7MBz5sTIoyC0pVtrNYrGc5eflLzSpu7/2xvg==";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_BASE_URL = "https://api-main.kipaskipas.com/api/v1";
+				API_UPLOAD_URL = "https://api-upload.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasRegisterApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "KipasKipasRegisterApp needs to access your camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "KipasKipasRegisterApp needs to access your microphone";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "KipasKipasRegisterApp need access to your gallery for use photos, videos, and auto-scan product QR codes";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasRegisterApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D299A372B760D6F006BE909 /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 652655524B6DEBD5203B0405 /* Pods-KipasKipasRegister-KipasKipasRegisterApp.proddebug.xcconfig */;
+			buildSettings = {
+				ALIBABA_BUCKET_NAME = "koanba-storage-prod";
+				ALIBABA_ENDPOINT_INTERNAL = "fhWWpuEYFm/ZgyNMJ9VfEtIJ5M+G4i4Wf/ak/M2pmjW9oTSCtr+Uk6BOcDNcoGogaMD++EAISrmM65PBBM3P3xqnAyVTiZCZ9bb2zsLjybKiriF0aOtr47Nbzpb9Iw71DK+UF0Et7+i/EYkyZtCYuQ==";
+				ALIBABA_ENDPOINT_PUBLIC = "Rf064hwzPqC1a0OsOLnJ80wLalmc25l4HHxksUEwm++W8xb5xK0oyq5NxsmA/gdJOCiiXCGTIc4vWKfSZKxVbfA+2Y4x455O2/niYoXsdfDH7vQmJFJ6cZiiFAYusTJn";
+				ALIBABA_STS_ENDPOINT = "https://sts.kipaskipas.com/";
+				ALIBABA_STS_PASS = "xXULc+LL5jktX9MhVxqcTjlaiBpph/wnRxg5CkwoA5msD5pVk/1Q2ucmCnRK+Z6VhXR6kHGkA20A4NotAufhUQ==";
+				ALIBABA_STS_USER = "jd4+QHVIawqp0jfJ9cnaMp2ZfAbQuNHBIC6bJ+G/bmD2s/fciq7MBz5sTIoyC0pVtrNYrGc5eflLzSpu7/2xvg==";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_BASE_URL = "https://test-api-main.kipaskipas.com/api/v1";
+				API_UPLOAD_URL = "https://api-upload.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasRegisterApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "KipasKipasRegisterApp needs to access your camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "KipasKipasRegisterApp needs to access your microphone";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "KipasKipasRegisterApp need access to your gallery for use photos, videos, and auto-scan product QR codes";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasRegisterApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = ProdDebug;
+		};
+		5D77B1E42B9175C5008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = LiveDebug;
+		};
+		5D77B1E52B9175C5008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63227CD006E623981EE9A0B6 /* Pods-KipasKipasRegister.livedebug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasRegister;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = LiveDebug;
+		};
+		5D77B1E62B9175C5008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasRegisteriOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = LiveDebug;
+		};
+		5D77B1E72B9175C5008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 269AF32B0475B063900BE9D6 /* Pods-KipasKipasRegister-KipasKipasRegisterApp.livedebug.xcconfig */;
+			buildSettings = {
+				ALIBABA_BUCKET_NAME = "koanba-storage-test";
+				ALIBABA_ENDPOINT_INTERNAL = "fhWWpuEYFm/ZgyNMJ9VfEtIJ5M+G4i4Wf/ak/M2pmjW9oTSCtr+Uk6BOcDNcoGogaMD++EAISrmM65PBBM3P3xqnAyVTiZCZ9bb2zsLjybKiriF0aOtr47Nbzpb9Iw71DK+UF0Et7+i/EYkyZtCYuQ==";
+				ALIBABA_ENDPOINT_PUBLIC = "kqAGHzuMXNBZaesFFCjBO/oJDTxjlpo+5AOEvMRdtTYkv/SQxG8R8tAohx97gxasHGO4H0i82vuRvTxaCSU2iLn6fyW7ukEetvY4vRGTSVPkT6FcsehBPJr/48RTCVt8";
+				ALIBABA_STS_ENDPOINT = "https://test-sts.kipaskipas.com/";
+				ALIBABA_STS_PASS = "xXULc+LL5jktX9MhVxqcTjlaiBpph/wnRxg5CkwoA5msD5pVk/1Q2ucmCnRK+Z6VhXR6kHGkA20A4NotAufhUQ==";
+				ALIBABA_STS_USER = "jd4+QHVIawqp0jfJ9cnaMp2ZfAbQuNHBIC6bJ+G/bmD2s/fciq7MBz5sTIoyC0pVtrNYrGc5eflLzSpu7/2xvg==";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_BASE_URL = "https://test-api-main.kipaskipas.com/api/v1";
+				API_UPLOAD_URL = "https://test-api-upload.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasRegisterApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "KipasKipasRegisterApp needs to access your camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "KipasKipasRegisterApp needs to access your microphone";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "KipasKipasRegisterApp need access to your gallery for use photos, videos, and auto-scan product QR codes";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasRegisterApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = LiveDebug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D2999FA2B760C68006BE909 /* Build configuration list for PBXProject "KipasKipasRegister" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D299A052B760C68006BE909 /* Debug */,
+				5D77B1E42B9175C5008CC295 /* LiveDebug */,
+				5D299A172B760D03006BE909 /* Staging */,
+				5D299A062B760C68006BE909 /* Release */,
+				5D299A1A2B760D09006BE909 /* ProdDebug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D299A072B760C68006BE909 /* Build configuration list for PBXNativeTarget "KipasKipasRegister" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D299A082B760C68006BE909 /* Debug */,
+				5D77B1E52B9175C5008CC295 /* LiveDebug */,
+				5D299A182B760D03006BE909 /* Staging */,
+				5D299A092B760C68006BE909 /* Release */,
+				5D299A1B2B760D09006BE909 /* ProdDebug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D299A142B760CDD006BE909 /* Build configuration list for PBXNativeTarget "KipasKipasRegisteriOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D299A152B760CDD006BE909 /* Debug */,
+				5D77B1E62B9175C5008CC295 /* LiveDebug */,
+				5D299A192B760D03006BE909 /* Staging */,
+				5D299A162B760CDD006BE909 /* Release */,
+				5D299A1C2B760D09006BE909 /* ProdDebug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D299A332B760D6F006BE909 /* Build configuration list for PBXNativeTarget "KipasKipasRegisterApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D299A342B760D6F006BE909 /* Debug */,
+				5D77B1E72B9175C5008CC295 /* LiveDebug */,
+				5D299A352B760D6F006BE909 /* Staging */,
+				5D299A362B760D6F006BE909 /* Release */,
+				5D299A372B760D6F006BE909 /* ProdDebug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D2999F72B760C68006BE909 /* Project object */;
+}

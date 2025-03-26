@@ -1,0 +1,2318 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D6A5E752B5F643F00200198 /* KipasKipasShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D6A5E742B5F643F00200198 /* KipasKipasShared.framework */; };
+		5D6A5E762B5F643F00200198 /* KipasKipasShared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D6A5E742B5F643F00200198 /* KipasKipasShared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D6A5E772B5F645C00200198 /* KipasKipasNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF7385792ADFB2FB00986671 /* KipasKipasNetworking.framework */; };
+		5D6A5E782B5F645C00200198 /* KipasKipasNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF7385792ADFB2FB00986671 /* KipasKipasNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5DC487FA2BBD08F600F9A0C8 /* InAppPurchaseUUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC487F92BBD08F600F9A0C8 /* InAppPurchaseUUID.swift */; };
+		AF28CE532AA8701A00164D75 /* InAppPurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF28CE512AA8701900164D75 /* InAppPurchaseViewController.swift */; };
+		AF28CE542AA8701A00164D75 /* InAppPurchaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF28CE522AA8701900164D75 /* InAppPurchaseViewController.xib */; };
+		AF298BE52AA8CBC9005F39BC /* StoreKitInAppPurchaseProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF298BE32AA8CBC9005F39BC /* StoreKitInAppPurchaseProductCollectionViewCell.swift */; };
+		AF298BE62AA8CBC9005F39BC /* StoreKitInAppPurchaseProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF298BE42AA8CBC9005F39BC /* StoreKitInAppPurchaseProductCollectionViewCell.xib */; };
+		AF298BE82AA8D767005F39BC /* InAppPurchaseProductPurchaser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF298BE72AA8D767005F39BC /* InAppPurchaseProductPurchaser.swift */; };
+		AF298BEE2AA8DB02005F39BC /* InAppPurchasePaymentDiscount.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF298BED2AA8DB02005F39BC /* InAppPurchasePaymentDiscount.swift */; };
+		AF298BF02AA8DC36005F39BC /* InAppPurchasePayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF298BEF2AA8DC36005F39BC /* InAppPurchasePayment.swift */; };
+		AF298BF22AA8DD68005F39BC /* InAppPurchasePaymentTransactionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF298BF12AA8DD68005F39BC /* InAppPurchasePaymentTransactionState.swift */; };
+		AF298BF52AA8DE69005F39BC /* InAppPurchasePaymentTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF298BF42AA8DE69005F39BC /* InAppPurchasePaymentTransaction.swift */; };
+		AF298BF72AA97EE9005F39BC /* InAppPurchasePaymentTransactionMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF298BF62AA97EE9005F39BC /* InAppPurchasePaymentTransactionMapper.swift */; };
+		AF298BF92AA9814A005F39BC /* StoreKitInAppPurchaseProductPurchaser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF298BF82AA9814A005F39BC /* StoreKitInAppPurchaseProductPurchaser.swift */; };
+		AF298BFC2AA984BF005F39BC /* StoreKitInAppPurchaseProductLocalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF298BFB2AA984BF005F39BC /* StoreKitInAppPurchaseProductLocalManager.swift */; };
+		AF298BFF2AA98868005F39BC /* InAppPurchaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF298BFE2AA98868005F39BC /* InAppPurchaseError.swift */; };
+		AF7385542ADE921400986671 /* RemoteCoinInAppPurchaseValidateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7385532ADE921400986671 /* RemoteCoinInAppPurchaseValidateStore.swift */; };
+		AF7385562ADE92C300986671 /* RemoteCoinInAppPurchaseValidateCustomer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7385552ADE92C300986671 /* RemoteCoinInAppPurchaseValidateCustomer.swift */; };
+		AF7385582ADE938000986671 /* RemoteCoinInAppPurchaseValidateOrderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7385572ADE938000986671 /* RemoteCoinInAppPurchaseValidateOrderDetail.swift */; };
+		AF73855A2ADE93D400986671 /* RemoteCoinInAppPurchaseValidateOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7385592ADE93D400986671 /* RemoteCoinInAppPurchaseValidateOrder.swift */; };
+		AF73855C2ADE943800986671 /* RemoteCoinInAppPurchaseValidateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF73855B2ADE943800986671 /* RemoteCoinInAppPurchaseValidateData.swift */; };
+		AF73855E2ADE949000986671 /* RemoteCoinInAppPurchaseValidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF73855D2ADE949000986671 /* RemoteCoinInAppPurchaseValidate.swift */; };
+		AF7385622ADE96EF00986671 /* CoinInAppPurchaseValidateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7385612ADE96EF00986671 /* CoinInAppPurchaseValidateStore.swift */; };
+		AF7385642ADE984100986671 /* CoinInAppPurchaseValidateCustomer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7385632ADE984100986671 /* CoinInAppPurchaseValidateCustomer.swift */; };
+		AF7385662ADE99E700986671 /* CoinInAppPurchaseValidateOrderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7385652ADE99E700986671 /* CoinInAppPurchaseValidateOrderDetail.swift */; };
+		AF7385682ADE9A8000986671 /* CoinInAppPurchaseValidateOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7385672ADE9A8000986671 /* CoinInAppPurchaseValidateOrder.swift */; };
+		AF73856A2ADE9FA200986671 /* CoinInAppPurchaseValidateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7385692ADE9FA200986671 /* CoinInAppPurchaseValidateData.swift */; };
+		AF73856C2ADE9FF700986671 /* CoinInAppPurchaseValidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF73856B2ADE9FF700986671 /* CoinInAppPurchaseValidate.swift */; };
+		AF7385722ADEA20100986671 /* CoinInAppPurchaseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7385712ADEA20100986671 /* CoinInAppPurchaseValidator.swift */; };
+		AF7385742ADEA2FE00986671 /* RemoteCoinInAppPurchaseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7385732ADEA2FE00986671 /* RemoteCoinInAppPurchaseValidator.swift */; };
+		AF7385782ADEA7F000986671 /* InAppPurchaseValidateEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7385772ADEA7F000986671 /* InAppPurchaseValidateEndpoint.swift */; };
+		AF73857A2ADFB2FB00986671 /* KipasKipasNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF7385792ADFB2FB00986671 /* KipasKipasNetworking.framework */; };
+		AF73857E2ADFB4DB00986671 /* CoinInAppPurchaseValidateMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF73857D2ADFB4DB00986671 /* CoinInAppPurchaseValidateMapper.swift */; };
+		AF7385802ADFB85600986671 /* RemoteCoinInAppPurchaseValidateError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF73857F2ADFB85600986671 /* RemoteCoinInAppPurchaseValidateError.swift */; };
+		AF7385822ADFC67000986671 /* CoinInAppPurchaseValidateError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7385812ADFC67000986671 /* CoinInAppPurchaseValidateError.swift */; };
+		AFA270032AA9E6A100C9276B /* StoreKitCertificateTest.cer in Resources */ = {isa = PBXBuildFile; fileRef = AFA270022AA9E6A100C9276B /* StoreKitCertificateTest.cer */; };
+		AFA270072AAACE5F00C9276B /* StoreKitCertificateStaging.cer in Resources */ = {isa = PBXBuildFile; fileRef = AFA270062AAACE5F00C9276B /* StoreKitCertificateStaging.cer */; };
+		AFA2700A2AAACEB600C9276B /* StoreKitCertificateProduction.cer in Resources */ = {isa = PBXBuildFile; fileRef = AFA270092AAACEB600C9276B /* StoreKitCertificateProduction.cer */; };
+		AFA777CC2AA6EC2F00C3AD3F /* KipasKipasPayment.docc in Sources */ = {isa = PBXBuildFile; fileRef = AFA777CB2AA6EC2F00C3AD3F /* KipasKipasPayment.docc */; };
+		AFA777D22AA6EC2F00C3AD3F /* KipasKipasPayment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA777C72AA6EC2F00C3AD3F /* KipasKipasPayment.framework */; };
+		AFA777D72AA6EC2F00C3AD3F /* KipasKipasPaymentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA777D62AA6EC2F00C3AD3F /* KipasKipasPaymentTests.swift */; };
+		AFA777D82AA6EC2F00C3AD3F /* KipasKipasPayment.h in Headers */ = {isa = PBXBuildFile; fileRef = AFA777CA2AA6EC2F00C3AD3F /* KipasKipasPayment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFA777E82AA6F00000C3AD3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA777E72AA6F00000C3AD3F /* AppDelegate.swift */; };
+		AFA777EA2AA6F00000C3AD3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA777E92AA6F00000C3AD3F /* SceneDelegate.swift */; };
+		AFA777EC2AA6F00000C3AD3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA777EB2AA6F00000C3AD3F /* ViewController.swift */; };
+		AFA777EF2AA6F00000C3AD3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA777ED2AA6F00000C3AD3F /* Main.storyboard */; };
+		AFA777F22AA6F00000C3AD3F /* KipasKipasPaymentApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFA777F02AA6F00000C3AD3F /* KipasKipasPaymentApp.xcdatamodeld */; };
+		AFA777F42AA6F00100C3AD3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFA777F32AA6F00100C3AD3F /* Assets.xcassets */; };
+		AFA777F72AA6F00100C3AD3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA777F52AA6F00100C3AD3F /* LaunchScreen.storyboard */; };
+		AFA778022AA6F00100C3AD3F /* KipasKipasPaymentAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA778012AA6F00100C3AD3F /* KipasKipasPaymentAppTests.swift */; };
+		AFA7780C2AA6F00100C3AD3F /* KipasKipasPaymentAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA7780B2AA6F00100C3AD3F /* KipasKipasPaymentAppUITests.swift */; };
+		AFA7780E2AA6F00100C3AD3F /* KipasKipasPaymentAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA7780D2AA6F00100C3AD3F /* KipasKipasPaymentAppUITestsLaunchTests.swift */; };
+		AFA778442AA6F23000C3AD3F /* KipasKipasPaymentInAppPurchase.docc in Sources */ = {isa = PBXBuildFile; fileRef = AFA778432AA6F23000C3AD3F /* KipasKipasPaymentInAppPurchase.docc */; };
+		AFA7784A2AA6F23100C3AD3F /* KipasKipasPaymentInAppPurchase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA778402AA6F23000C3AD3F /* KipasKipasPaymentInAppPurchase.framework */; };
+		AFA778512AA6F23100C3AD3F /* KipasKipasPaymentInAppPurchaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA778502AA6F23100C3AD3F /* KipasKipasPaymentInAppPurchaseTests.swift */; };
+		AFA778522AA6F23100C3AD3F /* KipasKipasPaymentInAppPurchase.h in Headers */ = {isa = PBXBuildFile; fileRef = AFA778422AA6F23000C3AD3F /* KipasKipasPaymentInAppPurchase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFA778552AA6F23100C3AD3F /* KipasKipasPaymentInAppPurchase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA778402AA6F23000C3AD3F /* KipasKipasPaymentInAppPurchase.framework */; };
+		AFA778562AA6F23100C3AD3F /* KipasKipasPaymentInAppPurchase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFA778402AA6F23000C3AD3F /* KipasKipasPaymentInAppPurchase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AFA778602AA7046600C3AD3F /* InAppPurchaseProductLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA7785F2AA7046600C3AD3F /* InAppPurchaseProductLoader.swift */; };
+		AFA778652AA70E7200C3AD3F /* InAppPurchaseProductDiscount.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA778642AA70E7200C3AD3F /* InAppPurchaseProductDiscount.swift */; };
+		AFA778672AA710B000C3AD3F /* InAppPurchaseProductSubscriptionPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA778662AA710B000C3AD3F /* InAppPurchaseProductSubscriptionPeriod.swift */; };
+		AFA778692AA7111900C3AD3F /* InAppPurchaseProductPeriodUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA778682AA7111900C3AD3F /* InAppPurchaseProductPeriodUnit.swift */; };
+		AFA7786B2AA7146F00C3AD3F /* InAppPurchaseProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA7786A2AA7146F00C3AD3F /* InAppPurchaseProduct.swift */; };
+		AFA7786E2AA71B7000C3AD3F /* StoreKitInAppPurchaseProductLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA7786D2AA71B7000C3AD3F /* StoreKitInAppPurchaseProductLoader.swift */; };
+		AFA778712AA721F700C3AD3F /* InAppPurchaseProductMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA778702AA721F700C3AD3F /* InAppPurchaseProductMapper.swift */; };
+		AFA778772AA7449E00C3AD3F /* StoreKitInAppPurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA778752AA7449E00C3AD3F /* StoreKitInAppPurchaseViewController.swift */; };
+		AFA778782AA7449E00C3AD3F /* StoreKitInAppPurchaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFA778762AA7449E00C3AD3F /* StoreKitInAppPurchaseViewController.xib */; };
+		AFA7787A2AA74E7100C3AD3F /* KipasKipasPaymentInAppPurchase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA778402AA6F23000C3AD3F /* KipasKipasPaymentInAppPurchase.framework */; };
+		AFA83F1B2ADD2D64006DE518 /* InAppPurchasePendingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA83F1A2ADD2D64006DE518 /* InAppPurchasePendingManager.swift */; };
+		AFA83F1E2ADD3096006DE518 /* InAppPurchasePendingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA83F1D2ADD3096006DE518 /* InAppPurchasePendingType.swift */; };
+		AFA83F202ADD3110006DE518 /* InAppPurchasePending.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA83F1F2ADD3110006DE518 /* InAppPurchasePending.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFA777D32AA6EC2F00C3AD3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFA777BE2AA6EC2F00C3AD3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFA777C62AA6EC2F00C3AD3F;
+			remoteInfo = KipasKipasPayment;
+		};
+		AFA777FE2AA6F00100C3AD3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFA777BE2AA6EC2F00C3AD3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFA777E42AA6F00000C3AD3F;
+			remoteInfo = KipasKipasPaymentApp;
+		};
+		AFA778082AA6F00100C3AD3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFA777BE2AA6EC2F00C3AD3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFA777E42AA6F00000C3AD3F;
+			remoteInfo = KipasKipasPaymentApp;
+		};
+		AFA7784B2AA6F23100C3AD3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFA777BE2AA6EC2F00C3AD3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFA7783F2AA6F23000C3AD3F;
+			remoteInfo = KipasKipasPaymentInAppPurchase;
+		};
+		AFA7784D2AA6F23100C3AD3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFA777BE2AA6EC2F00C3AD3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFA777E42AA6F00000C3AD3F;
+			remoteInfo = KipasKipasPaymentApp;
+		};
+		AFA778532AA6F23100C3AD3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFA777BE2AA6EC2F00C3AD3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFA7783F2AA6F23000C3AD3F;
+			remoteInfo = KipasKipasPaymentInAppPurchase;
+		};
+		AFA7787B2AA74E7100C3AD3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFA777BE2AA6EC2F00C3AD3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFA7783F2AA6F23000C3AD3F;
+			remoteInfo = KipasKipasPaymentInAppPurchase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AFA778572AA6F23100C3AD3F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AFA778562AA6F23100C3AD3F /* KipasKipasPaymentInAppPurchase.framework in Embed Frameworks */,
+				5D6A5E762B5F643F00200198 /* KipasKipasShared.framework in Embed Frameworks */,
+				5D6A5E782B5F645C00200198 /* KipasKipasNetworking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5D6A5E742B5F643F00200198 /* KipasKipasShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DC487F92BBD08F600F9A0C8 /* InAppPurchaseUUID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPurchaseUUID.swift; sourceTree = "<group>"; };
+		AF28CE512AA8701900164D75 /* InAppPurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPurchaseViewController.swift; sourceTree = "<group>"; };
+		AF28CE522AA8701900164D75 /* InAppPurchaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InAppPurchaseViewController.xib; sourceTree = "<group>"; };
+		AF298BE32AA8CBC9005F39BC /* StoreKitInAppPurchaseProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitInAppPurchaseProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		AF298BE42AA8CBC9005F39BC /* StoreKitInAppPurchaseProductCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreKitInAppPurchaseProductCollectionViewCell.xib; sourceTree = "<group>"; };
+		AF298BE72AA8D767005F39BC /* InAppPurchaseProductPurchaser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPurchaseProductPurchaser.swift; sourceTree = "<group>"; };
+		AF298BED2AA8DB02005F39BC /* InAppPurchasePaymentDiscount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPurchasePaymentDiscount.swift; sourceTree = "<group>"; };
+		AF298BEF2AA8DC36005F39BC /* InAppPurchasePayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPurchasePayment.swift; sourceTree = "<group>"; };
+		AF298BF12AA8DD68005F39BC /* InAppPurchasePaymentTransactionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPurchasePaymentTransactionState.swift; sourceTree = "<group>"; };
+		AF298BF42AA8DE69005F39BC /* InAppPurchasePaymentTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPurchasePaymentTransaction.swift; sourceTree = "<group>"; };
+		AF298BF62AA97EE9005F39BC /* InAppPurchasePaymentTransactionMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPurchasePaymentTransactionMapper.swift; sourceTree = "<group>"; };
+		AF298BF82AA9814A005F39BC /* StoreKitInAppPurchaseProductPurchaser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitInAppPurchaseProductPurchaser.swift; sourceTree = "<group>"; };
+		AF298BFB2AA984BF005F39BC /* StoreKitInAppPurchaseProductLocalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitInAppPurchaseProductLocalManager.swift; sourceTree = "<group>"; };
+		AF298BFE2AA98868005F39BC /* InAppPurchaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPurchaseError.swift; sourceTree = "<group>"; };
+		AF298C012AA9D5F2005F39BC /* StoreKitKipasKipasTest.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = StoreKitKipasKipasTest.storekit; sourceTree = "<group>"; };
+		AF298C022AA9D672005F39BC /* StoreKitKipasKipasStaging.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = StoreKitKipasKipasStaging.storekit; sourceTree = "<group>"; };
+		AF298C032AA9D7B5005F39BC /* StoreKitKipasKipasProduction.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = StoreKitKipasKipasProduction.storekit; sourceTree = "<group>"; };
+		AF7385532ADE921400986671 /* RemoteCoinInAppPurchaseValidateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCoinInAppPurchaseValidateStore.swift; sourceTree = "<group>"; };
+		AF7385552ADE92C300986671 /* RemoteCoinInAppPurchaseValidateCustomer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCoinInAppPurchaseValidateCustomer.swift; sourceTree = "<group>"; };
+		AF7385572ADE938000986671 /* RemoteCoinInAppPurchaseValidateOrderDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCoinInAppPurchaseValidateOrderDetail.swift; sourceTree = "<group>"; };
+		AF7385592ADE93D400986671 /* RemoteCoinInAppPurchaseValidateOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCoinInAppPurchaseValidateOrder.swift; sourceTree = "<group>"; };
+		AF73855B2ADE943800986671 /* RemoteCoinInAppPurchaseValidateData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCoinInAppPurchaseValidateData.swift; sourceTree = "<group>"; };
+		AF73855D2ADE949000986671 /* RemoteCoinInAppPurchaseValidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCoinInAppPurchaseValidate.swift; sourceTree = "<group>"; };
+		AF7385612ADE96EF00986671 /* CoinInAppPurchaseValidateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInAppPurchaseValidateStore.swift; sourceTree = "<group>"; };
+		AF7385632ADE984100986671 /* CoinInAppPurchaseValidateCustomer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInAppPurchaseValidateCustomer.swift; sourceTree = "<group>"; };
+		AF7385652ADE99E700986671 /* CoinInAppPurchaseValidateOrderDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInAppPurchaseValidateOrderDetail.swift; sourceTree = "<group>"; };
+		AF7385672ADE9A8000986671 /* CoinInAppPurchaseValidateOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInAppPurchaseValidateOrder.swift; sourceTree = "<group>"; };
+		AF7385692ADE9FA200986671 /* CoinInAppPurchaseValidateData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInAppPurchaseValidateData.swift; sourceTree = "<group>"; };
+		AF73856B2ADE9FF700986671 /* CoinInAppPurchaseValidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInAppPurchaseValidate.swift; sourceTree = "<group>"; };
+		AF7385712ADEA20100986671 /* CoinInAppPurchaseValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInAppPurchaseValidator.swift; sourceTree = "<group>"; };
+		AF7385732ADEA2FE00986671 /* RemoteCoinInAppPurchaseValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCoinInAppPurchaseValidator.swift; sourceTree = "<group>"; };
+		AF7385772ADEA7F000986671 /* InAppPurchaseValidateEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPurchaseValidateEndpoint.swift; sourceTree = "<group>"; };
+		AF7385792ADFB2FB00986671 /* KipasKipasNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF73857D2ADFB4DB00986671 /* CoinInAppPurchaseValidateMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInAppPurchaseValidateMapper.swift; sourceTree = "<group>"; };
+		AF73857F2ADFB85600986671 /* RemoteCoinInAppPurchaseValidateError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCoinInAppPurchaseValidateError.swift; sourceTree = "<group>"; };
+		AF7385812ADFC67000986671 /* CoinInAppPurchaseValidateError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInAppPurchaseValidateError.swift; sourceTree = "<group>"; };
+		AFA270022AA9E6A100C9276B /* StoreKitCertificateTest.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = StoreKitCertificateTest.cer; sourceTree = "<group>"; };
+		AFA270062AAACE5F00C9276B /* StoreKitCertificateStaging.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = StoreKitCertificateStaging.cer; sourceTree = "<group>"; };
+		AFA270092AAACEB600C9276B /* StoreKitCertificateProduction.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = StoreKitCertificateProduction.cer; sourceTree = "<group>"; };
+		AFA777C72AA6EC2F00C3AD3F /* KipasKipasPayment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KipasKipasPayment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFA777CA2AA6EC2F00C3AD3F /* KipasKipasPayment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KipasKipasPayment.h; sourceTree = "<group>"; };
+		AFA777CB2AA6EC2F00C3AD3F /* KipasKipasPayment.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = KipasKipasPayment.docc; sourceTree = "<group>"; };
+		AFA777D12AA6EC2F00C3AD3F /* KipasKipasPaymentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KipasKipasPaymentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFA777D62AA6EC2F00C3AD3F /* KipasKipasPaymentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KipasKipasPaymentTests.swift; sourceTree = "<group>"; };
+		AFA777E52AA6F00000C3AD3F /* KipasKipasPaymentApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KipasKipasPaymentApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFA777E72AA6F00000C3AD3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AFA777E92AA6F00000C3AD3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AFA777EB2AA6F00000C3AD3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AFA777EE2AA6F00000C3AD3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AFA777F12AA6F00000C3AD3F /* KipasKipasPaymentApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KipasKipasPaymentApp.xcdatamodel; sourceTree = "<group>"; };
+		AFA777F32AA6F00100C3AD3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFA777F62AA6F00100C3AD3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AFA777F82AA6F00100C3AD3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFA777FD2AA6F00100C3AD3F /* KipasKipasPaymentAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KipasKipasPaymentAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFA778012AA6F00100C3AD3F /* KipasKipasPaymentAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KipasKipasPaymentAppTests.swift; sourceTree = "<group>"; };
+		AFA778072AA6F00100C3AD3F /* KipasKipasPaymentAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KipasKipasPaymentAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFA7780B2AA6F00100C3AD3F /* KipasKipasPaymentAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KipasKipasPaymentAppUITests.swift; sourceTree = "<group>"; };
+		AFA7780D2AA6F00100C3AD3F /* KipasKipasPaymentAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KipasKipasPaymentAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AFA778402AA6F23000C3AD3F /* KipasKipasPaymentInAppPurchase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KipasKipasPaymentInAppPurchase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFA778422AA6F23000C3AD3F /* KipasKipasPaymentInAppPurchase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KipasKipasPaymentInAppPurchase.h; sourceTree = "<group>"; };
+		AFA778432AA6F23000C3AD3F /* KipasKipasPaymentInAppPurchase.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = KipasKipasPaymentInAppPurchase.docc; sourceTree = "<group>"; };
+		AFA778492AA6F23000C3AD3F /* KipasKipasPaymentInAppPurchaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KipasKipasPaymentInAppPurchaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFA778502AA6F23100C3AD3F /* KipasKipasPaymentInAppPurchaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KipasKipasPaymentInAppPurchaseTests.swift; sourceTree = "<group>"; };
+		AFA7785F2AA7046600C3AD3F /* InAppPurchaseProductLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPurchaseProductLoader.swift; sourceTree = "<group>"; };
+		AFA778642AA70E7200C3AD3F /* InAppPurchaseProductDiscount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPurchaseProductDiscount.swift; sourceTree = "<group>"; };
+		AFA778662AA710B000C3AD3F /* InAppPurchaseProductSubscriptionPeriod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPurchaseProductSubscriptionPeriod.swift; sourceTree = "<group>"; };
+		AFA778682AA7111900C3AD3F /* InAppPurchaseProductPeriodUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPurchaseProductPeriodUnit.swift; sourceTree = "<group>"; };
+		AFA7786A2AA7146F00C3AD3F /* InAppPurchaseProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppPurchaseProduct.swift; sourceTree = "<group>"; };
+		AFA7786D2AA71B7000C3AD3F /* StoreKitInAppPurchaseProductLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitInAppPurchaseProductLoader.swift; sourceTree = "<group>"; };
+		AFA778702AA721F700C3AD3F /* InAppPurchaseProductMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPurchaseProductMapper.swift; sourceTree = "<group>"; };
+		AFA778752AA7449E00C3AD3F /* StoreKitInAppPurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitInAppPurchaseViewController.swift; sourceTree = "<group>"; };
+		AFA778762AA7449E00C3AD3F /* StoreKitInAppPurchaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreKitInAppPurchaseViewController.xib; sourceTree = "<group>"; };
+		AFA83F1A2ADD2D64006DE518 /* InAppPurchasePendingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPurchasePendingManager.swift; sourceTree = "<group>"; };
+		AFA83F1D2ADD3096006DE518 /* InAppPurchasePendingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPurchasePendingType.swift; sourceTree = "<group>"; };
+		AFA83F1F2ADD3110006DE518 /* InAppPurchasePending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPurchasePending.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFA777C42AA6EC2F00C3AD3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFA777CE2AA6EC2F00C3AD3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA777D22AA6EC2F00C3AD3F /* KipasKipasPayment.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFA777E22AA6F00000C3AD3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D6A5E752B5F643F00200198 /* KipasKipasShared.framework in Frameworks */,
+				AFA778552AA6F23100C3AD3F /* KipasKipasPaymentInAppPurchase.framework in Frameworks */,
+				5D6A5E772B5F645C00200198 /* KipasKipasNetworking.framework in Frameworks */,
+				AFA7787A2AA74E7100C3AD3F /* KipasKipasPaymentInAppPurchase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFA777FA2AA6F00100C3AD3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFA778042AA6F00100C3AD3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFA7783D2AA6F23000C3AD3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF73857A2ADFB2FB00986671 /* KipasKipasNetworking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFA778462AA6F23000C3AD3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA7784A2AA6F23100C3AD3F /* KipasKipasPaymentInAppPurchase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF28CE4C2AA86E8600164D75 /* StoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				AF298BE22AA8CBBE005F39BC /* Cell */,
+				AFA778752AA7449E00C3AD3F /* StoreKitInAppPurchaseViewController.swift */,
+				AFA778762AA7449E00C3AD3F /* StoreKitInAppPurchaseViewController.xib */,
+			);
+			path = StoreKit;
+			sourceTree = "<group>";
+		};
+		AF298BE22AA8CBBE005F39BC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AF298BE32AA8CBC9005F39BC /* StoreKitInAppPurchaseProductCollectionViewCell.swift */,
+				AF298BE42AA8CBC9005F39BC /* StoreKitInAppPurchaseProductCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		AF298BE92AA8D9C3005F39BC /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				AFA7786A2AA7146F00C3AD3F /* InAppPurchaseProduct.swift */,
+				AFA778682AA7111900C3AD3F /* InAppPurchaseProductPeriodUnit.swift */,
+				AFA778662AA710B000C3AD3F /* InAppPurchaseProductSubscriptionPeriod.swift */,
+				AFA778642AA70E7200C3AD3F /* InAppPurchaseProductDiscount.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		AF298BEA2AA8DA67005F39BC /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				AF298BF32AA8DD6D005F39BC /* Transaction */,
+				AF298BEF2AA8DC36005F39BC /* InAppPurchasePayment.swift */,
+				AF298BED2AA8DB02005F39BC /* InAppPurchasePaymentDiscount.swift */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		AF298BF32AA8DD6D005F39BC /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				AF298BF42AA8DE69005F39BC /* InAppPurchasePaymentTransaction.swift */,
+				AF298BF12AA8DD68005F39BC /* InAppPurchasePaymentTransactionState.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		AF298BFA2AA984A5005F39BC /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				AF298BFB2AA984BF005F39BC /* StoreKitInAppPurchaseProductLocalManager.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		AF298BFD2AA9885A005F39BC /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				AF298BFE2AA98868005F39BC /* InAppPurchaseError.swift */,
+				AF7385812ADFC67000986671 /* CoinInAppPurchaseValidateError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		AF298C002AA9D5CD005F39BC /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				AFA2700B2AAACEE600C9276B /* Storekit */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		AF7385522ADE918E00986671 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF73855F2ADE94C800986671 /* Validate */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF73855F2ADE94C800986671 /* Validate */ = {
+			isa = PBXGroup;
+			children = (
+				AF73857F2ADFB85600986671 /* RemoteCoinInAppPurchaseValidateError.swift */,
+				AF73855D2ADE949000986671 /* RemoteCoinInAppPurchaseValidate.swift */,
+				AF73855B2ADE943800986671 /* RemoteCoinInAppPurchaseValidateData.swift */,
+				AF7385592ADE93D400986671 /* RemoteCoinInAppPurchaseValidateOrder.swift */,
+				AF7385572ADE938000986671 /* RemoteCoinInAppPurchaseValidateOrderDetail.swift */,
+				AF7385552ADE92C300986671 /* RemoteCoinInAppPurchaseValidateCustomer.swift */,
+				AF7385532ADE921400986671 /* RemoteCoinInAppPurchaseValidateStore.swift */,
+			);
+			path = Validate;
+			sourceTree = "<group>";
+		};
+		AF7385602ADE95CB00986671 /* Validate */ = {
+			isa = PBXGroup;
+			children = (
+				AF73856B2ADE9FF700986671 /* CoinInAppPurchaseValidate.swift */,
+				AF7385692ADE9FA200986671 /* CoinInAppPurchaseValidateData.swift */,
+				AF7385672ADE9A8000986671 /* CoinInAppPurchaseValidateOrder.swift */,
+				AF7385652ADE99E700986671 /* CoinInAppPurchaseValidateOrderDetail.swift */,
+				AF7385632ADE984100986671 /* CoinInAppPurchaseValidateCustomer.swift */,
+				AF7385612ADE96EF00986671 /* CoinInAppPurchaseValidateStore.swift */,
+			);
+			path = Validate;
+			sourceTree = "<group>";
+		};
+		AFA2700B2AAACEE600C9276B /* Storekit */ = {
+			isa = PBXGroup;
+			children = (
+				AFA2700D2AAACF0E00C9276B /* Certificate Test */,
+				AFA2700C2AAACEEE00C9276B /* Product */,
+			);
+			path = Storekit;
+			sourceTree = "<group>";
+		};
+		AFA2700C2AAACEEE00C9276B /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				AF298C032AA9D7B5005F39BC /* StoreKitKipasKipasProduction.storekit */,
+				AF298C022AA9D672005F39BC /* StoreKitKipasKipasStaging.storekit */,
+				AF298C012AA9D5F2005F39BC /* StoreKitKipasKipasTest.storekit */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		AFA2700D2AAACF0E00C9276B /* Certificate Test */ = {
+			isa = PBXGroup;
+			children = (
+				AFA270092AAACEB600C9276B /* StoreKitCertificateProduction.cer */,
+				AFA270062AAACE5F00C9276B /* StoreKitCertificateStaging.cer */,
+				AFA270022AA9E6A100C9276B /* StoreKitCertificateTest.cer */,
+			);
+			path = "Certificate Test";
+			sourceTree = "<group>";
+		};
+		AFA777BD2AA6EC2F00C3AD3F = {
+			isa = PBXGroup;
+			children = (
+				AFA777C92AA6EC2F00C3AD3F /* KipasKipasPayment */,
+				AFA777D52AA6EC2F00C3AD3F /* KipasKipasPaymentTests */,
+				AFA778412AA6F23000C3AD3F /* KipasKipasPaymentInAppPurchase */,
+				AFA7784F2AA6F23100C3AD3F /* KipasKipasPaymentInAppPurchaseTests */,
+				AFA777E62AA6F00000C3AD3F /* KipasKipasPaymentApp */,
+				AFA778002AA6F00100C3AD3F /* KipasKipasPaymentAppTests */,
+				AFA7780A2AA6F00100C3AD3F /* KipasKipasPaymentAppUITests */,
+				AFA777C82AA6EC2F00C3AD3F /* Products */,
+				AFA778792AA74E7100C3AD3F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AFA777C82AA6EC2F00C3AD3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFA777C72AA6EC2F00C3AD3F /* KipasKipasPayment.framework */,
+				AFA777D12AA6EC2F00C3AD3F /* KipasKipasPaymentTests.xctest */,
+				AFA777E52AA6F00000C3AD3F /* KipasKipasPaymentApp.app */,
+				AFA777FD2AA6F00100C3AD3F /* KipasKipasPaymentAppTests.xctest */,
+				AFA778072AA6F00100C3AD3F /* KipasKipasPaymentAppUITests.xctest */,
+				AFA778402AA6F23000C3AD3F /* KipasKipasPaymentInAppPurchase.framework */,
+				AFA778492AA6F23000C3AD3F /* KipasKipasPaymentInAppPurchaseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFA777C92AA6EC2F00C3AD3F /* KipasKipasPayment */ = {
+			isa = PBXGroup;
+			children = (
+				AFA777CA2AA6EC2F00C3AD3F /* KipasKipasPayment.h */,
+				AFA777CB2AA6EC2F00C3AD3F /* KipasKipasPayment.docc */,
+			);
+			path = KipasKipasPayment;
+			sourceTree = "<group>";
+		};
+		AFA777D52AA6EC2F00C3AD3F /* KipasKipasPaymentTests */ = {
+			isa = PBXGroup;
+			children = (
+				AFA777D62AA6EC2F00C3AD3F /* KipasKipasPaymentTests.swift */,
+			);
+			path = KipasKipasPaymentTests;
+			sourceTree = "<group>";
+		};
+		AFA777E62AA6F00000C3AD3F /* KipasKipasPaymentApp */ = {
+			isa = PBXGroup;
+			children = (
+				AFA778722AA7446600C3AD3F /* In App Purchase */,
+				AFA777E72AA6F00000C3AD3F /* AppDelegate.swift */,
+				AFA777E92AA6F00000C3AD3F /* SceneDelegate.swift */,
+				AFA777EB2AA6F00000C3AD3F /* ViewController.swift */,
+				AFA777ED2AA6F00000C3AD3F /* Main.storyboard */,
+				AFA777F32AA6F00100C3AD3F /* Assets.xcassets */,
+				AFA777F52AA6F00100C3AD3F /* LaunchScreen.storyboard */,
+				AFA777F82AA6F00100C3AD3F /* Info.plist */,
+				AFA777F02AA6F00000C3AD3F /* KipasKipasPaymentApp.xcdatamodeld */,
+			);
+			path = KipasKipasPaymentApp;
+			sourceTree = "<group>";
+		};
+		AFA778002AA6F00100C3AD3F /* KipasKipasPaymentAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				AFA778012AA6F00100C3AD3F /* KipasKipasPaymentAppTests.swift */,
+			);
+			path = KipasKipasPaymentAppTests;
+			sourceTree = "<group>";
+		};
+		AFA7780A2AA6F00100C3AD3F /* KipasKipasPaymentAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AFA7780B2AA6F00100C3AD3F /* KipasKipasPaymentAppUITests.swift */,
+				AFA7780D2AA6F00100C3AD3F /* KipasKipasPaymentAppUITestsLaunchTests.swift */,
+			);
+			path = KipasKipasPaymentAppUITests;
+			sourceTree = "<group>";
+		};
+		AFA778412AA6F23000C3AD3F /* KipasKipasPaymentInAppPurchase */ = {
+			isa = PBXGroup;
+			children = (
+				AFA83F192ADD2B0D006DE518 /* Sources */,
+				AFA778422AA6F23000C3AD3F /* KipasKipasPaymentInAppPurchase.h */,
+				AFA778432AA6F23000C3AD3F /* KipasKipasPaymentInAppPurchase.docc */,
+			);
+			path = KipasKipasPaymentInAppPurchase;
+			sourceTree = "<group>";
+		};
+		AFA7784F2AA6F23100C3AD3F /* KipasKipasPaymentInAppPurchaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				AFA778502AA6F23100C3AD3F /* KipasKipasPaymentInAppPurchaseTests.swift */,
+			);
+			path = KipasKipasPaymentInAppPurchaseTests;
+			sourceTree = "<group>";
+		};
+		AFA7785E2AA7045700C3AD3F /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				AFA778612AA70A5800C3AD3F /* Model */,
+				AFA7785F2AA7046600C3AD3F /* InAppPurchaseProductLoader.swift */,
+				AF298BE72AA8D767005F39BC /* InAppPurchaseProductPurchaser.swift */,
+				AF7385712ADEA20100986671 /* CoinInAppPurchaseValidator.swift */,
+				AFA83F1A2ADD2D64006DE518 /* InAppPurchasePendingManager.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		AFA778612AA70A5800C3AD3F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF7385602ADE95CB00986671 /* Validate */,
+				AFA83F1C2ADD3081006DE518 /* Pending */,
+				AF298BE92AA8D9C3005F39BC /* Product */,
+				AF298BEA2AA8DA67005F39BC /* Payment */,
+				5DC487F92BBD08F600F9A0C8 /* InAppPurchaseUUID.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AFA7786C2AA71B5700C3AD3F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				AF7385772ADEA7F000986671 /* InAppPurchaseValidateEndpoint.swift */,
+				AF7385522ADE918E00986671 /* Model */,
+				AF298BFD2AA9885A005F39BC /* Error */,
+				AF298BFA2AA984A5005F39BC /* Local */,
+				AFA7786F2AA721D700C3AD3F /* Mapper */,
+				AFA7786D2AA71B7000C3AD3F /* StoreKitInAppPurchaseProductLoader.swift */,
+				AF298BF82AA9814A005F39BC /* StoreKitInAppPurchaseProductPurchaser.swift */,
+				AF7385732ADEA2FE00986671 /* RemoteCoinInAppPurchaseValidator.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		AFA7786F2AA721D700C3AD3F /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				AFA778702AA721F700C3AD3F /* InAppPurchaseProductMapper.swift */,
+				AF298BF62AA97EE9005F39BC /* InAppPurchasePaymentTransactionMapper.swift */,
+				AF73857D2ADFB4DB00986671 /* CoinInAppPurchaseValidateMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		AFA778722AA7446600C3AD3F /* In App Purchase */ = {
+			isa = PBXGroup;
+			children = (
+				AF28CE4C2AA86E8600164D75 /* StoreKit */,
+				AF28CE512AA8701900164D75 /* InAppPurchaseViewController.swift */,
+				AF28CE522AA8701900164D75 /* InAppPurchaseViewController.xib */,
+			);
+			path = "In App Purchase";
+			sourceTree = "<group>";
+		};
+		AFA778792AA74E7100C3AD3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D6A5E742B5F643F00200198 /* KipasKipasShared.framework */,
+				AF7385792ADFB2FB00986671 /* KipasKipasNetworking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFA83F192ADD2B0D006DE518 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AF298C002AA9D5CD005F39BC /* Config */,
+				AFA7786C2AA71B5700C3AD3F /* API */,
+				AFA7785E2AA7045700C3AD3F /* Feature */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		AFA83F1C2ADD3081006DE518 /* Pending */ = {
+			isa = PBXGroup;
+			children = (
+				AFA83F1F2ADD3110006DE518 /* InAppPurchasePending.swift */,
+				AFA83F1D2ADD3096006DE518 /* InAppPurchasePendingType.swift */,
+			);
+			path = Pending;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AFA777C22AA6EC2F00C3AD3F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA777D82AA6EC2F00C3AD3F /* KipasKipasPayment.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFA7783B2AA6F23000C3AD3F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA778522AA6F23100C3AD3F /* KipasKipasPaymentInAppPurchase.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AFA777C62AA6EC2F00C3AD3F /* KipasKipasPayment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFA777DB2AA6EC2F00C3AD3F /* Build configuration list for PBXNativeTarget "KipasKipasPayment" */;
+			buildPhases = (
+				AFA777C22AA6EC2F00C3AD3F /* Headers */,
+				AFA777C32AA6EC2F00C3AD3F /* Sources */,
+				AFA777C42AA6EC2F00C3AD3F /* Frameworks */,
+				AFA777C52AA6EC2F00C3AD3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KipasKipasPayment;
+			productName = KipasKipasPayment;
+			productReference = AFA777C72AA6EC2F00C3AD3F /* KipasKipasPayment.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AFA777D02AA6EC2F00C3AD3F /* KipasKipasPaymentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFA777DE2AA6EC2F00C3AD3F /* Build configuration list for PBXNativeTarget "KipasKipasPaymentTests" */;
+			buildPhases = (
+				AFA777CD2AA6EC2F00C3AD3F /* Sources */,
+				AFA777CE2AA6EC2F00C3AD3F /* Frameworks */,
+				AFA777CF2AA6EC2F00C3AD3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFA777D42AA6EC2F00C3AD3F /* PBXTargetDependency */,
+			);
+			name = KipasKipasPaymentTests;
+			productName = KipasKipasPaymentTests;
+			productReference = AFA777D12AA6EC2F00C3AD3F /* KipasKipasPaymentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AFA777E42AA6F00000C3AD3F /* KipasKipasPaymentApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFA778152AA6F00100C3AD3F /* Build configuration list for PBXNativeTarget "KipasKipasPaymentApp" */;
+			buildPhases = (
+				AFA777E12AA6F00000C3AD3F /* Sources */,
+				AFA777E22AA6F00000C3AD3F /* Frameworks */,
+				AFA777E32AA6F00000C3AD3F /* Resources */,
+				AFA778572AA6F23100C3AD3F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFA778542AA6F23100C3AD3F /* PBXTargetDependency */,
+				AFA7787C2AA74E7100C3AD3F /* PBXTargetDependency */,
+			);
+			name = KipasKipasPaymentApp;
+			productName = KipasKipasPaymentApp;
+			productReference = AFA777E52AA6F00000C3AD3F /* KipasKipasPaymentApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AFA777FC2AA6F00100C3AD3F /* KipasKipasPaymentAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFA778162AA6F00100C3AD3F /* Build configuration list for PBXNativeTarget "KipasKipasPaymentAppTests" */;
+			buildPhases = (
+				AFA777F92AA6F00100C3AD3F /* Sources */,
+				AFA777FA2AA6F00100C3AD3F /* Frameworks */,
+				AFA777FB2AA6F00100C3AD3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFA777FF2AA6F00100C3AD3F /* PBXTargetDependency */,
+			);
+			name = KipasKipasPaymentAppTests;
+			productName = KipasKipasPaymentAppTests;
+			productReference = AFA777FD2AA6F00100C3AD3F /* KipasKipasPaymentAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AFA778062AA6F00100C3AD3F /* KipasKipasPaymentAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFA778172AA6F00100C3AD3F /* Build configuration list for PBXNativeTarget "KipasKipasPaymentAppUITests" */;
+			buildPhases = (
+				AFA778032AA6F00100C3AD3F /* Sources */,
+				AFA778042AA6F00100C3AD3F /* Frameworks */,
+				AFA778052AA6F00100C3AD3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFA778092AA6F00100C3AD3F /* PBXTargetDependency */,
+			);
+			name = KipasKipasPaymentAppUITests;
+			productName = KipasKipasPaymentAppUITests;
+			productReference = AFA778072AA6F00100C3AD3F /* KipasKipasPaymentAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		AFA7783F2AA6F23000C3AD3F /* KipasKipasPaymentInAppPurchase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFA7785C2AA6F23100C3AD3F /* Build configuration list for PBXNativeTarget "KipasKipasPaymentInAppPurchase" */;
+			buildPhases = (
+				AFA7783B2AA6F23000C3AD3F /* Headers */,
+				AFA7783C2AA6F23000C3AD3F /* Sources */,
+				AFA7783D2AA6F23000C3AD3F /* Frameworks */,
+				AFA7783E2AA6F23000C3AD3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KipasKipasPaymentInAppPurchase;
+			productName = KipasKipasPaymentInAppPurchase;
+			productReference = AFA778402AA6F23000C3AD3F /* KipasKipasPaymentInAppPurchase.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AFA778482AA6F23000C3AD3F /* KipasKipasPaymentInAppPurchaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFA7785D2AA6F23100C3AD3F /* Build configuration list for PBXNativeTarget "KipasKipasPaymentInAppPurchaseTests" */;
+			buildPhases = (
+				AFA778452AA6F23000C3AD3F /* Sources */,
+				AFA778462AA6F23000C3AD3F /* Frameworks */,
+				AFA778472AA6F23000C3AD3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFA7784C2AA6F23100C3AD3F /* PBXTargetDependency */,
+				AFA7784E2AA6F23100C3AD3F /* PBXTargetDependency */,
+			);
+			name = KipasKipasPaymentInAppPurchaseTests;
+			productName = KipasKipasPaymentInAppPurchaseTests;
+			productReference = AFA778492AA6F23000C3AD3F /* KipasKipasPaymentInAppPurchaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFA777BE2AA6EC2F00C3AD3F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					AFA777C62AA6EC2F00C3AD3F = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					AFA777D02AA6EC2F00C3AD3F = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					AFA777E42AA6F00000C3AD3F = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					AFA777FC2AA6F00100C3AD3F = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = AFA777E42AA6F00000C3AD3F;
+					};
+					AFA778062AA6F00100C3AD3F = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = AFA777E42AA6F00000C3AD3F;
+					};
+					AFA7783F2AA6F23000C3AD3F = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					AFA778482AA6F23000C3AD3F = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = AFA777E42AA6F00000C3AD3F;
+					};
+				};
+			};
+			buildConfigurationList = AFA777C12AA6EC2F00C3AD3F /* Build configuration list for PBXProject "KipasKipasPayment" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFA777BD2AA6EC2F00C3AD3F;
+			productRefGroup = AFA777C82AA6EC2F00C3AD3F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFA777C62AA6EC2F00C3AD3F /* KipasKipasPayment */,
+				AFA777D02AA6EC2F00C3AD3F /* KipasKipasPaymentTests */,
+				AFA777E42AA6F00000C3AD3F /* KipasKipasPaymentApp */,
+				AFA777FC2AA6F00100C3AD3F /* KipasKipasPaymentAppTests */,
+				AFA778062AA6F00100C3AD3F /* KipasKipasPaymentAppUITests */,
+				AFA7783F2AA6F23000C3AD3F /* KipasKipasPaymentInAppPurchase */,
+				AFA778482AA6F23000C3AD3F /* KipasKipasPaymentInAppPurchaseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFA777C52AA6EC2F00C3AD3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFA777CF2AA6EC2F00C3AD3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFA777E32AA6F00000C3AD3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA777F72AA6F00100C3AD3F /* LaunchScreen.storyboard in Resources */,
+				AF298BE62AA8CBC9005F39BC /* StoreKitInAppPurchaseProductCollectionViewCell.xib in Resources */,
+				AFA777F42AA6F00100C3AD3F /* Assets.xcassets in Resources */,
+				AFA778782AA7449E00C3AD3F /* StoreKitInAppPurchaseViewController.xib in Resources */,
+				AF28CE542AA8701A00164D75 /* InAppPurchaseViewController.xib in Resources */,
+				AFA777EF2AA6F00000C3AD3F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFA777FB2AA6F00100C3AD3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFA778052AA6F00100C3AD3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFA7783E2AA6F23000C3AD3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA270032AA9E6A100C9276B /* StoreKitCertificateTest.cer in Resources */,
+				AFA2700A2AAACEB600C9276B /* StoreKitCertificateProduction.cer in Resources */,
+				AFA270072AAACE5F00C9276B /* StoreKitCertificateStaging.cer in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFA778472AA6F23000C3AD3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFA777C32AA6EC2F00C3AD3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA777CC2AA6EC2F00C3AD3F /* KipasKipasPayment.docc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFA777CD2AA6EC2F00C3AD3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA777D72AA6EC2F00C3AD3F /* KipasKipasPaymentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFA777E12AA6F00000C3AD3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA777F22AA6F00000C3AD3F /* KipasKipasPaymentApp.xcdatamodeld in Sources */,
+				AF298BE52AA8CBC9005F39BC /* StoreKitInAppPurchaseProductCollectionViewCell.swift in Sources */,
+				AFA777EC2AA6F00000C3AD3F /* ViewController.swift in Sources */,
+				AF28CE532AA8701A00164D75 /* InAppPurchaseViewController.swift in Sources */,
+				AFA777E82AA6F00000C3AD3F /* AppDelegate.swift in Sources */,
+				AFA778772AA7449E00C3AD3F /* StoreKitInAppPurchaseViewController.swift in Sources */,
+				AFA777EA2AA6F00000C3AD3F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFA777F92AA6F00100C3AD3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA778022AA6F00100C3AD3F /* KipasKipasPaymentAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFA778032AA6F00100C3AD3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA7780C2AA6F00100C3AD3F /* KipasKipasPaymentAppUITests.swift in Sources */,
+				AFA7780E2AA6F00100C3AD3F /* KipasKipasPaymentAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFA7783C2AA6F23000C3AD3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DC487FA2BBD08F600F9A0C8 /* InAppPurchaseUUID.swift in Sources */,
+				AF73856C2ADE9FF700986671 /* CoinInAppPurchaseValidate.swift in Sources */,
+				AFA778712AA721F700C3AD3F /* InAppPurchaseProductMapper.swift in Sources */,
+				AF298BF22AA8DD68005F39BC /* InAppPurchasePaymentTransactionState.swift in Sources */,
+				AF298BF72AA97EE9005F39BC /* InAppPurchasePaymentTransactionMapper.swift in Sources */,
+				AF7385662ADE99E700986671 /* CoinInAppPurchaseValidateOrderDetail.swift in Sources */,
+				AF73855A2ADE93D400986671 /* RemoteCoinInAppPurchaseValidateOrder.swift in Sources */,
+				AF7385622ADE96EF00986671 /* CoinInAppPurchaseValidateStore.swift in Sources */,
+				AF73857E2ADFB4DB00986671 /* CoinInAppPurchaseValidateMapper.swift in Sources */,
+				AF73855E2ADE949000986671 /* RemoteCoinInAppPurchaseValidate.swift in Sources */,
+				AF7385562ADE92C300986671 /* RemoteCoinInAppPurchaseValidateCustomer.swift in Sources */,
+				AF298BF02AA8DC36005F39BC /* InAppPurchasePayment.swift in Sources */,
+				AFA778692AA7111900C3AD3F /* InAppPurchaseProductPeriodUnit.swift in Sources */,
+				AFA83F1B2ADD2D64006DE518 /* InAppPurchasePendingManager.swift in Sources */,
+				AF7385682ADE9A8000986671 /* CoinInAppPurchaseValidateOrder.swift in Sources */,
+				AFA7786B2AA7146F00C3AD3F /* InAppPurchaseProduct.swift in Sources */,
+				AF298BFC2AA984BF005F39BC /* StoreKitInAppPurchaseProductLocalManager.swift in Sources */,
+				AF73855C2ADE943800986671 /* RemoteCoinInAppPurchaseValidateData.swift in Sources */,
+				AFA778602AA7046600C3AD3F /* InAppPurchaseProductLoader.swift in Sources */,
+				AF7385802ADFB85600986671 /* RemoteCoinInAppPurchaseValidateError.swift in Sources */,
+				AFA83F202ADD3110006DE518 /* InAppPurchasePending.swift in Sources */,
+				AF298BE82AA8D767005F39BC /* InAppPurchaseProductPurchaser.swift in Sources */,
+				AFA778672AA710B000C3AD3F /* InAppPurchaseProductSubscriptionPeriod.swift in Sources */,
+				AF298BF52AA8DE69005F39BC /* InAppPurchasePaymentTransaction.swift in Sources */,
+				AF7385642ADE984100986671 /* CoinInAppPurchaseValidateCustomer.swift in Sources */,
+				AF73856A2ADE9FA200986671 /* CoinInAppPurchaseValidateData.swift in Sources */,
+				AF7385782ADEA7F000986671 /* InAppPurchaseValidateEndpoint.swift in Sources */,
+				AF7385742ADEA2FE00986671 /* RemoteCoinInAppPurchaseValidator.swift in Sources */,
+				AF298BF92AA9814A005F39BC /* StoreKitInAppPurchaseProductPurchaser.swift in Sources */,
+				AF7385722ADEA20100986671 /* CoinInAppPurchaseValidator.swift in Sources */,
+				AF7385822ADFC67000986671 /* CoinInAppPurchaseValidateError.swift in Sources */,
+				AFA778652AA70E7200C3AD3F /* InAppPurchaseProductDiscount.swift in Sources */,
+				AFA7786E2AA71B7000C3AD3F /* StoreKitInAppPurchaseProductLoader.swift in Sources */,
+				AF7385582ADE938000986671 /* RemoteCoinInAppPurchaseValidateOrderDetail.swift in Sources */,
+				AFA83F1E2ADD3096006DE518 /* InAppPurchasePendingType.swift in Sources */,
+				AF7385542ADE921400986671 /* RemoteCoinInAppPurchaseValidateStore.swift in Sources */,
+				AF298BFF2AA98868005F39BC /* InAppPurchaseError.swift in Sources */,
+				AF298BEE2AA8DB02005F39BC /* InAppPurchasePaymentDiscount.swift in Sources */,
+				AFA778442AA6F23000C3AD3F /* KipasKipasPaymentInAppPurchase.docc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFA778452AA6F23000C3AD3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA778512AA6F23100C3AD3F /* KipasKipasPaymentInAppPurchaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFA777D42AA6EC2F00C3AD3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFA777C62AA6EC2F00C3AD3F /* KipasKipasPayment */;
+			targetProxy = AFA777D32AA6EC2F00C3AD3F /* PBXContainerItemProxy */;
+		};
+		AFA777FF2AA6F00100C3AD3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFA777E42AA6F00000C3AD3F /* KipasKipasPaymentApp */;
+			targetProxy = AFA777FE2AA6F00100C3AD3F /* PBXContainerItemProxy */;
+		};
+		AFA778092AA6F00100C3AD3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFA777E42AA6F00000C3AD3F /* KipasKipasPaymentApp */;
+			targetProxy = AFA778082AA6F00100C3AD3F /* PBXContainerItemProxy */;
+		};
+		AFA7784C2AA6F23100C3AD3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFA7783F2AA6F23000C3AD3F /* KipasKipasPaymentInAppPurchase */;
+			targetProxy = AFA7784B2AA6F23100C3AD3F /* PBXContainerItemProxy */;
+		};
+		AFA7784E2AA6F23100C3AD3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFA777E42AA6F00000C3AD3F /* KipasKipasPaymentApp */;
+			targetProxy = AFA7784D2AA6F23100C3AD3F /* PBXContainerItemProxy */;
+		};
+		AFA778542AA6F23100C3AD3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFA7783F2AA6F23000C3AD3F /* KipasKipasPaymentInAppPurchase */;
+			targetProxy = AFA778532AA6F23100C3AD3F /* PBXContainerItemProxy */;
+		};
+		AFA7787C2AA74E7100C3AD3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFA7783F2AA6F23000C3AD3F /* KipasKipasPaymentInAppPurchase */;
+			targetProxy = AFA7787B2AA74E7100C3AD3F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AFA777ED2AA6F00000C3AD3F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFA777EE2AA6F00000C3AD3F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AFA777F52AA6F00100C3AD3F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFA777F62AA6F00100C3AD3F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20DE0CA62AB983C9005D521E /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Staging;
+		};
+		20DE0CA72AB983C9005D521E /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasPayment;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		20DE0CA82AB983C9005D521E /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasPaymentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		20DE0CA92AB983C9005D521E /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasPaymentApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		20DE0CAA2AB983C9005D521E /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasPaymentAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KipasKipasPaymentApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KipasKipasPaymentApp";
+			};
+			name = Staging;
+		};
+		20DE0CAB2AB983C9005D521E /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasPaymentAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KipasKipasPaymentApp;
+			};
+			name = Staging;
+		};
+		20DE0CAC2AB983C9005D521E /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasPaymentInAppPurchase;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		20DE0CAD2AB983C9005D521E /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasPaymentInAppPurchaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KipasKipasPaymentApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KipasKipasPaymentApp";
+			};
+			name = Staging;
+		};
+		20DE0CB42ABA5DB4005D521E /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = ProdDebug;
+		};
+		20DE0CB52ABA5DB4005D521E /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasPayment;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = ProdDebug;
+		};
+		20DE0CB62ABA5DB4005D521E /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasPaymentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = ProdDebug;
+		};
+		20DE0CB72ABA5DB4005D521E /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasPaymentApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = ProdDebug;
+		};
+		20DE0CB82ABA5DB4005D521E /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasPaymentAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KipasKipasPaymentApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KipasKipasPaymentApp";
+			};
+			name = ProdDebug;
+		};
+		20DE0CB92ABA5DB4005D521E /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasPaymentAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KipasKipasPaymentApp;
+			};
+			name = ProdDebug;
+		};
+		20DE0CBA2ABA5DB4005D521E /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasPaymentInAppPurchase;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = ProdDebug;
+		};
+		20DE0CBB2ABA5DB4005D521E /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasPaymentInAppPurchaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KipasKipasPaymentApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KipasKipasPaymentApp";
+			};
+			name = ProdDebug;
+		};
+		5D77B20A2B9176CD008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = LiveDebug;
+		};
+		5D77B20B2B9176CD008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasPayment;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = LiveDebug;
+		};
+		5D77B20C2B9176CD008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasPaymentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = LiveDebug;
+		};
+		5D77B20D2B9176CD008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasPaymentApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = LiveDebug;
+		};
+		5D77B20E2B9176CD008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasPaymentAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KipasKipasPaymentApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KipasKipasPaymentApp";
+			};
+			name = LiveDebug;
+		};
+		5D77B20F2B9176CD008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasPaymentAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KipasKipasPaymentApp;
+			};
+			name = LiveDebug;
+		};
+		5D77B2102B9176CD008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasPaymentInAppPurchase;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = LiveDebug;
+		};
+		5D77B2112B9176CD008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasPaymentInAppPurchaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KipasKipasPaymentApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KipasKipasPaymentApp";
+			};
+			name = LiveDebug;
+		};
+		AFA777D92AA6EC2F00C3AD3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AFA777DA2AA6EC2F00C3AD3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AFA777DC2AA6EC2F00C3AD3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasPayment;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFA777DD2AA6EC2F00C3AD3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasPayment;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AFA777DF2AA6EC2F00C3AD3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasPaymentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFA777E02AA6EC2F00C3AD3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasPaymentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AFA7780F2AA6F00100C3AD3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasPaymentApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFA778102AA6F00100C3AD3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasPaymentApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AFA778112AA6F00100C3AD3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasPaymentAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KipasKipasPaymentApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KipasKipasPaymentApp";
+			};
+			name = Debug;
+		};
+		AFA778122AA6F00100C3AD3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasPaymentAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KipasKipasPaymentApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KipasKipasPaymentApp";
+			};
+			name = Release;
+		};
+		AFA778132AA6F00100C3AD3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasPaymentAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KipasKipasPaymentApp;
+			};
+			name = Debug;
+		};
+		AFA778142AA6F00100C3AD3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasPaymentAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KipasKipasPaymentApp;
+			};
+			name = Release;
+		};
+		AFA778582AA6F23100C3AD3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasPaymentInAppPurchase;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFA778592AA6F23100C3AD3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasPaymentInAppPurchase;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AFA7785A2AA6F23100C3AD3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasPaymentInAppPurchaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KipasKipasPaymentApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KipasKipasPaymentApp";
+			};
+			name = Debug;
+		};
+		AFA7785B2AA6F23100C3AD3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.mobile.KipasKipasPaymentInAppPurchaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KipasKipasPaymentApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KipasKipasPaymentApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFA777C12AA6EC2F00C3AD3F /* Build configuration list for PBXProject "KipasKipasPayment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFA777D92AA6EC2F00C3AD3F /* Debug */,
+				5D77B20A2B9176CD008CC295 /* LiveDebug */,
+				20DE0CA62AB983C9005D521E /* Staging */,
+				AFA777DA2AA6EC2F00C3AD3F /* Release */,
+				20DE0CB42ABA5DB4005D521E /* ProdDebug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFA777DB2AA6EC2F00C3AD3F /* Build configuration list for PBXNativeTarget "KipasKipasPayment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFA777DC2AA6EC2F00C3AD3F /* Debug */,
+				5D77B20B2B9176CD008CC295 /* LiveDebug */,
+				20DE0CA72AB983C9005D521E /* Staging */,
+				AFA777DD2AA6EC2F00C3AD3F /* Release */,
+				20DE0CB52ABA5DB4005D521E /* ProdDebug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFA777DE2AA6EC2F00C3AD3F /* Build configuration list for PBXNativeTarget "KipasKipasPaymentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFA777DF2AA6EC2F00C3AD3F /* Debug */,
+				5D77B20C2B9176CD008CC295 /* LiveDebug */,
+				20DE0CA82AB983C9005D521E /* Staging */,
+				AFA777E02AA6EC2F00C3AD3F /* Release */,
+				20DE0CB62ABA5DB4005D521E /* ProdDebug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFA778152AA6F00100C3AD3F /* Build configuration list for PBXNativeTarget "KipasKipasPaymentApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFA7780F2AA6F00100C3AD3F /* Debug */,
+				5D77B20D2B9176CD008CC295 /* LiveDebug */,
+				20DE0CA92AB983C9005D521E /* Staging */,
+				AFA778102AA6F00100C3AD3F /* Release */,
+				20DE0CB72ABA5DB4005D521E /* ProdDebug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFA778162AA6F00100C3AD3F /* Build configuration list for PBXNativeTarget "KipasKipasPaymentAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFA778112AA6F00100C3AD3F /* Debug */,
+				5D77B20E2B9176CD008CC295 /* LiveDebug */,
+				20DE0CAA2AB983C9005D521E /* Staging */,
+				AFA778122AA6F00100C3AD3F /* Release */,
+				20DE0CB82ABA5DB4005D521E /* ProdDebug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFA778172AA6F00100C3AD3F /* Build configuration list for PBXNativeTarget "KipasKipasPaymentAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFA778132AA6F00100C3AD3F /* Debug */,
+				5D77B20F2B9176CD008CC295 /* LiveDebug */,
+				20DE0CAB2AB983C9005D521E /* Staging */,
+				AFA778142AA6F00100C3AD3F /* Release */,
+				20DE0CB92ABA5DB4005D521E /* ProdDebug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFA7785C2AA6F23100C3AD3F /* Build configuration list for PBXNativeTarget "KipasKipasPaymentInAppPurchase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFA778582AA6F23100C3AD3F /* Debug */,
+				5D77B2102B9176CD008CC295 /* LiveDebug */,
+				20DE0CAC2AB983C9005D521E /* Staging */,
+				AFA778592AA6F23100C3AD3F /* Release */,
+				20DE0CBA2ABA5DB4005D521E /* ProdDebug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFA7785D2AA6F23100C3AD3F /* Build configuration list for PBXNativeTarget "KipasKipasPaymentInAppPurchaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFA7785A2AA6F23100C3AD3F /* Debug */,
+				5D77B2112B9176CD008CC295 /* LiveDebug */,
+				20DE0CAD2AB983C9005D521E /* Staging */,
+				AFA7785B2AA6F23100C3AD3F /* Release */,
+				20DE0CBB2ABA5DB4005D521E /* ProdDebug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AFA777F02AA6F00000C3AD3F /* KipasKipasPaymentApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AFA777F12AA6F00000C3AD3F /* KipasKipasPaymentApp.xcdatamodel */,
+			);
+			currentVersion = AFA777F12AA6F00000C3AD3F /* KipasKipasPaymentApp.xcdatamodel */;
+			path = KipasKipasPaymentApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AFA777BE2AA6EC2F00C3AD3F /* Project object */;
+}

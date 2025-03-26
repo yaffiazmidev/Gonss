@@ -1,0 +1,1036 @@
+{
+    "code": "1000",
+    "message": "General Success",
+    "data": {
+        "content": [
+            {
+                "id": "2c949e8a8ac20232018ac7278f3301d7",
+                "typePost": "social",
+                "createdDate": null,
+                "post": {
+                    "type": "social",
+                    "id": "2c949e8a8ac20232018ac722f30501c9",
+                    "medias": [
+                        {
+                            "id": "2c949e8a8ac20232018ac722f30501ca",
+                            "type": "video",
+                            "url": "https://1316940742.vod2.myqcloud.com/fa76551dvodsgp1316940742/1b0d728c5576678021684049540/C1HNcv1MMTIA.mp4",
+                            "thumbnail": {
+                                "large": "https://asset.kipaskipas.com/img/media/1695558054664.jpg",
+                                "medium": "https://asset.kipaskipas.com/img/media/1695558054664.jpg",
+                                "small": "https://asset.kipaskipas.com/img/media/1695558054664.jpg"
+                            },
+                            "metadata": {
+                                "width": "1080",
+                                "height": "1920",
+                                "size": "18803856",
+                                "duration": null
+                            },
+                            "isHlsReady": null,
+                            "hlsUrl": null,
+                            "isMp4Ready": true,
+                            "vodFileId": "5576678021684049540",
+                            "vodUrl": "https://1316940742.vod2.myqcloud.com/ae9df7c5vodtranssgp1316940742/1b0d728c5576678021684049540/adp.1449774.m3u8"
+                        }
+                    ],
+                    "comments": null,
+                    "description": "55 Ruko Di Aceh Terbakar, Ratusan Warga Mengungsi #trending",
+                    "channel": {
+                        "id": "2c9481b674b001150174ba23c46b0387",
+                        "name": "Cleeps 🇮🇩",
+                        "code": "tiktok",
+                        "description": "Make Your Day",
+                        "photo": "https://asset.kipaskipas.com/img/media/1648712044473.png",
+                        "isFollow": null,
+                        "createAt": 1600850740331,
+                        "createBy": "administrator",
+                        "accountType": null,
+                        "accountId": null,
+                        "isPinned": null,
+                        "isMyChannel": null
+                    },
+                    "hashtags": [
+                        {
+                            "id": "2c948064744e2ea10174585604540674",
+                            "value": "trending",
+                            "total": 23149
+                        }
+                    ],
+                    "isScheduled": false,
+                    "scheduledTime": null,
+                    "product": null,
+                    "accountId": null,
+                    "status": "APPROVED",
+                    "productResellerId": null,
+                    "floatingLink": "",
+                    "floatingLinkLabel": ""
+                },
+                "stories": [],
+                "createAt": 1695558373171,
+                "likes": 0,
+                "comments": 0,
+                "account": {
+                    "id": "2c9486a182fce89001830c8c79781c28",
+                    "username": "kepokan_you",
+                    "name": "kepokan_you",
+                    "bio": null,
+                    "photo": "https://asset.kipaskipas.com/img/account/1662453149149.jpg",
+                    "birthDate": null,
+                    "gender": null,
+                    "isFollow": null,
+                    "isSeleb": null,
+                    "mobile": "7070707070",
+                    "email": "kep.ok@an.you",
+                    "accountType": null,
+                    "isVerified": false,
+                    "note": null,
+                    "isDisabled": false,
+                    "isSeller": null
+                },
+                "isLike": false,
+                "isFollow": false,
+                "isReported": false,
+                "totalView": 0,
+                "origin": "DS",
+                "isAllImage": null,
+                "isAllHlsReady": null,
+                "isAllMp4Ready": null,
+                "valueBased": null,
+                "typeBased": null,
+                "similarBy": null,
+                "mediaCategory": "SINGLE_VIDEO",
+                "trendingAt": null,
+                "isVodAvailable": true,
+                "isPriority": null
+            },
+            {
+                "id": "2c949e8a8ac20232018ac7460f2202b6",
+                "typePost": "social",
+                "createdDate": null,
+                "post": {
+                    "type": "social",
+                    "id": "2c949e8a8ac20232018ac740eda60298",
+                    "medias": [
+                        {
+                            "id": "2c949e8a8ac20232018ac740eda60299",
+                            "type": "video",
+                            "url": "https://1316940742.vod2.myqcloud.com/fa76551dvodsgp1316940742/6f046f745576678021685344639/5sr7xhaVONYA.mp4",
+                            "thumbnail": {
+                                "large": "https://asset.kipaskipas.com/img/media/1695560030253.jpg",
+                                "medium": "https://asset.kipaskipas.com/img/media/1695560030253.jpg",
+                                "small": "https://asset.kipaskipas.com/img/media/1695560030253.jpg"
+                            },
+                            "metadata": {
+                                "width": "1080",
+                                "height": "1920",
+                                "size": "95762028",
+                                "duration": null
+                            },
+                            "isHlsReady": null,
+                            "hlsUrl": null,
+                            "isMp4Ready": true,
+                            "vodFileId": "5576678021685344639",
+                            "vodUrl": "https://1316940742.vod2.myqcloud.com/ae9df7c5vodtranssgp1316940742/6f046f745576678021685344639/adp.1449774.m3u8"
+                        }
+                    ],
+                    "comments": null,
+                    "description": "Asian Games 2023: Hasil Timnas U-24 Indonesia vs Korea Utara 0-1 #viral",
+                    "channel": {
+                        "id": "2c9481b674b001150174ba23c46b0387",
+                        "name": "Cleeps 🇮🇩",
+                        "code": "tiktok",
+                        "description": "Make Your Day",
+                        "photo": "https://asset.kipaskipas.com/img/media/1648712044473.png",
+                        "isFollow": null,
+                        "createAt": 1600850740331,
+                        "createBy": "administrator",
+                        "accountType": null,
+                        "accountId": null,
+                        "isPinned": null,
+                        "isMyChannel": null
+                    },
+                    "hashtags": [
+                        {
+                            "id": "2c948064744e2ea1017458327b760452",
+                            "value": "viral",
+                            "total": 23285
+                        }
+                    ],
+                    "isScheduled": false,
+                    "scheduledTime": null,
+                    "product": null,
+                    "accountId": null,
+                    "status": "APPROVED",
+                    "productResellerId": null,
+                    "floatingLink": null,
+                    "floatingLinkLabel": null
+                },
+                "stories": [],
+                "createAt": 1695560372002,
+                "likes": 0,
+                "comments": 0,
+                "account": {
+                    "id": "2c9486a6853e5d8801855757832e2fda",
+                    "username": "mahmud123",
+                    "name": "mahmud123",
+                    "bio": null,
+                    "photo": "https://asset.kipaskipas.com/img/account/1672207558932.jpeg",
+                    "birthDate": null,
+                    "gender": null,
+                    "isFollow": null,
+                    "isSeleb": null,
+                    "mobile": "49887678976",
+                    "email": "fre.ehw@fed.frejhy",
+                    "accountType": null,
+                    "isVerified": false,
+                    "note": null,
+                    "isDisabled": false,
+                    "isSeller": null
+                },
+                "isLike": false,
+                "isFollow": false,
+                "isReported": false,
+                "totalView": 0,
+                "origin": "DS",
+                "isAllImage": null,
+                "isAllHlsReady": null,
+                "isAllMp4Ready": null,
+                "valueBased": null,
+                "typeBased": null,
+                "similarBy": null,
+                "mediaCategory": "SINGLE_VIDEO",
+                "trendingAt": null,
+                "isVodAvailable": true,
+                "isPriority": null
+            },
+            {
+                "id": "2c949e8a8ac20232018ac2c229ac2421",
+                "typePost": "social",
+                "createdDate": null,
+                "post": {
+                    "type": "social",
+                    "id": "2c949e8a8ab29dec018abbdfd3cc0da5",
+                    "medias": [
+                        {
+                            "id": "2c949e8a8ab29dec018abbdfd3cc0da6",
+                            "type": "video",
+                            "url": "https://1316940742.vod2.myqcloud.com/fa76551dvodsgp1316940742/d06683745576678021598491543/ZFBH9P1FtJsA.mp4",
+                            "thumbnail": {
+                                "large": "https://asset.kipaskipas.com/img/media/1695369118871.jpg",
+                                "medium": "https://asset.kipaskipas.com/img/media/1695369118871.jpg",
+                                "small": "https://asset.kipaskipas.com/img/media/1695369118871.jpg"
+                            },
+                            "metadata": {
+                                "width": "576",
+                                "height": "1024",
+                                "size": "100",
+                                "duration": null
+                            },
+                            "isHlsReady": null,
+                            "hlsUrl": null,
+                            "isMp4Ready": true,
+                            "vodFileId": "5576678021598491543",
+                            "vodUrl": "https://1316940742.vod2.myqcloud.com/ae9df7c5vodtranssgp1316940742/d06683745576678021598491543/adp.1449774.m3u8"
+                        }
+                    ],
+                    "comments": null,
+                    "description": "Couple Outfit berdasarkan tipe date nya nihh! Kalau kamu paling suka look yang mana? #cleeps",
+                    "channel": {
+                        "id": "2c9481b674b001150174ba23c46b0387",
+                        "name": "Cleeps 🇮🇩",
+                        "code": "tiktok",
+                        "description": "Make Your Day",
+                        "photo": "https://asset.kipaskipas.com/img/media/1648712044473.png",
+                        "isFollow": null,
+                        "createAt": 1600850740331,
+                        "createBy": "administrator",
+                        "accountType": null,
+                        "accountId": null,
+                        "isPinned": null,
+                        "isMyChannel": null
+                    },
+                    "hashtags": [
+                        {
+                            "id": "2c9482767dec22b4017e0ab1643733d0",
+                            "value": "cleeps",
+                            "total": 25378
+                        }
+                    ],
+                    "isScheduled": false,
+                    "scheduledTime": null,
+                    "product": null,
+                    "accountId": null,
+                    "status": "APPROVED",
+                    "productResellerId": null,
+                    "floatingLink": null,
+                    "floatingLinkLabel": null
+                },
+                "stories": [],
+                "createAt": 1695484619180,
+                "likes": 0,
+                "comments": 0,
+                "account": {
+                    "id": "2c94803388242189018832a7f2105473",
+                    "username": "kadakaofficial",
+                    "name": "kadaka official",
+                    "bio": null,
+                    "photo": "",
+                    "birthDate": null,
+                    "gender": null,
+                    "isFollow": null,
+                    "isSeleb": null,
+                    "mobile": "5689876568",
+                    "email": "ghfer.rfehg@rfe.ewdhg",
+                    "accountType": null,
+                    "isVerified": false,
+                    "note": null,
+                    "isDisabled": false,
+                    "isSeller": null
+                },
+                "isLike": false,
+                "isFollow": false,
+                "isReported": false,
+                "totalView": 0,
+                "origin": "DS",
+                "isAllImage": null,
+                "isAllHlsReady": null,
+                "isAllMp4Ready": null,
+                "valueBased": null,
+                "typeBased": null,
+                "similarBy": null,
+                "mediaCategory": "SINGLE_VIDEO",
+                "trendingAt": null,
+                "isVodAvailable": true,
+                "isPriority": null
+            },
+            {
+                "id": "2c949e8a8ac20232018ac7477be302c2",
+                "typePost": "social",
+                "createdDate": null,
+                "post": {
+                    "type": "social",
+                    "id": "2c949e8a8ac20232018ac740cbde0293",
+                    "medias": [
+                        {
+                            "id": "2c949e8a8ac20232018ac740cbde0294",
+                            "type": "video",
+                            "url": "https://1316940742.vod2.myqcloud.com/fa76551dvodsgp1316940742/1b1cb80d5576678021684054059/YLaljNowYVgA.mp4",
+                            "thumbnail": {
+                                "large": "https://asset.kipaskipas.com/img/media/1695560020586.jpg",
+                                "medium": "https://asset.kipaskipas.com/img/media/1695560020586.jpg",
+                                "small": "https://asset.kipaskipas.com/img/media/1695560020586.jpg"
+                            },
+                            "metadata": {
+                                "width": "1080",
+                                "height": "1920",
+                                "size": "43567412",
+                                "duration": null
+                            },
+                            "isHlsReady": null,
+                            "hlsUrl": null,
+                            "isMp4Ready": true,
+                            "vodFileId": "5576678021684054059",
+                            "vodUrl": "https://1316940742.vod2.myqcloud.com/ae9df7c5vodtranssgp1316940742/1b1cb80d5576678021684054059/adp.1449774.m3u8"
+                        }
+                    ],
+                    "comments": null,
+                    "description": "Akhir Pekan, Begini Tanggapan dari Penjual di Pusat Grosir Tanah Abang Mengenai E-Commerec #hottopic",
+                    "channel": {
+                        "id": "2c9481b674b001150174ba23c46b0387",
+                        "name": "Cleeps 🇮🇩",
+                        "code": "tiktok",
+                        "description": "Make Your Day",
+                        "photo": "https://asset.kipaskipas.com/img/media/1648712044473.png",
+                        "isFollow": null,
+                        "createAt": 1600850740331,
+                        "createBy": "administrator",
+                        "accountType": null,
+                        "accountId": null,
+                        "isPinned": null,
+                        "isMyChannel": null
+                    },
+                    "hashtags": [
+                        {
+                            "id": "2c94869b82813ec2018281fe5d2d04a6",
+                            "value": "hottopic",
+                            "total": 18944
+                        }
+                    ],
+                    "isScheduled": false,
+                    "scheduledTime": null,
+                    "product": null,
+                    "accountId": null,
+                    "status": "APPROVED",
+                    "productResellerId": null,
+                    "floatingLink": null,
+                    "floatingLinkLabel": null
+                },
+                "stories": [],
+                "createAt": 1695560465379,
+                "likes": 0,
+                "comments": 0,
+                "account": {
+                    "id": "2c94855b82fce89701830c91ae861c67",
+                    "username": "jamet_gaul",
+                    "name": "jamet_gaul",
+                    "bio": null,
+                    "photo": "https://asset.kipaskipas.com/img/account/1662453300282.jpg",
+                    "birthDate": null,
+                    "gender": null,
+                    "isFollow": null,
+                    "isSeleb": null,
+                    "mobile": "7373737373",
+                    "email": "jam.et@hj.gaul",
+                    "accountType": null,
+                    "isVerified": false,
+                    "note": null,
+                    "isDisabled": false,
+                    "isSeller": null
+                },
+                "isLike": false,
+                "isFollow": false,
+                "isReported": false,
+                "totalView": 0,
+                "origin": "DS",
+                "isAllImage": null,
+                "isAllHlsReady": null,
+                "isAllMp4Ready": null,
+                "valueBased": null,
+                "typeBased": null,
+                "similarBy": null,
+                "mediaCategory": "SINGLE_VIDEO",
+                "trendingAt": null,
+                "isVodAvailable": true,
+                "isPriority": null
+            },
+            {
+                "id": "2c949e8a8ac20232018ac7478ee002c3",
+                "typePost": "social",
+                "createdDate": null,
+                "post": {
+                    "type": "social",
+                    "id": "2c949e8a8ac20232018ac7458b6002ab",
+                    "medias": [
+                        {
+                            "id": "2c949e8a8ac20232018ac7458b6002ac",
+                            "type": "video",
+                            "url": "https://1316940742.vod2.myqcloud.com/fa76551dvodsgp1316940742/6f15738d5576678021685352741/anhovAAgz2sA.mp4",
+                            "thumbnail": {
+                                "large": "https://asset.kipaskipas.com/img/media/1695560334278.jpg",
+                                "medium": "https://asset.kipaskipas.com/img/media/1695560334278.jpg",
+                                "small": "https://asset.kipaskipas.com/img/media/1695560334278.jpg"
+                            },
+                            "metadata": {
+                                "width": "576",
+                                "height": "1024",
+                                "size": "100",
+                                "duration": null
+                            },
+                            "isHlsReady": null,
+                            "hlsUrl": null,
+                            "isMp4Ready": true,
+                            "vodFileId": "5576678021685352741",
+                            "vodUrl": "https://1316940742.vod2.myqcloud.com/ae9df7c5vodtranssgp1316940742/6f15738d5576678021685352741/adp.1449774.m3u8"
+                        }
+                    ],
+                    "comments": null,
+                    "description": "Kayaknya Tulus nyiptain lagu Sewindu khusus buat mereka berdua deh. Gimana liriknya? Ada yang hafal ga? 🥲 #uptodate",
+                    "channel": {
+                        "id": "2c9481b674b001150174ba23c46b0387",
+                        "name": "Cleeps 🇮🇩",
+                        "code": "tiktok",
+                        "description": "Make Your Day",
+                        "photo": "https://asset.kipaskipas.com/img/media/1648712044473.png",
+                        "isFollow": null,
+                        "createAt": 1600850740331,
+                        "createBy": "administrator",
+                        "accountType": null,
+                        "accountId": null,
+                        "isPinned": null,
+                        "isMyChannel": null
+                    },
+                    "hashtags": [
+                        {
+                            "id": "2c94857782681b6e0182821c43d144aa",
+                            "value": "uptodate",
+                            "total": 18913
+                        }
+                    ],
+                    "isScheduled": false,
+                    "scheduledTime": null,
+                    "product": null,
+                    "accountId": null,
+                    "status": "APPROVED",
+                    "productResellerId": null,
+                    "floatingLink": null,
+                    "floatingLinkLabel": null
+                },
+                "stories": [],
+                "createAt": 1695560470240,
+                "likes": 0,
+                "comments": 0,
+                "account": {
+                    "id": "2c9486a182fce89001830c9227431c4e",
+                    "username": "iistehsaha",
+                    "name": "iistehsaha",
+                    "bio": null,
+                    "photo": "https://asset.kipaskipas.com/img/account/1662453345642.jpg",
+                    "birthDate": null,
+                    "gender": null,
+                    "isFollow": null,
+                    "isSeleb": null,
+                    "mobile": "757575757577",
+                    "email": "iis.te@hsa.ha",
+                    "accountType": null,
+                    "isVerified": false,
+                    "note": null,
+                    "isDisabled": false,
+                    "isSeller": null
+                },
+                "isLike": false,
+                "isFollow": false,
+                "isReported": false,
+                "totalView": 0,
+                "origin": "DS",
+                "isAllImage": null,
+                "isAllHlsReady": null,
+                "isAllMp4Ready": null,
+                "valueBased": null,
+                "typeBased": null,
+                "similarBy": null,
+                "mediaCategory": "SINGLE_VIDEO",
+                "trendingAt": null,
+                "isVodAvailable": true,
+                "isPriority": null
+            },
+            {
+                "id": "2c949e8a8ac20232018ac2b4b0b31ecb",
+                "typePost": "social",
+                "createdDate": null,
+                "post": {
+                    "type": "social",
+                    "id": "2c949e8a8ab29dec018ababe60d752de",
+                    "medias": [
+                        {
+                            "id": "2c949e8a8ab29dec018ababe60d752df",
+                            "type": "video",
+                            "url": "https://1316940742.vod2.myqcloud.com/fa76551dvodsgp1316940742/effc839b5576678021595728973/bbQdxMzW4wsA.mp4",
+                            "thumbnail": {
+                                "large": "https://asset.kipaskipas.com/img/media/1695350150588.jpg",
+                                "medium": "https://asset.kipaskipas.com/img/media/1695350150588.jpg",
+                                "small": "https://asset.kipaskipas.com/img/media/1695350150588.jpg"
+                            },
+                            "metadata": {
+                                "width": "576",
+                                "height": "1024",
+                                "size": "100",
+                                "duration": null
+                            },
+                            "isHlsReady": null,
+                            "hlsUrl": null,
+                            "isMp4Ready": true,
+                            "vodFileId": "5576678021595728973",
+                            "vodUrl": "https://1316940742.vod2.myqcloud.com/ae9df7c5vodtranssgp1316940742/effc839b5576678021595728973/adp.1449774.m3u8"
+                        }
+                    ],
+                    "comments": null,
+                    "description": "sebuah cerita masa lalu Desta.... simak yukk #terkini",
+                    "channel": {
+                        "id": "2c9481b674b001150174ba23c46b0387",
+                        "name": "Cleeps 🇮🇩",
+                        "code": "tiktok",
+                        "description": "Make Your Day",
+                        "photo": "https://asset.kipaskipas.com/img/media/1648712044473.png",
+                        "isFollow": null,
+                        "createAt": 1600850740331,
+                        "createBy": "administrator",
+                        "accountType": null,
+                        "accountId": null,
+                        "isPinned": null,
+                        "isMyChannel": null
+                    },
+                    "hashtags": [
+                        {
+                            "id": "2c9483857e1dfd9c017e2397d8c50f2c",
+                            "value": "terkini",
+                            "total": 25445
+                        }
+                    ],
+                    "isScheduled": false,
+                    "scheduledTime": null,
+                    "product": null,
+                    "accountId": null,
+                    "status": "APPROVED",
+                    "productResellerId": null,
+                    "floatingLink": null,
+                    "floatingLinkLabel": null
+                },
+                "stories": [],
+                "createAt": 1695483736243,
+                "likes": 0,
+                "comments": 0,
+                "account": {
+                    "id": "2c9486b48833509d0188438cb3a20afa",
+                    "username": "pasutrisejati",
+                    "name": "Pasutri Sejati",
+                    "bio": null,
+                    "photo": "https://asset.kipaskipas.com/img/account/1684760376348.jpeg",
+                    "birthDate": null,
+                    "gender": null,
+                    "isFollow": null,
+                    "isSeleb": null,
+                    "mobile": "62987654323456",
+                    "email": "mnbsjydg@gmail.com",
+                    "accountType": null,
+                    "isVerified": false,
+                    "note": null,
+                    "isDisabled": false,
+                    "isSeller": null
+                },
+                "isLike": false,
+                "isFollow": false,
+                "isReported": false,
+                "totalView": 0,
+                "origin": "DS",
+                "isAllImage": null,
+                "isAllHlsReady": null,
+                "isAllMp4Ready": null,
+                "valueBased": null,
+                "typeBased": null,
+                "similarBy": null,
+                "mediaCategory": "SINGLE_VIDEO",
+                "trendingAt": null,
+                "isVodAvailable": true,
+                "isPriority": null
+            },
+            {
+                "id": "2c949e8a8ac20232018ac73ca0f80237",
+                "typePost": "social",
+                "createdDate": null,
+                "post": {
+                    "type": "social",
+                    "id": "2c949e8a8ac20232018ac664e7167411",
+                    "medias": [
+                        {
+                            "id": "2c949e8a8ac20232018ac664e7167412",
+                            "type": "video",
+                            "url": "https://1316940742.vod2.myqcloud.com/fa76551dvodsgp1316940742/70fac15e5576678021678687277/OEB0eMkllesA.mp4",
+                            "thumbnail": {
+                                "large": "https://asset.kipaskipas.com/img/media/1695545613846.jpg",
+                                "medium": "https://asset.kipaskipas.com/img/media/1695545613846.jpg",
+                                "small": "https://asset.kipaskipas.com/img/media/1695545613846.jpg"
+                            },
+                            "metadata": {
+                                "width": "576",
+                                "height": "1024",
+                                "size": "100",
+                                "duration": null
+                            },
+                            "isHlsReady": null,
+                            "hlsUrl": null,
+                            "isMp4Ready": true,
+                            "vodFileId": "5576678021678687277",
+                            "vodUrl": "https://1316940742.vod2.myqcloud.com/ae9df7c5vodtranssgp1316940742/70fac15e5576678021678687277/adp.1449774.m3u8"
+                        }
+                    ],
+                    "comments": null,
+                    "description": "Gak ada takutnya!! Sopir anggota DPRD Sragen maling uang majikannya😩 #mediaofficial",
+                    "channel": {
+                        "id": "2c9481b674b001150174ba23c46b0387",
+                        "name": "Cleeps 🇮🇩",
+                        "code": "tiktok",
+                        "description": "Make Your Day",
+                        "photo": "https://asset.kipaskipas.com/img/media/1648712044473.png",
+                        "isFollow": null,
+                        "createAt": 1600850740331,
+                        "createBy": "administrator",
+                        "accountType": null,
+                        "accountId": null,
+                        "isPinned": null,
+                        "isMyChannel": null
+                    },
+                    "hashtags": [
+                        {
+                            "id": "2c9486a182fce89001830c82cd281bce",
+                            "value": "mediaofficial",
+                            "total": 34060
+                        }
+                    ],
+                    "isScheduled": false,
+                    "scheduledTime": null,
+                    "product": null,
+                    "accountId": null,
+                    "status": "APPROVED",
+                    "productResellerId": null,
+                    "floatingLink": "https://www.tiktok.com/@patroli.indosiar/video/undefined",
+                    "floatingLinkLabel": "Video Lainnya"
+                },
+                "stories": [],
+                "createAt": 1695559753976,
+                "likes": 0,
+                "comments": 0,
+                "account": {
+                    "id": "2c9485c27c7fd65a017ccb4f338a6e5d",
+                    "username": "patroli.indosiar",
+                    "name": "patroli.indosiar",
+                    "bio": null,
+                    "photo": "https://asset.kipaskipas.com/img/account/1635498532539.jpeg",
+                    "birthDate": null,
+                    "gender": null,
+                    "isFollow": null,
+                    "isSeleb": null,
+                    "mobile": "765434567890987654",
+                    "email": "patroli@gmail.com",
+                    "accountType": null,
+                    "isVerified": false,
+                    "note": null,
+                    "isDisabled": false,
+                    "isSeller": null
+                },
+                "isLike": false,
+                "isFollow": false,
+                "isReported": false,
+                "totalView": 0,
+                "origin": "DS",
+                "isAllImage": null,
+                "isAllHlsReady": null,
+                "isAllMp4Ready": null,
+                "valueBased": null,
+                "typeBased": null,
+                "similarBy": null,
+                "mediaCategory": "SINGLE_VIDEO",
+                "trendingAt": null,
+                "isVodAvailable": true,
+                "isPriority": null
+            },
+            {
+                "id": "2c949e8a8ac20232018ac669efed744d",
+                "typePost": "social",
+                "createdDate": null,
+                "post": {
+                    "type": "social",
+                    "id": "2c949e8a8ac20232018ac64ecb597322",
+                    "medias": [
+                        {
+                            "id": "2c949e8a8ac20232018ac64ecb597323",
+                            "type": "video",
+                            "url": "https://1316940742.vod2.myqcloud.com/095f4a1cvodjkt1316940742/47f536e75576678021593115191/tSFlucIqTSYA.mp4",
+                            "thumbnail": {
+                                "large": "https://asset.kipaskipas.com/img/media/1695544138805.jpg",
+                                "medium": "https://asset.kipaskipas.com/img/media/1695544138805.jpg",
+                                "small": "https://asset.kipaskipas.com/img/media/1695544138805.jpg"
+                            },
+                            "metadata": {
+                                "width": "1080",
+                                "height": "1920",
+                                "size": "28730966",
+                                "duration": null
+                            },
+                            "isHlsReady": null,
+                            "hlsUrl": null,
+                            "isMp4Ready": true,
+                            "vodFileId": "5576678021593115191",
+                            "vodUrl": "https://1316940742.vod2.myqcloud.com/bd86ecc4vodtransjkt1316940742/47f536e75576678021593115191/adp.1449774.m3u8"
+                        }
+                    ],
+                    "comments": null,
+                    "description": "- hiiii #artis",
+                    "channel": {
+                        "id": "2c9481b674b001150174ba23c46b0387",
+                        "name": "Cleeps 🇮🇩",
+                        "code": "tiktok",
+                        "description": "Make Your Day",
+                        "photo": "https://asset.kipaskipas.com/img/media/1648712044473.png",
+                        "isFollow": null,
+                        "createAt": 1600850740331,
+                        "createBy": "administrator",
+                        "accountType": null,
+                        "accountId": null,
+                        "isPinned": null,
+                        "isMyChannel": null
+                    },
+                    "hashtags": [
+                        {
+                            "id": "2c94807b750937cb01750b9b5c03025e",
+                            "value": "artis",
+                            "total": 41153
+                        }
+                    ],
+                    "isScheduled": false,
+                    "scheduledTime": null,
+                    "product": null,
+                    "accountId": null,
+                    "status": "APPROVED",
+                    "productResellerId": null,
+                    "floatingLink": null,
+                    "floatingLinkLabel": null
+                },
+                "stories": [],
+                "createAt": 1695545946093,
+                "likes": 3,
+                "comments": 0,
+                "account": {
+                    "id": "2c949e468aac8b61018ab1e572b87d16",
+                    "username": "sipalinghot",
+                    "name": "sipalinghot",
+                    "bio": null,
+                    "photo": "",
+                    "birthDate": null,
+                    "gender": null,
+                    "isFollow": null,
+                    "isSeleb": null,
+                    "mobile": "76153762537123",
+                    "email": "jshgc@gmail.com",
+                    "accountType": null,
+                    "isVerified": false,
+                    "note": null,
+                    "isDisabled": false,
+                    "isSeller": null
+                },
+                "isLike": false,
+                "isFollow": false,
+                "isReported": false,
+                "totalView": 4,
+                "origin": "DS",
+                "isAllImage": null,
+                "isAllHlsReady": null,
+                "isAllMp4Ready": null,
+                "valueBased": null,
+                "typeBased": null,
+                "similarBy": null,
+                "mediaCategory": "SINGLE_VIDEO",
+                "trendingAt": null,
+                "isVodAvailable": true,
+                "isPriority": null
+            },
+            {
+                "id": "2c949e8a8ac20232018ac74010500281",
+                "typePost": "social",
+                "createdDate": null,
+                "post": {
+                    "type": "social",
+                    "id": "2c949e8a8ac20232018ac73874d30228",
+                    "medias": [
+                        {
+                            "id": "2c949e8a8ac20232018ac73874d30229",
+                            "type": "video",
+                            "url": "https://1316940742.vod2.myqcloud.com/fa76551dvodsgp1316940742/de3f35095576678021683722027/aK1yVEqDRewA.mp4",
+                            "thumbnail": {
+                                "large": "https://asset.kipaskipas.com/img/media/1695559477755.jpg",
+                                "medium": "https://asset.kipaskipas.com/img/media/1695559477755.jpg",
+                                "small": "https://asset.kipaskipas.com/img/media/1695559477755.jpg"
+                            },
+                            "metadata": {
+                                "width": "576",
+                                "height": "1024",
+                                "size": "100",
+                                "duration": null
+                            },
+                            "isHlsReady": null,
+                            "hlsUrl": null,
+                            "isMp4Ready": true,
+                            "vodFileId": "5576678021683722027",
+                            "vodUrl": "https://1316940742.vod2.myqcloud.com/ae9df7c5vodtranssgp1316940742/de3f35095576678021683722027/adp.1449774.m3u8"
+                        }
+                    ],
+                    "comments": null,
+                    "description": "Fahri Hamzah mengatakan bahwa dia mengenal ketiga calon presiden dengan baik. Tapi ada keperluan besar bangsa ini yang membuatnya merasa Prabowo adalah sosok paling tepat untuk memimpin bangsa ini. Dan karena keperluan besar itu lah Fahri Hamzah dan kawan kawannya mendukung Prabowo #trending",
+                    "channel": {
+                        "id": "2c9481b674b001150174ba23c46b0387",
+                        "name": "Cleeps 🇮🇩",
+                        "code": "tiktok",
+                        "description": "Make Your Day",
+                        "photo": "https://asset.kipaskipas.com/img/media/1648712044473.png",
+                        "isFollow": null,
+                        "createAt": 1600850740331,
+                        "createBy": "administrator",
+                        "accountType": null,
+                        "accountId": null,
+                        "isPinned": null,
+                        "isMyChannel": null
+                    },
+                    "hashtags": [
+                        {
+                            "id": "2c948064744e2ea10174585604540674",
+                            "value": "trending",
+                            "total": 23149
+                        }
+                    ],
+                    "isScheduled": false,
+                    "scheduledTime": null,
+                    "product": null,
+                    "accountId": null,
+                    "status": "APPROVED",
+                    "productResellerId": null,
+                    "floatingLink": null,
+                    "floatingLinkLabel": null
+                },
+                "stories": [],
+                "createAt": 1695559979088,
+                "likes": 0,
+                "comments": 0,
+                "account": {
+                    "id": "2c9486a182fce89001830c9120361c46",
+                    "username": "lahayoo",
+                    "name": "lahayoo",
+                    "bio": null,
+                    "photo": "https://asset.kipaskipas.com/img/account/1662453268899.jpg",
+                    "birthDate": null,
+                    "gender": null,
+                    "isFollow": null,
+                    "isSeleb": null,
+                    "mobile": "78765854779",
+                    "email": "lah.ay@kl.oo",
+                    "accountType": null,
+                    "isVerified": false,
+                    "note": null,
+                    "isDisabled": false,
+                    "isSeller": null
+                },
+                "isLike": false,
+                "isFollow": false,
+                "isReported": false,
+                "totalView": 1,
+                "origin": "DS",
+                "isAllImage": null,
+                "isAllHlsReady": null,
+                "isAllMp4Ready": null,
+                "valueBased": null,
+                "typeBased": null,
+                "similarBy": null,
+                "mediaCategory": "SINGLE_VIDEO",
+                "trendingAt": null,
+                "isVodAvailable": true,
+                "isPriority": null
+            },
+            {
+                "id": "2c949e8a8ac20232018ac73f7455024c",
+                "typePost": "social",
+                "createdDate": null,
+                "post": {
+                    "type": "social",
+                    "id": "2c949e8a8ac20232018ac737e5f40222",
+                    "medias": [
+                        {
+                            "id": "2c949e8a8ac20232018ac737e5f50223",
+                            "type": "video",
+                            "url": "https://1316940742.vod2.myqcloud.com/fa76551dvodsgp1316940742/6a8e25f25576678021685170298/zTaqfkzfZG0A.mp4",
+                            "thumbnail": {
+                                "large": "https://asset.kipaskipas.com/img/media/1695559441966.jpg",
+                                "medium": "https://asset.kipaskipas.com/img/media/1695559441966.jpg",
+                                "small": "https://asset.kipaskipas.com/img/media/1695559441966.jpg"
+                            },
+                            "metadata": {
+                                "width": "576",
+                                "height": "1024",
+                                "size": "100",
+                                "duration": null
+                            },
+                            "isHlsReady": null,
+                            "hlsUrl": null,
+                            "isMp4Ready": true,
+                            "vodFileId": "5576678021685170298",
+                            "vodUrl": "https://1316940742.vod2.myqcloud.com/ae9df7c5vodtranssgp1316940742/6a8e25f25576678021685170298/adp.1449774.m3u8"
+                        }
+                    ],
+                    "comments": null,
+                    "description": "Penutupan Pelatihan Tari Tradisional di RPTRA Kaca Piring #viral",
+                    "channel": {
+                        "id": "2c9481b674b001150174ba23c46b0387",
+                        "name": "Cleeps 🇮🇩",
+                        "code": "tiktok",
+                        "description": "Make Your Day",
+                        "photo": "https://asset.kipaskipas.com/img/media/1648712044473.png",
+                        "isFollow": null,
+                        "createAt": 1600850740331,
+                        "createBy": "administrator",
+                        "accountType": null,
+                        "accountId": null,
+                        "isPinned": null,
+                        "isMyChannel": null
+                    },
+                    "hashtags": [
+                        {
+                            "id": "2c948064744e2ea1017458327b760452",
+                            "value": "viral",
+                            "total": 23285
+                        }
+                    ],
+                    "isScheduled": false,
+                    "scheduledTime": null,
+                    "product": null,
+                    "accountId": null,
+                    "status": "APPROVED",
+                    "productResellerId": null,
+                    "floatingLink": null,
+                    "floatingLinkLabel": null
+                },
+                "stories": [],
+                "createAt": 1695559939157,
+                "likes": 1,
+                "comments": 0,
+                "account": {
+                    "id": "2c9481e8853e5ddc018557491fd72f23",
+                    "username": "coyaa99",
+                    "name": "coyaa99",
+                    "bio": null,
+                    "photo": "https://asset.kipaskipas.com/img/account/1672206656308.jpeg",
+                    "birthDate": null,
+                    "gender": null,
+                    "isFollow": null,
+                    "isSeleb": null,
+                    "mobile": "9658777778",
+                    "email": "dejg.feh@fre.rfe",
+                    "accountType": null,
+                    "isVerified": false,
+                    "note": null,
+                    "isDisabled": false,
+                    "isSeller": null
+                },
+                "isLike": false,
+                "isFollow": false,
+                "isReported": false,
+                "totalView": 1,
+                "origin": "DS",
+                "isAllImage": null,
+                "isAllHlsReady": null,
+                "isAllMp4Ready": null,
+                "valueBased": null,
+                "typeBased": null,
+                "similarBy": null,
+                "mediaCategory": "SINGLE_VIDEO",
+                "trendingAt": null,
+                "isVodAvailable": true,
+                "isPriority": null
+            }
+        ],
+        "pageable": {
+            "offsetPage": 0,
+            "sort": {
+                "sorted": true,
+                "unsorted": false,
+                "empty": false
+            },
+            "startId": "",
+            "nocache": false,
+            "pageNumber": 0,
+            "pageSize": 10,
+            "offset": 0,
+            "unpaged": false,
+            "paged": true
+        },
+        "last": true,
+        "totalElements": 10,
+        "totalPages": 1,
+        "size": 10,
+        "number": 0,
+        "sort": {
+            "sorted": true,
+            "unsorted": false,
+            "empty": false
+        },
+        "first": true,
+        "numberOfElements": 10,
+        "empty": false
+    }
+}

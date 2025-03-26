@@ -1,0 +1,2278 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C126D772BF75615004BF178 /* RemoteNotificationSystemIsReadCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C126D762BF75615004BF178 /* RemoteNotificationSystemIsReadCheck.swift */; };
+		3C126D792BF7562D004BF178 /* NotificationSystemIsReadCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C126D782BF7562D004BF178 /* NotificationSystemIsReadCheck.swift */; };
+		3C1735F22BA9E34C00F5D580 /* Ext+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1735F12BA9E34C00F5D580 /* Ext+UITableView.swift */; };
+		3C1735F42BA9E37500F5D580 /* Ext+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1735F32BA9E37500F5D580 /* Ext+UIView.swift */; };
+		3C1735F62BA9E3CF00F5D580 /* Ext+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1735F52BA9E3CF00F5D580 /* Ext+UIColor.swift */; };
+		3C1735FA2BA9E98200F5D580 /* NotificationStoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1735F82BA9E98200F5D580 /* NotificationStoryTableViewCell.swift */; };
+		3C1736042BAA088100F5D580 /* NotificationDirectMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1736022BAA088100F5D580 /* NotificationDirectMessageTableViewCell.swift */; };
+		3C1736052BAA088100F5D580 /* NotificationDirectMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C1736032BAA088100F5D580 /* NotificationDirectMessageTableViewCell.xib */; };
+		3C1736072BAA1B6200F5D580 /* Ext+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1736062BAA1B6200F5D580 /* Ext+UICollectionView.swift */; };
+		3C17360D2BAA1D6100F5D580 /* KipasKipasShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C17360C2BAA1D6100F5D580 /* KipasKipasShared.framework */; };
+		3C17429F2BDBA64B00D2F9E0 /* SystemSettingTypesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C17429E2BDBA64B00D2F9E0 /* SystemSettingTypesView.xib */; };
+		3C3F84052BAB7D560075A8B3 /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3F84042BAB7D560075A8B3 /* NotificationViewModel.swift */; };
+		3C4193B02BB3CEF600600269 /* ReachabilityNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4193AF2BB3CEF600600269 /* ReachabilityNetwork.swift */; };
+		3C4193B22BB4495B00600269 /* NotificationActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4193B12BB4495B00600269 /* NotificationActivityViewModel.swift */; };
+		3C4CCAA92BEB6548002A5758 /* AssetsNotification.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C4CCAA82BEB6548002A5758 /* AssetsNotification.xcassets */; };
+		3C4EE2612BA94692009AB052 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4EE2602BA94692009AB052 /* NotificationController.swift */; };
+		3C4EE2622BA94703009AB052 /* KipasKipasNotificationiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1AD0F22BA93C4A00564124 /* KipasKipasNotificationiOS.framework */; };
+		3C4EE2632BA94703009AB052 /* KipasKipasNotificationiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1AD0F22BA93C4A00564124 /* KipasKipasNotificationiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3C4EE2682BA94C75009AB052 /* NotificationMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4EE2662BA94C75009AB052 /* NotificationMenuTableViewCell.swift */; };
+		3C4EE2692BA94C75009AB052 /* NotificationMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C4EE2672BA94C75009AB052 /* NotificationMenuTableViewCell.xib */; };
+		3C4EE26D2BA95C84009AB052 /* NotificationLastActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4EE26B2BA95C84009AB052 /* NotificationLastActivityTableViewCell.swift */; };
+		3C4EE26E2BA95C84009AB052 /* NotificationLastActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C4EE26C2BA95C84009AB052 /* NotificationLastActivityTableViewCell.xib */; };
+		3C5CD59A2BDA69B300C5E3AF /* KKNotificationContentSystemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5CD5992BDA69B300C5E3AF /* KKNotificationContentSystemController.swift */; };
+		3C5CD59C2BDB718B00C5E3AF /* KKNotificationSystemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5CD59B2BDB718B00C5E3AF /* KKNotificationSystemViewModel.swift */; };
+		3C5CD59E2BDB7DCB00C5E3AF /* KKNotificationContentSystemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5CD59D2BDB7DCB00C5E3AF /* KKNotificationContentSystemViewModel.swift */; };
+		3C5CD5A02BDB80C500C5E3AF /* KKNotificationSystemRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5CD59F2BDB80C500C5E3AF /* KKNotificationSystemRouter.swift */; };
+		3C7C7A332BDBB9DF00E2942E /* NotificationSystemMuteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7C7A322BDBB9DF00E2942E /* NotificationSystemMuteController.swift */; };
+		3C7C7A362BDBBA4300E2942E /* NotificationSystemMuteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7C7A352BDBBA4300E2942E /* NotificationSystemMuteView.swift */; };
+		3C7C7A382BDBBA4A00E2942E /* NotificationSystemMuteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C7C7A372BDBBA4A00E2942E /* NotificationSystemMuteView.xib */; };
+		3C8282A92C517FDB004A1982 /* NotificationLotteryLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8282A82C517FDB004A1982 /* NotificationLotteryLoader.swift */; };
+		3C8282AB2C518001004A1982 /* RemoteNotificationLotteryLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8282AA2C518001004A1982 /* RemoteNotificationLotteryLoader.swift */; };
+		3C8282AD2C5181CE004A1982 /* NotificationLotteryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8282AC2C5181CE004A1982 /* NotificationLotteryItem.swift */; };
+		3C8381ED2BFDB53E003A7264 /* NotificationUnreadLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8381EC2BFDB53E003A7264 /* NotificationUnreadLoader.swift */; };
+		3C8381EF2BFDB5BB003A7264 /* RemoteNotificationUnreadLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8381EE2BFDB5BB003A7264 /* RemoteNotificationUnreadLoader.swift */; };
+		3C87B20A2BAACE3A00495245 /* NoInternetConnectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C87B2092BAACE3A00495245 /* NoInternetConnectionView.xib */; };
+		3C87B20C2BAACE5600495245 /* NoInternetConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C87B20B2BAACE5600495245 /* NoInternetConnectionView.swift */; };
+		3C87B2122BAB21D600495245 /* NotificationActivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C87B2112BAB21D600495245 /* NotificationActivityController.swift */; };
+		3C87B2162BAB22E800495245 /* NotificationActivityEmptyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C87B2142BAB22E800495245 /* NotificationActivityEmptyTableViewCell.swift */; };
+		3C87B2172BAB22E800495245 /* NotificationActivityEmptyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C87B2152BAB22E800495245 /* NotificationActivityEmptyTableViewCell.xib */; };
+		3C87B21B2BAB26D200495245 /* NotificationActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C87B2192BAB26D200495245 /* NotificationActivityTableViewCell.swift */; };
+		3C87B21C2BAB26D200495245 /* NotificationActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C87B21A2BAB26D200495245 /* NotificationActivityTableViewCell.xib */; };
+		3C8895ED2BBFEC1900A33CEB /* NotificationDetailActivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8895EC2BBFEC1900A33CEB /* NotificationDetailActivityController.swift */; };
+		3C8895F12BBFECAB00A33CEB /* NotificationDetailActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8895EF2BBFECAB00A33CEB /* NotificationDetailActivityTableViewCell.swift */; };
+		3C8895F22BBFECAB00A33CEB /* NotificationDetailActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C8895F02BBFECAB00A33CEB /* NotificationDetailActivityTableViewCell.xib */; };
+		3C8895F42BBFF62A00A33CEB /* NotificationDetailActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8895F32BBFF62A00A33CEB /* NotificationDetailActivityViewModel.swift */; };
+		3C8895F62BBFF79200A33CEB /* NotificationActivityRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8895F52BBFF79200A33CEB /* NotificationActivityRouter.swift */; };
+		3C89CCFA2BD7BAD20090D58D /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C89CCF72BD7BAD20090D58D /* ToastView.swift */; };
+		3C89CCFB2BD7BAD20090D58D /* ToastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C89CCF82BD7BAD20090D58D /* ToastView.xib */; };
+		3C89CCFC2BD7BAD20090D58D /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C89CCF92BD7BAD20090D58D /* Toast.swift */; };
+		3C96793F2C0307BA00F119B5 /* RemoteNotificationReadUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C96793E2C0307BA00F119B5 /* RemoteNotificationReadUpdater.swift */; };
+		3C9679412C0307D100F119B5 /* NotificationReadUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9679402C0307D100F119B5 /* NotificationReadUpdater.swift */; };
+		3C9F1E562BDA2520005FF7C3 /* KKNotificationSystemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9F1E552BDA2520005FF7C3 /* KKNotificationSystemController.swift */; };
+		3C9F1E5A2BDA26EB005FF7C3 /* KKNotificationSystemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9F1E582BDA26EB005FF7C3 /* KKNotificationSystemTableViewCell.swift */; };
+		3C9F1E5B2BDA26EB005FF7C3 /* KKNotificationSystemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C9F1E592BDA26EB005FF7C3 /* KKNotificationSystemTableViewCell.xib */; };
+		3CA487D22BAC1592009A5FEE /* NewFollowerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA487D12BAC1592009A5FEE /* NewFollowerController.swift */; };
+		3CA487D42BAC1641009A5FEE /* NewFollowerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA487D32BAC1641009A5FEE /* NewFollowerViewModel.swift */; };
+		3CA487D62BAC1B4D009A5FEE /* NotificationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA487D52BAC1B4D009A5FEE /* NotificationRouter.swift */; };
+		3CB5F1272BA9D3720063C4AC /* NotificationUserRecomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB5F1252BA9D3720063C4AC /* NotificationUserRecomTableViewCell.swift */; };
+		3CB5F1282BA9D3720063C4AC /* NotificationUserRecomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CB5F1262BA9D3720063C4AC /* NotificationUserRecomTableViewCell.xib */; };
+		3CB5F12A2BA9DE3B0063C4AC /* NotificationUserRecomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB5F1292BA9DE3B0063C4AC /* NotificationUserRecomHeaderView.swift */; };
+		3CC6092F2BAAC2FC00471E0D /* Ext+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC6092E2BAAC2FC00471E0D /* Ext+UIViewController.swift */; };
+		3CC609332BAAC5AC00471E0D /* NewFollowerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC609312BAAC5AC00471E0D /* NewFollowerTableViewCell.swift */; };
+		3CC609342BAAC5AC00471E0D /* NewFollowerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CC609322BAAC5AC00471E0D /* NewFollowerTableViewCell.xib */; };
+		3CC609392BAAC81000471E0D /* NewFollowerEmptyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC609372BAAC81000471E0D /* NewFollowerEmptyTableViewCell.swift */; };
+		3CC6093A2BAAC81000471E0D /* NewFollowerEmptyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CC609382BAAC81000471E0D /* NewFollowerEmptyTableViewCell.xib */; };
+		3CC9341F2BEE1C96009277C7 /* NotificationTransactionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC9341E2BEE1C96009277C7 /* NotificationTransactionDetailView.swift */; };
+		3CC934212BEE1C9E009277C7 /* NotificationTransactionDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CC934202BEE1C9E009277C7 /* NotificationTransactionDetailView.xib */; };
+		3CC934232BEE1CE6009277C7 /* NotificationTransactionDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC934222BEE1CE6009277C7 /* NotificationTransactionDetailController.swift */; };
+		3CC934252BEE2825009277C7 /* NotificationTransactionDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC934242BEE2825009277C7 /* NotificationTransactionDetailViewModel.swift */; };
+		3CC934272BEE2B7F009277C7 /* NotificationTransactionDetailLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC934262BEE2B7F009277C7 /* NotificationTransactionDetailLoader.swift */; };
+		3CC934292BEE2BFB009277C7 /* NotificationTransactionDetailItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC934282BEE2BFB009277C7 /* NotificationTransactionDetailItem.swift */; };
+		3CC9342B2BEE2C8A009277C7 /* RemoteNotificationTransactionDetailLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC9342A2BEE2C8A009277C7 /* RemoteNotificationTransactionDetailLoader.swift */; };
+		3CC9342D2BEE3247009277C7 /* TransactionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC9342C2BEE3247009277C7 /* TransactionRouter.swift */; };
+		3CC934312BEFF802009277C7 /* TransactionDetailDonationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CC934302BEFF802009277C7 /* TransactionDetailDonationView.xib */; };
+		3CC934352BEFF824009277C7 /* TransactionDetailOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC934342BEFF824009277C7 /* TransactionDetailOrderView.swift */; };
+		3CC934372BEFF832009277C7 /* TransactionDetailDonationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC934362BEFF832009277C7 /* TransactionDetailDonationView.swift */; };
+		3CC934392BEFF857009277C7 /* TransactionDetailOrderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CC934382BEFF857009277C7 /* TransactionDetailOrderView.xib */; };
+		3CC9343D2BEFFB20009277C7 /* TransactionDetailOrderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC9343C2BEFFB20009277C7 /* TransactionDetailOrderController.swift */; };
+		3CC9343F2BEFFB2E009277C7 /* TransactionDetailDonationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC9343E2BEFFB2E009277C7 /* TransactionDetailDonationController.swift */; };
+		3CC934422BEFFC0B009277C7 /* TransactionDetailDonationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC934412BEFFC0B009277C7 /* TransactionDetailDonationViewModel.swift */; };
+		3CC934442BEFFC16009277C7 /* TransactionDetailOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC934432BEFFC16009277C7 /* TransactionDetailOrderViewModel.swift */; };
+		3CC934462BF012DF009277C7 /* KipasKipasDonationTransactionDetail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC934452BF012DF009277C7 /* KipasKipasDonationTransactionDetail.framework */; };
+		3CC934492BF01372009277C7 /* KipasKipasDonationTransactionDetail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC934452BF012DF009277C7 /* KipasKipasDonationTransactionDetail.framework */; };
+		3CC9344A2BF01372009277C7 /* KipasKipasDonationTransactionDetail.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC934452BF012DF009277C7 /* KipasKipasDonationTransactionDetail.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3CE574982BABF13500539FEC /* KipasKipasNotification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E259F2A2BA90DDE00FF51AC /* KipasKipasNotification.framework */; };
+		3CE5749E2BABF15B00539FEC /* KipasKipasDirectMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE5749D2BABF15B00539FEC /* KipasKipasDirectMessage.framework */; };
+		3CE574A32BABFACA00539FEC /* SendbirdChatSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 3CE574A22BABFACA00539FEC /* SendbirdChatSDK */; };
+		3CE574A52BABFADC00539FEC /* SendbirdChatSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 3CE574A42BABFADC00539FEC /* SendbirdChatSDK */; };
+		3CF368F92BE3535E0051E639 /* Ext+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF368F82BE3535E0051E639 /* Ext+UIImageView.swift */; };
+		3CF368FC2BE391DD0051E639 /* NotificationSettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF368FB2BE391DD0051E639 /* NotificationSettingController.swift */; };
+		3CF369002BE392190051E639 /* NotificationSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF368FF2BE392190051E639 /* NotificationSettingView.swift */; };
+		3CF369022BE392210051E639 /* NotificationSettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CF369012BE392210051E639 /* NotificationSettingView.xib */; };
+		3CF369042BE409EE0051E639 /* NotificationSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF369032BE409EE0051E639 /* NotificationSettingViewModel.swift */; };
+		3CF369082BE412A60051E639 /* NotificationPreferencesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF369072BE412A60051E639 /* NotificationPreferencesLoader.swift */; };
+		3CF3690E2BE41DDB0051E639 /* RemoteNotificationPreferencesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF3690C2BE41DDB0051E639 /* RemoteNotificationPreferencesLoader.swift */; };
+		3CF369102BE41E3E0051E639 /* NotificationPreferencesItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF3690F2BE41E3E0051E639 /* NotificationPreferencesItem.swift */; };
+		3CF369122BE4222C0051E639 /* RemoteNotificationPreferencesUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF369112BE4222C0051E639 /* RemoteNotificationPreferencesUpdater.swift */; };
+		3CF369142BE422690051E639 /* NotificationPreferencesUpdateItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF369132BE422690051E639 /* NotificationPreferencesUpdateItem.swift */; };
+		3CF369162BE4229D0051E639 /* NotificationPreferencesUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF369152BE4229D0051E639 /* NotificationPreferencesUpdater.swift */; };
+		3CF369192BE430780051E639 /* NotificationSuggestionInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF369182BE430780051E639 /* NotificationSuggestionInfoController.swift */; };
+		3CF3691C2BE431020051E639 /* NotificationSuggestionInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF3691B2BE431020051E639 /* NotificationSuggestionInfoView.swift */; };
+		3CF3691E2BE431090051E639 /* NotificationSuggestionInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CF3691D2BE431090051E639 /* NotificationSuggestionInfoView.xib */; };
+		5DE810652C1C6F42005DB939 /* KipasKipasStory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF2FC15A2C19994D007585F9 /* KipasKipasStory.framework */; };
+		6E0A70D92BB5DEEF00B88E41 /* NotificationSystemContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A70D82BB5DEEF00B88E41 /* NotificationSystemContentController.swift */; };
+		6E0A70DB2BB6F4C600B88E41 /* NotificationSystemContentUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A70DA2BB6F4C600B88E41 /* NotificationSystemContentUIComposer.swift */; };
+		6E0A70DE2BB6F54800B88E41 /* NotificationSystemContentViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A70DD2BB6F54800B88E41 /* NotificationSystemContentViewService.swift */; };
+		6E0A70E12BB6F95F00B88E41 /* NotificationSystemSettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A70E02BB6F95F00B88E41 /* NotificationSystemSettingController.swift */; };
+		6E1AD0F52BA93C4B00564124 /* KipasKipasNotificationiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E1AD0F42BA93C4B00564124 /* KipasKipasNotificationiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E1AD0F82BA93C4B00564124 /* KipasKipasNotificationiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1AD0F22BA93C4A00564124 /* KipasKipasNotificationiOS.framework */; };
+		6E1AD0F92BA93C4B00564124 /* KipasKipasNotificationiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1AD0F22BA93C4A00564124 /* KipasKipasNotificationiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E1AD10F2BA95C2500564124 /* NotificationEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD10E2BA95C2500564124 /* NotificationEndpoint.swift */; };
+		6E1AD1152BA96B5900564124 /* StoryProfileItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD1142BA96B5900564124 /* StoryProfileItem.swift */; };
+		6E1AD11A2BA96DE600564124 /* KipasKipasNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1AD1192BA96DE600564124 /* KipasKipasNetworking.framework */; };
+		6E1AD1222BA979C000564124 /* NotificationActivitiesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD1212BA979C000564124 /* NotificationActivitiesLoader.swift */; };
+		6E1AD1242BA97A0600564124 /* RemoteNotificationActivitiesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD1232BA97A0600564124 /* RemoteNotificationActivitiesLoader.swift */; };
+		6E1AD1262BA97A7900564124 /* NotificationActivitiesItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD1252BA97A7900564124 /* NotificationActivitiesItem.swift */; };
+		6E1AD1282BA98A1700564124 /* NotificationFollowersLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD1272BA98A1700564124 /* NotificationFollowersLoader.swift */; };
+		6E1AD12A2BA98A3A00564124 /* NotificationFollowersItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD1292BA98A3A00564124 /* NotificationFollowersItem.swift */; };
+		6E1AD12C2BA98ADC00564124 /* RemoteNotificationFollowersLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD12B2BA98ADC00564124 /* RemoteNotificationFollowersLoader.swift */; };
+		6E1AD12D2BA994E000564124 /* KipasKipasNotification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E259F2A2BA90DDE00FF51AC /* KipasKipasNotification.framework */; };
+		6E1AD12E2BA994E000564124 /* KipasKipasNotification.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E259F2A2BA90DDE00FF51AC /* KipasKipasNotification.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E1AD13A2BAA7EC400564124 /* KipasKipasNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1AD1392BAA7EC400564124 /* KipasKipasNetworking.framework */; };
+		6E1AD13B2BAA7EC400564124 /* KipasKipasNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1AD1392BAA7EC400564124 /* KipasKipasNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E1AD13D2BAA803300564124 /* UserLoggedInStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD13C2BAA803300564124 /* UserLoggedInStore.swift */; };
+		6E1AD13F2BAA805200564124 /* KipasKipasShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1AD13E2BAA805200564124 /* KipasKipasShared.framework */; };
+		6E1AD1402BAA805200564124 /* KipasKipasShared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1AD13E2BAA805200564124 /* KipasKipasShared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E1AD1422BAA853D00564124 /* KipasKipasLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1AD1412BAA853D00564124 /* KipasKipasLogin.framework */; };
+		6E1AD1432BAA853D00564124 /* KipasKipasLogin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1AD1412BAA853D00564124 /* KipasKipasLogin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E1AD1452BAA854500564124 /* KipasKipasLoginiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1AD1442BAA854500564124 /* KipasKipasLoginiOS.framework */; };
+		6E1AD1462BAA854500564124 /* KipasKipasLoginiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1AD1442BAA854500564124 /* KipasKipasLoginiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E1AD1482BAA85A400564124 /* SceneDelegate+Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD1472BAA85A400564124 /* SceneDelegate+Login.swift */; };
+		6E1AD14A2BAAADC100564124 /* NotificationSuggestionAccountItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD1492BAAADC100564124 /* NotificationSuggestionAccountItem.swift */; };
+		6E1AD14C2BAAAE3600564124 /* NotificationSuggestionAccountLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD14B2BAAAE3600564124 /* NotificationSuggestionAccountLoader.swift */; };
+		6E1AD14E2BAAAF2300564124 /* RemoteNotificationSuggestionAccountLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD14D2BAAAF2300564124 /* RemoteNotificationSuggestionAccountLoader.swift */; };
+		6E1AD1512BAABA6600564124 /* NotificationProfileStoryPresenters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD1502BAABA6600564124 /* NotificationProfileStoryPresenters.swift */; };
+		6E1AD1542BAAC46700564124 /* NotificationStoryPresenters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD1532BAAC46700564124 /* NotificationStoryPresenters.swift */; };
+		6E1AD1592BAAC6BB00564124 /* NotificationTransactionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD1582BAAC6BB00564124 /* NotificationTransactionItem.swift */; };
+		6E1AD15B2BAAC8FF00564124 /* NotificationTransactionLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD15A2BAAC8FF00564124 /* NotificationTransactionLoader.swift */; };
+		6E1AD15D2BAAC96C00564124 /* RemoteNotificationTransactionLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD15C2BAAC96C00564124 /* RemoteNotificationTransactionLoader.swift */; };
+		6E1AD15F2BAAED6A00564124 /* NotificationSystemItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD15E2BAAED6A00564124 /* NotificationSystemItem.swift */; };
+		6E1AD1612BAAEFEA00564124 /* NotificationSystemLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD1602BAAEFEA00564124 /* NotificationSystemLoader.swift */; };
+		6E1AD1632BAAF05400564124 /* RemoteNotificationSystemLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD1622BAAF05400564124 /* RemoteNotificationSystemLoader.swift */; };
+		6E1AD1652BAB0B4C00564124 /* NotificationActivitiesPresenters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD1642BAB0B4C00564124 /* NotificationActivitiesPresenters.swift */; };
+		6E1AD1672BAB0C2200564124 /* NotificationFollowersPresenters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD1662BAB0C2200564124 /* NotificationFollowersPresenters.swift */; };
+		6E1AD1692BAB0C8A00564124 /* NotificationSuggestionAccountPresenters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD1682BAB0C8A00564124 /* NotificationSuggestionAccountPresenters.swift */; };
+		6E1AD16B2BAB0D0400564124 /* NotificationSystemPresenters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD16A2BAB0D0400564124 /* NotificationSystemPresenters.swift */; };
+		6E1AD16D2BABB40700564124 /* NotificationTransactionPresenters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD16C2BABB40700564124 /* NotificationTransactionPresenters.swift */; };
+		6E1AD1742BABB8E900564124 /* NotificationActivitiesDetailLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD1732BABB8E900564124 /* NotificationActivitiesDetailLoader.swift */; };
+		6E1AD1762BABBA2F00564124 /* RemoteNotificationActivitiesDetailLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD1752BABBA2F00564124 /* RemoteNotificationActivitiesDetailLoader.swift */; };
+		6E1AD1782BABBBD200564124 /* NotificationDefaultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD1772BABBBD200564124 /* NotificationDefaultResponse.swift */; };
+		6E1AD17A2BABBCF500564124 /* NotificationActivitiesIsReadCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD1792BABBCF500564124 /* NotificationActivitiesIsReadCheck.swift */; };
+		6E1AD17C2BABBD9300564124 /* RemoteNotificationActivitiesIsReadCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD17B2BABBD9300564124 /* RemoteNotificationActivitiesIsReadCheck.swift */; };
+		6E1AD17E2BABBF1100564124 /* NotificationActivitiesDetailPresenters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD17D2BABBF1100564124 /* NotificationActivitiesDetailPresenters.swift */; };
+		6E1AD1802BABBF8500564124 /* NotificationActivitiesIsReadPresenters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD17F2BABBF8500564124 /* NotificationActivitiesIsReadPresenters.swift */; };
+		6E1AD1822BABC05C00564124 /* NotificationStoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD1812BABC05C00564124 /* NotificationStoryService.swift */; };
+		6E1AD1862BABC21700564124 /* NotificationActivitiesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD1852BABC21700564124 /* NotificationActivitiesService.swift */; };
+		6E1AD1882BABC28100564124 /* NotificationFollowersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD1872BABC28100564124 /* NotificationFollowersService.swift */; };
+		6E1AD18A2BABC2D700564124 /* NotificationSystemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD1892BABC2D700564124 /* NotificationSystemService.swift */; };
+		6E1AD18C2BABC39C00564124 /* NotificationTransactionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD18B2BABC39C00564124 /* NotificationTransactionService.swift */; };
+		6E1AD18E2BABC42A00564124 /* NotificationActivitiesDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD18D2BABC42A00564124 /* NotificationActivitiesDetailService.swift */; };
+		6E1AD1902BABC52000564124 /* NotificationActivitiesIsReadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD18F2BABC52000564124 /* NotificationActivitiesIsReadService.swift */; };
+		6E1AD1922BABC5C000564124 /* NotificationServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1AD1912BABC5C000564124 /* NotificationServiceFactory.swift */; };
+		6E259F2E2BA90DDE00FF51AC /* KipasKipasNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E259F2D2BA90DDE00FF51AC /* KipasKipasNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E259F532BA90EDC00FF51AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E259F522BA90EDC00FF51AC /* AppDelegate.swift */; };
+		6E259F552BA90EDC00FF51AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E259F542BA90EDC00FF51AC /* SceneDelegate.swift */; };
+		6E259F572BA90EDC00FF51AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E259F562BA90EDC00FF51AC /* ViewController.swift */; };
+		6E259F5C2BA90EDD00FF51AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E259F5B2BA90EDD00FF51AC /* Assets.xcassets */; };
+		6E259F5F2BA90EDD00FF51AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E259F5D2BA90EDD00FF51AC /* LaunchScreen.storyboard */; };
+		6E36EFCE2BAD6AA8004668FD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6E36EFCD2BAD6AA8004668FD /* Kingfisher */; };
+		6E8F650B2BAC3E6700EAA61A /* NotificationFollowUserLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8F650A2BAC3E6700EAA61A /* NotificationFollowUserLoader.swift */; };
+		6E8F650D2BAC3EBF00EAA61A /* RemoteNotificationFollowUserLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8F650C2BAC3EBF00EAA61A /* RemoteNotificationFollowUserLoader.swift */; };
+		6E8F650F2BAC42DB00EAA61A /* NotificationFollowUserPresenters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8F650E2BAC42DB00EAA61A /* NotificationFollowUserPresenters.swift */; };
+		6E8F65112BAC433300EAA61A /* NotificationFollowUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8F65102BAC433300EAA61A /* NotificationFollowUserService.swift */; };
+		6EE5771A2BBD502F00D06B1A /* NotificationSystemEnableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE577192BBD502E00D06B1A /* NotificationSystemEnableController.swift */; };
+		6EE5771C2BBD504D00D06B1A /* NotificationSystemEnableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE5771B2BBD504D00D06B1A /* NotificationSystemEnableView.swift */; };
+		6EF186272BB55A51008DB109 /* NotificationSystemUnreadItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF186262BB55A51008DB109 /* NotificationSystemUnreadItem.swift */; };
+		6EF1862A2BB55A96008DB109 /* NotificationSystemIsReadPresenters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF186282BB55A96008DB109 /* NotificationSystemIsReadPresenters.swift */; };
+		6EF1862B2BB55A96008DB109 /* NotificationSystemUnreadPresenters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF186292BB55A96008DB109 /* NotificationSystemUnreadPresenters.swift */; };
+		6EF1862D2BB55B09008DB109 /* NotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF1862C2BB55B09008DB109 /* NotificationDelegate.swift */; };
+		6EFE0F7C2BB9F49300594B9D /* NotificationSystemSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFE0F7B2BB9F49300594B9D /* NotificationSystemSettingView.swift */; };
+		6EFE0F7E2BB9FAE800594B9D /* NotificationSystemSettingItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFE0F7D2BB9FAE800594B9D /* NotificationSystemSettingItemCell.swift */; };
+		6EFE0F802BBA7AC000594B9D /* SystemSettingTypesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFE0F7F2BBA7AC000594B9D /* SystemSettingTypesController.swift */; };
+		6EFE0F822BBA7AD000594B9D /* SystemSettingTypesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFE0F812BBA7AD000594B9D /* SystemSettingTypesView.swift */; };
+		AF84CA5E2BB5574900B99374 /* NotificationSystemCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84CA542BB5574900B99374 /* NotificationSystemCellController.swift */; };
+		AF84CA5F2BB5574900B99374 /* NotificationSystemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84CA552BB5574900B99374 /* NotificationSystemController.swift */; };
+		AF84CA602BB5574900B99374 /* NotificationSystemIsReadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84CA562BB5574900B99374 /* NotificationSystemIsReadService.swift */; };
+		AF84CA612BB5574900B99374 /* NotificationSystemItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84CA572BB5574900B99374 /* NotificationSystemItemCell.swift */; };
+		AF84CA622BB5574900B99374 /* NotificationSystemPagingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84CA582BB5574900B99374 /* NotificationSystemPagingController.swift */; };
+		AF84CA632BB5574900B99374 /* NotificationSystemUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84CA592BB5574900B99374 /* NotificationSystemUIComposer.swift */; };
+		AF84CA642BB5574900B99374 /* NotificationSystemUnreadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84CA5A2BB5574900B99374 /* NotificationSystemUnreadService.swift */; };
+		AF84CA652BB5574900B99374 /* NotificationSystemViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84CA5B2BB5574900B99374 /* NotificationSystemViewService.swift */; };
+		AF84CA662BB5574900B99374 /* NSCollectionLayoutSection+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84CA5C2BB5574900B99374 /* NSCollectionLayoutSection+Ext.swift */; };
+		AF84CA702BB5575D00B99374 /* TransactionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84CA672BB5575D00B99374 /* TransactionCollectionViewCell.swift */; };
+		AF84CA712BB5575D00B99374 /* TransactionSettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84CA692BB5575D00B99374 /* TransactionSettingController.swift */; };
+		AF84CA722BB5575D00B99374 /* TransactionSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84CA6A2BB5575D00B99374 /* TransactionSettingView.swift */; };
+		AF84CA732BB5575D00B99374 /* TransactionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84CA6C2BB5575D00B99374 /* TransactionController.swift */; };
+		AF84CA742BB5575D00B99374 /* TransactionEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84CA6D2BB5575D00B99374 /* TransactionEmptyView.swift */; };
+		AF84CA752BB5575D00B99374 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF84CA6E2BB5575D00B99374 /* TransactionView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CE5749A2BABF13500539FEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E259F212BA90DDE00FF51AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E259F292BA90DDE00FF51AC;
+			remoteInfo = KipasKipasNotification;
+		};
+		6E1AD0F62BA93C4B00564124 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E259F212BA90DDE00FF51AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E1AD0F12BA93C4A00564124;
+			remoteInfo = KipasKipasNotificationiOS;
+		};
+		6E1AD12F2BA994E000564124 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E259F212BA90DDE00FF51AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E259F292BA90DDE00FF51AC;
+			remoteInfo = KipasKipasNotification;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3C4EE2642BA94703009AB052 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3C4EE2632BA94703009AB052 /* KipasKipasNotificationiOS.framework in Embed Frameworks */,
+				6E1AD1462BAA854500564124 /* KipasKipasLoginiOS.framework in Embed Frameworks */,
+				6E1AD12E2BA994E000564124 /* KipasKipasNotification.framework in Embed Frameworks */,
+				6E1AD1402BAA805200564124 /* KipasKipasShared.framework in Embed Frameworks */,
+				6E1AD1432BAA853D00564124 /* KipasKipasLogin.framework in Embed Frameworks */,
+				6E1AD0F92BA93C4B00564124 /* KipasKipasNotificationiOS.framework in Embed Frameworks */,
+				3CC9344A2BF01372009277C7 /* KipasKipasDonationTransactionDetail.framework in Embed Frameworks */,
+				6E1AD13B2BAA7EC400564124 /* KipasKipasNetworking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3C126D762BF75615004BF178 /* RemoteNotificationSystemIsReadCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteNotificationSystemIsReadCheck.swift; sourceTree = "<group>"; };
+		3C126D782BF7562D004BF178 /* NotificationSystemIsReadCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSystemIsReadCheck.swift; sourceTree = "<group>"; };
+		3C1735F12BA9E34C00F5D580 /* Ext+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UITableView.swift"; sourceTree = "<group>"; };
+		3C1735F32BA9E37500F5D580 /* Ext+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIView.swift"; sourceTree = "<group>"; };
+		3C1735F52BA9E3CF00F5D580 /* Ext+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIColor.swift"; sourceTree = "<group>"; };
+		3C1735F82BA9E98200F5D580 /* NotificationStoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationStoryTableViewCell.swift; sourceTree = "<group>"; };
+		3C1736022BAA088100F5D580 /* NotificationDirectMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDirectMessageTableViewCell.swift; sourceTree = "<group>"; };
+		3C1736032BAA088100F5D580 /* NotificationDirectMessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationDirectMessageTableViewCell.xib; sourceTree = "<group>"; };
+		3C1736062BAA1B6200F5D580 /* Ext+UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UICollectionView.swift"; sourceTree = "<group>"; };
+		3C1736092BAA1D3B00F5D580 /* KipasKipasShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C17360C2BAA1D6100F5D580 /* KipasKipasShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C17429E2BDBA64B00D2F9E0 /* SystemSettingTypesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SystemSettingTypesView.xib; sourceTree = "<group>"; };
+		3C3F84042BAB7D560075A8B3 /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
+		3C4193AF2BB3CEF600600269 /* ReachabilityNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityNetwork.swift; sourceTree = "<group>"; };
+		3C4193B12BB4495B00600269 /* NotificationActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationActivityViewModel.swift; sourceTree = "<group>"; };
+		3C4CCAA82BEB6548002A5758 /* AssetsNotification.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AssetsNotification.xcassets; sourceTree = "<group>"; };
+		3C4EE2602BA94692009AB052 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		3C4EE2662BA94C75009AB052 /* NotificationMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationMenuTableViewCell.swift; sourceTree = "<group>"; };
+		3C4EE2672BA94C75009AB052 /* NotificationMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationMenuTableViewCell.xib; sourceTree = "<group>"; };
+		3C4EE26B2BA95C84009AB052 /* NotificationLastActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationLastActivityTableViewCell.swift; sourceTree = "<group>"; };
+		3C4EE26C2BA95C84009AB052 /* NotificationLastActivityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationLastActivityTableViewCell.xib; sourceTree = "<group>"; };
+		3C5CD5992BDA69B300C5E3AF /* KKNotificationContentSystemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKNotificationContentSystemController.swift; sourceTree = "<group>"; };
+		3C5CD59B2BDB718B00C5E3AF /* KKNotificationSystemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKNotificationSystemViewModel.swift; sourceTree = "<group>"; };
+		3C5CD59D2BDB7DCB00C5E3AF /* KKNotificationContentSystemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKNotificationContentSystemViewModel.swift; sourceTree = "<group>"; };
+		3C5CD59F2BDB80C500C5E3AF /* KKNotificationSystemRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKNotificationSystemRouter.swift; sourceTree = "<group>"; };
+		3C7C7A322BDBB9DF00E2942E /* NotificationSystemMuteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSystemMuteController.swift; sourceTree = "<group>"; };
+		3C7C7A352BDBBA4300E2942E /* NotificationSystemMuteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSystemMuteView.swift; sourceTree = "<group>"; };
+		3C7C7A372BDBBA4A00E2942E /* NotificationSystemMuteView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationSystemMuteView.xib; sourceTree = "<group>"; };
+		3C8282A82C517FDB004A1982 /* NotificationLotteryLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationLotteryLoader.swift; sourceTree = "<group>"; };
+		3C8282AA2C518001004A1982 /* RemoteNotificationLotteryLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteNotificationLotteryLoader.swift; sourceTree = "<group>"; };
+		3C8282AC2C5181CE004A1982 /* NotificationLotteryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationLotteryItem.swift; sourceTree = "<group>"; };
+		3C8381EC2BFDB53E003A7264 /* NotificationUnreadLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationUnreadLoader.swift; sourceTree = "<group>"; };
+		3C8381EE2BFDB5BB003A7264 /* RemoteNotificationUnreadLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteNotificationUnreadLoader.swift; sourceTree = "<group>"; };
+		3C87B2092BAACE3A00495245 /* NoInternetConnectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoInternetConnectionView.xib; sourceTree = "<group>"; };
+		3C87B20B2BAACE5600495245 /* NoInternetConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInternetConnectionView.swift; sourceTree = "<group>"; };
+		3C87B2112BAB21D600495245 /* NotificationActivityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationActivityController.swift; sourceTree = "<group>"; };
+		3C87B2142BAB22E800495245 /* NotificationActivityEmptyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationActivityEmptyTableViewCell.swift; sourceTree = "<group>"; };
+		3C87B2152BAB22E800495245 /* NotificationActivityEmptyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationActivityEmptyTableViewCell.xib; sourceTree = "<group>"; };
+		3C87B2192BAB26D200495245 /* NotificationActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationActivityTableViewCell.swift; sourceTree = "<group>"; };
+		3C87B21A2BAB26D200495245 /* NotificationActivityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationActivityTableViewCell.xib; sourceTree = "<group>"; };
+		3C8895EC2BBFEC1900A33CEB /* NotificationDetailActivityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDetailActivityController.swift; sourceTree = "<group>"; };
+		3C8895EF2BBFECAB00A33CEB /* NotificationDetailActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDetailActivityTableViewCell.swift; sourceTree = "<group>"; };
+		3C8895F02BBFECAB00A33CEB /* NotificationDetailActivityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationDetailActivityTableViewCell.xib; sourceTree = "<group>"; };
+		3C8895F32BBFF62A00A33CEB /* NotificationDetailActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDetailActivityViewModel.swift; sourceTree = "<group>"; };
+		3C8895F52BBFF79200A33CEB /* NotificationActivityRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationActivityRouter.swift; sourceTree = "<group>"; };
+		3C89CCF72BD7BAD20090D58D /* ToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		3C89CCF82BD7BAD20090D58D /* ToastView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToastView.xib; sourceTree = "<group>"; };
+		3C89CCF92BD7BAD20090D58D /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		3C96793E2C0307BA00F119B5 /* RemoteNotificationReadUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteNotificationReadUpdater.swift; sourceTree = "<group>"; };
+		3C9679402C0307D100F119B5 /* NotificationReadUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationReadUpdater.swift; sourceTree = "<group>"; };
+		3C9F1E552BDA2520005FF7C3 /* KKNotificationSystemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKNotificationSystemController.swift; sourceTree = "<group>"; };
+		3C9F1E582BDA26EB005FF7C3 /* KKNotificationSystemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKNotificationSystemTableViewCell.swift; sourceTree = "<group>"; };
+		3C9F1E592BDA26EB005FF7C3 /* KKNotificationSystemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KKNotificationSystemTableViewCell.xib; sourceTree = "<group>"; };
+		3CA487D12BAC1592009A5FEE /* NewFollowerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFollowerController.swift; sourceTree = "<group>"; };
+		3CA487D32BAC1641009A5FEE /* NewFollowerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFollowerViewModel.swift; sourceTree = "<group>"; };
+		3CA487D52BAC1B4D009A5FEE /* NotificationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRouter.swift; sourceTree = "<group>"; };
+		3CB5F1252BA9D3720063C4AC /* NotificationUserRecomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationUserRecomTableViewCell.swift; sourceTree = "<group>"; };
+		3CB5F1262BA9D3720063C4AC /* NotificationUserRecomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationUserRecomTableViewCell.xib; sourceTree = "<group>"; };
+		3CB5F1292BA9DE3B0063C4AC /* NotificationUserRecomHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationUserRecomHeaderView.swift; sourceTree = "<group>"; };
+		3CC6092E2BAAC2FC00471E0D /* Ext+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIViewController.swift"; sourceTree = "<group>"; };
+		3CC609312BAAC5AC00471E0D /* NewFollowerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFollowerTableViewCell.swift; sourceTree = "<group>"; };
+		3CC609322BAAC5AC00471E0D /* NewFollowerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewFollowerTableViewCell.xib; sourceTree = "<group>"; };
+		3CC609372BAAC81000471E0D /* NewFollowerEmptyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFollowerEmptyTableViewCell.swift; sourceTree = "<group>"; };
+		3CC609382BAAC81000471E0D /* NewFollowerEmptyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewFollowerEmptyTableViewCell.xib; sourceTree = "<group>"; };
+		3CC9341E2BEE1C96009277C7 /* NotificationTransactionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTransactionDetailView.swift; sourceTree = "<group>"; };
+		3CC934202BEE1C9E009277C7 /* NotificationTransactionDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTransactionDetailView.xib; sourceTree = "<group>"; };
+		3CC934222BEE1CE6009277C7 /* NotificationTransactionDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTransactionDetailController.swift; sourceTree = "<group>"; };
+		3CC934242BEE2825009277C7 /* NotificationTransactionDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTransactionDetailViewModel.swift; sourceTree = "<group>"; };
+		3CC934262BEE2B7F009277C7 /* NotificationTransactionDetailLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTransactionDetailLoader.swift; sourceTree = "<group>"; };
+		3CC934282BEE2BFB009277C7 /* NotificationTransactionDetailItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTransactionDetailItem.swift; sourceTree = "<group>"; };
+		3CC9342A2BEE2C8A009277C7 /* RemoteNotificationTransactionDetailLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteNotificationTransactionDetailLoader.swift; sourceTree = "<group>"; };
+		3CC9342C2BEE3247009277C7 /* TransactionRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRouter.swift; sourceTree = "<group>"; };
+		3CC934302BEFF802009277C7 /* TransactionDetailDonationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionDetailDonationView.xib; sourceTree = "<group>"; };
+		3CC934342BEFF824009277C7 /* TransactionDetailOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailOrderView.swift; sourceTree = "<group>"; };
+		3CC934362BEFF832009277C7 /* TransactionDetailDonationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailDonationView.swift; sourceTree = "<group>"; };
+		3CC934382BEFF857009277C7 /* TransactionDetailOrderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionDetailOrderView.xib; sourceTree = "<group>"; };
+		3CC9343C2BEFFB20009277C7 /* TransactionDetailOrderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailOrderController.swift; sourceTree = "<group>"; };
+		3CC9343E2BEFFB2E009277C7 /* TransactionDetailDonationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailDonationController.swift; sourceTree = "<group>"; };
+		3CC934412BEFFC0B009277C7 /* TransactionDetailDonationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailDonationViewModel.swift; sourceTree = "<group>"; };
+		3CC934432BEFFC16009277C7 /* TransactionDetailOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailOrderViewModel.swift; sourceTree = "<group>"; };
+		3CC934452BF012DF009277C7 /* KipasKipasDonationTransactionDetail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasDonationTransactionDetail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CE5749D2BABF15B00539FEC /* KipasKipasDirectMessage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasDirectMessage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CF368F82BE3535E0051E639 /* Ext+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIImageView.swift"; sourceTree = "<group>"; };
+		3CF368FB2BE391DD0051E639 /* NotificationSettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSettingController.swift; sourceTree = "<group>"; };
+		3CF368FF2BE392190051E639 /* NotificationSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSettingView.swift; sourceTree = "<group>"; };
+		3CF369012BE392210051E639 /* NotificationSettingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationSettingView.xib; sourceTree = "<group>"; };
+		3CF369032BE409EE0051E639 /* NotificationSettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSettingViewModel.swift; sourceTree = "<group>"; };
+		3CF369072BE412A60051E639 /* NotificationPreferencesLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPreferencesLoader.swift; sourceTree = "<group>"; };
+		3CF3690C2BE41DDB0051E639 /* RemoteNotificationPreferencesLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteNotificationPreferencesLoader.swift; sourceTree = "<group>"; };
+		3CF3690F2BE41E3E0051E639 /* NotificationPreferencesItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPreferencesItem.swift; sourceTree = "<group>"; };
+		3CF369112BE4222C0051E639 /* RemoteNotificationPreferencesUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteNotificationPreferencesUpdater.swift; sourceTree = "<group>"; };
+		3CF369132BE422690051E639 /* NotificationPreferencesUpdateItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPreferencesUpdateItem.swift; sourceTree = "<group>"; };
+		3CF369152BE4229D0051E639 /* NotificationPreferencesUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPreferencesUpdater.swift; sourceTree = "<group>"; };
+		3CF369182BE430780051E639 /* NotificationSuggestionInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSuggestionInfoController.swift; sourceTree = "<group>"; };
+		3CF3691B2BE431020051E639 /* NotificationSuggestionInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSuggestionInfoView.swift; sourceTree = "<group>"; };
+		3CF3691D2BE431090051E639 /* NotificationSuggestionInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationSuggestionInfoView.xib; sourceTree = "<group>"; };
+		6E0A70D82BB5DEEF00B88E41 /* NotificationSystemContentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSystemContentController.swift; sourceTree = "<group>"; };
+		6E0A70DA2BB6F4C600B88E41 /* NotificationSystemContentUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSystemContentUIComposer.swift; sourceTree = "<group>"; };
+		6E0A70DD2BB6F54800B88E41 /* NotificationSystemContentViewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSystemContentViewService.swift; sourceTree = "<group>"; };
+		6E0A70E02BB6F95F00B88E41 /* NotificationSystemSettingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSystemSettingController.swift; sourceTree = "<group>"; };
+		6E1AD0F22BA93C4A00564124 /* KipasKipasNotificationiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KipasKipasNotificationiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E1AD0F42BA93C4B00564124 /* KipasKipasNotificationiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KipasKipasNotificationiOS.h; sourceTree = "<group>"; };
+		6E1AD10E2BA95C2500564124 /* NotificationEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationEndpoint.swift; sourceTree = "<group>"; };
+		6E1AD1142BA96B5900564124 /* StoryProfileItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryProfileItem.swift; sourceTree = "<group>"; };
+		6E1AD1192BA96DE600564124 /* KipasKipasNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E1AD1212BA979C000564124 /* NotificationActivitiesLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationActivitiesLoader.swift; sourceTree = "<group>"; };
+		6E1AD1232BA97A0600564124 /* RemoteNotificationActivitiesLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteNotificationActivitiesLoader.swift; sourceTree = "<group>"; };
+		6E1AD1252BA97A7900564124 /* NotificationActivitiesItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationActivitiesItem.swift; sourceTree = "<group>"; };
+		6E1AD1272BA98A1700564124 /* NotificationFollowersLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFollowersLoader.swift; sourceTree = "<group>"; };
+		6E1AD1292BA98A3A00564124 /* NotificationFollowersItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFollowersItem.swift; sourceTree = "<group>"; };
+		6E1AD12B2BA98ADC00564124 /* RemoteNotificationFollowersLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteNotificationFollowersLoader.swift; sourceTree = "<group>"; };
+		6E1AD1392BAA7EC400564124 /* KipasKipasNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E1AD13C2BAA803300564124 /* UserLoggedInStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoggedInStore.swift; sourceTree = "<group>"; };
+		6E1AD13E2BAA805200564124 /* KipasKipasShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E1AD1412BAA853D00564124 /* KipasKipasLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E1AD1442BAA854500564124 /* KipasKipasLoginiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasLoginiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E1AD1472BAA85A400564124 /* SceneDelegate+Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SceneDelegate+Login.swift"; sourceTree = "<group>"; };
+		6E1AD1492BAAADC100564124 /* NotificationSuggestionAccountItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSuggestionAccountItem.swift; sourceTree = "<group>"; };
+		6E1AD14B2BAAAE3600564124 /* NotificationSuggestionAccountLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSuggestionAccountLoader.swift; sourceTree = "<group>"; };
+		6E1AD14D2BAAAF2300564124 /* RemoteNotificationSuggestionAccountLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteNotificationSuggestionAccountLoader.swift; sourceTree = "<group>"; };
+		6E1AD1502BAABA6600564124 /* NotificationProfileStoryPresenters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationProfileStoryPresenters.swift; sourceTree = "<group>"; };
+		6E1AD1532BAAC46700564124 /* NotificationStoryPresenters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationStoryPresenters.swift; sourceTree = "<group>"; };
+		6E1AD1582BAAC6BB00564124 /* NotificationTransactionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTransactionItem.swift; sourceTree = "<group>"; };
+		6E1AD15A2BAAC8FF00564124 /* NotificationTransactionLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTransactionLoader.swift; sourceTree = "<group>"; };
+		6E1AD15C2BAAC96C00564124 /* RemoteNotificationTransactionLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteNotificationTransactionLoader.swift; sourceTree = "<group>"; };
+		6E1AD15E2BAAED6A00564124 /* NotificationSystemItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSystemItem.swift; sourceTree = "<group>"; };
+		6E1AD1602BAAEFEA00564124 /* NotificationSystemLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSystemLoader.swift; sourceTree = "<group>"; };
+		6E1AD1622BAAF05400564124 /* RemoteNotificationSystemLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteNotificationSystemLoader.swift; sourceTree = "<group>"; };
+		6E1AD1642BAB0B4C00564124 /* NotificationActivitiesPresenters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationActivitiesPresenters.swift; sourceTree = "<group>"; };
+		6E1AD1662BAB0C2200564124 /* NotificationFollowersPresenters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFollowersPresenters.swift; sourceTree = "<group>"; };
+		6E1AD1682BAB0C8A00564124 /* NotificationSuggestionAccountPresenters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSuggestionAccountPresenters.swift; sourceTree = "<group>"; };
+		6E1AD16A2BAB0D0400564124 /* NotificationSystemPresenters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSystemPresenters.swift; sourceTree = "<group>"; };
+		6E1AD16C2BABB40700564124 /* NotificationTransactionPresenters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTransactionPresenters.swift; sourceTree = "<group>"; };
+		6E1AD1732BABB8E900564124 /* NotificationActivitiesDetailLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationActivitiesDetailLoader.swift; sourceTree = "<group>"; };
+		6E1AD1752BABBA2F00564124 /* RemoteNotificationActivitiesDetailLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteNotificationActivitiesDetailLoader.swift; sourceTree = "<group>"; };
+		6E1AD1772BABBBD200564124 /* NotificationDefaultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDefaultResponse.swift; sourceTree = "<group>"; };
+		6E1AD1792BABBCF500564124 /* NotificationActivitiesIsReadCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationActivitiesIsReadCheck.swift; sourceTree = "<group>"; };
+		6E1AD17B2BABBD9300564124 /* RemoteNotificationActivitiesIsReadCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteNotificationActivitiesIsReadCheck.swift; sourceTree = "<group>"; };
+		6E1AD17D2BABBF1100564124 /* NotificationActivitiesDetailPresenters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationActivitiesDetailPresenters.swift; sourceTree = "<group>"; };
+		6E1AD17F2BABBF8500564124 /* NotificationActivitiesIsReadPresenters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationActivitiesIsReadPresenters.swift; sourceTree = "<group>"; };
+		6E1AD1812BABC05C00564124 /* NotificationStoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationStoryService.swift; sourceTree = "<group>"; };
+		6E1AD1852BABC21700564124 /* NotificationActivitiesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationActivitiesService.swift; sourceTree = "<group>"; };
+		6E1AD1872BABC28100564124 /* NotificationFollowersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFollowersService.swift; sourceTree = "<group>"; };
+		6E1AD1892BABC2D700564124 /* NotificationSystemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSystemService.swift; sourceTree = "<group>"; };
+		6E1AD18B2BABC39C00564124 /* NotificationTransactionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTransactionService.swift; sourceTree = "<group>"; };
+		6E1AD18D2BABC42A00564124 /* NotificationActivitiesDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationActivitiesDetailService.swift; sourceTree = "<group>"; };
+		6E1AD18F2BABC52000564124 /* NotificationActivitiesIsReadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationActivitiesIsReadService.swift; sourceTree = "<group>"; };
+		6E1AD1912BABC5C000564124 /* NotificationServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationServiceFactory.swift; sourceTree = "<group>"; };
+		6E259F2A2BA90DDE00FF51AC /* KipasKipasNotification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KipasKipasNotification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E259F2D2BA90DDE00FF51AC /* KipasKipasNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KipasKipasNotification.h; sourceTree = "<group>"; };
+		6E259F502BA90EDC00FF51AC /* KipasKipasNotificationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KipasKipasNotificationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E259F522BA90EDC00FF51AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6E259F542BA90EDC00FF51AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6E259F562BA90EDC00FF51AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6E259F5B2BA90EDD00FF51AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E259F5E2BA90EDD00FF51AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6E259F602BA90EDD00FF51AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E8F650A2BAC3E6700EAA61A /* NotificationFollowUserLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFollowUserLoader.swift; sourceTree = "<group>"; };
+		6E8F650C2BAC3EBF00EAA61A /* RemoteNotificationFollowUserLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteNotificationFollowUserLoader.swift; sourceTree = "<group>"; };
+		6E8F650E2BAC42DB00EAA61A /* NotificationFollowUserPresenters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFollowUserPresenters.swift; sourceTree = "<group>"; };
+		6E8F65102BAC433300EAA61A /* NotificationFollowUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFollowUserService.swift; sourceTree = "<group>"; };
+		6EE577192BBD502E00D06B1A /* NotificationSystemEnableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSystemEnableController.swift; sourceTree = "<group>"; };
+		6EE5771B2BBD504D00D06B1A /* NotificationSystemEnableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSystemEnableView.swift; sourceTree = "<group>"; };
+		6EF186262BB55A51008DB109 /* NotificationSystemUnreadItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSystemUnreadItem.swift; sourceTree = "<group>"; };
+		6EF186282BB55A96008DB109 /* NotificationSystemIsReadPresenters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSystemIsReadPresenters.swift; sourceTree = "<group>"; };
+		6EF186292BB55A96008DB109 /* NotificationSystemUnreadPresenters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSystemUnreadPresenters.swift; sourceTree = "<group>"; };
+		6EF1862C2BB55B09008DB109 /* NotificationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationDelegate.swift; path = Services/NotificationDelegate.swift; sourceTree = "<group>"; };
+		6EFE0F7B2BB9F49300594B9D /* NotificationSystemSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSystemSettingView.swift; sourceTree = "<group>"; };
+		6EFE0F7D2BB9FAE800594B9D /* NotificationSystemSettingItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSystemSettingItemCell.swift; sourceTree = "<group>"; };
+		6EFE0F7F2BBA7AC000594B9D /* SystemSettingTypesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemSettingTypesController.swift; sourceTree = "<group>"; };
+		6EFE0F812BBA7AD000594B9D /* SystemSettingTypesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemSettingTypesView.swift; sourceTree = "<group>"; };
+		AF2FC15A2C19994D007585F9 /* KipasKipasStory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasStory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF2FC15B2C19994D007585F9 /* KipasKipasStoryiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasStoryiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF84CA542BB5574900B99374 /* NotificationSystemCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSystemCellController.swift; sourceTree = "<group>"; };
+		AF84CA552BB5574900B99374 /* NotificationSystemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSystemController.swift; sourceTree = "<group>"; };
+		AF84CA562BB5574900B99374 /* NotificationSystemIsReadService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSystemIsReadService.swift; sourceTree = "<group>"; };
+		AF84CA572BB5574900B99374 /* NotificationSystemItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSystemItemCell.swift; sourceTree = "<group>"; };
+		AF84CA582BB5574900B99374 /* NotificationSystemPagingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSystemPagingController.swift; sourceTree = "<group>"; };
+		AF84CA592BB5574900B99374 /* NotificationSystemUIComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSystemUIComposer.swift; sourceTree = "<group>"; };
+		AF84CA5A2BB5574900B99374 /* NotificationSystemUnreadService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSystemUnreadService.swift; sourceTree = "<group>"; };
+		AF84CA5B2BB5574900B99374 /* NotificationSystemViewService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSystemViewService.swift; sourceTree = "<group>"; };
+		AF84CA5C2BB5574900B99374 /* NSCollectionLayoutSection+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSCollectionLayoutSection+Ext.swift"; sourceTree = "<group>"; };
+		AF84CA672BB5575D00B99374 /* TransactionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionCollectionViewCell.swift; sourceTree = "<group>"; };
+		AF84CA692BB5575D00B99374 /* TransactionSettingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionSettingController.swift; sourceTree = "<group>"; };
+		AF84CA6A2BB5575D00B99374 /* TransactionSettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionSettingView.swift; sourceTree = "<group>"; };
+		AF84CA6C2BB5575D00B99374 /* TransactionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionController.swift; sourceTree = "<group>"; };
+		AF84CA6D2BB5575D00B99374 /* TransactionEmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionEmptyView.swift; sourceTree = "<group>"; };
+		AF84CA6E2BB5575D00B99374 /* TransactionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E1AD0EF2BA93C4A00564124 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CE574A32BABFACA00539FEC /* SendbirdChatSDK in Frameworks */,
+				3CE574982BABF13500539FEC /* KipasKipasNotification.framework in Frameworks */,
+				3CC934462BF012DF009277C7 /* KipasKipasDonationTransactionDetail.framework in Frameworks */,
+				3CE5749E2BABF15B00539FEC /* KipasKipasDirectMessage.framework in Frameworks */,
+				3C17360D2BAA1D6100F5D580 /* KipasKipasShared.framework in Frameworks */,
+				6E36EFCE2BAD6AA8004668FD /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E259F272BA90DDE00FF51AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DE810652C1C6F42005DB939 /* KipasKipasStory.framework in Frameworks */,
+				6E1AD11A2BA96DE600564124 /* KipasKipasNetworking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E259F4D2BA90EDC00FF51AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C4EE2622BA94703009AB052 /* KipasKipasNotificationiOS.framework in Frameworks */,
+				6E1AD1452BAA854500564124 /* KipasKipasLoginiOS.framework in Frameworks */,
+				6E1AD12D2BA994E000564124 /* KipasKipasNotification.framework in Frameworks */,
+				6E1AD13F2BAA805200564124 /* KipasKipasShared.framework in Frameworks */,
+				3CE574A52BABFADC00539FEC /* SendbirdChatSDK in Frameworks */,
+				3CC934492BF01372009277C7 /* KipasKipasDonationTransactionDetail.framework in Frameworks */,
+				6E1AD1422BAA853D00564124 /* KipasKipasLogin.framework in Frameworks */,
+				6E1AD0F82BA93C4B00564124 /* KipasKipasNotificationiOS.framework in Frameworks */,
+				6E1AD13A2BAA7EC400564124 /* KipasKipasNetworking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C1735F02BA9E32500F5D580 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3C1736062BAA1B6200F5D580 /* Ext+UICollectionView.swift */,
+				3C1735F12BA9E34C00F5D580 /* Ext+UITableView.swift */,
+				3C1735F32BA9E37500F5D580 /* Ext+UIView.swift */,
+				3C1735F52BA9E3CF00F5D580 /* Ext+UIColor.swift */,
+				3CC6092E2BAAC2FC00471E0D /* Ext+UIViewController.swift */,
+				3CF368F82BE3535E0051E639 /* Ext+UIImageView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3C1735F72BA9E96700F5D580 /* NotificationStory */ = {
+			isa = PBXGroup;
+			children = (
+				3C1735F82BA9E98200F5D580 /* NotificationStoryTableViewCell.swift */,
+			);
+			path = NotificationStory;
+			sourceTree = "<group>";
+		};
+		3C1736012BAA085200F5D580 /* NotificationDirectMessageTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3C1736022BAA088100F5D580 /* NotificationDirectMessageTableViewCell.swift */,
+				3C1736032BAA088100F5D580 /* NotificationDirectMessageTableViewCell.xib */,
+			);
+			path = NotificationDirectMessageTableViewCell;
+			sourceTree = "<group>";
+		};
+		3C1736082BAA1D3B00F5D580 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF2FC15A2C19994D007585F9 /* KipasKipasStory.framework */,
+				AF2FC15B2C19994D007585F9 /* KipasKipasStoryiOS.framework */,
+				3CC934452BF012DF009277C7 /* KipasKipasDonationTransactionDetail.framework */,
+				3CE5749D2BABF15B00539FEC /* KipasKipasDirectMessage.framework */,
+				3C17360C2BAA1D6100F5D580 /* KipasKipasShared.framework */,
+				3C1736092BAA1D3B00F5D580 /* KipasKipasShared.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C4193AE2BB3CEEE00600269 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3C4193AF2BB3CEF600600269 /* ReachabilityNetwork.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3C4EE25A2BA945DA009AB052 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3C4193AE2BB3CEEE00600269 /* Common */,
+				3C87B2072BAACDEE00495245 /* Reusables */,
+				3C1735F02BA9E32500F5D580 /* Extensions */,
+				3C4EE25B2BA945ED009AB052 /* Views */,
+				3C4EE25D2BA94612009AB052 /* Controllers */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		3C4EE25B2BA945ED009AB052 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3CC9342F2BEFF7ED009277C7 /* TransactionDetailDonationView */,
+				3CC9342E2BEFF7D6009277C7 /* TransactionDetailOrderView */,
+				3CC9341D2BEE1C84009277C7 /* NotificationTransactionDetailView */,
+				3CF3691A2BE430F30051E639 /* NotificationSuggestionInfoView */,
+				3CF368FE2BE391FE0051E639 /* NotificationSettingView */,
+				3C7C7A342BDBBA3100E2942E /* NotificationSystemMuteView */,
+				3C4EE25C2BA945FD009AB052 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3C4EE25C2BA945FD009AB052 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3C9F1E572BDA26CD005FF7C3 /* KKNotificationSystemCell */,
+				3C8895EE2BBFEC7E00A33CEB /* NotificationDetailActivity */,
+				3C87B2182BAB26B400495245 /* NotificationActivityTableViewCell */,
+				3C87B2132BAB228800495245 /* NotificationActivityEmpty */,
+				3CC609362BAAC7F000471E0D /* NewFollowerEmpty */,
+				3CC609302BAAC56600471E0D /* NewFollower */,
+				3C1736012BAA085200F5D580 /* NotificationDirectMessageTableViewCell */,
+				3C1735F72BA9E96700F5D580 /* NotificationStory */,
+				3CB5F1242BA9D3580063C4AC /* NotificationUserRecom */,
+				3C4EE26A2BA95C54009AB052 /* NotificationLastActivity */,
+				3C4EE2652BA94C2A009AB052 /* NotificationMenu */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3C4EE25D2BA94612009AB052 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3CC9343B2BEFFAFE009277C7 /* TransactionDetailOrder */,
+				3CC9343A2BEFFAED009277C7 /* TransactionDetailDonation */,
+				3CC9341C2BEE1C76009277C7 /* NotificationTransactionDetail */,
+				3CF369172BE430690051E639 /* NotificationSuggestionInfo */,
+				3CF368FA2BE391C80051E639 /* NotificationSettingController */,
+				3C7C7A312BDBB98C00E2942E /* NotificationSystemMute */,
+				3C5CD5982BDA694500C5E3AF /* KKNotificationContentSystem */,
+				3C9F1E542BDA24EE005FF7C3 /* KKNotificationSystem */,
+				3C8895EB2BBFEBD600A33CEB /* NotificationDetailActivity */,
+				AF84CA6F2BB5575D00B99374 /* Transaction */,
+				AF84CA5D2BB5574900B99374 /* NotificationSystem */,
+				3C87B2102BAB214E00495245 /* NotificationActivity */,
+				3CC6092B2BAABD1100471E0D /* NewFollower */,
+				3C4EE25E2BA94627009AB052 /* Notification */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3C4EE25E2BA94627009AB052 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				3C4EE2602BA94692009AB052 /* NotificationController.swift */,
+				3C3F84042BAB7D560075A8B3 /* NotificationViewModel.swift */,
+				3CA487D52BAC1B4D009A5FEE /* NotificationRouter.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		3C4EE2652BA94C2A009AB052 /* NotificationMenu */ = {
+			isa = PBXGroup;
+			children = (
+				3C4EE2662BA94C75009AB052 /* NotificationMenuTableViewCell.swift */,
+				3C4EE2672BA94C75009AB052 /* NotificationMenuTableViewCell.xib */,
+			);
+			path = NotificationMenu;
+			sourceTree = "<group>";
+		};
+		3C4EE26A2BA95C54009AB052 /* NotificationLastActivity */ = {
+			isa = PBXGroup;
+			children = (
+				3C4EE26B2BA95C84009AB052 /* NotificationLastActivityTableViewCell.swift */,
+				3C4EE26C2BA95C84009AB052 /* NotificationLastActivityTableViewCell.xib */,
+			);
+			path = NotificationLastActivity;
+			sourceTree = "<group>";
+		};
+		3C5CD5982BDA694500C5E3AF /* KKNotificationContentSystem */ = {
+			isa = PBXGroup;
+			children = (
+				3C5CD5992BDA69B300C5E3AF /* KKNotificationContentSystemController.swift */,
+				3C5CD59D2BDB7DCB00C5E3AF /* KKNotificationContentSystemViewModel.swift */,
+			);
+			path = KKNotificationContentSystem;
+			sourceTree = "<group>";
+		};
+		3C7C7A312BDBB98C00E2942E /* NotificationSystemMute */ = {
+			isa = PBXGroup;
+			children = (
+				3C7C7A322BDBB9DF00E2942E /* NotificationSystemMuteController.swift */,
+			);
+			path = NotificationSystemMute;
+			sourceTree = "<group>";
+		};
+		3C7C7A342BDBBA3100E2942E /* NotificationSystemMuteView */ = {
+			isa = PBXGroup;
+			children = (
+				3C7C7A352BDBBA4300E2942E /* NotificationSystemMuteView.swift */,
+				3C7C7A372BDBBA4A00E2942E /* NotificationSystemMuteView.xib */,
+			);
+			path = NotificationSystemMuteView;
+			sourceTree = "<group>";
+		};
+		3C87B2072BAACDEE00495245 /* Reusables */ = {
+			isa = PBXGroup;
+			children = (
+				3C89CCF62BD7BAD20090D58D /* ToastView */,
+				3C87B2082BAACDF700495245 /* NoInternetConnection */,
+			);
+			path = Reusables;
+			sourceTree = "<group>";
+		};
+		3C87B2082BAACDF700495245 /* NoInternetConnection */ = {
+			isa = PBXGroup;
+			children = (
+				3C87B20B2BAACE5600495245 /* NoInternetConnectionView.swift */,
+				3C87B2092BAACE3A00495245 /* NoInternetConnectionView.xib */,
+			);
+			path = NoInternetConnection;
+			sourceTree = "<group>";
+		};
+		3C87B2102BAB214E00495245 /* NotificationActivity */ = {
+			isa = PBXGroup;
+			children = (
+				3C87B2112BAB21D600495245 /* NotificationActivityController.swift */,
+				3C4193B12BB4495B00600269 /* NotificationActivityViewModel.swift */,
+				3C8895F52BBFF79200A33CEB /* NotificationActivityRouter.swift */,
+			);
+			path = NotificationActivity;
+			sourceTree = "<group>";
+		};
+		3C87B2132BAB228800495245 /* NotificationActivityEmpty */ = {
+			isa = PBXGroup;
+			children = (
+				3C87B2142BAB22E800495245 /* NotificationActivityEmptyTableViewCell.swift */,
+				3C87B2152BAB22E800495245 /* NotificationActivityEmptyTableViewCell.xib */,
+			);
+			path = NotificationActivityEmpty;
+			sourceTree = "<group>";
+		};
+		3C87B2182BAB26B400495245 /* NotificationActivityTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3C87B2192BAB26D200495245 /* NotificationActivityTableViewCell.swift */,
+				3C87B21A2BAB26D200495245 /* NotificationActivityTableViewCell.xib */,
+			);
+			path = NotificationActivityTableViewCell;
+			sourceTree = "<group>";
+		};
+		3C8895EB2BBFEBD600A33CEB /* NotificationDetailActivity */ = {
+			isa = PBXGroup;
+			children = (
+				3C8895EC2BBFEC1900A33CEB /* NotificationDetailActivityController.swift */,
+				3C8895F32BBFF62A00A33CEB /* NotificationDetailActivityViewModel.swift */,
+			);
+			path = NotificationDetailActivity;
+			sourceTree = "<group>";
+		};
+		3C8895EE2BBFEC7E00A33CEB /* NotificationDetailActivity */ = {
+			isa = PBXGroup;
+			children = (
+				3C8895EF2BBFECAB00A33CEB /* NotificationDetailActivityTableViewCell.swift */,
+				3C8895F02BBFECAB00A33CEB /* NotificationDetailActivityTableViewCell.xib */,
+			);
+			path = NotificationDetailActivity;
+			sourceTree = "<group>";
+		};
+		3C89CCF62BD7BAD20090D58D /* ToastView */ = {
+			isa = PBXGroup;
+			children = (
+				3C89CCF72BD7BAD20090D58D /* ToastView.swift */,
+				3C89CCF82BD7BAD20090D58D /* ToastView.xib */,
+				3C89CCF92BD7BAD20090D58D /* Toast.swift */,
+			);
+			path = ToastView;
+			sourceTree = "<group>";
+		};
+		3C9F1E542BDA24EE005FF7C3 /* KKNotificationSystem */ = {
+			isa = PBXGroup;
+			children = (
+				3C9F1E552BDA2520005FF7C3 /* KKNotificationSystemController.swift */,
+				3C5CD59B2BDB718B00C5E3AF /* KKNotificationSystemViewModel.swift */,
+				3C5CD59F2BDB80C500C5E3AF /* KKNotificationSystemRouter.swift */,
+			);
+			path = KKNotificationSystem;
+			sourceTree = "<group>";
+		};
+		3C9F1E572BDA26CD005FF7C3 /* KKNotificationSystemCell */ = {
+			isa = PBXGroup;
+			children = (
+				3C9F1E582BDA26EB005FF7C3 /* KKNotificationSystemTableViewCell.swift */,
+				3C9F1E592BDA26EB005FF7C3 /* KKNotificationSystemTableViewCell.xib */,
+			);
+			path = KKNotificationSystemCell;
+			sourceTree = "<group>";
+		};
+		3CB5F1242BA9D3580063C4AC /* NotificationUserRecom */ = {
+			isa = PBXGroup;
+			children = (
+				3CB5F1252BA9D3720063C4AC /* NotificationUserRecomTableViewCell.swift */,
+				3CB5F1262BA9D3720063C4AC /* NotificationUserRecomTableViewCell.xib */,
+				3CB5F1292BA9DE3B0063C4AC /* NotificationUserRecomHeaderView.swift */,
+			);
+			path = NotificationUserRecom;
+			sourceTree = "<group>";
+		};
+		3CC6092B2BAABD1100471E0D /* NewFollower */ = {
+			isa = PBXGroup;
+			children = (
+				3CA487D12BAC1592009A5FEE /* NewFollowerController.swift */,
+				3CA487D32BAC1641009A5FEE /* NewFollowerViewModel.swift */,
+			);
+			path = NewFollower;
+			sourceTree = "<group>";
+		};
+		3CC609302BAAC56600471E0D /* NewFollower */ = {
+			isa = PBXGroup;
+			children = (
+				3CC609312BAAC5AC00471E0D /* NewFollowerTableViewCell.swift */,
+				3CC609322BAAC5AC00471E0D /* NewFollowerTableViewCell.xib */,
+			);
+			path = NewFollower;
+			sourceTree = "<group>";
+		};
+		3CC609362BAAC7F000471E0D /* NewFollowerEmpty */ = {
+			isa = PBXGroup;
+			children = (
+				3CC609372BAAC81000471E0D /* NewFollowerEmptyTableViewCell.swift */,
+				3CC609382BAAC81000471E0D /* NewFollowerEmptyTableViewCell.xib */,
+			);
+			path = NewFollowerEmpty;
+			sourceTree = "<group>";
+		};
+		3CC9341C2BEE1C76009277C7 /* NotificationTransactionDetail */ = {
+			isa = PBXGroup;
+			children = (
+				3CC934222BEE1CE6009277C7 /* NotificationTransactionDetailController.swift */,
+				3CC934242BEE2825009277C7 /* NotificationTransactionDetailViewModel.swift */,
+			);
+			path = NotificationTransactionDetail;
+			sourceTree = "<group>";
+		};
+		3CC9341D2BEE1C84009277C7 /* NotificationTransactionDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				3CC9341E2BEE1C96009277C7 /* NotificationTransactionDetailView.swift */,
+				3CC934202BEE1C9E009277C7 /* NotificationTransactionDetailView.xib */,
+			);
+			path = NotificationTransactionDetailView;
+			sourceTree = "<group>";
+		};
+		3CC9342E2BEFF7D6009277C7 /* TransactionDetailOrderView */ = {
+			isa = PBXGroup;
+			children = (
+				3CC934342BEFF824009277C7 /* TransactionDetailOrderView.swift */,
+				3CC934382BEFF857009277C7 /* TransactionDetailOrderView.xib */,
+			);
+			path = TransactionDetailOrderView;
+			sourceTree = "<group>";
+		};
+		3CC9342F2BEFF7ED009277C7 /* TransactionDetailDonationView */ = {
+			isa = PBXGroup;
+			children = (
+				3CC934362BEFF832009277C7 /* TransactionDetailDonationView.swift */,
+				3CC934302BEFF802009277C7 /* TransactionDetailDonationView.xib */,
+			);
+			path = TransactionDetailDonationView;
+			sourceTree = "<group>";
+		};
+		3CC9343A2BEFFAED009277C7 /* TransactionDetailDonation */ = {
+			isa = PBXGroup;
+			children = (
+				3CC9343E2BEFFB2E009277C7 /* TransactionDetailDonationController.swift */,
+				3CC934412BEFFC0B009277C7 /* TransactionDetailDonationViewModel.swift */,
+			);
+			path = TransactionDetailDonation;
+			sourceTree = "<group>";
+		};
+		3CC9343B2BEFFAFE009277C7 /* TransactionDetailOrder */ = {
+			isa = PBXGroup;
+			children = (
+				3CC9343C2BEFFB20009277C7 /* TransactionDetailOrderController.swift */,
+				3CC934432BEFFC16009277C7 /* TransactionDetailOrderViewModel.swift */,
+			);
+			path = TransactionDetailOrder;
+			sourceTree = "<group>";
+		};
+		3CF368FA2BE391C80051E639 /* NotificationSettingController */ = {
+			isa = PBXGroup;
+			children = (
+				3CF368FB2BE391DD0051E639 /* NotificationSettingController.swift */,
+				3CF369032BE409EE0051E639 /* NotificationSettingViewModel.swift */,
+			);
+			path = NotificationSettingController;
+			sourceTree = "<group>";
+		};
+		3CF368FE2BE391FE0051E639 /* NotificationSettingView */ = {
+			isa = PBXGroup;
+			children = (
+				3CF368FF2BE392190051E639 /* NotificationSettingView.swift */,
+				3CF369012BE392210051E639 /* NotificationSettingView.xib */,
+			);
+			path = NotificationSettingView;
+			sourceTree = "<group>";
+		};
+		3CF369172BE430690051E639 /* NotificationSuggestionInfo */ = {
+			isa = PBXGroup;
+			children = (
+				3CF369182BE430780051E639 /* NotificationSuggestionInfoController.swift */,
+			);
+			path = NotificationSuggestionInfo;
+			sourceTree = "<group>";
+		};
+		3CF3691A2BE430F30051E639 /* NotificationSuggestionInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				3CF3691B2BE431020051E639 /* NotificationSuggestionInfoView.swift */,
+				3CF3691D2BE431090051E639 /* NotificationSuggestionInfoView.xib */,
+			);
+			path = NotificationSuggestionInfoView;
+			sourceTree = "<group>";
+		};
+		6E0A70DF2BB6F7B100B88E41 /* Contents */ = {
+			isa = PBXGroup;
+			children = (
+				6E0A70D82BB5DEEF00B88E41 /* NotificationSystemContentController.swift */,
+				6E0A70DA2BB6F4C600B88E41 /* NotificationSystemContentUIComposer.swift */,
+				6E0A70DD2BB6F54800B88E41 /* NotificationSystemContentViewService.swift */,
+			);
+			path = Contents;
+			sourceTree = "<group>";
+		};
+		6E1AD0F32BA93C4B00564124 /* KipasKipasNotificationiOS */ = {
+			isa = PBXGroup;
+			children = (
+				3C4EE25A2BA945DA009AB052 /* Sources */,
+				6E1AD0F42BA93C4B00564124 /* KipasKipasNotificationiOS.h */,
+				3C4CCAA82BEB6548002A5758 /* AssetsNotification.xcassets */,
+			);
+			path = KipasKipasNotificationiOS;
+			sourceTree = "<group>";
+		};
+		6E1AD1092BA9521D00564124 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				6E1AD1212BA979C000564124 /* NotificationActivitiesLoader.swift */,
+				6E1AD1272BA98A1700564124 /* NotificationFollowersLoader.swift */,
+				6E1AD14B2BAAAE3600564124 /* NotificationSuggestionAccountLoader.swift */,
+				6E1AD15A2BAAC8FF00564124 /* NotificationTransactionLoader.swift */,
+				6E1AD1602BAAEFEA00564124 /* NotificationSystemLoader.swift */,
+				6E1AD1732BABB8E900564124 /* NotificationActivitiesDetailLoader.swift */,
+				6E1AD1792BABBCF500564124 /* NotificationActivitiesIsReadCheck.swift */,
+				6E8F650A2BAC3E6700EAA61A /* NotificationFollowUserLoader.swift */,
+				3CF369072BE412A60051E639 /* NotificationPreferencesLoader.swift */,
+				3CF369152BE4229D0051E639 /* NotificationPreferencesUpdater.swift */,
+				3CC934262BEE2B7F009277C7 /* NotificationTransactionDetailLoader.swift */,
+				6E1AD1552BAAC4C400564124 /* Models */,
+				3C126D782BF7562D004BF178 /* NotificationSystemIsReadCheck.swift */,
+				3C8381EC2BFDB53E003A7264 /* NotificationUnreadLoader.swift */,
+				3C9679402C0307D100F119B5 /* NotificationReadUpdater.swift */,
+				3C8282A82C517FDB004A1982 /* NotificationLotteryLoader.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		6E1AD10A2BA9522C00564124 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6EF1862C2BB55B09008DB109 /* NotificationDelegate.swift */,
+				6E1AD10D2BA95C1700564124 /* API */,
+				6E1AD1092BA9521D00564124 /* Features */,
+				6E1AD1522BAABA6B00564124 /* Presenters */,
+				6E1AD1702BABB4CA00564124 /* Services */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		6E1AD10D2BA95C1700564124 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				6E1AD10E2BA95C2500564124 /* NotificationEndpoint.swift */,
+				6E1AD1232BA97A0600564124 /* RemoteNotificationActivitiesLoader.swift */,
+				6E1AD12B2BA98ADC00564124 /* RemoteNotificationFollowersLoader.swift */,
+				6E1AD14D2BAAAF2300564124 /* RemoteNotificationSuggestionAccountLoader.swift */,
+				6E1AD15C2BAAC96C00564124 /* RemoteNotificationTransactionLoader.swift */,
+				6E1AD1622BAAF05400564124 /* RemoteNotificationSystemLoader.swift */,
+				6E1AD1752BABBA2F00564124 /* RemoteNotificationActivitiesDetailLoader.swift */,
+				6E1AD17B2BABBD9300564124 /* RemoteNotificationActivitiesIsReadCheck.swift */,
+				6E8F650C2BAC3EBF00EAA61A /* RemoteNotificationFollowUserLoader.swift */,
+				3CF3690C2BE41DDB0051E639 /* RemoteNotificationPreferencesLoader.swift */,
+				3CF369112BE4222C0051E639 /* RemoteNotificationPreferencesUpdater.swift */,
+				3CC9342A2BEE2C8A009277C7 /* RemoteNotificationTransactionDetailLoader.swift */,
+				3C126D762BF75615004BF178 /* RemoteNotificationSystemIsReadCheck.swift */,
+				3C8381EE2BFDB5BB003A7264 /* RemoteNotificationUnreadLoader.swift */,
+				3C96793E2C0307BA00F119B5 /* RemoteNotificationReadUpdater.swift */,
+				3C8282AA2C518001004A1982 /* RemoteNotificationLotteryLoader.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		6E1AD1182BA96DE600564124 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E1AD1442BAA854500564124 /* KipasKipasLoginiOS.framework */,
+				6E1AD1412BAA853D00564124 /* KipasKipasLogin.framework */,
+				6E1AD13E2BAA805200564124 /* KipasKipasShared.framework */,
+				6E1AD1392BAA7EC400564124 /* KipasKipasNetworking.framework */,
+				6E1AD1192BA96DE600564124 /* KipasKipasNetworking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E1AD1522BAABA6B00564124 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				6E1AD1502BAABA6600564124 /* NotificationProfileStoryPresenters.swift */,
+				6E1AD1532BAAC46700564124 /* NotificationStoryPresenters.swift */,
+				6E1AD1642BAB0B4C00564124 /* NotificationActivitiesPresenters.swift */,
+				6EF186282BB55A96008DB109 /* NotificationSystemIsReadPresenters.swift */,
+				6EF186292BB55A96008DB109 /* NotificationSystemUnreadPresenters.swift */,
+				6E1AD1662BAB0C2200564124 /* NotificationFollowersPresenters.swift */,
+				6E1AD1682BAB0C8A00564124 /* NotificationSuggestionAccountPresenters.swift */,
+				6E1AD17F2BABBF8500564124 /* NotificationActivitiesIsReadPresenters.swift */,
+				6E8F650E2BAC42DB00EAA61A /* NotificationFollowUserPresenters.swift */,
+				6E1AD16A2BAB0D0400564124 /* NotificationSystemPresenters.swift */,
+				6E1AD17D2BABBF1100564124 /* NotificationActivitiesDetailPresenters.swift */,
+				6E1AD16C2BABB40700564124 /* NotificationTransactionPresenters.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		6E1AD1552BAAC4C400564124 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E1AD1252BA97A7900564124 /* NotificationActivitiesItem.swift */,
+				6E1AD1292BA98A3A00564124 /* NotificationFollowersItem.swift */,
+				6EF186262BB55A51008DB109 /* NotificationSystemUnreadItem.swift */,
+				6E1AD1492BAAADC100564124 /* NotificationSuggestionAccountItem.swift */,
+				6E1AD15E2BAAED6A00564124 /* NotificationSystemItem.swift */,
+				6E1AD1582BAAC6BB00564124 /* NotificationTransactionItem.swift */,
+				6E1AD1142BA96B5900564124 /* StoryProfileItem.swift */,
+				6E1AD1772BABBBD200564124 /* NotificationDefaultResponse.swift */,
+				3CF3690F2BE41E3E0051E639 /* NotificationPreferencesItem.swift */,
+				3CF369132BE422690051E639 /* NotificationPreferencesUpdateItem.swift */,
+				3CC934282BEE2BFB009277C7 /* NotificationTransactionDetailItem.swift */,
+				3C8282AC2C5181CE004A1982 /* NotificationLotteryItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6E1AD1702BABB4CA00564124 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6E1AD1812BABC05C00564124 /* NotificationStoryService.swift */,
+				6E1AD1852BABC21700564124 /* NotificationActivitiesService.swift */,
+				6E1AD18D2BABC42A00564124 /* NotificationActivitiesDetailService.swift */,
+				6E1AD18F2BABC52000564124 /* NotificationActivitiesIsReadService.swift */,
+				6E1AD1912BABC5C000564124 /* NotificationServiceFactory.swift */,
+				6E1AD1872BABC28100564124 /* NotificationFollowersService.swift */,
+				6E1AD1892BABC2D700564124 /* NotificationSystemService.swift */,
+				6E1AD18B2BABC39C00564124 /* NotificationTransactionService.swift */,
+				6E8F65102BAC433300EAA61A /* NotificationFollowUserService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6E259F202BA90DDE00FF51AC = {
+			isa = PBXGroup;
+			children = (
+				6E259F2C2BA90DDE00FF51AC /* KipasKipasNotification */,
+				6E259F512BA90EDC00FF51AC /* KipasKipasNotificationApp */,
+				6E1AD0F32BA93C4B00564124 /* KipasKipasNotificationiOS */,
+				6E259F2B2BA90DDE00FF51AC /* Products */,
+				3C1736082BAA1D3B00F5D580 /* Frameworks */,
+				6E1AD1182BA96DE600564124 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6E259F2B2BA90DDE00FF51AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E259F2A2BA90DDE00FF51AC /* KipasKipasNotification.framework */,
+				6E259F502BA90EDC00FF51AC /* KipasKipasNotificationApp.app */,
+				6E1AD0F22BA93C4A00564124 /* KipasKipasNotificationiOS.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E259F2C2BA90DDE00FF51AC /* KipasKipasNotification */ = {
+			isa = PBXGroup;
+			children = (
+				6E259F2D2BA90DDE00FF51AC /* KipasKipasNotification.h */,
+				6E1AD10A2BA9522C00564124 /* Sources */,
+			);
+			path = KipasKipasNotification;
+			sourceTree = "<group>";
+		};
+		6E259F512BA90EDC00FF51AC /* KipasKipasNotificationApp */ = {
+			isa = PBXGroup;
+			children = (
+				6E259F522BA90EDC00FF51AC /* AppDelegate.swift */,
+				6E259F542BA90EDC00FF51AC /* SceneDelegate.swift */,
+				6E1AD1472BAA85A400564124 /* SceneDelegate+Login.swift */,
+				6E259F562BA90EDC00FF51AC /* ViewController.swift */,
+				6E1AD13C2BAA803300564124 /* UserLoggedInStore.swift */,
+				6E259F5B2BA90EDD00FF51AC /* Assets.xcassets */,
+				6E259F5D2BA90EDD00FF51AC /* LaunchScreen.storyboard */,
+				6E259F602BA90EDD00FF51AC /* Info.plist */,
+			);
+			path = KipasKipasNotificationApp;
+			sourceTree = "<group>";
+		};
+		AF84CA5D2BB5574900B99374 /* NotificationSystem */ = {
+			isa = PBXGroup;
+			children = (
+				6E0A70DF2BB6F7B100B88E41 /* Contents */,
+				AF84CA562BB5574900B99374 /* NotificationSystemIsReadService.swift */,
+				AF84CA542BB5574900B99374 /* NotificationSystemCellController.swift */,
+				6E0A70E02BB6F95F00B88E41 /* NotificationSystemSettingController.swift */,
+				6EFE0F7F2BBA7AC000594B9D /* SystemSettingTypesController.swift */,
+				3C17429E2BDBA64B00D2F9E0 /* SystemSettingTypesView.xib */,
+				6EFE0F812BBA7AD000594B9D /* SystemSettingTypesView.swift */,
+				6EFE0F7B2BB9F49300594B9D /* NotificationSystemSettingView.swift */,
+				6EFE0F7D2BB9FAE800594B9D /* NotificationSystemSettingItemCell.swift */,
+				AF84CA552BB5574900B99374 /* NotificationSystemController.swift */,
+				AF84CA572BB5574900B99374 /* NotificationSystemItemCell.swift */,
+				6EE577192BBD502E00D06B1A /* NotificationSystemEnableController.swift */,
+				6EE5771B2BBD504D00D06B1A /* NotificationSystemEnableView.swift */,
+				AF84CA582BB5574900B99374 /* NotificationSystemPagingController.swift */,
+				AF84CA592BB5574900B99374 /* NotificationSystemUIComposer.swift */,
+				AF84CA5A2BB5574900B99374 /* NotificationSystemUnreadService.swift */,
+				AF84CA5B2BB5574900B99374 /* NotificationSystemViewService.swift */,
+				AF84CA5C2BB5574900B99374 /* NSCollectionLayoutSection+Ext.swift */,
+			);
+			path = NotificationSystem;
+			sourceTree = "<group>";
+		};
+		AF84CA682BB5575D00B99374 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AF84CA672BB5575D00B99374 /* TransactionCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AF84CA6B2BB5575D00B99374 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				AF84CA692BB5575D00B99374 /* TransactionSettingController.swift */,
+				AF84CA6A2BB5575D00B99374 /* TransactionSettingView.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		AF84CA6F2BB5575D00B99374 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				AF84CA682BB5575D00B99374 /* Cells */,
+				AF84CA6B2BB5575D00B99374 /* Setting */,
+				AF84CA6C2BB5575D00B99374 /* TransactionController.swift */,
+				AF84CA6D2BB5575D00B99374 /* TransactionEmptyView.swift */,
+				AF84CA6E2BB5575D00B99374 /* TransactionView.swift */,
+				3CC9342C2BEE3247009277C7 /* TransactionRouter.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6E1AD0ED2BA93C4A00564124 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E1AD0F52BA93C4B00564124 /* KipasKipasNotificationiOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E259F252BA90DDE00FF51AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E259F2E2BA90DDE00FF51AC /* KipasKipasNotification.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6E1AD0F12BA93C4A00564124 /* KipasKipasNotificationiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E1AD0FA2BA93C4B00564124 /* Build configuration list for PBXNativeTarget "KipasKipasNotificationiOS" */;
+			buildPhases = (
+				6E1AD0ED2BA93C4A00564124 /* Headers */,
+				6E1AD0EE2BA93C4A00564124 /* Sources */,
+				6E1AD0EF2BA93C4A00564124 /* Frameworks */,
+				6E1AD0F02BA93C4A00564124 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CE5749B2BABF13500539FEC /* PBXTargetDependency */,
+			);
+			name = KipasKipasNotificationiOS;
+			packageProductDependencies = (
+				3CE574A22BABFACA00539FEC /* SendbirdChatSDK */,
+				6E36EFCD2BAD6AA8004668FD /* Kingfisher */,
+			);
+			productName = KipasKipasNotificationiOS;
+			productReference = 6E1AD0F22BA93C4A00564124 /* KipasKipasNotificationiOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6E259F292BA90DDE00FF51AC /* KipasKipasNotification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E259F312BA90DDE00FF51AC /* Build configuration list for PBXNativeTarget "KipasKipasNotification" */;
+			buildPhases = (
+				6E259F252BA90DDE00FF51AC /* Headers */,
+				6E259F262BA90DDE00FF51AC /* Sources */,
+				6E259F272BA90DDE00FF51AC /* Frameworks */,
+				6E259F282BA90DDE00FF51AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KipasKipasNotification;
+			productName = KipasKipasNotification;
+			productReference = 6E259F2A2BA90DDE00FF51AC /* KipasKipasNotification.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6E259F4F2BA90EDC00FF51AC /* KipasKipasNotificationApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E259F612BA90EDD00FF51AC /* Build configuration list for PBXNativeTarget "KipasKipasNotificationApp" */;
+			buildPhases = (
+				6E259F4C2BA90EDC00FF51AC /* Sources */,
+				6E259F4D2BA90EDC00FF51AC /* Frameworks */,
+				6E259F4E2BA90EDC00FF51AC /* Resources */,
+				3C4EE2642BA94703009AB052 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E1AD0F72BA93C4B00564124 /* PBXTargetDependency */,
+				6E1AD1302BA994E000564124 /* PBXTargetDependency */,
+			);
+			name = KipasKipasNotificationApp;
+			packageProductDependencies = (
+				3CE574A42BABFADC00539FEC /* SendbirdChatSDK */,
+			);
+			productName = KipasKipasNotificationApp;
+			productReference = 6E259F502BA90EDC00FF51AC /* KipasKipasNotificationApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E259F212BA90DDE00FF51AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					6E1AD0F12BA93C4A00564124 = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
+					};
+					6E259F292BA90DDE00FF51AC = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					6E259F4F2BA90EDC00FF51AC = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 6E259F242BA90DDE00FF51AC /* Build configuration list for PBXProject "KipasKipasNotification" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E259F202BA90DDE00FF51AC;
+			packageReferences = (
+				3CE574A12BABFACA00539FEC /* XCRemoteSwiftPackageReference "sendbird-chat-sdk-ios" */,
+				6E36EFCC2BAD6AA8004668FD /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = 6E259F2B2BA90DDE00FF51AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E259F292BA90DDE00FF51AC /* KipasKipasNotification */,
+				6E259F4F2BA90EDC00FF51AC /* KipasKipasNotificationApp */,
+				6E1AD0F12BA93C4A00564124 /* KipasKipasNotificationiOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E1AD0F02BA93C4A00564124 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CC6093A2BAAC81000471E0D /* NewFollowerEmptyTableViewCell.xib in Resources */,
+				3C7C7A382BDBBA4A00E2942E /* NotificationSystemMuteView.xib in Resources */,
+				3C87B21C2BAB26D200495245 /* NotificationActivityTableViewCell.xib in Resources */,
+				3C17429F2BDBA64B00D2F9E0 /* SystemSettingTypesView.xib in Resources */,
+				3C4EE2692BA94C75009AB052 /* NotificationMenuTableViewCell.xib in Resources */,
+				3C9F1E5B2BDA26EB005FF7C3 /* KKNotificationSystemTableViewCell.xib in Resources */,
+				3C87B20A2BAACE3A00495245 /* NoInternetConnectionView.xib in Resources */,
+				3CC934392BEFF857009277C7 /* TransactionDetailOrderView.xib in Resources */,
+				3CB5F1282BA9D3720063C4AC /* NotificationUserRecomTableViewCell.xib in Resources */,
+				3C8895F22BBFECAB00A33CEB /* NotificationDetailActivityTableViewCell.xib in Resources */,
+				3CF369022BE392210051E639 /* NotificationSettingView.xib in Resources */,
+				3C1736052BAA088100F5D580 /* NotificationDirectMessageTableViewCell.xib in Resources */,
+				3C89CCFB2BD7BAD20090D58D /* ToastView.xib in Resources */,
+				3C4EE26E2BA95C84009AB052 /* NotificationLastActivityTableViewCell.xib in Resources */,
+				3CC934312BEFF802009277C7 /* TransactionDetailDonationView.xib in Resources */,
+				3C87B2172BAB22E800495245 /* NotificationActivityEmptyTableViewCell.xib in Resources */,
+				3C4CCAA92BEB6548002A5758 /* AssetsNotification.xcassets in Resources */,
+				3CC934212BEE1C9E009277C7 /* NotificationTransactionDetailView.xib in Resources */,
+				3CC609342BAAC5AC00471E0D /* NewFollowerTableViewCell.xib in Resources */,
+				3CF3691E2BE431090051E639 /* NotificationSuggestionInfoView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E259F282BA90DDE00FF51AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E259F4E2BA90EDC00FF51AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E259F5F2BA90EDD00FF51AC /* LaunchScreen.storyboard in Resources */,
+				6E259F5C2BA90EDD00FF51AC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E1AD0EE2BA93C4A00564124 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C87B20C2BAACE5600495245 /* NoInternetConnectionView.swift in Sources */,
+				6EFE0F7E2BB9FAE800594B9D /* NotificationSystemSettingItemCell.swift in Sources */,
+				AF84CA602BB5574900B99374 /* NotificationSystemIsReadService.swift in Sources */,
+				6E0A70E12BB6F95F00B88E41 /* NotificationSystemSettingController.swift in Sources */,
+				AF84CA5E2BB5574900B99374 /* NotificationSystemCellController.swift in Sources */,
+				3CF368F92BE3535E0051E639 /* Ext+UIImageView.swift in Sources */,
+				3C87B21B2BAB26D200495245 /* NotificationActivityTableViewCell.swift in Sources */,
+				3CA487D62BAC1B4D009A5FEE /* NotificationRouter.swift in Sources */,
+				6E0A70DB2BB6F4C600B88E41 /* NotificationSystemContentUIComposer.swift in Sources */,
+				3C5CD59C2BDB718B00C5E3AF /* KKNotificationSystemViewModel.swift in Sources */,
+				3CC609332BAAC5AC00471E0D /* NewFollowerTableViewCell.swift in Sources */,
+				3C4EE2612BA94692009AB052 /* NotificationController.swift in Sources */,
+				3C8895F62BBFF79200A33CEB /* NotificationActivityRouter.swift in Sources */,
+				3C8895F12BBFECAB00A33CEB /* NotificationDetailActivityTableViewCell.swift in Sources */,
+				3CC934422BEFFC0B009277C7 /* TransactionDetailDonationViewModel.swift in Sources */,
+				3CC934252BEE2825009277C7 /* NotificationTransactionDetailViewModel.swift in Sources */,
+				3CF369042BE409EE0051E639 /* NotificationSettingViewModel.swift in Sources */,
+				6EFE0F822BBA7AD000594B9D /* SystemSettingTypesView.swift in Sources */,
+				3CC9343D2BEFFB20009277C7 /* TransactionDetailOrderController.swift in Sources */,
+				AF84CA652BB5574900B99374 /* NotificationSystemViewService.swift in Sources */,
+				3C1735F42BA9E37500F5D580 /* Ext+UIView.swift in Sources */,
+				3C9F1E5A2BDA26EB005FF7C3 /* KKNotificationSystemTableViewCell.swift in Sources */,
+				3C8895F42BBFF62A00A33CEB /* NotificationDetailActivityViewModel.swift in Sources */,
+				AF84CA712BB5575D00B99374 /* TransactionSettingController.swift in Sources */,
+				3C1736072BAA1B6200F5D580 /* Ext+UICollectionView.swift in Sources */,
+				AF84CA612BB5574900B99374 /* NotificationSystemItemCell.swift in Sources */,
+				3CC609392BAAC81000471E0D /* NewFollowerEmptyTableViewCell.swift in Sources */,
+				3C9F1E562BDA2520005FF7C3 /* KKNotificationSystemController.swift in Sources */,
+				3CC934372BEFF832009277C7 /* TransactionDetailDonationView.swift in Sources */,
+				6EE5771A2BBD502F00D06B1A /* NotificationSystemEnableController.swift in Sources */,
+				3C8895ED2BBFEC1900A33CEB /* NotificationDetailActivityController.swift in Sources */,
+				3C1735F22BA9E34C00F5D580 /* Ext+UITableView.swift in Sources */,
+				3CC9343F2BEFFB2E009277C7 /* TransactionDetailDonationController.swift in Sources */,
+				3CC934442BEFFC16009277C7 /* TransactionDetailOrderViewModel.swift in Sources */,
+				AF84CA702BB5575D00B99374 /* TransactionCollectionViewCell.swift in Sources */,
+				3CC6092F2BAAC2FC00471E0D /* Ext+UIViewController.swift in Sources */,
+				3CC9341F2BEE1C96009277C7 /* NotificationTransactionDetailView.swift in Sources */,
+				3C4EE26D2BA95C84009AB052 /* NotificationLastActivityTableViewCell.swift in Sources */,
+				AF84CA752BB5575D00B99374 /* TransactionView.swift in Sources */,
+				6EE5771C2BBD504D00D06B1A /* NotificationSystemEnableView.swift in Sources */,
+				3C87B2122BAB21D600495245 /* NotificationActivityController.swift in Sources */,
+				AF84CA742BB5575D00B99374 /* TransactionEmptyView.swift in Sources */,
+				3CF369002BE392190051E639 /* NotificationSettingView.swift in Sources */,
+				3C1736042BAA088100F5D580 /* NotificationDirectMessageTableViewCell.swift in Sources */,
+				3CA487D42BAC1641009A5FEE /* NewFollowerViewModel.swift in Sources */,
+				3C5CD5A02BDB80C500C5E3AF /* KKNotificationSystemRouter.swift in Sources */,
+				3CB5F12A2BA9DE3B0063C4AC /* NotificationUserRecomHeaderView.swift in Sources */,
+				3C5CD59A2BDA69B300C5E3AF /* KKNotificationContentSystemController.swift in Sources */,
+				3C1735F62BA9E3CF00F5D580 /* Ext+UIColor.swift in Sources */,
+				6E0A70DE2BB6F54800B88E41 /* NotificationSystemContentViewService.swift in Sources */,
+				3C1735FA2BA9E98200F5D580 /* NotificationStoryTableViewCell.swift in Sources */,
+				3CC9342D2BEE3247009277C7 /* TransactionRouter.swift in Sources */,
+				6E0A70D92BB5DEEF00B88E41 /* NotificationSystemContentController.swift in Sources */,
+				AF84CA622BB5574900B99374 /* NotificationSystemPagingController.swift in Sources */,
+				3C89CCFA2BD7BAD20090D58D /* ToastView.swift in Sources */,
+				3C87B2162BAB22E800495245 /* NotificationActivityEmptyTableViewCell.swift in Sources */,
+				3CF369192BE430780051E639 /* NotificationSuggestionInfoController.swift in Sources */,
+				3C89CCFC2BD7BAD20090D58D /* Toast.swift in Sources */,
+				AF84CA662BB5574900B99374 /* NSCollectionLayoutSection+Ext.swift in Sources */,
+				AF84CA632BB5574900B99374 /* NotificationSystemUIComposer.swift in Sources */,
+				3CC934352BEFF824009277C7 /* TransactionDetailOrderView.swift in Sources */,
+				3C7C7A332BDBB9DF00E2942E /* NotificationSystemMuteController.swift in Sources */,
+				AF84CA722BB5575D00B99374 /* TransactionSettingView.swift in Sources */,
+				3C3F84052BAB7D560075A8B3 /* NotificationViewModel.swift in Sources */,
+				3C4193B22BB4495B00600269 /* NotificationActivityViewModel.swift in Sources */,
+				3CC934232BEE1CE6009277C7 /* NotificationTransactionDetailController.swift in Sources */,
+				6EFE0F7C2BB9F49300594B9D /* NotificationSystemSettingView.swift in Sources */,
+				AF84CA5F2BB5574900B99374 /* NotificationSystemController.swift in Sources */,
+				AF84CA732BB5575D00B99374 /* TransactionController.swift in Sources */,
+				3CB5F1272BA9D3720063C4AC /* NotificationUserRecomTableViewCell.swift in Sources */,
+				6EFE0F802BBA7AC000594B9D /* SystemSettingTypesController.swift in Sources */,
+				3CF368FC2BE391DD0051E639 /* NotificationSettingController.swift in Sources */,
+				3C7C7A362BDBBA4300E2942E /* NotificationSystemMuteView.swift in Sources */,
+				AF84CA642BB5574900B99374 /* NotificationSystemUnreadService.swift in Sources */,
+				3CF3691C2BE431020051E639 /* NotificationSuggestionInfoView.swift in Sources */,
+				3C5CD59E2BDB7DCB00C5E3AF /* KKNotificationContentSystemViewModel.swift in Sources */,
+				3C4EE2682BA94C75009AB052 /* NotificationMenuTableViewCell.swift in Sources */,
+				3CA487D22BAC1592009A5FEE /* NewFollowerController.swift in Sources */,
+				3C4193B02BB3CEF600600269 /* ReachabilityNetwork.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E259F262BA90DDE00FF51AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C126D792BF7562D004BF178 /* NotificationSystemIsReadCheck.swift in Sources */,
+				3C96793F2C0307BA00F119B5 /* RemoteNotificationReadUpdater.swift in Sources */,
+				6E1AD15F2BAAED6A00564124 /* NotificationSystemItem.swift in Sources */,
+				6E1AD1672BAB0C2200564124 /* NotificationFollowersPresenters.swift in Sources */,
+				3C9679412C0307D100F119B5 /* NotificationReadUpdater.swift in Sources */,
+				6E1AD1922BABC5C000564124 /* NotificationServiceFactory.swift in Sources */,
+				6E8F650B2BAC3E6700EAA61A /* NotificationFollowUserLoader.swift in Sources */,
+				6E1AD1282BA98A1700564124 /* NotificationFollowersLoader.swift in Sources */,
+				6E1AD1802BABBF8500564124 /* NotificationActivitiesIsReadPresenters.swift in Sources */,
+				6E1AD12C2BA98ADC00564124 /* RemoteNotificationFollowersLoader.swift in Sources */,
+				3CC934272BEE2B7F009277C7 /* NotificationTransactionDetailLoader.swift in Sources */,
+				6E1AD1782BABBBD200564124 /* NotificationDefaultResponse.swift in Sources */,
+				6E1AD17E2BABBF1100564124 /* NotificationActivitiesDetailPresenters.swift in Sources */,
+				6E1AD1222BA979C000564124 /* NotificationActivitiesLoader.swift in Sources */,
+				6E1AD1242BA97A0600564124 /* RemoteNotificationActivitiesLoader.swift in Sources */,
+				3CF369162BE4229D0051E639 /* NotificationPreferencesUpdater.swift in Sources */,
+				6E1AD1592BAAC6BB00564124 /* NotificationTransactionItem.swift in Sources */,
+				6E1AD1612BAAEFEA00564124 /* NotificationSystemLoader.swift in Sources */,
+				3C8381ED2BFDB53E003A7264 /* NotificationUnreadLoader.swift in Sources */,
+				3C126D772BF75615004BF178 /* RemoteNotificationSystemIsReadCheck.swift in Sources */,
+				6E1AD1902BABC52000564124 /* NotificationActivitiesIsReadService.swift in Sources */,
+				6E1AD1152BA96B5900564124 /* StoryProfileItem.swift in Sources */,
+				6E1AD1692BAB0C8A00564124 /* NotificationSuggestionAccountPresenters.swift in Sources */,
+				6E1AD15B2BAAC8FF00564124 /* NotificationTransactionLoader.swift in Sources */,
+				6E1AD1652BAB0B4C00564124 /* NotificationActivitiesPresenters.swift in Sources */,
+				3C8282AD2C5181CE004A1982 /* NotificationLotteryItem.swift in Sources */,
+				3CC9342B2BEE2C8A009277C7 /* RemoteNotificationTransactionDetailLoader.swift in Sources */,
+				6EF1862D2BB55B09008DB109 /* NotificationDelegate.swift in Sources */,
+				6E1AD14A2BAAADC100564124 /* NotificationSuggestionAccountItem.swift in Sources */,
+				6E1AD1822BABC05C00564124 /* NotificationStoryService.swift in Sources */,
+				6E1AD14C2BAAAE3600564124 /* NotificationSuggestionAccountLoader.swift in Sources */,
+				6E1AD15D2BAAC96C00564124 /* RemoteNotificationTransactionLoader.swift in Sources */,
+				6E1AD18C2BABC39C00564124 /* NotificationTransactionService.swift in Sources */,
+				6E1AD14E2BAAAF2300564124 /* RemoteNotificationSuggestionAccountLoader.swift in Sources */,
+				6EF1862B2BB55A96008DB109 /* NotificationSystemUnreadPresenters.swift in Sources */,
+				6E1AD10F2BA95C2500564124 /* NotificationEndpoint.swift in Sources */,
+				6E1AD12A2BA98A3A00564124 /* NotificationFollowersItem.swift in Sources */,
+				6E1AD17A2BABBCF500564124 /* NotificationActivitiesIsReadCheck.swift in Sources */,
+				6E1AD1512BAABA6600564124 /* NotificationProfileStoryPresenters.swift in Sources */,
+				6E1AD1262BA97A7900564124 /* NotificationActivitiesItem.swift in Sources */,
+				3CF3690E2BE41DDB0051E639 /* RemoteNotificationPreferencesLoader.swift in Sources */,
+				6E8F650F2BAC42DB00EAA61A /* NotificationFollowUserPresenters.swift in Sources */,
+				6E1AD18E2BABC42A00564124 /* NotificationActivitiesDetailService.swift in Sources */,
+				3CF369102BE41E3E0051E639 /* NotificationPreferencesItem.swift in Sources */,
+				6E1AD18A2BABC2D700564124 /* NotificationSystemService.swift in Sources */,
+				6E8F65112BAC433300EAA61A /* NotificationFollowUserService.swift in Sources */,
+				3C8381EF2BFDB5BB003A7264 /* RemoteNotificationUnreadLoader.swift in Sources */,
+				3C8282A92C517FDB004A1982 /* NotificationLotteryLoader.swift in Sources */,
+				3CF369082BE412A60051E639 /* NotificationPreferencesLoader.swift in Sources */,
+				3CF369142BE422690051E639 /* NotificationPreferencesUpdateItem.swift in Sources */,
+				6E1AD17C2BABBD9300564124 /* RemoteNotificationActivitiesIsReadCheck.swift in Sources */,
+				6E1AD16B2BAB0D0400564124 /* NotificationSystemPresenters.swift in Sources */,
+				6E1AD1742BABB8E900564124 /* NotificationActivitiesDetailLoader.swift in Sources */,
+				6E1AD1762BABBA2F00564124 /* RemoteNotificationActivitiesDetailLoader.swift in Sources */,
+				3CC934292BEE2BFB009277C7 /* NotificationTransactionDetailItem.swift in Sources */,
+				6E1AD1862BABC21700564124 /* NotificationActivitiesService.swift in Sources */,
+				6EF186272BB55A51008DB109 /* NotificationSystemUnreadItem.swift in Sources */,
+				3CF369122BE4222C0051E639 /* RemoteNotificationPreferencesUpdater.swift in Sources */,
+				6EF1862A2BB55A96008DB109 /* NotificationSystemIsReadPresenters.swift in Sources */,
+				6E1AD1882BABC28100564124 /* NotificationFollowersService.swift in Sources */,
+				6E1AD1542BAAC46700564124 /* NotificationStoryPresenters.swift in Sources */,
+				6E1AD16D2BABB40700564124 /* NotificationTransactionPresenters.swift in Sources */,
+				3C8282AB2C518001004A1982 /* RemoteNotificationLotteryLoader.swift in Sources */,
+				6E1AD1632BAAF05400564124 /* RemoteNotificationSystemLoader.swift in Sources */,
+				6E8F650D2BAC3EBF00EAA61A /* RemoteNotificationFollowUserLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E259F4C2BA90EDC00FF51AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E259F572BA90EDC00FF51AC /* ViewController.swift in Sources */,
+				6E1AD1482BAA85A400564124 /* SceneDelegate+Login.swift in Sources */,
+				6E259F532BA90EDC00FF51AC /* AppDelegate.swift in Sources */,
+				6E259F552BA90EDC00FF51AC /* SceneDelegate.swift in Sources */,
+				6E1AD13D2BAA803300564124 /* UserLoggedInStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CE5749B2BABF13500539FEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E259F292BA90DDE00FF51AC /* KipasKipasNotification */;
+			targetProxy = 3CE5749A2BABF13500539FEC /* PBXContainerItemProxy */;
+		};
+		6E1AD0F72BA93C4B00564124 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E1AD0F12BA93C4A00564124 /* KipasKipasNotificationiOS */;
+			targetProxy = 6E1AD0F62BA93C4B00564124 /* PBXContainerItemProxy */;
+		};
+		6E1AD1302BA994E000564124 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E259F292BA90DDE00FF51AC /* KipasKipasNotification */;
+			targetProxy = 6E1AD12F2BA994E000564124 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6E259F5D2BA90EDD00FF51AC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E259F5E2BA90EDD00FF51AC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E1AD0FB2BA93C4B00564124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasNotificationiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6E1AD0FC2BA93C4B00564124 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasNotificationiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6E1AD1312BAA7D6600564124 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Staging;
+		};
+		6E1AD1322BAA7D6600564124 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasNotification;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		6E1AD1332BAA7D6600564124 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				API_BASE_URL = "https://stg-api-main.kipaskipas.com/api/v1";
+				API_TOOLS_BASE_URL = "https://tools.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasNotificationApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasNotificationApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SENDBIRD_APP_ID = "0A001737-DC56-4037-8685-6405E04FE2D7";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		6E1AD1342BAA7D6600564124 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasNotificationiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		6E1AD1352BAA7D7600564124 /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = ProdDebug;
+		};
+		6E1AD1362BAA7D7600564124 /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasNotification;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = ProdDebug;
+		};
+		6E1AD1372BAA7D7600564124 /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				API_BASE_URL = "https://test-api-main.kipaskipas.com/api/v1";
+				API_TOOLS_BASE_URL = "https://tools.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasNotificationApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasNotificationApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SENDBIRD_APP_ID = "FBACEF51-2E42-4F1F-B7CC-54D2D55AB8EA";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = ProdDebug;
+		};
+		6E1AD1382BAA7D7600564124 /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasNotificationiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = ProdDebug;
+		};
+		6E259F2F2BA90DDE00FF51AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6E259F302BA90DDE00FF51AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6E259F322BA90DDE00FF51AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasNotification;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6E259F332BA90DDE00FF51AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasNotification;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6E259F622BA90EDD00FF51AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				API_BASE_URL = "https://test-api-main.kipaskipas.com/api/v1";
+				API_TOOLS_BASE_URL = "https://test-tools.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasNotificationApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasNotificationApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SENDBIRD_APP_ID = "FBACEF51-2E42-4F1F-B7CC-54D2D55AB8EA";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6E259F632BA90EDD00FF51AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				API_BASE_URL = "https://api-main.kipaskipas.com/api/v1";
+				API_TOOLS_BASE_URL = "https://tools.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasNotificationApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasNotificationApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SENDBIRD_APP_ID = "7EB6B9A5-C78E-4295-A1FE-8A73F0DCE3EC";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E1AD0FA2BA93C4B00564124 /* Build configuration list for PBXNativeTarget "KipasKipasNotificationiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E1AD0FB2BA93C4B00564124 /* Debug */,
+				6E1AD1342BAA7D6600564124 /* Staging */,
+				6E1AD0FC2BA93C4B00564124 /* Release */,
+				6E1AD1382BAA7D7600564124 /* ProdDebug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E259F242BA90DDE00FF51AC /* Build configuration list for PBXProject "KipasKipasNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E259F2F2BA90DDE00FF51AC /* Debug */,
+				6E1AD1312BAA7D6600564124 /* Staging */,
+				6E259F302BA90DDE00FF51AC /* Release */,
+				6E1AD1352BAA7D7600564124 /* ProdDebug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E259F312BA90DDE00FF51AC /* Build configuration list for PBXNativeTarget "KipasKipasNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E259F322BA90DDE00FF51AC /* Debug */,
+				6E1AD1322BAA7D6600564124 /* Staging */,
+				6E259F332BA90DDE00FF51AC /* Release */,
+				6E1AD1362BAA7D7600564124 /* ProdDebug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E259F612BA90EDD00FF51AC /* Build configuration list for PBXNativeTarget "KipasKipasNotificationApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E259F622BA90EDD00FF51AC /* Debug */,
+				6E1AD1332BAA7D6600564124 /* Staging */,
+				6E259F632BA90EDD00FF51AC /* Release */,
+				6E1AD1372BAA7D7600564124 /* ProdDebug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3CE574A12BABFACA00539FEC /* XCRemoteSwiftPackageReference "sendbird-chat-sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sendbird/sendbird-chat-sdk-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.9.2;
+			};
+		};
+		6E36EFCC2BAD6AA8004668FD /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3CE574A22BABFACA00539FEC /* SendbirdChatSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CE574A12BABFACA00539FEC /* XCRemoteSwiftPackageReference "sendbird-chat-sdk-ios" */;
+			productName = SendbirdChatSDK;
+		};
+		3CE574A42BABFADC00539FEC /* SendbirdChatSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CE574A12BABFACA00539FEC /* XCRemoteSwiftPackageReference "sendbird-chat-sdk-ios" */;
+			productName = SendbirdChatSDK;
+		};
+		6E36EFCD2BAD6AA8004668FD /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E36EFCC2BAD6AA8004668FD /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6E259F212BA90DDE00FF51AC /* Project object */;
+}

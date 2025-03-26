@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoRegular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MyProductInfoCollectionViewCell" customModule="KipasKipas" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="363" height="118"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="363" height="118"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iAS-ky-MMk">
+                        <rect key="frame" x="16" y="8" width="331" height="87.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="Bxk-bG-9LN">
+                                <rect key="frame" x="16" y="19" width="299" height="52.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JLc-K2-8zt">
+                                        <rect key="frame" x="0.0" y="0.0" width="299" height="14.5"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                        <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="ekV-fG-JML">
+                                        <rect key="frame" x="0.0" y="25.5" width="299" height="27"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rla-Rc-iLY">
+                                                <rect key="frame" x="263" y="0.0" width="36" height="27"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" name="primary"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="primaryLowTint"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Bxk-bG-9LN" secondAttribute="trailing" constant="16" id="G8z-1Z-TKz"/>
+                            <constraint firstAttribute="bottom" secondItem="Bxk-bG-9LN" secondAttribute="bottom" constant="16" id="Zkh-P7-mpb"/>
+                            <constraint firstItem="Bxk-bG-9LN" firstAttribute="top" secondItem="iAS-ky-MMk" secondAttribute="top" constant="19" id="fGA-NM-Yvz"/>
+                            <constraint firstItem="Bxk-bG-9LN" firstAttribute="leading" secondItem="iAS-ky-MMk" secondAttribute="leading" constant="16" id="z00-of-pft"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="setCornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iAS-ky-MMk" secondAttribute="bottom" id="Dzc-ka-haM"/>
+                <constraint firstItem="iAS-ky-MMk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="PdQ-wQ-Ll8"/>
+                <constraint firstAttribute="trailing" secondItem="iAS-ky-MMk" secondAttribute="trailing" constant="16" id="d7j-dN-XcB"/>
+                <constraint firstItem="iAS-ky-MMk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="lAY-0P-arg"/>
+            </constraints>
+            <size key="customSize" width="363" height="119"/>
+            <connections>
+                <outlet property="messageButton" destination="Rla-Rc-iLY" id="NLz-K1-AUP"/>
+                <outlet property="messageLabel" destination="JLc-K2-8zt" id="Szz-9q-FEU"/>
+            </connections>
+            <point key="canvasLocation" x="364.49275362318843" y="96.428571428571431"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="primary">
+            <color red="1" green="0.25882352941176473" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryLowTint">
+            <color red="1" green="0.92156862745098034" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

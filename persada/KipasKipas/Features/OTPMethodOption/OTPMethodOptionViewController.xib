@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoMedium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="RobotoRegular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OTPMethodOptionViewController" customModule="KipasKipas" customModuleProvider="target">
+            <connections>
+                <outlet property="iconSmsImageView" destination="Za8-5g-YJj" id="fDn-2h-109"/>
+                <outlet property="iconWhatsappImageView" destination="V7r-IE-iIu" id="fQC-sm-FUo"/>
+                <outlet property="sendSmsLabel" destination="dWj-Lf-KM0" id="YqM-pT-f56"/>
+                <outlet property="sendWhatsappLabel" destination="iKF-dY-nYh" id="59O-fr-htv"/>
+                <outlet property="smsContainerView" destination="WjS-kX-Uxu" id="SMe-GG-DlX"/>
+                <outlet property="smsCountdownLabel" destination="fdV-oJ-3cH" id="8f9-Jf-3JE"/>
+                <outlet property="smsErrorLabel" destination="Tsu-7s-rTa" id="nBa-sm-7Yw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="whatsappContainerView" destination="J85-25-6MF" id="CZs-rH-OcT"/>
+                <outlet property="whatsappCountdownLabel" destination="Sfr-5b-va1" id="zwD-5C-ryq"/>
+                <outlet property="whatsappErrorLabel" destination="nD3-yE-F0H" id="QfN-IB-zqe"/>
+                <outlet property="whatsappSmsErrorLabel" destination="RK4-uW-Qqs" id="BCL-4G-rDN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="pN2-O6-C3M">
+                    <rect key="frame" x="32" y="209" width="256" height="150.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pilih metode untuk menerima kode OTP" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keC-ev-wLd">
+                            <rect key="frame" x="0.0" y="0.0" width="256" height="14.5"/>
+                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
+                            <color key="textColor" name="Content"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="xUA-tL-SGJ">
+                            <rect key="frame" x="0.0" y="46.5" width="256" height="104"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mSN-b3-00H">
+                                    <rect key="frame" x="0.0" y="0.0" width="256" height="44"/>
+                                    <subviews>
+                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J85-25-6MF">
+                                            <rect key="frame" x="0.0" y="0.0" width="256" height="44"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="hP2-gw-xUs">
+                                                    <rect key="frame" x="64" y="11" width="128.5" height="22"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FFn-wE-K7f">
+                                                            <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_whatsapp" translatesAutoresizingMaskIntoConstraints="NO" id="V7r-IE-iIu">
+                                                                    <rect key="frame" x="3" y="3" width="16" height="16"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="16" id="EeZ-qv-UVh"/>
+                                                                        <constraint firstAttribute="width" constant="16" id="gsX-5b-1JC"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <edgeInsets key="layoutMargins" top="3" left="3" bottom="3" right="3"/>
+                                                        </stackView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Kirim ke WhatsApp" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKF-dY-nYh">
+                                                            <rect key="frame" x="26" y="0.0" width="102.5" height="22"/>
+                                                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
+                                                            <color key="textColor" name="Content"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sfr-5b-va1">
+                                                            <rect key="frame" x="128.5" y="0.0" width="35" height="22"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="35" id="79F-7T-8ai"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
+                                                            <color key="textColor" name="warning"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="whiteSnow"/>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" name="WhiteSnow"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="QAL-8o-xZZ"/>
+                                                <constraint firstItem="hP2-gw-xUs" firstAttribute="centerX" secondItem="J85-25-6MF" secondAttribute="centerX" id="U0K-rU-yuW"/>
+                                                <constraint firstItem="hP2-gw-xUs" firstAttribute="centerY" secondItem="J85-25-6MF" secondAttribute="centerY" id="sbc-PV-iS6"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="setCornerRadius">
+                                                    <real key="value" value="8"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                    <color key="value" white="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="setShadowRadius">
+                                                    <real key="value" value="4"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="setShadowOpacity">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                    <size key="value" width="0.0" height="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kamu sudah melakukan 3x request OTP dengan metode ini, coba lagi setelah 60 menit" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nD3-yE-F0H">
+                                            <rect key="frame" x="0.0" y="0.0" width="256" height="0.0"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                            <color key="textColor" name="Grey"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nou-md-RsV">
+                                    <rect key="frame" x="0.0" y="60" width="256" height="44"/>
+                                    <subviews>
+                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WjS-kX-Uxu">
+                                            <rect key="frame" x="0.0" y="0.0" width="256" height="44"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="KYo-ic-CdB">
+                                                    <rect key="frame" x="67" y="11" width="122" height="22"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="g6b-yo-Neh">
+                                                            <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_sms" translatesAutoresizingMaskIntoConstraints="NO" id="Za8-5g-YJj">
+                                                                    <rect key="frame" x="3" y="3" width="16" height="16"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="16" id="55x-Wv-WHq"/>
+                                                                        <constraint firstAttribute="height" constant="16" id="xLn-wV-JXe"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <edgeInsets key="layoutMargins" top="3" left="3" bottom="3" right="3"/>
+                                                        </stackView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Kirim lewat pesan" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWj-Lf-KM0">
+                                                            <rect key="frame" x="26" y="0.0" width="96" height="22"/>
+                                                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
+                                                            <color key="textColor" name="Content"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdV-oJ-3cH">
+                                                            <rect key="frame" x="122" y="0.0" width="35" height="22"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="35" id="6AL-o6-5Ax"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
+                                                            <color key="textColor" name="warning"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="whiteSnow"/>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" name="WhiteSnow"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="G6V-Dm-9M1"/>
+                                                <constraint firstItem="KYo-ic-CdB" firstAttribute="centerX" secondItem="WjS-kX-Uxu" secondAttribute="centerX" id="LoS-6b-E5b"/>
+                                                <constraint firstItem="KYo-ic-CdB" firstAttribute="centerY" secondItem="WjS-kX-Uxu" secondAttribute="centerY" id="YGC-UH-ulL"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="setCornerRadius">
+                                                    <real key="value" value="8"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kamu sudah melakukan 3x request OTP dengan metode ini, coba lagi setelah 60 menit" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tsu-7s-rTa">
+                                            <rect key="frame" x="0.0" y="0.0" width="256" height="0.0"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                            <color key="textColor" name="Grey"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kamu sudah melakukan 3x request OTP di kedua metode ini, coba lagi setelah tombol aktif." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RK4-uW-Qqs">
+                                            <rect key="frame" x="0.0" y="0.0" width="256" height="0.0"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                            <color key="textColor" name="Grey"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="pN2-O6-C3M" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="B5i-ER-LTb"/>
+                <constraint firstItem="pN2-O6-C3M" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="EUx-iW-2Kt"/>
+                <constraint firstItem="pN2-O6-C3M" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Q8z-xv-54a"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pN2-O6-C3M" secondAttribute="trailing" constant="32" id="rd8-Pb-uY1"/>
+            </constraints>
+            <point key="canvasLocation" x="130.76923076923077" y="-11.374407582938389"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_sms" width="14.5" height="12.5"/>
+        <image name="ic_whatsapp" width="14" height="14"/>
+        <namedColor name="Content">
+            <color red="0.29019607843137257" green="0.29019607843137257" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Grey">
+            <color red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="WhiteSnow">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="warning">
+            <color red="0.90588235294117647" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="whiteSnow">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

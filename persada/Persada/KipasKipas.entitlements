@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>aps-environment</key>
+	<string>development</string>
+	<key>com.apple.developer.associated-domains</key>
+	<array>
+		<string>applinks:stg-news.kipaskipas.com</string>
+		<string>applinks:test-news.kipaskipas.com</string>
+		<string>applinks:news.kipaskipas.com</string>
+		<string>applinks:stg-web.kipaskipas.com</string>
+		<string>applinks:web.kipaskipas.com</string>
+		<string>com.koanba.kipaskipas.mobile.onesignal</string>
+		<string>com.koanba.kipaskipas.mobile.dev.onesignal</string>
+		<string>com.koanba.kipaskipas.mobile.staging.onesignal</string>
+	</array>
+	<key>com.apple.security.application-groups</key>
+	<array>
+		<string>group.com.koanba.kipaskipas.mobile.dev.KipasKipasNotificationServiceExtension.onesignal</string>
+		<string>group.com.koanba.kipaskipas.mobile.KipasKipasNotificationServiceExtension.onesignal</string>
+	</array>
+	<key>com.apple.developer.networking.multipath</key>
+	<true/>
+</dict>
+</plist>

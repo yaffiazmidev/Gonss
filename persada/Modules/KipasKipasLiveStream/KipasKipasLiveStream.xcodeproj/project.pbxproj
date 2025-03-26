@@ -1,0 +1,2787 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A3FC371B3D8AEBD6D081183 /* Pods_KipasKipasLiveStream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF4CB46B74F9A472F58A94C /* Pods_KipasKipasLiveStream.framework */; };
+		5D0075632B3DA1630049A94A /* UIScrollView+Fade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0075622B3DA1630049A94A /* UIScrollView+Fade.swift */; };
+		5D052D612AEA36FD00FB9CDC /* KipasKipasTRTC.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D052D602AEA36FD00FB9CDC /* KipasKipasTRTC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D052DA72AEA404400FB9CDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D052DA62AEA404400FB9CDC /* AppDelegate.swift */; };
+		5D052DA92AEA404400FB9CDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D052DA82AEA404400FB9CDC /* SceneDelegate.swift */; };
+		5D052DB02AEA404500FB9CDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D052DAF2AEA404500FB9CDC /* Assets.xcassets */; };
+		5D052DB32AEA404500FB9CDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D052DB12AEA404500FB9CDC /* LaunchScreen.storyboard */; };
+		5D052DBB2AEA406B00FB9CDC /* KipasKipasLiveStream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF400DD2AE8D40D00A7584F /* KipasKipasLiveStream.framework */; };
+		5D052DBC2AEA406B00FB9CDC /* KipasKipasLiveStream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF400DD2AE8D40D00A7584F /* KipasKipasLiveStream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D052DD02AEB58D900FB9CDC /* KipasKipasLiveStreamiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D052DCF2AEB58D900FB9CDC /* KipasKipasLiveStreamiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D052DD32AEB58D900FB9CDC /* KipasKipasLiveStreamiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D052DCD2AEB58D900FB9CDC /* KipasKipasLiveStreamiOS.framework */; };
+		5D052DD42AEB58D900FB9CDC /* KipasKipasLiveStreamiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D052DCD2AEB58D900FB9CDC /* KipasKipasLiveStreamiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D052DDB2AEB58ED00FB9CDC /* KipasKipasLiveStream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF400DD2AE8D40D00A7584F /* KipasKipasLiveStream.framework */; };
+		5D052DE42AEB590800FB9CDC /* KipasKipasLiveStreamiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D052DCD2AEB58D900FB9CDC /* KipasKipasLiveStreamiOS.framework */; };
+		5D052DE92AEB593100FB9CDC /* ToolbarContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D052DE82AEB593100FB9CDC /* ToolbarContainerViewController.swift */; };
+		5D052DEE2AEB5A6800FB9CDC /* KipasKipasLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D052DEC2AEB5A6800FB9CDC /* KipasKipasLogin.framework */; };
+		5D052DEF2AEB5A6900FB9CDC /* KipasKipasLogin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D052DEC2AEB5A6800FB9CDC /* KipasKipasLogin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D052DF02AEB5A6900FB9CDC /* KipasKipasLoginiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D052DED2AEB5A6800FB9CDC /* KipasKipasLoginiOS.framework */; };
+		5D052DF12AEB5A6900FB9CDC /* KipasKipasLoginiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D052DED2AEB5A6800FB9CDC /* KipasKipasLoginiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D052DF32AEB5A8B00FB9CDC /* KipasKipasNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D052DF22AEB5A8B00FB9CDC /* KipasKipasNetworking.framework */; };
+		5D052DF72AEB5AA200FB9CDC /* KipasKipasShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D052DF62AEB5AA200FB9CDC /* KipasKipasShared.framework */; };
+		5D052DFC2AEB5AB100FB9CDC /* KipasKipasNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D052DFA2AEB5AB100FB9CDC /* KipasKipasNetworking.framework */; };
+		5D052DFD2AEB5AB100FB9CDC /* KipasKipasNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D052DFA2AEB5AB100FB9CDC /* KipasKipasNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D052E012AEB5AB500FB9CDC /* KipasKipasShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D052E002AEB5AB500FB9CDC /* KipasKipasShared.framework */; };
+		5D052E022AEB5AB500FB9CDC /* KipasKipasShared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D052E002AEB5AB500FB9CDC /* KipasKipasShared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D052E0A2AEB695600FB9CDC /* Pods_KipasKipasLiveStream_KipasKipasTRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF5600965B16BBB9A6EAB569 /* Pods_KipasKipasLiveStream_KipasKipasTRTC.framework */; };
+		5D0B84A12AF626E600796E33 /* UserLoggedInStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0B84A02AF626E600796E33 /* UserLoggedInStore.swift */; };
+		5D0B84A32AF62F1000796E33 /* LiveStreamProfileEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0B84A22AF62F1000796E33 /* LiveStreamProfileEndpoint.swift */; };
+		5D0B84A52AF64A5D00796E33 /* LiveUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0B84A42AF64A5D00796E33 /* LiveUserProfile.swift */; };
+		5D0B84A72AF65B6700796E33 /* ProfileAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0B84A62AF65B6700796E33 /* ProfileAdapter.swift */; };
+		5D0B84A92AF7BA3900796E33 /* LiveStreamingEmptyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0B84A82AF7BA3900796E33 /* LiveStreamingEmptyListViewController.swift */; };
+		5D0C464A2B3AD0EC00BC1D92 /* TopRankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0C46492B3AD0EC00BC1D92 /* TopRankView.swift */; };
+		5D0C464C2B3AD10F00BC1D92 /* DailyRankHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0C464B2B3AD10F00BC1D92 /* DailyRankHeaderView.swift */; };
+		5D0C46502B3AFC1100BC1D92 /* LiveDailyRank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0C464F2B3AFC1100BC1D92 /* LiveDailyRank.swift */; };
+		5D0C46522B3AFC5500BC1D92 /* DailyRankUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0C46512B3AFC5500BC1D92 /* DailyRankUIComposer.swift */; };
+		5D0C46552B3B12AD00BC1D92 /* SceneDelegate+DailyRank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0C46532B3B128200BC1D92 /* SceneDelegate+DailyRank.swift */; };
+		5D0C46582B3B151300BC1D92 /* Loaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0C46572B3B151300BC1D92 /* Loaders.swift */; };
+		5D0C465A2B3B15D700BC1D92 /* LiveDailyRankPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0C46592B3B15D700BC1D92 /* LiveDailyRankPresenter.swift */; };
+		5D0C465C2B3B162D00BC1D92 /* LiveDailyRankViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0C465B2B3B162D00BC1D92 /* LiveDailyRankViewModel.swift */; };
+		5D0C465E2B3B187D00BC1D92 /* LiveDailyRankPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0C465D2B3B187D00BC1D92 /* LiveDailyRankPresentationAdapter.swift */; };
+		5D23690A2B6A961E001249CD /* KipasKipasShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2369092B6A961E001249CD /* KipasKipasShared.framework */; };
+		5D2C23192B5680EF00BC0C0E /* GiftPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2C23182B5680EF00BC0C0E /* GiftPlayView.swift */; };
+		5D390DAA2B1DE31600FA6BE8 /* AudienceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D390DA92B1DE31600FA6BE8 /* AudienceListViewController.swift */; };
+		5D390DAC2B1DE66400FA6BE8 /* NSCollectionLayoutSection+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D390DAB2B1DE66400FA6BE8 /* NSCollectionLayoutSection+ext.swift */; };
+		5D390DAE2B1DF16C00FA6BE8 /* AudienceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D390DAD2B1DF16C00FA6BE8 /* AudienceCell.swift */; };
+		5D390DB02B1DF1A800FA6BE8 /* AudienceCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D390DAF2B1DF1A800FA6BE8 /* AudienceCellController.swift */; };
+		5D390DB22B1E086900FA6BE8 /* LiveStreamAudienceListAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D390DB12B1E086900FA6BE8 /* LiveStreamAudienceListAdapter.swift */; };
+		5D390DB42B1E08F600FA6BE8 /* AudienceListUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D390DB32B1E08F600FA6BE8 /* AudienceListUIComposer.swift */; };
+		5D390DB62B1E0BF100FA6BE8 /* LiveStreamAudience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D390DB52B1E0BF100FA6BE8 /* LiveStreamAudience.swift */; };
+		5D390DBB2B1EB8C000FA6BE8 /* LiveStreamAudienceListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D390DBA2B1EB8C000FA6BE8 /* LiveStreamAudienceListRequest.swift */; };
+		5D3E3C782B50EAD9007AF6D9 /* LiveRoomGiftService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3E3C772B50EAD9007AF6D9 /* LiveRoomGiftService.swift */; };
+		5D3E7F852B60F01B00E0E3A9 /* ListGiftViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3E7F842B60F01B00E0E3A9 /* ListGiftViewAdapter.swift */; };
+		5D3E7F872B60FA9800E0E3A9 /* LiveCoinBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3E7F862B60FA9800E0E3A9 /* LiveCoinBalance.swift */; };
+		5D4530732AF33430002A9149 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4530722AF33430002A9149 /* DummyViewController.swift */; };
+		5D4530762AF38A25002A9149 /* LiveStreamValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4530752AF38A25002A9149 /* LiveStreamValidation.swift */; };
+		5D4530792AF38A53002A9149 /* LiveStreamEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4530782AF38A53002A9149 /* LiveStreamEndpoint.swift */; };
+		5D45307B2AF39C53002A9149 /* LiveRoomActive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D45307A2AF39C52002A9149 /* LiveRoomActive.swift */; };
+		5D45307E2AF3A8BF002A9149 /* ListActiveLiveStreamPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D45307D2AF3A8BF002A9149 /* ListActiveLiveStreamPresenter.swift */; };
+		5D4530802AF3A90C002A9149 /* ListActiveLiveStreamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D45307F2AF3A90C002A9149 /* ListActiveLiveStreamViewModel.swift */; };
+		5D4530872AF3C72E002A9149 /* SceneDelegate+ListActiveLiveStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4530862AF3C72E002A9149 /* SceneDelegate+ListActiveLiveStream.swift */; };
+		5D4530892AF3E25F002A9149 /* LiveRoomInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4530882AF3E25F002A9149 /* LiveRoomInfoViewModel.swift */; };
+		5D45308C2AF3E600002A9149 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5D45308B2AF3E600002A9149 /* Kingfisher */; };
+		5D45308E2AF3F8DA002A9149 /* UIImageView+KF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D45308D2AF3F8DA002A9149 /* UIImageView+KF.swift */; };
+		5D4530902AF490BC002A9149 /* AnchorLiveStreamEndedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D45308F2AF490BC002A9149 /* AnchorLiveStreamEndedViewController.swift */; };
+		5D4530922AF492E5002A9149 /* AnchorLiveEndedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4530912AF492E5002A9149 /* AnchorLiveEndedView.swift */; };
+		5D4530942AF4C6B4002A9149 /* String+Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4530932AF4C6B4002A9149 /* String+Duration.swift */; };
+		5D4530982AF4CCA6002A9149 /* LiveRoomSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4530972AF4CCA6002A9149 /* LiveRoomSummaryViewModel.swift */; };
+		5D45309C2AF504E9002A9149 /* LiveStreamCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D45309B2AF504E9002A9149 /* LiveStreamCreation.swift */; };
+		5D45309F2AF54584002A9149 /* LiveRoomValidationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D45309E2AF54584002A9149 /* LiveRoomValidationAdapter.swift */; };
+		5D4530A12AF5471A002A9149 /* LiveRoomCreationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4530A02AF5471A002A9149 /* LiveRoomCreationAdapter.swift */; };
+		5D4530A32AF547A5002A9149 /* LiveRoomDismissalAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4530A22AF547A5002A9149 /* LiveRoomDismissalAdapter.swift */; };
+		5D4BD11A2B20E58400D1620E /* LiveRoomMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4BD1192B20E58400D1620E /* LiveRoomMessage.swift */; };
+		5D6273412B4EE32F00C2AA60 /* ListActiveLiveStreamViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6273402B4EE32F00C2AA60 /* ListActiveLiveStreamViewAdapter.swift */; };
+		5D6273452B4EE6DA00C2AA60 /* ListActiveLiveStreamPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6273442B4EE6DA00C2AA60 /* ListActiveLiveStreamPresentationAdapter.swift */; };
+		5D6A5E7A2B5F687700200198 /* SceneDelegate+Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6A5E792B5F687700200198 /* SceneDelegate+Coin.swift */; };
+		5D6A5E7C2B5F689A00200198 /* KipasKipasDirectMessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D6A5E7B2B5F689A00200198 /* KipasKipasDirectMessageUI.framework */; };
+		5D6A5E7D2B5F689A00200198 /* KipasKipasDirectMessageUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D6A5E7B2B5F689A00200198 /* KipasKipasDirectMessageUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D6A5E7F2B5F6C4D00200198 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5D6A5E7E2B5F6C4D00200198 /* Kingfisher */; };
+		5D6A5E812B5F6C8000200198 /* KipasKipasPaymentInAppPurchase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D6A5E802B5F6C8000200198 /* KipasKipasPaymentInAppPurchase.framework */; };
+		5D6A5E822B5F6C8000200198 /* KipasKipasPaymentInAppPurchase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D6A5E802B5F6C8000200198 /* KipasKipasPaymentInAppPurchase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D6A5E842B5F6CD800200198 /* KipasKipasDirectMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D6A5E832B5F6CD800200198 /* KipasKipasDirectMessage.framework */; };
+		5D6A5E852B5F6CD800200198 /* KipasKipasDirectMessage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D6A5E832B5F6CD800200198 /* KipasKipasDirectMessage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D6A5E882B5F6DE600200198 /* SendbirdChatSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 5D6A5E872B5F6DE600200198 /* SendbirdChatSDK */; };
+		5D6CD6D82B629E1F006FDE75 /* LiveStreamSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6CD6D72B629E1F006FDE75 /* LiveStreamSummary.swift */; };
+		5D769BC42AF146C100D35973 /* Combine+TUILogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D769BC32AF146C100D35973 /* Combine+TUILogin.swift */; };
+		5D769BCE2AF1F14600D35973 /* AudienceLiveRoomManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D769BCD2AF1F14600D35973 /* AudienceLiveRoomManager.swift */; };
+		5D769BD02AF1F5F000D35973 /* AudienceLiveStreamEndedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D769BCF2AF1F5F000D35973 /* AudienceLiveStreamEndedViewController.swift */; };
+		5D8169D52B1F79D300E6FC6C /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5D8169D42B1F79D300E6FC6C /* IQKeyboardManagerSwift */; };
+		5D908C302B39A47500CFA9E4 /* LiveDailyRankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D908C2F2B39A47500CFA9E4 /* LiveDailyRankingViewController.swift */; };
+		5D908C322B39DCAF00CFA9E4 /* DailyRankCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D908C312B39DCAF00CFA9E4 /* DailyRankCellController.swift */; };
+		5D908C342B39DCED00CFA9E4 /* DailyRankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D908C332B39DCED00CFA9E4 /* DailyRankCell.swift */; };
+		5D9979B92B3D24B300AD4060 /* LiveDailyRankViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9979B82B3D24B300AD4060 /* LiveDailyRankViewAdapter.swift */; };
+		5D9AAA902B37E88F00703C5D /* ProfileFollowAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9AAA8D2B37E40200703C5D /* ProfileFollowAdapter.swift */; };
+		5D9AAA922B38779600703C5D /* TopSeatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9AAA912B38779600703C5D /* TopSeatView.swift */; };
+		5D9AF1702B5FAD79002C3DEB /* CoinPurchaseContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9AF16F2B5FAD79002C3DEB /* CoinPurchaseContainerViewController.swift */; };
+		5D9C2FEE2AEBC4440021E629 /* AnchorPreLiveToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9C2FED2AEBC4440021E629 /* AnchorPreLiveToolbar.swift */; };
+		5D9C2FF62AEC02800021E629 /* AnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9C2FF52AEC02800021E629 /* AnchorViewController.swift */; };
+		5D9C2FFA2AEC22850021E629 /* AnchorPreLiveToolbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9C2FF92AEC22850021E629 /* AnchorPreLiveToolbarViewController.swift */; };
+		5D9C30012AECE39C0021E629 /* Countdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9C30002AECE39C0021E629 /* Countdown.swift */; };
+		5D9C30032AECF1490021E629 /* CountdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9C30022AECF1490021E629 /* CountdownViewController.swift */; };
+		5D9C30062AECFFC90021E629 /* AnchorOnLiveToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9C30052AECFFC90021E629 /* AnchorOnLiveToolbar.swift */; };
+		5D9C30082AED010A0021E629 /* AnchorOnLiveToolbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9C30072AED010A0021E629 /* AnchorOnLiveToolbarViewController.swift */; };
+		5D9C300D2AED28D60021E629 /* AnchorLiveUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9C300C2AED28D60021E629 /* AnchorLiveUIComposer.swift */; };
+		5D9C300F2AED29CF0021E629 /* AnchorLiveRoomManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9C300E2AED29CF0021E629 /* AnchorLiveRoomManager.swift */; };
+		5D9C30122AED30FC0021E629 /* TencentUserSig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9C30112AED30FC0021E629 /* TencentUserSig.swift */; };
+		5DA96FD62B2BF07F0029D5D7 /* LiveRoomMessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA96FD52B2BF07F0029D5D7 /* LiveRoomMessageService.swift */; };
+		5DA96FD82B2C571F0029D5D7 /* LiveRoomChatInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA96FD72B2C571F0029D5D7 /* LiveRoomChatInputView.swift */; };
+		5DAFD1B32B616B4C00757F00 /* LiveTopSeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAFD1B22B616B4C00757F00 /* LiveTopSeat.swift */; };
+		5DB083762AEEB0790084ED39 /* KipasKipasTRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D052D5E2AEA36FD00FB9CDC /* KipasKipasTRTC.framework */; };
+		5DB083792AEEB0BD0084ED39 /* KipasKipasTRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D052D5E2AEA36FD00FB9CDC /* KipasKipasTRTC.framework */; };
+		5DB0837A2AEEB0BD0084ED39 /* KipasKipasTRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D052D5E2AEA36FD00FB9CDC /* KipasKipasTRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5DB083822AEF873F0084ED39 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB083812AEF873F0084ED39 /* Stopwatch.swift */; };
+		5DB083842AEFA10D0084ED39 /* UIView+BlinkAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB083832AEFA10D0084ED39 /* UIView+BlinkAnimation.swift */; };
+		5DB083872AEFA8130084ED39 /* RealtimeAudienceToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB083862AEFA8130084ED39 /* RealtimeAudienceToolbar.swift */; };
+		5DB083892AEFA91D0084ED39 /* BaseRoomInfoToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB083882AEFA91D0084ED39 /* BaseRoomInfoToolbar.swift */; };
+		5DB0838D2AF007480084ED39 /* SceneDelegate+LiveStreamingAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB0838C2AF007480084ED39 /* SceneDelegate+LiveStreamingAnchor.swift */; };
+		5DB0838F2AF0082D0084ED39 /* SceneDelegate+Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB0838E2AF0082D0084ED39 /* SceneDelegate+Login.swift */; };
+		5DB0839D2AF0CACA0084ED39 /* Combine+V2TIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB0839B2AF0CA850084ED39 /* Combine+V2TIManager.swift */; };
+		5DB0D0792AEE40F800E7EA22 /* LiveRoomManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB0D0782AEE40F800E7EA22 /* LiveRoomManager.swift */; };
+		5DB0D07B2AEE414100E7EA22 /* LiveRoomParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB0D07A2AEE414100E7EA22 /* LiveRoomParameter.swift */; };
+		5DB0D07D2AEE418700E7EA22 /* LiveRoomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB0D07C2AEE418700E7EA22 /* LiveRoomError.swift */; };
+		5DB0D0862AEE619B00E7EA22 /* AudienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB0D0852AEE619B00E7EA22 /* AudienceViewController.swift */; };
+		5DB0D0882AEE621800E7EA22 /* AudienceOnLiveToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB0D0872AEE621800E7EA22 /* AudienceOnLiveToolbar.swift */; };
+		5DB0D08A2AEE62EC00E7EA22 /* AudienceOnLiveToolbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB0D0892AEE62EC00E7EA22 /* AudienceOnLiveToolbarViewController.swift */; };
+		5DB0D08C2AEE639000E7EA22 /* AudienceLiveUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB0D08B2AEE639000E7EA22 /* AudienceLiveUIComposer.swift */; };
+		5DB394CC2B2F059B006D17E5 /* LiveRoomChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB394CB2B2F059B006D17E5 /* LiveRoomChatView.swift */; };
+		5DB394D12B2FE95B006D17E5 /* TableAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB394D02B2FE95B006D17E5 /* TableAnimation.swift */; };
+		5DB394D32B2FE9A5006D17E5 /* LiveRoomChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB394D22B2FE9A5006D17E5 /* LiveRoomChatViewModel.swift */; };
+		5DB394D52B2FED32006D17E5 /* LiveRoomChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB394D42B2FED32006D17E5 /* LiveRoomChatCell.swift */; };
+		5DB6DE522B595D1800322425 /* Spark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB6DE492B595D1800322425 /* Spark.swift */; };
+		5DB6DE532B595D1800322425 /* FaveIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB6DE4A2B595D1800322425 /* FaveIcon.swift */; };
+		5DB6DE542B595D1800322425 /* FaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB6DE4B2B595D1800322425 /* FaveButton.swift */; };
+		5DB6DE552B595D1800322425 /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB6DE4C2B595D1800322425 /* Ring.swift */; };
+		5DB6DE562B595D1800322425 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB6DE4E2B595D1800322425 /* Geometry.swift */; };
+		5DB6DE572B595D1800322425 /* Easing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB6DE4F2B595D1800322425 /* Easing.swift */; };
+		5DB6DE582B595D1800322425 /* Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB6DE502B595D1800322425 /* Init.swift */; };
+		5DB6DE592B595D1800322425 /* Constraints+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB6DE512B595D1800322425 /* Constraints+.swift */; };
+		5DC280762AFB8938001C68D3 /* LiveStreamPausedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC280752AFB8938001C68D3 /* LiveStreamPausedViewController.swift */; };
+		5DCD1ACA2B5780B00036DA20 /* GiftBulletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCD1AC92B5780B00036DA20 /* GiftBulletView.swift */; };
+		5DD6F4C22B512B9100601E35 /* ListGiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD6F4C12B512B9100601E35 /* ListGiftViewController.swift */; };
+		5DD6F4C42B512CE500601E35 /* GiftCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD6F4C32B512CE500601E35 /* GiftCellController.swift */; };
+		5DD6F4C62B512D3300601E35 /* GiftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD6F4C52B512D3300601E35 /* GiftCell.swift */; };
+		5DD6F4C82B512E7800601E35 /* ListGiftUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD6F4C72B512E7800601E35 /* ListGiftUIComposer.swift */; };
+		5DD6F4CB2B512F1600601E35 /* SceneDelegate+Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD6F4C92B512EDB00601E35 /* SceneDelegate+Gift.swift */; };
+		5DD6F4CD2B512FB900601E35 /* LiveGift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD6F4CC2B512FB900601E35 /* LiveGift.swift */; };
+		5DD9DAA72B5188F6008DC277 /* gifts.json in Resources */ = {isa = PBXBuildFile; fileRef = 5DD9DAA62B5188F6008DC277 /* gifts.json */; };
+		5DDBFF532B592D9800F620EE /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 5DDBFF522B592D9800F620EE /* Lottie */; };
+		5DF400E12AE8D40D00A7584F /* KipasKipasLiveStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DF400E02AE8D40D00A7584F /* KipasKipasLiveStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DF7293F2B51661A00232A47 /* GiftPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF7293E2B51661A00232A47 /* GiftPanelView.swift */; };
+		5DFCB5FC2B4EC3B9000498F2 /* LiveStreamingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D769BD32AF28BD500D35973 /* LiveStreamingListViewController.swift */; };
+		6FEB4BA92AE7ABDC41B2829C /* Pods_KipasKipasLiveStream_KKLiveStreamingMicroApps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8228F72BF0E7CDDF22AB3D4E /* Pods_KipasKipasLiveStream_KKLiveStreamingMicroApps.framework */; };
+		840317452B8A4D8000000A37 /* RankingCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840317442B8A4D8000000A37 /* RankingCollectionView.swift */; };
+		845A8A9C2B865BAE004F0848 /* emoji.plist in Resources */ = {isa = PBXBuildFile; fileRef = 845A8A9B2B865BAE004F0848 /* emoji.plist */; };
+		847513E22B8335B100C4D8A7 /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847513E12B8335B100C4D8A7 /* TitleButton.swift */; };
+		8488924D2B85E563009695B2 /* EmojiInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848892452B85E563009695B2 /* EmojiInputView.swift */; };
+		8488924E2B85E563009695B2 /* EmojiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848892462B85E563009695B2 /* EmojiModel.swift */; };
+		8488924F2B85E563009695B2 /* EmojiPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848892472B85E563009695B2 /* EmojiPackage.swift */; };
+		848892502B85E563009695B2 /* EmojiPrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848892482B85E563009695B2 /* EmojiPrase.swift */; };
+		848892522B85E563009695B2 /* EmojiAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488924A2B85E563009695B2 /* EmojiAttachment.swift */; };
+		848892532B85E563009695B2 /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488924B2B85E563009695B2 /* EmojiView.swift */; };
+		848892542B85E563009695B2 /* EmojiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488924C2B85E563009695B2 /* EmojiManager.swift */; };
+		84B8EF4B2B81FF4800CB4CC5 /* LiveTopSeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B8EF4A2B81FF4800CB4CC5 /* LiveTopSeatViewController.swift */; };
+		84B8EF4D2B81FF7A00CB4CC5 /* TopSeatUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B8EF4C2B81FF7A00CB4CC5 /* TopSeatUIComposer.swift */; };
+		84CEB1BD2B84C83E0095A17D /* SeatProfileAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CEB1BC2B84C83E0095A17D /* SeatProfileAdapter.swift */; };
+		84F885EF2B8737960012C466 /* TeamConditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F885EE2B8737960012C466 /* TeamConditionViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D052DBD2AEA406B00FB9CDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DF400D42AE8D40D00A7584F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DF400DC2AE8D40D00A7584F;
+			remoteInfo = KipasKipasLiveStream;
+		};
+		5D052DD12AEB58D900FB9CDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DF400D42AE8D40D00A7584F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D052DCC2AEB58D900FB9CDC;
+			remoteInfo = KipasKipasLiveStreamiOS;
+		};
+		5D052DDD2AEB58ED00FB9CDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DF400D42AE8D40D00A7584F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DF400DC2AE8D40D00A7584F;
+			remoteInfo = KipasKipasLiveStream;
+		};
+		5D052DE12AEB58ED00FB9CDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DF400D42AE8D40D00A7584F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D052D5D2AEA36FD00FB9CDC;
+			remoteInfo = KipasKipasTRTC;
+		};
+		5D052DE52AEB590800FB9CDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DF400D42AE8D40D00A7584F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D052DCC2AEB58D900FB9CDC;
+			remoteInfo = KipasKipasLiveStreamiOS;
+		};
+		5D9C2FE82AEB9A4F0021E629 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DF400D42AE8D40D00A7584F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D052D5D2AEA36FD00FB9CDC;
+			remoteInfo = KipasKipasTRTC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5D052DC32AEA406B00FB9CDC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5DB0837A2AEEB0BD0084ED39 /* KipasKipasTRTC.framework in Embed Frameworks */,
+				5D052DBC2AEA406B00FB9CDC /* KipasKipasLiveStream.framework in Embed Frameworks */,
+				5D052DFD2AEB5AB100FB9CDC /* KipasKipasNetworking.framework in Embed Frameworks */,
+				5D6A5E822B5F6C8000200198 /* KipasKipasPaymentInAppPurchase.framework in Embed Frameworks */,
+				5D052DF12AEB5A6900FB9CDC /* KipasKipasLoginiOS.framework in Embed Frameworks */,
+				5D052E022AEB5AB500FB9CDC /* KipasKipasShared.framework in Embed Frameworks */,
+				5D6A5E7D2B5F689A00200198 /* KipasKipasDirectMessageUI.framework in Embed Frameworks */,
+				5D6A5E852B5F6CD800200198 /* KipasKipasDirectMessage.framework in Embed Frameworks */,
+				5D052DEF2AEB5A6900FB9CDC /* KipasKipasLogin.framework in Embed Frameworks */,
+				5D052DD42AEB58D900FB9CDC /* KipasKipasLiveStreamiOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		10AD7EFBD0BCEE6A668EFEE5 /* Pods-KipasKipasLiveStream.proddebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLiveStream.proddebug.xcconfig"; path = "Target Support Files/Pods-KipasKipasLiveStream/Pods-KipasKipasLiveStream.proddebug.xcconfig"; sourceTree = "<group>"; };
+		1F7465C5D212BAB9E76BA842 /* Pods-KipasKipasLiveStream-KipasKipasTRTC.testpk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLiveStream-KipasKipasTRTC.testpk.xcconfig"; path = "Target Support Files/Pods-KipasKipasLiveStream-KipasKipasTRTC/Pods-KipasKipasLiveStream-KipasKipasTRTC.testpk.xcconfig"; sourceTree = "<group>"; };
+		26CD1F370741AE04C96504F6 /* Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.vodplayer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.vodplayer.xcconfig"; path = "Target Support Files/Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps/Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.vodplayer.xcconfig"; sourceTree = "<group>"; };
+		2864680EFBD2B40B9CE8E959 /* Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.testpk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.testpk.xcconfig"; path = "Target Support Files/Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps/Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.testpk.xcconfig"; sourceTree = "<group>"; };
+		2BF4CB46B74F9A472F58A94C /* Pods_KipasKipasLiveStream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KipasKipasLiveStream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32266C070F6D0CA11A20613F /* Pods-KipasKipasLiveStream.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLiveStream.staging.xcconfig"; path = "Target Support Files/Pods-KipasKipasLiveStream/Pods-KipasKipasLiveStream.staging.xcconfig"; sourceTree = "<group>"; };
+		3309AF4120EB805BF62AA3D5 /* Pods-KipasKipasLiveStream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLiveStream.release.xcconfig"; path = "Target Support Files/Pods-KipasKipasLiveStream/Pods-KipasKipasLiveStream.release.xcconfig"; sourceTree = "<group>"; };
+		4E0BACE2DCD6FDDF1F74FD17 /* Pods-KipasKipasLiveStream-KipasKipasTRTC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLiveStream-KipasKipasTRTC.release.xcconfig"; path = "Target Support Files/Pods-KipasKipasLiveStream-KipasKipasTRTC/Pods-KipasKipasLiveStream-KipasKipasTRTC.release.xcconfig"; sourceTree = "<group>"; };
+		5A4E78C10F11DF0CD2EF0F79 /* Pods-KipasKipasLiveStream.livedebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLiveStream.livedebug.xcconfig"; path = "Target Support Files/Pods-KipasKipasLiveStream/Pods-KipasKipasLiveStream.livedebug.xcconfig"; sourceTree = "<group>"; };
+		5D0075622B3DA1630049A94A /* UIScrollView+Fade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Fade.swift"; sourceTree = "<group>"; };
+		5D052D5E2AEA36FD00FB9CDC /* KipasKipasTRTC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KipasKipasTRTC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D052D602AEA36FD00FB9CDC /* KipasKipasTRTC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KipasKipasTRTC.h; sourceTree = "<group>"; };
+		5D052D692AEA375C00FB9CDC /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		5D052D6B2AEA376400FB9CDC /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/iOSSupport/System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		5D052D6D2AEA37CE00FB9CDC /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk/System/Library/Frameworks/GLKit.framework; sourceTree = DEVELOPER_DIR; };
+		5D052D6F2AEA37E000FB9CDC /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
+		5D052D712AEA37E600FB9CDC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		5D052D732AEA37F400FB9CDC /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk/usr/lib/libsqlite3.0.tbd; sourceTree = DEVELOPER_DIR; };
+		5D052D752AEA382900FB9CDC /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		5D052D772AEA383400FB9CDC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		5D052D792AEA384500FB9CDC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
+		5D052D7B2AEA388C00FB9CDC /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk/usr/lib/libresolv.tbd; sourceTree = DEVELOPER_DIR; };
+		5D052D7D2AEA389E00FB9CDC /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		5D052D7F2AEA38B100FB9CDC /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
+		5D052D812AEA38B600FB9CDC /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
+		5D052D972AEA3FC700FB9CDC /* TXFFmpeg.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TXFFmpeg.xcframework; path = TRTC/TXFFmpeg.xcframework; sourceTree = "<group>"; };
+		5D052D982AEA3FC700FB9CDC /* TXSoundTouch.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TXSoundTouch.xcframework; path = TRTC/TXSoundTouch.xcframework; sourceTree = "<group>"; };
+		5D052DA42AEA404400FB9CDC /* KKLiveStreamingMicroApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKLiveStreamingMicroApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D052DA62AEA404400FB9CDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5D052DA82AEA404400FB9CDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5D052DAF2AEA404500FB9CDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5D052DB22AEA404500FB9CDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5D052DB42AEA404500FB9CDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D052DCD2AEB58D900FB9CDC /* KipasKipasLiveStreamiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KipasKipasLiveStreamiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D052DCF2AEB58D900FB9CDC /* KipasKipasLiveStreamiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KipasKipasLiveStreamiOS.h; sourceTree = "<group>"; };
+		5D052DE82AEB593100FB9CDC /* ToolbarContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarContainerViewController.swift; sourceTree = "<group>"; };
+		5D052DEC2AEB5A6800FB9CDC /* KipasKipasLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D052DED2AEB5A6800FB9CDC /* KipasKipasLoginiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasLoginiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D052DF22AEB5A8B00FB9CDC /* KipasKipasNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D052DF62AEB5AA200FB9CDC /* KipasKipasShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D052DFA2AEB5AB100FB9CDC /* KipasKipasNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D052DFB2AEB5AB100FB9CDC /* KipasKipasNetworkingUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasNetworkingUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D052E002AEB5AB500FB9CDC /* KipasKipasShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D0B84A02AF626E600796E33 /* UserLoggedInStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoggedInStore.swift; sourceTree = "<group>"; };
+		5D0B84A22AF62F1000796E33 /* LiveStreamProfileEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamProfileEndpoint.swift; sourceTree = "<group>"; };
+		5D0B84A42AF64A5D00796E33 /* LiveUserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveUserProfile.swift; sourceTree = "<group>"; };
+		5D0B84A62AF65B6700796E33 /* ProfileAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAdapter.swift; sourceTree = "<group>"; };
+		5D0B84A82AF7BA3900796E33 /* LiveStreamingEmptyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamingEmptyListViewController.swift; sourceTree = "<group>"; };
+		5D0C46492B3AD0EC00BC1D92 /* TopRankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRankView.swift; sourceTree = "<group>"; };
+		5D0C464B2B3AD10F00BC1D92 /* DailyRankHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRankHeaderView.swift; sourceTree = "<group>"; };
+		5D0C464F2B3AFC1100BC1D92 /* LiveDailyRank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveDailyRank.swift; sourceTree = "<group>"; };
+		5D0C46512B3AFC5500BC1D92 /* DailyRankUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRankUIComposer.swift; sourceTree = "<group>"; };
+		5D0C46532B3B128200BC1D92 /* SceneDelegate+DailyRank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SceneDelegate+DailyRank.swift"; sourceTree = "<group>"; };
+		5D0C46572B3B151300BC1D92 /* Loaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loaders.swift; sourceTree = "<group>"; };
+		5D0C46592B3B15D700BC1D92 /* LiveDailyRankPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveDailyRankPresenter.swift; sourceTree = "<group>"; };
+		5D0C465B2B3B162D00BC1D92 /* LiveDailyRankViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveDailyRankViewModel.swift; sourceTree = "<group>"; };
+		5D0C465D2B3B187D00BC1D92 /* LiveDailyRankPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveDailyRankPresentationAdapter.swift; sourceTree = "<group>"; };
+		5D2369092B6A961E001249CD /* KipasKipasShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D23690D2B6A97F5001249CD /* TXLiteAVSDK_TRTC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TXLiteAVSDK_TRTC.xcframework; path = SDK/TXLiteAVSDK_TRTC.xcframework; sourceTree = "<group>"; };
+		5D2369112B6A984A001249CD /* ImSDK_Plus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImSDK_Plus.framework; path = ../../Pods/TXIMSDK_Plus_iOS/ImSDK_Plus.framework; sourceTree = "<group>"; };
+		5D2C23182B5680EF00BC0C0E /* GiftPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftPlayView.swift; sourceTree = "<group>"; };
+		5D390DA92B1DE31600FA6BE8 /* AudienceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudienceListViewController.swift; sourceTree = "<group>"; };
+		5D390DAB2B1DE66400FA6BE8 /* NSCollectionLayoutSection+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSCollectionLayoutSection+ext.swift"; sourceTree = "<group>"; };
+		5D390DAD2B1DF16C00FA6BE8 /* AudienceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudienceCell.swift; sourceTree = "<group>"; };
+		5D390DAF2B1DF1A800FA6BE8 /* AudienceCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudienceCellController.swift; sourceTree = "<group>"; };
+		5D390DB12B1E086900FA6BE8 /* LiveStreamAudienceListAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamAudienceListAdapter.swift; sourceTree = "<group>"; };
+		5D390DB32B1E08F600FA6BE8 /* AudienceListUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudienceListUIComposer.swift; sourceTree = "<group>"; };
+		5D390DB52B1E0BF100FA6BE8 /* LiveStreamAudience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamAudience.swift; sourceTree = "<group>"; };
+		5D390DBA2B1EB8C000FA6BE8 /* LiveStreamAudienceListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamAudienceListRequest.swift; sourceTree = "<group>"; };
+		5D3E3C772B50EAD9007AF6D9 /* LiveRoomGiftService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRoomGiftService.swift; sourceTree = "<group>"; };
+		5D3E7F842B60F01B00E0E3A9 /* ListGiftViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGiftViewAdapter.swift; sourceTree = "<group>"; };
+		5D3E7F862B60FA9800E0E3A9 /* LiveCoinBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCoinBalance.swift; sourceTree = "<group>"; };
+		5D4530722AF33430002A9149 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
+		5D4530752AF38A25002A9149 /* LiveStreamValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamValidation.swift; sourceTree = "<group>"; };
+		5D4530782AF38A53002A9149 /* LiveStreamEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamEndpoint.swift; sourceTree = "<group>"; };
+		5D45307A2AF39C52002A9149 /* LiveRoomActive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRoomActive.swift; sourceTree = "<group>"; };
+		5D45307D2AF3A8BF002A9149 /* ListActiveLiveStreamPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListActiveLiveStreamPresenter.swift; sourceTree = "<group>"; };
+		5D45307F2AF3A90C002A9149 /* ListActiveLiveStreamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListActiveLiveStreamViewModel.swift; sourceTree = "<group>"; };
+		5D4530862AF3C72E002A9149 /* SceneDelegate+ListActiveLiveStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SceneDelegate+ListActiveLiveStream.swift"; sourceTree = "<group>"; };
+		5D4530882AF3E25F002A9149 /* LiveRoomInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRoomInfoViewModel.swift; sourceTree = "<group>"; };
+		5D45308D2AF3F8DA002A9149 /* UIImageView+KF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+KF.swift"; sourceTree = "<group>"; };
+		5D45308F2AF490BC002A9149 /* AnchorLiveStreamEndedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorLiveStreamEndedViewController.swift; sourceTree = "<group>"; };
+		5D4530912AF492E5002A9149 /* AnchorLiveEndedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorLiveEndedView.swift; sourceTree = "<group>"; };
+		5D4530932AF4C6B4002A9149 /* String+Duration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Duration.swift"; sourceTree = "<group>"; };
+		5D4530972AF4CCA6002A9149 /* LiveRoomSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRoomSummaryViewModel.swift; sourceTree = "<group>"; };
+		5D45309B2AF504E9002A9149 /* LiveStreamCreation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamCreation.swift; sourceTree = "<group>"; };
+		5D45309E2AF54584002A9149 /* LiveRoomValidationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRoomValidationAdapter.swift; sourceTree = "<group>"; };
+		5D4530A02AF5471A002A9149 /* LiveRoomCreationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRoomCreationAdapter.swift; sourceTree = "<group>"; };
+		5D4530A22AF547A5002A9149 /* LiveRoomDismissalAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRoomDismissalAdapter.swift; sourceTree = "<group>"; };
+		5D4BD1192B20E58400D1620E /* LiveRoomMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRoomMessage.swift; sourceTree = "<group>"; };
+		5D6273402B4EE32F00C2AA60 /* ListActiveLiveStreamViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListActiveLiveStreamViewAdapter.swift; sourceTree = "<group>"; };
+		5D6273442B4EE6DA00C2AA60 /* ListActiveLiveStreamPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListActiveLiveStreamPresentationAdapter.swift; sourceTree = "<group>"; };
+		5D6A5E792B5F687700200198 /* SceneDelegate+Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SceneDelegate+Coin.swift"; sourceTree = "<group>"; };
+		5D6A5E7B2B5F689A00200198 /* KipasKipasDirectMessageUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasDirectMessageUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D6A5E802B5F6C8000200198 /* KipasKipasPaymentInAppPurchase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasPaymentInAppPurchase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D6A5E832B5F6CD800200198 /* KipasKipasDirectMessage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasDirectMessage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D6A5F2D2B32FAD3005843F2 /* KipasKipasShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D6CD6D72B629E1F006FDE75 /* LiveStreamSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamSummary.swift; sourceTree = "<group>"; };
+		5D769BC32AF146C100D35973 /* Combine+TUILogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Combine+TUILogin.swift"; sourceTree = "<group>"; };
+		5D769BC92AF15B4A00D35973 /* TUICore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TUICore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D769BCD2AF1F14600D35973 /* AudienceLiveRoomManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudienceLiveRoomManager.swift; sourceTree = "<group>"; };
+		5D769BCF2AF1F5F000D35973 /* AudienceLiveStreamEndedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudienceLiveStreamEndedViewController.swift; sourceTree = "<group>"; };
+		5D769BD32AF28BD500D35973 /* LiveStreamingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamingListViewController.swift; sourceTree = "<group>"; };
+		5D908C2F2B39A47500CFA9E4 /* LiveDailyRankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveDailyRankingViewController.swift; sourceTree = "<group>"; };
+		5D908C312B39DCAF00CFA9E4 /* DailyRankCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRankCellController.swift; sourceTree = "<group>"; };
+		5D908C332B39DCED00CFA9E4 /* DailyRankCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRankCell.swift; sourceTree = "<group>"; };
+		5D9979B82B3D24B300AD4060 /* LiveDailyRankViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveDailyRankViewAdapter.swift; sourceTree = "<group>"; };
+		5D9AAA8D2B37E40200703C5D /* ProfileFollowAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFollowAdapter.swift; sourceTree = "<group>"; };
+		5D9AAA912B38779600703C5D /* TopSeatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopSeatView.swift; sourceTree = "<group>"; };
+		5D9AF16F2B5FAD79002C3DEB /* CoinPurchaseContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinPurchaseContainerViewController.swift; sourceTree = "<group>"; };
+		5D9C2FED2AEBC4440021E629 /* AnchorPreLiveToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorPreLiveToolbar.swift; sourceTree = "<group>"; };
+		5D9C2FF52AEC02800021E629 /* AnchorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorViewController.swift; sourceTree = "<group>"; };
+		5D9C2FF92AEC22850021E629 /* AnchorPreLiveToolbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorPreLiveToolbarViewController.swift; sourceTree = "<group>"; };
+		5D9C30002AECE39C0021E629 /* Countdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countdown.swift; sourceTree = "<group>"; };
+		5D9C30022AECF1490021E629 /* CountdownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownViewController.swift; sourceTree = "<group>"; };
+		5D9C30052AECFFC90021E629 /* AnchorOnLiveToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorOnLiveToolbar.swift; sourceTree = "<group>"; };
+		5D9C30072AED010A0021E629 /* AnchorOnLiveToolbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorOnLiveToolbarViewController.swift; sourceTree = "<group>"; };
+		5D9C300C2AED28D60021E629 /* AnchorLiveUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorLiveUIComposer.swift; sourceTree = "<group>"; };
+		5D9C300E2AED29CF0021E629 /* AnchorLiveRoomManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorLiveRoomManager.swift; sourceTree = "<group>"; };
+		5D9C30112AED30FC0021E629 /* TencentUserSig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TencentUserSig.swift; sourceTree = "<group>"; };
+		5DA96FD52B2BF07F0029D5D7 /* LiveRoomMessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRoomMessageService.swift; sourceTree = "<group>"; };
+		5DA96FD72B2C571F0029D5D7 /* LiveRoomChatInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRoomChatInputView.swift; sourceTree = "<group>"; };
+		5DAFD1B22B616B4C00757F00 /* LiveTopSeat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTopSeat.swift; sourceTree = "<group>"; };
+		5DB083812AEF873F0084ED39 /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
+		5DB083832AEFA10D0084ED39 /* UIView+BlinkAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+BlinkAnimation.swift"; sourceTree = "<group>"; };
+		5DB083862AEFA8130084ED39 /* RealtimeAudienceToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeAudienceToolbar.swift; sourceTree = "<group>"; };
+		5DB083882AEFA91D0084ED39 /* BaseRoomInfoToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRoomInfoToolbar.swift; sourceTree = "<group>"; };
+		5DB0838C2AF007480084ED39 /* SceneDelegate+LiveStreamingAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SceneDelegate+LiveStreamingAnchor.swift"; sourceTree = "<group>"; };
+		5DB0838E2AF0082D0084ED39 /* SceneDelegate+Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SceneDelegate+Login.swift"; sourceTree = "<group>"; };
+		5DB0839B2AF0CA850084ED39 /* Combine+V2TIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Combine+V2TIManager.swift"; sourceTree = "<group>"; };
+		5DB0D0782AEE40F800E7EA22 /* LiveRoomManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRoomManager.swift; sourceTree = "<group>"; };
+		5DB0D07A2AEE414100E7EA22 /* LiveRoomParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRoomParameter.swift; sourceTree = "<group>"; };
+		5DB0D07C2AEE418700E7EA22 /* LiveRoomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRoomError.swift; sourceTree = "<group>"; };
+		5DB0D0852AEE619B00E7EA22 /* AudienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudienceViewController.swift; sourceTree = "<group>"; };
+		5DB0D0872AEE621800E7EA22 /* AudienceOnLiveToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudienceOnLiveToolbar.swift; sourceTree = "<group>"; };
+		5DB0D0892AEE62EC00E7EA22 /* AudienceOnLiveToolbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudienceOnLiveToolbarViewController.swift; sourceTree = "<group>"; };
+		5DB0D08B2AEE639000E7EA22 /* AudienceLiveUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudienceLiveUIComposer.swift; sourceTree = "<group>"; };
+		5DB394CB2B2F059B006D17E5 /* LiveRoomChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRoomChatView.swift; sourceTree = "<group>"; };
+		5DB394D02B2FE95B006D17E5 /* TableAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableAnimation.swift; sourceTree = "<group>"; };
+		5DB394D22B2FE9A5006D17E5 /* LiveRoomChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRoomChatViewModel.swift; sourceTree = "<group>"; };
+		5DB394D42B2FED32006D17E5 /* LiveRoomChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRoomChatCell.swift; sourceTree = "<group>"; };
+		5DB6DE492B595D1800322425 /* Spark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spark.swift; sourceTree = "<group>"; };
+		5DB6DE4A2B595D1800322425 /* FaveIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaveIcon.swift; sourceTree = "<group>"; };
+		5DB6DE4B2B595D1800322425 /* FaveButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaveButton.swift; sourceTree = "<group>"; };
+		5DB6DE4C2B595D1800322425 /* Ring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
+		5DB6DE4E2B595D1800322425 /* Geometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
+		5DB6DE4F2B595D1800322425 /* Easing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Easing.swift; sourceTree = "<group>"; };
+		5DB6DE502B595D1800322425 /* Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Init.swift; sourceTree = "<group>"; };
+		5DB6DE512B595D1800322425 /* Constraints+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Constraints+.swift"; sourceTree = "<group>"; };
+		5DC280752AFB8938001C68D3 /* LiveStreamPausedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamPausedViewController.swift; sourceTree = "<group>"; };
+		5DCD1AC92B5780B00036DA20 /* GiftBulletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftBulletView.swift; sourceTree = "<group>"; };
+		5DD6F4C12B512B9100601E35 /* ListGiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGiftViewController.swift; sourceTree = "<group>"; };
+		5DD6F4C32B512CE500601E35 /* GiftCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCellController.swift; sourceTree = "<group>"; };
+		5DD6F4C52B512D3300601E35 /* GiftCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCell.swift; sourceTree = "<group>"; };
+		5DD6F4C72B512E7800601E35 /* ListGiftUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGiftUIComposer.swift; sourceTree = "<group>"; };
+		5DD6F4C92B512EDB00601E35 /* SceneDelegate+Gift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SceneDelegate+Gift.swift"; sourceTree = "<group>"; };
+		5DD6F4CC2B512FB900601E35 /* LiveGift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveGift.swift; sourceTree = "<group>"; };
+		5DD9DAA62B5188F6008DC277 /* gifts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = gifts.json; sourceTree = "<group>"; };
+		5DF400DD2AE8D40D00A7584F /* KipasKipasLiveStream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KipasKipasLiveStream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DF400E02AE8D40D00A7584F /* KipasKipasLiveStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KipasKipasLiveStream.h; sourceTree = "<group>"; };
+		5DF7293E2B51661A00232A47 /* GiftPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftPanelView.swift; sourceTree = "<group>"; };
+		5E6D8962DDC5FF6587A52DEA /* Pods-KipasKipasLiveStream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLiveStream.debug.xcconfig"; path = "Target Support Files/Pods-KipasKipasLiveStream/Pods-KipasKipasLiveStream.debug.xcconfig"; sourceTree = "<group>"; };
+		709E42EBDC0402BD1E3B0125 /* Pods-KipasKipasLiveStream.debugpk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLiveStream.debugpk.xcconfig"; path = "Target Support Files/Pods-KipasKipasLiveStream/Pods-KipasKipasLiveStream.debugpk.xcconfig"; sourceTree = "<group>"; };
+		8228F72BF0E7CDDF22AB3D4E /* Pods_KipasKipasLiveStream_KKLiveStreamingMicroApps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KipasKipasLiveStream_KKLiveStreamingMicroApps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		840317442B8A4D8000000A37 /* RankingCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingCollectionView.swift; sourceTree = "<group>"; };
+		843E9B36D4477DF08E5845A4 /* Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.release.xcconfig"; path = "Target Support Files/Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps/Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.release.xcconfig"; sourceTree = "<group>"; };
+		845A8A9B2B865BAE004F0848 /* emoji.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = emoji.plist; sourceTree = "<group>"; };
+		847513E12B8335B100C4D8A7 /* TitleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
+		848892452B85E563009695B2 /* EmojiInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiInputView.swift; sourceTree = "<group>"; };
+		848892462B85E563009695B2 /* EmojiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiModel.swift; sourceTree = "<group>"; };
+		848892472B85E563009695B2 /* EmojiPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiPackage.swift; sourceTree = "<group>"; };
+		848892482B85E563009695B2 /* EmojiPrase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiPrase.swift; sourceTree = "<group>"; };
+		8488924A2B85E563009695B2 /* EmojiAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiAttachment.swift; sourceTree = "<group>"; };
+		8488924B2B85E563009695B2 /* EmojiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiView.swift; sourceTree = "<group>"; };
+		8488924C2B85E563009695B2 /* EmojiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiManager.swift; sourceTree = "<group>"; };
+		84B8EF4A2B81FF4800CB4CC5 /* LiveTopSeatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveTopSeatViewController.swift; sourceTree = "<group>"; };
+		84B8EF4C2B81FF7A00CB4CC5 /* TopSeatUIComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopSeatUIComposer.swift; sourceTree = "<group>"; };
+		84CEB1BC2B84C83E0095A17D /* SeatProfileAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatProfileAdapter.swift; sourceTree = "<group>"; };
+		84F885EE2B8737960012C466 /* TeamConditionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamConditionViewController.swift; sourceTree = "<group>"; };
+		8D0DAA93652D07D0B8959749 /* Pods-KipasKipasLiveStream-KipasKipasTRTC.livedebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLiveStream-KipasKipasTRTC.livedebug.xcconfig"; path = "Target Support Files/Pods-KipasKipasLiveStream-KipasKipasTRTC/Pods-KipasKipasLiveStream-KipasKipasTRTC.livedebug.xcconfig"; sourceTree = "<group>"; };
+		ADC8B914C50717AC3E78841F /* Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.debugpk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.debugpk.xcconfig"; path = "Target Support Files/Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps/Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.debugpk.xcconfig"; sourceTree = "<group>"; };
+		B01F6212F92A7E49CF386DCF /* Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.proddebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.proddebug.xcconfig"; path = "Target Support Files/Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps/Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.proddebug.xcconfig"; sourceTree = "<group>"; };
+		B22CFCAF4AA4E8B461474EDA /* Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.debug.xcconfig"; path = "Target Support Files/Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps/Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.debug.xcconfig"; sourceTree = "<group>"; };
+		B68BD38F40A8C0E3EB5526D9 /* Pods-KipasKipasLiveStream.vodplayer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLiveStream.vodplayer.xcconfig"; path = "Target Support Files/Pods-KipasKipasLiveStream/Pods-KipasKipasLiveStream.vodplayer.xcconfig"; sourceTree = "<group>"; };
+		B7382AA6B6DE4B0EBDB92792 /* Pods-KipasKipasLiveStream-KipasKipasTRTC.vodplayer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLiveStream-KipasKipasTRTC.vodplayer.xcconfig"; path = "Target Support Files/Pods-KipasKipasLiveStream-KipasKipasTRTC/Pods-KipasKipasLiveStream-KipasKipasTRTC.vodplayer.xcconfig"; sourceTree = "<group>"; };
+		B825AA2498A11BFE0CFC0EE8 /* Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.staging.xcconfig"; path = "Target Support Files/Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps/Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.staging.xcconfig"; sourceTree = "<group>"; };
+		BA8D6E38F66BCEB7AE6CA24B /* Pods-KipasKipasLiveStream-KipasKipasTRTC.debugpk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLiveStream-KipasKipasTRTC.debugpk.xcconfig"; path = "Target Support Files/Pods-KipasKipasLiveStream-KipasKipasTRTC/Pods-KipasKipasLiveStream-KipasKipasTRTC.debugpk.xcconfig"; sourceTree = "<group>"; };
+		BB61EA5E5930FD597CA6768F /* Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.livedebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.livedebug.xcconfig"; path = "Target Support Files/Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps/Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.livedebug.xcconfig"; sourceTree = "<group>"; };
+		BF5600965B16BBB9A6EAB569 /* Pods_KipasKipasLiveStream_KipasKipasTRTC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KipasKipasLiveStream_KipasKipasTRTC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC38A7A35145F16A8ACFDD76 /* Pods-KipasKipasLiveStream-KipasKipasTRTC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLiveStream-KipasKipasTRTC.debug.xcconfig"; path = "Target Support Files/Pods-KipasKipasLiveStream-KipasKipasTRTC/Pods-KipasKipasLiveStream-KipasKipasTRTC.debug.xcconfig"; sourceTree = "<group>"; };
+		CD6B01E699F22AD1A26AEA44 /* Pods-KipasKipasLiveStream-KipasKipasTRTC.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLiveStream-KipasKipasTRTC.staging.xcconfig"; path = "Target Support Files/Pods-KipasKipasLiveStream-KipasKipasTRTC/Pods-KipasKipasLiveStream-KipasKipasTRTC.staging.xcconfig"; sourceTree = "<group>"; };
+		D3C81566DDA5C161896743AD /* Pods-KipasKipasLiveStream-KipasKipasTRTC.proddebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLiveStream-KipasKipasTRTC.proddebug.xcconfig"; path = "Target Support Files/Pods-KipasKipasLiveStream-KipasKipasTRTC/Pods-KipasKipasLiveStream-KipasKipasTRTC.proddebug.xcconfig"; sourceTree = "<group>"; };
+		EDE04126C7563115B901A328 /* Pods-KipasKipasLiveStream.testpk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLiveStream.testpk.xcconfig"; path = "Target Support Files/Pods-KipasKipasLiveStream/Pods-KipasKipasLiveStream.testpk.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D052D5B2AEA36FD00FB9CDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D052E0A2AEB695600FB9CDC /* Pods_KipasKipasLiveStream_KipasKipasTRTC.framework in Frameworks */,
+				5D23690A2B6A961E001249CD /* KipasKipasShared.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D052DA12AEA404400FB9CDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D6A5E7F2B5F6C4D00200198 /* Kingfisher in Frameworks */,
+				5D052DF02AEB5A6900FB9CDC /* KipasKipasLoginiOS.framework in Frameworks */,
+				5DB083792AEEB0BD0084ED39 /* KipasKipasTRTC.framework in Frameworks */,
+				5D6A5E842B5F6CD800200198 /* KipasKipasDirectMessage.framework in Frameworks */,
+				5D6A5E7C2B5F689A00200198 /* KipasKipasDirectMessageUI.framework in Frameworks */,
+				5D052DE42AEB590800FB9CDC /* KipasKipasLiveStreamiOS.framework in Frameworks */,
+				5D052E012AEB5AB500FB9CDC /* KipasKipasShared.framework in Frameworks */,
+				5D052DFC2AEB5AB100FB9CDC /* KipasKipasNetworking.framework in Frameworks */,
+				5D6A5E882B5F6DE600200198 /* SendbirdChatSDK in Frameworks */,
+				5D052DEE2AEB5A6800FB9CDC /* KipasKipasLogin.framework in Frameworks */,
+				5D052DBB2AEA406B00FB9CDC /* KipasKipasLiveStream.framework in Frameworks */,
+				5D052DD32AEB58D900FB9CDC /* KipasKipasLiveStreamiOS.framework in Frameworks */,
+				5D8169D52B1F79D300E6FC6C /* IQKeyboardManagerSwift in Frameworks */,
+				6FEB4BA92AE7ABDC41B2829C /* Pods_KipasKipasLiveStream_KKLiveStreamingMicroApps.framework in Frameworks */,
+				5D6A5E812B5F6C8000200198 /* KipasKipasPaymentInAppPurchase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D052DCA2AEB58D900FB9CDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D45308C2AF3E600002A9149 /* Kingfisher in Frameworks */,
+				5D052DF72AEB5AA200FB9CDC /* KipasKipasShared.framework in Frameworks */,
+				5DB083762AEEB0790084ED39 /* KipasKipasTRTC.framework in Frameworks */,
+				5D052DDB2AEB58ED00FB9CDC /* KipasKipasLiveStream.framework in Frameworks */,
+				5DDBFF532B592D9800F620EE /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DF400DA2AE8D40D00A7584F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D052DF32AEB5A8B00FB9CDC /* KipasKipasNetworking.framework in Frameworks */,
+				1A3FC371B3D8AEBD6D081183 /* Pods_KipasKipasLiveStream.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D052D5F2AEA36FD00FB9CDC /* KipasKipasTRTC */ = {
+			isa = PBXGroup;
+			children = (
+				5D052DC52AEA4F5D00FB9CDC /* Sources */,
+				5D052D602AEA36FD00FB9CDC /* KipasKipasTRTC.h */,
+			);
+			path = KipasKipasTRTC;
+			sourceTree = "<group>";
+		};
+		5D052D682AEA375C00FB9CDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D2369112B6A984A001249CD /* ImSDK_Plus.framework */,
+				5D23690D2B6A97F5001249CD /* TXLiteAVSDK_TRTC.xcframework */,
+				5D2369092B6A961E001249CD /* KipasKipasShared.framework */,
+				5D6A5E832B5F6CD800200198 /* KipasKipasDirectMessage.framework */,
+				5D6A5E802B5F6C8000200198 /* KipasKipasPaymentInAppPurchase.framework */,
+				5D6A5E7B2B5F689A00200198 /* KipasKipasDirectMessageUI.framework */,
+				5D6A5F2D2B32FAD3005843F2 /* KipasKipasShared.framework */,
+				5D769BC92AF15B4A00D35973 /* TUICore.framework */,
+				5D052E002AEB5AB500FB9CDC /* KipasKipasShared.framework */,
+				5D052DFA2AEB5AB100FB9CDC /* KipasKipasNetworking.framework */,
+				5D052DFB2AEB5AB100FB9CDC /* KipasKipasNetworkingUtils.framework */,
+				5D052DF62AEB5AA200FB9CDC /* KipasKipasShared.framework */,
+				5D052DF22AEB5A8B00FB9CDC /* KipasKipasNetworking.framework */,
+				5D052DEC2AEB5A6800FB9CDC /* KipasKipasLogin.framework */,
+				5D052DED2AEB5A6800FB9CDC /* KipasKipasLoginiOS.framework */,
+				5D052D972AEA3FC700FB9CDC /* TXFFmpeg.xcframework */,
+				5D052D982AEA3FC700FB9CDC /* TXSoundTouch.xcframework */,
+				5D052D812AEA38B600FB9CDC /* CoreMedia.framework */,
+				5D052D7F2AEA38B100FB9CDC /* libc++.tbd */,
+				5D052D7D2AEA389E00FB9CDC /* MobileCoreServices.framework */,
+				5D052D7B2AEA388C00FB9CDC /* libresolv.tbd */,
+				5D052D792AEA384500FB9CDC /* OpenGLES.framework */,
+				5D052D772AEA383400FB9CDC /* AVFoundation.framework */,
+				5D052D752AEA382900FB9CDC /* CoreTelephony.framework */,
+				5D052D732AEA37F400FB9CDC /* libsqlite3.0.tbd */,
+				5D052D712AEA37E600FB9CDC /* SystemConfiguration.framework */,
+				5D052D6F2AEA37E000FB9CDC /* AssetsLibrary.framework */,
+				5D052D6D2AEA37CE00FB9CDC /* GLKit.framework */,
+				5D052D6B2AEA376400FB9CDC /* MetalKit.framework */,
+				5D052D692AEA375C00FB9CDC /* Accelerate.framework */,
+				BF5600965B16BBB9A6EAB569 /* Pods_KipasKipasLiveStream_KipasKipasTRTC.framework */,
+				2BF4CB46B74F9A472F58A94C /* Pods_KipasKipasLiveStream.framework */,
+				8228F72BF0E7CDDF22AB3D4E /* Pods_KipasKipasLiveStream_KKLiveStreamingMicroApps.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D052DA52AEA404400FB9CDC /* KipasKipasLiveStreamingDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5DB0837B2AEF4CBA0084ED39 /* Extensions */,
+				5D9C30102AED309A0021E629 /* Config */,
+				5D052DC42AEA40D500FB9CDC /* Application */,
+				5D052DAF2AEA404500FB9CDC /* Assets.xcassets */,
+				5D052DB12AEA404500FB9CDC /* LaunchScreen.storyboard */,
+				5D052DB42AEA404500FB9CDC /* Info.plist */,
+			);
+			path = KipasKipasLiveStreamingDemo;
+			sourceTree = "<group>";
+		};
+		5D052DC42AEA40D500FB9CDC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5D052DA62AEA404400FB9CDC /* AppDelegate.swift */,
+				5D052DA82AEA404400FB9CDC /* SceneDelegate.swift */,
+				5DB0838C2AF007480084ED39 /* SceneDelegate+LiveStreamingAnchor.swift */,
+				5DB0838E2AF0082D0084ED39 /* SceneDelegate+Login.swift */,
+				5D4530722AF33430002A9149 /* DummyViewController.swift */,
+				5D4530862AF3C72E002A9149 /* SceneDelegate+ListActiveLiveStream.swift */,
+				5D0B84A02AF626E600796E33 /* UserLoggedInStore.swift */,
+				5D0C46532B3B128200BC1D92 /* SceneDelegate+DailyRank.swift */,
+				5DD6F4C92B512EDB00601E35 /* SceneDelegate+Gift.swift */,
+				5D6A5E792B5F687700200198 /* SceneDelegate+Coin.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		5D052DC52AEA4F5D00FB9CDC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5D3E3C762B50EACE007AF6D9 /* Gift */,
+				5DA96FD42B2BF0630029D5D7 /* Messaging */,
+				5D769BCC2AF1F13D00D35973 /* Audience */,
+				5DB0D07E2AEE419D00E7EA22 /* Anchor */,
+				5DB0D0782AEE40F800E7EA22 /* LiveRoomManager.swift */,
+				5DB0D07A2AEE414100E7EA22 /* LiveRoomParameter.swift */,
+				5DB0D07C2AEE418700E7EA22 /* LiveRoomError.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5D052DCE2AEB58D900FB9CDC /* KipasKipasLiveStreamiOS */ = {
+			isa = PBXGroup;
+			children = (
+				5D052DE72AEB591600FB9CDC /* Sources */,
+				5D052DCF2AEB58D900FB9CDC /* KipasKipasLiveStreamiOS.h */,
+			);
+			path = KipasKipasLiveStreamiOS;
+			sourceTree = "<group>";
+		};
+		5D052DE72AEB591600FB9CDC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5DB6DE482B595D1800322425 /* Customs */,
+				5D45309D2AF5456F002A9149 /* Adapters */,
+				5DB0837E2AEF5A3E0084ED39 /* Extensions */,
+				5D9C300B2AED28B60021E629 /* Composers */,
+				5D9C30042AECFAF70021E629 /* Utils */,
+				5D9C2FEC2AEBC4370021E629 /* Views */,
+				5D9C2FFB2AEC22B20021E629 /* Controllers */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5D052E072AEB66B300FB9CDC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5DD9DAA52B51881C008DC277 /* Resources */,
+				5D9AAA8F2B37E87D00703C5D /* Adapters */,
+				5D45307C2AF3A8AC002A9149 /* Presentation */,
+				5D4530772AF38A3E002A9149 /* API */,
+				5D4530742AF38A1A002A9149 /* Feature */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5D0C46482B3AD0E400BC1D92 /* Daily Rank */ = {
+			isa = PBXGroup;
+			children = (
+				5D0C46492B3AD0EC00BC1D92 /* TopRankView.swift */,
+				5D0C464B2B3AD10F00BC1D92 /* DailyRankHeaderView.swift */,
+			);
+			path = "Daily Rank";
+			sourceTree = "<group>";
+		};
+		5D0C46562B3B150C00BC1D92 /* Loaders */ = {
+			isa = PBXGroup;
+			children = (
+				5D0C46572B3B151300BC1D92 /* Loaders.swift */,
+			);
+			path = Loaders;
+			sourceTree = "<group>";
+		};
+		5D3E3C762B50EACE007AF6D9 /* Gift */ = {
+			isa = PBXGroup;
+			children = (
+				5D3E3C772B50EAD9007AF6D9 /* LiveRoomGiftService.swift */,
+			);
+			path = Gift;
+			sourceTree = "<group>";
+		};
+		5D4530742AF38A1A002A9149 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				5DD6F4CC2B512FB900601E35 /* LiveGift.swift */,
+				5D4530752AF38A25002A9149 /* LiveStreamValidation.swift */,
+				5D45307A2AF39C52002A9149 /* LiveRoomActive.swift */,
+				5D45309B2AF504E9002A9149 /* LiveStreamCreation.swift */,
+				5D0B84A42AF64A5D00796E33 /* LiveUserProfile.swift */,
+				5D390DB52B1E0BF100FA6BE8 /* LiveStreamAudience.swift */,
+				5D0C464F2B3AFC1100BC1D92 /* LiveDailyRank.swift */,
+				5D3E7F862B60FA9800E0E3A9 /* LiveCoinBalance.swift */,
+				5DAFD1B22B616B4C00757F00 /* LiveTopSeat.swift */,
+				5D6CD6D72B629E1F006FDE75 /* LiveStreamSummary.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		5D4530772AF38A3E002A9149 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5D0C46562B3B150C00BC1D92 /* Loaders */,
+				5D4530782AF38A53002A9149 /* LiveStreamEndpoint.swift */,
+				5D0B84A22AF62F1000796E33 /* LiveStreamProfileEndpoint.swift */,
+				5D390DBA2B1EB8C000FA6BE8 /* LiveStreamAudienceListRequest.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		5D45307C2AF3A8AC002A9149 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				5D45307D2AF3A8BF002A9149 /* ListActiveLiveStreamPresenter.swift */,
+				5D45307F2AF3A90C002A9149 /* ListActiveLiveStreamViewModel.swift */,
+				5D4530882AF3E25F002A9149 /* LiveRoomInfoViewModel.swift */,
+				5D4530972AF4CCA6002A9149 /* LiveRoomSummaryViewModel.swift */,
+				5DB394D22B2FE9A5006D17E5 /* LiveRoomChatViewModel.swift */,
+				5D0C46592B3B15D700BC1D92 /* LiveDailyRankPresenter.swift */,
+				5D0C465B2B3B162D00BC1D92 /* LiveDailyRankViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		5D45309D2AF5456F002A9149 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				5D45309E2AF54584002A9149 /* LiveRoomValidationAdapter.swift */,
+				5D4530A02AF5471A002A9149 /* LiveRoomCreationAdapter.swift */,
+				5D4530A22AF547A5002A9149 /* LiveRoomDismissalAdapter.swift */,
+				5D0B84A62AF65B6700796E33 /* ProfileAdapter.swift */,
+				84CEB1BC2B84C83E0095A17D /* SeatProfileAdapter.swift */,
+				5D390DB12B1E086900FA6BE8 /* LiveStreamAudienceListAdapter.swift */,
+				5D0C465D2B3B187D00BC1D92 /* LiveDailyRankPresentationAdapter.swift */,
+				5D9979B82B3D24B300AD4060 /* LiveDailyRankViewAdapter.swift */,
+				5D6273402B4EE32F00C2AA60 /* ListActiveLiveStreamViewAdapter.swift */,
+				5D6273442B4EE6DA00C2AA60 /* ListActiveLiveStreamPresentationAdapter.swift */,
+				5D3E7F842B60F01B00E0E3A9 /* ListGiftViewAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		5D769BCC2AF1F13D00D35973 /* Audience */ = {
+			isa = PBXGroup;
+			children = (
+				5D769BCD2AF1F14600D35973 /* AudienceLiveRoomManager.swift */,
+			);
+			path = Audience;
+			sourceTree = "<group>";
+		};
+		5D9AAA8F2B37E87D00703C5D /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				5D9AAA8D2B37E40200703C5D /* ProfileFollowAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		5D9C2FEC2AEBC4370021E629 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5DB083852AEFA8080084ED39 /* Common */,
+				5DB0D0842AEE618400E7EA22 /* Audience */,
+				5D9C2FEF2AEBC7650021E629 /* Anchor */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5D9C2FEF2AEBC7650021E629 /* Anchor */ = {
+			isa = PBXGroup;
+			children = (
+				5D9C2FED2AEBC4440021E629 /* AnchorPreLiveToolbar.swift */,
+				5D9C30052AECFFC90021E629 /* AnchorOnLiveToolbar.swift */,
+			);
+			path = Anchor;
+			sourceTree = "<group>";
+		};
+		5D9C2FFB2AEC22B20021E629 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5DB0D0832AEE617D00E7EA22 /* Audience */,
+				5D9C2FFD2AEC22D80021E629 /* Anchor */,
+				5D9C2FFC2AEC22C70021E629 /* Common */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5D9C2FFC2AEC22C70021E629 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5D052DE82AEB593100FB9CDC /* ToolbarContainerViewController.swift */,
+				5D769BD32AF28BD500D35973 /* LiveStreamingListViewController.swift */,
+				5D0B84A82AF7BA3900796E33 /* LiveStreamingEmptyListViewController.swift */,
+				5D390DA92B1DE31600FA6BE8 /* AudienceListViewController.swift */,
+				5D390DAF2B1DF1A800FA6BE8 /* AudienceCellController.swift */,
+				5D908C312B39DCAF00CFA9E4 /* DailyRankCellController.swift */,
+				5DD6F4C12B512B9100601E35 /* ListGiftViewController.swift */,
+				5DD6F4C32B512CE500601E35 /* GiftCellController.swift */,
+				5D9AF16F2B5FAD79002C3DEB /* CoinPurchaseContainerViewController.swift */,
+				84F885EE2B8737960012C466 /* TeamConditionViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5D9C2FFD2AEC22D80021E629 /* Anchor */ = {
+			isa = PBXGroup;
+			children = (
+				5D9C2FF52AEC02800021E629 /* AnchorViewController.swift */,
+				5D9C2FF92AEC22850021E629 /* AnchorPreLiveToolbarViewController.swift */,
+				5D9C30022AECF1490021E629 /* CountdownViewController.swift */,
+				5D9C30072AED010A0021E629 /* AnchorOnLiveToolbarViewController.swift */,
+				5D45308F2AF490BC002A9149 /* AnchorLiveStreamEndedViewController.swift */,
+				5D4530912AF492E5002A9149 /* AnchorLiveEndedView.swift */,
+			);
+			path = Anchor;
+			sourceTree = "<group>";
+		};
+		5D9C30042AECFAF70021E629 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5D9C30002AECE39C0021E629 /* Countdown.swift */,
+				5DB083812AEF873F0084ED39 /* Stopwatch.swift */,
+				5DB394D02B2FE95B006D17E5 /* TableAnimation.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5D9C300B2AED28B60021E629 /* Composers */ = {
+			isa = PBXGroup;
+			children = (
+				5D9C300C2AED28D60021E629 /* AnchorLiveUIComposer.swift */,
+				5DB0D08B2AEE639000E7EA22 /* AudienceLiveUIComposer.swift */,
+				5D390DB32B1E08F600FA6BE8 /* AudienceListUIComposer.swift */,
+				5D0C46512B3AFC5500BC1D92 /* DailyRankUIComposer.swift */,
+				5DD6F4C72B512E7800601E35 /* ListGiftUIComposer.swift */,
+				84B8EF4C2B81FF7A00CB4CC5 /* TopSeatUIComposer.swift */,
+			);
+			path = Composers;
+			sourceTree = "<group>";
+		};
+		5D9C30102AED309A0021E629 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				5D9C30112AED30FC0021E629 /* TencentUserSig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		5DA96FD42B2BF0630029D5D7 /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+				5D4BD1192B20E58400D1620E /* LiveRoomMessage.swift */,
+				5DA96FD52B2BF07F0029D5D7 /* LiveRoomMessageService.swift */,
+			);
+			path = Messaging;
+			sourceTree = "<group>";
+		};
+		5DB0837B2AEF4CBA0084ED39 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5DB0839B2AF0CA850084ED39 /* Combine+V2TIManager.swift */,
+				5D769BC32AF146C100D35973 /* Combine+TUILogin.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5DB0837E2AEF5A3E0084ED39 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5DB083832AEFA10D0084ED39 /* UIView+BlinkAnimation.swift */,
+				5D45308D2AF3F8DA002A9149 /* UIImageView+KF.swift */,
+				5D4530932AF4C6B4002A9149 /* String+Duration.swift */,
+				5D390DAB2B1DE66400FA6BE8 /* NSCollectionLayoutSection+ext.swift */,
+				5D0075622B3DA1630049A94A /* UIScrollView+Fade.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5DB083852AEFA8080084ED39 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				848892442B85E563009695B2 /* EmojiKeyboard */,
+				5D0C46482B3AD0E400BC1D92 /* Daily Rank */,
+				5DB083862AEFA8130084ED39 /* RealtimeAudienceToolbar.swift */,
+				5DB083882AEFA91D0084ED39 /* BaseRoomInfoToolbar.swift */,
+				5D908C332B39DCED00CFA9E4 /* DailyRankCell.swift */,
+				5D390DAD2B1DF16C00FA6BE8 /* AudienceCell.swift */,
+				5DB394CF2B2F52CD006D17E5 /* Chat */,
+				5D9AAA912B38779600703C5D /* TopSeatView.swift */,
+				5DD6F4C52B512D3300601E35 /* GiftCell.swift */,
+				5DF7293E2B51661A00232A47 /* GiftPanelView.swift */,
+				5D2C23182B5680EF00BC0C0E /* GiftPlayView.swift */,
+				5DCD1AC92B5780B00036DA20 /* GiftBulletView.swift */,
+				847513E12B8335B100C4D8A7 /* TitleButton.swift */,
+				840317442B8A4D8000000A37 /* RankingCollectionView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5DB0D07E2AEE419D00E7EA22 /* Anchor */ = {
+			isa = PBXGroup;
+			children = (
+				5D9C300E2AED29CF0021E629 /* AnchorLiveRoomManager.swift */,
+			);
+			path = Anchor;
+			sourceTree = "<group>";
+		};
+		5DB0D0832AEE617D00E7EA22 /* Audience */ = {
+			isa = PBXGroup;
+			children = (
+				84B8EF4A2B81FF4800CB4CC5 /* LiveTopSeatViewController.swift */,
+				5D769BCF2AF1F5F000D35973 /* AudienceLiveStreamEndedViewController.swift */,
+				5DB0D0852AEE619B00E7EA22 /* AudienceViewController.swift */,
+				5DB0D0892AEE62EC00E7EA22 /* AudienceOnLiveToolbarViewController.swift */,
+				5DC280752AFB8938001C68D3 /* LiveStreamPausedViewController.swift */,
+				5D908C2F2B39A47500CFA9E4 /* LiveDailyRankingViewController.swift */,
+			);
+			path = Audience;
+			sourceTree = "<group>";
+		};
+		5DB0D0842AEE618400E7EA22 /* Audience */ = {
+			isa = PBXGroup;
+			children = (
+				5DB0D0872AEE621800E7EA22 /* AudienceOnLiveToolbar.swift */,
+			);
+			path = Audience;
+			sourceTree = "<group>";
+		};
+		5DB394CF2B2F52CD006D17E5 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				5DA96FD72B2C571F0029D5D7 /* LiveRoomChatInputView.swift */,
+				5DB394CB2B2F059B006D17E5 /* LiveRoomChatView.swift */,
+				5DB394D42B2FED32006D17E5 /* LiveRoomChatCell.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		5DB6DE482B595D1800322425 /* Customs */ = {
+			isa = PBXGroup;
+			children = (
+				5DB6DE492B595D1800322425 /* Spark.swift */,
+				5DB6DE4A2B595D1800322425 /* FaveIcon.swift */,
+				5DB6DE4B2B595D1800322425 /* FaveButton.swift */,
+				5DB6DE4C2B595D1800322425 /* Ring.swift */,
+				5DB6DE4D2B595D1800322425 /* Helpers */,
+			);
+			path = Customs;
+			sourceTree = "<group>";
+		};
+		5DB6DE4D2B595D1800322425 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5DB6DE4E2B595D1800322425 /* Geometry.swift */,
+				5DB6DE4F2B595D1800322425 /* Easing.swift */,
+				5DB6DE502B595D1800322425 /* Init.swift */,
+				5DB6DE512B595D1800322425 /* Constraints+.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5DD9DAA52B51881C008DC277 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5DD9DAA62B5188F6008DC277 /* gifts.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5DF400D32AE8D40D00A7584F = {
+			isa = PBXGroup;
+			children = (
+				5DF400DF2AE8D40D00A7584F /* KipasKipasLiveStream */,
+				5D052D5F2AEA36FD00FB9CDC /* KipasKipasTRTC */,
+				5D052DA52AEA404400FB9CDC /* KipasKipasLiveStreamingDemo */,
+				5D052DCE2AEB58D900FB9CDC /* KipasKipasLiveStreamiOS */,
+				5DF400DE2AE8D40D00A7584F /* Products */,
+				5D052D682AEA375C00FB9CDC /* Frameworks */,
+				F2B667B5657E77676CE4C35F /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		5DF400DE2AE8D40D00A7584F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DF400DD2AE8D40D00A7584F /* KipasKipasLiveStream.framework */,
+				5D052D5E2AEA36FD00FB9CDC /* KipasKipasTRTC.framework */,
+				5D052DA42AEA404400FB9CDC /* KKLiveStreamingMicroApps.app */,
+				5D052DCD2AEB58D900FB9CDC /* KipasKipasLiveStreamiOS.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DF400DF2AE8D40D00A7584F /* KipasKipasLiveStream */ = {
+			isa = PBXGroup;
+			children = (
+				5D052E072AEB66B300FB9CDC /* Sources */,
+				5DF400E02AE8D40D00A7584F /* KipasKipasLiveStream.h */,
+			);
+			path = KipasKipasLiveStream;
+			sourceTree = "<group>";
+		};
+		848892442B85E563009695B2 /* EmojiKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				848892452B85E563009695B2 /* EmojiInputView.swift */,
+				848892462B85E563009695B2 /* EmojiModel.swift */,
+				848892472B85E563009695B2 /* EmojiPackage.swift */,
+				848892482B85E563009695B2 /* EmojiPrase.swift */,
+				8488924A2B85E563009695B2 /* EmojiAttachment.swift */,
+				8488924B2B85E563009695B2 /* EmojiView.swift */,
+				845A8A9B2B865BAE004F0848 /* emoji.plist */,
+				8488924C2B85E563009695B2 /* EmojiManager.swift */,
+			);
+			path = EmojiKeyboard;
+			sourceTree = "<group>";
+		};
+		F2B667B5657E77676CE4C35F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC38A7A35145F16A8ACFDD76 /* Pods-KipasKipasLiveStream-KipasKipasTRTC.debug.xcconfig */,
+				B7382AA6B6DE4B0EBDB92792 /* Pods-KipasKipasLiveStream-KipasKipasTRTC.vodplayer.xcconfig */,
+				CD6B01E699F22AD1A26AEA44 /* Pods-KipasKipasLiveStream-KipasKipasTRTC.staging.xcconfig */,
+				D3C81566DDA5C161896743AD /* Pods-KipasKipasLiveStream-KipasKipasTRTC.proddebug.xcconfig */,
+				4E0BACE2DCD6FDDF1F74FD17 /* Pods-KipasKipasLiveStream-KipasKipasTRTC.release.xcconfig */,
+				5E6D8962DDC5FF6587A52DEA /* Pods-KipasKipasLiveStream.debug.xcconfig */,
+				B68BD38F40A8C0E3EB5526D9 /* Pods-KipasKipasLiveStream.vodplayer.xcconfig */,
+				32266C070F6D0CA11A20613F /* Pods-KipasKipasLiveStream.staging.xcconfig */,
+				10AD7EFBD0BCEE6A668EFEE5 /* Pods-KipasKipasLiveStream.proddebug.xcconfig */,
+				3309AF4120EB805BF62AA3D5 /* Pods-KipasKipasLiveStream.release.xcconfig */,
+				B22CFCAF4AA4E8B461474EDA /* Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.debug.xcconfig */,
+				26CD1F370741AE04C96504F6 /* Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.vodplayer.xcconfig */,
+				B825AA2498A11BFE0CFC0EE8 /* Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.staging.xcconfig */,
+				B01F6212F92A7E49CF386DCF /* Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.proddebug.xcconfig */,
+				843E9B36D4477DF08E5845A4 /* Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.release.xcconfig */,
+				5A4E78C10F11DF0CD2EF0F79 /* Pods-KipasKipasLiveStream.livedebug.xcconfig */,
+				BB61EA5E5930FD597CA6768F /* Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.livedebug.xcconfig */,
+				8D0DAA93652D07D0B8959749 /* Pods-KipasKipasLiveStream-KipasKipasTRTC.livedebug.xcconfig */,
+				EDE04126C7563115B901A328 /* Pods-KipasKipasLiveStream.testpk.xcconfig */,
+				2864680EFBD2B40B9CE8E959 /* Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.testpk.xcconfig */,
+				1F7465C5D212BAB9E76BA842 /* Pods-KipasKipasLiveStream-KipasKipasTRTC.testpk.xcconfig */,
+				709E42EBDC0402BD1E3B0125 /* Pods-KipasKipasLiveStream.debugpk.xcconfig */,
+				ADC8B914C50717AC3E78841F /* Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.debugpk.xcconfig */,
+				BA8D6E38F66BCEB7AE6CA24B /* Pods-KipasKipasLiveStream-KipasKipasTRTC.debugpk.xcconfig */,
+			);
+			name = Pods;
+			path = ../../Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5D052D592AEA36FD00FB9CDC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D052D612AEA36FD00FB9CDC /* KipasKipasTRTC.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D052DC82AEB58D900FB9CDC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D052DD02AEB58D900FB9CDC /* KipasKipasLiveStreamiOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DF400D82AE8D40D00A7584F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DF400E12AE8D40D00A7584F /* KipasKipasLiveStream.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5D052D5D2AEA36FD00FB9CDC /* KipasKipasTRTC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D052D672AEA36FD00FB9CDC /* Build configuration list for PBXNativeTarget "KipasKipasTRTC" */;
+			buildPhases = (
+				76FDF3364C0CE1C18E002BA4 /* [CP] Check Pods Manifest.lock */,
+				5D052D592AEA36FD00FB9CDC /* Headers */,
+				5D052D5A2AEA36FD00FB9CDC /* Sources */,
+				5D052D5B2AEA36FD00FB9CDC /* Frameworks */,
+				5D052D5C2AEA36FD00FB9CDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KipasKipasTRTC;
+			productName = KipasKipasLiveStreamiOS;
+			productReference = 5D052D5E2AEA36FD00FB9CDC /* KipasKipasTRTC.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5D052DA32AEA404400FB9CDC /* KKLiveStreamingMicroApps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D052DB52AEA404500FB9CDC /* Build configuration list for PBXNativeTarget "KKLiveStreamingMicroApps" */;
+			buildPhases = (
+				302BD26AF0BB5D2D2B72BC35 /* [CP] Check Pods Manifest.lock */,
+				5D052DA02AEA404400FB9CDC /* Sources */,
+				5D052DA12AEA404400FB9CDC /* Frameworks */,
+				5D052DA22AEA404400FB9CDC /* Resources */,
+				5D052DC32AEA406B00FB9CDC /* Embed Frameworks */,
+				7029184394998B3E7ADD21AD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D052DBE2AEA406B00FB9CDC /* PBXTargetDependency */,
+				5D052DD22AEB58D900FB9CDC /* PBXTargetDependency */,
+				5D052DE62AEB590800FB9CDC /* PBXTargetDependency */,
+				5D9C2FE92AEB9A4F0021E629 /* PBXTargetDependency */,
+			);
+			name = KKLiveStreamingMicroApps;
+			packageProductDependencies = (
+				5D8169D42B1F79D300E6FC6C /* IQKeyboardManagerSwift */,
+				5D6A5E7E2B5F6C4D00200198 /* Kingfisher */,
+				5D6A5E872B5F6DE600200198 /* SendbirdChatSDK */,
+			);
+			productName = KipasKipasLiveStreamingDemo;
+			productReference = 5D052DA42AEA404400FB9CDC /* KKLiveStreamingMicroApps.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5D052DCC2AEB58D900FB9CDC /* KipasKipasLiveStreamiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D052DD52AEB58DA00FB9CDC /* Build configuration list for PBXNativeTarget "KipasKipasLiveStreamiOS" */;
+			buildPhases = (
+				5D052DC82AEB58D900FB9CDC /* Headers */,
+				5D052DC92AEB58D900FB9CDC /* Sources */,
+				5D052DCA2AEB58D900FB9CDC /* Frameworks */,
+				5D052DCB2AEB58D900FB9CDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D052DDE2AEB58ED00FB9CDC /* PBXTargetDependency */,
+				5D052DE22AEB58ED00FB9CDC /* PBXTargetDependency */,
+			);
+			name = KipasKipasLiveStreamiOS;
+			packageProductDependencies = (
+				5D45308B2AF3E600002A9149 /* Kingfisher */,
+				5DDBFF522B592D9800F620EE /* Lottie */,
+			);
+			productName = KipasKipasLiveStreamiOS;
+			productReference = 5D052DCD2AEB58D900FB9CDC /* KipasKipasLiveStreamiOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5DF400DC2AE8D40D00A7584F /* KipasKipasLiveStream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DF400E42AE8D40D00A7584F /* Build configuration list for PBXNativeTarget "KipasKipasLiveStream" */;
+			buildPhases = (
+				B3E662FEA1038391671D90DB /* [CP] Check Pods Manifest.lock */,
+				5DF400D82AE8D40D00A7584F /* Headers */,
+				5DF400D92AE8D40D00A7584F /* Sources */,
+				5DF400DA2AE8D40D00A7584F /* Frameworks */,
+				5DF400DB2AE8D40D00A7584F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KipasKipasLiveStream;
+			productName = KipasKipasLiveStream;
+			productReference = 5DF400DD2AE8D40D00A7584F /* KipasKipasLiveStream.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DF400D42AE8D40D00A7584F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					5D052D5D2AEA36FD00FB9CDC = {
+						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
+					};
+					5D052DA32AEA404400FB9CDC = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					5D052DCC2AEB58D900FB9CDC = {
+						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
+					};
+					5DF400DC2AE8D40D00A7584F = {
+						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
+					};
+				};
+			};
+			buildConfigurationList = 5DF400D72AE8D40D00A7584F /* Build configuration list for PBXProject "KipasKipasLiveStream" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DF400D32AE8D40D00A7584F;
+			packageReferences = (
+				5D45308A2AF3E600002A9149 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				5D8169D32B1F79D300E6FC6C /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				5DDBFF512B592D9800F620EE /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				5D6A5E862B5F6DE600200198 /* XCRemoteSwiftPackageReference "sendbird-chat-sdk-ios" */,
+			);
+			productRefGroup = 5DF400DE2AE8D40D00A7584F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DF400DC2AE8D40D00A7584F /* KipasKipasLiveStream */,
+				5D052D5D2AEA36FD00FB9CDC /* KipasKipasTRTC */,
+				5D052DA32AEA404400FB9CDC /* KKLiveStreamingMicroApps */,
+				5D052DCC2AEB58D900FB9CDC /* KipasKipasLiveStreamiOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D052D5C2AEA36FD00FB9CDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D052DA22AEA404400FB9CDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D052DB32AEA404500FB9CDC /* LaunchScreen.storyboard in Resources */,
+				5D052DB02AEA404500FB9CDC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D052DCB2AEB58D900FB9CDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845A8A9C2B865BAE004F0848 /* emoji.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DF400DB2AE8D40D00A7584F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DD9DAA72B5188F6008DC277 /* gifts.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		302BD26AF0BB5D2D2B72BC35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7029184394998B3E7ADD21AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps/Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps/Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps/Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76FDF3364C0CE1C18E002BA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KipasKipasLiveStream-KipasKipasTRTC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3E662FEA1038391671D90DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KipasKipasLiveStream-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D052D5A2AEA36FD00FB9CDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D3E3C782B50EAD9007AF6D9 /* LiveRoomGiftService.swift in Sources */,
+				5DB0D0792AEE40F800E7EA22 /* LiveRoomManager.swift in Sources */,
+				5DA96FD62B2BF07F0029D5D7 /* LiveRoomMessageService.swift in Sources */,
+				5DB0D07D2AEE418700E7EA22 /* LiveRoomError.swift in Sources */,
+				5D9C300F2AED29CF0021E629 /* AnchorLiveRoomManager.swift in Sources */,
+				5D769BCE2AF1F14600D35973 /* AudienceLiveRoomManager.swift in Sources */,
+				5D4BD11A2B20E58400D1620E /* LiveRoomMessage.swift in Sources */,
+				5DB0D07B2AEE414100E7EA22 /* LiveRoomParameter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D052DA02AEA404400FB9CDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D769BC42AF146C100D35973 /* Combine+TUILogin.swift in Sources */,
+				5DD6F4CB2B512F1600601E35 /* SceneDelegate+Gift.swift in Sources */,
+				5D4530732AF33430002A9149 /* DummyViewController.swift in Sources */,
+				5D052DA72AEA404400FB9CDC /* AppDelegate.swift in Sources */,
+				5D6A5E7A2B5F687700200198 /* SceneDelegate+Coin.swift in Sources */,
+				5DB0839D2AF0CACA0084ED39 /* Combine+V2TIManager.swift in Sources */,
+				5D052DA92AEA404400FB9CDC /* SceneDelegate.swift in Sources */,
+				5D0C46552B3B12AD00BC1D92 /* SceneDelegate+DailyRank.swift in Sources */,
+				5D0B84A12AF626E600796E33 /* UserLoggedInStore.swift in Sources */,
+				5D9C30122AED30FC0021E629 /* TencentUserSig.swift in Sources */,
+				5D4530872AF3C72E002A9149 /* SceneDelegate+ListActiveLiveStream.swift in Sources */,
+				5DB0838F2AF0082D0084ED39 /* SceneDelegate+Login.swift in Sources */,
+				5DB0838D2AF007480084ED39 /* SceneDelegate+LiveStreamingAnchor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D052DC92AEB58D900FB9CDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DB6DE572B595D1800322425 /* Easing.swift in Sources */,
+				5DB6DE582B595D1800322425 /* Init.swift in Sources */,
+				5DB0D0882AEE621800E7EA22 /* AudienceOnLiveToolbar.swift in Sources */,
+				848892502B85E563009695B2 /* EmojiPrase.swift in Sources */,
+				5D0B84A72AF65B6700796E33 /* ProfileAdapter.swift in Sources */,
+				847513E22B8335B100C4D8A7 /* TitleButton.swift in Sources */,
+				84F885EF2B8737960012C466 /* TeamConditionViewController.swift in Sources */,
+				5D4530942AF4C6B4002A9149 /* String+Duration.swift in Sources */,
+				5D908C322B39DCAF00CFA9E4 /* DailyRankCellController.swift in Sources */,
+				8488924E2B85E563009695B2 /* EmojiModel.swift in Sources */,
+				84CEB1BD2B84C83E0095A17D /* SeatProfileAdapter.swift in Sources */,
+				5DB0D08C2AEE639000E7EA22 /* AudienceLiveUIComposer.swift in Sources */,
+				5D0C464C2B3AD10F00BC1D92 /* DailyRankHeaderView.swift in Sources */,
+				5D769BD02AF1F5F000D35973 /* AudienceLiveStreamEndedViewController.swift in Sources */,
+				5DB6DE552B595D1800322425 /* Ring.swift in Sources */,
+				5D0C464A2B3AD0EC00BC1D92 /* TopRankView.swift in Sources */,
+				5D9AAA922B38779600703C5D /* TopSeatView.swift in Sources */,
+				5D0C46522B3AFC5500BC1D92 /* DailyRankUIComposer.swift in Sources */,
+				5D9C30032AECF1490021E629 /* CountdownViewController.swift in Sources */,
+				5DB6DE522B595D1800322425 /* Spark.swift in Sources */,
+				5D390DAE2B1DF16C00FA6BE8 /* AudienceCell.swift in Sources */,
+				5D2C23192B5680EF00BC0C0E /* GiftPlayView.swift in Sources */,
+				5D9C2FEE2AEBC4440021E629 /* AnchorPreLiveToolbar.swift in Sources */,
+				5DFCB5FC2B4EC3B9000498F2 /* LiveStreamingListViewController.swift in Sources */,
+				5D0C465E2B3B187D00BC1D92 /* LiveDailyRankPresentationAdapter.swift in Sources */,
+				5D390DAA2B1DE31600FA6BE8 /* AudienceListViewController.swift in Sources */,
+				5DB394CC2B2F059B006D17E5 /* LiveRoomChatView.swift in Sources */,
+				5D45309F2AF54584002A9149 /* LiveRoomValidationAdapter.swift in Sources */,
+				5DB0D08A2AEE62EC00E7EA22 /* AudienceOnLiveToolbarViewController.swift in Sources */,
+				5DD6F4C62B512D3300601E35 /* GiftCell.swift in Sources */,
+				5DCD1ACA2B5780B00036DA20 /* GiftBulletView.swift in Sources */,
+				5DB083822AEF873F0084ED39 /* Stopwatch.swift in Sources */,
+				5DB6DE562B595D1800322425 /* Geometry.swift in Sources */,
+				5D6273412B4EE32F00C2AA60 /* ListActiveLiveStreamViewAdapter.swift in Sources */,
+				5DB083842AEFA10D0084ED39 /* UIView+BlinkAnimation.swift in Sources */,
+				5DB394D12B2FE95B006D17E5 /* TableAnimation.swift in Sources */,
+				5D9C2FFA2AEC22850021E629 /* AnchorPreLiveToolbarViewController.swift in Sources */,
+				8488924D2B85E563009695B2 /* EmojiInputView.swift in Sources */,
+				5D4530A32AF547A5002A9149 /* LiveRoomDismissalAdapter.swift in Sources */,
+				5D9979B92B3D24B300AD4060 /* LiveDailyRankViewAdapter.swift in Sources */,
+				5D4530922AF492E5002A9149 /* AnchorLiveEndedView.swift in Sources */,
+				5D390DB22B1E086900FA6BE8 /* LiveStreamAudienceListAdapter.swift in Sources */,
+				5D052DE92AEB593100FB9CDC /* ToolbarContainerViewController.swift in Sources */,
+				84B8EF4D2B81FF7A00CB4CC5 /* TopSeatUIComposer.swift in Sources */,
+				5D390DB42B1E08F600FA6BE8 /* AudienceListUIComposer.swift in Sources */,
+				848892522B85E563009695B2 /* EmojiAttachment.swift in Sources */,
+				5D4530A12AF5471A002A9149 /* LiveRoomCreationAdapter.swift in Sources */,
+				848892532B85E563009695B2 /* EmojiView.swift in Sources */,
+				840317452B8A4D8000000A37 /* RankingCollectionView.swift in Sources */,
+				5D9AF1702B5FAD79002C3DEB /* CoinPurchaseContainerViewController.swift in Sources */,
+				5D3E7F852B60F01B00E0E3A9 /* ListGiftViewAdapter.swift in Sources */,
+				5DD6F4C42B512CE500601E35 /* GiftCellController.swift in Sources */,
+				5D9C300D2AED28D60021E629 /* AnchorLiveUIComposer.swift in Sources */,
+				5D9C2FF62AEC02800021E629 /* AnchorViewController.swift in Sources */,
+				5D45308E2AF3F8DA002A9149 /* UIImageView+KF.swift in Sources */,
+				5DB083892AEFA91D0084ED39 /* BaseRoomInfoToolbar.swift in Sources */,
+				5DB6DE542B595D1800322425 /* FaveButton.swift in Sources */,
+				5DC280762AFB8938001C68D3 /* LiveStreamPausedViewController.swift in Sources */,
+				5D9C30012AECE39C0021E629 /* Countdown.swift in Sources */,
+				5D908C342B39DCED00CFA9E4 /* DailyRankCell.swift in Sources */,
+				5D0075632B3DA1630049A94A /* UIScrollView+Fade.swift in Sources */,
+				5DB083872AEFA8130084ED39 /* RealtimeAudienceToolbar.swift in Sources */,
+				5DB0D0862AEE619B00E7EA22 /* AudienceViewController.swift in Sources */,
+				5D908C302B39A47500CFA9E4 /* LiveDailyRankingViewController.swift in Sources */,
+				5D390DB02B1DF1A800FA6BE8 /* AudienceCellController.swift in Sources */,
+				84B8EF4B2B81FF4800CB4CC5 /* LiveTopSeatViewController.swift in Sources */,
+				5D0B84A92AF7BA3900796E33 /* LiveStreamingEmptyListViewController.swift in Sources */,
+				5D390DAC2B1DE66400FA6BE8 /* NSCollectionLayoutSection+ext.swift in Sources */,
+				848892542B85E563009695B2 /* EmojiManager.swift in Sources */,
+				5DD6F4C82B512E7800601E35 /* ListGiftUIComposer.swift in Sources */,
+				5DF7293F2B51661A00232A47 /* GiftPanelView.swift in Sources */,
+				5D9C30062AECFFC90021E629 /* AnchorOnLiveToolbar.swift in Sources */,
+				5DA96FD82B2C571F0029D5D7 /* LiveRoomChatInputView.swift in Sources */,
+				5D4530902AF490BC002A9149 /* AnchorLiveStreamEndedViewController.swift in Sources */,
+				5DB6DE532B595D1800322425 /* FaveIcon.swift in Sources */,
+				5DD6F4C22B512B9100601E35 /* ListGiftViewController.swift in Sources */,
+				5D6273452B4EE6DA00C2AA60 /* ListActiveLiveStreamPresentationAdapter.swift in Sources */,
+				5DB394D52B2FED32006D17E5 /* LiveRoomChatCell.swift in Sources */,
+				5DB6DE592B595D1800322425 /* Constraints+.swift in Sources */,
+				5D9C30082AED010A0021E629 /* AnchorOnLiveToolbarViewController.swift in Sources */,
+				8488924F2B85E563009695B2 /* EmojiPackage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DF400D92AE8D40D00A7584F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DB394D32B2FE9A5006D17E5 /* LiveRoomChatViewModel.swift in Sources */,
+				5D4530802AF3A90C002A9149 /* ListActiveLiveStreamViewModel.swift in Sources */,
+				5DAFD1B32B616B4C00757F00 /* LiveTopSeat.swift in Sources */,
+				5DD6F4CD2B512FB900601E35 /* LiveGift.swift in Sources */,
+				5D3E7F872B60FA9800E0E3A9 /* LiveCoinBalance.swift in Sources */,
+				5D45307B2AF39C53002A9149 /* LiveRoomActive.swift in Sources */,
+				5D0C46502B3AFC1100BC1D92 /* LiveDailyRank.swift in Sources */,
+				5D4530792AF38A53002A9149 /* LiveStreamEndpoint.swift in Sources */,
+				5D6CD6D82B629E1F006FDE75 /* LiveStreamSummary.swift in Sources */,
+				5D0C465A2B3B15D700BC1D92 /* LiveDailyRankPresenter.swift in Sources */,
+				5D4530982AF4CCA6002A9149 /* LiveRoomSummaryViewModel.swift in Sources */,
+				5D0C46582B3B151300BC1D92 /* Loaders.swift in Sources */,
+				5D0C465C2B3B162D00BC1D92 /* LiveDailyRankViewModel.swift in Sources */,
+				5D390DB62B1E0BF100FA6BE8 /* LiveStreamAudience.swift in Sources */,
+				5D390DBB2B1EB8C000FA6BE8 /* LiveStreamAudienceListRequest.swift in Sources */,
+				5D45309C2AF504E9002A9149 /* LiveStreamCreation.swift in Sources */,
+				5D4530892AF3E25F002A9149 /* LiveRoomInfoViewModel.swift in Sources */,
+				5D0B84A52AF64A5D00796E33 /* LiveUserProfile.swift in Sources */,
+				5D45307E2AF3A8BF002A9149 /* ListActiveLiveStreamPresenter.swift in Sources */,
+				5D4530762AF38A25002A9149 /* LiveStreamValidation.swift in Sources */,
+				5D9AAA902B37E88F00703C5D /* ProfileFollowAdapter.swift in Sources */,
+				5D0B84A32AF62F1000796E33 /* LiveStreamProfileEndpoint.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D052DBE2AEA406B00FB9CDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DF400DC2AE8D40D00A7584F /* KipasKipasLiveStream */;
+			targetProxy = 5D052DBD2AEA406B00FB9CDC /* PBXContainerItemProxy */;
+		};
+		5D052DD22AEB58D900FB9CDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D052DCC2AEB58D900FB9CDC /* KipasKipasLiveStreamiOS */;
+			targetProxy = 5D052DD12AEB58D900FB9CDC /* PBXContainerItemProxy */;
+		};
+		5D052DDE2AEB58ED00FB9CDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DF400DC2AE8D40D00A7584F /* KipasKipasLiveStream */;
+			targetProxy = 5D052DDD2AEB58ED00FB9CDC /* PBXContainerItemProxy */;
+		};
+		5D052DE22AEB58ED00FB9CDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D052D5D2AEA36FD00FB9CDC /* KipasKipasTRTC */;
+			targetProxy = 5D052DE12AEB58ED00FB9CDC /* PBXContainerItemProxy */;
+		};
+		5D052DE62AEB590800FB9CDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D052DCC2AEB58D900FB9CDC /* KipasKipasLiveStreamiOS */;
+			targetProxy = 5D052DE52AEB590800FB9CDC /* PBXContainerItemProxy */;
+		};
+		5D9C2FE92AEB9A4F0021E629 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D052D5D2AEA36FD00FB9CDC /* KipasKipasTRTC */;
+			targetProxy = 5D9C2FE82AEB9A4F0021E629 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5D052DB12AEA404500FB9CDC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D052DB22AEA404500FB9CDC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D052D622AEA36FD00FB9CDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC38A7A35145F16A8ACFDD76 /* Pods-KipasKipasLiveStream-KipasKipasTRTC.debug.xcconfig */;
+			buildSettings = {
+				APPLY_RULES_IN_COPY_HEADERS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/TRTC",
+					"$(inherited)",
+					"$(SDKROOT)/System/iOSSupport/System/Library/Frameworks",
+					"$(PROJECT_DIR)/TRTC",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasTRTC;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5D052D642AEA36FD00FB9CDC /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD6B01E699F22AD1A26AEA44 /* Pods-KipasKipasLiveStream-KipasKipasTRTC.staging.xcconfig */;
+			buildSettings = {
+				APPLY_RULES_IN_COPY_HEADERS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/TRTC",
+					"$(inherited)",
+					"$(SDKROOT)/System/iOSSupport/System/Library/Frameworks",
+					"$(PROJECT_DIR)/TRTC",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasTRTC;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Staging;
+		};
+		5D052D652AEA36FD00FB9CDC /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3C81566DDA5C161896743AD /* Pods-KipasKipasLiveStream-KipasKipasTRTC.proddebug.xcconfig */;
+			buildSettings = {
+				APPLY_RULES_IN_COPY_HEADERS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/TRTC",
+					"$(inherited)",
+					"$(SDKROOT)/System/iOSSupport/System/Library/Frameworks",
+					"$(PROJECT_DIR)/TRTC",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasTRTC;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = ProdDebug;
+		};
+		5D052D662AEA36FD00FB9CDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E0BACE2DCD6FDDF1F74FD17 /* Pods-KipasKipasLiveStream-KipasKipasTRTC.release.xcconfig */;
+			buildSettings = {
+				APPLY_RULES_IN_COPY_HEADERS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_TESTABILITY = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/TRTC",
+					"$(inherited)",
+					"$(SDKROOT)/System/iOSSupport/System/Library/Frameworks",
+					"$(PROJECT_DIR)/TRTC",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasTRTC;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D052DB62AEA404500FB9CDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B22CFCAF4AA4E8B461474EDA /* Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_BASE_URL = "https://test-api-main.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasLiveStreamingDemo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "KipasKipasLiveStreamingDemo needs to access your camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "KipasKipasLiveStreamingDemo needs to access your microphone";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasLiveStreamingDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TRTC_SDKAPPID = 20003775;
+				TRTC_SECRET_KEY = 5dd00cb15034b80b2f30f889459b9db1db247e5aa1dfdda72c7ffcadead53954;
+			};
+			name = Debug;
+		};
+		5D052DB82AEA404500FB9CDC /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B825AA2498A11BFE0CFC0EE8 /* Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_BASE_URL = "https://stg-api-main.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasLiveStreamingDemo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "KipasKipasLiveStreamingDemo needs to access your camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "KipasKipasLiveStreamingDemo needs to access your microphone";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasLiveStreamingDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TRTC_SDKAPPID = 20003775;
+				TRTC_SECRET_KEY = 5dd00cb15034b80b2f30f889459b9db1db247e5aa1dfdda72c7ffcadead53954;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Staging;
+		};
+		5D052DB92AEA404500FB9CDC /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B01F6212F92A7E49CF386DCF /* Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.proddebug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_BASE_URL = "https://test-api-main.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasLiveStreamingDemo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "KipasKipasLiveStreamingDemo needs to access your camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "KipasKipasLiveStreamingDemo needs to access your microphone";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasLiveStreamingDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TRTC_SDKAPPID = 20003775;
+				TRTC_SECRET_KEY = 5dd00cb15034b80b2f30f889459b9db1db247e5aa1dfdda72c7ffcadead53954;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = ProdDebug;
+		};
+		5D052DBA2AEA404500FB9CDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 843E9B36D4477DF08E5845A4 /* Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_BASE_URL = "https://api-main.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasLiveStreamingDemo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "KipasKipasLiveStreamingDemo needs to access your camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "KipasKipasLiveStreamingDemo needs to access your microphone";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasLiveStreamingDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TRTC_SDKAPPID = 20003946;
+				TRTC_SECRET_KEY = 4dfa4a3021ef2361339d977fe92e3ebe15db08fdb5a04c9548c4ec5e37396d20;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D052DD62AEB58DA00FB9CDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasLiveStreamiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5D052DD82AEB58DA00FB9CDC /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasLiveStreamiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Staging;
+		};
+		5D052DD92AEB58DA00FB9CDC /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasLiveStreamiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = ProdDebug;
+		};
+		5D052DDA2AEB58DA00FB9CDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_TESTABILITY = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasLiveStreamiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D77B1EE2B9175E3008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLY_RULES_IN_COPY_HEADERS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = LiveDebug;
+		};
+		5D77B1EF2B9175E3008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A4E78C10F11DF0CD2EF0F79 /* Pods-KipasKipasLiveStream.livedebug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasLiveStream;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = LiveDebug;
+		};
+		5D77B1F02B9175E3008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D0DAA93652D07D0B8959749 /* Pods-KipasKipasLiveStream-KipasKipasTRTC.livedebug.xcconfig */;
+			buildSettings = {
+				APPLY_RULES_IN_COPY_HEADERS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/TRTC",
+					"$(inherited)",
+					"$(SDKROOT)/System/iOSSupport/System/Library/Frameworks",
+					"$(PROJECT_DIR)/TRTC",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasTRTC;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = LiveDebug;
+		};
+		5D77B1F12B9175E3008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB61EA5E5930FD597CA6768F /* Pods-KipasKipasLiveStream-KKLiveStreamingMicroApps.livedebug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_BASE_URL = "https://test-api-main.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasLiveStreamingDemo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "KipasKipasLiveStreamingDemo needs to access your camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "KipasKipasLiveStreamingDemo needs to access your microphone";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasLiveStreamingDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TRTC_SDKAPPID = 20003775;
+				TRTC_SECRET_KEY = 5dd00cb15034b80b2f30f889459b9db1db247e5aa1dfdda72c7ffcadead53954;
+			};
+			name = LiveDebug;
+		};
+		5D77B1F22B9175E3008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasLiveStreamiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = LiveDebug;
+		};
+		5DF400E22AE8D40D00A7584F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLY_RULES_IN_COPY_HEADERS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5DF400E32AE8D40D00A7584F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLY_RULES_IN_COPY_HEADERS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5DF400E52AE8D40D00A7584F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E6D8962DDC5FF6587A52DEA /* Pods-KipasKipasLiveStream.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasLiveStream;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5DF400E62AE8D40D00A7584F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3309AF4120EB805BF62AA3D5 /* Pods-KipasKipasLiveStream.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasLiveStream;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5DF400E72AE8DB0900A7584F /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLY_RULES_IN_COPY_HEADERS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Staging;
+		};
+		5DF400E82AE8DB0900A7584F /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32266C070F6D0CA11A20613F /* Pods-KipasKipasLiveStream.staging.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasLiveStream;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Staging;
+		};
+		5DF400E92AE8DB1600A7584F /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLY_RULES_IN_COPY_HEADERS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = ProdDebug;
+		};
+		5DF400EA2AE8DB1600A7584F /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10AD7EFBD0BCEE6A668EFEE5 /* Pods-KipasKipasLiveStream.proddebug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasLiveStream;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = ProdDebug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D052D672AEA36FD00FB9CDC /* Build configuration list for PBXNativeTarget "KipasKipasTRTC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D052D622AEA36FD00FB9CDC /* Debug */,
+				5D77B1F02B9175E3008CC295 /* LiveDebug */,
+				5D052D642AEA36FD00FB9CDC /* Staging */,
+				5D052D652AEA36FD00FB9CDC /* ProdDebug */,
+				5D052D662AEA36FD00FB9CDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D052DB52AEA404500FB9CDC /* Build configuration list for PBXNativeTarget "KKLiveStreamingMicroApps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D052DB62AEA404500FB9CDC /* Debug */,
+				5D77B1F12B9175E3008CC295 /* LiveDebug */,
+				5D052DB82AEA404500FB9CDC /* Staging */,
+				5D052DB92AEA404500FB9CDC /* ProdDebug */,
+				5D052DBA2AEA404500FB9CDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D052DD52AEB58DA00FB9CDC /* Build configuration list for PBXNativeTarget "KipasKipasLiveStreamiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D052DD62AEB58DA00FB9CDC /* Debug */,
+				5D77B1F22B9175E3008CC295 /* LiveDebug */,
+				5D052DD82AEB58DA00FB9CDC /* Staging */,
+				5D052DD92AEB58DA00FB9CDC /* ProdDebug */,
+				5D052DDA2AEB58DA00FB9CDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DF400D72AE8D40D00A7584F /* Build configuration list for PBXProject "KipasKipasLiveStream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DF400E22AE8D40D00A7584F /* Debug */,
+				5D77B1EE2B9175E3008CC295 /* LiveDebug */,
+				5DF400E72AE8DB0900A7584F /* Staging */,
+				5DF400E92AE8DB1600A7584F /* ProdDebug */,
+				5DF400E32AE8D40D00A7584F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DF400E42AE8D40D00A7584F /* Build configuration list for PBXNativeTarget "KipasKipasLiveStream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DF400E52AE8D40D00A7584F /* Debug */,
+				5D77B1EF2B9175E3008CC295 /* LiveDebug */,
+				5DF400E82AE8DB0900A7584F /* Staging */,
+				5DF400EA2AE8DB1600A7584F /* ProdDebug */,
+				5DF400E62AE8D40D00A7584F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5D45308A2AF3E600002A9149 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.0;
+			};
+		};
+		5D6A5E862B5F6DE600200198 /* XCRemoteSwiftPackageReference "sendbird-chat-sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sendbird/sendbird-chat-sdk-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.9.2;
+			};
+		};
+		5D8169D32B1F79D300E6FC6C /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.16;
+			};
+		};
+		5DDBFF512B592D9800F620EE /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5D45308B2AF3E600002A9149 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D45308A2AF3E600002A9149 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		5D6A5E7E2B5F6C4D00200198 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D45308A2AF3E600002A9149 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		5D6A5E872B5F6DE600200198 /* SendbirdChatSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D6A5E862B5F6DE600200198 /* XCRemoteSwiftPackageReference "sendbird-chat-sdk-ios" */;
+			productName = SendbirdChatSDK;
+		};
+		5D8169D42B1F79D300E6FC6C /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D8169D32B1F79D300E6FC6C /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		5DDBFF522B592D9800F620EE /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DDBFF512B592D9800F620EE /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5DF400D42AE8D40D00A7584F /* Project object */;
+}

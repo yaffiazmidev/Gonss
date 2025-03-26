@@ -1,0 +1,229 @@
+PODS:
+  - Alamofire (5.4.0)
+  - AliyunOSSiOS (2.10.16)
+  - Branch (1.45.2)
+  - CombineCocoa (0.2.2)
+  - CombineDataSources (0.2.5)
+  - ContextMenu (0.4.0)
+  - Cosmos (23.0.0)
+  - Differentiator (4.0.1)
+  - FBRetainCycleDetector (0.1.4)
+  - GCDWebServer (3.5.4):
+    - GCDWebServer/Core (= 3.5.4)
+  - GCDWebServer/Core (3.5.4)
+  - GoogleMaps (5.0.0):
+    - GoogleMaps/Maps (= 5.0.0)
+  - GoogleMaps/Base (5.0.0)
+  - GoogleMaps/Maps (5.0.0):
+    - GoogleMaps/Base
+  - GooglePlaces (5.0.0)
+  - IGListDiffKit (4.0.0)
+  - IGListKit (4.0.0):
+    - IGListDiffKit (= 4.0.0)
+  - IQKeyboardManagerSwift (6.5.6)
+  - JSONWebToken (2.2.0)
+  - Masonry (1.1.0)
+  - MLeaksFinder (1.0.0):
+    - FBRetainCycleDetector
+  - ModernAVPlayer (1.7.3):
+    - ModernAVPlayer/Core (= 1.7.3)
+  - ModernAVPlayer/Core (1.7.3)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - OneSignalXCFramework (3.2.0)
+  - QCloudCore/WithoutMTA (6.3.8)
+  - QCloudCOSXML/Slim (6.3.8):
+    - QCloudCore/WithoutMTA (= 6.3.8)
+  - QCloudQuic (6.3.7):
+    - QCloudQuic/Default (= 6.3.7)
+  - QCloudQuic/Default (6.3.7)
+  - Queuer (2.1.1)
+  - RxAlamofire (5.7.1):
+    - RxAlamofire/Core (= 5.7.1)
+  - RxAlamofire/Core (5.7.1):
+    - Alamofire (~> 5.4)
+    - RxSwift (~> 5.1)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.2)
+  - SDWebImage (5.18.3):
+    - SDWebImage/Core (= 5.18.3)
+  - SDWebImage/Core (5.18.3)
+  - SnapKit (5.7.1)
+  - TUICallEngine/Professional (2.2.0.860):
+    - TXIMSDK_Plus_iOS (>= 7.8.5483)
+    - TXLiteAVSDK_Professional (~> 11.4.14445)
+  - TUICallKit-Swift/Professional (2.0.0.750):
+    - SnapKit
+    - TUICallEngine/Professional (= 2.2.0.860)
+    - TUICore
+    - TXLiteAVSDK_Professional
+  - TUICallKitVoIPExtension/Professional (2.2.0.860):
+    - TUICallEngine/Professional (~> 2.2.0.860)
+    - TUICore (>= 7.8.5483)
+  - TUICore (7.8.5483):
+    - SDWebImage
+    - TUICore/ImSDK_Plus (= 7.8.5483)
+  - TUICore/Base (7.8.5483):
+    - SDWebImage
+  - TUICore/ImSDK_Plus (7.8.5483):
+    - SDWebImage
+    - TUICore/Base
+    - TXIMSDK_Plus_iOS (~> 7.8.5483)
+  - TUIPlayerCore (1.3.0):
+    - TXLiteAVSDK_Professional
+  - TUIPlayerShortVideo (0.0.1):
+    - Masonry
+    - SDWebImage
+    - TUIPlayerCore
+  - TXIMSDK_Plus_iOS (7.8.5483)
+  - TXLiteAVSDK_Professional (11.4.15675):
+    - TXLiteAVSDK_Professional/Professional (= 11.4.15675)
+  - TXLiteAVSDK_Professional/Professional (11.4.15675)
+  - VersaPlayer (3.0.2)
+  - Wormholy (1.6.5)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.1)
+  - AliyunOSSiOS
+  - Branch
+  - CombineCocoa
+  - CombineDataSources
+  - ContextMenu
+  - Cosmos (~> 23.0)
+  - FBRetainCycleDetector
+  - GCDWebServer (~> 3.0)
+  - GoogleMaps (= 5.0.0)
+  - GooglePlaces (= 5.0.0)
+  - IGListKit (~> 4.0.0)
+  - IQKeyboardManagerSwift
+  - JSONWebToken
+  - Masonry (~> 1.1)
+  - MLeaksFinder
+  - ModernAVPlayer
+  - NVActivityIndicatorView
+  - OneSignalXCFramework (= 3.2.0)
+  - QCloudCOSXML/Slim (= 6.3.8)
+  - QCloudQuic (= 6.3.7)
+  - Queuer
+  - RxAlamofire
+  - RxCocoa
+  - RxDataSources
+  - RxSwift
+  - SDWebImage (~> 5.18)
+  - SnapKit (= 5.7.1)
+  - TUICallKit-Swift/Professional (from `SDK/TUICallKit/`)
+  - TUICallKitVoIPExtension/Professional (= 2.2.0.860)
+  - TUICore
+  - TUIPlayerCore (from `SDK/TUIPlayer/TUIPlayerCoreSDK/`)
+  - TUIPlayerShortVideo (from `SDK/TUIPlayer/TUIPlayerShortVideoSDK/`)
+  - TXLiteAVSDK_Professional (from `SDK/TXLiteAVSDK_Professional/`)
+  - VersaPlayer
+  - Wormholy
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - AliyunOSSiOS
+    - Branch
+    - CombineCocoa
+    - CombineDataSources
+    - ContextMenu
+    - Cosmos
+    - Differentiator
+    - FBRetainCycleDetector
+    - GCDWebServer
+    - GoogleMaps
+    - GooglePlaces
+    - IGListDiffKit
+    - IGListKit
+    - IQKeyboardManagerSwift
+    - JSONWebToken
+    - Masonry
+    - MLeaksFinder
+    - ModernAVPlayer
+    - NVActivityIndicatorView
+    - OneSignalXCFramework
+    - QCloudCore
+    - QCloudCOSXML
+    - QCloudQuic
+    - Queuer
+    - RxAlamofire
+    - RxCocoa
+    - RxDataSources
+    - RxRelay
+    - RxSwift
+    - SDWebImage
+    - SnapKit
+    - TUICallEngine
+    - TUICallKitVoIPExtension
+    - TUICore
+    - TXIMSDK_Plus_iOS
+    - VersaPlayer
+    - Wormholy
+
+EXTERNAL SOURCES:
+  TUICallKit-Swift:
+    :path: SDK/TUICallKit/
+  TUIPlayerCore:
+    :path: SDK/TUIPlayer/TUIPlayerCoreSDK/
+  TUIPlayerShortVideo:
+    :path: SDK/TUIPlayer/TUIPlayerShortVideoSDK/
+  TXLiteAVSDK_Professional:
+    :path: SDK/TXLiteAVSDK_Professional/
+
+SPEC CHECKSUMS:
+  Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
+  AliyunOSSiOS: d624effdd24535da414a2bacf0027bedf64cc90e
+  Branch: c1a7fa1811ef9203c01bc6c2588a229eb3ee1a84
+  CombineCocoa: 66c79441761907c096ecbd0021cefd8566acaf06
+  CombineDataSources: dcbc3b06a038ffdf620b3b4533d3ecaf76ca6a2e
+  ContextMenu: f835e09a93f1c28c631b76ee94396d9570397fd1
+  Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
+  GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
+  GoogleMaps: 600e5e69bdf7f4ed7cac4d6aa96c7ec08a5aa254
+  GooglePlaces: 5d87ca13ed98b7a937e0d8bc7026f718c7263271
+  IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
+  IGListKit: fd5a5d21935298f5849fa49d426843cff97b77c7
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  JSONWebToken: 6fae32489632658d563dd6952a5c34020ea813e4
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
+  ModernAVPlayer: d04d53be7b620990250d0e13bee3be7217dc6214
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  OneSignalXCFramework: 6fd00dcb1aafbc5c146fa424f32cd9fd9cbd850a
+  QCloudCore: 0cfb5143891d1de7be24edc0390888b8aa5379ff
+  QCloudCOSXML: 05062998f508165d9772aa7c13b70222e01a903a
+  QCloudQuic: 895ccf08046ecf068a6f965831dd16fc7d531fb4
+  Queuer: 65c5f6b821417bc62da23d63d570ec9d22bee4de
+  RxAlamofire: 8e144c62dcc01d68dcb366bfc542eb6dd46bab78
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 1e2e1f9570186967f617e49128ed26ccf1bafc8e
+  SDWebImage: 96e0c18ef14010b7485210e92fac888587ebb958
+  SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
+  TUICallEngine: e5db2511dd3d43875aaf30e63a972bdcb4c6681d
+  TUICallKit-Swift: 3f8bf277a88ccd4f1cfd6f48becad82bb905b9c8
+  TUICallKitVoIPExtension: 1584657caa6816f2e392a80f8a7492dafe68efaf
+  TUICore: 8e855f83a1b7a04a57dec07c1b71fae83c871d19
+  TUIPlayerCore: 62ad1530d65783f7c7e093a3abc2418b6190d57d
+  TUIPlayerShortVideo: 8dace33bcc6abb7df3e6d2b2173c5772afc36f57
+  TXIMSDK_Plus_iOS: 9559f6aebc6d69314521d17235bdb3ab58599be3
+  TXLiteAVSDK_Professional: 12f23a3edd72efcb9bbd49651fe7c7e6092c94f0
+  VersaPlayer: 0e9a0ea7da786729ffb377dbd17b34641a8265e4
+  Wormholy: 3252bc3e55a1847ef9a0976c1377bd77bf3635fa
+
+PODFILE CHECKSUM: 44d1474466584e170266ee9ba93b685230cc5f2b
+
+COCOAPODS: 1.15.2

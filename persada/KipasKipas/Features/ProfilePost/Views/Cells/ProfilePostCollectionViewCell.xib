@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoMedium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProfilePostCollectionViewCell" customModule="KipasKipas" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="192" height="194"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="192" height="194"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n35-hg-O65">
+                        <rect key="frame" x="0.0" y="0.0" width="192" height="194"/>
+                    </imageView>
+                    <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="kBx-R9-6fo">
+                        <rect key="frame" x="0.0" y="170" width="35" height="24"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_play_outline_white" translatesAutoresizingMaskIntoConstraints="NO" id="a0f-Y8-bok">
+                                <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="Elp-m9-OrV"/>
+                                    <constraint firstAttribute="width" constant="24" id="WQK-jh-UwI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDq-Ik-G1B">
+                                <rect key="frame" x="27" y="0.0" width="8" height="24"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KxE-Jy-GZ0">
+                        <rect key="frame" x="169" y="10" width="13" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="13" id="XB0-vc-goJ"/>
+                            <constraint firstAttribute="height" constant="13" id="fYP-Xc-Cky"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="n35-hg-O65" secondAttribute="trailing" id="92D-39-BW6"/>
+                <constraint firstItem="kBx-R9-6fo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Bx3-6i-6jl"/>
+                <constraint firstItem="KxE-Jy-GZ0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Gid-zm-W2O"/>
+                <constraint firstAttribute="trailing" secondItem="KxE-Jy-GZ0" secondAttribute="trailing" constant="10" id="HDJ-Ds-pOg"/>
+                <constraint firstAttribute="bottom" secondItem="n35-hg-O65" secondAttribute="bottom" id="Ng0-8m-Xll"/>
+                <constraint firstItem="n35-hg-O65" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Xhz-YT-uag"/>
+                <constraint firstAttribute="bottom" secondItem="kBx-R9-6fo" secondAttribute="bottom" id="mfU-tf-ozW"/>
+                <constraint firstItem="n35-hg-O65" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="n9U-xf-YAm"/>
+            </constraints>
+            <size key="customSize" width="192" height="194"/>
+            <connections>
+                <outlet property="postThumbnailImageView" destination="n35-hg-O65" id="79J-8P-PWs"/>
+                <outlet property="postTypeIconImageView" destination="KxE-Jy-GZ0" id="xrd-00-ZgR"/>
+                <outlet property="totalViewsContainerStackView" destination="kBx-R9-6fo" id="Rpq-Tl-Vep"/>
+                <outlet property="totalViewsLabel" destination="PDq-Ik-G1B" id="rJS-Ut-m3p"/>
+            </connections>
+            <point key="canvasLocation" x="238.1679389312977" y="39.436619718309863"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_play_outline_white" width="16.333333969116211" height="19"/>
+    </resources>
+</document>

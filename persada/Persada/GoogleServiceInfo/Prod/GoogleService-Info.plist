@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>59800204241-qnrpuell4n7m8i0p7fcgt6k8l6v07die.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.59800204241-qnrpuell4n7m8i0p7fcgt6k8l6v07die</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBDKBT-f9aDIwhk_DNDqltt_OedJhurAmM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>59800204241</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.koanba.kipaskipas.mobile</string>
+	<key>PROJECT_ID</key>
+	<string>kipaskipas-bf387</string>
+	<key>STORAGE_BUCKET</key>
+	<string>kipaskipas-bf387.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:59800204241:ios:b2d6ff3df6a2eb7b09a6f0</string>
+	<key>DATABASE_URL</key>
+	<string>https://kipaskipas-bf387.firebaseio.com</string>
+</dict>
+</plist>

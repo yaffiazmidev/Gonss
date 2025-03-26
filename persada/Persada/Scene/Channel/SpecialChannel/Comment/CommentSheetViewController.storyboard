@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoMedium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="RobotoRegular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Comment Sheet View-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="commentSheetController" id="Y6W-OH-hqX" userLabel="Comment Sheet View" customClass="CommentSheetViewController" customModule="KipasKipas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zOf-XJ-k2Q" userLabel="HeadView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="32"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Comments" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwJ-Na-0jk">
+                                        <rect key="frame" x="8" y="9" width="392" height="14.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="label-commentSheetView-commentCount">
+                                            <accessibilityTraits key="traits" none="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rY9-UP-Pth">
+                                        <rect key="frame" x="391.5" y="9.5" width="13" height="13"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="button-commentSheetView-close"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="13" id="lko-lp-dcZ"/>
+                                            <constraint firstAttribute="width" constant="13" id="qXL-Pf-sbr"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button" image="iconCommentClose"/>
+                                        <connections>
+                                            <action selector="onClose:" destination="Y6W-OH-hqX" eventType="touchDown" id="H0M-HV-Zg7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="view-commentSheetView-headView"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="hwJ-Na-0jk" secondAttribute="trailing" constant="14" id="5gg-TA-LxZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="rY9-UP-Pth" secondAttribute="trailing" constant="9.6400000000000006" id="IBq-sm-DNI"/>
+                                    <constraint firstItem="rY9-UP-Pth" firstAttribute="top" secondItem="zOf-XJ-k2Q" secondAttribute="top" constant="9.6400000000000006" id="Jkl-tQ-grH"/>
+                                    <constraint firstItem="hwJ-Na-0jk" firstAttribute="leading" secondItem="zOf-XJ-k2Q" secondAttribute="leading" constant="8" id="cOB-kK-1tF"/>
+                                    <constraint firstItem="hwJ-Na-0jk" firstAttribute="top" secondItem="zOf-XJ-k2Q" secondAttribute="top" constant="9" id="k7V-ix-x1V"/>
+                                    <constraint firstAttribute="height" constant="32" id="rM0-Ln-l9H"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DnN-qC-tZw" userLabel="MainView">
+                                <rect key="frame" x="0.0" y="76" width="414" height="564"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="OaD-FF-tJY">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="J04-M7-d6s">
+                                <rect key="frame" x="0.0" y="640" width="414" height="222"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oGv-eK-jtX">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="MFa-ik-tsO"/>
+                                        </constraints>
+                                    </tableView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nmp-UV-WU9">
+                                        <rect key="frame" x="0.0" y="156" width="414" height="1"/>
+                                        <color key="backgroundColor" name="whiteSmoke"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="SUV-Tw-Pzz"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sb1-Mc-y2V">
+                                        <rect key="frame" x="0.0" y="163" width="414" height="59"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tulis Komentar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bL-Vl-Pgn">
+                                                <rect key="frame" x="24" y="15" width="333" height="33"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="33" id="FcH-XM-88X"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="V8v-p8-fQ3">
+                                                <rect key="frame" x="16" y="16" width="382" height="28"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kH8-ya-zsP">
+                                                        <rect key="frame" x="0.0" y="0.0" width="341" height="28"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="28" id="Azr-EX-vgE"/>
+                                                        </constraints>
+                                                        <color key="textColor" systemColor="labelColor"/>
+                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="send" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                    </textView>
+                                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yao-Lv-7GN">
+                                                        <rect key="frame" x="349" y="0.0" width="33" height="28"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="33" id="yU7-ap-EwJ"/>
+                                                        </constraints>
+                                                        <state key="normal" image="iconCommentSend"/>
+                                                        <connections>
+                                                            <action selector="onSend:" destination="Y6W-OH-hqX" eventType="touchDown" id="K5U-9x-Ei0"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="2bL-Vl-Pgn" firstAttribute="leading" secondItem="kH8-ya-zsP" secondAttribute="leading" constant="8" id="0og-V4-x0R"/>
+                                            <constraint firstItem="V8v-p8-fQ3" firstAttribute="top" secondItem="sb1-Mc-y2V" secondAttribute="top" constant="16" id="EcS-6N-RDi"/>
+                                            <constraint firstItem="2bL-Vl-Pgn" firstAttribute="top" secondItem="kH8-ya-zsP" secondAttribute="top" constant="-1" id="TLV-3k-w3k"/>
+                                            <constraint firstItem="V8v-p8-fQ3" firstAttribute="leading" secondItem="sb1-Mc-y2V" secondAttribute="leading" constant="16" id="Xq8-58-tex"/>
+                                            <constraint firstAttribute="trailing" secondItem="V8v-p8-fQ3" secondAttribute="trailing" constant="16" id="h85-eV-1GF"/>
+                                            <constraint firstAttribute="bottom" secondItem="V8v-p8-fQ3" secondAttribute="bottom" constant="15" id="qct-yn-Pac"/>
+                                            <constraint firstItem="2bL-Vl-Pgn" firstAttribute="trailing" secondItem="kH8-ya-zsP" secondAttribute="trailing" id="uMa-kJ-dPJ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration" identifier="view-commentSheetView-mainView"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="J04-M7-d6s" secondAttribute="bottom" id="4Ws-I5-NUi"/>
+                            <constraint firstItem="J04-M7-d6s" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="4hd-M1-258"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="DnN-qC-tZw" secondAttribute="trailing" id="Xnd-hc-deP"/>
+                            <constraint firstItem="zOf-XJ-k2Q" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="afL-MR-gIQ"/>
+                            <constraint firstItem="DnN-qC-tZw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="h4b-4C-22i"/>
+                            <constraint firstItem="zOf-XJ-k2Q" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="o7c-NA-GTF"/>
+                            <constraint firstItem="DnN-qC-tZw" firstAttribute="top" secondItem="zOf-XJ-k2Q" secondAttribute="bottom" id="oWB-TT-1vI"/>
+                            <constraint firstItem="J04-M7-d6s" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="qgJ-q7-Eic"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="zOf-XJ-k2Q" secondAttribute="trailing" id="tmF-tM-Q9H"/>
+                            <constraint firstItem="J04-M7-d6s" firstAttribute="top" secondItem="DnN-qC-tZw" secondAttribute="bottom" id="tq6-jU-w21"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Embeded Intrinsic Height" id="HP3-x9-hv9"/>
+                    <connections>
+                        <outlet property="buttonSend" destination="yao-Lv-7GN" id="aKY-l9-WOA"/>
+                        <outlet property="collectionViewComment" destination="DnN-qC-tZw" id="6Os-zy-2lF"/>
+                        <outlet property="labelCommentCount" destination="hwJ-Na-0jk" id="UNV-i8-ipT"/>
+                        <outlet property="labelPlaceHolder" destination="2bL-Vl-Pgn" id="QMZ-Um-mPt"/>
+                        <outlet property="tableViewCommentHeightConstraint" destination="Azr-EX-vgE" id="i8T-n8-ruq"/>
+                        <outlet property="tableViewMention" destination="oGv-eK-jtX" id="3y7-J0-kcz"/>
+                        <outlet property="tableViewMentionHeightConstraint" destination="MFa-ik-tsO" id="vaU-ed-iE5"/>
+                        <outlet property="textViewComment" destination="kH8-ya-zsP" id="89i-va-ytq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2.8985507246376816" y="63.616071428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iconCommentClose" width="24" height="24"/>
+        <image name="iconCommentSend" width="33" height="33"/>
+        <namedColor name="whiteSmoke">
+            <color red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

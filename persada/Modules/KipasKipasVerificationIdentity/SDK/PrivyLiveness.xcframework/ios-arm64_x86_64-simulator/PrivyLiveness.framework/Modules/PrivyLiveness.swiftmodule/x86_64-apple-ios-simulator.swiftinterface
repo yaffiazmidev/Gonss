@@ -1,0 +1,446 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PrivyLiveness
+import AVFoundation
+import Combine
+import CommonCrypto
+import CoreMotion
+import DeveloperToolsSupport
+import Foundation
+import Photos
+@_exported import PrivyLiveness
+import Swift
+import SwiftUI
+import SystemConfiguration
+import UIKit
+import Vision
+import WebKit
+import _AVKit_SwiftUI
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum HTTPMethod {
+  case get
+  case post
+  case put
+  case delete
+  public var rawValue: Swift.String {
+    get
+  }
+  public static func == (a: PrivyLiveness.HTTPMethod, b: PrivyLiveness.HTTPMethod) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol APIRequest {
+  associatedtype Response
+  var baseURL: Swift.String { get }
+  var method: PrivyLiveness.HTTPMethod { get }
+  var path: Swift.String { get set }
+  var body: [Swift.String : Any] { get set }
+  var headers: [Swift.String : Any] { get set }
+  var hmac: Swift.String? { get set }
+  func map(_ data: Foundation.Data) throws -> Self.Response
+}
+extension UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public func topMostViewController() -> UIKit.UIViewController
+  @_Concurrency.MainActor(unsafe) public func topMostTabBarViewController() -> UIKit.UIViewController
+}
+@_Concurrency.MainActor(unsafe) public struct BoardingView : SwiftUI.View {
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s13PrivyLiveness12BoardingViewV4bodyQrvp", 0) __
+}
+public class CancelBag {
+  public var subscriptions: Swift.Set<Combine.AnyCancellable>
+  public func cancel()
+  public init()
+  @objc deinit
+}
+extension Combine.AnyCancellable {
+  final public func store(in cancelBag: PrivyLiveness.CancelBag)
+}
+extension AVKit.AVPlayerViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+}
+public struct FaceCropper<T> {
+}
+public protocol FaceCroppable {
+}
+extension PrivyLiveness.FaceCroppable {
+  public var face: PrivyLiveness.FaceCropper<Self> {
+    get
+  }
+}
+extension PrivyLiveness.FaceCropper where T : CoreGraphics.CGImage {
+  public func crop(_ completion: @escaping (CoreGraphics.CGImage) -> Swift.Void)
+}
+extension PrivyLiveness.FaceCropper where T : UIKit.UIImage {
+  public func crop() -> UIKit.UIImage?
+}
+extension ObjectiveC.NSObject : PrivyLiveness.FaceCroppable {
+}
+extension CoreGraphics.CGImage : PrivyLiveness.FaceCroppable {
+}
+public struct FeatureConfig {
+}
+public struct ConfigDescription {
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class FormGroup : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) public func addArrangedSubview(_ view: UIKit.UIView)
+  @objc deinit
+}
+extension PrivyLiveness.FormGroup {
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func setAxis(_ axis: UIKit.NSLayoutConstraint.Axis) -> Self
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func setTranslatesAutoresizingMaskIntoConstraints(_ status: Swift.Bool = false) -> Self
+}
+public enum LivenessFailure {
+  case failedDetect(PrivyLiveness.Liveness)
+  case outOfBalance
+  case networkError
+}
+public enum LivenessResult {
+  case success(PrivyLiveness.Liveness)
+  case failure(PrivyLiveness.LivenessFailure)
+}
+public struct Liveness {
+  public let result: Swift.Bool
+  public let face1Base64: Swift.String?
+  public let face2Base64: Swift.String?
+  public let fcToken: Swift.String?
+  public let message: Swift.String?
+  public let transactionId: Swift.String?
+}
+public protocol LivenessDelegete {
+  func livenessResult(result: PrivyLiveness.LivenessResult)
+}
+public typealias LivenessCompletion = (PrivyLiveness.LivenessResult) -> Swift.Void
+public enum LivenessCallBackType {
+  case delegate(any PrivyLiveness.LivenessDelegete)
+  case completion(PrivyLiveness.LivenessCompletion)
+}
+extension PrivyLiveness.LivenessNetworkSession {
+  public enum EnvironmentType : Swift.String {
+    case development
+    case staging
+    case production
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+@_hasMissingDesignatedInitializers final public class LivenessNetworkSession {
+  @objc deinit
+}
+public enum NetworkErrorType : Swift.Error {
+  case noInternet
+  case resError(PrivyLiveness.NetworkError)
+  case invalidResponse
+  case interruptConnection
+  case noData
+  case serializationError
+  case failedResponse
+  case generalError(Swift.Int)
+  case cancelled
+}
+public struct NetworkErrorResponse : Swift.Codable {
+  public let code: Swift.Int?
+  public let entity: Swift.String?, message: Swift.String?, state: Swift.String?, status: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct NetworkError {
+  public let code: Swift.Int
+  public let entity: Swift.String, message: Swift.String, state: Swift.String, status: Swift.String
+}
+public enum NetworkResult<T> {
+  case success(T)
+  case failure(PrivyLiveness.NetworkErrorType)
+  public var asPublisher: Combine.AnyPublisher<T, PrivyLiveness.NetworkErrorType> {
+    get
+  }
+  #if compiler(>=5.3) && $AsyncAwait
+  public func asyncAwait() async throws -> T
+  #endif
+}
+@_Concurrency.MainActor(unsafe) public struct PrivyLivenessExampleView : SwiftUI.View {
+  @_Concurrency.MainActor(unsafe) public init(vm: PrivyLiveness.PrivyLivenessExampleVM = PrivyLivenessExampleVM())
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s13PrivyLiveness0aB11ExampleViewV4bodyQrvp", 0) __
+}
+final public class PrivyLivenessExampleVM {
+  public init()
+  @objc deinit
+}
+extension PrivyLiveness.PrivyLivenessExampleVM {
+  public struct Action {
+  }
+  @_hasMissingDesignatedInitializers public class State : Combine.ObservableObject {
+    public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+    @objc deinit
+  }
+  final public func transform(_ action: PrivyLiveness.PrivyLivenessExampleVM.Action, _ bag: PrivyLiveness.CancelBag) -> PrivyLiveness.PrivyLivenessExampleVM.State
+}
+extension PrivyLiveness.PrivyLivenessExampleVM : PrivyLiveness.LivenessDelegete {
+  final public func livenessResult(result: PrivyLiveness.LivenessResult)
+}
+public enum PrivyLivenessModule {
+  public static func create(environment: Swift.String = "production", applicationId: Swift.String = "", clientId: Swift.String = "", clientSecret: Swift.String = "", publicKey: Swift.String = "", privateKey: Swift.String = "", salt: Swift.String = "", showResultPage: Swift.Bool = true, callback: PrivyLiveness.LivenessCallBackType? = nil) -> UIKit.UIViewController
+  public static func createExample() -> UIKit.UIViewController
+}
+@_hasMissingDesignatedInitializers public class LivenessDebugPreview : Foundation.ObservableObject {
+  public static var show: Swift.Bool
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+public enum Reachability {
+  public static func isConnectedToNetwork() -> Swift.Bool
+}
+extension UIKit.UIDevice {
+  public enum DeviceType {
+    case iPhone
+    case iPad
+    case simulator(Swift.String)
+  }
+  public struct Device {
+  }
+  @_Concurrency.MainActor(unsafe) public static let modelType: UIKit.UIDevice.Device
+}
+extension UIKit.UIImage {
+  public func resized(height: CoreFoundation.CGFloat) -> UIKit.UIImage
+  public func resized(width: CoreFoundation.CGFloat) -> UIKit.UIImage
+  public func resized(height: CoreFoundation.CGFloat, width: CoreFoundation.CGFloat) -> UIKit.UIImage
+}
+public struct UISetupResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct LivenessRulesResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ApplicationAssetsResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ThemeResponse : Swift.Codable {
+  public let brandButtonOutlineBorder: Swift.String?
+  public let brandButtonOutlineHoverBackground: Swift.String?
+  public let brandLink: Swift.String?
+  public let brandBackground: Swift.String?
+  public let brandButtonOutlineText: Swift.String?
+  public let brandDescription: Swift.String?
+  public let brandButtonOutlineBackground: Swift.String?
+  public let brandInputBoxShadow: Swift.String?
+  public let brandLightColor: Swift.String?
+  public let brandButtonHoverText: Swift.String?
+  public let brandModalLanguageBorder: Swift.String?
+  public let brandButtonBackground: Swift.String?
+  public let brandLinkHover: Swift.String?
+  public let brandModalLanguageText: Swift.String?
+  public let brandButtonBorder: Swift.String?
+  public let brandCardInstructionBackground: Swift.String?
+  public let brandCardInstructionText: Swift.String?
+  public let brandTitle: Swift.String?
+  public let brandInstructionMessageText: Swift.String?
+  public let brandText: Swift.String?
+  public let brandButtonOutlineHoverBorder: Swift.String?
+  public let defaultColor: Swift.String?
+  public let brandCardInstructionIcon: Swift.String?
+  public let brandButtonHoverBorder: Swift.String?
+  public let brandColor: Swift.String?
+  public let brandInstructionMessageBackground: Swift.String?
+  public let brandCardInstructionIconBackground: Swift.String?
+  public let brandBoxShadow: Swift.String?
+  public let brandButtonOutlineHoverText: Swift.String?
+  public let defaultBackgroundColor: Swift.String?
+  public let brandFootnoteText: Swift.String?
+  public let brandLoading: Swift.String?
+  public let brandModalLanguage: Swift.String?
+  public let brandButtonText: Swift.String?
+  public let brandButtonHoverBackground: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ApplicationBrightnessConfigIosResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct BrightnessValueResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ApplicationConfigsResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct FooterUIResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PoweredResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct FooterStyleResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct InstructionUIResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct LocalWordingResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct NavbarUIResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct NavbarStyleResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct WordingSetupResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ErrorsResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CameraWarningResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CameraDisabledResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct DevtoolsResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct InsertKeyResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct VerifyingKeyResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct FingerprintResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct LoadingResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct WorkflowResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ContentResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SettingsResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct HeaderUIResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MainUIResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct FootnoteResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct LinkResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct QuestionResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct WordingResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SessionExpiredResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ButtonsResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ButtonSettingsResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct LivenessDetectingResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct DescriptionsResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct QuestionInstructionResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ToastResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RequiredResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct TypeStepResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct LivenessStepsResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension SwiftUI.View {
+  @inlinable internal func reverseMask<Mask>(alignment: SwiftUI.Alignment = .center, @SwiftUI.ViewBuilder _ mask: () -> Mask) -> some SwiftUI.View where Mask : SwiftUI.View {
+		self.mask(
+			ZStack {
+				Rectangle()
+				mask()
+					.blendMode(.destinationOut)
+			}
+		)
+	}
+  
+}
+extension UIKit.UINavigationController : UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+}
+extension PrivyLiveness.HTTPMethod : Swift.Equatable {}
+extension PrivyLiveness.HTTPMethod : Swift.Hashable {}
+extension PrivyLiveness.LivenessNetworkSession.EnvironmentType : Swift.Equatable {}
+extension PrivyLiveness.LivenessNetworkSession.EnvironmentType : Swift.Hashable {}
+extension PrivyLiveness.LivenessNetworkSession.EnvironmentType : Swift.RawRepresentable {}

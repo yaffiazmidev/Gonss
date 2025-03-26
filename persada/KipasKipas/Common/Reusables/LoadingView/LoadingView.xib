@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoadingView" customModule="KipasKipas" customModuleProvider="target">
+            <connections>
+                <outlet property="activityContainerView" destination="aim-o5-SXn" id="MAn-Jq-laQ"/>
+                <outlet property="activityIndicator" destination="47Z-lN-Xqz" id="vZt-Er-Wu4"/>
+                <outlet property="contentView" destination="kxc-R9-8bi" id="eWa-5t-0NJ"/>
+                <outlet property="messageLabel" destination="YmG-OG-sew" id="8Kg-04-e5S"/>
+                <outlet property="reloadButton" destination="n3S-bf-dPo" id="X7O-7N-kcI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kxc-R9-8bi">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
+                    <subviews>
+                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="47Z-lN-Xqz">
+                            <rect key="frame" x="197" y="288" width="20" height="20"/>
+                            <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </activityIndicatorView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BUe-2E-yes">
+                            <rect key="frame" x="16" y="312" width="382" height="65"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aim-o5-SXn">
+                                    <rect key="frame" x="171" y="0.0" width="40" height="40"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="40" id="Urr-qG-GQ3"/>
+                                        <constraint firstAttribute="height" constant="40" id="sbA-TK-dp5"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="lineScale"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YmG-OG-sew">
+                                    <rect key="frame" x="141.66666666666666" y="48" width="99" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3S-bf-dPo">
+                                    <rect key="frame" x="159.66666666666666" y="65" width="63" height="0.0"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                    <state key="normal" title="Try Again">
+                                        <color key="titleColor" systemColor="linkColor"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="BUe-2E-yes" firstAttribute="leading" secondItem="kxc-R9-8bi" secondAttribute="leading" constant="16" id="FpQ-uZ-PIX"/>
+                        <constraint firstItem="47Z-lN-Xqz" firstAttribute="centerX" secondItem="kxc-R9-8bi" secondAttribute="centerX" id="Lak-ML-MGi"/>
+                        <constraint firstItem="BUe-2E-yes" firstAttribute="centerX" secondItem="kxc-R9-8bi" secondAttribute="centerX" id="b4D-c1-Vnf"/>
+                        <constraint firstItem="47Z-lN-Xqz" firstAttribute="centerY" secondItem="kxc-R9-8bi" secondAttribute="centerY" constant="-52" id="mXC-QU-jBu"/>
+                        <constraint firstAttribute="trailing" secondItem="BUe-2E-yes" secondAttribute="trailing" constant="16" id="yg9-tS-z7d"/>
+                        <constraint firstItem="BUe-2E-yes" firstAttribute="top" secondItem="47Z-lN-Xqz" secondAttribute="bottom" constant="4" id="zwE-uc-Q6f"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="kxc-R9-8bi" secondAttribute="trailing" id="Bqk-jI-lpj"/>
+                <constraint firstAttribute="bottom" secondItem="kxc-R9-8bi" secondAttribute="bottom" id="Shb-ew-Sxa"/>
+                <constraint firstItem="kxc-R9-8bi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nVU-Ko-gSR"/>
+                <constraint firstItem="kxc-R9-8bi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wgk-5e-ceR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139" y="135"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

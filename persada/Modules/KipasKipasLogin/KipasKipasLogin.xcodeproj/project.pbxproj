@@ -1,0 +1,1646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15C334E366DA2E71F74C2653 /* Pods_KipasKipasLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555DAA50E47A30E35CFD7AD3 /* Pods_KipasKipasLogin.framework */; };
+		5D16EDB72BAFA06200537D35 /* LoginOTPRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D16EDB62BAFA06200537D35 /* LoginOTPRequestViewModel.swift */; };
+		5D16EDBB2BB0035400537D35 /* LoginOTPRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D16EDBA2BB0035400537D35 /* LoginOTPRequestError.swift */; };
+		5D16EDBF2BB00FB700537D35 /* LoginWithOTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D16EDBE2BB00FB700537D35 /* LoginWithOTPView.swift */; };
+		5D16EDC12BB00FD600537D35 /* LoginWithOTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D16EDC02BB00FD600537D35 /* LoginWithOTPViewController.swift */; };
+		5D16EDC52BB0DC3D00537D35 /* LoginWithOTPUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D16EDC42BB0DC3D00537D35 /* LoginWithOTPUIComposer.swift */; };
+		5D16EDC82BB0EE3000537D35 /* Definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D16EDC72BB0EE3000537D35 /* Definition.swift */; };
+		5D2194B12BDE97DD00013B51 /* PanProgressWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2194B02BDE97DD00013B51 /* PanProgressWebViewController.swift */; };
+		5D36AC212BD8E05000B6C65C /* libKipasKipasSharedFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D36AC202BD8E05000B6C65C /* libKipasKipasSharedFoundation.a */; };
+		5D42B1EF2BB5E8CE00FD3C7F /* LoginOTPRequestParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D42B1EE2BB5E8CE00FD3C7F /* LoginOTPRequestParam.swift */; };
+		5D42B1F12BB5E8E700FD3C7F /* LoginRequestParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D42B1F02BB5E8E700FD3C7F /* LoginRequestParam.swift */; };
+		5D4BA29D2AE6CC87000C5F16 /* LoginUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4BA29B2AE6CC87000C5F16 /* LoginUIComposer.swift */; };
+		5D604FE82BF096B20028B595 /* ButtonsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D604FE72BF096B20028B595 /* ButtonsCollectionView.swift */; };
+		5D62A6672AB331CB00A47D16 /* KipasKipasNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D62A6662AB331CB00A47D16 /* KipasKipasNetworking.framework */; };
+		5D62A6682AB331CB00A47D16 /* KipasKipasNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D62A6662AB331CB00A47D16 /* KipasKipasNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D6971412BAD61ED00B06D11 /* LoginOTPRequestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6971402BAD61EC00B06D11 /* LoginOTPRequestResponse.swift */; };
+		5D6971432BAD623000B06D11 /* LoginError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6971422BAD623000B06D11 /* LoginError.swift */; };
+		5D6971472BAE88B400B06D11 /* LoginOTPRequestUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6971462BAE88B400B06D11 /* LoginOTPRequestUIComposer.swift */; };
+		5D69714B2BAE8A0600B06D11 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D69714A2BAE8A0600B06D11 /* LoginViewModel.swift */; };
+		5D6FDB662BD61FBB0098F21E /* LoginPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6FDB652BD61FBB0098F21E /* LoginPasswordView.swift */; };
+		5D6FDB682BD620D00098F21E /* LoginPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6FDB672BD620D00098F21E /* LoginPasswordViewController.swift */; };
+		5D6FDB6A2BD634AA0098F21E /* LoginPasswordUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6FDB692BD634AA0098F21E /* LoginPasswordUIComposer.swift */; };
+		5D716D1E2BAD2EB700F61E35 /* LoginOTPRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D716D1D2BAD2EB700F61E35 /* LoginOTPRequestView.swift */; };
+		5D716D212BAD319C00F61E35 /* LoginOTPRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D716D202BAD319C00F61E35 /* LoginOTPRequestViewController.swift */; };
+		5DA98AD82AA5812E002C3F5B /* KipasKipasLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA98AD72AA5812E002C3F5B /* KipasKipasLogin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DA98AE12AA58CC0002C3F5B /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA98AE02AA58CC0002C3F5B /* LoginResponse.swift */; };
+		5DA98AF62AA5AA40002C3F5B /* KipasKipasLoginiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA98AF52AA5AA40002C3F5B /* KipasKipasLoginiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DA98AFB2AA5AA72002C3F5B /* KipasKipasLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA98AD42AA5812E002C3F5B /* KipasKipasLogin.framework */; };
+		5DA98B012AA5AA7E002C3F5B /* KipasKipasShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA98B002AA5AA7E002C3F5B /* KipasKipasShared.framework */; };
+		5DA98B042AA5AAC6002C3F5B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA98B032AA5AAC6002C3F5B /* LoginViewController.swift */; };
+		5DA98B0C2AA5AB31002C3F5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA98B0B2AA5AB31002C3F5B /* AppDelegate.swift */; };
+		5DA98B0E2AA5AB31002C3F5B /* SceneDelegate+Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA98B0D2AA5AB31002C3F5B /* SceneDelegate+Login.swift */; };
+		5DA98B152AA5AB32002C3F5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DA98B142AA5AB32002C3F5B /* Assets.xcassets */; };
+		5DA98B182AA5AB32002C3F5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DA98B162AA5AB32002C3F5B /* LaunchScreen.storyboard */; };
+		5DA98B1E2AA5AB84002C3F5B /* KipasKipasLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA98AD42AA5812E002C3F5B /* KipasKipasLogin.framework */; };
+		5DA98B1F2AA5AB84002C3F5B /* KipasKipasLogin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA98AD42AA5812E002C3F5B /* KipasKipasLogin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5DA98B222AA5AB84002C3F5B /* KipasKipasLoginiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA98AF32AA5AA40002C3F5B /* KipasKipasLoginiOS.framework */; };
+		5DA98B232AA5AB84002C3F5B /* KipasKipasLoginiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA98AF32AA5AA40002C3F5B /* KipasKipasLoginiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5DA98B2D2AA5C4D5002C3F5B /* KipasKipasShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA98B2C2AA5C4D5002C3F5B /* KipasKipasShared.framework */; };
+		5DA98B2E2AA5C4D5002C3F5B /* KipasKipasShared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA98B2C2AA5C4D5002C3F5B /* KipasKipasShared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5DA98B302AA5DA94002C3F5B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA98B2F2AA5DA94002C3F5B /* LoginView.swift */; };
+		5DC72A5E2BB9B36E00CC162C /* RootData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC72A5D2BB9B36E00CC162C /* RootData.swift */; };
+		5DC72A602BB9BC7800CC162C /* LoginRequestOTPPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC72A5F2BB9BC7800CC162C /* LoginRequestOTPPresentationAdapter.swift */; };
+		5DC72A622BB9C09200CC162C /* LoginViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC72A612BB9C09200CC162C /* LoginViewAdapter.swift */; };
+		5DCE48492BB15A7D00EE5793 /* LoginContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCE48482BB15A7D00EE5793 /* LoginContainerViewController.swift */; };
+		5DD897202BAA9D010012E3BD /* LoginOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD8971F2BAA9D010012E3BD /* LoginOptionsViewController.swift */; };
+		5DEB069A2BCE4A9000B1ACA0 /* LoginProfileResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB06992BCE4A9000B1ACA0 /* LoginProfileResponse.swift */; };
+		5DF400CE2AE7902200A7584F /* KipasKipasNetworkingUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF400CD2AE7902200A7584F /* KipasKipasNetworkingUtils.framework */; };
+		5DF400CF2AE7902200A7584F /* KipasKipasNetworkingUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF400CD2AE7902200A7584F /* KipasKipasNetworkingUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6CD2E980664D7A33981054C9 /* Pods_KipasKipasLogin_KKLoginMicroApps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C0367E3A29AEB152322FC5 /* Pods_KipasKipasLogin_KKLoginMicroApps.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5DA98AFD2AA5AA72002C3F5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DA98ACB2AA5812E002C3F5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DA98AD32AA5812E002C3F5B;
+			remoteInfo = KipasKipasLogin;
+		};
+		5DA98B202AA5AB84002C3F5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DA98ACB2AA5812E002C3F5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DA98AD32AA5812E002C3F5B;
+			remoteInfo = KipasKipasLogin;
+		};
+		5DA98B242AA5AB84002C3F5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DA98ACB2AA5812E002C3F5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DA98AF22AA5AA40002C3F5B;
+			remoteInfo = KipasKipasLoginiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5DA98B262AA5AB84002C3F5B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5DA98B2E2AA5C4D5002C3F5B /* KipasKipasShared.framework in Embed Frameworks */,
+				5DA98B232AA5AB84002C3F5B /* KipasKipasLoginiOS.framework in Embed Frameworks */,
+				5DF400CF2AE7902200A7584F /* KipasKipasNetworkingUtils.framework in Embed Frameworks */,
+				5D62A6682AB331CB00A47D16 /* KipasKipasNetworking.framework in Embed Frameworks */,
+				5DA98B1F2AA5AB84002C3F5B /* KipasKipasLogin.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		014D3B5C28DCCF58F0CFEB32 /* Pods-KipasKipasLogin-KKLoginMicroApps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLogin-KKLoginMicroApps.debug.xcconfig"; path = "Target Support Files/Pods-KipasKipasLogin-KKLoginMicroApps/Pods-KipasKipasLogin-KKLoginMicroApps.debug.xcconfig"; sourceTree = "<group>"; };
+		0F69A838679D25467B0CE9D4 /* Pods-KipasKipasLogin-KKLoginMicroApps.debugpk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLogin-KKLoginMicroApps.debugpk.xcconfig"; path = "Target Support Files/Pods-KipasKipasLogin-KKLoginMicroApps/Pods-KipasKipasLogin-KKLoginMicroApps.debugpk.xcconfig"; sourceTree = "<group>"; };
+		246A7C123DBC71A10F435E8C /* Pods-KipasKipasLogin-KKLoginMicroApps.livedebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLogin-KKLoginMicroApps.livedebug.xcconfig"; path = "Target Support Files/Pods-KipasKipasLogin-KKLoginMicroApps/Pods-KipasKipasLogin-KKLoginMicroApps.livedebug.xcconfig"; sourceTree = "<group>"; };
+		3494572BF2A61A8355B93BC9 /* Pods-KipasKipasLogin-KKLoginMicroApps.proddebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLogin-KKLoginMicroApps.proddebug.xcconfig"; path = "Target Support Files/Pods-KipasKipasLogin-KKLoginMicroApps/Pods-KipasKipasLogin-KKLoginMicroApps.proddebug.xcconfig"; sourceTree = "<group>"; };
+		42AEDD1F9E406A608E587E0C /* Pods-KipasKipasLogin-KKLoginMicroApps.testpk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLogin-KKLoginMicroApps.testpk.xcconfig"; path = "Target Support Files/Pods-KipasKipasLogin-KKLoginMicroApps/Pods-KipasKipasLogin-KKLoginMicroApps.testpk.xcconfig"; sourceTree = "<group>"; };
+		555DAA50E47A30E35CFD7AD3 /* Pods_KipasKipasLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KipasKipasLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D16EDB62BAFA06200537D35 /* LoginOTPRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOTPRequestViewModel.swift; sourceTree = "<group>"; };
+		5D16EDBA2BB0035400537D35 /* LoginOTPRequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOTPRequestError.swift; sourceTree = "<group>"; };
+		5D16EDBE2BB00FB700537D35 /* LoginWithOTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithOTPView.swift; sourceTree = "<group>"; };
+		5D16EDC02BB00FD600537D35 /* LoginWithOTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithOTPViewController.swift; sourceTree = "<group>"; };
+		5D16EDC42BB0DC3D00537D35 /* LoginWithOTPUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithOTPUIComposer.swift; sourceTree = "<group>"; };
+		5D16EDC72BB0EE3000537D35 /* Definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Definition.swift; sourceTree = "<group>"; };
+		5D2194B02BDE97DD00013B51 /* PanProgressWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanProgressWebViewController.swift; sourceTree = "<group>"; };
+		5D36AC202BD8E05000B6C65C /* libKipasKipasSharedFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libKipasKipasSharedFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D42B1EE2BB5E8CE00FD3C7F /* LoginOTPRequestParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOTPRequestParam.swift; sourceTree = "<group>"; };
+		5D42B1F02BB5E8E700FD3C7F /* LoginRequestParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequestParam.swift; sourceTree = "<group>"; };
+		5D4BA29B2AE6CC87000C5F16 /* LoginUIComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginUIComposer.swift; sourceTree = "<group>"; };
+		5D604FE72BF096B20028B595 /* ButtonsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsCollectionView.swift; sourceTree = "<group>"; };
+		5D62A6662AB331CB00A47D16 /* KipasKipasNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D6971402BAD61EC00B06D11 /* LoginOTPRequestResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOTPRequestResponse.swift; sourceTree = "<group>"; };
+		5D6971422BAD623000B06D11 /* LoginError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginError.swift; sourceTree = "<group>"; };
+		5D6971462BAE88B400B06D11 /* LoginOTPRequestUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOTPRequestUIComposer.swift; sourceTree = "<group>"; };
+		5D69714A2BAE8A0600B06D11 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		5D6FDB652BD61FBB0098F21E /* LoginPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPasswordView.swift; sourceTree = "<group>"; };
+		5D6FDB672BD620D00098F21E /* LoginPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPasswordViewController.swift; sourceTree = "<group>"; };
+		5D6FDB692BD634AA0098F21E /* LoginPasswordUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPasswordUIComposer.swift; sourceTree = "<group>"; };
+		5D716D1D2BAD2EB700F61E35 /* LoginOTPRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOTPRequestView.swift; sourceTree = "<group>"; };
+		5D716D202BAD319C00F61E35 /* LoginOTPRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOTPRequestViewController.swift; sourceTree = "<group>"; };
+		5DA98AD42AA5812E002C3F5B /* KipasKipasLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KipasKipasLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DA98AD72AA5812E002C3F5B /* KipasKipasLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KipasKipasLogin.h; sourceTree = "<group>"; };
+		5DA98AE02AA58CC0002C3F5B /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		5DA98AE82AA58FE5002C3F5B /* KipasKipasNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DA98AF32AA5AA40002C3F5B /* KipasKipasLoginiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KipasKipasLoginiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DA98AF52AA5AA40002C3F5B /* KipasKipasLoginiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KipasKipasLoginiOS.h; sourceTree = "<group>"; };
+		5DA98B002AA5AA7E002C3F5B /* KipasKipasShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DA98B032AA5AAC6002C3F5B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5DA98B092AA5AB31002C3F5B /* KKLoginMicroApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKLoginMicroApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DA98B0B2AA5AB31002C3F5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5DA98B0D2AA5AB31002C3F5B /* SceneDelegate+Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SceneDelegate+Login.swift"; sourceTree = "<group>"; };
+		5DA98B142AA5AB32002C3F5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DA98B172AA5AB32002C3F5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5DA98B192AA5AB32002C3F5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DA98B2C2AA5C4D5002C3F5B /* KipasKipasShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DA98B2F2AA5DA94002C3F5B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		5DC72A5D2BB9B36E00CC162C /* RootData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootData.swift; sourceTree = "<group>"; };
+		5DC72A5F2BB9BC7800CC162C /* LoginRequestOTPPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequestOTPPresentationAdapter.swift; sourceTree = "<group>"; };
+		5DC72A612BB9C09200CC162C /* LoginViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewAdapter.swift; sourceTree = "<group>"; };
+		5DCE48482BB15A7D00EE5793 /* LoginContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContainerViewController.swift; sourceTree = "<group>"; };
+		5DD8971F2BAA9D010012E3BD /* LoginOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOptionsViewController.swift; sourceTree = "<group>"; };
+		5DEB06992BCE4A9000B1ACA0 /* LoginProfileResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProfileResponse.swift; sourceTree = "<group>"; };
+		5DF400CD2AE7902200A7584F /* KipasKipasNetworkingUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasNetworkingUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BD4F11AFD11C937E48A0CF2 /* Pods-KipasKipasLogin-KKLoginMicroApps.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLogin-KKLoginMicroApps.staging.xcconfig"; path = "Target Support Files/Pods-KipasKipasLogin-KKLoginMicroApps/Pods-KipasKipasLogin-KKLoginMicroApps.staging.xcconfig"; sourceTree = "<group>"; };
+		7C30F56BFC2779FFEC8344D1 /* Pods-KipasKipasLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLogin.debug.xcconfig"; path = "Target Support Files/Pods-KipasKipasLogin/Pods-KipasKipasLogin.debug.xcconfig"; sourceTree = "<group>"; };
+		81762B22114C511AB43810A5 /* Pods-KipasKipasLogin.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLogin.staging.xcconfig"; path = "Target Support Files/Pods-KipasKipasLogin/Pods-KipasKipasLogin.staging.xcconfig"; sourceTree = "<group>"; };
+		9B99DE5E21BAF7B7E1173BE8 /* Pods-KipasKipasLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLogin.release.xcconfig"; path = "Target Support Files/Pods-KipasKipasLogin/Pods-KipasKipasLogin.release.xcconfig"; sourceTree = "<group>"; };
+		9F6717E9BEB5E1880B420002 /* Pods-KipasKipasLogin.livedebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLogin.livedebug.xcconfig"; path = "Target Support Files/Pods-KipasKipasLogin/Pods-KipasKipasLogin.livedebug.xcconfig"; sourceTree = "<group>"; };
+		C6C0367E3A29AEB152322FC5 /* Pods_KipasKipasLogin_KKLoginMicroApps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KipasKipasLogin_KKLoginMicroApps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC66FD57CC47B9C4DB3CE077 /* Pods-KipasKipasLogin-KKLoginMicroApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLogin-KKLoginMicroApps.release.xcconfig"; path = "Target Support Files/Pods-KipasKipasLogin-KKLoginMicroApps/Pods-KipasKipasLogin-KKLoginMicroApps.release.xcconfig"; sourceTree = "<group>"; };
+		CEBCD1C6F0C0494B1341E7DF /* Pods-KipasKipasLogin.testpk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLogin.testpk.xcconfig"; path = "Target Support Files/Pods-KipasKipasLogin/Pods-KipasKipasLogin.testpk.xcconfig"; sourceTree = "<group>"; };
+		CFA91D029478CF05AFFE0193 /* Pods-KipasKipasLogin.proddebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLogin.proddebug.xcconfig"; path = "Target Support Files/Pods-KipasKipasLogin/Pods-KipasKipasLogin.proddebug.xcconfig"; sourceTree = "<group>"; };
+		DD6AFFFA3E9E15185467CA3C /* Pods-KipasKipasLogin.debugpk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KipasKipasLogin.debugpk.xcconfig"; path = "Target Support Files/Pods-KipasKipasLogin/Pods-KipasKipasLogin.debugpk.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DA98AD12AA5812E002C3F5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15C334E366DA2E71F74C2653 /* Pods_KipasKipasLogin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DA98AF02AA5AA40002C3F5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D36AC212BD8E05000B6C65C /* libKipasKipasSharedFoundation.a in Frameworks */,
+				5DA98AFB2AA5AA72002C3F5B /* KipasKipasLogin.framework in Frameworks */,
+				5DA98B012AA5AA7E002C3F5B /* KipasKipasShared.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DA98B062AA5AB31002C3F5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DA98B2D2AA5C4D5002C3F5B /* KipasKipasShared.framework in Frameworks */,
+				5DA98B222AA5AB84002C3F5B /* KipasKipasLoginiOS.framework in Frameworks */,
+				5DF400CE2AE7902200A7584F /* KipasKipasNetworkingUtils.framework in Frameworks */,
+				5D62A6672AB331CB00A47D16 /* KipasKipasNetworking.framework in Frameworks */,
+				5DA98B1E2AA5AB84002C3F5B /* KipasKipasLogin.framework in Frameworks */,
+				6CD2E980664D7A33981054C9 /* Pods_KipasKipasLogin_KKLoginMicroApps.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25F9675F8759E051A209FB4A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C30F56BFC2779FFEC8344D1 /* Pods-KipasKipasLogin.debug.xcconfig */,
+				CFA91D029478CF05AFFE0193 /* Pods-KipasKipasLogin.proddebug.xcconfig */,
+				81762B22114C511AB43810A5 /* Pods-KipasKipasLogin.staging.xcconfig */,
+				9B99DE5E21BAF7B7E1173BE8 /* Pods-KipasKipasLogin.release.xcconfig */,
+				014D3B5C28DCCF58F0CFEB32 /* Pods-KipasKipasLogin-KKLoginMicroApps.debug.xcconfig */,
+				3494572BF2A61A8355B93BC9 /* Pods-KipasKipasLogin-KKLoginMicroApps.proddebug.xcconfig */,
+				6BD4F11AFD11C937E48A0CF2 /* Pods-KipasKipasLogin-KKLoginMicroApps.staging.xcconfig */,
+				CC66FD57CC47B9C4DB3CE077 /* Pods-KipasKipasLogin-KKLoginMicroApps.release.xcconfig */,
+				9F6717E9BEB5E1880B420002 /* Pods-KipasKipasLogin.livedebug.xcconfig */,
+				246A7C123DBC71A10F435E8C /* Pods-KipasKipasLogin-KKLoginMicroApps.livedebug.xcconfig */,
+				CEBCD1C6F0C0494B1341E7DF /* Pods-KipasKipasLogin.testpk.xcconfig */,
+				42AEDD1F9E406A608E587E0C /* Pods-KipasKipasLogin-KKLoginMicroApps.testpk.xcconfig */,
+				DD6AFFFA3E9E15185467CA3C /* Pods-KipasKipasLogin.debugpk.xcconfig */,
+				0F69A838679D25467B0CE9D4 /* Pods-KipasKipasLogin-KKLoginMicroApps.debugpk.xcconfig */,
+			);
+			name = Pods;
+			path = ../../Pods;
+			sourceTree = "<group>";
+		};
+		5D16EDBC2BB00ECB00537D35 /* Request OTP */ = {
+			isa = PBXGroup;
+			children = (
+				5D716D1D2BAD2EB700F61E35 /* LoginOTPRequestView.swift */,
+				5D716D202BAD319C00F61E35 /* LoginOTPRequestViewController.swift */,
+			);
+			path = "Request OTP";
+			sourceTree = "<group>";
+		};
+		5D16EDBD2BB00FA000537D35 /* Verify OTP */ = {
+			isa = PBXGroup;
+			children = (
+				5D16EDBE2BB00FB700537D35 /* LoginWithOTPView.swift */,
+				5D16EDC02BB00FD600537D35 /* LoginWithOTPViewController.swift */,
+			);
+			path = "Verify OTP";
+			sourceTree = "<group>";
+		};
+		5D16EDC62BB0EE0C00537D35 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5D16EDC72BB0EE3000537D35 /* Definition.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5D31D3BE2AB168CB00B694B7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5DA98B032AA5AAC6002C3F5B /* LoginViewController.swift */,
+				5DD8971F2BAA9D010012E3BD /* LoginOptionsViewController.swift */,
+				5DCE48482BB15A7D00EE5793 /* LoginContainerViewController.swift */,
+				5D716D1F2BAD2EFF00F61E35 /* Phone */,
+				5D2194B02BDE97DD00013B51 /* PanProgressWebViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5D31D3BF2AB168D200B694B7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5DA98B2F2AA5DA94002C3F5B /* LoginView.swift */,
+				5D604FE72BF096B20028B595 /* ButtonsCollectionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5D42B1ED2BB5E8BC00FD3C7F /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				5D42B1EE2BB5E8CE00FD3C7F /* LoginOTPRequestParam.swift */,
+				5D42B1F02BB5E8E700FD3C7F /* LoginRequestParam.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		5D4BA2952AE6C805000C5F16 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				5D69714A2BAE8A0600B06D11 /* LoginViewModel.swift */,
+				5D16EDB62BAFA06200537D35 /* LoginOTPRequestViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		5D4BA29E2AE6CCBB000C5F16 /* Composers */ = {
+			isa = PBXGroup;
+			children = (
+				5D4BA29B2AE6CC87000C5F16 /* LoginUIComposer.swift */,
+				5D6971462BAE88B400B06D11 /* LoginOTPRequestUIComposer.swift */,
+				5D16EDC42BB0DC3D00537D35 /* LoginWithOTPUIComposer.swift */,
+				5D6FDB692BD634AA0098F21E /* LoginPasswordUIComposer.swift */,
+			);
+			path = Composers;
+			sourceTree = "<group>";
+		};
+		5D4BA29F2AE6CCC3000C5F16 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				5DC72A5F2BB9BC7800CC162C /* LoginRequestOTPPresentationAdapter.swift */,
+				5DC72A612BB9C09200CC162C /* LoginViewAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		5D6FDB642BD61FB00098F21E /* Password */ = {
+			isa = PBXGroup;
+			children = (
+				5D6FDB652BD61FBB0098F21E /* LoginPasswordView.swift */,
+				5D6FDB672BD620D00098F21E /* LoginPasswordViewController.swift */,
+			);
+			path = Password;
+			sourceTree = "<group>";
+		};
+		5D716D1F2BAD2EFF00F61E35 /* Phone */ = {
+			isa = PBXGroup;
+			children = (
+				5D6FDB642BD61FB00098F21E /* Password */,
+				5D16EDBD2BB00FA000537D35 /* Verify OTP */,
+				5D16EDBC2BB00ECB00537D35 /* Request OTP */,
+			);
+			path = Phone;
+			sourceTree = "<group>";
+		};
+		5DA98ACA2AA5812E002C3F5B = {
+			isa = PBXGroup;
+			children = (
+				5DA98AD62AA5812E002C3F5B /* KipasKipasLogin */,
+				5DA98AF42AA5AA40002C3F5B /* KipasKipasLoginiOS */,
+				5DA98B0A2AA5AB31002C3F5B /* KKLoginMicroApps */,
+				5DA98AD52AA5812E002C3F5B /* Products */,
+				5DA98AE72AA58FE5002C3F5B /* Frameworks */,
+				25F9675F8759E051A209FB4A /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		5DA98AD52AA5812E002C3F5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DA98AD42AA5812E002C3F5B /* KipasKipasLogin.framework */,
+				5DA98AF32AA5AA40002C3F5B /* KipasKipasLoginiOS.framework */,
+				5DA98B092AA5AB31002C3F5B /* KKLoginMicroApps.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DA98AD62AA5812E002C3F5B /* KipasKipasLogin */ = {
+			isa = PBXGroup;
+			children = (
+				5DA98ADE2AA58185002C3F5B /* Sources */,
+				5DA98AD72AA5812E002C3F5B /* KipasKipasLogin.h */,
+			);
+			path = KipasKipasLogin;
+			sourceTree = "<group>";
+		};
+		5DA98ADE2AA58185002C3F5B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5D4BA2952AE6C805000C5F16 /* Presentation */,
+				5DA98AE22AA58DFC002C3F5B /* API */,
+				5DA98ADF2AA58C0D002C3F5B /* Feature */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5DA98ADF2AA58C0D002C3F5B /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				5DA98AE02AA58CC0002C3F5B /* LoginResponse.swift */,
+				5D6971402BAD61EC00B06D11 /* LoginOTPRequestResponse.swift */,
+				5D6971422BAD623000B06D11 /* LoginError.swift */,
+				5D16EDBA2BB0035400537D35 /* LoginOTPRequestError.swift */,
+				5DC72A5D2BB9B36E00CC162C /* RootData.swift */,
+				5DEB06992BCE4A9000B1ACA0 /* LoginProfileResponse.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		5DA98AE22AA58DFC002C3F5B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5D42B1ED2BB5E8BC00FD3C7F /* Parameters */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		5DA98AE72AA58FE5002C3F5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D36AC202BD8E05000B6C65C /* libKipasKipasSharedFoundation.a */,
+				5DF400CD2AE7902200A7584F /* KipasKipasNetworkingUtils.framework */,
+				5D62A6662AB331CB00A47D16 /* KipasKipasNetworking.framework */,
+				5DA98B2C2AA5C4D5002C3F5B /* KipasKipasShared.framework */,
+				5DA98B002AA5AA7E002C3F5B /* KipasKipasShared.framework */,
+				5DA98AE82AA58FE5002C3F5B /* KipasKipasNetworking.framework */,
+				555DAA50E47A30E35CFD7AD3 /* Pods_KipasKipasLogin.framework */,
+				C6C0367E3A29AEB152322FC5 /* Pods_KipasKipasLogin_KKLoginMicroApps.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5DA98AF42AA5AA40002C3F5B /* KipasKipasLoginiOS */ = {
+			isa = PBXGroup;
+			children = (
+				5DA98AFA2AA5AA4E002C3F5B /* Sources */,
+				5DA98AF52AA5AA40002C3F5B /* KipasKipasLoginiOS.h */,
+			);
+			path = KipasKipasLoginiOS;
+			sourceTree = "<group>";
+		};
+		5DA98AFA2AA5AA4E002C3F5B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5D16EDC62BB0EE0C00537D35 /* Utils */,
+				5D4BA29F2AE6CCC3000C5F16 /* Adapters */,
+				5D4BA29E2AE6CCBB000C5F16 /* Composers */,
+				5D31D3BE2AB168CB00B694B7 /* Controllers */,
+				5D31D3BF2AB168D200B694B7 /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5DA98B0A2AA5AB31002C3F5B /* KKLoginMicroApps */ = {
+			isa = PBXGroup;
+			children = (
+				5DA98B1D2AA5AB44002C3F5B /* Application */,
+				5DA98B142AA5AB32002C3F5B /* Assets.xcassets */,
+				5DA98B162AA5AB32002C3F5B /* LaunchScreen.storyboard */,
+				5DA98B192AA5AB32002C3F5B /* Info.plist */,
+			);
+			path = KKLoginMicroApps;
+			sourceTree = "<group>";
+		};
+		5DA98B1D2AA5AB44002C3F5B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5DA98B0B2AA5AB31002C3F5B /* AppDelegate.swift */,
+				5DA98B0D2AA5AB31002C3F5B /* SceneDelegate+Login.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5DA98ACF2AA5812E002C3F5B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DA98AD82AA5812E002C3F5B /* KipasKipasLogin.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DA98AEE2AA5AA40002C3F5B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DA98AF62AA5AA40002C3F5B /* KipasKipasLoginiOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5DA98AD32AA5812E002C3F5B /* KipasKipasLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DA98ADB2AA5812E002C3F5B /* Build configuration list for PBXNativeTarget "KipasKipasLogin" */;
+			buildPhases = (
+				394644976006751D33F99949 /* [CP] Check Pods Manifest.lock */,
+				5DA98ACF2AA5812E002C3F5B /* Headers */,
+				5DA98AD02AA5812E002C3F5B /* Sources */,
+				5DA98AD12AA5812E002C3F5B /* Frameworks */,
+				5DA98AD22AA5812E002C3F5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KipasKipasLogin;
+			productName = KipasKipasLogin;
+			productReference = 5DA98AD42AA5812E002C3F5B /* KipasKipasLogin.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5DA98AF22AA5AA40002C3F5B /* KipasKipasLoginiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DA98AF72AA5AA40002C3F5B /* Build configuration list for PBXNativeTarget "KipasKipasLoginiOS" */;
+			buildPhases = (
+				5DA98AEE2AA5AA40002C3F5B /* Headers */,
+				5DA98AEF2AA5AA40002C3F5B /* Sources */,
+				5DA98AF02AA5AA40002C3F5B /* Frameworks */,
+				5DA98AF12AA5AA40002C3F5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DA98AFE2AA5AA72002C3F5B /* PBXTargetDependency */,
+			);
+			name = KipasKipasLoginiOS;
+			productName = KipasKipasLoginiOS;
+			productReference = 5DA98AF32AA5AA40002C3F5B /* KipasKipasLoginiOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5DA98B082AA5AB31002C3F5B /* KKLoginMicroApps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DA98B1A2AA5AB32002C3F5B /* Build configuration list for PBXNativeTarget "KKLoginMicroApps" */;
+			buildPhases = (
+				4FC9B697035CB07AF5A9AFB8 /* [CP] Check Pods Manifest.lock */,
+				5DA98B052AA5AB31002C3F5B /* Sources */,
+				5DA98B062AA5AB31002C3F5B /* Frameworks */,
+				5DA98B072AA5AB31002C3F5B /* Resources */,
+				5DA98B262AA5AB84002C3F5B /* Embed Frameworks */,
+				30B78D6F737B8CEFBD08EC2C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DA98B212AA5AB84002C3F5B /* PBXTargetDependency */,
+				5DA98B252AA5AB84002C3F5B /* PBXTargetDependency */,
+			);
+			name = KKLoginMicroApps;
+			packageProductDependencies = (
+			);
+			productName = KKLoginMicroApps;
+			productReference = 5DA98B092AA5AB31002C3F5B /* KKLoginMicroApps.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DA98ACB2AA5812E002C3F5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5DA98AD32AA5812E002C3F5B = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
+					};
+					5DA98AF22AA5AA40002C3F5B = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
+					};
+					5DA98B082AA5AB31002C3F5B = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 5DA98ACE2AA5812E002C3F5B /* Build configuration list for PBXProject "KipasKipasLogin" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DA98ACA2AA5812E002C3F5B;
+			packageReferences = (
+			);
+			productRefGroup = 5DA98AD52AA5812E002C3F5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DA98AD32AA5812E002C3F5B /* KipasKipasLogin */,
+				5DA98AF22AA5AA40002C3F5B /* KipasKipasLoginiOS */,
+				5DA98B082AA5AB31002C3F5B /* KKLoginMicroApps */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DA98AD22AA5812E002C3F5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DA98AF12AA5AA40002C3F5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DA98B072AA5AB31002C3F5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DA98B182AA5AB32002C3F5B /* LaunchScreen.storyboard in Resources */,
+				5DA98B152AA5AB32002C3F5B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30B78D6F737B8CEFBD08EC2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KipasKipasLogin-KKLoginMicroApps/Pods-KipasKipasLogin-KKLoginMicroApps-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KipasKipasLogin-KKLoginMicroApps/Pods-KipasKipasLogin-KKLoginMicroApps-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KipasKipasLogin-KKLoginMicroApps/Pods-KipasKipasLogin-KKLoginMicroApps-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		394644976006751D33F99949 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KipasKipasLogin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FC9B697035CB07AF5A9AFB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KipasKipasLogin-KKLoginMicroApps-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DA98AD02AA5812E002C3F5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D6971412BAD61ED00B06D11 /* LoginOTPRequestResponse.swift in Sources */,
+				5D16EDB72BAFA06200537D35 /* LoginOTPRequestViewModel.swift in Sources */,
+				5D42B1F12BB5E8E700FD3C7F /* LoginRequestParam.swift in Sources */,
+				5D42B1EF2BB5E8CE00FD3C7F /* LoginOTPRequestParam.swift in Sources */,
+				5DC72A5E2BB9B36E00CC162C /* RootData.swift in Sources */,
+				5DA98AE12AA58CC0002C3F5B /* LoginResponse.swift in Sources */,
+				5D16EDBB2BB0035400537D35 /* LoginOTPRequestError.swift in Sources */,
+				5D6971432BAD623000B06D11 /* LoginError.swift in Sources */,
+				5DEB069A2BCE4A9000B1ACA0 /* LoginProfileResponse.swift in Sources */,
+				5D69714B2BAE8A0600B06D11 /* LoginViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DA98AEF2AA5AA40002C3F5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D16EDC12BB00FD600537D35 /* LoginWithOTPViewController.swift in Sources */,
+				5D6FDB662BD61FBB0098F21E /* LoginPasswordView.swift in Sources */,
+				5D716D212BAD319C00F61E35 /* LoginOTPRequestViewController.swift in Sources */,
+				5D16EDC82BB0EE3000537D35 /* Definition.swift in Sources */,
+				5D2194B12BDE97DD00013B51 /* PanProgressWebViewController.swift in Sources */,
+				5DC72A602BB9BC7800CC162C /* LoginRequestOTPPresentationAdapter.swift in Sources */,
+				5D6FDB682BD620D00098F21E /* LoginPasswordViewController.swift in Sources */,
+				5DA98B302AA5DA94002C3F5B /* LoginView.swift in Sources */,
+				5DA98B042AA5AAC6002C3F5B /* LoginViewController.swift in Sources */,
+				5DC72A622BB9C09200CC162C /* LoginViewAdapter.swift in Sources */,
+				5DCE48492BB15A7D00EE5793 /* LoginContainerViewController.swift in Sources */,
+				5DD897202BAA9D010012E3BD /* LoginOptionsViewController.swift in Sources */,
+				5D6971472BAE88B400B06D11 /* LoginOTPRequestUIComposer.swift in Sources */,
+				5D6FDB6A2BD634AA0098F21E /* LoginPasswordUIComposer.swift in Sources */,
+				5D716D1E2BAD2EB700F61E35 /* LoginOTPRequestView.swift in Sources */,
+				5D16EDC52BB0DC3D00537D35 /* LoginWithOTPUIComposer.swift in Sources */,
+				5D4BA29D2AE6CC87000C5F16 /* LoginUIComposer.swift in Sources */,
+				5D16EDBF2BB00FB700537D35 /* LoginWithOTPView.swift in Sources */,
+				5D604FE82BF096B20028B595 /* ButtonsCollectionView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DA98B052AA5AB31002C3F5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DA98B0C2AA5AB31002C3F5B /* AppDelegate.swift in Sources */,
+				5DA98B0E2AA5AB31002C3F5B /* SceneDelegate+Login.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5DA98AFE2AA5AA72002C3F5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DA98AD32AA5812E002C3F5B /* KipasKipasLogin */;
+			targetProxy = 5DA98AFD2AA5AA72002C3F5B /* PBXContainerItemProxy */;
+		};
+		5DA98B212AA5AB84002C3F5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DA98AD32AA5812E002C3F5B /* KipasKipasLogin */;
+			targetProxy = 5DA98B202AA5AB84002C3F5B /* PBXContainerItemProxy */;
+		};
+		5DA98B252AA5AB84002C3F5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DA98AF22AA5AA40002C3F5B /* KipasKipasLoginiOS */;
+			targetProxy = 5DA98B242AA5AB84002C3F5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5DA98B162AA5AB32002C3F5B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DA98B172AA5AB32002C3F5B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D34A4282AB7E67A00293DAE /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Staging;
+		};
+		5D34A4292AB7E67A00293DAE /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81762B22114C511AB43810A5 /* Pods-KipasKipasLogin.staging.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasLogin;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Staging;
+		};
+		5D34A42A2AB7E67A00293DAE /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasLoginiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		5D34A42B2AB7E67A00293DAE /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BD4F11AFD11C937E48A0CF2 /* Pods-KipasKipasLogin-KKLoginMicroApps.staging.xcconfig */;
+			buildSettings = {
+				API_BASE_URL = "https://stg-api-main.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KKLoginMicroApps/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KKLoginMicroApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		5D34A4302AB7E69800293DAE /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = ProdDebug;
+		};
+		5D34A4312AB7E69800293DAE /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFA91D029478CF05AFFE0193 /* Pods-KipasKipasLogin.proddebug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasLogin;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = ProdDebug;
+		};
+		5D34A4322AB7E69800293DAE /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasLoginiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = ProdDebug;
+		};
+		5D34A4332AB7E69800293DAE /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3494572BF2A61A8355B93BC9 /* Pods-KipasKipasLogin-KKLoginMicroApps.proddebug.xcconfig */;
+			buildSettings = {
+				API_BASE_URL = "https://test-api-main.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KKLoginMicroApps/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KKLoginMicroApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = ProdDebug;
+		};
+		5D77B2062B9176C5008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = LiveDebug;
+		};
+		5D77B2072B9176C5008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F6717E9BEB5E1880B420002 /* Pods-KipasKipasLogin.livedebug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasLogin;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = LiveDebug;
+		};
+		5D77B2082B9176C5008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasLoginiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = LiveDebug;
+		};
+		5D77B2092B9176C5008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 246A7C123DBC71A10F435E8C /* Pods-KipasKipasLogin-KKLoginMicroApps.livedebug.xcconfig */;
+			buildSettings = {
+				API_BASE_URL = "https://test-api-main.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KKLoginMicroApps/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KKLoginMicroApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = LiveDebug;
+		};
+		5DA98AD92AA5812E002C3F5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5DA98ADA2AA5812E002C3F5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5DA98ADC2AA5812E002C3F5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C30F56BFC2779FFEC8344D1 /* Pods-KipasKipasLogin.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasLogin;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5DA98ADD2AA5812E002C3F5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B99DE5E21BAF7B7E1173BE8 /* Pods-KipasKipasLogin.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasLogin;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5DA98AF82AA5AA40002C3F5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasLoginiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5DA98AF92AA5AA40002C3F5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasLoginiOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5DA98B1B2AA5AB32002C3F5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 014D3B5C28DCCF58F0CFEB32 /* Pods-KipasKipasLogin-KKLoginMicroApps.debug.xcconfig */;
+			buildSettings = {
+				API_BASE_URL = "https://test-api-main.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KKLoginMicroApps/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KKLoginMicroApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5DA98B1C2AA5AB32002C3F5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC66FD57CC47B9C4DB3CE077 /* Pods-KipasKipasLogin-KKLoginMicroApps.release.xcconfig */;
+			buildSettings = {
+				API_BASE_URL = "https://api-main.kipaskipas.com/api/v1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KKLoginMicroApps/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KKLoginMicroApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DA98ACE2AA5812E002C3F5B /* Build configuration list for PBXProject "KipasKipasLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DA98AD92AA5812E002C3F5B /* Debug */,
+				5D77B2062B9176C5008CC295 /* LiveDebug */,
+				5D34A4302AB7E69800293DAE /* ProdDebug */,
+				5D34A4282AB7E67A00293DAE /* Staging */,
+				5DA98ADA2AA5812E002C3F5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DA98ADB2AA5812E002C3F5B /* Build configuration list for PBXNativeTarget "KipasKipasLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DA98ADC2AA5812E002C3F5B /* Debug */,
+				5D77B2072B9176C5008CC295 /* LiveDebug */,
+				5D34A4312AB7E69800293DAE /* ProdDebug */,
+				5D34A4292AB7E67A00293DAE /* Staging */,
+				5DA98ADD2AA5812E002C3F5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DA98AF72AA5AA40002C3F5B /* Build configuration list for PBXNativeTarget "KipasKipasLoginiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DA98AF82AA5AA40002C3F5B /* Debug */,
+				5D77B2082B9176C5008CC295 /* LiveDebug */,
+				5D34A4322AB7E69800293DAE /* ProdDebug */,
+				5D34A42A2AB7E67A00293DAE /* Staging */,
+				5DA98AF92AA5AA40002C3F5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DA98B1A2AA5AB32002C3F5B /* Build configuration list for PBXNativeTarget "KKLoginMicroApps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DA98B1B2AA5AB32002C3F5B /* Debug */,
+				5D77B2092B9176C5008CC295 /* LiveDebug */,
+				5D34A4332AB7E69800293DAE /* ProdDebug */,
+				5D34A42B2AB7E67A00293DAE /* Staging */,
+				5DA98B1C2AA5AB32002C3F5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5DA98ACB2AA5812E002C3F5B /* Project object */;
+}

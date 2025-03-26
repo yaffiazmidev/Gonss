@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoBold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="RobotoMedium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddGopayAccountViewController" customModule="KipasKipas" customModuleProvider="target">
+            <connections>
+                <outlet property="accountContainerView" destination="eUZ-W7-K5B" id="dOj-BZ-XIj"/>
+                <outlet property="accountNameLabel" destination="NNy-57-hJ0" id="wNb-pZ-MGq"/>
+                <outlet property="accountNumberLabel" destination="IkL-OR-xlM" id="9Kx-cE-tiM"/>
+                <outlet property="checkButton" destination="jwC-Bj-FxS" id="Oni-8H-4J1"/>
+                <outlet property="phoneNumberView" destination="Wsa-r6-fA3" id="xC6-NH-Uix"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_gopay" translatesAutoresizingMaskIntoConstraints="NO" id="OQR-6S-wCS">
+                    <rect key="frame" x="107" y="85" width="161" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="161" id="Loo-GE-TWj"/>
+                        <constraint firstAttribute="height" constant="33" id="QiH-xR-7cU"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="n4y-b5-rZe">
+                    <rect key="frame" x="24" y="190" width="327" height="196"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="327" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="Wsa-r6-fA3" customClass="KKDefaultTextField" customModule="KipasKipas" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="327" height="128"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                        <button opaque="NO" alpha="0.5" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwC-Bj-FxS">
+                            <rect key="frame" x="0.0" y="152" width="327" height="44"/>
+                            <color key="backgroundColor" red="0.32156862745098036" green="0.76862745098039209" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="HbX-ye-JGA"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="12"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Cek akun gopay">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="setCornerRadius">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="didClickCheckGopayAccountButton:" destination="-1" eventType="touchUpInside" id="Bdz-Dr-g6L"/>
+                            </connections>
+                        </button>
+                        <stackView hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eUZ-W7-K5B">
+                            <rect key="frame" x="0.0" y="196" width="327" height="104"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="NAG-Dy-SVo">
+                                    <rect key="frame" x="161" y="19" width="5" height="2"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNy-57-hJ0">
+                                            <rect key="frame" x="0.0" y="0.0" width="5" height="0.0"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IkL-OR-xlM">
+                                            <rect key="frame" x="0.66666666666665719" y="2" width="4" height="0.0"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
+                                            <color key="textColor" name="Grey"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LqC-Sb-M1u">
+                                    <rect key="frame" x="62.666666666666686" y="41" width="202" height="44"/>
+                                    <color key="backgroundColor" red="0.32156862749999998" green="0.76862745099999996" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="202" id="BMI-GE-GYp"/>
+                                        <constraint firstAttribute="height" constant="44" id="Vcf-1k-u9M"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="12"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Kirim OTP">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="setCornerRadius">
+                                            <real key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="didClickSendOTPButton:" destination="-1" eventType="touchUpInside" id="bTU-Jt-awQ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                            <edgeInsets key="layoutMargins" top="19" left="0.0" bottom="19" right="0.0"/>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="OQR-6S-wCS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3WD-N1-L71"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="n4y-b5-rZe" secondAttribute="trailing" constant="24" id="9Rj-gH-NRb"/>
+                <constraint firstItem="n4y-b5-rZe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="cDE-mV-Ych"/>
+                <constraint firstItem="OQR-6S-wCS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="38" id="eJ4-Oe-cLz"/>
+                <constraint firstItem="n4y-b5-rZe" firstAttribute="top" secondItem="OQR-6S-wCS" secondAttribute="bottom" constant="72" id="hth-aU-cyH"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_gopay" width="161" height="33"/>
+        <namedColor name="Grey">
+            <color red="0.46700000762939453" green="0.46700000762939453" blue="0.46700000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

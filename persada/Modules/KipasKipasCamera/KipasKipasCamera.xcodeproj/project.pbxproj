@@ -1,0 +1,1198 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C749DEE2C0DC45800140C24 /* CameraVerifyIdentityPhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C749DED2C0DC45800140C24 /* CameraVerifyIdentityPhotoController.swift */; };
+		3CD2C5222C0C7C8900C13C3C /* CameraVerifyIdentityPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2C5212C0C7C8900C13C3C /* CameraVerifyIdentityPhotoView.swift */; };
+		3CD2C5242C0C7C8E00C13C3C /* CameraVerifyIdentityPhotoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CD2C5232C0C7C8E00C13C3C /* CameraVerifyIdentityPhotoView.xib */; };
+		5D399B382C33AC9200EFE663 /* PhotoVideoCaptureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D399B372C33AC9200EFE663 /* PhotoVideoCaptureButton.swift */; };
+		5D4F711D2C135AC400792197 /* MultiCameraSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4F711C2C135AC400792197 /* MultiCameraSession.swift */; };
+		5D4FD91B2B79EEB3003EF8C1 /* MediaLibraryFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4FD91A2B79EEB3003EF8C1 /* MediaLibraryFetcher.swift */; };
+		5D6B32472B7360F40051A4DB /* CameraOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6B32462B7360F40051A4DB /* CameraOptions.swift */; };
+		5D6B32492B7361220051A4DB /* CameraPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6B32482B7361220051A4DB /* CameraPosition.swift */; };
+		5D6B324B2B7361370051A4DB /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6B324A2B7361370051A4DB /* CameraPreview.swift */; };
+		5D6B324D2B7361570051A4DB /* CameraError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6B324C2B7361570051A4DB /* CameraError.swift */; };
+		5D6B324F2B7361740051A4DB /* CameraMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6B324E2B7361740051A4DB /* CameraMode.swift */; };
+		5D6B32512B7374DC0051A4DB /* CameraSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6B32502B7374DC0051A4DB /* CameraSession.swift */; };
+		5D6B32532B75C3990051A4DB /* CameraPhotoSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6B32522B75C3990051A4DB /* CameraPhotoSession.swift */; };
+		5D6C57D82B8450CC001A721F /* VideoCaptureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6C57D72B8450CC001A721F /* VideoCaptureButton.swift */; };
+		5D6C57DA2B84546D001A721F /* CameraVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6C57D92B84546D001A721F /* CameraVideoViewController.swift */; };
+		5D6C57DC2B8456C1001A721F /* CameraPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6C57DB2B8456C1001A721F /* CameraPhotoViewController.swift */; };
+		5D7374652B8343C600FBEF85 /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7374642B8343C600FBEF85 /* MulticastDelegate.swift */; };
+		5D73746B2B834DFF00FBEF85 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7374692B834DAA00FBEF85 /* CameraViewController.swift */; };
+		5D73746D2B834E1D00FBEF85 /* KipasKipasShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D73746C2B834E1D00FBEF85 /* KipasKipasShared.framework */; };
+		5D88DCE52B70EE14000DFBDD /* CameraVideoSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D88DCE42B70EE14000DFBDD /* CameraVideoSession.swift */; };
+		5D9FC7472B69000C00B65BD0 /* KipasKipasCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D9FC7462B69000C00B65BD0 /* KipasKipasCamera.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D9FC7592B69027100B65BD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9FC7582B69027100B65BD0 /* AppDelegate.swift */; };
+		5D9FC75B2B69027100B65BD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9FC75A2B69027100B65BD0 /* SceneDelegate.swift */; };
+		5D9FC7602B69027100B65BD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D9FC75E2B69027100B65BD0 /* Main.storyboard */; };
+		5D9FC7622B69027200B65BD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D9FC7612B69027200B65BD0 /* Assets.xcassets */; };
+		5D9FC7652B69027200B65BD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D9FC7632B69027200B65BD0 /* LaunchScreen.storyboard */; };
+		5D9FC7702B69084C00B65BD0 /* KipasKipasCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D9FC7432B69000C00B65BD0 /* KipasKipasCamera.framework */; };
+		5D9FC7712B69084C00B65BD0 /* KipasKipasCamera.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D9FC7432B69000C00B65BD0 /* KipasKipasCamera.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D9FC7762B69085100B65BD0 /* KipasKipasShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D9FC7752B69085100B65BD0 /* KipasKipasShared.framework */; };
+		5D9FC7772B69085100B65BD0 /* KipasKipasShared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D9FC7752B69085100B65BD0 /* KipasKipasShared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5DD96E862B7A2FDB007B68B5 /* URL+TemporaryPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD96E852B7A2FDB007B68B5 /* URL+TemporaryPath.swift */; };
+		5DD9F1BC2B7093C4002E1C07 /* KKCameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD9F1BB2B7093C4002E1C07 /* KKCameraPreviewView.swift */; };
+		5DD9F1BF2B7094C5002E1C07 /* KKCameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD9F1BE2B7094C5002E1C07 /* KKCameraManager.swift */; };
+		5DD9F1C12B70976F002E1C07 /* KKCameraCaptureLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD9F1C02B70976F002E1C07 /* KKCameraCaptureLocationManager.swift */; };
+		5DF3649A2B834F91000FBE82 /* CaptureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF364992B834F91000FBE82 /* CaptureButton.swift */; };
+		5DFDA2892C148131007A3F74 /* CaptureMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFDA2882C148131007A3F74 /* CaptureMode.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D9FC7722B69084C00B65BD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D9FC73A2B69000C00B65BD0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D9FC7422B69000C00B65BD0;
+			remoteInfo = KipasKipasCamera;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5D9FC7742B69084C00B65BD0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5D9FC7712B69084C00B65BD0 /* KipasKipasCamera.framework in Embed Frameworks */,
+				5D9FC7772B69085100B65BD0 /* KipasKipasShared.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3C749DED2C0DC45800140C24 /* CameraVerifyIdentityPhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVerifyIdentityPhotoController.swift; sourceTree = "<group>"; };
+		3CD2C5212C0C7C8900C13C3C /* CameraVerifyIdentityPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVerifyIdentityPhotoView.swift; sourceTree = "<group>"; };
+		3CD2C5232C0C7C8E00C13C3C /* CameraVerifyIdentityPhotoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraVerifyIdentityPhotoView.xib; sourceTree = "<group>"; };
+		5D399B372C33AC9200EFE663 /* PhotoVideoCaptureButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoVideoCaptureButton.swift; sourceTree = "<group>"; };
+		5D4F711C2C135AC400792197 /* MultiCameraSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiCameraSession.swift; sourceTree = "<group>"; };
+		5D4FD91A2B79EEB3003EF8C1 /* MediaLibraryFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibraryFetcher.swift; sourceTree = "<group>"; };
+		5D6B32462B7360F40051A4DB /* CameraOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraOptions.swift; sourceTree = "<group>"; };
+		5D6B32482B7361220051A4DB /* CameraPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPosition.swift; sourceTree = "<group>"; };
+		5D6B324A2B7361370051A4DB /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		5D6B324C2B7361570051A4DB /* CameraError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraError.swift; sourceTree = "<group>"; };
+		5D6B324E2B7361740051A4DB /* CameraMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraMode.swift; sourceTree = "<group>"; };
+		5D6B32502B7374DC0051A4DB /* CameraSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSession.swift; sourceTree = "<group>"; };
+		5D6B32522B75C3990051A4DB /* CameraPhotoSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPhotoSession.swift; sourceTree = "<group>"; };
+		5D6C57D72B8450CC001A721F /* VideoCaptureButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCaptureButton.swift; sourceTree = "<group>"; };
+		5D6C57D92B84546D001A721F /* CameraVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVideoViewController.swift; sourceTree = "<group>"; };
+		5D6C57DB2B8456C1001A721F /* CameraPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPhotoViewController.swift; sourceTree = "<group>"; };
+		5D7374642B8343C600FBEF85 /* MulticastDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastDelegate.swift; sourceTree = "<group>"; };
+		5D7374692B834DAA00FBEF85 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		5D73746C2B834E1D00FBEF85 /* KipasKipasShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D88DCE42B70EE14000DFBDD /* CameraVideoSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVideoSession.swift; sourceTree = "<group>"; };
+		5D9FC7432B69000C00B65BD0 /* KipasKipasCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KipasKipasCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D9FC7462B69000C00B65BD0 /* KipasKipasCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KipasKipasCamera.h; sourceTree = "<group>"; };
+		5D9FC7562B69027100B65BD0 /* KipasKipasCameraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KipasKipasCameraApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D9FC7582B69027100B65BD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5D9FC75A2B69027100B65BD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5D9FC75F2B69027100B65BD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5D9FC7612B69027200B65BD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5D9FC7642B69027200B65BD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5D9FC7662B69027200B65BD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D9FC7752B69085100B65BD0 /* KipasKipasShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KipasKipasShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DD96E852B7A2FDB007B68B5 /* URL+TemporaryPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+TemporaryPath.swift"; sourceTree = "<group>"; };
+		5DD9F1BB2B7093C4002E1C07 /* KKCameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKCameraPreviewView.swift; sourceTree = "<group>"; };
+		5DD9F1BE2B7094C5002E1C07 /* KKCameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKCameraManager.swift; sourceTree = "<group>"; };
+		5DD9F1C02B70976F002E1C07 /* KKCameraCaptureLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKCameraCaptureLocationManager.swift; sourceTree = "<group>"; };
+		5DF364992B834F91000FBE82 /* CaptureButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureButton.swift; sourceTree = "<group>"; };
+		5DFDA2882C148131007A3F74 /* CaptureMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureMode.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D9FC7402B69000C00B65BD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D73746D2B834E1D00FBEF85 /* KipasKipasShared.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D9FC7532B69027100B65BD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D9FC7702B69084C00B65BD0 /* KipasKipasCamera.framework in Frameworks */,
+				5D9FC7762B69085100B65BD0 /* KipasKipasShared.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CD2C5202C0C7C7D00C13C3C /* CameraVerifyIdentityPhotoView */ = {
+			isa = PBXGroup;
+			children = (
+				3CD2C5212C0C7C8900C13C3C /* CameraVerifyIdentityPhotoView.swift */,
+				3CD2C5232C0C7C8E00C13C3C /* CameraVerifyIdentityPhotoView.xib */,
+			);
+			path = CameraVerifyIdentityPhotoView;
+			sourceTree = "<group>";
+		};
+		5D4FD9192B79EEA6003EF8C1 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				5D4FD91A2B79EEB3003EF8C1 /* MediaLibraryFetcher.swift */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		5D7374662B834D6900FBEF85 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5DD9F1BE2B7094C5002E1C07 /* KKCameraManager.swift */,
+				5DD9F1C02B70976F002E1C07 /* KKCameraCaptureLocationManager.swift */,
+				5D88DCE42B70EE14000DFBDD /* CameraVideoSession.swift */,
+				5D6B32462B7360F40051A4DB /* CameraOptions.swift */,
+				5D6B32482B7361220051A4DB /* CameraPosition.swift */,
+				5D6B324A2B7361370051A4DB /* CameraPreview.swift */,
+				5D6B324C2B7361570051A4DB /* CameraError.swift */,
+				5D6B324E2B7361740051A4DB /* CameraMode.swift */,
+				5D6B32502B7374DC0051A4DB /* CameraSession.swift */,
+				5D6B32522B75C3990051A4DB /* CameraPhotoSession.swift */,
+				5D7374642B8343C600FBEF85 /* MulticastDelegate.swift */,
+				5D4F711C2C135AC400792197 /* MultiCameraSession.swift */,
+				5DFDA2882C148131007A3F74 /* CaptureMode.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		5D7374672B834D7400FBEF85 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5D7374682B834D7B00FBEF85 /* Controllers */,
+				5DD9F1BD2B7094B6002E1C07 /* Views */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5D7374682B834D7B00FBEF85 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5D7374692B834DAA00FBEF85 /* CameraViewController.swift */,
+				5D6C57D92B84546D001A721F /* CameraVideoViewController.swift */,
+				5D6C57DB2B8456C1001A721F /* CameraPhotoViewController.swift */,
+				3C749DED2C0DC45800140C24 /* CameraVerifyIdentityPhotoController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5D9FC7392B69000C00B65BD0 = {
+			isa = PBXGroup;
+			children = (
+				5D9FC7452B69000C00B65BD0 /* KipasKipasCamera */,
+				5D9FC7572B69027100B65BD0 /* KipasKipasCameraApp */,
+				5D9FC7442B69000C00B65BD0 /* Products */,
+				5D9FC76F2B69084C00B65BD0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5D9FC7442B69000C00B65BD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D9FC7432B69000C00B65BD0 /* KipasKipasCamera.framework */,
+				5D9FC7562B69027100B65BD0 /* KipasKipasCameraApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D9FC7452B69000C00B65BD0 /* KipasKipasCamera */ = {
+			isa = PBXGroup;
+			children = (
+				5D9FC7512B69023600B65BD0 /* Sources */,
+				5D9FC7462B69000C00B65BD0 /* KipasKipasCamera.h */,
+			);
+			path = KipasKipasCamera;
+			sourceTree = "<group>";
+		};
+		5D9FC7512B69023600B65BD0 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5DD96E842B7A2FD0007B68B5 /* Utils */,
+				5D4FD9192B79EEA6003EF8C1 /* Photos */,
+				5D7374672B834D7400FBEF85 /* UI */,
+				5D7374662B834D6900FBEF85 /* Core */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5D9FC7572B69027100B65BD0 /* KipasKipasCameraApp */ = {
+			isa = PBXGroup;
+			children = (
+				5D9FC76C2B69029100B65BD0 /* Application */,
+				5D9FC76D2B6902A300B65BD0 /* Resources */,
+				5D9FC7662B69027200B65BD0 /* Info.plist */,
+			);
+			path = KipasKipasCameraApp;
+			sourceTree = "<group>";
+		};
+		5D9FC76C2B69029100B65BD0 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5D9FC7582B69027100B65BD0 /* AppDelegate.swift */,
+				5D9FC75A2B69027100B65BD0 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		5D9FC76D2B6902A300B65BD0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5D9FC75E2B69027100B65BD0 /* Main.storyboard */,
+				5D9FC7612B69027200B65BD0 /* Assets.xcassets */,
+				5D9FC7632B69027200B65BD0 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5D9FC76F2B69084C00B65BD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D73746C2B834E1D00FBEF85 /* KipasKipasShared.framework */,
+				5D9FC7752B69085100B65BD0 /* KipasKipasShared.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5DD96E842B7A2FD0007B68B5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5DD96E852B7A2FDB007B68B5 /* URL+TemporaryPath.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5DD9F1BD2B7094B6002E1C07 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3CD2C5202C0C7C7D00C13C3C /* CameraVerifyIdentityPhotoView */,
+				5DD9F1BB2B7093C4002E1C07 /* KKCameraPreviewView.swift */,
+				5DF364992B834F91000FBE82 /* CaptureButton.swift */,
+				5D6C57D72B8450CC001A721F /* VideoCaptureButton.swift */,
+				5D399B372C33AC9200EFE663 /* PhotoVideoCaptureButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5D9FC73E2B69000C00B65BD0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D9FC7472B69000C00B65BD0 /* KipasKipasCamera.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5D9FC7422B69000C00B65BD0 /* KipasKipasCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D9FC74A2B69000C00B65BD0 /* Build configuration list for PBXNativeTarget "KipasKipasCamera" */;
+			buildPhases = (
+				5D9FC73E2B69000C00B65BD0 /* Headers */,
+				5D9FC73F2B69000C00B65BD0 /* Sources */,
+				5D9FC7402B69000C00B65BD0 /* Frameworks */,
+				5D9FC7412B69000C00B65BD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KipasKipasCamera;
+			productName = KipasKipasCamera;
+			productReference = 5D9FC7432B69000C00B65BD0 /* KipasKipasCamera.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5D9FC7552B69027100B65BD0 /* KipasKipasCameraApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D9FC7672B69027200B65BD0 /* Build configuration list for PBXNativeTarget "KipasKipasCameraApp" */;
+			buildPhases = (
+				5D9FC7522B69027100B65BD0 /* Sources */,
+				5D9FC7532B69027100B65BD0 /* Frameworks */,
+				5D9FC7542B69027100B65BD0 /* Resources */,
+				5D9FC7742B69084C00B65BD0 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D9FC7732B69084C00B65BD0 /* PBXTargetDependency */,
+			);
+			name = KipasKipasCameraApp;
+			productName = KipasKipasCameraApp;
+			productReference = 5D9FC7562B69027100B65BD0 /* KipasKipasCameraApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D9FC73A2B69000C00B65BD0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					5D9FC7422B69000C00B65BD0 = {
+						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
+					};
+					5D9FC7552B69027100B65BD0 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 5D9FC73D2B69000C00B65BD0 /* Build configuration list for PBXProject "KipasKipasCamera" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5D9FC7392B69000C00B65BD0;
+			productRefGroup = 5D9FC7442B69000C00B65BD0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D9FC7422B69000C00B65BD0 /* KipasKipasCamera */,
+				5D9FC7552B69027100B65BD0 /* KipasKipasCameraApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D9FC7412B69000C00B65BD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CD2C5242C0C7C8E00C13C3C /* CameraVerifyIdentityPhotoView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D9FC7542B69027100B65BD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D9FC7652B69027200B65BD0 /* LaunchScreen.storyboard in Resources */,
+				5D9FC7622B69027200B65BD0 /* Assets.xcassets in Resources */,
+				5D9FC7602B69027100B65BD0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D9FC73F2B69000C00B65BD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D6B32532B75C3990051A4DB /* CameraPhotoSession.swift in Sources */,
+				5D6C57DC2B8456C1001A721F /* CameraPhotoViewController.swift in Sources */,
+				5DFDA2892C148131007A3F74 /* CaptureMode.swift in Sources */,
+				5DD9F1C12B70976F002E1C07 /* KKCameraCaptureLocationManager.swift in Sources */,
+				5DD9F1BC2B7093C4002E1C07 /* KKCameraPreviewView.swift in Sources */,
+				5DD9F1BF2B7094C5002E1C07 /* KKCameraManager.swift in Sources */,
+				5D6C57D82B8450CC001A721F /* VideoCaptureButton.swift in Sources */,
+				3CD2C5222C0C7C8900C13C3C /* CameraVerifyIdentityPhotoView.swift in Sources */,
+				5D4FD91B2B79EEB3003EF8C1 /* MediaLibraryFetcher.swift in Sources */,
+				5D399B382C33AC9200EFE663 /* PhotoVideoCaptureButton.swift in Sources */,
+				5D4F711D2C135AC400792197 /* MultiCameraSession.swift in Sources */,
+				5D6B324B2B7361370051A4DB /* CameraPreview.swift in Sources */,
+				5D6B32492B7361220051A4DB /* CameraPosition.swift in Sources */,
+				5D6B32512B7374DC0051A4DB /* CameraSession.swift in Sources */,
+				5D6B32472B7360F40051A4DB /* CameraOptions.swift in Sources */,
+				3C749DEE2C0DC45800140C24 /* CameraVerifyIdentityPhotoController.swift in Sources */,
+				5D7374652B8343C600FBEF85 /* MulticastDelegate.swift in Sources */,
+				5D88DCE52B70EE14000DFBDD /* CameraVideoSession.swift in Sources */,
+				5D73746B2B834DFF00FBEF85 /* CameraViewController.swift in Sources */,
+				5DD96E862B7A2FDB007B68B5 /* URL+TemporaryPath.swift in Sources */,
+				5D6B324D2B7361570051A4DB /* CameraError.swift in Sources */,
+				5DF3649A2B834F91000FBE82 /* CaptureButton.swift in Sources */,
+				5D6B324F2B7361740051A4DB /* CameraMode.swift in Sources */,
+				5D6C57DA2B84546D001A721F /* CameraVideoViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D9FC7522B69027100B65BD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D9FC7592B69027100B65BD0 /* AppDelegate.swift in Sources */,
+				5D9FC75B2B69027100B65BD0 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D9FC7732B69084C00B65BD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D9FC7422B69000C00B65BD0 /* KipasKipasCamera */;
+			targetProxy = 5D9FC7722B69084C00B65BD0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5D9FC75E2B69027100B65BD0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D9FC75F2B69027100B65BD0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5D9FC7632B69027200B65BD0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D9FC7642B69027200B65BD0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D77B1E82B9175CE008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = LiveDebug;
+		};
+		5D77B1E92B9175CE008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Kipaskipas need access to your gallery for use photos, videos, and auto-scan product QR codes";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasCamera;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = LiveDebug;
+		};
+		5D77B1EA2B9175CE008CC295 /* LiveDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasCameraApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "KipasKipasCameraApp needs to access your camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "KipasKipasCameraApp needs to access your microphone";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "KipasKipasCameraApp need access to your gallery for use photos, videos, and auto-scan product QR codes";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasCameraApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = LiveDebug;
+		};
+		5D9FC7482B69000C00B65BD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5D9FC7492B69000C00B65BD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5D9FC74B2B69000C00B65BD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Kipaskipas need access to your gallery for use photos, videos, and auto-scan product QR codes";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasCamera;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5D9FC74C2B69000C00B65BD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Kipaskipas need access to your gallery for use photos, videos, and auto-scan product QR codes";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasCamera;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5D9FC74D2B69004400B65BD0 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Staging;
+		};
+		5D9FC74E2B69004400B65BD0 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Kipaskipas need access to your gallery for use photos, videos, and auto-scan product QR codes";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasCamera;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		5D9FC74F2B69004C00B65BD0 /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = ProdDebug;
+		};
+		5D9FC7502B69004C00B65BD0 /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Kipaskipas need access to your gallery for use photos, videos, and auto-scan product QR codes";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasCamera;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = ProdDebug;
+		};
+		5D9FC7682B69027200B65BD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasCameraApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "KipasKipasCameraApp needs to access your camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "KipasKipasCameraApp needs to access your microphone";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "KipasKipasCameraApp need access to your gallery for use photos, videos, and auto-scan product QR codes";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasCameraApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5D9FC7692B69027200B65BD0 /* ProdDebug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasCameraApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "KipasKipasCameraApp needs to access your camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "KipasKipasCameraApp needs to access your microphone";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "KipasKipasCameraApp need access to your gallery for use photos, videos, and auto-scan product QR codes";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasCameraApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = ProdDebug;
+		};
+		5D9FC76A2B69027200B65BD0 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasCameraApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "KipasKipasCameraApp needs to access your camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "KipasKipasCameraApp needs to access your microphone";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "KipasKipasCameraApp need access to your gallery for use photos, videos, and auto-scan product QR codes";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasCameraApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Staging;
+		};
+		5D9FC76B2B69027200B65BD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AM6A64NDM6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KipasKipasCameraApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "KipasKipasCameraApp needs to access your camera";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "KipasKipasCameraApp needs to access your microphone";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "KipasKipasCameraApp need access to your gallery for use photos, videos, and auto-scan product QR codes";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koanba.kipaskipas.KipasKipasCameraApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D9FC73D2B69000C00B65BD0 /* Build configuration list for PBXProject "KipasKipasCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D9FC7482B69000C00B65BD0 /* Debug */,
+				5D77B1E82B9175CE008CC295 /* LiveDebug */,
+				5D9FC74F2B69004C00B65BD0 /* ProdDebug */,
+				5D9FC74D2B69004400B65BD0 /* Staging */,
+				5D9FC7492B69000C00B65BD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D9FC74A2B69000C00B65BD0 /* Build configuration list for PBXNativeTarget "KipasKipasCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D9FC74B2B69000C00B65BD0 /* Debug */,
+				5D77B1E92B9175CE008CC295 /* LiveDebug */,
+				5D9FC7502B69004C00B65BD0 /* ProdDebug */,
+				5D9FC74E2B69004400B65BD0 /* Staging */,
+				5D9FC74C2B69000C00B65BD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D9FC7672B69027200B65BD0 /* Build configuration list for PBXNativeTarget "KipasKipasCameraApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D9FC7682B69027200B65BD0 /* Debug */,
+				5D77B1EA2B9175CE008CC295 /* LiveDebug */,
+				5D9FC7692B69027200B65BD0 /* ProdDebug */,
+				5D9FC76A2B69027200B65BD0 /* Staging */,
+				5D9FC76B2B69027200B65BD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D9FC73A2B69000C00B65BD0 /* Project object */;
+}

@@ -1,0 +1,15 @@
+{
+  "originHash" : "6585bbac92abcb857cfcf2d157afc8c106dbd61e822f746fa15f20e59f354d2f",
+  "pins" : [
+    {
+      "identity" : "jelly",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SebastianBoldt/Jelly",
+      "state" : {
+        "revision" : "41d295af01c80b5c8386f852c1fd938b8034fa25",
+        "version" : "2.3.0"
+      }
+    }
+  ],
+  "version" : 3
+}

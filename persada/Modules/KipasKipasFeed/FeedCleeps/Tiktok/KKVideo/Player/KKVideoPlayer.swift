@@ -1,0 +1,521 @@
+//
+//  KKVideoPlayer.swift
+//  FeedCleeps
+//
+//  Created by Rahmat Trinanda Pramudya Amar on 04/07/23.
+//
+
+import Foundation
+import AVFoundation
+import UIKit
+
+public protocol KKVideoPlayerDelegate: AnyObject {
+    /**
+     This function will be called when the video buffer state changes
+     - parameter newVariableValue value: Boolean value of the video buffer state.
+     */
+    func videoIsBuffering(newVariableValue value: Bool)
+    
+    /**
+     This function is called when the state failed to load the video changed
+     - parameter newVariableValue value:  Boolean value of the state failed to load the video.
+     */
+    func videoIsFailed(newVariableValue value: Bool)
+    
+    /**
+     This function is called when the video watch duration changes
+     - parameter currentTime: CMTime value of current time video playing .
+     */
+    func videoDidPlaying(currentTime: CMTime)
+    
+    /**
+     This function is called when the video has reached the total duration (end)
+     - parameter player: KKVideoPlayer.
+     */
+    
+    func videoDidEndPlaying(player: KKVideoPlayer)
+    
+    /**
+     This function is called only when onPlayerPixelBuffer. This function is not available in all classes that implement the KKVideoPlayer protocol, only available in KKTencentVideoPlayer.
+     - parameter pixelBuffer: CVPixelBuffer.
+     - warning:  This function is not available in all classes that implement the KKVideoPlayer protocol, only available in KKTencentVideoPlayer.
+     
+     # Notes: #
+     1.  This function is not available in all classes that implement the KKVideoPlayer protocol, only available in KKTencentVideoPlayer.
+     
+     */
+    func videoPixelBuffer(pixelBuffer: CVPixelBuffer)
+}
+
+// MARK: - For Optional Function Delegate
+public extension KKVideoPlayerDelegate {
+    /**
+     This function is called only when onPlayerPixelBuffer. This function is not available in all classes that implement the KKVideoPlayer protocol, only available in KKTencentVideoPlayer.
+     - parameter pixelBuffer: CVPixelBuffer.
+     - warning:  This function is not available in all classes that implement the KKVideoPlayer protocol, only available in KKTencentVideoPlayer.
+     
+     # Notes: #
+     1.  This function is not available in all classes that implement the KKVideoPlayer protocol, only available in KKTencentVideoPlayer.
+     
+     */
+    func videoPixelBuffer(pixelBuffer: CVPixelBuffer) {}
+}
+
+public protocol KKVideoPlayer {
+    // MARK: Section of Variable
+    
+    /**
+     Get Instance of KKVideoPlayer
+     - returns: KKVideoPlayer
+     
+     # Example #
+     ```
+     // KKVideoPlayer.instance
+     ```
+     */
+    static var instance: KKVideoPlayer { get }
+    
+    
+    /**
+     Completion for KKVideoPlayer when changes occur
+     
+     # Notes: #
+     1. Use this to observe changes that occur in KKVideoPlayer
+     2. Extend the KKVideoPlayerDelegate protocol on the class to set this delegate on the class
+     
+     # Example #
+     ```
+     // KKVideoPlayer.instance.delegate = self
+     ```
+     
+     */
+    var delegate: KKVideoPlayerDelegate? { get set }
+    
+    /**
+     Get view from videoplayer
+     - returns: UIView
+     
+     # Example #
+     ```
+     // KKVideoPlayer.instance.playerView
+     ```
+     */
+    var playerView: UIView { get }
+    
+    /**
+     Get & Set pause value from video player
+     - returns: Bool
+     
+     # Example #
+     ```
+     // KKVideoPlayer.instance.isPaused
+     // KKVideoPlayer.instance.isPaused = true
+     ```
+     */
+    var isPaused: Bool { get set }
+    
+    /**
+     Get URL String/ID of Current Video
+     - returns: String
+     
+     # Example #
+     ```
+     // KKVideoPlayer.instance.currentVideoUrl
+     ```
+     */
+    var currentVideoUrl: String { get }
+    
+    /**
+     Get total duration of video
+     - returns: Double
+     
+     # Example #
+     ```
+     // KKVideoPlayer.instance.duration
+     ```
+     */
+    var duration: Double { get }
+    
+    /**
+     Get total duration loaded of video
+     - returns: Double
+     
+     # Example #
+     ```
+     // KKVideoPlayer.instance.loadedDuration
+     ```
+     */
+    var loadedDuration: Double { get }
+    
+    /**
+     Get buffer state is enough for playing video  from videoPlayer
+     - returns: Bool
+     
+     # Example #
+     ```
+     // KKVideoPlayer.instance.isBufferEnough
+     ```
+     */
+    
+    var isBufferEnough: Bool  { get }
+    
+    /**
+     Get buffer state from videoPlayer
+     - returns: Bool
+     
+     # Example #
+     ```
+     // KKVideoPlayer.instance.isBuffering
+     ```
+     */
+    var isBuffering: Bool  { get }
+    
+    /**
+     Get failed state from videoPlayer
+     - returns: Bool
+     
+     # Example #
+     ```
+     // KKVideoPlayer.instance.isFailed
+     ```
+     */
+    var isFailed:Bool { get set }
+    
+    /**
+     Get currentTime videoPlaying
+     - returns: CMTime
+     
+     # Example #
+     ```
+     // KKVideoPlayer.instance.timePlaying
+     ```
+     */
+    var timePlaying: CMTime { get }
+    
+    // MARK: Section of Function
+    
+    /**
+     To initialize the player. It is not recommended to call this function outside the class that extends this protocol.
+     This is an **optional** function/variable or not required to be implemented/owned by the class that inherits this protocol.
+     - warning: It is not recommended to call this function outside the class that extends this protocol
+     
+     # Notes: #
+     1. It is not recommended to call this function outside the class that extends this protocol
+     */
+    func initialize()
+    
+    /**
+     This function is used to set video on player with AVPlayerItem.
+     This is an **optional** function/variable or not required to be implemented/owned by the class that inherits this protocol.
+     - parameter _ item: AVPlayerItem. Create an instance of AVPlayerItem to set video in player with this method.
+     
+     # Notes: #
+     1. This function is used to set video on player with AVPlayerItem.
+     
+     # Example #
+     ```
+     // KKVideoPlayer.instance.set(item)
+     ```
+     */
+    func set(_ item: AVPlayerItem)
+    
+    /**
+     This function is used to set video on player with AVPlayerItem and Duration in Seconds with datatype Double.
+     This is an **optional** function/variable or not required to be implemented/owned by the class that inherits this protocol.
+     - parameter _ item: AVPlayerItem. Create an instance of AVPlayerItem to set video in player with this method.
+     - parameter withDuration: Double. Duration in Seconds.
+     
+     # Notes: #
+     1. This function is used to set video on player with AVPlayerItem and Duration in Seconds with datatype Double.
+     
+     # Example #
+     ```
+     // KKVideoPlayer.instance.set(item, withDuration: 0.0)
+     ```
+     */
+    func set(_ item: AVPlayerItem, withDuration: Double)
+    
+    /**
+     This function is used to set video on player with String URL/Video ID.
+     This is an **optional** function/variable or not required to be implemented/owned by the class that inherits this protocol.
+     - parameter _ url: String. Convert URL to String if you wanna use this method. Or you can also fill it with VideoID.
+     
+     # Notes: #
+     1. This function is used to set video on player with String URL/Video ID.
+     
+     # Example #
+     ```
+     // KKVideoPlayer.instance.set("url/VideoID")
+     ```
+     */
+    func set(_ url: String)
+    
+    /**
+     This function is used to set video on player with String URL/Video ID and Duration in Seconds with datatype Double.
+     This is an **optional** function/variable or not required to be implemented/owned by the class that inherits this protocol.
+     - parameter _ url: String. Convert URL to String if you wanna use this method. Or you can also fill it with VideoID.
+     - parameter withDuration: Double. Duration in Seconds.
+     
+     # Notes: #
+     1. This function is used to set video on player with String URL/Video ID and Duration in Seconds with datatype Double.
+     
+     # Example #
+     ```
+     // KKVideoPlayer.instance.set("url/VideoID", withDuration: 0.0)
+     ```
+     */
+    func set(_ url: String, withDuration: Double)
+    
+    /**
+     Function to play video from player
+     - parameter file: String? (Optional).
+     - parameter function: String? (Optional).
+     - parameter line: Int? (Optional).
+     
+     # Notes: #
+     1. Function to play video from player
+     2. File, function & line parameters are optional parameters & can be omitted. Parameters are used only for logging
+     3. As much as possible do not fill in the File, function & line parameters unless you wrap this function with another function
+     
+     # Example #
+     ```
+     // KKVideoPlayer.instance.play()
+            
+     //If you want to wrap this function in another function, you can run it like this so that when logging you know the root of this function call.
+     func customPlay(file: String = #file, function: String = #function, line: Int =  #line){
+         KKVideoPlayer.instance.play(file: file, function: function, line: line)
+     }
+     
+     //And you can call the function like this
+     customPlay()
+     ```
+     */
+    func play(file: String?, function: String?, line: Int?)
+    //    func play()
+    
+    /**
+     Function to play video from player
+     - parameter fromBegining: Bool. To tell that the video will start from the beginning or not.
+     - parameter file: String? (Optional).
+     - parameter function: String? (Optional).
+     - parameter line: Int? (Optional).
+     
+     # Notes: #
+     1. Function to play video from player
+     2. File, function & line parameters are optional parameters & can be omitted. Parameters are used only for logging
+     3. As much as possible do not fill in the File, function & line parameters unless you wrap this function with another function
+     
+     # Example #
+     ```
+     // KKVideoPlayer.instance.play(fromBegining: true)
+            
+     //If you want to wrap this function in another function, you can run it like this so that when logging you know the root of this function call.
+     func customPlay(fromBegining: Bool, file: String = #file, function: String = #function, line: Int =  #line){
+         KKVideoPlayer.instance.play(fromBegining: fromBegining, file: file, function: function, line: line)
+     }
+     
+     //And you can call the function like this
+     customPlay(fromBegining: false)
+     ```
+     */
+    func play(fromBegining: Bool, file: String?, function: String?, line: Int?)
+    //    func play()
+    
+    /**
+     Function to pause video from player
+     - parameter file: String? (Optional).
+     - parameter function: String? (Optional).
+     - parameter line: Int? (Optional).
+     
+     # Notes: #
+     1. Function to pause video from player
+     2. File, function & line parameters are optional parameters & can be omitted. Parameters are used only for logging
+     3. As much as possible do not fill in the File, function & line parameters unless you wrap this function with another function
+     
+     # Example #
+     ```
+     // KKVideoPlayer.instance.pause()
+            
+     //If you want to wrap this function in another function, you can run it like this so that when logging you know the root of this function call.
+     func customPause(file: String = #file, function: String = #function, line: Int =  #line){
+         KKVideoPlayer.instance.pause(file: file, function: function, line: line)
+     }
+     
+     //And you can call the function like this
+     customPause()
+     ```
+     */
+    func pause(file: String?, function: String?, line: Int?)
+    //    func pause()
+}
+
+// MARK: - For Optional Function
+public extension KKVideoPlayer {
+    // MARK: Section of Variable
+    var isBufferEnough : Bool { get { return true } }
+    
+    // MARK: Section of Function
+    
+    /**
+     To initialize the player. It is not recommended to call this function outside the class that extends this protocol.
+     This is an **optional** function/variable or not required to be implemented/owned by the class that inherits this protocol.
+     - warning: It is not recommended to call this function outside the class that extends this protocol
+     
+     # Notes: #
+     1. It is not recommended to call this function outside the class that extends this protocol
+     */
+    func initialize() {}
+    
+    /**
+     This function is used to set video on player with AVPlayerItem.
+     This is an **optional** function/variable or not required to be implemented/owned by the class that inherits this protocol.
+     - parameter _ item: AVPlayerItem. Create an instance of AVPlayerItem to set video in player with this method.
+     
+     # Notes: #
+     1. This function is used to set video on player with AVPlayerItem.
+     
+     # Example #
+     ```
+     // KKVideoPlayer.instance.set(item)
+     ```
+     */
+    func set(_ item: AVPlayerItem) {}
+    
+    /**
+     This function is used to set video on player with AVPlayerItem and Duration in Seconds with datatype Double.
+     This is an **optional** function/variable or not required to be implemented/owned by the class that inherits this protocol.
+     - parameter _ item: AVPlayerItem. Create an instance of AVPlayerItem to set video in player with this method.
+     - parameter withDuration: Double. Duration in Seconds.
+     
+     # Notes: #
+     1. This function is used to set video on player with AVPlayerItem and Duration in Seconds with datatype Double.
+     
+     # Example #
+     ```
+     // KKVideoPlayer.instance.set(item, withDuration: 0.0)
+     ```
+     */
+    func set(_ item: AVPlayerItem, withDuration: Double) {}
+    
+    /**
+     This function is used to set video on player with String URL/Video ID.
+     This is an **optional** function/variable or not required to be implemented/owned by the class that inherits this protocol.
+     - parameter _ url: String. Convert URL to String if you wanna use this method. Or you can also fill it with VideoID.
+     
+     # Notes: #
+     1. This function is used to set video on player with String URL/Video ID.
+     
+     # Example #
+     ```
+     // KKVideoPlayer.instance.set("url/VideoID")
+     ```
+     */
+    func set(_ url: String) {}
+    
+    /**
+     This function is used to set video on player with String URL/Video ID and Duration in Seconds with datatype Double.
+     This is an **optional** function/variable or not required to be implemented/owned by the class that inherits this protocol.
+     - parameter _ url: String. Convert URL to String if you wanna use this method. Or you can also fill it with VideoID.
+     - parameter withDuration: Double. Duration in Seconds.
+     
+     # Notes: #
+     1. This function is used to set video on player with String URL/Video ID and Duration in Seconds with datatype Double.
+     
+     # Example #
+     ```
+     // KKVideoPlayer.instance.set("url/VideoID", withDuration: 0.0)
+     ```
+     */
+    func set(_ url: String, withDuration: Double) {}
+}
+
+// MARK: - For assign default value to optional parameter
+public extension KKVideoPlayer {
+    // Remove this function if parameters with default values are no longer needed
+    /**
+     Function to play video from player
+     - parameter file: String? (Optional).
+     - parameter function: String? (Optional).
+     - parameter line: Int? (Optional).
+     
+     # Notes: #
+     1. Function to play video from player
+     2. File, function & line parameters are optional parameters & can be omitted. Parameters are used only for logging
+     3. As much as possible do not fill in the File, function & line parameters unless you wrap this function with another function
+     
+     # Example #
+     ```
+     // KKVideoPlayer.instance.play()
+            
+     //If you want to wrap this function in another function, you can run it like this so that when logging you know the root of this function call.
+     func customPlay(file: String = #file, function: String = #function, line: Int =  #line){
+         KKVideoPlayer.instance.play(file: file, function: function, line: line)
+     }
+     
+     //And you can call the function like this
+     customPlay()
+     ```
+     */
+    func play(_file: String = #file, _function: String = #function, _line: Int =  #line){
+        play(file: _file, function: _function, line: _line)
+    }
+    
+    // Remove this function if parameters with default values are no longer needed
+    /**
+     Function to play video from player
+     - parameter fromBegining: Bool. To tell that the video will start from the beginning or not.
+     - parameter file: String? (Optional).
+     - parameter function: String? (Optional).
+     - parameter line: Int? (Optional).
+     
+     # Notes: #
+     1. Function to play video from player
+     2. File, function & line parameters are optional parameters & can be omitted. Parameters are used only for logging
+     3. As much as possible do not fill in the File, function & line parameters unless you wrap this function with another function
+     
+     # Example #
+     ```
+     // KKVideoPlayer.instance.play(fromBegining: true)
+            
+     //If you want to wrap this function in another function, you can run it like this so that when logging you know the root of this function call.
+     func customPlay(fromBegining: Bool, file: String = #file, function: String = #function, line: Int =  #line){
+         KKVideoPlayer.instance.play(fromBegining: fromBegining, file: file, function: function, line: line)
+     }
+     
+     //And you can call the function like this
+     customPlay(fromBegining: false)
+     ```
+     */
+    func play(fromBegining: Bool, _file: String = #file, _function: String = #function, _line: Int =  #line){
+        play(fromBegining: fromBegining, file: _file, function: _function, line: _line)
+    }
+    
+    // Remove this function if parameters with default values are no longer needed
+    /**
+     Function to pause video from player
+     - parameter file: String? (Optional).
+     - parameter function: String? (Optional).
+     - parameter line: Int? (Optional).
+     
+     # Notes: #
+     1. Function to pause video from player
+     2. File, function & line parameters are optional parameters & can be omitted. Parameters are used only for logging
+     3. As much as possible do not fill in the File, function & line parameters unless you wrap this function with another function
+     
+     # Example #
+     ```
+     // KKVideoPlayer.instance.pause()
+            
+     //If you want to wrap this function in another function, you can run it like this so that when logging you know the root of this function call.
+     func customPause(file: String = #file, function: String = #function, line: Int =  #line){
+         KKVideoPlayer.instance.pause(file: file, function: function, line: line)
+     }
+     
+     //And you can call the function like this
+     customPause()
+     ```
+     */
+    func pause(_file: String = #file, _function: String = #function, _line: Int =  #line){
+        pause(file: _file, function: _function, line: _line)
+    }
+}

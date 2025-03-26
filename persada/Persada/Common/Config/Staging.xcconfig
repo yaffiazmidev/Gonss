@@ -1,0 +1,13 @@
+//
+//  Production.xcconfig
+//  Koanba
+//
+//  Created by DENAZMI on 27/04/22.
+//  Copyright © 2022 Koanba. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+FIREBASE_INFO_PLIST = GoogleService-Info.plist
+FIREBASE_INFO_PLIST_PATH = ${PROJECT_DIR}/Persada/Common/GoogleServiceInfo/Staging/${FIREBASE_INFO_PLIST}

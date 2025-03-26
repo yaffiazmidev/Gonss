@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="zA4-Mt-3y7" customClass="NewSelebCarouselCell" customModule="KipasKipas" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="406" height="354"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="OgF-JK-sen">
+                <rect key="frame" x="0.0" y="0.0" width="406" height="354"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QbT-EU-RQ1">
+                        <rect key="frame" x="0.0" y="0.0" width="406" height="354"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xvZ-yl-ZAR" customClass="AVPlayerView" customModule="KipasKipas" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="406" height="354"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4t6-kz-dKN">
+                                <rect key="frame" x="356" y="10" width="42" height="24"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ZJ-IP-PBa">
+                                        <rect key="frame" x="0.0" y="0.0" width="42" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="6ZJ-IP-PBa" firstAttribute="top" secondItem="4t6-kz-dKN" secondAttribute="top" id="DZI-6c-5Pc"/>
+                                    <constraint firstAttribute="trailing" secondItem="6ZJ-IP-PBa" secondAttribute="trailing" id="Xlo-aK-D29"/>
+                                    <constraint firstAttribute="height" constant="24" id="ex4-i5-dje"/>
+                                    <constraint firstItem="6ZJ-IP-PBa" firstAttribute="leading" secondItem="4t6-kz-dKN" secondAttribute="leading" id="pyU-Qd-GJT"/>
+                                    <constraint firstAttribute="width" constant="42" id="x62-p8-ts1"/>
+                                    <constraint firstAttribute="bottom" secondItem="6ZJ-IP-PBa" secondAttribute="bottom" id="zyu-Cn-u5t"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pause.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zvK-Yp-p0x">
+                                <rect key="frame" x="324" y="10.5" width="24" height="23"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="83Y-cT-hFO"/>
+                                    <constraint firstAttribute="width" constant="24" id="A0u-YQ-rLz"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4t6-kz-dKN" firstAttribute="leading" secondItem="zvK-Yp-p0x" secondAttribute="trailing" constant="8" id="1D9-Gm-5WT"/>
+                            <constraint firstItem="zvK-Yp-p0x" firstAttribute="top" secondItem="xvZ-yl-ZAR" secondAttribute="top" constant="10" id="29h-Jc-j2v"/>
+                            <constraint firstItem="4t6-kz-dKN" firstAttribute="top" secondItem="xvZ-yl-ZAR" secondAttribute="top" constant="10" id="6Sc-I0-Iin"/>
+                            <constraint firstAttribute="trailing" secondItem="4t6-kz-dKN" secondAttribute="trailing" constant="8" id="qLV-ky-qea"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xvZ-yl-ZAR" firstAttribute="leading" secondItem="OgF-JK-sen" secondAttribute="leading" id="7Ld-4V-AGe"/>
+                    <constraint firstAttribute="bottom" secondItem="xvZ-yl-ZAR" secondAttribute="bottom" id="NO3-HY-wxb"/>
+                    <constraint firstAttribute="trailing" secondItem="xvZ-yl-ZAR" secondAttribute="trailing" id="PC1-5U-otF"/>
+                    <constraint firstItem="xvZ-yl-ZAR" firstAttribute="top" secondItem="OgF-JK-sen" secondAttribute="top" id="Yvb-QE-QIm"/>
+                    <constraint firstItem="QbT-EU-RQ1" firstAttribute="top" secondItem="OgF-JK-sen" secondAttribute="top" id="bg8-Iy-zCQ"/>
+                    <constraint firstAttribute="bottom" secondItem="QbT-EU-RQ1" secondAttribute="bottom" id="ksM-X0-60V"/>
+                    <constraint firstAttribute="trailing" secondItem="QbT-EU-RQ1" secondAttribute="trailing" id="lyY-VP-Dya"/>
+                    <constraint firstItem="QbT-EU-RQ1" firstAttribute="leading" secondItem="OgF-JK-sen" secondAttribute="leading" id="vif-Il-l0c"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="406" height="354"/>
+            <connections>
+                <outlet property="imageView" destination="QbT-EU-RQ1" id="y0O-Y9-3uY"/>
+                <outlet property="playImageView" destination="zvK-Yp-p0x" id="2Nl-qU-g94"/>
+                <outlet property="playerView" destination="xvZ-yl-ZAR" id="NoV-ub-gYQ"/>
+                <outlet property="timerLabel" destination="6ZJ-IP-PBa" id="MCN-Ng-h1U"/>
+                <outlet property="timerView" destination="4t6-kz-dKN" id="A08-bU-q5I"/>
+            </connections>
+            <point key="canvasLocation" x="434.78260869565219" y="17.410714285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="pause.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

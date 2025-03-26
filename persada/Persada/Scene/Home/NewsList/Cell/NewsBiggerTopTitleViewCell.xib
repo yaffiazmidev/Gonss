@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoBold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="RobotoRegular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="342" id="KGk-i7-Jjw" customClass="NewsBiggerTopTitleViewCell" customModule="KipasKipas" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="315" height="342"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="315" height="342"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Korban Banjir Gugat Anies, Sekda DKI: Kami Respons Bencana Dengan Cepat " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kd1-p2-dxn">
+                        <rect key="frame" x="20" y="20" width="275" height="42.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42.5" id="pxK-un-qVE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="18"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kompas.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gW-4R-wmb">
+                        <rect key="frame" x="20" y="71.5" width="71" height="12"/>
+                        <color key="tintColor" name="placeholder"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                        <color key="textColor" name="placeholder"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKR-v4-may">
+                        <rect key="frame" x="123" y="71.5" width="13.5" height="14"/>
+                        <color key="tintColor" name="placeholder"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                        <color key="textColor" name="placeholder"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconCommentSmall" translatesAutoresizingMaskIntoConstraints="NO" id="MwZ-Qn-q7z">
+                        <rect key="frame" x="109" y="71.5" width="12" height="12"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="71j-mM-Ola">
+                        <rect key="frame" x="20" y="98.5" width="275" height="220"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="220" id="kxp-7F-ee8"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5t-oa-jPB">
+                        <rect key="frame" x="154.5" y="71.5" width="13.5" height="14"/>
+                        <color key="tintColor" name="placeholder"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                        <color key="textColor" name="placeholder"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QAf-Fk-LRA">
+                        <rect key="frame" x="0.0" y="338" width="315" height="4"/>
+                        <color key="backgroundColor" name="whiteSnow"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="4" id="7qg-kE-vqb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jKR-v4-may" firstAttribute="leading" secondItem="MwZ-Qn-q7z" secondAttribute="trailing" constant="2" id="14V-sw-vQ4"/>
+                    <constraint firstItem="Kd1-p2-dxn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="3D6-Fa-zzo"/>
+                    <constraint firstItem="71j-mM-Ola" firstAttribute="top" secondItem="5gW-4R-wmb" secondAttribute="bottom" constant="15" id="4BB-ec-QuK"/>
+                    <constraint firstItem="Q5t-oa-jPB" firstAttribute="leading" secondItem="jKR-v4-may" secondAttribute="trailing" constant="18" id="6HU-Px-E0q"/>
+                    <constraint firstItem="MwZ-Qn-q7z" firstAttribute="leading" secondItem="5gW-4R-wmb" secondAttribute="trailing" constant="18" id="6wj-B2-T8T"/>
+                    <constraint firstItem="5gW-4R-wmb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="HEQ-L2-ey3"/>
+                    <constraint firstAttribute="trailing" secondItem="Kd1-p2-dxn" secondAttribute="trailing" constant="20" id="Ill-yK-gNG"/>
+                    <constraint firstItem="QAf-Fk-LRA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Jm5-ba-4dX"/>
+                    <constraint firstItem="5gW-4R-wmb" firstAttribute="top" secondItem="Kd1-p2-dxn" secondAttribute="bottom" constant="9" id="Quy-9M-CVw"/>
+                    <constraint firstItem="Q5t-oa-jPB" firstAttribute="top" secondItem="Kd1-p2-dxn" secondAttribute="bottom" constant="9" id="U6A-Mq-7KW"/>
+                    <constraint firstItem="jKR-v4-may" firstAttribute="top" secondItem="Kd1-p2-dxn" secondAttribute="bottom" constant="9" id="Vq9-HC-wnI"/>
+                    <constraint firstAttribute="trailing" secondItem="71j-mM-Ola" secondAttribute="trailing" constant="20" id="Yf6-gO-SJg"/>
+                    <constraint firstItem="QAf-Fk-LRA" firstAttribute="top" secondItem="71j-mM-Ola" secondAttribute="bottom" constant="19.5" id="bYQ-fm-nDF"/>
+                    <constraint firstItem="Kd1-p2-dxn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="dY2-6f-D0g"/>
+                    <constraint firstAttribute="bottom" secondItem="QAf-Fk-LRA" secondAttribute="bottom" id="gyj-td-JPD"/>
+                    <constraint firstItem="MwZ-Qn-q7z" firstAttribute="top" secondItem="Kd1-p2-dxn" secondAttribute="bottom" constant="9" id="oVB-cC-C3Y"/>
+                    <constraint firstAttribute="trailing" secondItem="QAf-Fk-LRA" secondAttribute="trailing" id="r1c-Uv-XTX"/>
+                    <constraint firstItem="71j-mM-Ola" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="sYq-t0-hTy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="imageNews" destination="71j-mM-Ola" id="d94-S5-jsP"/>
+                <outlet property="labelCommentCount" destination="jKR-v4-may" id="4B7-VX-la4"/>
+                <outlet property="labelNewsPostedDate" destination="Q5t-oa-jPB" id="R4j-xv-hGI"/>
+                <outlet property="labelNewsSource" destination="5gW-4R-wmb" id="03o-QY-hTz"/>
+                <outlet property="labelNewsTitle" destination="Kd1-p2-dxn" id="BJH-2t-Dca"/>
+            </connections>
+            <point key="canvasLocation" x="132.60869565217394" y="169.41964285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iconCommentSmall" width="12" height="12"/>
+        <namedColor name="placeholder">
+            <color red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="whiteSnow">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

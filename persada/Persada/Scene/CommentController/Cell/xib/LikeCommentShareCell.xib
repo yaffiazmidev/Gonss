@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoRegular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Jpf-TG-To6" customClass="LikeCommentShareCell" customModule="KipasKipas" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="478" height="46"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="MWy-JQ-OvC">
+                <rect key="frame" x="0.0" y="0.0" width="478" height="46"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7QD-JN-GiZ">
+                        <rect key="frame" x="10" y="11" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="Mxe-gb-ahq"/>
+                            <constraint firstAttribute="height" constant="24" id="yz3-HX-1Yb"/>
+                        </constraints>
+                        <state key="normal" image="iconLike"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egW-Nw-7Sj">
+                        <rect key="frame" x="107.5" y="11" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="6Li-be-tlw"/>
+                            <constraint firstAttribute="height" constant="24" id="Rj7-M7-uvw"/>
+                        </constraints>
+                        <state key="normal" image="iconComment"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUf-dp-lro">
+                        <rect key="frame" x="205" y="11" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="Vfd-d4-psK"/>
+                            <constraint firstAttribute="height" constant="24" id="k4B-Mu-1bH"/>
+                        </constraints>
+                        <state key="normal" image="iconSharealt"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="189.9K" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKi-ro-pBF">
+                        <rect key="frame" x="42" y="15" width="47.5" height="16"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="189.9K" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktR-It-ue1">
+                        <rect key="frame" x="139.5" y="11" width="47.5" height="24"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="7QD-JN-GiZ" secondAttribute="bottom" constant="11" id="148-SH-pFy"/>
+                    <constraint firstItem="egW-Nw-7Sj" firstAttribute="top" secondItem="MWy-JQ-OvC" secondAttribute="top" constant="11" id="9bE-2u-fvi"/>
+                    <constraint firstItem="7QD-JN-GiZ" firstAttribute="leading" secondItem="MWy-JQ-OvC" secondAttribute="leading" constant="10" id="B6K-cI-oTU"/>
+                    <constraint firstItem="ktR-It-ue1" firstAttribute="top" secondItem="MWy-JQ-OvC" secondAttribute="top" constant="11" id="HQy-rJ-b8n"/>
+                    <constraint firstItem="egW-Nw-7Sj" firstAttribute="leading" secondItem="AKi-ro-pBF" secondAttribute="trailing" constant="18" id="Hdn-0m-Ze5"/>
+                    <constraint firstAttribute="bottom" secondItem="AKi-ro-pBF" secondAttribute="bottom" constant="15" id="SBZ-BI-7vZ"/>
+                    <constraint firstAttribute="bottom" secondItem="ktR-It-ue1" secondAttribute="bottom" constant="11" id="TjB-Z1-5x8"/>
+                    <constraint firstItem="AKi-ro-pBF" firstAttribute="top" secondItem="MWy-JQ-OvC" secondAttribute="top" constant="15" id="Wa9-Fs-bxM"/>
+                    <constraint firstAttribute="bottom" secondItem="egW-Nw-7Sj" secondAttribute="bottom" constant="11" id="Zr6-8w-ywh"/>
+                    <constraint firstItem="ktR-It-ue1" firstAttribute="leading" secondItem="egW-Nw-7Sj" secondAttribute="trailing" constant="8" symbolic="YES" id="aLE-hp-gTq"/>
+                    <constraint firstAttribute="bottom" secondItem="DUf-dp-lro" secondAttribute="bottom" constant="11" id="gCS-Ya-bn4"/>
+                    <constraint firstItem="DUf-dp-lro" firstAttribute="leading" secondItem="ktR-It-ue1" secondAttribute="trailing" constant="18" id="iFw-Zy-A3d"/>
+                    <constraint firstItem="AKi-ro-pBF" firstAttribute="leading" secondItem="7QD-JN-GiZ" secondAttribute="trailing" constant="8" symbolic="YES" id="kfc-tN-bR6"/>
+                    <constraint firstItem="DUf-dp-lro" firstAttribute="top" secondItem="MWy-JQ-OvC" secondAttribute="top" constant="11" id="l1Y-zk-XrS"/>
+                    <constraint firstItem="7QD-JN-GiZ" firstAttribute="top" secondItem="MWy-JQ-OvC" secondAttribute="top" constant="11" id="si9-UL-DqJ"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <size key="customSize" width="478" height="72"/>
+            <connections>
+                <outlet property="commentButton" destination="egW-Nw-7Sj" id="4bm-De-igI"/>
+                <outlet property="likeButton" destination="7QD-JN-GiZ" id="5pT-J0-ZBD"/>
+                <outlet property="shareButton" destination="DUf-dp-lro" id="Suv-Pb-l0t"/>
+                <outlet property="totalCommentLabel" destination="ktR-It-ue1" id="rFg-yN-AQ8"/>
+                <outlet property="totalLikeLabel" destination="AKi-ro-pBF" id="Rgi-lG-Xtd"/>
+            </connections>
+            <point key="canvasLocation" x="72.463768115942031" y="52.901785714285715"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="iconComment" width="24" height="24"/>
+        <image name="iconLike" width="24" height="24"/>
+        <image name="iconSharealt" width="24" height="24"/>
+    </resources>
+</document>

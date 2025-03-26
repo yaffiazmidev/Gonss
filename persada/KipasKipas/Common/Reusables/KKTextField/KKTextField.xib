@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoRegular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KKTextField" customModule="KipasKipas" customModuleProvider="target">
+            <connections>
+                <outlet property="blockingView" destination="3uU-kY-eE7" id="Uei-9Q-Vcg"/>
+                <outlet property="containerView" destination="iN0-l3-epB" id="4E5-nx-118"/>
+                <outlet property="errorMessageLabel" destination="lNl-MQ-qhu" id="ksM-UB-3ed"/>
+                <outlet property="leftIconImageView" destination="c4U-fp-hfh" id="Gdm-gY-Vb3"/>
+                <outlet property="rightIconImageView" destination="OrN-Gi-iLt" id="ly1-uv-nRB"/>
+                <outlet property="textField" destination="46N-cZ-P0n" id="aY7-Pf-fhq"/>
+                <outlet property="textFieldContainerStackView" destination="4GF-t9-5ji" id="E6H-s5-rPm"/>
+                <outlet property="textFiledHeightConstraint" destination="5tm-v4-9Vj" id="FxH-Bs-nei"/>
+                <outlet property="titleLabel" destination="GiH-Pb-oVk" id="JCU-Q4-pHP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="284"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="GAY-d4-KUO">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="57.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GiH-Pb-oVk">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="14.5"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                            <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="4GF-t9-5ji">
+                            <rect key="frame" x="0.0" y="17.5" width="375" height="40"/>
+                            <subviews>
+                                <imageView hidden="YES" clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c4U-fp-hfh">
+                                    <rect key="frame" x="0.0" y="12" width="16" height="16"/>
+                                    <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="16" id="iPg-p9-W3I"/>
+                                        <constraint firstAttribute="width" constant="16" id="ruB-U6-2Oe"/>
+                                    </constraints>
+                                </imageView>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type something.." textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="46N-cZ-P0n">
+                                    <rect key="frame" x="12" y="0.0" width="351" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="5tm-v4-9Vj"/>
+                                    </constraints>
+                                    <color key="textColor" name="Content"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                </textField>
+                                <imageView hidden="YES" clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OrN-Gi-iLt">
+                                    <rect key="frame" x="0.0" y="12" width="16" height="16"/>
+                                    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="16" id="dcf-US-NGw"/>
+                                        <constraint firstAttribute="width" constant="16" id="wna-gK-4PB"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <edgeInsets key="layoutMargins" top="0.0" left="12" bottom="0.0" right="12"/>
+                        </stackView>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Something wrong !!" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNl-MQ-qhu">
+                            <rect key="frame" x="0.0" y="57.5" width="375" height="0.0"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <view hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3uU-kY-eE7">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="284"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="GAY-d4-KUO" secondAttribute="bottom" id="0l4-IK-emV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3uU-kY-eE7" secondAttribute="trailing" id="5pJ-xx-4wI"/>
+                <constraint firstItem="3uU-kY-eE7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="8G2-aQ-lyE"/>
+                <constraint firstItem="3uU-kY-eE7" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="gvN-MI-Ov1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="GAY-d4-KUO" secondAttribute="trailing" id="hQ7-yL-3dQ"/>
+                <constraint firstItem="3uU-kY-eE7" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="lgU-IP-Ot8"/>
+                <constraint firstItem="GAY-d4-KUO" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="uF9-9p-8rP"/>
+                <constraint firstItem="GAY-d4-KUO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="zv4-fD-eRB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="138.40000000000001" y="-28.785607196401802"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Content">
+            <color red="0.28999999165534973" green="0.28999999165534973" blue="0.28999999165534973" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

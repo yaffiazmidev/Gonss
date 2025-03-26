@@ -1,0 +1,132 @@
+{
+  "giftList": [
+    {
+      "giftId": "1",
+      "imageUrl": "https://asset.kipaskipas.com/assets_public/mobile/live-streaming/gift/kipaskipas-01.png",
+      "lottieUrl": "https://assets-v2.lottiefiles.com/tmp/optimize/557eb383-984d-43da-af10-d7ffdb53a200/mMCPgawch1.json",
+      "price": 1,
+      "title": "Kipaskipas",
+      "type": 1
+    },
+    {
+      "giftId": "2",
+      "imageUrl": "https://liteav.sdk.qcloud.com/app/res/picture/live/gift/huojian.png",
+      "lottieUrl": "https://assets-v2.lottiefiles.com/tmp/optimize/cf171945-8262-485d-a25b-732b2a27bddd/BUixnmhPm8.json",
+      "price": 1,
+      "title": "Pesawat",
+      "type": 1
+    },
+    {
+      "giftId": "3",
+      "imageUrl": "https://liteav.sdk.qcloud.com/app/res/picture/live/gift/jidan.png",
+      "lottieUrl": "",
+      "price": 1,
+      "title": "Telur",
+      "type": 0
+    },
+    {
+      "giftId": "4",
+      "imageUrl": "https://liteav.sdk.qcloud.com/app/res/picture/live/gift/kiss.png",
+      "lottieUrl": "https://assets-v2.lottiefiles.com/tmp/optimize/6698f91e-a29e-4cde-b988-134c6438d599/CmQu19SRVB.json",
+      "price": 1,
+      "title": "Bibir",
+      "type": 0
+    },
+    {
+      "giftId": "5",
+      "imageUrl": "https://liteav.sdk.qcloud.com/app/res/picture/live/gift/paoche.png",
+      "lottieUrl": "https://assets-v2.lottiefiles.com/tmp/optimize/2e0b2cd6-f9e3-4a07-b357-327fefe1b230/murCLQ79Ro.json",
+      "price": 1998,
+      "title": "Mobil",
+      "type": 0
+    },
+    {
+      "giftId": "6",
+      "imageUrl": "https://liteav.sdk.qcloud.com/app/res/picture/live/gift/jianianhua.png",
+      "lottieUrl": "",
+      "price": 77,
+      "title": "King",
+      "type": 0
+    },
+    {
+      "giftId": "7",
+      "imageUrl": "https://liteav.sdk.qcloud.com/app/res/picture/live/gift/meigui.png",
+      "lottieUrl": "",
+      "price": 99,
+      "title": "Bunga",
+      "type": 0
+    },
+    {
+      "giftId": "8",
+      "imageUrl": "https://liteav.sdk.qcloud.com/app/res/picture/live/gift/zhishengji.png",
+      "lottieUrl": "",
+      "price": 72,
+      "title": "Helikopter",
+      "type": 0
+    },
+    {
+      "giftId": "9",
+      "imageUrl": "https://liteav.sdk.qcloud.com/app/res/picture/live/gift/dianzan.png",
+      "lottieUrl": "",
+      "price": 198,
+      "title": "Sip",
+      "type": 0
+    },
+    {
+      "giftId": "10",
+      "imageUrl": "https://liteav.sdk.qcloud.com/app/res/picture/live/gift/bixin.png",
+      "lottieUrl": "",
+      "price": 34,
+      "title": "Love Korea",
+      "type": 0
+    },
+    {
+      "giftId": "11",
+      "imageUrl": "https://liteav.sdk.qcloud.com/app/res/picture/live/gift/bingqilin.png",
+      "lottieUrl": "",
+      "price": 33,
+      "title": "Es Krim",
+      "type": 0
+    },
+    {
+      "giftId": "12",
+      "imageUrl": "https://liteav.sdk.qcloud.com/app/res/picture/live/gift/xiaoxiong.png",
+      "lottieUrl": "",
+      "price": 76,
+      "title": "Beruang Cinta",
+      "type": 0
+    },
+    {
+      "giftId": "13",
+      "imageUrl": "https://liteav.sdk.qcloud.com/app/res/picture/live/gift/dangao.png",
+      "lottieUrl": "",
+      "price": 110,
+      "title": "Kue Ulang Tahun",
+      "type": 0
+    },
+    {
+      "giftId": "14",
+      "imageUrl": "https://liteav.sdk.qcloud.com/app/res/picture/live/gift/jinsepaoche.png",
+      "lottieUrl": "",
+      "price": 1888,
+      "title": "Lamborghini",
+      "type": 0
+    },
+    {
+      "giftId": "15",
+      "imageUrl": "https://liteav.sdk.qcloud.com/app/res/picture/live/gift/youting.png",
+      "lottieUrl": "https://assets4.lottiefiles.com/packages/lf20_DnLK6k.json",
+      "price": 2989,
+      "title": "Pesiar",
+      "type": 0
+    },
+    {
+      "giftId": "16",
+      "imageUrl": "https://liteav.sdk.qcloud.com/app/res/picture/live/gift/chibang.png",
+      "lottieUrl": "",
+      "price": 267,
+      "title": "Sayap Malaikat",
+      "type": 0
+    }
+  ]
+}
